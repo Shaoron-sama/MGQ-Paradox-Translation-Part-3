@@ -1,0 +1,96 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ソニア、ヌルコ……"])
+    ShowText(["天国でも、仲良くね。"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["ヌルコが、体を張ってソニアを止めてくれなかったら……"])
+    ShowText(["でも、二人とも……こんな……"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【ライム】"])
+    ShowText(["うっ、うっ……"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["墓地も、もっと拡張しないといけませんね。"])
+    ShowText(["これ以上は、埋葬するスペースが……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["みんなを……早く埋葬してあげたいです。"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ConditionalBranch([0, 2148, 0])
+      ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+      ShowText(["【たつこ】"])
+      ShowText(["大変です！"])
+      ShowText(["また、アポトーシスの襲撃なのです……！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2149, 0])
+      ShowTextAttributes(["ashel_fc1", 2, 0, 2])
+      ShowText(["【アシェル】"])
+      ShowText(["大変だ、またアポトーシスの襲撃だよ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……行こう。"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["それから、時間が流れ――"])
+    Wait([60])
+    TransferPlayer([0, 429, 0, 0, 0, 2])
+    ControlSwitches([31, 31, 1])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

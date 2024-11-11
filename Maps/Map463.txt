@@ -1,0 +1,312 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["本のページに、赤文字で大きく書き殴られている……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「ジッケンはシッパイした」"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 462, 19, 54, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 462, 20, 54, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([166, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["奥の方から、ゴソゴソと物音がする……"])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["奥に何かいるみたい……"])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["で、でてこい……！"])
+      ShowText(["こわくないぞ！　やっつけちゃうぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([1, 1013, 0, 0, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["もぐもぐ……むしゃむしゃ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["変な生物が、りんごを食べている……"])
+      ShotBalloonIcon([0, 1, true])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowPicture([5, "80_nuruko_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["きゅー！"])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ちょっと、私達は敵じゃないわよ……！"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["襲ってくるぞ、気を抜くな！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["襲ってきます、行きますよ！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 68, 0])
+        ShowTextAttributes(["dragonp_fc1", 2, 0, 2])
+        ShowText(["【パピ】"])
+        ShowText(["いったい、なんなのだ！"])
+        ShowText(["どうなってるのだ！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 57, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_nuruko_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ふぅ……"])
+      ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["大人しくなったみたいね。"])
+      ShowText(["驚いて襲ってきただけで、悪い子じゃないんじゃない？"])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 2, 0, 2])
+        ShowText(["【ライム】"])
+        ShowText(["びっくりしたよぉ……"])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([5, "80_nuruko_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["きゅー！"])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ごめんね、もう邪魔しないから……"])
+      ShowText(["それじゃあ、私達行くね。"])
+      ShowPicture([5, "80_nuruko_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["きゅ……"])
+      ControlVariables([1013, 1013, 0, 0, 1])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1013, 0, 1, 0])
+      ShowPicture([5, "80_nuruko_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["……………………"])
+      ErasePicture([5])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_nuruko_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["きゅー！　きゅー！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ついてくるみたいだな……懐かれてしまったか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この生物、後をつけてくるようです。"])
+      ShowText(["きっと悪事を企んでいるのでしょう……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["きゅー！　きゅー！"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["一緒に来たいの？"])
+    ShowText(["それじゃあ、連れて行ってあげようか？"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ねぇルカ、この子を仲間にしてもいいよね？"])
+    ShowChoices([["仲間にする", "嫌だ"], 2])
+    When([0, "仲間にする"])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["きゅー！　きゅー！"])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["それじゃあ、名前はヌルコね。"])
+      ShowText(["なんだかヌルヌルしてるから……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["貴様のネーミングセンスは壊滅的だ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["あなたが創世の女神なら、大地は惨めな名の生物で"])
+        ShowText(["満ち溢れていたでしょうね……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅっきゅっきゅー！"])
+      ErasePicture([5])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Script(["add_actor_ex(79)"])
+      PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ヌルコが仲間に加わった！"])
+      ControlSwitches([2125, 2125, 0])
+      Wait([60])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["でも……この子、いったい何者なんだろう？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そういうのは、仲間にする前に考える事だと思うよ……"])
+      ConditionalBranch([4, 68, 0])
+        ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+        ShowText(["【パピ】"])
+        ShowText(["とにかく、よろしくなのだ！"])
+        ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+        ShowText(["【ヌルコ】"])
+        ShowText(["きゅ～っ！"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "嫌だ"])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["きゅー！　きゅー！"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ごめんなさい、ダメなんだって……"])
+      ShowPicture([5, "80_nuruko_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+      ShowText(["【？？？】"])
+      ShowText(["……………………"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1013, 0, 1, 0])
+      ControlVariables([1013, 1013, 0, 0, 2])
+      SetEventLocation([0, 0, 3, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([1, 1013, 0, 1, 0])
+      ControlVariables([1013, 1013, 0, 0, 2])
+      SetEventLocation([0, 0, 3, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([1, 1013, 0, 1, 0])
+      ControlVariables([1013, 1013, 0, 0, 2])
+      SetEventLocation([0, 0, 3, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

@@ -1,0 +1,392 @@
+Display Name = "リリィの館 研究室"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["明かり設定10320300"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["明かり設定1500200"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["明かり設定1500200"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment(["明かり設定6500200"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment(["明かり設定6500200"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment(["明かり設定5320100"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=0.0, @gray=68.0)", 1, true])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment(["明かり設定2160400"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["こんなところまで、私を倒しに来るなんて……"])
+    ShowText(["ルシアあたりに、そそのかされたのかしら？"])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ルシアの主張も、正しいように思えるわよね。"])
+    ShowText(["蝕魔導の術を広めたら、かえって世界が混乱すると……"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["でも、蝕魔導の術を秘めたものにしておくという事は……"])
+    ShowText(["それを、一部の者のみが管理するという事になるのよねぇ。"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["それこそが、一番危険な状態だと思わない？"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["確かに、そうかもしれないけど……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["確かに、そうかもしれないけど……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["一部の者のみが力を独占する……"])
+    ShowText(["それは間違いなく、暴虐と支配を生み出すわ。"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["そうなると、嘆きの声が止まらなくなる……"])
+    ShowText(["ほら、今でも聞こえるでしょう……助けを求める声が……"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["私はただ、この声を止めたいだけなのよ！"])
+    ShowText(["あなた達にも聞こえるはずよ、虐げられた者達の声が！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["取引は、まだ有効よ。"])
+    ShowText(["今からでもルシアを倒せば、仲間になってあげる。"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["それでも……私を倒すというの？"])
+    ShowText(["虐げられた者達の声を踏みにじってまで、私を討つの？"])
+    ShowChoices([["リリィと戦う", "取引通り、ルシアと戦う"], 2])
+    When([0, "リリィと戦う"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["確かに、助けを求める泣き声が聞こえるよ……"])
+      ShowText(["リリィ、君の声が。"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["私が……？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["本当に助けを求めているのは、君なんだ。"])
+      ShowText(["その声は、たぶん君自身の中から発せられたものなんだよ。"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["貴様の中には、かつて虐殺を導いた罪悪感が残っている。"])
+        ShowText(["弱者救済の使命感で、それを上書きしようとしているがな……"])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["壊れかけの心を蝕魔導で押し隠し、使命感で塗り込め……"])
+        ShowText(["自分の悲鳴さえ、他人のものとして転嫁して……"])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["貴様、いずれは必ず壊れるぞ。"])
+        ShowText(["そうなる前に、己の心と向き合わなければならん。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["あなたの心は、壊れる寸前のようですね。"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["後悔の念も罪悪感も、全て使命感で上書きしても……"])
+        ShowText(["どうしたところで、その泣き声は消える事はありません。"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["他者を救う前に、まず自分自身を救うのですね。"])
+        ShowText(["心の悲鳴に、素直に向き合うのです。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["違うわ……私は、虐げられた者を救うために……"])
+      ShowText(["弱き者の泣き声を消すために……！"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["だって、そうしないと消えないでしょう……！"])
+      ShowText(["この泣き声が……泣き声が……泣き声が……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["蝕魔導の力が君を救った……それは確かだろうね。"])
+      ShowText(["でも今は、その力が君を壊しかけてる。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["その力と決別させるために、僕は剣を振るう！"])
+      ShowText(["行くぞ、リリィ！"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["あなたも、私達を虐げようというのね……"])
+      ShowText(["なら、あの男達と同じように……！"])
+      ShowPicture([5, "80_lily_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 6, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["蹂躙し、陵辱し、報いを受けさせるわ！"])
+      ShowText(["この触手に貪られ、惨めに尽き果てなさい……！！"])
+      ConditionalBranch([4, 163, 0])
+        ShowTextAttributes(["lily_fc1", 5, 0, 2])
+        ShowText(["【リリィ’】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["lily_fc1", 6, 0, 2])
+        ShowText(["【リリィ】"])
+        ShowText(["ああ、もう一人の私が見える……"])
+        ShowText(["やっぱり私も助けを求めて……"])
+        ShowTextAttributes(["lily_fc1", 3, 0, 2])
+        ShowText(["【リリィ’】"])
+        ShowText(["いいえ、救いに来たのよ。"])
+        ShowText(["私が、私自身をね……"])
+        ShowTextAttributes(["lily_fc1", 6, 0, 2])
+        ShowText(["【リリィ】"])
+        ShowText(["私自身の声が聞こえる……"])
+        ShowText(["私に、救いを求める声を……"])
+        ShowTextAttributes(["lily_fc1", 4, 0, 2])
+        ShowText(["【リリィ’】"])
+        ShowText(["……まともに話もできないみたいね。"])
+        ShowText(["いいわ、私が私を救ってあげる……"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 270, false, false])
+      ControlSwitches([22, 22, 1])
+      PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["結局、私は踏みにじられるのね……"])
+      ControlSwitches([2096, 2096, 0])
+      ControlSwitches([7017, 7017, 0])
+      PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+      ErasePicture([5])
+      ControlVariables([1029, 1029, 0, 0, 5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["リリィは気を失ってしまった……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これだけ消耗させれば、当分蝕魔導は使えまい。"])
+        ShowText(["ルシアとの取引は、これで成立だな……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["これだけ消耗させれば、当分は蝕魔導の力が使えませんね。"])
+        ShowText(["悪しき野望を打ち砕くことができ、幸いでした。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["いろいろ難しかったけど、これで良かったよね……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["リリィは、きっと強い人だから……"])
+      ShowText(["蝕魔導から解き放たれて、自分の心と向き合うと信じるよ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["さあ、ルシアさんのところに報告に行こう！"])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "取引通り、ルシアと戦う"])
+      ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+      ControlSwitches([2094, 2094, 0])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["考え直してくれたのね。"])
+      ShowText(["やはりあなたにも聞こえるでしょう、この泣き声が……"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それじゃあ、待っているわよ。"])
+      ShowText(["あなた達がルシアを倒すのを……"])
+      ErasePicture([5])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ConditionalBranch([0, 2095, 0])
+        Script(["gain_medal(2008)"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["癒しの魔法陣だ……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([5, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

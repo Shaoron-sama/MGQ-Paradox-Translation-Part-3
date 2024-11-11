@@ -1,0 +1,26 @@
+CommonEvent 649
+Name = "イベント：サキュバス"
+
+  999([649])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 428, 0])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["お腹が空いたら、イモもありますよ。"])
+    ShowText(["……いりませんか。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+  ShowText(["【サキュバス】"])
+  ShowText(["サキュバスのオーラ、分けてあげましょう……"])
+  ControlSwitches([428, 428, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["サキュバスから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、淫技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

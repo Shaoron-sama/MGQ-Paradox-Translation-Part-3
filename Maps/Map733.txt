@@ -1,0 +1,1014 @@
+Display Name = "エスタ"
+Parallax Name = "BlueSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 7, 38, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は施錠されている……"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 62, 32, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 63, 32, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["まだ大聖堂開放の時間ではありません。"])
+      ShowText(["鐘が鳴るのをお待ち下さい。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["まだ大聖堂開放の時間ではありません。"])
+      ShowText(["鐘が鳴るのをお待ち下さい。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし民】"])
+    ShowText(["天上世界の町、エスタへようこそ。"])
+    ShowText(["ここに来た以上、あなたも選ばれし者なのですね。"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["ここは、最上級市民の住まう楽園の町。"])
+    ShowText(["あなたの心の清さは、神によって保証されています。"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["イリアス様のお言葉に従えば、幸福は約束されたようなもの。"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 32, 70, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 11, 68, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし鍛冶屋】"])
+    ShowText(["ずいぶん早いな、まだ開店前の時間だぜ。"])
+    ShowText(["大聖堂で、お祈りでもしてきたらどうだ？"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 124, 15, 6, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 90, 70, 0, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["おや、なにやら迷っておられるお顔ですね。"])
+    ShowText(["地上のルビアナかエスタから来たばかりの方でしょうか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["あなたは、こう思っているのではないですか？"])
+    ShowText(["「神に全てを決められるのではなく、自分で人生を選択したい」……と。"])
+    ShowChoices([["その通りだ", "神の言葉は絶対"], 0])
+    When([0, "その通りだ"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["しかし人生というのは、人間にとってはリスクの多すぎるギャンブル。"])
+      ShowText(["我々には未来を見通す力もなく、今の選択が最良か最悪かも分かりません。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["ですが神は、過去から現在、未来を見通します。"])
+      ShowText(["その結果、最もよい選択結果をあらゆる民に提示して下さるのです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["そんな神の声に逆らい、わざわざ不幸になりたいと思いますか？"])
+      ShowText(["神は、幸福になれる最良の選択肢を提示されているというのに……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["神の教えて下さる天職に就き、神の教えて下さる相手と結婚なさい。"])
+      ShowText(["それがあなたにとっての、最良の人生となるのです。"])
+      Empty([])
+
+    When([1, "神の言葉は絶対"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["これは失礼、差し出がましい事を言ってしまいました。"])
+      ShowText(["あなたも楽園に導かれた以上、幸福は約束されていますよ。"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["私は、地上では宿屋の息子でした。"])
+    ShowText(["商売の才覚などなく、宿が潰れるのも時間の問題……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["しかしここに来たとき、私は神官の才覚があった事を知ったのです。"])
+    ShowText(["言葉で人を導く事、それが私の天職でした。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["全知全能の神が、私に天職を示して下さらなかったならば……"])
+    ShowText(["私は、路頭で迷う事になっていたでしょう。"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし神官】"])
+    ShowText(["人間に間違いはあるが、神に間違いはない。"])
+    ShowText(["ありえる限り最高の人生を、全ての民に与えて下さるのだ。"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老人】"])
+    ShowText(["この世界には、差別も貧困も存在せん。"])
+    ShowText(["全ての民が平等であり、そして幸福なのだ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老人】"])
+    ShowText(["お主も、イリアス様に感謝せねばならんぞ……"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["人間が築いた社会は、必ず富が偏ってしまう。"])
+    ShowText(["強い者が、弱い者から富を奪ってしまうんだ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["でも知っての通り、この町ではそんな事は起こりえない。"])
+    ShowText(["神の意志に従い、全ての者が幸福になるよう定められているからね。"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれっ？　どうなってるんだ？"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし少女】"])
+    ShowText(["私の天職は、お花屋さんなんだって。"])
+    ShowText(["他のどの職業よりも向いていて、社会に貢献できるの！"])
+    Empty([])
+
+CommonEvent 41
+Name = "聖堂扉"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし神官】"])
+      ShowText(["まだ大聖堂開放の時間ではありません。"])
+      ShowText(["鐘が鳴るのをお待ち下さい。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Comment(["<Extile:pick_up,1565>"])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Comment(["<Extile:pick_up,1565>"])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["先日、神からのお告げを受け……"])
+    ShowText(["娘の天職が、花屋である事が分かりました。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["欲を言えば、父の道具屋を継ぐ事を期待していましたが……"])
+    ShowText(["天職以外の仕事をするなど、社会的な浪費に他なりませんから。"])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["俺も、下界のエスタにいた頃ならばこう言っただろうさ。"])
+    ShowText(["「神が全部決めてしまう人生設計なんて、息苦しくて仕方ない」ってな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["でも神の言葉に従えば、最高の幸福が保証されるんだ。"])
+    ShowText(["自分で色々選択して、わざわざ不幸になるなんて非合理的だぜ。"])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老人】"])
+    ShowText(["神のお言葉に従い、儂は婆さんと結ばれた。"])
+    ShowText(["これ以上の相手に巡り会う事など、人生を何度やり直しても考えられんよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老婆】"])
+    ShowText(["そうですね、あなた……"])
+    ShowText(["これ以上の幸せ、私には考えられません。"])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老人】"])
+    ShowText(["神のお言葉に従い、儂は婆さんと結ばれた。"])
+    ShowText(["これ以上の相手に巡り会う事など、人生を何度やり直しても考えられんよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老婆】"])
+    ShowText(["そうですね、あなた……"])
+    ShowText(["これ以上の幸せ、私には考えられません。"])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし職人】"])
+    ShowText(["……………………"])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし職人】"])
+    ShowText(["そこの同僚は、無口で要領悪く不器用な男だが……"])
+    ShowText(["「樹と対話できる」と言われるくらい、天才的な剪定の腕前を誇っている。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし職人】"])
+    ShowText(["神が天職を見い出して下さらなかったら、こいつはどうなっていたか……"])
+    ShowText(["間違いなく、役立たず扱いされてたはずさ。"])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["1日6時間の仕事、休日は家族と存分に触れ合える……"])
+    ShowText(["こんなに幸せな生活を、楽園の皆は存分に楽しめるのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["選択の自由？"])
+    ShowText(["人間の自由意志に任せれば、必ず強者が弱者をこき使う社会になるよ。"])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし少年】"])
+    ShowText(["隣の家のマリちゃんが、僕の運命の結婚相手だって。"])
+    ShowText(["このお花で、花飾りを作ってプレゼントしてあげよっと。"])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["このような幸せな生活、許されて良いのでしょうか……"])
+    ShowText(["地上のルビアナでは、私は貧しい漁師の娘だったのに。"])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし老人】"])
+    ShowText(["さて、今日もイリアス様に祈りを捧げねば……"])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["宿の営業時間は9時からだよ、もう少し待っておくれ。"])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし女性】"])
+    ShowText(["天国にも、旅人はおられるのですね。"])
+    ShowText(["失礼、私は最近ここに来たばかりで……"])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし商人】"])
+    ShowText(["ちょっと失礼、今は仕入れ作業の最中でね……"])
+    ShowText(["いかに楽園といっても、地面から剣や盾が湧いて出たりはしないのさ。"])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["タルタロスには近付くな、地上に堕ちてしまうぞ……"])
+    ShowText(["もっとも、翼を持たないお前には近付く事も出来ないか。"])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["タルタロスは完全に我々の管理下にある。"])
+    ShowText(["お前達は、安心して日常を送るがいい。"])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["シオン様やグノーシス様は、地獄のような地上で任務を……"])
+    ShowText(["ああ、なんとおいたわしい……"])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし若者】"])
+    ShowText(["社会も経済も、全ては神によって管理されています。"])
+    ShowText(["それの何が問題なのでしょう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし若者】"])
+    ShowText(["地上では、社会も経済も一部の支配層によって管理されているではないですか。"])
+    ShowText(["それが自由というなら、私は神による管理を選びます。"])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし少女】"])
+    ShowText(["わーい、わーい！"])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし犬】"])
+    ShowText(["わん！　わん！"])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし詩人】"])
+    ShowText(["神を讃える詩を作っています。"])
+    ShowText(["全ての芸術は、神に捧げるべきでしょう。"])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["この世界に、一切の差別はありません。"])
+    ShowText(["イリアス様の下で、全てが平等なのです。"])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【まつろわぬ者】"])
+    ShowText(["惑わされるな、旅人よ！"])
+    ShowText(["選ばれなかった者が、どうなるか――"])
+    ShowAnimation([0, 515, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【まつろわぬ者】"])
+    ShowText(["ぐはっ！"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["旅の者とは珍しいな。"])
+    ShowText(["イリアス様に尽くすため、見聞を広めるが良い。"])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし男性】"])
+    ShowText(["港には、あまり立ち入らない方が良い。"])
+    ShowText(["天使様のお仕事の邪魔になってしまうよ。"])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["【ヴァルキリー】"])
+    ShowText(["何の用……？"])
+    ShowText(["イリアス様より頂いた、己の果たすべき務めを果たしなさい。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["アポカリプスは、まだ先だが……"])
+    ShowText(["兵士たる者、いかなる時も戦いに備えておかねば。"])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["港であまりウロウロするな、仕事の邪魔になるからな……"])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あれは――"])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["空中に、タルタロスが浮いてる……！？"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あれは――"])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["空中に、タルタロスが浮いてる……！？"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あれは――"])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["空中に、タルタロスが浮いてる……！？"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])

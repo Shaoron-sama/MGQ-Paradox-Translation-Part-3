@@ -1,0 +1,98 @@
+Display Name = "北のお化け屋敷 客間2"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 346, 57, 48, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([482, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 2069, 0])
+      ConditionalBranch([0, 2073, 0])
+        ConditionalBranch([0, 2078, 0])
+          ConditionalBranch([0, 2079, 0])
+            ConditionalBranch([0, 2080, 0])
+              ConditionalBranch([2, "A", 1])
+                ControlSelfSwitch(["A", 0])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["どろどろ……"])
+                ShowText(["私は、いいミミックよ。"])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["ありがとう、これを持って行きなさい……"])
+                ShowText(["クロムが私の存在に気付かず、宝箱の中にねじ込んだのよ。"])
+                PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+                ChangeItems([614, 0, 0, 1])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["それがあれば、職業「魔芸師」に転職できるわ。"])
+                ShowText(["ゾンビやゴーストが召喚できるようになるわよ……"])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["そんなものをあげてもいいのかって……？"])
+                ShowText(["もう50年ほど私の中にほったらかしだし……"])
+                ExitEventProcessing([])
+                Empty([])
+              Else([])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["どろどろ……"])
+                ShowText(["私は、いいミミックよ。"])
+                ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+                ShowText(["【ミミック娘】"])
+                ShowText(["最近、呪いの人形娘がいたずらしてきて困るわ。"])
+                ShowText(["寝てる間に、フタの上に重しを置いていくの……"])
+                ExitEventProcessing([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["【ミミック娘】"])
+    ShowText(["どろどろ……"])
+    ShowText(["私は、いいミミックよ。"])
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["【ミミック娘】"])
+    ShowText(["この屋敷のみんな、あちこちの部屋で荒ぶってるみたい。"])
+    ShowText(["人間が来たから、テンションが高まってるのね……"])
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["【ミミック娘】"])
+    ShowText(["説得するなりぶちのめすなりして、鎮めてもらえない？"])
+    ShowText(["みんなを鎮めてくれたら、お礼にいい物をあげるわ……"])
+    ExitEventProcessing([])
+    Empty([])

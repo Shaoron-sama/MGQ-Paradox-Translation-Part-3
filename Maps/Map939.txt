@@ -1,0 +1,200 @@
+Display Name = "イズモ村"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSwitches([32, 32, 0])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[6, 6])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[6, 6])"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[6, 6])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[6, 6])"])
+    ShotBalloonIcon([7, 1, false])
+    ShotBalloonIcon([8, 1, false])
+    Wait([30])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=15, @parameters=[60])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[60])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=15, @parameters=[60])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[60])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowPicture([5, "80_ogretooth_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["ogretooth_fc1", 2, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["やってくれるじゃねーか、このガキ……！！"])
+    ShowText(["奇襲なんて、舐めたことしやがって！"])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-3, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-3, 0])"])
+    ControlSwitches([33, 33, 0])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, -8])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_break\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, -8])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_break\\\", @pitch=100, @volume=100)\"])"])
+    Wait([30])
+    ShowPicture([5, "80_lars_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["…………！！"])
+    ShowPicture([5, "80_lars_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_ogretooth_st03", 0, 0, 170, 0, 90, 90, 255, 0])
+    ShowTextAttributes(["ogretooth_fc1", 2, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["俺の攻撃を、正面から止めた……！？"])
+    ShowText(["てめぇ、相当やりやがるな！！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([30])
+    ControlSwitches([34, 34, 0])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-2, 3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-2, 3])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-3, 2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-3, 2])"])
+    ShowPicture([5, "80_rovissa_st01", 0, 0, -120, 0, 80, 80, 0, 0])
+    ShowPicture([6, "80_mistilteinn_st01", 0, 0, 280, 40, 80, 80, 0, 0])
+    MovePicture([5, nil, 0, 0, -120, 0, 80, 80, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 280, 40, 80, 80, 255, 0, 30, true])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["まさか、待ち伏せとは……"])
+    ShowText(["私達が来ること、どうして知ったのです？"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["あんた達、いくつも村を襲ってきたでしょ？"])
+    ShowText(["その流れを追えば、ルートくらい予測できるわよ。"])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["なるほど……そうした邪魔もいつか入ると思いましたが、"])
+    ShowText(["まさかこんなに早くに動きを読まれるとは。"])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["おそらく、地脈の流れも把握した上での待ち伏せ……"])
+    ShowText(["お嬢さん、見かけによらない策士ですね。"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["……ふん、褒めたって容赦はしないわよ。"])
+    ErasePicture([6])
+    ShowPicture([5, "80_ogretooth_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["はっ、面白くなってきたな！"])
+    ShowText(["姉貴！　こいつらの相手は俺に任せろよ！"])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["では、オーガに譲りましょう。"])
+    ShowText(["エクス、私達は村人達を堕としますよ。"])
+    ShowTextAttributes(["executioner_fc1", 1, 0, 2])
+    ShowText(["【エクスキューショナー】"])
+    ShowText(["オーガお姉ちゃん、がんばってね～♪"])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowPicture([5, "80_ogretooth_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["ラルス、早くこいつを倒さないと！"])
+    ShowText(["逃げ遅れた村人達が……！"])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["分かってるさ、テメェも七人の勇者の一人だろ？"])
+    ShowText(["これは面白くなってきやがった……"])
+    ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["さあ、戦り合おうぜ！"])
+    ShowText(["俺を愉しませてくれよ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔剣三姉妹の襲撃を受けた、ヤマタイ近隣のイズモ村――"])
+    ShowText(["今ここに、選ばれし勇者と同盟者が激突しようとしていた。"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["数日前、シダラ集落――"])
+    FadeoutScreen([])
+    Wait([30])
+    ChangeTransparency([1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    TransferPlayer([0, 867, 15, 29, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

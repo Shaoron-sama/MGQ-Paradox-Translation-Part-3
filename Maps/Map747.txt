@@ -1,0 +1,267 @@
+Display Name = ""
+Parallax Name = "DarkSpace1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["はぁ……はぁ……"])
+    ShowText(["向こうの力も、かなり弱まったはずだ……"])
+    ShowTextAttributes(["soniamanyu_fc1", 3, 0, 2])
+    ShowText(["【ソニアマンユ】"])
+    ShowText(["ああ……闇■■が失わ■■……"])
+    ShowText(["こ■じゃ、分が悪■■ね……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["確実に弱っていますよ！"])
+    ShowText(["元に戻すためには、捕獲しなければ！"])
+    ShowTextAttributes(["soniamanyu_fc1", 2, 0, 2])
+    ShowText(["【ソニアマンユ】"])
+    ShowText(["形■不利、救■■求む……"])
+    ShowText(["XX型ア■ラメ■ク、ダウン■ード開■……"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["eden_fc2", 5, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["まずい！　アドラメレクをダウンロードしている！"])
+    ShowText(["仲間を呼ぶ気です！！"])
+    ErasePicture([5])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["gnosis_fc1", 5, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["そうはさせるか――"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["soniamanyu_fc1", 1, 0, 2])
+    ShowText(["【ソニアマンユ】"])
+    ShowText(["遅■■……油断し■■■……"])
+    PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ソニアマンユの尾がグノーシスを捕獲した！"])
+    ShowText(["その力を吸収し、取り込み始める――"])
+    ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["不覚……こんな……！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["やめろ、ソニア……！！"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    PlaySE(["RPG::SE(@name=\"mon_slash3\", @pitch=100, @volume=80)"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -2])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -2])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカの一撃で、ソニアマンユをよろめかせた！"])
+    ShowText(["すかさずグノーシスはソニアマンユから離れる！"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowPicture([5, "80_soniamanyu_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["soniamanyu_fc1", 0, 0, 2])
+    ShowText(["【ソニアマンユ】"])
+    ShowText(["エ■ルギ■充■■十分■……"])
+    ShowText(["聖魔■■、開始……！"])
+    ShowTextAttributes(["lilith2_fc1", 2, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["まずいですね、天使から力を奪ったとなれば……"])
+    ShowText(["モリガンの分も合わせて、聖と魔の力が……"])
+    ShowTextAttributes(["eden_fc2", 4, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["気を取られている場合ですか！"])
+    ShowText(["アドラメレクの召喚は、まだ進行して――"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([7, 542, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([90])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_adramelek_st21", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["adramelek_fc2", 0, 0, 2])
+    ShowText(["【アドラメレク】"])
+    ShowText(["ダウ■■■■■了……"])
+    ShowText(["第三■■■■■■■■■■■■■■■……"])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["遅かったわね……"])
+    ShowTextAttributes(["lilith2_fc1", 2, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["熾天使達……今は争っている場合ではありません。"])
+    ShowText(["ここは協力して、アドラメレクを止めるのです！"])
+    ShowTextAttributes(["eden_fc2", 4, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["誰が、淫魔などと協力など……！"])
+    ShowTextAttributes(["lilith2_fc1", 2, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["XX型が二体揃えば、この世界など一時間以内に侵蝕されます！"])
+    ShowText(["そうなれば、我々も共倒れですよ！"])
+    ShowTextAttributes(["shion_fc1", 4, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["どうすんだよ、エデン……！"])
+    ShowTextAttributes(["eden_fc2", 2, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["……………………"])
+    ErasePicture([5])
+    Wait([60])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 3])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 3])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[5, 2])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[5, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["eden_fc2", 4, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["……シオン、グノーシス！"])
+    ShowText(["アドラメレクに攻撃を集中します！　淫魔は無視しなさい！"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[2, 7])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[2, 7])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 5])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 5])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[3, 6])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[3, 6])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["アスタロト、モリガン！"])
+    ShowText(["熾天使は無視し、アドラメレクに攻撃を！"])
+    ShowTextAttributes(["shion_fc1", 1, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["それ、共闘しろって事だよな！"])
+    ShowText(["こういうのも、なかなか楽しいじゃないか！"])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["楽しんでる場合じゃないわ……"])
+    ShowText(["あのXX型、最低でも2回は破壊されてる……その分、相当強力よ。"])
+    ShowTextAttributes(["morrigan_fc1", 2, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["やれやれ……片腕じゃヘビーな相手だよな。"])
+    ShowTextAttributes(["gnosis_fc1", 3, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["戦力分析……"])
+    ShowText(["熾天使三体＋淫魔三匹で、敵XX型とほぼ互角……"])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["adramelek_fc2", 0, 0, 2])
+    ShowText(["【アドラメレク】"])
+    ShowText(["■■■乖■■■■■■■■■■■■■■……"])
+    ShowText(["■■■■■■■■■■■■■せ■■■■■……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["アドラメレクは、あの連中が足止めしています！"])
+    ShowText(["私達は、ソニアを……！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["はい……！"])
+    ShowPicture([5, "80_soniamanyu_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["soniamanyu_fc1", 2, 0, 2])
+    ShowText(["【ソニアマンユ】"])
+    ShowText(["こっち■■■■力が■■■■■■……"])
+    ShowText(["今■■■■■■■■ってく■■■よ……！"])
+    PlaySE(["RPG::SE(@name=\"mon_power\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ソニアマンユの中で、聖なる力と魔の力が融合を果たす！"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    ShowPicture([10, "sys_noise", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    TransferPlayer([0, 749, 1, 0, 0, 2])
+    ControlSwitches([31, 31, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_chaos1\", @volume=100, @pitch=100)"])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    ErasePicture([10])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

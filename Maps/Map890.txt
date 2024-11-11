@@ -1,0 +1,379 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 875, 11, 5, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 875, 11, 5, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 875, 11, 5, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 875, 11, 5, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 875, 11, 5, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["この先に、フルビュアが待ち構えているわ。"])
+    ShowText(["たぶん、戦いは避けられないと思う……"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["そのフルビュアって夢魔は、どの程度強いんだ？"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["夢魔の中でも、相当な奴だとは聞いてるわ……"])
+    ShowText(["この全員でかかっても、太刀打ちできないかも……"])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["それほどですか……"])
+    ShowText(["しかも、快楽以外は効かないんですよね……"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["だが、奴ならゲートの位置を知っておるはずだ。"])
+    ShowText(["なんとか聞き出すしかないな……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0-2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_fulbeua_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["私の美貌に誘われて……"])
+    ShowText(["あまたの世界から、勇者達が集ってきたようね。"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["美を求めるならば、この私が――"])
+    ShowText(["フルビュア・シーナ・レスターニが、応じてあげるわ。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["相変わらずじゃのう……"])
+    ShowText(["さて、ゲートがどこにあるか教えてもらおうか。"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["そのような事を知って、どうしようというの？"])
+    ShowText(["まさか、世界を覆う夢に抗おうとでも……？"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["私達は、抗います……！"])
+    ShowText(["世界を破滅など、させません！"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["快楽の夢に抗い、夜の国を拒否する……"])
+    ShowText(["本当に面白いわ、貴方達は。"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["意志の強い人間は、良い玩具になりそうね。"])
+    ShowText(["この私が、遊んであげる……♡"])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["やっぱり、戦いは避けられないか……"])
+    ShowText(["行くぞっ！"])
+    ShowTextAttributes(["lanpass_fc2", 3, 0, 2])
+    ShowText(["【ランパス】"])
+    ShowText(["私は……応援担当ね！"])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【夢狐】"])
+    ShowText(["がんばれ～！　がんばれ～！"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"cb3\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1378, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-2\", @volume=100, @pitch=100)"])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["fulbeua_fc1", 1, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["ふふっ……退屈は紛れたわ。"])
+    ShowText(["なかなか、愉しませてくれるものね。"])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["まだ、相手にはかなり余裕がありますね……"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["聞きしに勝る強さよ……"])
+    ShowText(["その高慢さ、実力に裏打ちされたがゆえか。"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["私を愉しませてくれた礼をしないとね。"])
+    ShowText(["貴方達が求めているのは、ゲートの場所だったかしら？"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["…………！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まさか、ゲートの場所を教えてくれるというのか――"])
+    ErasePicture([5])
+    Wait([30])
+    FadeoutBGM([1])
+    ShowAnimation([24, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    ShowAnimation([25, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 0])
+    ShowAnimation([25, 501, false])
+    Wait([30])
+    ControlSwitches([33, 33, 0])
+    ShowAnimation([26, 501, false])
+    Wait([60])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowPicture([7, "80_lira_st01", 0, 0, -200, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 200, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, -200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["フルビュア……"])
+    ShowText(["まさか、勇者達を見逃すつもりじゃないでしょうね？"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["あら、ミュゼット……"])
+    ShowText(["私の城に、何の用かしら？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その場に現れたのは、初めて見る天使――いや、妖魔。"])
+    ShowText(["間違いなく、彼女達も同盟者だろう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかも、このプレッシャーからしてフルビュアと同格。"])
+    ShowText(["相手が一人でも分が悪いのに、この状況はまずい――"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["この魔城は、私達の尽力で召喚したもの。"])
+    ShowText(["そこでふんぞり返っているのは、誰のお陰かしら？"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["ええ……貴女達がこの私のために献上してくれたのよね。"])
+    ShowText(["お褒めの言葉でも求めているのかしら？"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["どこまでも、高慢な夢魔……"])
+    ShowText(["この魔城、ここで私達の手に取り戻そうかしら。"])
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=187.0, @blue=255.0, @alpha=255.0)", 30, false])
+    Wait([60])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["あら、もしかして……"])
+    ShowText(["今、この私を操ろうとしたのかしら？"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["くす、私を支配するつもりなんて無駄。"])
+    ShowText(["この心、ほんの僅かとて揺らぎはしないわ。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["流石は夢の主に選ばれた者、微塵も揺らがないのね。"])
+    ShowText(["でも……洗脳だけが私の力だとでも？"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["じゃあ……その力とやら、ここで披露しようというのかしら？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["フルビュアとミュゼットの間に、緊迫感が漲る。"])
+    ShowText(["この連中、いずれも同盟者ながら一枚岩ではないらしい。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こちらとしては好機、この隙は見逃せない――"])
+    Wait([30])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["チャンスだ、白念くん！"])
+    ShowText(["……いつもの作戦で行くぞ！"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["お任せ下さい……全力で逃げます！！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["今やすっかり、逃げるのが板についてしまった。"])
+    ShowText(["僕達は、一目散に駆け出したのだった――"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlVariables([1208, 1208, 0, 0, 8])
+    Wait([60])
+    TransferPlayer([0, 875, 11, 17, 2, 2])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])

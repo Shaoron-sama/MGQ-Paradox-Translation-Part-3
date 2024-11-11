@@ -1,0 +1,223 @@
+Display Name = "狐神社"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([1, 1217, 0, 2, 1])
+      ConditionalBranch([1, 1217, 0, 3, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【巫女】"])
+        ShowText(["狐神社にようこそ。"])
+        ShowText(["妲己なる方が目撃されたとかで、昨今は騒がしいですね……"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1063, 0, 12, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【巫女】"])
+      ShowText(["狐神社にようこそ。"])
+      ShowText(["しかし、今のお狐様は……ああ、おいたわしい……"])
+      ConditionalBranch([1, 1058, 0, 0, 0])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 0, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["確か、たまもが落ち込んでいるという話だったな。"])
+          ShowText(["いったい、どうしたというのだ……？"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["狐の親玉、たまもが落ち込んでいるという話ですね。"])
+          ShowText(["おおかた、あぶらあげをドブ川にでも落としたのでしょう。"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 102, 0])
+          ShowTextAttributes(["youko_fc1", 2, 0, 2])
+          ShowText(["【きつね】"])
+          ShowText(["たまも様……"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 103, 0])
+          ShowTextAttributes(["kamuro_fc1", 2, 0, 2])
+          ShowText(["【かむろ】"])
+          ShowText(["心配です……"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1063, 0, 13, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【巫女】"])
+      ShowText(["狐神社にようこそ。"])
+      ShowText(["お狐様は元気を取り戻し、神社を出て行かれました。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["神社坂の入り口に戻りますか？"])
+    ShowChoices([["戻らない", "戻る"], 1])
+    When([0, "戻らない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "戻る"])
+      TransferPlayer([0, 485, 14, 5, 2, 0])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 504, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 504, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 504, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 510, 25, 23, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 510, 25, 23, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 510, 25, 23, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 508, 9, 26, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["↑：神社坂"])
+    ShowText(["←：狐神社"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【キツネ】"])
+    ShowText(["コーン！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 1, 0, 2])
+    ShowText(["【かむろ】"])
+    ShowText(["ふふっ、いい子ですね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【キツネ】"])
+    ShowText(["コン……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["102"])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["【きつね】"])
+    ShowText(["後で遊ぼうね♪"])
+    ExitEventProcessing([])
+    Empty([])

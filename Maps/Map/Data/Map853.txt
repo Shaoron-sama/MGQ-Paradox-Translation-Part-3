@@ -1,0 +1,169 @@
+Display Name = "サバサ"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "天使兵2"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "天使兵1"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Wait([60])
+    ShowAnimation([8, 856, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＡ】"])
+    ShowText(["うっ！　あ、頭が……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＢ】"])
+    ShowText(["あぁぁぁ……た、玉藻さまぁ……"])
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["どうした、何事だ……？"])
+    ShowTextAttributes(["tamamo_fc3", 0, 1, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["サムよ、ウチのものになりたいか……？"])
+    ShowText(["ならば、天使どもに抗うが良い……"])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＡ】"])
+    ShowText(["サムは、玉藻様のものなのです……"])
+    ShowText(["天使達を打ち倒すのです！"])
+    ShotBalloonIcon([1, 1, false])
+    ShotBalloonIcon([4, 1, false])
+    ShotBalloonIcon([3, 1, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サムは、天使兵に掴みかかった！"])
+    ShowTextAttributes(["angels_fc1", 2, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["何をする……やめろっ！"])
+    PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+    ControlSwitches([33, 33, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["天使兵は、サムを振り払った！"])
+    ShowText(["サムは地面に倒れてしまう！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＡ】"])
+    ShowText(["あぅぅっ……！"])
+    ShowTextAttributes(["ratael_fc1", 2, 0, 2])
+    ShowText(["【ラタエル】"])
+    ShowText(["天使兵よ、労働者に手を出してはならないわ……"])
+    ShowText(["労働法によれば、彼等はイリアス様の財産なのよ……"])
+    ShowTextAttributes(["angels_fc1", 2, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["申し訳ありません、つい反射的に……"])
+    ShowTextAttributes(["tamamo_fc3", 0, 1, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["サムよ、畑を焼き払え……"])
+    ShowText(["町を破壊せよ、邪魔する者を打ち倒せ……"])
+    ShotBalloonIcon([1, 1, false])
+    ShotBalloonIcon([4, 1, false])
+    ShotBalloonIcon([3, 1, false])
+    PlaySE(["RPG::SE(@name=\"Fire2\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＢ】"])
+    ShowText(["畑を焼くのです……！"])
+    PlaySE(["RPG::SE(@name=\"Fire2\", @pitch=100, @volume=80)"])
+    ControlSwitches([32, 32, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＣ】"])
+    ShowText(["町を破壊するのです……！"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ShowTextAttributes(["angels_fc1", 2, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["なんだ、どうしたというのだ！？"])
+    ShowText(["何が起こっている！？"])
+    ShowTextAttributes(["ratael_fc1", 2, 0, 2])
+    ShowText(["【ラタエル】"])
+    ShowText(["ともかく、労働者に怪我をさせないように。"])
+    ShowText(["暴力は使わずに捕らえなさい……！"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＢ】"])
+    ShowText(["玉藻様……あぁぁ、玉藻様……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サムＣ】"])
+    ShowText(["天使を倒すのです……"])
+    ShowText(["天使を、天使を、天使を倒すのです……"])
+    ShowTextAttributes(["angels_fc1", 2, 0, 2])
+    ShowText(["【天使兵】"])
+    ShowText(["これを、どうやって無血で鎮圧しろというのだ！"])
+    ShowText(["相手に怪我をさせないなど、不可能だぞ！"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ChangeTransparency([1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    TransferPlayer([0, 867, 44, 79, 8, 2])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])

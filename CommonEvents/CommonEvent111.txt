@@ -1,0 +1,93 @@
+CommonEvent 111
+Name = "魔王城メイド"
+
+  999([111])
+  ShowTextAttributes(["People3", 5, 0, 2])
+  ShowText(["【メイド】"])
+  ShowText(["ご用を申し付け下さい。"])
+  ShowText(["城内ワープは、パーティ編集から可能です。"])
+  ConditionalBranch([0, 7068, 1])
+    Script(["unlimited_choices(11, [\"パーティを編集する\","])
+    ScriptMore(["\"パーティの登録・呼び出しを行う\","])
+    ScriptMore(["\"アイテム倉庫を使う\", "])
+    ScriptMore(["\"控えメンバーの装備を全て外す\",  "])
+    ScriptMore(["\"正門前に移動する\","])
+    ScriptMore(["\"用はない\"])"])
+    Empty([])
+
+  Else([])
+    Script(["unlimited_choices(11, [\"パーティを編集する\","])
+    ScriptMore(["\"パーティの登録・呼び出しを行う\","])
+    ScriptMore(["\"アイテム倉庫を使う\", "])
+    ScriptMore(["\"控えメンバーの装備を全て外す\", "])
+    ScriptMore(["\"正門前に移動する\",\"おさかな号に移動する\","])
+    ScriptMore(["\"用はない\"])"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 0, 0])
+    GatherFollowers([])
+    ChangeState([0, 1, 1, 1])
+    Script(["call_party_edit"])
+    RecoverAll([0, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 1, 0])
+    ShowChoices([["登録したパーティを呼び出す", "パーティを登録する ", "やめる"], 3])
+    When([0, "登録したパーティを呼び出す"])
+      Script(["SceneManager.call(Scene_PartyLoad)"])
+      Empty([])
+
+    When([1, "パーティを登録する "])
+      Script(["SceneManager.call(Scene_PartySave)"])
+      Empty([])
+
+    When([2, "やめる"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 2, 0])
+    CallCommonEvent([144])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 3, 0])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=100, @volume=80)"])
+    Script(["stand_members.each{|m|"])
+    ScriptMore(["  m.clear_equipments"])
+    ScriptMore(["}"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 4, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 126, 15, 13, 2, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 5, 0])
+    ConditionalBranch([0, 7068, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 724, 13, 24, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 11, 0, 6, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

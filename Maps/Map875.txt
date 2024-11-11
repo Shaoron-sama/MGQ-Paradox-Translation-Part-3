@@ -1,0 +1,515 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 880, 22, 5, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 880, 22, 5, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 880, 22, 5, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 880, 22, 5, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 880, 22, 5, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 21, 14, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 21, 14, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 21, 14, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 32, 14, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 32, 14, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 9, 0])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["そっちだと遠回りだ！"])
+      ShowText(["回り込まれて危険だぞ！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 888, 32, 14, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    CallCommonEvent([515])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    CallCommonEvent([515])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    CallCommonEvent([515])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    CallCommonEvent([515])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    CallCommonEvent([515])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_myuska_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["はい、つっかまえた～♡"])
+    PlaySE(["RPG::SE(@name=\"Down1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミュスカに捕まってしまった……"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["それじゃあ……いただきまぁす♡"])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["や、やめろ――うわぁぁぁ！！"])
+    FadeoutScreen([])
+    ErasePicture([5])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["ぁ……ぁぁ……"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["あはっ……ごちそうさま♡"])
+    FadeoutBGM([1])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["・・・・・・・・"])
+    CallCommonEvent([2999])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["はぁ、はぁ……"])
+    ShowText(["ここまで来れば、大丈夫だな。"])
+    ShowTextAttributes(["byakunen_fc1", 1, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["カズヤさんも、かなり逃げ足に磨きが掛かりましたね。"])
+    ShowText(["それに、ロウラットさんも驚くほどの俊足です……"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あれだけ走って、息が乱れていない。"])
+    ShowText(["もしかして、ロウラットが一番速いのか……？"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["……実は私も、逃げ足には自信があるのよね。"])
+    ShowTextAttributes(["magatu_fc1", 3, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["まったく、若人達は元気よのう。"])
+    ShowText(["年寄りにはしんどいぞ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["フルビュア達に、追いかけてくる気配はない。"])
+    ShowText(["ミュゼットと牽制し合い、僕達は眼中にないのだろう。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["これから、どうするの……？"])
+    ShowText(["同盟者、思った以上に多いみたいだけど。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["正直、甘く見ていたのう……"])
+    ShowText(["敵側の布陣、尋常ではないぞ。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["結局、ゲートの位置も聞きそびれたしな。"])
+    ShowText(["あてもなく探す余裕など、もはやあるまい。"])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["いったん、退いた方がいい……ってことか？"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["うむ、明らかに敵側を過小評価しておった。"])
+    ShowText(["これ以上、城内をうろつくのは危険すぎる。"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラットは、マガツに賛同しているようだ。"])
+    ShowText(["他の者も、反対の様子は見られない。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["仲間を揃えて、作戦も立てて……"])
+    ShowText(["準備してから、また来よう。"])
+    ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["……そうだな、いったん魔城から撤退しよう。"])
+    ShowText(["このままじゃ、間違いなく全滅――"])
+    Wait([30])
+    FadeoutBGM([1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowAnimation([17, 542, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([60])
+    PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_myuska_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["あはっ、キミ達、こんなとこにいたんだ……"])
+    ShowText(["ねぇ、あたしと遊んでよぉ……♪"])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["まさか……ミュスカ！？"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([19, 542, false])
+    Wait([60])
+    ControlSwitches([32, 32, 0])
+    Wait([45])
+    ShowPicture([5, "80_myuska_st11", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_nemea_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["nemea_fc1", 0, 0, 2])
+    ShowText(["【ネメア】"])
+    ShowText(["あらあら、魔城に侵入していたの？"])
+    ShowText(["やっぱり、あなた達は侮れないわねぇ……♡"])
+    ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ネメアまで……！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([30])
+    ShowAnimation([20, 542, false])
+    Wait([60])
+    ControlSwitches([33, 33, 0])
+    Wait([45])
+    ShowPicture([5, "80_myuska_st11", 0, 0, -200, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_nemea_st01", 0, 0, 15, 0, 100, 100, 0, 0])
+    ShowPicture([7, "80_vinum_st01", 0, 0, 250, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 15, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([7, nil, 0, 0, 250, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["vinum_fc1", 0, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["逃げる算段をしておるようじゃが……"])
+    ShowText(["さて、この状況、どうやって逃げるつもりかや？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["正直、最も会いたくなかった三人。"])
+    ShowText(["正面からは、とても戦えそうにない――"])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["……みんな、逃げるぞ！"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["戦うよりは、そっちの方が得意！"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["はい、私もです！"])
+    ShowTextAttributes(["myuska_fc1", 6, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["あははっ、鬼ごっこかなぁ？"])
+    ShowText(["ほぉら……捕まえて食べちゃうよぉ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ここで捕まったら終わりだ。"])
+    ShowText(["なんとしても、逃げ延びなければ――"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Powerup\", @pitch=100, @volume=80)"])
+    PlayBGM(["RPG::BGM(@name=\"kiki1\", @volume=100, @pitch=100)"])
+    ChangePlayerFollowers([1])
+    ShowTextAttributes(["", 0, 1, 1])
+    ShowText(["追いかけてくるミュスカ達から逃げ切れ！"])
+    ShowText(["捕まってしまうとゲームオーバーだ！"])
+    Wait([30])
+    ControlVariables([1208, 1208, 0, 0, 9])
+    ControlSwitches([89, 89, 0])
+    ChangeSaveAccess([0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_nemea_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["nemea_fc1", 1, 0, 2])
+    ShowText(["【ネメア】"])
+    ShowText(["うふふっ……捕まえたわよ♡"])
+    PlaySE(["RPG::SE(@name=\"Down1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ネメアに捕まってしまった……"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_nemea_st06", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["nemea_fc1", 5, 0, 2])
+    ShowText(["【ネメア】"])
+    ShowText(["怖くないわよ、白念君……"])
+    ShowText(["お姉さんが、優しく逝かせてあげるから……♡"])
+    ShowTextAttributes(["byakunen_fc2", 7, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["や、やめ――わぁぁっ！！"])
+    FadeoutScreen([])
+    ErasePicture([5])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["byakunen_fc2", 6, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["ぁ……ぁぁ……"])
+    ShowTextAttributes(["nemea_fc1", 5, 0, 2])
+    ShowText(["【ネメア】"])
+    ShowText(["うふふっ、美味しかったわ……♡"])
+    FadeoutBGM([1])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["・・・・・・・・"])
+    CallCommonEvent([2999])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_vinum_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["vinum_fc1", 0, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["くふふっ……もう逃げられんのう。"])
+    PlaySE(["RPG::SE(@name=\"Down1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ヴィヌムに捕まってしまった……"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_vinum_st05", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["vinum_fc1", 4, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["知っておるか？"])
+    ShowText(["魔導師の精は、実に美味くてのう……"])
+    ShowTextAttributes(["lawrat_fc1", 1, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["…………！！"])
+    FadeoutScreen([])
+    ErasePicture([5])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["lawrat_fc1", 1, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["vinum_fc1", 4, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["くふふっ……魔導師食らいはやめられん。"])
+    ShowText(["儂の世界では、すっかり見かけなくなったからのう。"])
+    FadeoutBGM([1])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["・・・・・・・・"])
+    CallCommonEvent([2999])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])

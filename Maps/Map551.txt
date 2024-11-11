@@ -1,0 +1,870 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 54, 8, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 30, 8, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 11, 56, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 25, 56, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 12, 24, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 24, 24, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 48, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 48, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 48, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 16, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 16, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 551, 18, 16, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 188, 12, 13, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 188, 12, 13, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 188, 12, 13, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エディナ】"])
+    ShowText(["ああ、ハインリヒ様。"])
+    ShowText(["今はいずこの地におられるのでしょう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エディナ】"])
+    ShowText(["……これは失礼いたしました。"])
+    ShowText(["レミナの王女、エディナと申します。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エディナ】"])
+    ShowText(["あなたの目、ハインリヒさまと同じ色をしていますね。"])
+    ShowText(["とても不思議な、深い湖のような……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エディナ】"])
+    ShowText(["しかし、なぜでしょう……"])
+    ShowText(["あなたも立派な方であるはずなのに、少しも胸がときめきません。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エディナ】"])
+    ShowText(["あっ、失礼……！"])
+    ShowText(["私ったら、なんとひどい事を……！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……どこか、ルカと匂いが似ている気がするな。"])
+      ShowText(["もしかして、血縁か？"])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["するとルカは、レミナ王家の血を引く王族……"])
+      ShowText(["いや、まさかな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それは当然でしょう……近親相姦を防ぐため、"])
+      ShowText(["生物は遺伝子の近い者を本能的に性的対象から除外するのです。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["勇者ハインリヒとエディナ姫の間に出来た息子が、ルカの祖先。"])
+      ShowText(["確か25代前の先祖にあたるのでしたか。"])
+      ConditionalBranch([1, 1142, 0, 62, 2])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["えっ！？　じゃあルカは、レミナ王族の血を引いてるの！？"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["そ、そうだったの！？"])
+          ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["ええ……地上に唯一残る、レミナ王家の末裔です。"])
+          ShowText(["その事を知る者は、もはや地上にはいませんが。"])
+          ShowTextAttributes(["sonia_fc2", 0, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["父方は、伝説の勇者に滅びた王家の末裔……"])
+          ShowText(["母方は、最上位の天使……"])
+          ShowTextAttributes(["sonia_fc1", 7, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["……ルカって、ひょっとしてすごい血統なの？"])
+          ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["ええ、もちろん。"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ConditionalBranch([0, 5, 0])
+        ControlSelfSwitch(["A", 0])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["……ご機嫌麗しく存じます、姫様。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【エディナ】"])
+        ShowText(["ハ、ハインリヒ様……！？"])
+        ShowText(["よかった、ご無事で……"])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["はい、見ての通り無事です。"])
+        ConditionalBranch([1, 1142, 0, 62, 2])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["もうちょっと、なんていうか……"])
+            ShowText(["言い方ってものがあると思うんだけど。"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【エディナ】"])
+        ShowText(["ハインリヒ様のご無事を願い、この蒼国晶を差し上げます。"])
+        ShowText(["これは、代々王家に伝わる宝石でして……"])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["そのような大事なもの、受け取れません。"])
+        ShowText(["私は勇者、いつどこで力尽きるか分からない身なのです。"])
+        ConditionalBranch([1, 1142, 0, 62, 2])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["うわぁ、にぶい……"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【エディナ】"])
+        ShowText(["ですから、これを返しに必ず私の元に戻ってくるようにと……"])
+        ShowTextAttributes(["heinrich_fc1", 1, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["それなら、最初から私に渡す必要はないですよ。"])
+        ShowText(["どうぞ、その蒼国晶は姫のお手元に……"])
+        ConditionalBranch([1, 1142, 0, 62, 2])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["ラブラブ光線、乱反射……"])
+            ShowText(["このアビリティはルカも持ってるよね。"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【エディナ】"])
+        ShowText(["この蒼国晶をお持ちなさい、勇者ハインリヒ！"])
+        ShowText(["戻らない事があれば、地獄の果てまで追いますよ！"])
+        ShowTextAttributes(["heinrich_fc1", 2, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["た、確かに仰せ仕りました……"])
+        ConditionalBranch([1, 1142, 0, 62, 2])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["姫様、強っ！"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【レミナ王】"])
+    ShowText(["勇者よ……魔の大陸まで、よくぞ来た。"])
+    ShowText(["これから魔王城に乗り込むのか？"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王】"])
+      ShowText(["勇者達は、みなそう答えるが……"])
+      ShowText(["ほとんどの者は、すでに先に進むことを諦めておる。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王】"])
+      ShowText(["この魔の大陸で強大な魔物と直面し、多くが戦意を失うのだ。"])
+      ShowText(["しかしお主の、闘志みなぎる目……そのような勇者とは異なるようだな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王】"])
+      ShowText(["それに、どこか……"])
+      ShowText(["お主の瞳は、我が娘のものに似ておるな。"])
+      ConditionalBranch([2, "B", 1])
+        ControlSelfSwitch(["B", 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["勇者よ、これを授けよう。"])
+        ShowText(["お主の旅の助けになるだろう。"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeItems([622, 0, 0, 1])
+        ControlSwitches([2311, 2311, 0])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 1, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["これは、王家に伝わる最上級職への転職アイテムのひとつ……"])
+          ShowText(["これで戦士系の最上級職に就けるな。"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["これは、王家に伝わる最上級職への転職アイテムのひとつ……"])
+          ShowText(["これで戦士系の最上級職に就けますね。"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["でも、いいんですか？"])
+        ShowText(["僕よりも、ハインリヒに渡した方が……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["これは、ただの予感だが……"])
+        ShowText(["お主は、ハインリヒよりももっと大きな宿命を背負っている気がするのだ。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["では行くがよい、娘によく似た目をした勇者よ。"])
+        ShowText(["お主にイリアス様のご加護があらん事を。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "いいえ"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王】"])
+      ShowText(["そうか……正直によく申してくれた。"])
+      ShowText(["卑下せずとも良い、ここまで来るだけでも大変な偉業なのだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王】"])
+      ShowText(["ここで剣を置き、静かな余生を送るが良い……"])
+      ShowText(["……妙だな、お主の目はそうは言っておらんが。"])
+      Empty([])
+
+    ChoicesEnd([])
+    ConditionalBranch([2, "A", 1])
+      ConditionalBranch([0, 5, 0])
+        ControlSelfSwitch(["A", 0])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["……ご機嫌麗しく存じます、陛下。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["おお、ハインリヒではないか！"])
+        ShowText(["どうやら、冒険は順調のようだな。"])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["ええ、お陰様で……"])
+        ShowText(["魔王城まで、あと一歩と迫っております。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["お主が魔王を討った暁には……"])
+        ShowText(["我が娘エディナの婿として迎えよう！"])
+        ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["いけません、陛下。"])
+        ShowText(["エディナ姫のお心も無視し、そのようなお話を進めるなど……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["む、むむっ……"])
+        ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["エディナ姫は景品ではありません。"])
+        ShowText(["あの方ご自身が見初めた男性と結ばれるべきと考えます。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王】"])
+        ShowText(["も、申し訳ない……"])
+        ShowText(["すまんエディナ……この勇者、鈍すぎるようだ……"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc1", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["外堀埋めてもダメだこりゃ。"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["王に謁見されるならば、正面の階段を上がって下さい。"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["王はいつでも、旅の勇者にお会いになられます。"])
+    ShowText(["その多くは、記念に王の顔を見てから剣を置く者達ですが……"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士長】"])
+    ShowText(["ぶしつけな話だが……君に闘志は残っているか？"])
+    ShowText(["それとも、リタイア組か？"])
+    ShowChoices([["戦い続ける", "リタイア組だ"], 0])
+    When([0, "戦い続ける"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["ふむ……確かに、闘志に満ちた目だ。"])
+      ShowText(["あのハインリヒの目を思い出すな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["実は私は、ハインリヒとはサン・イリアで会っているのだ。"])
+      ShowText(["我が王のお供として、世界首脳会議に出向いた時にな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["そこを襲撃してきたのが、黒の三貴の一人である黒華。"])
+      ShowText(["迎え撃つは、たまたまその場にいた無名の勇者ハインリヒ――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["後は言わずとも分かろう。"])
+      ShowText(["その戦いで、ハインリヒは世界に名を轟かせたのだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["むっ、何の話だったかな……"])
+      ShowText(["そうだ、お主の目はその時のハインリヒの目とそっくりだという事だ。"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["538"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["なんだか、出にくい流れだね……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["おや、これはお恥ずかしい……"])
+      ShowText(["あなたも同行していたのですね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "リタイア組だ"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["そうか……恥じる必要はない、長い旅路をよく戦い抜いた。"])
+      ShowText(["それはそれとして、これからのあてはおありかな？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["我が城では、常に兵士を募集している。"])
+      ShowText(["レミナ兵の半分以上は、旅をリタイアした冒険者達なのだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士長】"])
+      ShowText(["戻れる場所があれば良いが……そのあてもない旅人も多いからな。"])
+      ShowText(["困ったときは、レミナを頼られよ。"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["俺達の女神であったエディナ姫は、ハインリヒに夢中……"])
+    ShowText(["まあ、あんな活躍を見せられれば仕方ないよな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["あの会議襲撃の場にいた俺でさえ、ハインリヒの無双っぷりにハートドキドキ。"])
+    ShowText(["俺の尻でいいなら、貸してもいいくらいだぜ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["538"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["お尻……？"])
+    ShowText(["別に、貸してほしくはないけれど……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["ほ、本人！？　こりゃ失礼！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["……ぽっ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["エディナ姫……ああエディナ姫、エディナ姫……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["この町も今は平和だが、備えあれば憂い無し。"])
+    ShowText(["世界各国が魔王軍の攻撃に見舞われてること、忘れちゃいないよ。"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["この町に住む魔物は多いんだけど、兵士になりたがる奴はいないんだよな。"])
+    ShowText(["やっぱ自由気ままな連中だから、規律が嫌いなんだろうか……"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["レミナ王は、引退した勇者の生活支援も行っておられます。"])
+    ShowText(["あなたも万一お困りならば、当方の手続き所にどうぞ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["538"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["僕達には、縁のない話だね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["エディナ姫は、王の一人娘。"])
+    ShowText(["唯一の王位継承候補者であり、可憐で柔和なお人柄が市民にも大人気です。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["そのお心をどんな男が射止めるのかも、関心の的でして……"])
+    ShowText(["よほどの男性ではないと、市民達は納得しないでしょうね。"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["市内に魔物が多いと、やはりトラブルも多い。"])
+    ShowText(["そう深刻なものはないが、些細ないがみ合いは絶えず起きているのだ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc1", 0, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["人と魔物が共に暮らす以上、それは仕方ないわ。"])
+    ShowText(["重要なのは、決定的な対立に至らせない事ね。"])
+    ExitEventProcessing([])
+    Label(["530"])
+    ShowTextAttributes(["sara_fc4", 0, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["人と魔物が共に暮らす以上、それは仕方ないわ……"])
+    ShowText(["重要なのは、決定的な対立に至らせない事よね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["こちらは牢獄です。"])
+    ShowText(["面会は自由ですが、見物して楽しいものでもありませんよ。"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["この次の瞬間に、魔王軍の大規模な攻撃があってもおかしくありません。"])
+    ShowText(["市街の避難計画など、万全の備えを取っています。"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【レミナ王妃】"])
+    ShowText(["あなたの、その目……その雰囲気……"])
+    ShowText(["もしや、レミナ王族の者ですか？"])
+    ShowChoices([["その通りです", "違います"], 2])
+    When([0, "その通りです"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王妃】"])
+      ShowText(["いえ、そんなはずはありません。"])
+      ShowText(["レミナ王家の血を引く者は少なく、それゆえ全て把握しています。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王妃】"])
+      ShowText(["もしや、どこかで落とし胤が……"])
+      ShowText(["いえ、いらぬ詮索でした。忘れましょう。"])
+      Empty([])
+
+    When([1, "違います"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【レミナ王妃】"])
+      ShowText(["もちろん、そうですね。"])
+      ShowText(["私の思い過ごしだったようです。"])
+      Empty([])
+
+    ChoicesEnd([])
+    ConditionalBranch([2, "A", 1])
+      ConditionalBranch([0, 5, 0])
+        ControlSelfSwitch(["A", 0])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["……ご機嫌麗しく存じます、王妃様。"])
+        ShowText(["お目に掛かるのは、あの会議での一件以来ですね。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王妃】"])
+        ShowText(["おや、勇者ハインリヒ……"])
+        ShowText(["私などに顔を見せるより、娘に顔を見せに行って下さいませ。"])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["そうはおっしゃいますが……"])
+        ShowText(["王女様にいらぬ噂が立ってしまう事は控えたいので。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【レミナ王妃】"])
+        ShowText(["まったく、朴念仁ねぇ……"])
+        ShowText(["エディナも苦労しそうですわ。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【牢番】"])
+    ShowText(["こちらは牢獄です。"])
+    ShowText(["いずれも微罪、数日こらしめる程度ですが。"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【旅の勇者】"])
+    ShowText(["酔って暴れてしまった、つくづく恥ずかしい……"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【下着泥棒】"])
+    ShowText(["サキュバスの下着を盗んだのが運の尽きだぜ……"])
+    ShowText(["うっかり匂いを嗅いで、あえなく恍惚状態のままお縄だ。"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["succubuses_fc2", 2, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["ちょっと犯して、サイフ頂いちゃっただけでしょ～！"])
+    ShowText(["どうして閉じ込めちゃうのよ、人でなし～！"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["エディナ姫は、王の一人娘。"])
+    ShowText(["唯一の王位継承候補者であり、可憐で柔和なお人柄が市民にも大人気です。"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["謁見の間です、失礼のないように。"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["謁見の間です、失礼のないように。"])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["この世に存在する王家は四つ……"])
+    ShowText(["ゴルド王家、ノア王家、サバサ王家、そしてレミナ王家です。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["サン・イリアを治める王は、信仰の盟主ですので……"])
+    ShowText(["特定の王家の者ではないのですよ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["531"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["うむ……"])
+    ShowText(["サン・イリア王は、大司教の中から投票で選ばれるのだ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["黒のアリスには、妹がいるそうです。"])
+    ShowText(["世界を支配しようという姉の野望に反発しているとか……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["45"])
+    ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["うふふっ……"])
+    ExitEventProcessing([])
+    Label(["538"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["その話は、僕も聞いた。"])
+    ShowText(["魔王の妹を支持する魔物達に、何度か助けられた事もあってね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["魔王城に行って、戻ってきた勇者はいません。"])
+    ShowText(["友好的な魔物からの情報も得られず、城内の様子は謎に包まれているのです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["538"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["気合いを入れなくちゃいけないね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["エディナ姫、いい匂いがする……"])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["異常、ありません！"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([168, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,654 @@
+Display Name = "グロリア号"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 478, 12, 32, 0, 0])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は閉ざされている……"])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ConditionalBranch([1, 836, 0, 2, 1])
+      ConditionalBranch([0, 1585, 1])
+        ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+        ShowText(["【グロリア】"])
+        ShowText(["海賊稼業も飽きてきたねぇ……"])
+        ShowText(["あんた、養ってくれるかい？"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_kaizoku3_fc1", 0, 0, 2])
+          ShowText(["【グロリア】"])
+          ShowText(["それじゃあ、よろしく頼むよ。"])
+          ShowText(["さっそく今晩は宴といくかねぇ……"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(585)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["グロリアが仲間に加わった！"])
+          Wait([60])
+          ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+          ShowText(["【グロリア】"])
+          ShowText(["それと、これを受け取りな。"])
+          ShowText(["手に入れたのは良いものの、あたしには少しばかり重くてね……"])
+          PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+          ChangeItems([633, 0, 0, 1])
+          ConditionalBranch([0, 2148, 0])
+            ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+            ShowText(["【たつこ】"])
+            ShowText(["あたしも海賊大将に出世できるのです！"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 2149, 0])
+            ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+            ShowText(["【ボニー】"])
+            ShowText(["おおっ！"])
+            ShowText(["これであたしも、海賊王だ！"])
+            Empty([])
+          BranchEnd([])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+          ShowText(["【グロリア】"])
+          ShowText(["そう上手くはいかないか……"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7351])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ConditionalBranch([1, 834, 0, 2, 1])
+      ConditionalBranch([0, 1583, 1])
+        ShowTextAttributes(["mob_kaizoku1_fc1", 0, 0, 2])
+        ShowText(["【アリアドネ】"])
+        ShowText(["なぁ、あたしも連れて行ってくれよ！"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_kaizoku1_fc1", 1, 0, 2])
+          ShowText(["【アリアドネ】"])
+          ShowText(["よっしゃ、暴れるぜ～！"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(583)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["アリアドネが仲間に加わった！"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_kaizoku1_fc1", 0, 0, 2])
+          ShowText(["【アリアドネ】"])
+          ShowText(["なんだよ、ケチだな～！"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7331])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ConditionalBranch([1, 835, 0, 2, 1])
+      ConditionalBranch([0, 1584, 1])
+        ShowTextAttributes(["mob_kaizoku2_fc1", 0, 0, 2])
+        ShowText(["【クレスタ】"])
+        ShowText(["ねぇ、あたしを連れて行かない？"])
+        ShowText(["射撃の腕は、一流だよっ！"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_kaizoku2_fc1", 0, 0, 2])
+          ShowText(["【クレスタ】"])
+          ShowText(["百発百中の腕、見せてあげる♪"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(584)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["クレスタが仲間に加わった！"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_kaizoku2_fc1", 1, 0, 2])
+          ShowText(["【クレスタ】"])
+          ShowText(["ふーん、そうなんだ……"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7341])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowPicture([5, "80_mob_kaizoku3_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+    ShowText(["【グロリア】"])
+    ShowText(["ふふっ、よく来たねぇ……"])
+    ShowText(["あたしがグロリア海賊団の団長、グロリアさ。"])
+    ShowPicture([5, "80_mob_kaizoku1_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_mob_kaizoku2_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["mob_kaizoku1_fc1", 0, 0, 2])
+    ShowText(["【アリアドネ】"])
+    ShowText(["そして、あたしはアリアドネ！"])
+    ShowText(["グロリア海賊団の突撃隊長だぜ！"])
+    ShowTextAttributes(["mob_kaizoku2_fc1", 0, 0, 2])
+    ShowText(["【クレスタ】"])
+    ShowText(["私はクレスタ、よろしくね。"])
+    ShowText(["これでも砲術長だよっ！"])
+    ErasePicture([6])
+    ShowPicture([5, "80_mob_kaizoku3_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ConditionalBranch([0, 2148, 0])
+      ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+      ShowText(["【たつこ】"])
+      ShowText(["グロリア海賊団、潔くお縄につくのです！"])
+      ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
+      ShowText(["【ステイシー】"])
+      ShowText(["こちらの方が、戦力は上です。"])
+      ShowText(["大人しく降伏した方が良いですよ……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2149, 0])
+      ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["久しぶりだな、グロリア！"])
+      ShowText(["しかし今のおさかな海賊団は、かつての我等とは全く違うぞ！"])
+      ShowTextAttributes(["ashel_fc1", 1, 0, 2])
+      ShowText(["【アシェル】"])
+      ShowText(["世界を股にかけた冒険で、あたし達は格段に腕を上げたんだ。"])
+      ShowText(["はっきり言って、今さらあんた達には負けたりしないよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+    ShowText(["【グロリア】"])
+    ShowText(["確かに、あたし達はしょせん人間だ。"])
+    ShowText(["あんた達とまともにぶつかって、勝てる道理はないねぇ。"])
+    ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+    ShowText(["【グロリア】"])
+    ShowText(["……そこで、正々堂々とバトルファックで決闘さ。"])
+    ShowText(["相手は、そっちの勇者君を指名するよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……えっ！？　僕！？"])
+    ShowPicture([5, "80_mob_kaizoku1_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_mob_kaizoku2_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["mob_kaizoku1_fc1", 0, 0, 2])
+    ShowText(["【アリアドネ】"])
+    ShowText(["まずは、あたし達と勝負だぜ！"])
+    ShowTextAttributes(["mob_kaizoku2_fc1", 0, 0, 2])
+    ShowText(["【クレスタ】"])
+    ShowText(["アリアドネと私を打ち破れば、グロリア団長に挑戦できるんだ。"])
+    ShowText(["真打ちは、やっぱり一番最後だよね。"])
+    ErasePicture([6])
+    ShowPicture([5, "80_mob_kaizoku3_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+    ShowText(["【グロリア】"])
+    ShowText(["さあ、どうする？"])
+    ShowText(["私達とバトルファックで勝負するかい……？"])
+    ShowChoices([["受けて立つ", "断る"], 0])
+    When([0, "受けて立つ"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["分かった、受けて立つ！"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["……………………"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "断る"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["断る！"])
+      ConditionalBranch([0, 2148, 0])
+        ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+        ShowText(["【グロリア】"])
+        ShowText(["なら、ハーピーの羽根で逃走するまでさ。"])
+        ShowText(["再びあたし達の船を見つけるまで、どのくらいかかるだろうね？"])
+        ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+        ShowText(["【たつこ】"])
+        ShowText(["それは困るのです……"])
+        ShowText(["バトルファック勝負に応じた方が良いのです。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 2149, 0])
+        ShowTextAttributes(["mob_kaizoku3_fc1", 1, 0, 2])
+        ShowText(["【グロリア】"])
+        ShowText(["おさかな海賊団は、あたし達の挑戦から逃げるわけだね……"])
+        ShowText(["こりゃ、ずいぶんと名を落とす事になるねぇ。"])
+        ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+        ShowText(["【ボニー】"])
+        ShowText(["そ、それはまずい！"])
+        ShowText(["ルカよ、バトルファック勝負に応じるのだ！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowTextAttributes(["mob_kaizoku3_fc1", 0, 0, 2])
+    ShowText(["【グロリア】"])
+    ShowText(["そう来なくっちゃねぇ……"])
+    ShowText(["それじゃあ、まずはアリアドネとクレスタが相手をするよ！"])
+    ShowPicture([5, "80_mob_kaizoku1_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_mob_kaizoku2_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["mob_kaizoku1_fc1", 0, 0, 2])
+    ShowText(["【アリアドネ】"])
+    ShowText(["バトルファックなら、負ける気がしないぜ！"])
+    ShowText(["噂の勇者、あたしのテクニックでイかせてやるよ！"])
+    ShowTextAttributes(["mob_kaizoku2_fc1", 0, 0, 2])
+    ShowText(["【クレスタ】"])
+    ShowText(["お手柔らかにお願いね～！"])
+    ShowText(["まあ、すぐイっちゃうだろうけど……"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["陸に戻る？"])
+    ShowChoices([["戻らない", "戻る"], 1])
+    When([0, "戻らない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "戻る"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+      Wait([60])
+      TransferPlayer([0, 2, 335, 240, 4, 2])
+      SetVehicleLocation([1, 0, 2, 334, 240])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["陸に戻るのですか？"])
+    ShowChoices([["戻らない", "戻る"], 1])
+    When([0, "戻らない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "戻る"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+      Wait([60])
+      TransferPlayer([0, 2, 335, 240, 4, 2])
+      SetVehicleLocation([1, 0, 2, 334, 240])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])

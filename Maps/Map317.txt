@@ -1,0 +1,113 @@
+Display Name = "ヘルゴンドのほこら B3F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【カレン】"])
+    ShowText(["こんな場所に、マルケルスを葬るなんて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["仕方ないさ、あいつを待つ家族はいねぇ。"])
+    ShowText(["旅先に骨を埋めるのが、マルケルスの望みだったんだ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マーリン】"])
+    ShowText(["本人の望みとは言え、寂しいものですね。"])
+    ShowText(["ほこらの地下に、置き去りなんて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["これで、俺達の旅も終わりだ。"])
+    ShowText(["悪くなかったよな、マルケルス――"])
+    FadeoutBGM([1])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShotBalloonIcon([2, 1, false])
+    ShotBalloonIcon([3, 1, false])
+    ShotBalloonIcon([4, 1, false])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マルケルス】"])
+    ShowText(["みんな……ここで、何をしてるんだ？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["おい、まさか――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【カレン】"])
+    ShowText(["えっ、マルケルス……？"])
+    ShowText(["でも、そんな――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マルケルス】"])
+    ShowText(["……ここ数日の記憶がないんだ。"])
+    ShowText(["このほこらで泊まって、その後……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マルケルス】"])
+    ShowText(["くっ、記憶がぼんやりして……"])
+    ShowText(["それに、その墓は誰の……？"])
+    Wait([30])
+    TintScreen(["Tone(@red=34.0, @green=-34.0, @blue=-68.0, @gray=170.0)", 30, true])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["……マルケルスは、ひょっこり戻ってきた。"])
+    ShowText(["確かに死んだはずのあいつを埋葬した、その直後にな。"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["何がどうなってるのか、さっぱり分からなかったぜ。"])
+    ShowText(["そいつは偽物なんかじゃない、確かにマルケルス本人だった。"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["結局、俺達は――"])
+    ShowText(["マルケルスは死んじゃいなかった、そう思う事にしたんだ。"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["だとすりゃ、その墓には誰も埋まってないはずだが……"])
+    ShowText(["そんなの、怖くて確かめる事なんて出来なかった。"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["もし墓を掘り返して、マルケルスの屍が出てきたなら――"])
+    ShowText(["後から現れたあいつは、いったい何者なんだ？"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["こうして、俺達の旅は終わったのさ。"])
+    ShowText(["あのマルケルスは別人じゃないか――そんな疑念を抱えてな。"])
+    FadeoutScreen([])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 315, 16, 11, 2, 2])
+    Wait([120])
+    ControlSwitches([31, 31, 0])
+    ControlSwitches([32, 32, 0])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])

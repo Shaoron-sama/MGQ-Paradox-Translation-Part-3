@@ -1,0 +1,27 @@
+CommonEvent 653
+Name = "イベント：ねこまた"
+
+  999([653])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 432, 0])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["【ねこまた】"])
+    ShowText(["にゃっ♪　にゃっ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ねこまたはゴロンゴロンしている……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+  ShowText(["【ねこまた】"])
+  ShowText(["にゃ～♪　ぺろぺろ……"])
+  ControlSwitches([432, 432, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ねこまたから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、獣技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

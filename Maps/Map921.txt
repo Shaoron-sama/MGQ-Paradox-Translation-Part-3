@@ -1,0 +1,202 @@
+Display Name = "魔城トゥーロマンサ"
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 0, 0])
+      ControlVariables([1228, 1228, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 50, 116, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 0, 0])
+      ControlVariables([1228, 1228, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 50, 116, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 0, 0])
+      ControlVariables([1228, 1228, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 50, 116, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1216, 0, 1, 1])
+      ControlSwitches([100, 100, 1])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 21, 61, 3, 2, 1])
+      Empty([])
+
+    Else([])
+      ControlSwitches([100, 100, 1])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 2, 328, 187, 2, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    FadeinScreen([])
+    Wait([60])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["中が壊れてるのは分かるけど……"])
+    ShowText(["なんだか、床や壁がおかしくない？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["空間侵蝕が起きている……"])
+      ShowText(["きっと、ゲートの影響だな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["空間侵蝕が起きていますね……"])
+      ShowText(["おそらく、ゲートの影響でしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["「夜の国」が、魔城自体をも蝕んでいるのか……"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowPicture([5, "80_syesta_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達が、異空間と化した魔城に足を踏み入れた時だった。"])
+    ShowText(["その眼前に、異様な存在が立ちはだかる――"])
+    ShowTextAttributes(["syesta_fc1", 0, 0, 2])
+    ShowText(["【シェスタ】"])
+    ShowText(["特定断界反応、検出……"])
+    ShowText(["空間自壊プロセスを実行開始……"])
+    ShowTextAttributes(["magatu_fc1", 3, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["なんなのだ、この薄ら寒い怪物は……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まさか……アポトーシス！？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["なぜここに、アポトーシスが発生している……？"])
+      ShowText(["とにかく、倒すぞ！！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なぜここに、アポトーシスが発生しているのです……？"])
+      ShowText(["とにかく、駆除しましょう！！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    BattleProcessing([0, 1403, false, false])
+    ControlSwitches([31, 31, 1])
+    ControlVariables([1212, 1212, 0, 0, 1])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["どういう事だ……"])
+      ShowText(["なぜ、アポトーシスがここに？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いったい、なぜここにアポトーシスか……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["この城そのものが、大規模な時空干渉行為だと考えれば……"])
+    ShowText(["対処システムが発動するのは道理かもしれません。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["とにかく、この魔城内にはアポトーシスも出没するようだ。"])
+    ShowText(["進撃の障害にならなければいいのだが――"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["なんだか、ひどく不気味なモンスターね。"])
+    ShowText(["この世界、こんなのがゴロゴロしてるの……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ゴロゴロはしていないが……"])
+      ShowText(["まあ、割としょっちゅう見るな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ゴロゴロはしていませんが……"])
+      ShowText(["悲しいかな、割と見る機会は多いですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["でも、物怖じしてはいられない。"])
+    ShowText(["さあ、奥へ進もう！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["目指す先は、白兎の眠る魔力供給室だ。"])
+    ShowText(["そこで白兎を起こし、ゲートを破壊すれば僕達の勝利。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかし、敵が黙って見ているはずもない。"])
+    ShowText(["夢魔や同盟者、アポトーシスまでが立ち塞がってくるだろう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["さらに、避けようのない「夢の主」との決戦――"])
+    ShowText(["乗り越えるべき壁は大きいが、勝たねば未来はないのだ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

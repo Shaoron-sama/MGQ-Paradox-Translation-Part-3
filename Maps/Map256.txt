@@ -1,0 +1,928 @@
+Display Name = "イリアス大陸南の大穴"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 255, 11, 13, 2, 1])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([1, 1009, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あれ、外……？"])
+      ShowText(["また元のところに戻ってきちゃったのか？"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["でも、なんだか変な感じじゃない？"])
+        ShowText(["調査団もいないし、テントもないし……"])
+        ConditionalBranch([4, 66, 0])
+          ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+          ShowText(["【ヴァニラ】"])
+          ShowText(["絶対ヘンだよぉ……"])
+          ShowText(["みんな、どこに行ったの……！？"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["でも、なにか妙な感じだね……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["確かに、妙だ……"])
+        ShowText(["周囲が妙に荒廃しているし、雰囲気が違う……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ええ、確かに奇妙な雰囲気です。"])
+        ShowText(["周囲はあまりにも荒廃しすぎていますね……"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([1009, 1009, 0, 0, 6])
+      SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      SetEventLocation([0, 0, 13, 5, 0])
+      PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+      ShowText(["【白兎】"])
+      ShowText(["ばばーん！"])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 2, 0, 2])
+        ShowText(["【ライム】"])
+        ShowText(["わぁっ！　でた！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["こんな所まで追いかけてきたの？"])
+    ShowText(["君達も、がんばるねー。"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["何を白々しい……"])
+    ShowText(["意図的に、ここまで誘導したのだろう？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["正直、ここまで来るかどうか五分五分だったんだけどね。"])
+    ShowText(["やっぱりあの扉、開けちゃったかぁ……"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["そうだ……なぜルカは、あの扉を開けることができた？"])
+    ShowText(["あれは、常人には破れないレベルの結界なのだぞ？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["常人には破れない？　そんなレベルじゃないよぉ。"])
+    ShowText(["あの扉を生身で越えるのは、神様だってムリ。"])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["それがなぜ、ルカに出来たのだ！"])
+    ShowText(["こいつが神以上とでも言うのか！　答えろ！"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["もちろん、ルカ君が神の力を持ってるってわけじゃないよ。"])
+    ShowText(["これは、性質の問題かな？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["ルカ君は出生のゴニョゴニョでアレコレだからね。"])
+    ShowText(["次元の扉なんか、簡単に越えていけるんだよ。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["偶発的に扉の向こうに飛ばされるケースはまれにあるけど……"])
+    ShowText(["自分の意志で行けるなんてのは、前代未聞だよね。"])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ええい、分かるように説明しろ！"])
+    ShowText(["このセリフ何度目だ！"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["ボクは導き手であって、説明役じゃないんだ。"])
+    ShowText(["分からないことは、自分で確かめなよ……"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["それじゃあ、バイバイ！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"ooana\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["待て……！"])
+    ShowText(["ぐっ、また逃げられたか……"])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["あのウサギ、ボクより逃げ足が速いよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これじゃあ、キリがないよ。"])
+    ShowText(["追っても追っても逃げられるんじゃ……"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["とは言え、我々には追う以外に道がない。"])
+    ShowText(["今はとりあえず、この周囲を探索するぞ。"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["単に戻ってきたようにも見えるが、どうにも違和感がある。"])
+    ShowText(["この場所は、知っているようで知らない気がするのだ……"])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅーっ！　きゅーっ！"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["おっと、言い忘れ！"])
+    ShowText(["外はとっても怖い連中がうろついてるから、注意してね。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["あいつらはお高くとまってるから、土が嫌いなんだ。"])
+    ShowText(["歩くなら道とか荒れ地とか、土のある場所がオススメだよ。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["それじゃあね～！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlVariables([1009, 1009, 0, 0, 7])
+    PlayBGM(["RPG::BGM(@name=\"ooana\", @volume=100, @pitch=100)"])
+    ConditionalBranch([4, 53, 0])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【ライム】"])
+      ShowText(["また、にげちゃった……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["alice_fc6", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ぐっ、どこまでも馬鹿にしおって……"])
+    ShowText(["まあいい、行くぞ。"])
+    ConditionalBranch([4, 68, 0])
+      ShowTextAttributes(["dragonp_fc1", 2, 0, 2])
+      ShowText(["【パピ】"])
+      ShowText(["なんだか、こわいのだ……"])
+      ShowText(["ウロコがちくちくするのだ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["こんな所まで追いかけてきたの？"])
+    ShowText(["君達も、がんばるねー。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["何をぬけぬけと……"])
+    ShowText(["おおかた、意図的にここまで誘導したのでしょう。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["正直、ここまで来るかどうか五分五分だったんだけどね。"])
+    ShowText(["やっぱりあの扉、開けちゃったかぁ……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["そうです……なぜルカは、あの扉を開けられたのですか？"])
+    ShowText(["あれは、人間などに開けられるはずがありません！"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["何言ってるの、イリアス様。"])
+    ShowText(["ルカが何者の血を引いてるのか知ってるクセに～。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["たとえルシフィナでさえ、あの扉は開けられません。"])
+    ShowText(["そもそも、あの扉は――"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["そうだよねぇ、だって神にだってムリだもん。"])
+    ShowText(["イリアス様、全力のあなただってムリだったでしょ？"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それがなぜ、ルカに出来るのです！"])
+    ShowText(["ここの彼は、私の知っているルカとは違うのですか！？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["ルカ君は、そういう性質持ちなんだよ。"])
+    ShowText(["扉を開けて、自在に行き来できるんだ。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["偶発的に扉の向こうに飛ばされるケースはまれにあるけど……"])
+    ShowText(["自分の意志で行けるなんてのは、前代未聞だよね。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それがなぜかと聞いているのです！"])
+    ShowText(["ルカはなぜ、神にも出来ない事が出来るのですか！？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["ボクは導き手であって、説明役じゃないんだ。"])
+    ShowText(["分からないことは、自分で確かめなよ……"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["それじゃあ、バイバイ！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"ooana\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["あっ、待ちなさい……"])
+    ShowText(["おのれ、またしても逃げられましたか。"])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["あのウサギ、ボクより逃げ足が速いよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これじゃあ、キリがないよ。"])
+    ShowText(["追っても追っても逃げられるんじゃ……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["終わりのないウサギ狩りに、辟易するのは分かります。"])
+    ShowText(["しかし、それが最も真実に近付く手段であるはずです。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["今はとりあえず、この周辺を探索しましょう。"])
+    ShowText(["おそらく、ここは我々の知っている場所ではありません……"])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅーっ！　きゅーっ！"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["おっと、言い忘れ！"])
+    ShowText(["外はとっても怖い連中がうろついてるから、注意してね。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["あいつらはお高くとまってるから、土が嫌いなんだ。"])
+    ShowText(["歩くなら道とか荒れ地とか、土のある場所がオススメだよ。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["高慢で土を嫌う……？"])
+    ShowText(["それは、天使と性質が似ていますね。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["あとイリアス様。"])
+    ShowText(["今のあなたを、天使が見たらどう思う？"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["どうも何もありません。"])
+    ShowText(["女神に服従しない天使が、一人でもいると思いますか？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["でも、今のあなたはちっちゃな天使モドキ。"])
+    ShowText(["イリアス様だって事を、証明なんてできないよね？"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["神を自称する偽物……"])
+    ShowText(["天使達って、そういうのを最も憎むんじゃなかったかな？"])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ま、まさか……"])
+    ShowText(["天使達が、私を分からないなど……"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["それじゃあね～！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_tamamo2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_tamamo2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlVariables([1009, 1009, 0, 0, 7])
+    PlayBGM(["RPG::BGM(@name=\"ooana\", @volume=100, @pitch=100)"])
+    ConditionalBranch([4, 53, 0])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【ライム】"])
+      ShowText(["また、にげちゃった……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["おのれ、ここまで神をコケにするとは……"])
+    ShowText(["まあいいです、行きましょう。"])
+    ConditionalBranch([4, 68, 0])
+      ShowTextAttributes(["dragonp_fc1", 2, 0, 2])
+      ShowText(["【パピ】"])
+      ShowText(["なんだか、こわいのだ……"])
+      ShowText(["ウロコがちくちくするのだ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    CallCommonEvent([314])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 196, 63, 84, 8, 0])
+    Empty([])

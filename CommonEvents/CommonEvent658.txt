@@ -1,0 +1,25 @@
+CommonEvent 658
+Name = "イベント：プリエステス"
+
+  999([658])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 437, 0])
+    ShowTextAttributes(["a_emp_fc1", 0, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["村に帰りたくありません……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["a_emp_fc1", 1, 0, 2])
+  ShowText(["【プリエステス】"])
+  ShowText(["この、不思議な種を体に植えれば……"])
+  ControlSwitches([437, 437, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["プリエステスから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、植物技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

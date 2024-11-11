@@ -1,0 +1,293 @@
+Display Name = "古代神殿跡 B1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 30, 21, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 30, 21, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 30, 21, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 5, 26, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 5, 26, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 5, 26, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([708, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1357, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    CallCommonEvent([317])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["これは……アポトーシスの研究データ？"])
+    ShowText(["間違いありません、アポトーシスを研究した形跡があります。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["アポトーシスだと……！？"])
+      ShowText(["すると、この施設も並行世界絡みだというのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["アポトーシスの研究データ……！？"])
+      ShowText(["では、この施設も並行世界が絡んでいるのですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["アポトーシスの研究データも、ほとんど消されていますが……"])
+    ShowText(["ヒルデと絡んでいる部分だけ、僅かに残っていたんです。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["これも、間違いないようですね……"])
+    ShowText(["ブリュンヒルデは、対アポトーシス用の戦闘マシンです。"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ヒルデが……？"])
+    ShowText(["そうだったの……？"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["聖魔融合炉の使用……"])
+    ShowText(["そしてアポトーシスの体組織も組み込まれている……"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["しかし、結局は研究所ごと破棄された……"])
+    ShowText(["いや、最低限の機能維持はなされていた……？"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ヒルデは捨てられてないよ……"])
+    ShowText(["マスターは言ったの、ヒルデは必ず目を覚ますって……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["世界を滅ぼす者と戦うために目覚める、そう言っていたな。"])
+      ShowText(["なんとも不気味な符合だ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["起動時に言っていましたね、世界を滅ぼす者と戦うと……"])
+      ShowText(["この現状に噛み合いすぎています。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["しかし、ヒルデは純粋な戦闘用とも思えないんですよね……"])
+    ShowText(["戦闘任務が主だとすれば、無駄な機能が多すぎるんです。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["極端に高度な感情機能なんて、戦闘用途なら不要です。"])
+    ShowText(["それに、なぜか生殖機能まで持っている……"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ヒルデ、難しい事は分からない……"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["おまけに、なぜだか頭が悪い……"])
+    ShowText(["ヒルデ、87+65は？"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["えっと……ひゃ、142……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["僕より遅い上に間違えてる……"])
+    ShowText(["152だよ。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["そう、計算能力においてはルカさんにさえ劣る有様。"])
+    ShowText(["2人を比較してみても……では25×13は？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["プロメスティン、ひどく失礼だね……325。"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ヒルデ、かけざん苦手……"])
+    ShowText(["ごさん15、にいちが2……えっと……"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……ルカさん、意外に計算が早いんですね。"])
+    ShowText(["そう言えば、仮にも宿屋を経営していたのでしたか。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……では、8965×964は？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["8642260。"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……えっ？　即答？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ちょ、ちょっと待て！　余より計算早いぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ルカを侮りましたね、プロメスティン……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["そ、それじゃあ……これでどうです！？"])
+    ShowText(["129878627を素因数分解して下さい！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あんまり馬鹿にしないでくれよ。"])
+    ShowText(["いちおう簿記も習ったし、簡単な算数も勉強したんだから……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……101×233×5519かな。"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["こ、これも即答……？"])
+    ShowText(["まさかルカさんに、こんな並外れた能力が……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["まさか、計算に強いドアホだったとは……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["母親の血筋を考えるなら、抜群の頭脳を持っていて当然です。"])
+      ShowText(["ろくに教育を受けてないので、開花はしないでしょうが……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["素因数分解って、なに？"])
+    ShowText(["ヒルデ、分解されるの……？"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……話を元に戻しましょう。"])
+    ShowText(["結局のところ、ヒルデの開発目的は不明です。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["アポトーシスとの戦闘も用途に入っていたようですが……"])
+    ShowText(["どうにも、それだけとも思えないんですよね。"])
+    CallCommonEvent([318])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])

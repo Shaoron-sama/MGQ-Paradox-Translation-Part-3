@@ -1,0 +1,502 @@
+Display Name = "グランドノア城 B2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 855, 20, 10, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 855, 20, 10, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 855, 20, 10, 8, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 872, 3, 37, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 872, 3, 37, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 872, 3, 37, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["なんだか、囚人が次々と姿を消してるんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["どうやら、地下三階に連れて行かれて……"])
+    ShowText(["そこから戻ってきていないんだよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["隣の房の囚人も、昨日連れて行かれた。"])
+    ShowText(["いったい、どうなってるんだ……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["地下に連れて行かれて、戻ってこない囚人達――"])
+    ShowText(["なにか、ひどく嫌な予感がするな。"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["緑髪の女性？"])
+    ShowText(["数日前に、確かにこの前を通ったぜ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["なんか、地下三階に連れて行かれたみたいだな。"])
+    ShowText(["あの娘、政治犯には見えなかったが……"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ControlVariables([1207, 1207, 0, 0, 9])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["地下二階……"])
+    ShowText(["重罪犯達の監獄だな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサは、どう間違っても重罪犯とは縁遠い。"])
+    ShowText(["きっと、なんらかの思惑で通常の囚人から隔離されたのだ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["この階にターサがいるのか……"])
+    ShowText(["それとも、さらに下の階か……"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["うん、君の言う通り。"])
+    ShowText(["囚人達からの情報収集は怠らないようにしよう。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["うるさい、寝かせてくれ……"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["我等はきつね族の傭兵でな。"])
+    ShowText(["この国の看守として、採用されたのだが……"])
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["正直、あまり気が乗らん。"])
+    ShowText(["ここに送られてくる者、みな無罪としか思えん。"])
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["義なき職など、辞するべき。"])
+    ShowText(["現在、退職届を書いていることろだ……"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["高額の報酬に釣られ、看守として雇われたが……"])
+    ShowText(["圧政の手先になる気はなかったぞ。"])
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["これは、さっさと手を切るが吉だな。"])
+    ShowText(["政変に巻き込まれれば、こっちが犯罪者だ。"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["俺は無罪だ、出してくれよ～！"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["kezyorou_fc1", 0, 0, 2])
+    ShowText(["【毛倡妓】"])
+    ShowText(["なんで、あたしが牢に入れられるのかねぇ。"])
+    ShowText(["たかだか五、六人くらいを吸い殺しただけじゃないか。"])
+    ShowTextAttributes(["kezyorou_fc1", 0, 0, 2])
+    ShowText(["【毛倡妓】"])
+    ShowText(["あんた、檻を開けておくれよ。"])
+    ShowText(["もちろん、たっぷり礼はするからさ……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["誰が出すもんか……"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["捕まっちゃった……"])
+    ShowText(["来週、海軍に引き渡しだって。"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["この牢、狭くないか？"])
+    ShowText(["なんでこんなところに押し込まれなきゃならないんだ！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["しかも、隣の奴がめっちゃブツブツ言ってるんだけど！"])
+    ShowText(["怖いよー！　出してくれー！！"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["この余生、牢で過ごさねばならんとは……"])
+    ShowText(["天下の大泥棒「ねずみ小僧」も落ちたものよ。"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【辻斬り侍】"])
+    ShowText(["何人斬ったかなど、覚えておらん。"])
+    ShowText(["全ては刀が命じたのだ、拙者は悪くない……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["どの世界にも、極悪人はいるもんだね……"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["yukionna_fc1", 0, 0, 2])
+    ShowText(["【雪女】"])
+    ShowText(["私は、悪党ではないわ。"])
+    ShowText(["愛する男を凍てつかせ、永遠に私のものにしただけ……"])
+    ShowTextAttributes(["yukionna_fc1", 0, 0, 2])
+    ShowText(["【雪女】"])
+    ShowText(["十五人ほどね……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["とんでもない奴だな……"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([105, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([86, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1585, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1068, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([3, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([22, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([11, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([429, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([414, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["タルの中には、たくさんの食料や薬草が詰まっていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["パーティのHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["タルの中には、たくさんの食料や薬草が詰まっていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["パーティのHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["緑髪の女性？"])
+    ShowText(["数日前に、確かにこの前を通ったぜ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["なんか、地下三階に連れて行かれたみたいだな。"])
+    ShowText(["あの娘、政治犯には見えなかったが……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["地下三階……！？"])
+    ShowText(["まだ下なのか……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["どうやら、地下三階は政治犯用の監獄らしい。"])
+    ShowText(["ターサは、そこに連れて行かれたという。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["地下の最深部で、人目に晒せない儀式をこっそり行う――"])
+    ShowText(["おそらく、そういう事だろう。"])
+    ControlSelfSwitch(["A", 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])

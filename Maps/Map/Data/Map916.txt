@@ -1,0 +1,2006 @@
+Display Name = "グランゴルド"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 193, 234, 153, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlSwitches([2739, 2739, 1])
+    ControlVariables([1002, 1002, 0, 0, 55])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんとか、城の外まで出られたのはいいが――"])
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["絶対に逃がすな！　隊列を組めー！！"])
+    ShowTextAttributes(["berryel_fc1", 0, 0, 2])
+    ShowText(["【ベリエル】"])
+    ShowText(["こちらからは仕掛けてはなりません……"])
+    ShowText(["退路を奪い、数で圧殺するのです……！"])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["すごい数……"])
+    ShowText(["このままじゃ、逃げ道も塞がれちゃうよ！"])
+    ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["いや、陣の展開が遅い場所があるわ……"])
+    ShowText(["防御の薄いところを突き、一気に突破するわよ！"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["こういう時、姉貴は頼りになるな～！"])
+    ConditionalBranch([4, 233, 0])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["リリス三姉妹次女、アスタロト……"])
+      ShowText(["あえて目立とうとはしませんが、智略は超一流のようですね。"])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["はっ、今さら気付いたのか！"])
+      ShowText(["影は薄いけど、アスタロト姉貴は超頭いいんだぜ！"])
+      ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+      ShowText(["【アスタロト】"])
+      ShowText(["別に、影は薄くないわ……"])
+      ShowText(["暴れん坊の妹と凶悪な姉との板挟みにされてるだけよ。"])
+      ErasePicture([5])
+      ErasePicture([6])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 391, 0])
+      ShowTextAttributes(["mefist_fc2", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["リリス三姉妹次女、アスタロト……"])
+      ShowText(["あえて目立とうとはしませんが、智略は超一流のようですね。"])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["はっ、今さら気付いたのか！"])
+      ShowText(["影は薄いけど、アスタロト姉貴は超頭いいんだぜ！"])
+      ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+      ShowText(["【アスタロト】"])
+      ShowText(["別に、影は薄くないわ……"])
+      ShowText(["暴れん坊の妹と凶悪な姉との板挟みにされてるだけよ。"])
+      ErasePicture([5])
+      ErasePicture([6])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["今さらだが……大した戦術眼だな、アスタロトよ。"])
+    ShowText(["この場は、貴様に頼らせてもらおうか。"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["はっ、今さら気付いたのか！"])
+    ShowText(["影は薄いけど、アスタロト姉貴は超頭いいんだぜ！"])
+    ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["別に、影は薄くないわ……"])
+    ShowText(["暴れん坊の妹と凶悪な姉との板挟みにされてるだけよ。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜー！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["右陣の守りは厚い……"])
+    ShowText(["こちらは無理だ、別の場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["城内に逃げ込むなど、この上もない下策！"])
+    ShowText(["サリエラとの挟み撃ちに合うぞ、ドアホめ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 7, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、作戦を聞いていなかったのか！？"])
+    ShowText(["城門に近付くな、一網打尽にされるぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 7, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、作戦を聞いていなかったのか！？"])
+    ShowText(["城門に近付くな、一網打尽にされるぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 7, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、作戦を聞いていなかったのか！？"])
+    ShowText(["城門に近付くな、一網打尽にされるぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    CallCommonEvent([404])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "銃撃アニメターゲット地点"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    CallCommonEvent([404])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    CallCommonEvent([404])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、待て。"])
+    ShowText(["これ以上近付けば、蜂の巣にされるぞ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、待て。"])
+    ShowText(["これ以上近付けば、蜂の巣にされるぞ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、待て。"])
+    ShowText(["これ以上近付けば、蜂の巣にされるぞ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    CallCommonEvent([402])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    CallCommonEvent([402])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 7, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、作戦を聞いていなかったのか！？"])
+    ShowText(["城門に近付くな、一網打尽にされるぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 7, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、作戦を聞いていなかったのか！？"])
+    ShowText(["城門に近付くな、一網打尽にされるぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["来るなら来やがれ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["正面突破は無理だ、守りが堅すぎる！"])
+    ShowText(["もっと守りの弱い場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["来るなら来やがれ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["正面突破は無理だ、守りが堅すぎる！"])
+    ShowText(["もっと守りの弱い場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["来るなら来やがれ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["正面突破は無理だ、守りが堅すぎる！"])
+    ShowText(["もっと守りの弱い場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["来るなら来やがれ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["正面突破は無理だ、守りが堅すぎる！"])
+    ShowText(["もっと守りの弱い場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["来るなら来やがれ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["正面突破は無理だ、守りが堅すぎる！"])
+    ShowText(["もっと守りの弱い場所を狙え！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st05", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["muzukiel_fc1", 2, 0, 2])
+    ShowText(["【ムズキエル】"])
+    ShowText(["展開が遅いですよ、何をやっているのです！？"])
+    ShowTextAttributes(["trooperloid_fc1", 4, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["通路が狭くて、隊列の展開が――"])
+    ShowText(["ちょ、あたしの足を踏んだのは誰だよ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["左陣の展開がもたつき、動きが乱れているようだ……"])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["……ここね、一気に突破するわよ！"])
+    ConditionalBranch([4, 382, 0])
+      ShowTextAttributes(["morrigan_fc1", 4, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["よっしゃ！"])
+      ShowText(["こういう時は、姉貴の指示通りで間違いがないぜ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["trooperloid_fc1", 4, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["まずい、敵が来やがった……！！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    BattleProcessing([0, 1550, false, false])
+    ControlVariables([1172, 1172, 0, 0, 1])
+    ShowTextAttributes(["alice_fc1", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["よし、突破に成功したぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【天使】"])
+    ShowText(["まずい、左陣が抜かれた！"])
+    ShowText(["こうなったら、一気に追撃を――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【天使】"])
+    ShowText(["いや、まず陣形を整えろ！"])
+    ShowText(["このままバラバラに掛かっても、各個撃破される！"])
+    ShowTextAttributes(["alice_fc1", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ほう、敵にも兵法に通じた者がいるではないか。"])
+    ShowText(["だが、陣の再展開を待ってなどやらんぞ……"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["このまま、足を止めるな！"])
+    ShowText(["一気に市街を突っ切り、脱出するぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["そっちに戻るな！　危険だ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜ！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["こいつらは、さっき正面に展開していた部隊か？"])
+    ShowText(["突破は無理だ、迂回するぞ！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["敵の対応が早い……"])
+    ShowText(["相手側も、デタラメに動いている訳ではないようですね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜ！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["こいつらは、さっき正面に展開していた部隊か？"])
+    ShowText(["突破は無理だ、迂回するぞ！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["敵の対応が早い……"])
+    ShowText(["相手側も、デタラメに動いている訳ではないようですね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜ！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["こいつらは、さっき正面に展開していた部隊か？"])
+    ShowText(["突破は無理だ、迂回するぞ！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["敵の対応が早い……"])
+    ShowText(["相手側も、デタラメに動いている訳ではないようですね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜ！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["こいつらは、さっき正面に展開していた部隊か？"])
+    ShowText(["突破は無理だ、迂回するぞ！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["敵の対応が早い……"])
+    ShowText(["相手側も、デタラメに動いている訳ではないようですね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ShowPicture([5, "80_trooperloid_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["ここは通さないぜ！！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["こいつらは、さっき正面に展開していた部隊か？"])
+    ShowText(["突破は無理だ、迂回するぞ！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["敵の対応が早い……"])
+    ShowText(["相手側も、デタラメに動いている訳ではないようですね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    CallCommonEvent([403])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    CallCommonEvent([403])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    Empty([])
+
+CommonEvent 86
+Name = "EV086"
+
+  Page 0
+    Empty([])
+
+CommonEvent 87
+Name = "EV087"
+
+  Page 0
+    Empty([])
+
+CommonEvent 88
+Name = "EV088"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 89
+Name = "EV089"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 90
+Name = ""
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 91
+Name = "EV091"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 92
+Name = "EV092"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 93
+Name = "EV093"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 94
+Name = "EV094"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 95
+Name = "EV095"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    Empty([])
+
+CommonEvent 97
+Name = "EV097"
+
+  Page 0
+    Empty([])
+
+CommonEvent 98
+Name = "EV098"
+
+  Page 0
+    Empty([])
+
+CommonEvent 99
+Name = "EV099"
+
+  Page 0
+    Empty([])
+
+CommonEvent 100
+Name = "EV100"
+
+  Page 0
+    Empty([])
+
+CommonEvent 101
+Name = "EV101"
+
+  Page 0
+    Empty([])
+
+CommonEvent 102
+Name = "EV102"
+
+  Page 0
+    Empty([])
+
+CommonEvent 103
+Name = "EV103"
+
+  Page 0
+    Empty([])
+
+CommonEvent 104
+Name = "EV104"
+
+  Page 0
+    CallCommonEvent([402])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 105
+Name = "EV105"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 106
+Name = "EV106"
+
+  Page 0
+    Empty([])
+
+CommonEvent 107
+Name = "EV107"
+
+  Page 0
+    Empty([])
+
+CommonEvent 108
+Name = "EV108"
+
+  Page 0
+    Empty([])
+
+CommonEvent 109
+Name = "EV109"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["転職の書のページが散らばっている……"])
+    CallCommonEvent([113])
+    Empty([])
+
+CommonEvent 110
+Name = "EV110"
+
+  Page 0
+    Empty([])
+
+CommonEvent 111
+Name = "EV111"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 193, 234, 153, 2, 0])
+    Empty([])
+
+CommonEvent 112
+Name = "EV112"
+
+  Page 0
+    Empty([])
+
+CommonEvent 113
+Name = "EV113"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 114
+Name = "EV114"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 115
+Name = "EV115"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 116
+Name = "EV116"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 117
+Name = "EV117"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 118
+Name = "EV118"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 119
+Name = "EV119"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 120
+Name = "EV120"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 121
+Name = "EV121"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 122
+Name = "EV122"
+
+  Page 0
+    ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+    ShowText(["【トルーパーロイド】"])
+    ShowText(["近寄らせるな、撃てーっ！！"])
+    ShowAnimation([0, 406, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわっ！？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["防衛陣地を築かれているか……"])
+    ShowText(["ここは突破できそうにない、別ルートを行くぞ！"])
+    Empty([])
+
+CommonEvent 123
+Name = "EV123"
+
+  Page 0
+    ConditionalBranch([1, 1172, 0, 2, 2])
+      ControlVariables([1172, 1172, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 124
+Name = "EV124"
+
+  Page 0
+    ConditionalBranch([1, 1172, 0, 2, 2])
+      ControlVariables([1172, 1172, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 125
+Name = "EV125"
+
+  Page 0
+    CallCommonEvent([403])
+    Empty([])
+
+CommonEvent 126
+Name = "EV126"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 193, 234, 153, 2, 0])
+    Empty([])
+
+CommonEvent 127
+Name = "EV127"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 193, 234, 153, 2, 0])
+    Empty([])
+
+CommonEvent 128
+Name = "EV128"
+
+  Page 0
+    Empty([])
+
+CommonEvent 129
+Name = "EV129"
+
+  Page 0
+    Empty([])
+
+CommonEvent 130
+Name = "EV130"
+
+  Page 0
+    Empty([])
+
+CommonEvent 131
+Name = "EV131"
+
+  Page 0
+    Empty([])
+
+CommonEvent 132
+Name = "EV132"
+
+  Page 0
+    Empty([])
+
+CommonEvent 133
+Name = "EV133"
+
+  Page 0
+    Empty([])
+
+CommonEvent 134
+Name = "EV134"
+
+  Page 0
+    Empty([])
+
+CommonEvent 135
+Name = "EV135"
+
+  Page 0
+    Empty([])
+
+CommonEvent 136
+Name = "EV136"
+
+  Page 0
+    Empty([])
+
+CommonEvent 137
+Name = "EV137"
+
+  Page 0
+    Empty([])
+
+CommonEvent 140
+Name = "EV140"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 141
+Name = "EV141"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 142
+Name = "EV142"
+
+  Page 0
+    ScrollMap([6, 4, 4])
+    ScrollMap([8, 3, 4])
+    GatherFollowers([])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんとか、防衛部隊の背後に回り込めたな……"])
+    ShowText(["どうやら敵を出し抜いたようだ。"])
+    Wait([30])
+    ScrollMap([2, 11, 4])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["城門も目前だね。"])
+    ShowText(["このまま、脱出してしまえば――"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["いえ……城門に近付いてはなりません。"])
+    ShowText(["さもなければ、全滅しますよ。"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんだと……？"])
+    ScrollMap([8, 8, 5])
+    ScrollMap([4, 4, 5])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["明らかに、退路が誘導されているわね。"])
+    ShowText(["気に入らないわ……"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["十中八九、罠だな。"])
+    ShowText(["城門を抜けようとした瞬間、十字砲火に襲われるだろう。"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["それと同時に……"])
+    ShowText(["あそこでそっぽを向いている防衛部隊が突っ込んできます。"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なるほど……囲師は周することなかれ、という事か。"])
+    ShowText(["それで、敵の策をどう破るというのだ？"])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["少々、お待ちを。"])
+    ShowText(["これが街の地図として――"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["メフィストは、壁に簡単な地図を書いた！"])
+    ShowText(["それを元に、アスタロトとヴァンガードが加わり協議を始める……"])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["主部隊の動きが、大通りを……"])
+    ShowText(["ここから、こう退がったのね。"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["最初の右陣が、このルートで補助に回っている。"])
+    ShowText(["ここに防御陣地があったことを考えると――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……参謀が多いと、こっちは頭を使わなくていいから楽だね。"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["私も、頭脳労働は苦手だから助かるなぁ……"])
+    ConditionalBranch([4, 413, 0])
+      ShowTextAttributes(["kurodanuki_fc1", 0, 0, 2])
+      ShowText(["【黒狸】"])
+      ShowText(["ふ～む、素晴らしいな！"])
+      ShowText(["我も、かように頭の回る参謀が欲しいぞ！"])
+      ConditionalBranch([4, 412, 0])
+        ShowTextAttributes(["inugami_fc1", 0, 0, 2])
+        ShowText(["【隠神刑部】"])
+        ShowText(["ここにいるじゃないですか～！"])
+        ShowText(["里一番の切れ者、隠神刑部狸っすよ～！！"])
+        ShowTextAttributes(["kurodanuki_fc1", 2, 0, 2])
+        ShowText(["【黒狸】"])
+        ShowText(["お前は、黙って酒でも飲んでろ。"])
+        ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+        ShowText(["【隠神刑部】"])
+        ShowText(["もう飲んでま～ッす！"])
+        ShowText(["ぐびぐびぐびぐび……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["……作戦がまとまりました。"])
+    ShowText(["そう難しくはありませんが、心して聞いて下さい。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ScrollMap([6, 6, 5])
+    ScrollMap([2, 8, 5])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["まず、絶対にあの城門に向かってはなりません。"])
+    ShowText(["敵は、あそこに我々を誘導しようとしているのです。"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["目の前の脱出口は、やはり罠という事か……"])
+    ShowText(["ならば、どうするというのだ？"])
+    ScrollMap([6, 6, 5])
+    ScrollMap([8, 3, 5])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["向かう先は、あの狭い通路。"])
+    ShowText(["脇目も振らず、あそこに飛び込むのよ。"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["あんな狭い所に入り込んで、大丈夫なのか？"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["敵は大部隊、こちらの初動に素早く対応は出来まい。"])
+    ShowText(["そのまま通路を進むと、先の防御陣地の裏手に出る。"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["突破は容易、そのまま脇路から城外に脱出する――"])
+    ShowText(["そういう流れだ。"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["あの通路に飛び込み、そのまま進めば良いのだな？"])
+    ShowText(["貴様等の出した案なのだから、間違いはあるまい。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["分かった……城門には近寄らず、あの脇道だね。"])
+    ShowText(["それじゃあ、一気に突っ走ろう！"])
+    ScrollMap([8, 5, 5])
+    ScrollMap([4, 12, 5])
+    ControlSelfSwitch(["A", 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 143
+Name = "EV143"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["敵の主力部隊には近付くな！"])
+    ShowText(["警戒していないように見えて、こちらに気付いているぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 144
+Name = "EV144"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["敵の主力部隊には近付くな！"])
+    ShowText(["警戒していないように見えて、こちらに気付いているぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 145
+Name = "EV145"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["敵の主力部隊には近付くな！"])
+    ShowText(["警戒していないように見えて、こちらに気付いているぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 146
+Name = "EV146"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["敵の主力部隊には近付くな！"])
+    ShowText(["警戒していないように見えて、こちらに気付いているぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 147
+Name = "EV147"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["敵の主力部隊には近付くな！"])
+    ShowText(["警戒していないように見えて、こちらに気付いているぞ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 148
+Name = "EV148"
+
+  Page 0
+    CallCommonEvent([405])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 149
+Name = "EV149"
+
+  Page 0
+    Empty([])
+
+CommonEvent 150
+Name = "EV150"
+
+  Page 0
+    Empty([])
+
+CommonEvent 151
+Name = "EV151"
+
+  Page 0
+    Empty([])
+
+CommonEvent 152
+Name = "EV152"
+
+  Page 0
+    Empty([])
+
+CommonEvent 153
+Name = "EV153"
+
+  Page 0
+    Empty([])
+
+CommonEvent 154
+Name = "EV154"
+
+  Page 0
+    Empty([])
+
+CommonEvent 155
+Name = "EV155"
+
+  Page 0
+    CallCommonEvent([405])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 156
+Name = "EV156"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、戻ってどうする！"])
+    ShowText(["このまま路地を道なりに進むのだ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+CommonEvent 157
+Name = "EV157"
+
+  Page 0
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、戻ってどうする！"])
+    ShowText(["このまま路地を道なりに進むのだ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Empty([])
+
+CommonEvent 158
+Name = "EV158"
+
+  Page 0
+    SetMoveRoute([140, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([141, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShotBalloonIcon([140, 1, false])
+    ShotBalloonIcon([141, 1, false])
+    Wait([60])
+    ShowPicture([5, "80_trooperloid_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_trooperloid_st03", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["trooperloid_fc1", 4, 0, 2])
+    ShowText(["【トルーパーロイドＡ】"])
+    ShowText(["はぁっ！？　なんでこっちから来るんだよ！！"])
+    ShowTextAttributes(["trooperloid_fc1", 2, 0, 2])
+    ShowText(["【トルーパーロイドＢ】"])
+    ShowText(["こんなの、聞いてないぜ！"])
+    ShowText(["とにかく、やっちまえ～！！"])
+    ConditionalBranch([4, 755, 0])
+      ShowTextAttributes(["tezcatlipoca_fc1", 5, 0, 2])
+      ShowText(["【テスカトリポカ】"])
+      ShowText(["ニャハハハハ、慌ててるのニャ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 754, 0])
+      ShowTextAttributes(["coatlus_fc1", 3, 0, 2])
+      ShowText(["【ケツァルコァトル】"])
+      ShowText(["私の翼で、町の外まで吹っ飛ばしてやるわ！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    BattleProcessing([0, 1550, false, false])
+    ControlVariables([1172, 1172, 0, 0, 5])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["ここさえ抜ければ、城外まですぐよ。"])
+    ShowText(["さあ、進むわよ……！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["よし、このままグランゴルドを抜けるんだ！"])
+    ConditionalBranch([4, 12, 0])
+      ShowTextAttributes(["sylph_fc1", 2, 0, 2])
+      ShowText(["【シルフ】"])
+      ShowText(["こういうのって、たのし～い！"])
+      ConditionalBranch([4, 13, 0])
+        ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+        ShowText(["【ノーム】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ノームも武器をぶんぶんと振り回している！"])
+        ShowText(["とても楽しいようだ！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])

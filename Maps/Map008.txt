@@ -1,0 +1,367 @@
+Display Name = "イリアス神殿"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 7, 19, 1, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 7, 19, 1, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 7, 20, 1, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 5, 24, 30, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 5, 24, 30, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 5, 24, 30, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["ここはイリアス神殿です。"])
+    ShowText(["転職はもちろん、冒険のアドバイスも聞けますよ。"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["今日も神殿でお祈りか、ルカ？"])
+      ShowText(["実に感心な事だな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["……っと、確か今日から旅立ちだったか。"])
+      ShowText(["でも転職のたび、ここに戻る事になるだろうけど。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 12, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["今日も神殿で転職か、ルカ？"])
+      ShowText(["順調に腕を磨いているようだな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["随分と腕を上げたようだな……"])
+      ShowText(["お前も、このイリアス大陸では収まらん男になったようだ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 30, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["いつの間にやら、すっかり世界の勇者だな。"])
+      ShowText(["遠い存在になったもんだぜ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["あたし、大きくなったらメイドさんになるのー♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["あたしも、立派なメイドになるんだからね♪"])
+    ExitEventProcessing([])
+    Label(["282"])
+    ShowTextAttributes(["maycubbus_fc1", 1, 0, 2])
+    ShowText(["【メイ】"])
+    ShowText(["メイドになって、何をするつもりなのやら。"])
+    ShowText(["いやらしい子……"])
+    ExitEventProcessing([])
+    Label(["289"])
+    ShowTextAttributes(["maidscyulla_fc1", 1, 0, 2])
+    ShowText(["【ラン】"])
+    ShowText(["うふふっ、がんばって下さいね。"])
+    ExitEventProcessing([])
+    Label(["351"])
+    ShowTextAttributes(["scylla_s_fc1", 0, 0, 2])
+    ShowText(["【セシール】"])
+    ShowText(["メイドの道は険しいですが……"])
+    ShowText(["奉仕の心を失わなければ、必ず立派なメイドになれますよ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わーい！　あたし、魔法使いになりたいなー♪"])
+    ShowText(["ぷるぷるー♪　ぷるぷるー♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["233"])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["それでは、うちの魔導学校に入りませんか？"])
+    ShowText(["今なら入学費が10%お得ですよ……"])
+    ExitEventProcessing([])
+    Label(["391"])
+    ShowTextAttributes(["mefist_fc2", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["それでは、うちの魔導学校に入りませんか？"])
+    ShowText(["今なら入学費が10%お得ですよ……"])
+    ExitEventProcessing([])
+    Label(["286"])
+    ShowTextAttributes(["witchs_fc1", 1, 0, 2])
+    ShowText(["【ウィッチ】"])
+    ShowText(["うふっ……がんばってね♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["イリアス神殿では、転職ができる。"])
+    ShowText(["それゆえ、世界中の人々が神殿に詰めかけておるのじゃ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["……とは言え、最近は来訪者もめっきり減った。"])
+    ShowText(["みんな、己の職に満足しておるのかのう？"])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【老人】"])
+      ShowText(["ルカ、お主はまず洗礼じゃな。"])
+      ShowText(["立派な冒険者になるのじゃぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【シスター】"])
+    ShowText(["私は、僧侶など今日限りで退職します。"])
+    ShowText(["今後の人生は、遊び人として生きようかと。"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【元シスター】"])
+    ShowText(["ああ、これが遊び人なのね！"])
+    ShowText(["今までの分、思いっきり遊んでみせるわ！"])
+    Empty([])
+
+  Page 2
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【元遊び人】"])
+    ShowText(["遊んでばかりで、なんだか疲れました。"])
+    ShowText(["これからはメイドとなり、人々に奉仕します……"])
+    Empty([])
+
+  Page 3
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【元メイド】"])
+    ShowText(["メイドとして働き、小さなメダルを集め……"])
+    ShowText(["とうとう、貴族の位に就いたわ！"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["外に出てる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 355, 2, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["外に出てる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 355, 2, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["外に出てる時間はないな。"])
+      ShowText(["これ以上遅れると、ソニアに何をされるか……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 355, 2, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["こちらからなら、直接外に出られますよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["……ああ、ルカか。"])
+      ShowText(["早く行かないと、ソニアちゃんに怒られるぞ。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["こちらからなら、直接外に出られますよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["会話中やイベント中にボタン4を押しっぱなしにしてみろ。"])
+    ShowText(["メッセージをスキップできるぞ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["キーボードだったら「A」に対応しているな。"])
+    ShowText(["年寄りの長い話を飛ばす時などに便利だぞ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["99"])
+    ShowTextAttributes(["namazu_fc1", 2, 0, 2])
+    ShowText(["【ギギ】"])
+    ShowText(["年長者は敬うものじゃぞ、、まったく……"])
+    ExitEventProcessing([])
+    Label(["344"])
+    ShowTextAttributes(["kirin_fc1", 0, 0, 2])
+    ShowText(["【キリン】"])
+    ShowText(["年寄りの話も、しっかり聞くがよい……"])
+    ExitEventProcessing([])
+    Empty([])

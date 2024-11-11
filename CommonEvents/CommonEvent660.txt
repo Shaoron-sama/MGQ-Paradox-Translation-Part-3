@@ -1,0 +1,25 @@
+CommonEvent 660
+Name = "イベント：ラ・クロワ"
+
+  999([660])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 439, 0])
+    ShowTextAttributes(["shirom_fc2", 0, 0, 2])
+    ShowText(["【ラ・クロワ】"])
+    ShowText(["どこまでも進むがいい……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["shirom_fc2", 0, 0, 2])
+  ShowText(["【ラ・クロワ】"])
+  ShowText(["造り物の力、私が倍加させてやろう……"])
+  ControlSwitches([439, 439, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ラ・クロワから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、造技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

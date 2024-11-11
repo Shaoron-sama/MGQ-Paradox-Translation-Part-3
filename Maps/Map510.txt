@@ -1,0 +1,207 @@
+Display Name = "狸神社"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 511, 1, 10, 6, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 511, 1, 10, 6, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 507, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 507, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 507, 23, 1, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 512, 27, 48, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 512, 27, 48, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 512, 27, 48, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 511, 1, 10, 6, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 511, 1, 10, 6, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["↑：狸神社"])
+    ShowText(["←：神社坂"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1059, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【巫女】"])
+      ShowText(["ここは狸神社です。"])
+      ShowText(["しかし、タヌキ様はどこへ行かれたのでしょう……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1059, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【巫女】"])
+      ShowText(["ここは狸神社です。"])
+      ShowText(["タヌキ様とキツネ様は、今日も仲良しですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["神社坂の入り口に戻りますか？"])
+    ShowChoices([["戻らない", "戻る"], 1])
+    When([0, "戻らない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "戻る"])
+      TransferPlayer([0, 485, 14, 5, 2, 0])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["ここでちょっと、一休み……"])
+    ShowText(["長く険しい神社坂は、儂のような年寄りには辛いのう。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["99"])
+    ShowTextAttributes(["namazu_fc1", 2, 0, 2])
+    ShowText(["【ギギ】"])
+    ShowText(["儂のようなナマズにも、なかなか辛いのう……"])
+    ExitEventProcessing([])
+    Label(["185"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["階段を平坦化しマスか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["何だか分からんが、やめた方がよさそうだのう。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["村に偏在するねこまたにより、追い込まれたネズミ達……"])
+    ShowText(["今こそ、反撃の狼煙を！"])
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["鬨の声を上げよ！"])
+    ShowText(["チューッ！　チューッ！"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["チューッ！　チューッ！"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["狸神社を占拠して、ネズミランドを作るのはどうかな？"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["ササミ！　チーズ！　こめだわら！"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
+    ShowText(["【ネズミ娘】"])
+    ShowText(["ネズミの集会だよ！"])
+    Empty([])

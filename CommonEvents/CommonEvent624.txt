@@ -1,0 +1,26 @@
+CommonEvent 624
+Name = "イベント：ナーキュバス"
+
+  999([624])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 65, 0])
+    ShowTextAttributes(["narcubus_fc1", 0, 0, 2])
+    ShowText(["【ナーキュバス】"])
+    ShowText(["お大事に♪"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["narcubus_fc1", 0, 0, 2])
+  ShowText(["【ナーキュバス】"])
+  ShowText(["ここから先も大変ですから……"])
+  ShowText(["ワクチンを注射してあげますね♪"])
+  ControlSwitches([65, 65, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ワクチンを注射してもらった！"])
+  ShowText(["次のボスフロアまで、不利なステータス異常を受け付けない！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,481 @@
+Display Name = "ミノタウロスの迷宮 3F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 31, 38, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 32, 38, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 33, 38, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 4, 10, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 5, 10, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 6, 10, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 41, 10, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 42, 10, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 43, 10, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1256, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([213, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1206, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([1, 1054, 0, 6, 0])
+      PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+      GatherFollowers([])
+      ShowPicture([5, "80_nyumaou_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["ほれ、何をしておる？"])
+      ShowText(["下の階で、存分にすきやきを味わうがいい……"])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["……むっ？　貴様ら、ミノタウロスではないな。"])
+      ShowText(["何用だ、同胞でもない者にくれてやるすきやきはないぞ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["僕達はすきやきを食べに来たんじゃない！"])
+      ShowText(["その野望を打ち砕きに来たんだ！"])
+      ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
+      ShowText(["【シーザー】"])
+      ShowText(["もちろん、すきやきは食べたけどな！"])
+      ConditionalBranch([4, 68, 0])
+        ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+        ShowText(["【パピ】"])
+        ShowText(["ゴチになりました！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["おのれ、招かれざる客どもめ！"])
+      ShowText(["我が前に立った事、後悔するがよい……！！"])
+      ConditionalBranch([4, 218, 0])
+        ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+        ShowText(["【牛魔王’】"])
+        ShowText(["まったく……すきやきで部下を集めるなど、頭の足りぬ事を……"])
+        ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+        ShowText(["【牛魔王】"])
+        ShowText(["私そっくりの者がいるだと！？"])
+        ShowText(["だが、乳は私の方が大きいようだな！"])
+        ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+        ShowText(["【牛魔王’】"])
+        ShowText(["何を言うか、私の方が大きかろう！"])
+        ShowText(["比べてみよ、さあ！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["どっちも同じじゃないかな……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["妾は牛魔を統べる王、伝説に名を残す牛魔王の末裔よ！"])
+      ShowText(["その強大なる力、冥土の土産に見せてやるとしよう！"])
+      ConditionalBranch([4, 129, 0])
+        ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+        ShowText(["【ヒルデ】"])
+        ShowText(["対象、でかい牛……戦闘開始。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 79, 0])
+        ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+        ShowText(["【ヌルコ】"])
+        ShowText(["きゅきゅ～！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 626, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ControlVariables([1054, 1054, 0, 0, 7])
+      ShowPicture([5, "80_nyumaou_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["まさか……我が敗北するとは……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ミノタウロスの軍団を率いて、女王の座を狙うなど……"])
+        ShowText(["そんな野望、叶わん事を知るがいい！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ミノタウロスを率いて悪を為そうという野望……"])
+        ShowText(["この私がいる限り、見過ごしはしません！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["ふん……どうせ、そんな野望はとうに破綻している……"])
+      ShowText(["妾の軍資金は、すでに底を尽いてしまったのだ……"])
+      ConditionalBranch([4, 143, 0])
+        ShowTextAttributes(["eva_fc1", 0, 0, 2])
+        ShowText(["【エヴァ】"])
+        ShowText(["破産したの？　あたしと同じね。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 201, 0])
+        ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+        ShowText(["【アシェル】"])
+        ShowText(["お嬢以上の馬鹿だな……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["もう、すきやきで繋ぎ止めておくこともできん……"])
+      ShowText(["あいつら……いくらなんでも、食い過ぎだ……"])
+      ErasePicture([5])
+      Wait([60])
+      PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ControlSwitches([31, 31, 0])
+      SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Wait([60])
+      ShowPicture([5, "80_seitentaisei_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["ふぅ、食った食った。"])
+      ShowText(["おい、牛魔王！　この孫悟空様が直々に……"])
+      ShowPicture([5, "80_seitentaisei_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["……もしかして、もう終わってる？"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["うむ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["はい。"])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([5, "80_seitentaisei_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["ゴチになりやした～！"])
+      ErasePicture([5])
+      Wait([30])
+      SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ControlSwitches([31, 31, 1])
+      Wait([60])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["あのサル、すきやき食べただけじゃない！"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["すきやき食べただけじゃないか……"])
+        Empty([])
+      BranchEnd([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowPicture([5, "80_nyumaou_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["ええい、貴様らも出て行け！"])
+      ShowText(["もうすきやきパーティーは終わりだ！"])
+      ShowTextAttributes(["nyumaou_fc1", 2, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["これをやるから、早く消え失せろ！"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([604, 0, 0, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["このアイテムがあれば、バーサーカーに転職できる！"])
+      Wait([60])
+      FadeoutScreen([])
+      ErasePicture([5])
+      TransferPlayer([0, 731, 1, 0, 0, 2])
+      ChangeTransparency([0])
+      Wait([60])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1054, 0, 7, 0])
+      ShowPicture([5, "80_nyumaou_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["かように、夢破れた妾だが……"])
+      ShowText(["正直、この力と体を持て余しておる。"])
+      ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+      ShowText(["【牛魔王】"])
+      ShowText(["お主が、我が眷属との友情を示すなら……"])
+      ShowText(["特別に、仲間になってやってもよいぞ。"])
+      ConditionalBranch([8, 532])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ルカは、牛魔王に「友情の牛角」を見せた……"])
+        ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+        ShowText(["【牛魔王】"])
+        ShowText(["これぞ、我が眷属との友情の証！"])
+        ShowText(["仕方ない、我が力を貸してやろうぞ！"])
+        ErasePicture([5])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Script(["add_actor_ex(218)"])
+        PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["牛魔王が仲間に加わった！"])
+        Wait([60])
+        ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+        ShowText(["【牛魔王】"])
+        ShowText(["先祖の名に恥じん戦いをせねばな。"])
+        ShowText(["さあ、行こうぞ！"])
+        ControlSelfSwitch(["A", 0])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+        ShowText(["【牛魔王】"])
+        ShowText(["「友情の牛角」を手に入れ、妾に見せるがよい。"])
+        ShowText(["ミノタウロスと友情を築けば、手に入るはずだ。"])
+        ErasePicture([5])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["ミノタウロスとの友情か……"])
+          ShowText(["とりあえず、あちこちのミノタウロスにあたってみる？"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ミノタウロスとの友情か……"])
+          ShowText(["とりあえず、あちこちのミノタウロスにあたってみよう。"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
+        ShowText(["【シーザー】"])
+        ShowText(["そう言えば、迷宮への洞窟内にもミノタウロスがいたな。"])
+        ShowText(["あいつは、ちゃんと町に戻ったのだろうか……"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["宝箱はハコイリだった！"])
+    BattleProcessing([0, 606, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["宝箱はハコイリだった！"])
+    BattleProcessing([0, 606, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ControlSwitches([81, 81, 0])
+    ControlSwitches([82, 82, 0])
+    ControlSwitches([83, 83, 0])
+    ControlSwitches([84, 84, 0])
+    ControlSwitches([85, 85, 0])
+    Comment(["＾＾＾＾＾＾＾＾＾＾＾＾＾＾"])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([82, 82, 1])
+    ControlSwitches([83, 83, 1])
+    ControlSwitches([84, 84, 1])
+    ControlSwitches([85, 85, 1])
+    Empty([])

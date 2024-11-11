@@ -1,0 +1,135 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["sonia_fc2", 4, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ちょっと……！"])
+    ShowText(["この連中、なんなのよ～！！"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["きゅー！　きゅー！"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["がんばれ～！"])
+    FadeoutScreen([])
+    Wait([60])
+    ChangeTransparency([1])
+    TransferPlayer([0, 394, 19, 48, 8, 2])
+    FadeinScreen([])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["そんな感じで、あちこち引き回されて……"])
+    ShowText(["今度はここに連れて来られちゃったってわけ。"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["ボクに感謝してよね。"])
+    ShowText(["それじゃあ、合流♪　合流♪"])
+    ControlSwitches([6, 6, 0])
+    ControlSwitches([2009, 2009, 1])
+    ControlSwitches([2015, 2015, 0])
+    ControlSwitches([2010, 2010, 0])
+    ControlSwitches([2007, 2007, 0])
+    ControlSwitches([2028, 2028, 0])
+    ControlSwitches([2125, 2125, 0])
+    ControlVariables([1013, 1013, 0, 0, 2])
+    ControlSwitches([5001, 5001, 0])
+    ControlSwitches([5241, 5241, 0])
+    ErasePicture([5])
+    Script(["add_actor_ex(525)"])
+    Script(["add_actor_ex(79)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ソニアとヌルコが仲間に加わった！"])
+    Wait([60])
+    Script(["gain_medal(66)"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["なぜ、ルカの幼馴染みを連れてきたのだ？"])
+      ShowText(["それに、このふしぎないきものは一体……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なぜ、ルカの幼馴染みを連れてきたのです？"])
+      ShowText(["それに、このふしぎないきものは一体……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["う～、さむさむ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["話を聞け！"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……ともかく大所帯になってきたな。"])
+      ShowText(["貴様にこれを渡しておこう。"])
+      ChangeItems([501, 0, 0, 1])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["パーティからあぶれたメンバーは、この中に詰め込んでおけ。"])
+      ShowText(["使い方は……まあ分かるだろう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["話を聞きなさい！"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……ともかく頭数が増えましたね。"])
+      ShowText(["あなたにこれを渡しておきましょう。"])
+      ChangeItems([501, 0, 0, 1])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いらない仲間は、ここに収容するのです。"])
+      ShowText(["使い方は、だいたい分かるでしょう？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["【白兎】"])
+    ShowText(["さむさむ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])

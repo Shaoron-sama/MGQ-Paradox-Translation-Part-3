@@ -1,0 +1,273 @@
+Display Name = "ロストルム山地洞窟 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 263, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 263, 17, 1, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 366, 349, 6, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([24, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowPicture([5, "80_alice_st74", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ようやく洞窟を抜けたか……"])
+      ShowText(["つ、疲れた……"])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……むっ、イリアスとゆかいな奴隷達ではないか。"])
+      ShowText(["貴様等も、この先のタルタロスに行く気か？"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["あなたも、南のタルタロスの向こう側を見たのですね。"])
+      ShowText(["あのウサギに誘われたといったところでしょうか……"])
+      ShowPicture([5, "80_alice_st73", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ふん、貴様等には関係のない話だ。"])
+      ShowText(["あまり、余の側をうろちょろするでない……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["うろちょろしているのは、そちらではありませんか！"])
+      ShowText(["ここで雌雄を決してもいいのですよ！？"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["まあまあ……お互い疲れてるし、やめましょうよ。"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["まあまあ……お互い疲れてるし、やめようよ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 2, 0, 2])
+        ShowText(["【ライム】"])
+        ShowText(["ケンカはダメだよ……"])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([5, "80_alice_st74", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……命拾いしたな、今は勘弁してやる。"])
+      ShowText(["余はくたくたで、お腹もぺこぺこなのだ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["命を拾ったのは、あなたの方です。"])
+      ShowText(["私がおねむでなければ、あなたなど……"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["とりあえず、野宿以外で休めるところを探そうよ。"])
+        ShowText(["滅びたロストルム村でも、休む場所くらいはあるんじゃない？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["とりあえず、野宿以外で休めるところを探そうよ。"])
+        ShowText(["滅びたロストルム村でも、休息くらいできるんじゃないか？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……そうですね、そろそろ私は限界です。"])
+      ShowText(["ねむくてねむくて、頭がふらふらです……"])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["くくっ、惨めなザマだな……"])
+      ShowText(["……ああ、余もおなかと背中がくっつきそうだぞ……"])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……命拾いしたな、今は勘弁してやる。"])
+      ShowText(["余はくたくたで、お腹もぺこぺこなのだ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["命を拾ったのは、あなたの方です。"])
+      ShowText(["私がおねむでなければ、あなたなど……"])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["【うさこ】"])
+    ShowText(["ぐったり……"])
+    ShowText(["魔王様ぁ、もう少し休んでいこうよぉ……"])
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["【うさこ】"])
+    ShowText(["……あたし？"])
+    ShowText(["あたしは魔王軍新四天王の1人、うさこだよ♪"])
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["【うさこ】"])
+    ShowText(["新四天王、まだあたし1人なんだけどね……"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ふん、残り3人もすぐに揃えてくれるわ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["alice_fc5", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ようやく洞窟を抜けたか……"])
+    ShowText(["つ、疲れた……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["とりあえず、野宿以外で休めるところを探そうよ。"])
+      ShowText(["滅びたロストルム村でも、休む場所くらいはあるんじゃない？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["とりあえず、野宿以外で休めるところを探そうよ。"])
+      ShowText(["滅びたロストルム村でも、休息くらいできるんじゃないか？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,549 @@
+Display Name = "サキュバスの村"
+Parallax Name = "DarkSea1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["あなた達の目的が、何かは知らないけど……"])
+    ShowText(["これ以上、先に行かせはしないわよ！"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ここで叩きのめして、村共有のオモチャにしてやるわ！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["オモチャになるのは、お前等だよ！"])
+      ShowText(["まとめて圧壊しな！！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1741, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([2599, 2599, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 86, 24, 46, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["扉は固く閉ざされている……"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 33, 59, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 16, 18, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+    ShowText(["【シスターサキュバス】"])
+    ShowText(["この村でさえ、信仰が絶えたわけではありません。"])
+    ShowText(["さあ、女神に祈りましょう……"])
+    ShowChoices([["お祈りをする", "用はない"], 2])
+    When([0, "お祈りをする"])
+      ControlVariables([1002, 1002, 0, 0, 74])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["それでは、イリアス様に祈りましょう。"])
+      ShowText(["……ああ、この場に導きの縁を感じます。"])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["もし旅先で何かあった場合、この場に導かれるでしょう。"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    When([1, "用はない"])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["あなた達の目的が、何かは知らないけど……"])
+    ShowText(["これ以上、先に行かせはしないわよ！"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ここで叩きのめして、村共有のオモチャにしてやるわ！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["オモチャになるのは、お前等だよ！"])
+      ShowText(["まとめて圧壊しな！！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1741, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([2599, 2599, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["あなた達の目的が、何かは知らないけど……"])
+    ShowText(["これ以上、先に行かせはしないわよ！"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ここで叩きのめして、村共有のオモチャにしてやるわ！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["オモチャになるのは、お前等だよ！"])
+      ShowText(["まとめて圧壊しな！！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1741, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([2599, 2599, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([1, 1157, 0, 8, 2])
+      ShowPicture([5, "80_ranccubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["ここは、クィーンのお屋敷よ。"])
+      ShowText(["何か騒動が起きているみたいだし、ここは通せないわ……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まだ、村の奴隷を全て保護していません。"])
+      ShowText(["屋敷に乗り込む前に、まず村中の奴隷を助けましょう！"])
+      ShowTextAttributes(["shion_fc1", 1, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["そういうわけで、首を洗って待ってな！"])
+      ShowText(["また後で、殴り込みに来てやるよ！"])
+      ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["不必要な挑発を行うな、シオン……"])
+      ShowText(["警備が厳重になる可能性75%アップ……"])
+      ShowTextAttributes(["shion_fc1", 4, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["怒るなよ～！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そ、そういうわけで……後でまた来るよ！"])
+      ShowPicture([5, "80_ranccubus_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["え……ええ？"])
+      ErasePicture([5])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1157, 0, 9, 0])
+      ShowPicture([5, "80_ranccubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["ここは、クィーンのお屋敷よ。"])
+      ShowText(["何か騒動が起きているみたいだし、ここは通せないわ……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ここに捕まっている工作員に用がある！"])
+      ShowText(["奴隷は全員、解放するんだ！"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["人間を性奴隷として扱い、監禁・売買する……"])
+      ShowText(["そのような狼藉、この私が許しません！"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["あの反抗組織のお仲間なのかしら？"])
+      ShowText(["こそこそ潜り込むんじゃなくて、正面から乗り込むなんて……"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["こっちも、捕まえる労力が省けるわ。"])
+      ShowText(["これでまた奴隷が増えて、クィーンもご満悦ね♪"])
+      ErasePicture([5])
+      ControlSwitches([81, 81, 0])
+      BattleProcessing([0, 1737, false, false])
+      ControlSwitches([81, 81, 1])
+      ControlVariables([1157, 1157, 0, 0, 10])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["あなた達のやり方は、サキュバスの流儀に反するわ。"])
+      ShowText(["この私が、同じクィーンとして性根を叩き直してあげる。"])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["このまま、屋敷に乗り込みますよ！"])
+      ShowText(["クィーンなんぞ、簀巻きにして川に投げ込みます！"])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["いや、それはどうかと思うけど……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ともかく、屋敷に捕らわれた奴隷達を解放しよう！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["その中には、反乱組織の工作員もいるという。"])
+      ShowText(["彼に接触すれば、魔界での活動も大きく道が開けるはずだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["もちろん、クィーンサキュバスも黙ってはいまい。"])
+      ShowText(["激突は不可避の中、僕達は屋敷へと乗り込むのだった――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 9, 10, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 13, 49, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 38, 20, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ちょっと、何してるのよ！"])
+    ShowText(["奴隷を没収して、村から叩き出してやるわ！"])
+    BattleProcessing([0, 1738, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["もしかして、ヨソ者の奴隷狩り？"])
+    ShowText(["それとも、ついに魅凪の手勢が攻めてきたの！？"])
+    BattleProcessing([0, 1738, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["この村の平和と安定を乱すなんて……"])
+    ShowText(["相応のオシオキが必要ね！"])
+    BattleProcessing([0, 1736, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["この村で騒動なんて……"])
+    ShowText(["まさか、噂のアポクリファと関係ないわよね？"])
+    BattleProcessing([0, 1736, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowPicture([5, "80_greatorc_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_greatorc_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["通報を受けて、駆けつけて来たぜ……"])
+    ShowText(["奴隷を強奪とは、ふてぇ奴等だな！！"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["私達の道を遮るなど……返り討ちです！"])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 1, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["イリアス様のために、道を空けなさい……！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1731, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlVariables([1157, 1157, 0, 0, 8])
+    ControlSwitches([100, 100, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["このまま、奴隷を救出して回ろう！"])
+    ShowText(["その後、クィーンの屋敷に乗り込むんだ！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "通行止め"
+
+  Page 0
+    Empty([])

@@ -1,0 +1,47 @@
+CommonEvent 7063
+Name = "メイリン：敗北"
+
+  999([7063])
+  CallCommonEvent([7000])
+  ShowPicture([5, "80_mob_kakutou_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+  ErasePicture([6])
+  ShowTextAttributes(["mob_kakutou_fc1", 1, 0, 2])
+  ShowText(["【メイリン】"])
+  ShowText(["そういうわけで、あたしの勝ちね。"])
+  ShowText(["賭け金、もらうわよ。"])
+  ConditionalBranch([0, 443, 1])
+    ChangeGold([1, 0, 100])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ルカは 100G 支払った！"])
+  ShowTextAttributes(["mob_kakutou_fc1", 1, 0, 2])
+  ShowText(["【メイリン】"])
+  ShowText(["修行を積んで、また来てね。"])
+  ShowText(["何度でも返り討ちにしてあげるから……"])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ErasePicture([5])
+    ChangeMapDisplay([1])
+    ConditionalBranch([1, 1143, 0, 9, 2])
+      TransferPlayer([0, 15, 24, 22, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1143, 0, 10, 1])
+      ControlVariables([57, 57, 0, 0, 1415])
+      TransferPlayer([0, 415, 27, 6, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

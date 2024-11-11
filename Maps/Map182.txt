@@ -1,0 +1,333 @@
+Display Name = "ヘルゴンドのほこら"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 132, 70, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 132, 70, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 132, 70, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 132, 70, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 132, 70, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowPicture([5, "80_lilith_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["あなた達は、あの時の勇者……！"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリム】"])
+    ShowText(["まさか、ヘルゴンドの地にまで来るなんて……"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["神父を堕落させたのは、貴様達の仕業か。"])
+    ShowText(["我々の前に立ちはだかるなら、容赦はせんぞ！"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["それはこちらのセリフよ……"])
+    ShowText(["魔王城に行かせはしないわ……"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリム】"])
+    ShowText(["ここで始末してあげる……"])
+    ShowText(["さあ、行くわよ――"])
+    ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["……お待ちなさい。"])
+    ShowText(["ここは私に免じて、剣を納めて下さいませ。"])
+    ShowPicture([5, "80_lilith_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lilith_fc1", 2, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["あ、あなた様は！？"])
+    ShowTextAttributes(["lilith_fc1", 2, 0, 2])
+    ShowText(["【リリム】"])
+    ShowText(["なぜ、黒のア――"])
+    ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["おっと……その名を出しては、興醒めですわ。"])
+    ShowText(["私の遊びを台無しになど、しませんわよねぇ……？"])
+    ShowPicture([5, "80_lilith_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["め、滅相もありません……！"])
+    ShowText(["あなた様は紛れもなく、勇者に同行する魔導師にございます……"])
+    ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["せっかくですので、私の遊びに付き合ってもらいましょう。"])
+    ShowText(["さあ、我々に同行なさい……"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["は、はい……ご一緒させて頂きましょう。"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリム】"])
+    ShowText(["あなた様のためならば、どこまでも……"])
+    ErasePicture([5])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Script(["add_actor_ex(341)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["リリスとリリムが仲間に加わった！"])
+    Wait([60])
+    ControlSwitches([2160, 2160, 0])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["いいのかなぁ……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["いいのかなぁ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["うふふっ……供が多い方が楽しいではありませんか。"])
+    ShowText(["素敵な旅になりそうですわ……"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["あなた様と旅をするなど……"])
+    ShowText(["私達も、胸がワクワクします……"])
+    ShowTextAttributes(["lilith_fc1", 0, 0, 2])
+    ShowText(["【リリム】"])
+    ShowText(["楽しみね、お姉様……"])
+    ShowText(["どんな宴に導いて下さるのかしら……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ControlSwitches([2257, 2257, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["あへぇぇぇ……"])
+    ShowText(["サキュバス、だいすきぃぃ……"])
+    ConditionalBranch([2, "A", 1])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["なんだ、この神官は！"])
+      ShowText(["壊れているではないか！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["ひぃぃかぁぁぁりぃぃぃ……あぁぁぁれぇぇぇ……♪"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    ShowChoices([["お祈りをする", "転職・パーティ編成", "用はない"], 3])
+    When([0, "お祈りをする"])
+      ControlVariables([1002, 1002, 0, 0, 38])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["いのぉりぃ、みちびぃぃ……"])
+      ShowText(["いーっひっひっひ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["イっちゃうぅぅ～～！"])
+      Empty([])
+
+    When([1, "転職・パーティ編成"])
+      CallCommonEvent([113])
+      Empty([])
+
+    When([2, "用はない"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["イっちゃうぅぅ～～！"])
+      Empty([])
+
+    ChoicesEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["どこかのサキュバスにつまみ食いされたようだな……"])
+      ShowText(["まあ精神侵食は深くない、放っておけば正気に戻るだろう。"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["でも、誰がこんな事を……"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["でも、誰がこんな事を……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["おお、勇者よ！"])
+    ShowText(["よくぞ魔の大陸まで参られた！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["偉大なる勇者に、光あれ！"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    ShowChoices([["お祈りをする", "転職・パーティ編成", "用はない"], 3])
+    When([0, "お祈りをする"])
+      ControlVariables([1002, 1002, 0, 0, 38])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["イリアス様に祈りを捧げ、この地に導きの縁を通そう……"])
+      ShowText(["勇者よ、イリアス様の加護は常にあるのだ！"])
+      Empty([])
+
+    When([1, "転職・パーティ編成"])
+      CallCommonEvent([113])
+      Empty([])
+
+    When([2, "用はない"])
+      Empty([])
+
+    ChoicesEnd([])
+    ConditionalBranch([1, 1001, 0, 31, 0])
+      ConditionalBranch([2, "A", 1])
+        ControlSelfSwitch(["A", 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【神官】"])
+        ShowText(["ここから西に進めば、不遜の町レミナが存在する。"])
+        ShowText(["決戦の準備を整えるのは良いが、かの町の退廃に染まるでないぞ。"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["退廃の町って、まさかポルノフみたいな変態の町？"])
+          ShowText(["それとも、モンテカルロみたいにガラが悪いの……？"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["退廃の町って、ポルノフみたいな変態の町？"])
+          ShowText(["それとも、モンテカルロみたいにガラが悪いのかな？"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["人と魔物が共存している町なのですよ……"])
+        ShowText(["この時代にしては珍しいですが、あなた達から見れば普通のはずです。"])
+        ShowTextAttributes(["heinrich_fc1", 1, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["でも僕は、常々思っているんだ。"])
+        ShowText(["人と魔物は――"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……ハインリヒ。"])
+        ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["……はい、分かっています。"])
+        ShowText(["僕はイリアス様の使徒として、失格だというんでしょう。"])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["（結局、こうなる因果なのか……）"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

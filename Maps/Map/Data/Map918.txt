@@ -1,0 +1,903 @@
+Display Name = "グランゴルド城 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 917, 30, 30, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 917, 57, 22, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 917, 3, 22, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0-nanadaitenshi\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_sariera_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["審判の子に、馬鹿妖魔二匹……"])
+    ShowText(["それに天使狩りとは、ずいぶん珍妙な取り合わせだ。"])
+    ShowTextAttributes(["coatlus_fc1", 4, 0, 2])
+    ShowText(["【ケツァルコァトル】"])
+    ShowText(["こうして顔を合わせると、つくづくバケモノね……"])
+    ShowText(["羽根がチリチリするわ。"])
+    ShowTextAttributes(["tezcatlipoca_fc1", 3, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["こいつの臭い、ただの天使とは違うニャ。"])
+    ShowText(["ものすごく濃い、死の臭いがするニャ……"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["混沌の力で、牢から出たのは驚かされたが……"])
+    ShowText(["その程度の力で私の前に立つとは、自死に等しい。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["並外れて強いのは、前から分かってたさ……"])
+    ShowText(["でも、四人で力を合わせるんだ！"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["即席の四人組で、太刀打ちできるがは疑問だが……"])
+    ShowText(["せいぜい、足掻いてみるとしよう。"])
+    ShowPicture([5, "80_sariera_st11b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["これより、天罰を執行する……"])
+    ShowText(["全員、処刑だ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……行くぞ！"])
+    ShowTextAttributes(["tezcatlipoca_fc1", 4, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["シャーッ！！"])
+    ShowTextAttributes(["coatlus_fc1", 4, 0, 2])
+    ShowText(["【ケツァルコァトル】"])
+    ShowText(["侮らないで……私も神と崇められた大妖魔よ！"])
+    ShowTextAttributes(["vgirl_fc2", 4, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["さあ、狩りの時間だ……"])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss_nanadaitensi\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1564, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ControlSwitches([32, 32, 0])
+    ChangeTransparency([0])
+    TransferPlayer([0, 918, 30, 9, 0, 2])
+    PlayBGM(["RPG::BGM(@name=\"boss0-nanadaitenshi\", @volume=100, @pitch=100)"])
+    Wait([30])
+    ShowPicture([5, "80_sariera_st11b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([1, 111, 0, 1, 2])
+      ShowTextAttributes(["sariera_fc1", 3, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["見くびっていた……"])
+      ShowText(["まさか、この私を一蹴するほどの力を持つとは……"])
+      ShowTextAttributes(["sariera_fc1", 3, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……仕方あるまい。"])
+      ShowText(["この身もろとも、お前達を焼き尽くすのみ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 111, 0, 2, 1])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["急ごしらえのパーティにしては、悪くない……"])
+      ShowText(["だが、私を倒すには力が足りんな。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これだけやっても、倒せないなんて……"])
+      ShowTextAttributes(["coatlus_fc1", 6, 0, 2])
+      ShowText(["【ケツァルコァトル】"])
+      ShowText(["そろそろ、こっちも体力の限界よ……"])
+      ShowTextAttributes(["vgirl_fc2", 2, 0, 2])
+      ShowText(["【ヴァンガード】"])
+      ShowText(["やはり、無茶だったか……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["やはり、劣勢は避けがたい。"])
+      ShowText(["これ以上続けても、勝機は見えないようだ――"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["後悔しろ、勝ち目のない相手に剣を向けた事に……"])
+      ShowText(["そして、神に抗った罰を受けよ……"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"mon_fire4\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サリエラの額に備わった魔眼に、冥府からの炎が呼び寄せられる！"])
+    ShowTextAttributes(["tezcatlipoca_fc1", 6, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["あれは、死の力……！？"])
+    ShowText(["あんなの、天使が使える技じゃないのニャ～！！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まずい、あんな技を食らえば――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達など、骨も残さず焼き尽くされてしまう。"])
+    ShowText(["だが、この状態で避けきれるのか――"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["全てを裁きし冥府の黒火……ここに在れ！"])
+    ErasePicture([5])
+    ShowAnimation([-1, 1123, true])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわぁぁぁっ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["周囲に巻き起こる業火の渦。"])
+    ShowText(["そして、降り注ぐ灼熱の火球。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["もはや、防ぎようがない。"])
+    ShowText(["僕達の体は、なすすべもなく焼き尽くされる――"])
+    PlayBGM(["RPG::BGM(@name=\"boss_rikuso2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sazya_fc1", 3, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["冥府の炎を飲み尽くせ……倶利伽羅の黒龍！"])
+    ShowAnimation([-1, 906, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["炎で形作られた黒龍の息吹が、冥府の業火を相殺した！"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["……何だと！？　貴様は――"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowAnimation([12, 542, false])
+    Wait([60])
+    ControlSwitches([33, 33, 0])
+    Wait([60])
+    ShowPicture([5, "80_sazya_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["ふん、危ないところであったわ……"])
+    ShowText(["世界の破壊者よ、確かに生きておるな？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["沙蛇……ああ、助かったよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["危ないところを助けてくれたのは、六祖の一人である沙蛇。"])
+    ShowText(["そして、後に続いて現れたのは――"])
+    PlayBGM(["RPG::BGM(@name=\"scene_battle1\", @volume=100, @pitch=100)"])
+    ErasePicture([5])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    ControlSwitches([34, 34, 0])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([11, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([13, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    SetMoveRoute([16, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["大丈夫か、ルカ！？"])
+    ShowTextAttributes(["sonia_fc1", 4, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["無事みたいね……良かった！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["アリス！　それにみんな！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["アリスとソニア、そして仲間達――"])
+    ShowText(["約束通り、僕を助けにグランゴルドまで来てくれたのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ありがとう、アリス。"])
+    ShowText(["ここまで来るのに、大変だっただろうに……"])
+    ShowTextAttributes(["alice_fc1", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["……ふん、仲間を助けるのは当然のことよ。"])
+    ShowTextAttributes(["vgirl_fc2", 2, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["アリス、だと……！？"])
+    ShowText(["まさか、あの方が――"])
+    ConditionalBranch([4, 66, 0])
+      ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+      ShowText(["【ヴァニラ】"])
+      ShowText(["えっ……！"])
+      ShowText(["あの妖魔、もしかして……この世界のあたし！？"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([11, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowPicture([5, "80_sazya_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["感動の再会も良いが、長話は後にせよ。"])
+    ShowText(["我がこの世界にいられるのは、あと数分よ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玉藻に続き、沙蛇もこの世界に実体を召喚できるようになったのだ。"])
+    ShowText(["しかし、その時間は玉藻よりも短いらしい――"])
+    ShowPicture([6, "80_sazya_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_sariera_st11", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["玉藻が負傷したとは聞いたが、代わりに貴様が来たか。"])
+    ShowText(["潰せども潰せども、虫のように這い出してくる……"])
+    ShowPicture([6, "80_sazya_st04", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sazya_fc1", 3, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["ふん、イリアスの傀儡が抜かしおるわ……"])
+    ShowText(["六祖の中でも最強たる我が力、味わって死ねい！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["下がれ、ルカ！　巻き込まれるぞ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["くっ……みんな、下がるんだ！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([11, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 1])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["tezcatlipoca_fc1", 6, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["ニャァァァ！！"])
+    ShowPicture([5, "80_sazya_st04b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sazya_fc1", 3, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["時間は掛けられぬ身、一息で決めさせてもらう！"])
+    ShowText(["閉ざせ、永劫の闇――"])
+    ErasePicture([5])
+    ShowAnimation([0, 583, true])
+    ShowTextAttributes(["sariera_fc1", 2, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["ぐっ、これほどの力が――"])
+    PlaySE(["RPG::SE(@name=\"Darkness7\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サリエラの体が、闇の奔流に引き裂かれる！"])
+    ShowText(["サリエラはチリ一つ残さず消散した……"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["sazya_fc1", 1, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["さて、用は済んだな。"])
+    ShowText(["我は帰るぞ、後は――"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["ほう……本当に帰って良いのか？"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ShowPicture([5, "80_sariera_st11b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["塵となったサリエラの体が再構築していく――"])
+    ShowText(["再び、サリエラは立ち上がった！"])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんだと……！？"])
+    ShowText(["ありえん！　沙蛇様の力を受けて無傷など――"])
+    ShowPicture([6, "80_sazya_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_sariera_st11", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["いや、無傷ではない……"])
+    ShowText(["我が奥義で、サリエラは確かに滅びた。"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["その通り……この身、確かに滅ぼされた。"])
+    ShowText(["六祖最強というのも頷ける、大した力よ。"])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["なるほど……貴様、アンデッドだな？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["アンデッドって……ゾンビやゴーストの？"])
+    ShowText(["天使なのに、アンデッドなんて――"])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["まったく、天地の理に反する存在よ。"])
+    ShowText(["天使で不死者……イリアスめ、いったい何を造り出した？"])
+    ShowTextAttributes(["sariera_fc1", 2, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["妖魔の分際で、天使たる私に理など説くな。"])
+    ShowText(["貴様にも天罰が必要のようだな……"])
+    Wait([30])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["魔王、それに破壊者ルカ……"])
+    ShowText(["今すぐ、この場から撤退せよ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["えっ……？"])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["我がこの者に負けることはない――"])
+    ShowText(["が、残された時間では殺しきれんのも事実。"])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["我がここにいられる間、こやつの足止めに専念する。"])
+    ShowText(["その間に、グランゴルドを出よ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["で、でも――"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([30])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([11, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ルカよ、今回はサリエラを討ちに来たわけではない。"])
+    ShowText(["貴様を救出しに来たのだぞ！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["よって、すでに作戦は成功しているのだ！"])
+    ShowText(["さあ、このまま撤退するぞ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そうか……分かった、ここは退こう！"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカは仲間達と合流した！"])
+    Script(["release_temp_actors"])
+    Script(["add_stand_actor(754)"])
+    ScriptMore(["add_stand_actor(755)"])
+    ScriptMore(["add_stand_actor(775)"])
+    ChangeState([0, 1, 1, 1])
+    Script(["call_party_edit"])
+    RecoverAll([0, 0])
+    ControlSwitches([81, 81, 1])
+    ShowTextAttributes(["coatlus_fc1", 0, 0, 2])
+    ShowText(["【ケツァルコァトル】"])
+    ShowText(["さあ、とっとと退散よ！"])
+    ShowTextAttributes(["tezcatlipoca_fc1", 5, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["ウニャニャー！"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["……なぜ、こいつらまでいるのだ？"])
+    ShowText(["それに、あの黒服の銃士は――"])
+    ShowTextAttributes(["vgirl_fc2", 0, 0, 2])
+    ShowText(["【ヴァンガード】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["みんな仲間だ！"])
+    ShowText(["とにかく、ここから逃げよう！"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["分かった……行くぞ！"])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    Wait([5])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    Wait([5])
+    PlaySE(["RPG::SE(@name=\"mon_asioto4\", @pitch=100, @volume=100)"])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([11, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([13, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([16, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Wait([30])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["この私が、罪人を黙って行かせるとでも――"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["焼き尽くせ……倶利伽羅の黒龍！"])
+    ShowAnimation([5, 906, true])
+    ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+    ShowText(["【サリエラ】"])
+    ShowText(["ぐ、うぅっ……！"])
+    ShowTextAttributes(["sazya_fc1", 1, 0, 2])
+    ShowText(["【沙蛇】"])
+    ShowText(["貴様こそ、死なない身だから勝てるとでも思うたか？"])
+    ShowText(["残り時間いっぱい、延々と炙ってくれるわ！"])
+    Wait([60])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlVariables([1171, 1171, 0, 0, 0])
+    ControlSwitches([506, 506, 1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    ChangeTransparency([1])
+    TransferPlayer([0, 916, 47, 4, 2, 0])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "沙蛇"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["ラザロ団長は処刑された……"])
+    ShowText(["もう、希望はない……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["囚人はぶつぶつと呟いている。"])
+    ShowText(["こちらの呼びかけには反応しない……"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["ここから出して下さい、ここから出して下さい……"])
+    ShowText(["ここから出して下さい、ここから出して下さい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["物陰から、ぶつぶつと呟き声が聞こえる……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["ヒーッ！　ヒィ――！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["囚人は奇声を上げて走り回っている……"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["聞いてくれ、俺は世界を救った勇者なんだ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["魔王を倒したのは、俺なんだよ……"])
+    ShowText(["うひひ……あの時の戦いは……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["囚人は、訳のわからない事を呟き続けている……"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["呼びかけても、反応がない……"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSwitches([2635, 2635, 0])
+    ChangeItems([4022, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["多くの者は、過酷な環境に耐えかねて精神を壊します。"])
+    ShowText(["私などは、本棚を差し入れてもらって正解でした……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["囚人は、壁に向かってぶつぶつと呟いている……"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+    ShowText(["【パイパイ】"])
+    ShowText(["うん、なかなか良い秘石が出来たアル。"])
+    ShowText(["次はもっと精製の時間を――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["一人の天使が、牢の中で黙々と秘石を造っている。"])
+    ShowText(["あまりに熱中しすぎていて、こちらに気付いてもいないようだ――"])
+    ControlVariables([1233, 1233, 0, 0, 1])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2634, 2634, 0])
+    ChangeArmor([490, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([91, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowPicture([5, "80_cupid_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["キューピー教会へようこそ♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+      ShowText(["【キューピッド】"])
+      ShowText(["（脱獄囚なのに気付いたけど……"])
+      ShowText(["　身の安全のために、知らないフリしちゃえ）"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    ShowChoices([["転職・転種", "何もしない"], 2])
+    When([0, "転職・転種"])
+      Script(["SceneManager.call(Scene_JobChange)"])
+      Wait([1])
+      RecoverAll([0, 0])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "何もしない"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["tezcatlipoca_fc1", 6, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["宝箱が見えてるのに……"])
+    ShowText(["鍵が掛かってて、入れないニャ。"])
+    ShowTextAttributes(["coatlus_fc1", 2, 0, 2])
+    ShowText(["【ケツァルコァトル】"])
+    ShowText(["残念だけど……今は諦めるしかないみたいね。"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2710, 2710, 0])
+    PlaySE(["RPG::SE(@name=\"mon_earth4\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["宝箱を開けると、階下から大きな動作音がした！"])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["（地下フロアの扉、開いちゃった……"])
+    ShowText(["　ここで騒いだら痛い目に遭うから、知らないフリしよっと）"])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,838 @@
+Display Name = "魔導学園 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 282, 4, 15, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 282, 5, 15, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 282, 45, 15, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 282, 46, 15, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 323, 173, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 323, 173, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 323, 173, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([28, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([420, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([109, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([208, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([207, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ここが、魔導学園……"])
+      ShowText(["確かに、魔導師の気配をあちこちから感じるな。"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["まだ学生といっても、気を抜くなよ。"])
+      ShowText(["相手はメフィストの弟子達、それなりの強者のはずだ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ここが、魔導学園……"])
+      ShowText(["魔導師の生徒が、あちこちにうろついているようですね。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["敵は学生とはいえ、気を抜いてはいけませんよ。"])
+      ShowText(["いずれも、それなりの魔導を習得しているはずです。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 167, 0])
+      ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["あの魔導顧問の教え子達……"])
+      ShowText(["学生といえども、決して油断はできませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 134, 0])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["儂も、学校に通いたかった……"])
+      ShowText(["……ような気がしないでもないぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["学園内を探るって、どこを調べるの……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["悪事の証拠があるとしたら、メフィストの部屋だろうね。"])
+    ShowText(["よし、行くぞ！"])
+    SetMoveRoute([18, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowPicture([5, "80_m_batterfly_st11", 0, 0, 20, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_m_tento_st11", 0, 0, -230, 0, 100, 100, 0, 0])
+    ShowPicture([7, "80_m_dragonfly_st11", 0, 0, 220, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 20, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, -230, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([7, nil, 0, 0, 220, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["m_batterfly_fc1", 3, 0, 2])
+    ShowText(["【生徒Ａ】"])
+    ShowText(["あれぇ……？"])
+    ShowText(["部外者が学園に入っちゃ、ダメなんだよぉ……？"])
+    ShowTextAttributes(["m_tento_fc1", 3, 0, 2])
+    ShowText(["【生徒Ｂ】"])
+    ShowText(["いけないんだ～♪　いけないんだ～♪"])
+    ShowTextAttributes(["m_dragonfly_fc1", 2, 0, 2])
+    ShowText(["【生徒Ｃ】"])
+    ShowText(["どうするの？　上級生か校長先生を呼ぶ？"])
+    ShowText(["それとも……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["あの、これには理由があってね……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あの、これには理由があって……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["気を抜くな、そいつらは人間ではないぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["日和っている場合ですか、こいつらは魔物ですよ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["m_batterfly_fc1", 3, 0, 2])
+    ShowText(["【生徒Ａ】"])
+    ShowText(["えへへっ……侵入者は、オモチャにしてもいいんだよね♪"])
+    ShowTextAttributes(["m_tento_fc1", 3, 0, 2])
+    ShowText(["【生徒Ｂ】"])
+    ShowText(["やっちゃえ～♪　やっちゃえ～♪"])
+    ShowTextAttributes(["m_dragonfly_fc1", 2, 0, 2])
+    ShowText(["【生徒Ｃ】"])
+    ShowText(["宿題あるのに、面倒くさいなぁ……"])
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    ShowPicture([10, "sys_white", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowPicture([7, "80_m_batterfly_st01", 0, 0, 0, 130, 100, 100, 255, 0])
+    ShowPicture([6, "80_m_tento_st01", 0, 0, 200, -30, 100, 100, 255, 0])
+    ShowPicture([5, "80_m_dragonfly_st01", 0, 0, -200, -30, 100, 100, 255, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([10])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["学園の生徒達は、真の姿をさらした！"])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["虫系で魔導タイプというのは珍しいですね。"])
+      ShowText(["さすがは魔導学園、様々な生徒がいるようです……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["m_batterfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルアゲハ】"])
+    ShowText(["あははっ、遊んであげるね……♪"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["くっ……行くぞ！"])
+    ConditionalBranch([4, 185, 0])
+      ShowTextAttributes(["radio_fc1", 0, 0, 2])
+      ShowText(["【ラディオ】"])
+      ShowText(["虫を退治シマす……"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 650, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSelfSwitch(["A", 0])
+    ControlSwitches([2182, 2182, 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["やれやれ……学園潜入というより、学園襲撃だな。"])
+      ShowText(["まあいい、先に進むぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["このまま、学園打通でメフィストの部屋に直行しましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["学園の簡単な見取り図がある。"])
+    ShowText(["メフィスト校長の部屋は、二階にあるようだ……"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["m_tento_fc1", 0, 0, 2])
+    ShowText(["【マジカルテントウ】"])
+    ShowText(["すっごくセクシーな新入生が入ったんだよ。"])
+    ShowText(["あのヒトも、サキュバスだよね？"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["m_batterfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルアゲハ】"])
+    ShowText(["面白い小説、ないかな……？"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([1, 827, 0, 2, 1])
+      ConditionalBranch([0, 1576, 1])
+        ShowTextAttributes(["mob_gakusya2_fc1", 0, 0, 2])
+        ShowText(["【ルーファ】"])
+        ShowText(["ねぇ、ボクも旅に出たいな……"])
+        ShowText(["いっぱい勉強するから、いいでしょ？"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_gakusya2_fc1", 0, 0, 2])
+          ShowText(["【ルーファ】"])
+          ShowText(["よ～し、いっぱい勉強するぞ～！"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(576)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["ルーファが仲間に加わった！"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_gakusya2_fc1", 1, 0, 2])
+          ShowText(["【ルーファ】"])
+          ShowText(["ダメかぁ……もっと勉強するね。"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7261])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([429, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowPicture([5, "80_arumaeruma_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["arumaeruma_fc3", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["あら、あなた達は……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 6, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["アルマエルマ！？"])
+        ShowText(["貴様、なんだその格好は！？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["アルマエルマ！？"])
+        ShowText(["その格好はなんですか！？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["arumaeruma_fc3", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["見れば分かるでしょう、学園への潜入捜査よ。"])
+      ShowText(["私をハメようとしたメフィストについて、調べないとね。"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 5, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["そ、そうか……"])
+        ShowText(["自由にするがいい。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["自分の歳を考えるのですね……"])
+        Empty([])
+      BranchEnd([])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_tosyo\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["arumaeruma_fc3", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["ところで……"])
+      ShowText(["ちょうど今、メフィストは誰かと密談してるみたいよ。"])
+      ShowTextAttributes(["arumaeruma_fc3", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["すぐに学園長の部屋に踏み込めば……"])
+      ShowText(["裏に何があるのか、分かるかもね♪"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["何者かと密談……"])
+        ShowText(["その現場を押さえれば、この上ない証拠になるわね！"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["その場を押さえれば、悪巧みの証拠になる！"])
+        ShowText(["今すぐ行ってみよう！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 79, 0])
+        ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+        ShowText(["【ヌルコ】"])
+        ShowText(["きゅきゅー！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["arumaeruma_fc3", 3, 0, 2])
+    ShowText(["【アルマエルマ】"])
+    ShowText(["私は、もう少し学園内を探ってみるわ。"])
+    ShowText(["この格好も、気に入っちゃったし……♪"])
+    ConditionalBranch([4, 57, 0])
+      ShowTextAttributes(["inp_fc3", 0, 0, 2])
+      ShowText(["【ルミ】"])
+      ShowText(["押忍！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["m_succubus_fc1", 0, 0, 2])
+    ShowText(["【マジカルサキュバス】"])
+    ShowText(["あっ……サボってるの、内緒にしてね。"])
+    ShowText(["後でイイ事してあげるから……"])
+    ConditionalBranch([4, 203, 0])
+      ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+      ShowText(["【たつこ】"])
+      ShowText(["いい事をするのですか……？"])
+      ShowText(["とっても感心な学生なのです！"])
+      ShowTextAttributes(["m_succubus_fc1", 1, 0, 2])
+      ShowText(["【マジカルサキュバス】"])
+      ShowText(["この子、かわいい……♪"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["m_elf_fc1", 0, 0, 2])
+    ShowText(["【マジカルエルフ】"])
+    ShowText(["図書館は静かに！"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["魔導実験、大好きなの……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 1, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["まさに科学の醍醐味ですよね！"])
+    ExitEventProcessing([])
+    Label(["134"])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["儂も実験大好きなのじゃ！"])
+    ExitEventProcessing([])
+    Label(["182"])
+    ShowTextAttributes(["c_homunculus_fc1", 0, 0, 2])
+    ShowText(["【クロウリー】"])
+    ShowText(["私で実験してみる？"])
+    ShowText(["色々と取り揃えているわ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["m_elf_fc1", 0, 0, 2])
+    ShowText(["【マジカルエルフ】"])
+    ShowText(["ほら、ちゃんと聞いてるの？"])
+    ShowText(["もう一度、三元素について確認するわよ！"])
+    ConditionalBranch([4, 163, 0])
+      ShowTextAttributes(["lily_fc1", 3, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["三元素の基礎論……"])
+      ShowText(["懐かしいわね、私は本で学んだわ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["この学園に男はいないのかって？"])
+    ShowText(["教材や食事として、先生が持ち込んでくるくらいだね。"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["m_batterfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルアゲハ】"])
+    ShowText(["早く授業終わらないかな～？"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["m_tento_fc1", 0, 0, 2])
+    ShowText(["【マジカルテントウ】"])
+    ShowText(["上級生のヒトは、あたし達に授業してくれるの。"])
+    ShowText(["とっても面白くないんだよ！"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["m_succubus_fc1", 0, 0, 2])
+    ShowText(["【マジカルサキュバス】"])
+    ShowText(["淫魔で最高の魔導師っていったら……"])
+    ShowText(["なんと言っても、サキュバス村のウィッチさんよね。"])
+    ShowTextAttributes(["m_succubus_fc1", 0, 0, 2])
+    ShowText(["【マジカルサキュバス】"])
+    ShowText(["世界でも指折りの魔導師なんだから、憧れるわ♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["286"])
+    ShowTextAttributes(["witchs_fc1", 1, 0, 2])
+    ShowText(["【ウィッチ】"])
+    ShowText(["あら、光栄ね……"])
+    ShowTextAttributes(["m_succubus_fc1", 1, 0, 2])
+    ShowText(["【マジカルサキュバス】"])
+    ShowText(["えっ、本人……！？"])
+    ShowText(["すごい！　サイン下さい！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["m_elf_fc1", 0, 0, 2])
+    ShowText(["【マジカルエルフ】"])
+    ShowText(["何をウロウロしてるの！"])
+    ShowText(["席について、自習しなさい！"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["m_fairy_fc1", 1, 0, 2])
+    ShowText(["【マジカルピクシー】"])
+    ShowText(["自習とか、マジメにやる気ないし～♪"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["あ……侵入者？"])
+    ShowText(["襲ったりしないよ、野蛮な生徒ばかりだと思わないでほしいな。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["165"])
+    ShowTextAttributes(["onaho_fc1", 0, 0, 2])
+    ShowText(["【ナホ】"])
+    ShowText(["話が分かる人も、いるんですね……♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["m_batterfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルアゲハ】"])
+    ShowText(["白魔法って、面白くないなぁ……"])
+    ShowText(["黒魔法は、ハデで楽しいのにね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["それには同意するわ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ConditionalBranch([1, 1052, 0, 7, 2])
+      ShowTextAttributes(["m_succubus_fc1", 0, 0, 2])
+      ShowText(["【マジカルサキュバス】"])
+      ShowText(["ウソよね……"])
+      ShowText(["あのヒトって、まさか……"])
+      ConditionalBranch([4, 57, 0])
+        ShowTextAttributes(["inp_fc3", 0, 0, 2])
+        ShowText(["【ルミ】"])
+        ShowText(["………！！"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1052, 0, 8, 1])
+      ShowTextAttributes(["m_succubus_fc1", 0, 0, 2])
+      ShowText(["【マジカルサキュバス】"])
+      ShowText(["今日も学園は平和ね。"])
+      ShowText(["外の世界は大荒れらしいのに、いいのかしら……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["読書は好き。体育は嫌い……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["ええ、同感です……"])
+    ExitEventProcessing([])
+    Label(["121"])
+    ShowTextAttributes(["page65537_fc1", 1, 0, 2])
+    ShowText(["【コーネリア】"])
+    ShowText(["読書も運動も、バランス良く。"])
+    ShowText(["どちらか一辺倒ではいけませんよ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["m_tento_fc1", 0, 0, 2])
+    ShowText(["【マジカルテントウ】"])
+    ShowText(["おなか、すいたな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["92"])
+    ShowTextAttributes(["eater_fc1", 0, 0, 2])
+    ShowText(["【イーター】"])
+    ShowText(["あたしも……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["今日は帰りに、オレンジジュース買っていこうかな。"])
+    ShowText(["買い食いは禁止なんだけど……いいよね。"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["m_batterfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルアゲハ】"])
+    ShowText(["メフィスト先生はすごいんだよ。"])
+    ShowText(["生徒全員の顔の見分けがつくんだから！"])
+    ShowTextAttributes(["m_dragonfly_fc1", 0, 0, 2])
+    ShowText(["【マジカルフライ】"])
+    ShowText(["ボク達でさえ、しょっちゅう分からなくなるのにね……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["204"])
+    ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
+    ShowText(["【ステイシー】"])
+    ShowText(["私も実は、たつのこちゃん達の区別がつきません……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["m_elf_fc1", 0, 0, 2])
+    ShowText(["【マジカルエルフ】"])
+    ShowText(["こら！　廊下を走っちゃダメでしょ！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["101"])
+    ShowTextAttributes(["cent2_fc1", 0, 0, 2])
+    ShowText(["【リヒティーヌ】"])
+    ShowText(["存在意義を否定しないでよ……"])
+    ExitEventProcessing([])
+    Label(["202"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["アシェルのようなガミガミ女がいるな……"])
+    ExitEventProcessing([])
+    Label(["207"])
+    ShowTextAttributes(["centa_fc1", 0, 0, 2])
+    ShowText(["【ポニー】"])
+    ShowText(["無茶を言うな！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["m_tento_fc1", 0, 0, 2])
+    ShowText(["【マジカルテントウ】"])
+    ShowText(["ガミガミエルフ……"])
+    Empty([])

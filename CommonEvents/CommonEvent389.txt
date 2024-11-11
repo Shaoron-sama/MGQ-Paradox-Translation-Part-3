@@ -1,0 +1,32 @@
+CommonEvent 389
+Name = "天界四精霊初2"
+
+  999([389])
+  ControlSwitches([2501, 2501, 0])
+  ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+  ShowText(["【ソニア】"])
+  ShowText(["私達の知ってる精霊と違う……！？"])
+  ShowTextAttributes(["stein_fc2", 2, 0, 2])
+  ShowText(["【プロメスティン】"])
+  ShowText(["まさか、疑似精霊……！？"])
+  ShowText(["開発に成功していたとは、知りませんでした……"])
+  ConditionalBranch([4, 286, 0])
+    ShowTextAttributes(["witchs_fc1", 3, 0, 2])
+    ShowText(["【ウィッチ】"])
+    ShowText(["なんと、機械技術で精霊を造り出したのね。"])
+    ShowText(["面白い事を考えるわ……"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 315, 0])
+    ShowTextAttributes(["queenfairy_fc1", 2, 0, 2])
+    ShowText(["【エアリー】"])
+    ShowText(["精霊を人為的に造り出すなんて……"])
+    ShowText(["自然を軽んじていれば、いつか報いを受けますよ。"])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["どうやらイリアスは、精霊さえ自分達で造り出したらしい。"])
+  ShowText(["それはともかく――"])
+  Empty([])

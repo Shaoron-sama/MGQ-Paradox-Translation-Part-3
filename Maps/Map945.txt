@@ -1,0 +1,466 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"field3\", @volume=100, @pitch=100)"])
+    Wait([60])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["魔城トゥーロマンサを臨む位置まで来たな……"])
+      ShowText(["これより、決戦を開始するか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["魔城トゥーロマンサが見えますね……"])
+      ShowText(["さて、決戦を開始しますか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["まだ準備する", "決戦を開始する"], 2])
+    When([0, "まだ準備する"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["そうか……では、いったん引き返すぞ。"])
+        ErasePicture([5])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["分かりました、いったん退きましょう。"])
+        ErasePicture([5])
+        Empty([])
+      BranchEnd([])
+      FadeoutScreen([])
+      Wait([60])
+      ChangeTransparency([1])
+      TransferPlayer([0, 2, 328, 187, 2, 2])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "決戦を開始する"])
+      Empty([])
+
+    ChoicesEnd([])
+    ControlVariables([1002, 1002, 0, 0, 43])
+    ControlSwitches([100, 100, 0])
+    ControlSwitches([81, 81, 0])
+    PlayBGM(["RPG::BGM(@name=\"title\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_ruka_st01", 0, 0, -100, 0, 75, 75, 0, 0])
+    ShowPicture([6, "80_byakunen_st01", 0, 0, 15, 0, 100, 100, 0, 0])
+    ShowPicture([7, "80_lawrat_st01", 0, 0, 200, 20, 95, 95, 0, 0])
+    ShowPicture([8, "80_lars_st11", 0, 0, -220, 150, 90, 90, 0, 0])
+    ShowPicture([9, "80_nobissa_st01", 0, 0, -50, 150, 90, 90, 0, 0])
+    ShowPicture([10, "80_kazuya_st01", 0, 0, 160, 150, 75, 75, 0, 0])
+    ShowPicture([11, "80_rest_st01", 0, 0, 250, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -100, 0, 75, 75, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 15, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([7, nil, 0, 0, 200, 20, 95, 95, 255, 0, 30, false])
+    MovePicture([8, nil, 0, 0, -220, 150, 90, 90, 255, 0, 30, false])
+    MovePicture([9, nil, 0, 0, -50, 150, 90, 90, 255, 0, 30, false])
+    MovePicture([10, nil, 0, 0, 160, 150, 75, 75, 255, 0, 30, false])
+    MovePicture([11, nil, 0, 0, 250, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それじゃあ、いよいよ決戦だ！"])
+    ShowText(["さあ、作戦を開始しよう！"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["さて、気合いを入れるか……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["すでに準備は万端だ！"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["緊張しますが……がんばります！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔城を臨み、僕達は気勢を上げる。"])
+    ShowText(["今ここに、七人の勇者が揃い踏みしたのだ――"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["でも……こうして七人揃うと、壮観よね。"])
+    ShowText(["どんな敵も、怖くないって感じ！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["快楽で総崩れになりそうだがな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["快楽で総崩れになりそうですけどね……"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Wind6\", @pitch=100, @volume=100)"])
+    ShowPicture([12, "iv_ahe", 0, 0, 300, 0, 100, 100, 0, 0])
+    MovePicture([12, nil, 0, 0, 25, 300, 40, 40, 255, 0, 60, true])
+    PlaySE(["RPG::SE(@name=\"Thunder6\", @pitch=100, @volume=100)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 60, true])
+    Wait([90])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["（ラルスはアヘったりしないし……）"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["（ロウラットはアヘったりしないよね……）"])
+    ShowTextAttributes(["magatu_fc1", 1, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["（白念のアヘる顔を見たいのう……）"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["（みんな、おいしそう……）"])
+    ErasePicture([6])
+    ErasePicture([7])
+    ErasePicture([8])
+    ErasePicture([9])
+    ErasePicture([10])
+    ErasePicture([11])
+    ErasePicture([12])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st73", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["さて……敵の中には、夢魔も大勢いるはずだ。"])
+      ShowText(["夢魔には快楽しか通じないこと、よく覚えておけ。"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ところで七人の勇者達よ……本来の世界で、"])
+      ShowText(["セックスバトルで戦ってきた者はどれくらいいる？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さて……敵の中には、夢魔も大勢いるはずです。"])
+      ShowText(["夢魔には快楽しか通じないこと、すでに承知ですね？"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ところで、七人の勇者達……本来の世界において、"])
+      ShowText(["セックスバトルで戦ってきた者は手を挙げなさい。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([6, "80_lawrat_st01", 0, 0, -200, 50, 100, 100, 255, 0])
+    ShowPicture([5, "80_lars_st11", 0, 0, 0, 30, 95, 95, 255, 0])
+    ShowPicture([7, "80_nobissa_st01", 0, 0, 200, 30, 95, 95, 255, 0])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラルス、ロウラット、ノビッサが手を挙げた――"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["三人……しかも、揃って無言系の連中か。"])
+      ShowText(["何か因果でもあるのか？"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ともかく、残る四人は夢魔に対しては無力。"])
+      ShowText(["ゆめゆめ、忘れんようにな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["三人……しかも、揃って無言系の者達ですか。"])
+      ShowText(["何か因果でもあるのですかね？"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ともかく、残る四人は夢魔に対しては無力。"])
+      ShowText(["ゆめゆめ、忘れないように。"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["夢魔が相手だとサポートしか出来ないのか。"])
+    ShowText(["なんだか歯がゆいなぁ……"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["こればっかりは、僕も専門外だ……"])
+    ShowText(["僕の世界じゃ、挿れたらアウトみたいなもんだし……"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["まあその分、私達ががんばるから。"])
+    ShowText(["夢魔相手なら、私を呼んで。"])
+    PlayBGM(["RPG::BGM(@name=\"kiki4\", @volume=100, @pitch=100)"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……それでは、作戦決行と行こう。"])
+      ShowText(["魔王ギルゴーンよ、貴様の役割は分かっているな？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……それでは、作戦を決行しましょう。"])
+      ShowText(["魔王ギルゴーン、貴方の役割は分かっていますね？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_gilgoon_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["了解しているが……貴様ら、ひとつ忘れていないか？"])
+    ShowText(["あの魔城は、元はといえば我の魔王城なのだぞ。"])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["つまり貴様らは、我が城を我が手で破壊せよと……"])
+    ShowText(["全く、なかなか酷い事をさせおる……"])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ShowPicture([5, "80_rovissa_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["また建て直せばいいじゃない。"])
+    ShowText(["ほら、私の力を注ぎ込むわよ！"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([14, 42, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルヴィッサは、ギルゴーンの背中に掌を当てた！"])
+    ShowText(["夢魔に対抗する力が流れ込んでいく――"])
+    ShowPicture([5, "80_gilgoon_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["そういうわけでは……む、おお、来たぞ……！"])
+    ShowText(["これなら、現実と夢が混じり合ったあの城をも――"])
+    ErasePicture([5])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"Collaboration03_cip\\\", 6])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"Collaboration03_cip\", 6])"])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["夢魔どもに、我が力を思い知らせてくれよう！"])
+    ShowText(["――降り注げ、メテオエクリプス！！"])
+    ShowPicture([5, "iv_castle1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowAnimation([4, 544, true])
+    ShakeScreen([9, 9, 60, true])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["うわぁっ！　す、すごい――"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["予想以上の破壊力だな……"])
+      ShowText(["これでは、中の連中もたまったものではあるまい。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["予想以上の破壊力ですね……"])
+      ShowText(["これでは、中の連中もたまったものではないでしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ギルゴーンの放った一撃は、魔城を揺るがした。"])
+    ShowText(["塔が崩れ、城壁は砕け――あちこちから白煙が上がっている。"])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["はーっはっはっは！　もう一発！"])
+    ShowText(["粉砕せよ、メテオエクリプス！！"])
+    ShowAnimation([4, 544, true])
+    ShakeScreen([9, 9, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["さらに隕石の第二撃が、魔城を直撃した。"])
+    ShowText(["城の損害は広がり、左方の城壁は完全に崩れてしまう――"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"Collaboration03_cip\\\", 3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"Collaboration03_cip\", 3])"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ギルゴーン、隕石はあと何発落とせる？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ギルゴーン、隕石はあと何発落とせますか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["ふん、あと三十発程度は余裕だ！"])
+    ShowText(["我が魔力、甘く見るでないぞ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あ、あと三十発も……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["それだけ落とせば、城は更地になりかねない。"])
+    ShowText(["だが、敵側も手をこまねいて見ているはずはなく――"])
+    ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["……見て！　城から敵が！！"])
+    PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=100, @volume=80)"])
+    ShowPicture([5, "iv_castle3", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔城から舞い立ち、こちらへ飛来する無数の影。"])
+    ShowText(["夢魔や魔物達が、攻撃を妨害すべく押し寄せてきたのだ――"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["来たか……迎え撃つぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["来ましたね……迎え撃ちますよ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["ああ、任せろ！"])
+    ShowText(["ギルゴーンには近付けさせない！"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["わ、私も頑張ります……！"])
+    BattleProcessing([0, 1400, false, false])
+    ControlSwitches([31, 39, 1])
+    TransferPlayer([0, 944, 0, 0, 0, 2])
+    Empty([])

@@ -1,0 +1,253 @@
+Display Name = ""
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Wait([60])
+    ShowTextAttributes(["succubusq_fc1", 1, 0, 2])
+    ShowText(["【夢魔Ａ】"])
+    ShowText(["あぁぁ……とろけちゃいそう……"])
+    ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+    ShowText(["【夢魔Ｂ】"])
+    ShowText(["はぅぅ……気持ちいいわぁ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_tamamo_st61b", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+      ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+      ShowText(["【玉藻】"])
+      ShowText(["まあ、こんなところか……"])
+      ShowText(["快楽しか受け付けんとは、面妖な者どもよ。"])
+      ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+      ShowText(["【妲己】"])
+      ShowText(["流石は同族……大した手並よな。"])
+      ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+      ShowText(["【玉藻】"])
+      ShowText(["お主は、異界の九尾か。"])
+      ShowText(["ここで顔を合わせるは、異なる縁……"])
+      ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+      ShowText(["【玉藻】"])
+      ShowText(["話でもしたいが、時間がない。"])
+      ShowText(["この世界におられる時は、限られているのでな……"])
+      ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+      ShowText(["【妲己】"])
+      ShowText(["正規の手法で、この世界に来ているのではないのか。"])
+      ShowText(["異世界への不法侵入とは、器用な事をやりおる……"])
+      ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+      ShowText(["【玉藻】"])
+      ShowText(["其方と違い、主ある身……"])
+      ShowText(["それでは、さらばだ。"])
+      ErasePicture([5])
+      Wait([30])
+      ShowAnimation([11, 542, false])
+      Wait([60])
+      ControlSwitches([31, 31, 0])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["玉藻はこの世界から消失した――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_rafaera_st21", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+      ShowTextAttributes(["rafaera_fc3", 0, 0, 2])
+      ShowText(["【ラファエラ】"])
+      ShowText(["うふふっ……結構なお点前でした。"])
+      Wait([30])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 60, false])
+      Wait([30])
+      ShowPicture([5, "80_rafaera_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ラファエラは、天使の姿に戻った――"])
+      Wait([60])
+      ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+      ShowText(["【妲己】"])
+      ShowText(["相性的に不利なのではなかったか……？"])
+      ShowText(["まったく、ヌシも大層な狐よな。"])
+      ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+      ShowText(["【ラファエラ】"])
+      ShowText(["……さて、ここは片付きました。"])
+      ShowText(["あなたは敵ではないのでしょう、九尾……？"])
+      ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+      ShowText(["【妲己】"])
+      ShowText(["聞いていたはず、事を構える気はない。"])
+      ShowText(["そちらから仕掛けてくるなら別だがのう……"])
+      ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+      ShowText(["【ラファエラ】"])
+      ShowText(["こちらとて、そのつもりはありません。"])
+      ShowText(["それでは、異世界の勇者達によろしくお伝えを……"])
+      ErasePicture([5])
+      Wait([30])
+      ShowAnimation([11, 501, false])
+      Wait([30])
+      ControlSwitches([31, 31, 0])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ラファエラはこの世界から消失した――"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["……まったく、食えぬ奴ばかりよ。"])
+    Wait([90])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([2918, 2918, 0])
+    ChangeTransparency([1])
+    ChangeMapDisplay([0])
+    TransferPlayer([0, 933, 22, 32, 2, 2])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 932, 19, 29, 8, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])

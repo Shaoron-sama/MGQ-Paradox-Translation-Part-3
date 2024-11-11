@@ -1,0 +1,145 @@
+Display Name = "ヘルゴンドの洞窟 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 161, 31, 38, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 161, 32, 38, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 194, 112, 77, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([53, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([29, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["この洞窟を抜ければ、ヘルゴンド大陸に侵入できる。"])
+      ShowText(["もちろん道のりは険しく、魔物も強力だがな……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["魔の大陸に繋がってる洞窟なんだ、そのくらいは覚悟の上さ。"])
+      ShowText(["さあ、気合いを入れて行こう！"])
+      ConditionalBranch([4, 45, 0])
+        ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+        ShowText(["【アリストロメリア】"])
+        ShowText(["うふふっ、とっても楽しい冒険ですわね。"])
+        ShowText(["不思議の国と現実を往復しているかのよう……"])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……貴様は何を企んでいるのだ？"])
+        ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+        ShowText(["【アリストロメリア】"])
+        ShowText(["あら……魔王なのに、そんな事も分からないのですか？"])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……………………"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この洞窟を抜ければ、ヘルゴンド大陸に侵入できます。"])
+      ShowText(["当然ながら道のりは険しく、魔物も強力ですけれど……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["魔の大陸に繋がってる洞窟なんだ、そのくらいは覚悟の上さ。"])
+      ShowText(["さあ、気合いを入れて行こう！"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["これが、イリアス様が与えて下さった夢の試練……"])
+      ShowText(["魔王城に向かう予行演習のようなものですね。"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["なんだか、だましてるみたいで気が咎めるなぁ……"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["実際に、ハインリヒの修練になるから良いではないですか。"])
+        ShowText(["彼はこの後、独力で黒のアリスに挑まなければならないのですよ。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["それにしても、アリストロメリアはどこへ行ったんだろう……"])
+      ShowText(["ああ、夢の中だからいなくて当然なのか。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ハインリヒ……あの者の事など忘れるのです。"])
+      ShowText(["あれは悪しき者、その声に耳を貸してはなりません。"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["イリアス様は、そればかりですね……"])
+      ShowText(["でも僕には分かります、彼女は邪悪な存在ではありませんよ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["（私は……また同じ事を繰り返すというのですか……）"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,357 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 622, 68, 28, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 622, 6, 6, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 45, 11, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 36, 18, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 26, 25, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 41, 34, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 50, 24, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 56, 25, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 54, 44, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 50, 53, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 621, 31, 59, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["多くの人が、教会に逃げ込んだようですね……"])
+    ShowText(["なんとむごい……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 2, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["ああ神よ、せめて彼ら彼女らの魂に安らぎを……"])
+    ExitEventProcessing([])
+    Label(["122"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソフィア】"])
+    ShowText(["教会でこのような……"])
+    ShowText(["ああ、神よ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["木箱に少女の字で何か書かれている……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「しねしねしねしねしねしねしねしねしねしねしねしね"])
+    ShowText(["　しねしねしねしねしねしねしねしねしねしねしねしね"])
+    ShowText(["　しねしねしねしねしねしねしねしねしねしねしねしね"])
+    ShowText(["　しねしねしねしねしねしねしねしねしねしねしねしね」"])
+    ConditionalBranch([0, 2210, 0])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["これは、村の外に搬出されていく箱。"])
+      ShowText(["外の人達に助けを求め、私は秘密のメッセージを刻んでいました。"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["助けは来ないと知った後も、この箱にメッセージを刻み続け……"])
+      ShowText(["私に出来る逃避は、それだけだったんです。"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["そして、襲撃のあの日……"])
+      ShowText(["恐怖に駆られた私が出来た事も、このメッセージを刻む事だけ。"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["この箱だけが、私の世界だったんですよ。"])
+      ShowText(["そこから連れ出してくれたリリス様達への感謝は忘れません。"])
+      ConditionalBranch([4, 382, 0])
+        ShowTextAttributes(["morrigan_fc1", 1, 0, 2])
+        ShowText(["【モリガン】"])
+        ShowText(["本当は、一人も生かすつもりはなかったんだけどな……"])
+        ShowText(["今まで死んでたみたいなもんだ、もう少しばかり生きてもいいだろ。"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 163, 0])
+      ShowTextAttributes(["lily_fc1", 4, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["良かったわね、願いは通じたわ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["なんだか複雑な気分になりますね……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["531"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["大司教と縁者の死亡も確認されたか。"])
+    ShowText(["因果応報などではない、法が裁くべきだったのだ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["私は、死んだ店主の顔馴染みです。"])
+    ShowText(["サン・イリアからの依頼で、遺品整理をしているのですよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["ここの商品が必要なら、私が取り次ぎましょう。"])
+    ShowText(["在庫はたくさんありますので……"])
+    ShopProcessing([0, 2, 0, 0, false])
+    ShopItem([0, 13, 0, 0])
+    ShopItem([0, 17, 0, 0])
+    ShopItem([0, 63, 0, 0])
+    ShopItem([0, 67, 0, 0])
+    ShopItem([0, 71, 0, 0])
+    ShopItem([1, 558, 0, 0])
+    ShopItem([1, 666, 0, 0])
+    ShopItem([2, 1046, 0, 0])
+    ShopItem([2, 1731, 0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["この村の人達のために尽力してきた彼も、その奥さんも……"])
+    ShowText(["どうして、こんな事に……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

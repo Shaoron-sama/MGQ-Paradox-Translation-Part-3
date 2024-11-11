@@ -1,0 +1,2129 @@
+Display Name = "大劇場"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ピアノ弾き】"])
+      ShowText(["ああ、私の魂が弾ける……！"])
+      ShowText(["サキちゃんのハートに反応して、この指が燃える……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ピアノ弾き】"])
+      ShowText(["バーニング！　私の魂がバーニング！"])
+      ShowText(["サキちゃーん！　あああ、サキちゃーん！！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ピアノ弾き】"])
+      ShowText(["魂が弾けませんし、ハートも反応しません……"])
+      ShowText(["普通に楽譜に合わせてピアノを弾くだけです……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1037, 1037, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["酔えば酔うほど強くなる……"])
+    ShowText(["ぐびぐび……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["これ、うちのヒツジだ……"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ウェヘヘヘヘ……"])
+    ShowTextAttributes(["hituzi_fc1", 7, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ぐびぐびぐび……"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ウェヘヘヘヘ……"])
+    ControlSwitches([31, 31, 0])
+    ConditionalBranch([6, -1, 6])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Empty([])
+
+    BranchEnd([])
+    GatherFollowers([])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    CallCommonEvent([312])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=28, @parameters=[31])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=28, @parameters=[31])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    CallCommonEvent([313])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【踊り子】"])
+    ShowText(["あのサキって子、なんなのよ！"])
+    ShowText(["今日は私のステージだったのに！！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["111"])
+    ShowTextAttributes(["suika_fc1", 0, 0, 2])
+    ShowText(["【メロン】"])
+    ShowText(["スイカでも食べて、落ち着きなよ……"])
+    ExitEventProcessing([])
+    Label(["142"])
+    ShowTextAttributes(["bander_fc1", 0, 0, 2])
+    ShowText(["【バナッチ】"])
+    ShowText(["成功者の陰で、歯軋りする者あり……"])
+    ShowText(["……少し違うか？"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【踊り子】"])
+    ShowText(["こんなに客のノリが悪いステージ、初めてよ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["100"])
+    ShowTextAttributes(["rahure_fc1", 1, 0, 2])
+    ShowText(["【フレシア】"])
+    ShowText(["フローラルな香りで盛り上げようか……？"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["ゴメンね☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【若い娘】"])
+    ShowText(["ふん、何がサキちゃんよ……"])
+    ShowText(["世の男連中は、見る目がないわね！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["99"])
+    ShowTextAttributes(["namazu_fc1", 0, 0, 2])
+    ShowText(["【ギギ】"])
+    ShowText(["その怒りを、バネにできればいいのだがな……"])
+    ShowText(["たいがいは他者の足を引っ張る方に向かってしまいよる。"])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["嫉妬は醜いわね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([1, 1001, 0, 29, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い娘】"])
+      ShowText(["サキちゃんが去った今だからこそ分かる……"])
+      ShowText(["私は、あの娘に嫉妬してたのね。"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["99"])
+      ShowTextAttributes(["namazu_fc1", 0, 0, 2])
+      ShowText(["【ギギ】"])
+      ShowText(["己の醜さを認めてこそ、成長はあるのかもしれんな。"])
+      ExitEventProcessing([])
+      Label(["120"])
+      ShowTextAttributes(["page257_fc1", 0, 0, 2])
+      ShowText(["【ヨーコ】"])
+      ShowText(["ジェラシー上等ではないですか……"])
+      ShowText(["嫉妬がなければ、恋愛小説は半分の薄さになってしまいます。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 30, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い娘】"])
+      ShowText(["この劇場は、いつ来ても変わらないわね。"])
+      ShowText(["みんな忘れたいのよ、世の中の不安を……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["サキちゃんの握手券を売れば……"])
+      ShowText(["これはいい、いけるぞ……！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["サキちゃんの握手券……"])
+      ShowText(["たくさん売ったのはいいけど、本人がいなくなって……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["……代わりに、私が握手するしかないんですかね？"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["102"])
+      ShowTextAttributes(["youko_fc1", 2, 0, 2])
+      ShowText(["【きつね】"])
+      ShowText(["暴動になりそう……"])
+      ExitEventProcessing([])
+      Label(["155"])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["私、許可してないから……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 29, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 30, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    ShowPicture([5, "ct_saki2", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([2, "A", 1])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["抱きしめてあげる♪　指を絡めて心のスミまで♪"])
+      ShowText(["抱きしめてあげる♪　唇重ねて問答無用よ♪"])
+      ShowPicture([5, "ct_saki1", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["連れて行ってあげる♪　空の彼方♪"])
+      ShowText(["連れて行ってあげる♪　夢の深淵♪"])
+      ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["……ちょっと、何なの？"])
+      ShowText(["おさわりは、お断りだよっ……！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あの、ステージを乗っ取るのはやめてくれないかな……"])
+      ShowText(["支配人や、他のみんなも迷惑してるんだよ。"])
+      ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["迷惑じゃないよね？"])
+      ShowText(["みんな、サキを応援してくれてるよねー♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ファンＡ】"])
+      ShowText(["ウォォォォー！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ファンＢ】"])
+      ShowText(["サキちゃーん！"])
+      ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["ほら、みんな応援してくれてるんだから。"])
+      ShowText(["それでも、サキの邪魔をするっていうの……？"])
+      ShowChoices([["邪魔をする", "邪魔をしない", "サキちゃーん！"], 2])
+      When([0, "邪魔をする"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["ほんと、困ったヒトだなぁ……"])
+        ShowText(["もしかして、サキのストーカーさん？"])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["それじゃあ、サキがやっつけちゃうよ♪"])
+        ShowText(["ファンのみんな、サキを応援してねー☆"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【ファンＡ】"])
+        ShowText(["ウォォォォー！！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【ファンＢ】"])
+        ShowText(["サキちゃーん！"])
+        ConditionalBranch([4, 155, 0])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["あれっ？　サキのそっくりさんかなぁ？"])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["【サキ’】"])
+          ShowText(["ただのそっくりさんかどうか……"])
+          ShowText(["あなたもサキなんだから、すぐ分かるはずだよね？"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["確かに、サキの目は誤魔化せないよね。"])
+          ShowText(["あなたは偽物じゃなくて、本物のサキちゃん☆"])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["【サキ’】"])
+          ShowText(["ダブルサキで、デュエットしちゃおうよ☆"])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ChangeBattleBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ControlSwitches([22, 22, 0])
+        BattleProcessing([0, 251, false, false])
+        ControlSwitches([22, 22, 1])
+        ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+        PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+        ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ControlSelfSwitch(["A", 0])
+        Script(["gain_medal(27)"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["サキ、負けちゃったぁ……"])
+        ShowText(["ファンのみんな、ごめんね……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【ファンＡ】"])
+        ShowText(["ウォォォォー！！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【ファンＢ】"])
+        ShowText(["サキちゃーん！"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["サキの夢は、世界のトップアイドルになる事なのに……"])
+        ShowText(["こんなところで、夢が終わっちゃうなんて……"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["そんな大それた話じゃなくて……"])
+          ShowText(["ステージの占拠をやめてほしいだけなんだけど。"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["そんな大それた話じゃなくて……"])
+          ShowText(["ステージの占拠をやめてほしいだけなんだけど。"])
+          Empty([])
+        BranchEnd([])
+        ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 0, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["ねぇ、あなた達は旅人だよね。"])
+        ShowText(["サキも連れて行ってくれない？"])
+        Label(["仲間"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["えっと……"])
+        ShowChoices([["連れて行く", "断る"], 2])
+        When([0, "連れて行く"])
+          ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["サキ、大感激☆"])
+          ShowText(["これからも、よろしくねー♪"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(155)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["サキが仲間に加わった！"])
+          Wait([60])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファンＡ】"])
+          ShowText(["そんな……"])
+          ShowText(["サキちゃんのステージが終わっちゃうなんて……"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファンＢ】"])
+          ShowText(["いいや、これは始まりなんだ！"])
+          ShowText(["サキちゃんは全国ツアーで伝説を作るんだ！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファンＣ】"])
+          ShowText(["ウォォォォー！　どこまでもついていくぜー！"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["みんな、応援ありがとね☆"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファン全員】"])
+          ShowText(["ウォォォォー！"])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["……それじゃあ、行きましょうか。"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["……それじゃあ、行こうか。"])
+            Empty([])
+          BranchEnd([])
+          ControlVariables([1030, 1030, 0, 0, 2])
+          PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+          TransferPlayer([0, 337, 29, 44, 2, 0])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "断る"])
+          ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 2, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["そんなぁ……"])
+          ShowText(["サキ、かなしいよぉ……"])
+          PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+          ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["この悲しみを、歌にしたよ！"])
+          ShowText(["……ぐっすん☆トゥナイト♪"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["【サキ】"])
+          ShowText(["涙の中にね♪　ぐっすんトゥナイト♪"])
+          ShowText(["お星様の夜には……"])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["ちょっと！　まだステージ乗っ取り続ける気！？"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["まだステージを乗っ取り続けるの……？"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファンＡ】"])
+          ShowText(["ウォォォォー！！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【ファンＢ】"])
+          ShowText(["サキちゃーん！"])
+          ErasePicture([5])
+          ExitEventProcessing([])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      When([1, "邪魔をしない"])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["分かってくれて、サキうれしいっ♪"])
+        ShowText(["みんなと一緒に応援してくれたら、サキもっとうれしいな☆"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      When([2, "サキちゃーん！"])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["【サキ】"])
+        ShowText(["応援、ありがとっ♪"])
+        ShowText(["でもステージには上がらないでね♪"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["抱きしめてあげる♪　指を絡めて心のスミまで♪"])
+      ShowText(["抱きしめてあげる♪　唇重ねて問答無用よ♪"])
+      ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["……あっ、またあなた達ね。"])
+      ShowText(["サキを、全国ツアーに連れて行ってくれるの？"])
+      JumpToLabel(["仲間"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【踊り子】"])
+    ShowText(["とどけ、私のハァァァト……キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["ちょっとハートが足りないかな……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【踊り子】"])
+    ShowText(["踊り子と吟遊詩人をマスターすると、スーパースターになれるわ。"])
+    ShowText(["便利な踊りや歌を色々と覚えるらしいわよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【踊り子】"])
+    ShowText(["あこがれるわね……うっとり……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["59"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["【ラゴラ】"])
+    ShowText(["スーパースター！　憧れるわね……"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["サキはもちろん、スーパースター☆"])
+    ShowText(["歌や踊りでサポートするよっ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 181
+Name = "EV181"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["サキちゃーん！"])
+    ShowText(["はぁはぁ……サキちゃーん！！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 182
+Name = "EV182"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["サキちゃーん！　ハァハァ、サキちゃ～ん！！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 183
+Name = "EV183"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ウォォォー！　サキちゃーん！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ウォォォー！　サキちゃーん！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["……分かってる、サキちゃんはもういないんだ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["ここにいるぞっ☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["わわわ……！　サキちゃん！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 184
+Name = "EV184"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【身なりの良い男】"])
+    ShowText(["ハートにズッキューン！　サキちゃーん！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【身なりの良い男】"])
+    ShowText(["そろそろ帰ろうかな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["途中で帰るのは失礼だよ。"])
+    ShowText(["ちゃんと終わりまで見ようね☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【身なりの良い男】"])
+    ShowText(["おぉぉ……サキちゃぁん！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 185
+Name = "EV185"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【若い娘】"])
+    ShowText(["キャー！　ステキー！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 186
+Name = "EV186"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["おぉぉぉぉ……！　サキちゃぁぁぁぁん！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["サキちゃぁぁぁぁん！！　カムバァァァァック！！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["戻ってきたよー☆"])
+    ShowText(["ちょっと顔出しただけなんだけど……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["応援してます！"])
+    ShowText(["次のコンサートも、絶対行きますから！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 187
+Name = "EV187"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃーん！　あ、あぁぁあっぁぁ～～！"])
+    ShowText(["あぁぁ～！　さ、ササササキちゃ～ん～！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["うわぁ、盛り上がってないな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 2, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["本当に盛り上がってないね……"])
+    ShowText(["ちょっと責任感じるかも。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 188
+Name = "EV188"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【吟遊詩人】"])
+    ShowText(["張り裂けそう、この想い！"])
+    ShowText(["サキちゃんが私を裂く！！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 189
+Name = "EV189"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["サキちゃんこそ神だ！"])
+    ShowText(["ああ神よ！　あなたこそサキちゃーん！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["26"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["神はここにいます。"])
+    ShowText(["ここにいますよ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 190
+Name = "EV190"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おやじ】"])
+    ShowText(["サキちゃーん！　サキちゃぁぁぁぁ～～ん！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おやじ】"])
+    ShowText(["ここで待っているのさ、サキちゃんが戻ってくる日を……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["次のコンサートも、よろしくね☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おやじ】"])
+    ShowText(["も、もちろんです！"])
+    ShowText(["女房を道具屋で売ってでも行きます！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 191
+Name = "EV191"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃーん！　ウォォォー！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃん……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["元気がないぞッ☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ホォォァァァァ――！！"])
+    ShowText(["サキちゃんだァ――ッ！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 192
+Name = "EV192"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【シーフ】"])
+    ShowText(["サキちゃーん！　サキちゃーん！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 193
+Name = "EV193"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["サキちゃん、キラッ☆"])
+    ShowText(["キラッ☆　キラキラキラッ☆"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["キラッ☆　キララッ☆　キラキラキラッ☆"])
+    ShowText(["キラキラキラキラキラ……☆☆☆☆☆☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["目が死んでいる……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 2, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["魅惑しすぎちゃったかな……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 194
+Name = "EV194"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["サキちゃんは神の使いじゃ……"])
+    ShowText(["おお、神々しい……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 195
+Name = "EV195"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃんに届け、僕のこの想い！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 196
+Name = "EV196"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["おぉぉぉ……！　ウォォォー！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["ぉぉぉ……ぉぉぉ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["元気出して、またコンサートするから☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["おぉぉぉ……！　ウォォォー！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 197
+Name = "EV197"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男の子】"])
+    ShowText(["サキちゃん、だいすきー！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["118"])
+    ShowTextAttributes(["meia_fc1", 1, 0, 2])
+    ShowText(["【メイア】"])
+    ShowText(["まあ、子供にも人気があるんですね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 198
+Name = "EV198"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【剣士】"])
+    ShowText(["ウォォォォォォー！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【剣士】"])
+    ShowText(["心が沸き立たない……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["また、火を付けてあげようか……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【剣士】"])
+    ShowText(["オォォォォー！！"])
+    ShowText(["燃えちゃうー！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 199
+Name = "EV199"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["やっぱりサキちゃーんは最高だな！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 200
+Name = "EV200"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["熱いパトスを感じるぜ！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["悪くはないですが……"])
+    ShowText(["やはりサキちゃんと比べると……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["サキはサキ、あの娘はあの娘♪"])
+    ShowText(["よかった探ししよっ☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["そうだ……俺は、あの踊り子にサキちゃんの姿を重ねていた……"])
+    ShowText(["あの娘はサキちゃんじゃない、俺は幻影を追っていただけだったんだ！"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["キモッ！"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 202
+Name = "EV202"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["私は、伝統ある大劇場の支配人。"])
+    ShowText(["しかし今は、ヤケ飲みするだけの毎日です……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["衛兵もみんな洗脳され、引き上げてしまう有様。"])
+    ShowText(["スケジュールはメチャクチャで、怒りの声が殺到しています。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["旅の方、どうかサキちゃんを無理矢理にでも……！"])
+    ShowText(["あっ……ステージの上で流血は勘弁して下さいね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["57"])
+    ShowTextAttributes(["inp_fc3", 0, 0, 2])
+    ShowText(["【ルミ】"])
+    ShowText(["顔じゃなくて、ボディーにしとく……"])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 2, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["流血させずに、どうやって血祭りに上げろってんだよ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["サキちゃんが去ってから、客足がめっきり遠のいて……"])
+    ShowText(["やっぱり、ヤケ飲みするだけの毎日です……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["ああ、サキちゃんが戻ってきてくれれば……"])
+    ShowText(["ステージの占拠さえしなければ、最高のスターだったのに……"])
+    ConditionalBranch([4, 155, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["そこまで言われたら、奇跡のカムバック☆"])
+      ShowText(["サキがひと肌、脱いであげる♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【支配人】"])
+      ShowText(["ああっ、サキちゃーん！"])
+      ShowText(["もう、いつでも大歓迎だよー！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【支配人】"])
+      ShowText(["それに、お付きの方々も……"])
+      ShowText(["何か一芸などあれば、ステージを用意致しますよ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["えっ、僕達も！？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【支配人】"])
+      ShowText(["サキちゃん、もう一つ頼みがあるんだけど……"])
+      ShowText(["例の、夜のアレもできないかなぁ？"])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["アレって、夜のライブ？"])
+      ShowText(["うん、まかせてっ☆"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["夜のライブって、なんだろう……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["仲間達はステージで公演できるようになった！"])
+      ShowText(["また、サキは「夜のライブ」を開催できるようだ！"])
+      ControlVariables([1030, 1030, 0, 0, 3])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["支配人は、サキに戻ってきてほしいようだ……"])
+      ShowText(["ここに連れてきてみようか。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ControlSwitches([601, 700, 1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["公演を行いますか？"])
+    ShowText(["それとも、「サキちゃん夜のライブ」を楽しみますか？"])
+    Script(["unlimited_choices(11, [\"ステージ1\","])
+    ScriptMore(["\"ステージ2\",\"ステージ3\",\"ステージ4\","])
+    ScriptMore(["\"ステージ5\", \"ステージ6\", \"ステージ7\", \"ステージ8\", "])
+    ScriptMore(["\"サキちゃん夜のライブ\", \"やめる\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      CallCommonEvent([121])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      CallCommonEvent([122])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      CallCommonEvent([123])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      CallCommonEvent([124])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 4, 0])
+      CallCommonEvent([125])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 5, 0])
+      CallCommonEvent([126])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 6, 0])
+      CallCommonEvent([127])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 7, 0])
+      CallCommonEvent([128])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 8, 0])
+      ConditionalBranch([0, 25, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["前章と統合していないため、夜のライブは行えません。"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowChoices([["ひみつコース（100G）", "勝負コース（500G）", "本番コース（1000G）", "やめる"], 4])
+      When([0, "ひみつコース（100G）"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["おや、サキちゃんパスを持っていますね。"])
+          ShowText(["ならばお代は頂きません。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(319)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 100, 0])
+            ChangeGold([1, 0, 100])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(319)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["おや、お金が足りないようですね……"])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "勝負コース（500G）"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["おや、サキちゃんパスを持っていますね。"])
+          ShowText(["ならばお代は頂きません。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(320)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 500, 0])
+            ChangeGold([1, 0, 500])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(320)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["おや、お金が足りないようですね……"])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([2, "本番コース（1000G）"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["おや、サキちゃんパスを持っていますね。"])
+          ShowText(["ならばお代は頂きません。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【支配人】"])
+          ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(321)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 1000, 0])
+            ChangeGold([1, 0, 1000])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["それでは、サキちゃん夜のライブを楽しんで下さいね！"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(321)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["【支配人】"])
+            ShowText(["おや、お金が足りないようですね……"])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([3, "やめる"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 9, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 203
+Name = "EV203"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 29, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 204
+Name = "EV204"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【バニー】"])
+    ShowText(["サキちゃん、キラッ☆"])
+    Empty([])
+
+CommonEvent 205
+Name = "EV205"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【バニー】"])
+      ShowText(["サキちゃんのステージは大盛況なんだけど……"])
+      ShowText(["キャンセルになった芸人さんや踊り子さんがお怒りなのよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【バニー】"])
+      ShowText(["支配人さん、違約金の支払いで大変みたい……"])
+      ShowText(["いっそサキちゃんを大々的に売り出せばいいのにねぇ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【バニー】"])
+      ShowText(["サキちゃんが去った後、劇場は閑古鳥。"])
+      ShowText(["うまくいかないものよね、世の中って……"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["上手くいってない人を見ると、なんだか安心するわよね。"])
+    ExitEventProcessing([])
+    Label(["181"])
+    ShowTextAttributes(["gaistvine_fc1", 0, 0, 2])
+    ShowText(["【リザ】"])
+    ShowText(["見たところ、由緒正しい大劇場……"])
+    ShowText(["そう簡単に、商業的判断も出来ないのでしょうね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 206
+Name = "EV206"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【バニー】"])
+    ShowText(["いらっしゃい、いっぱい飲んでいってね♪"])
+    ShopProcessing([0, 428, 0, 0, false])
+    ShopItem([0, 431, 0, 0])
+    Empty([])
+
+CommonEvent 207
+Name = "EV207"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【芸人】"])
+    ShowText(["これじゃ、商売あがったりだぜ……"])
+    ShowText(["でも、サキちゃんかわいい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【芸人】"])
+    ShowText(["……サキちゃん、キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["78"])
+    ShowTextAttributes(["syesta_fc1", 0, 0, 2])
+    ShowText(["【シェスタ】"])
+    ShowText(["キラッ……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【芸人】"])
+    ShowText(["……サキちゃん、キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["着実に感染してるみたいね……"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["応援、ありがとね☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 208
+Name = "EV208"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃんはサキュバスだけど……"])
+    ShowText(["アイドルだから、男の精液なんて吸わないのさ。"])
+    ShowChoices([["その通りだ", "そうは思わない"], 0])
+    When([0, "その通りだ"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["サキちゃんはサキュバスじゃなく、天使なのかもしれない……"])
+      ShowText(["サキちゃん……ああ……サキちゃん……"])
+      Empty([])
+
+    When([1, "そうは思わない"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["あんたは何も分かってない！"])
+      ShowText(["何が分かってないのかさえ分かっていないんだ！"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ああ、サキちゃん……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["呼んだ？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["幻が……麗しい幻が見える……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 209
+Name = "EV209"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["サキちゃんの歌声を聞いていると、心が綺麗になっていくようだ……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["サキちゃんの歌声を聞いていないから、心が汚れていくようだ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["その心、ちょっとだけリフレッシュ☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["ああ、心が清らかになっていく……"])
+    ShowText(["恵まれない人のため、教会で炊き出しでもしてこよう……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 210
+Name = "EV210"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【紳士】"])
+    ShowText(["まさか、この歳になってもこんなトキメキが……"])
+    ShowText(["うそ……わたし、恋してる……？"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【紳士】"])
+    ShowText(["なんとも物足りない、この感じ……"])
+    ShowText(["家内もとても寂しそうです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["全国ツアー、待っててね☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【紳士】"])
+    ShowText(["もちろん、行きますとも！"])
+    ShowText(["財産を全て使い果たしてでも……！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 211
+Name = "EV211"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【淑女】"])
+    ShowText(["あのような小娘のどこが良いというのです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【淑女】"])
+    ShowText(["……サキちゃん、キラッ☆"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【淑女】"])
+    ShowText(["……サキちゃん、キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["応援、ありがとね☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 212
+Name = "EV212"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【若い女】"])
+    ShowText(["サキちゃん様……ああ、ステキですわ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 213
+Name = "EV213"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["サキちゃんは天が遣わしたひとひらの流れ星だ。"])
+    ShowText(["キラッ☆と輝いて、僕達に幸せの魔法をかけるのさ……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["ひとひらの流れ星は、宇宙（そら）の彼方に消えていった。"])
+    ShowText(["でも、幸せの魔法は解けないままさ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["幸せの魔法、これからもアップデートしてあげる☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["太陽が語り掛ける、麗しい女性の姿で……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 214
+Name = "EV214"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わわわーい！　サキちゃん、キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ライム】"])
+    ShowText(["あたしも、いっしょにキラッ☆"])
+    ExitEventProcessing([])
+    Label(["54"])
+    ShowTextAttributes(["bunnyslime_fc1", 1, 0, 2])
+    ShowText(["【うさ】"])
+    ShowText(["うさうさ、キラッ☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 215
+Name = "EV215"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わーい！　サキちゃん、キラッ☆"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ライム】"])
+    ShowText(["あたしも、いっしょにキラッ☆"])
+    ExitEventProcessing([])
+    Label(["54"])
+    ShowTextAttributes(["bunnyslime_fc1", 1, 0, 2])
+    ShowText(["【うさ】"])
+    ShowText(["うさうさ、キラッ☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 216
+Name = "EV216"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ハァハァ、サキちゃん……"])
+    ShowText(["ハァハァハァ……ウッ！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["109"])
+    ShowTextAttributes(["kani_fc1", 0, 0, 2])
+    ShowText(["【ソープ】"])
+    ShowText(["こんなところで、汚いよ……"])
+    ShowText(["……洗ってあげようか？"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 2, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["最低ですね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃん……戻ってきて……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["たまに、ここにも戻ってくるから……"])
+    ShowText(["……それまで、いい子で待っててね☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["サキちゃぁぁぁん！"])
+    ShowText(["俺、いい子にするよ！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 217
+Name = "EV217"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["反応がない。"])
+    ShowText(["興奮のあまり心臓が停止したようだ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["118"])
+    ShowTextAttributes(["meia_fc1", 3, 0, 2])
+    ShowText(["【メイア】"])
+    ShowText(["あら、大変。"])
+    ExitEventProcessing([])
+    Label(["133"])
+    ShowTextAttributes(["zonbe_fc3", 3, 0, 2])
+    ShowText(["【ゾンビーズ】"])
+    ShowText(["なかま……なかま……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 218
+Name = "EV218"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["オォォォォー！　サキちゃぁぁん！！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 219
+Name = "EV219"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【シーフ】"])
+    ShowText(["俺は大切なものをサキちゃんに盗まれてしまった……！"])
+    ShowText(["それは、俺の心だ！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【シーフ】"])
+    ShowText(["サキちゃんのコンサートなんか、凄まじいものだった。"])
+    ShowText(["隣にいた爺さんなんか、興奮のあまり心臓が止まったんだぜ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【シーフ】"])
+    ShowText(["その爺さん……？　蘇生したって話だぜ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["よかった……"])
+    ShowText(["コンサートで死人なんて、イヤだよね☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 220
+Name = "EV220"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学生】"])
+    ShowText(["もうレポートなんか、どうでもいい！"])
+    ShowText(["人生よりサキちゃんの方が大切だ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 221
+Name = "EV221"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["大学？　そんなの知らんよ……"])
+    ShowText(["そんなことより、サキちゃんだ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 222
+Name = "EV222"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["脳細胞がみなぎっていく……！"])
+    ShowText(["サキちゃんの歌が、踊りが私の脳を活性化する……！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["私の脳細胞は、何も活性化されませんが……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 223
+Name = "EV223"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【吟遊詩人】"])
+    ShowText(["このハートのときめきを、私は全世界に伝えたいと思います。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 224
+Name = "EV224"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【若い娘】"])
+    ShowText(["ああ、憧れるわ……"])
+    ShowText(["私もサキちゃんになりたい……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 225
+Name = "EV225"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["世界デビューも夢ではありません。"])
+    ShowText(["サキちゃんの歌と踊りが世界を癒すのですよ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 226
+Name = "EV226"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["仕事があるのに……"])
+    ShowText(["この劇場から離れられなくなりました……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 227
+Name = "EV227"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["ああ、天にも昇るかのようだ……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["まあまあだね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["それじゃあ、またサキの歌を聴きに来てね。"])
+    ShowText(["最高のコンサート、ヤっちゃうから☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["イク――ッ！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 228
+Name = "EV228"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【屈強な男】"])
+    ShowText(["俺のハートはサキちゃんにノックアウトされた。"])
+    ShowText(["もうキラキラだぜ……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【屈強な男】"])
+    ShowText(["あれじゃ俺のハートには響かねぇな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["それじゃあ、またサキのコンサートに来ちゃう？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【屈強な男】"])
+    ShowText(["イグゥゥゥゥ――！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 229
+Name = "EV229"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["これは間違いなく神話になるな……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 230
+Name = "EV230"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 231
+Name = "EV231"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["この男はサキちゃんに猥褻な言葉を吐きかけましたので成敗しました。"])
+    ShowText(["いえいえ、当然のことです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["88"])
+    ShowTextAttributes(["jack_fc1", 2, 0, 2])
+    ShowText(["【かぼちゃ】"])
+    ShowText(["熱狂的だね、なんだかこわいよう……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 232
+Name = "EV232"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["……ったく、サキちゃんは神聖なる存在なんだよ。"])
+    ShowText(["汚れなき天使に向かって、何てことを言うんだ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 2, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["もはや崇拝ですね。"])
+    ShowText(["罪深き事です……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 233
+Name = "EV233"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["まったく、ふざけやがって……"])
+    ShowText(["二度とサキちゃんの前に姿を現すんじゃねーぞ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["122"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソフィア】"])
+    ShowText(["暴力と退廃が支配するソドムの町……"])
+    ShowText(["ああ、どうかお救いを……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 235
+Name = "EV235"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【身なりの良い男性】"])
+      ShowText(["こちらはカジノになります。"])
+      ShowText(["サキちゃんの歌で酔いしれた後、楽しんでみては？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【身なりの良い男性】"])
+      ShowText(["こちらはカジノになります。"])
+      ShowText(["どうぞ、お楽しみを。"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 2, 0, 2])
+    ShowText(["【かむろ】"])
+    ShowText(["こんなところで遊んで、怒られないかな……"])
+    ExitEventProcessing([])
+    Label(["121"])
+    ShowTextAttributes(["page65537_fc1", 2, 0, 2])
+    ShowText(["【コーネリア】"])
+    ShowText(["さて、行きましょうか……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 236
+Name = "EV236"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人の妻】"])
+    ShowText(["今日もお客さんがいっぱいだ、バリバリ働くよー！"])
+    ShowText(["……今日もダンナは泣き言みたいだね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["うちのおかみさんみたい……"])
+    ShowText(["実質、この人が仕切ってるのかな？"])
+    ExitEventProcessing([])
+    Label(["140"])
+    ShowTextAttributes(["taran_fc1", 0, 0, 2])
+    ShowText(["【ラチュラ】"])
+    ShowText(["ずいぶんたくましいわね……"])
+    ShowText(["商売人は、これくらい気骨がないとダメなのかしら？"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人の妻】"])
+    ShowText(["人生七転び八起き、バリバリ働くよー！"])
+    ShowText(["……相変わらずダンナは泣き言みたいだね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["おかみさん、毎度お疲れ様です！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人の妻】"])
+    ShowText(["……おかみさん？"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["【かむろ】"])
+    ShowText(["なんと力強いリーダーシップ……"])
+    ShowText(["私も、見習わなくては。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 238
+Name = "EV238"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["奥様はいつでもポジティブです。"])
+    ShowText(["その分、旦那様は非常に打たれ弱いですが……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["108"])
+    ShowTextAttributes(["kai_fc1", 0, 0, 2])
+    ShowText(["【シェリー】"])
+    ShowText(["そのような旦那様を立てるのも、良妻のたしなみ。"])
+    ShowText(["立てるって、変な意味じゃありませんよ……"])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["ったく、困ったダンナだな！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 239
+Name = "EV239"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【メイド】"])
+      ShowText(["いつかデビューする日を夢見て……！"])
+      ShowText(["今は下働きに身をやつす毎日です。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【メイド】"])
+      ShowText(["サキちゃんがいない今、私が華々しくデビューを……！"])
+      ShowText(["いや時期尚早、もう少し下働きを続けます。"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["59"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["【ラゴラ】"])
+    ShowText(["私も、デビューを夢見て地面に埋まる日々よ。"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 2, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["下働きとか、よくやるわよねぇ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 269
+Name = "EV269"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([428, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 270
+Name = "EV270"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([30, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,25 @@
+CommonEvent 640
+Name = "イベント：MP軽減"
+
+  999([640])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 70, 0])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["【かむろ二尾】"])
+    ShowText(["どうか、ご注意を……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+  ShowText(["【かむろ二尾】"])
+  ShowText(["至らない身ですが、お手伝いをさせて下さい……！"])
+  ControlSwitches([70, 70, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["かむろ二尾から妖狐の加護が与えられた！"])
+  ShowText(["次のボスフロアまで、戦闘中の消費MPが半減する！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

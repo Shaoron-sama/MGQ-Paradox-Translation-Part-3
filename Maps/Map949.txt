@@ -1,0 +1,255 @@
+Display Name = ""
+Parallax Name = "DarkSpace1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 861, 43, 173, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 861, 9, 207, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ScrollMap([8, 3, 4])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["さ、流石に骨が折れたな……"])
+      ShowText(["ではルカ……本番を……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さ、流石に骨が折れました……"])
+      ShowText(["ではルカ……本番を……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あの……扉、壊れてるんだけど。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["な……なんだと！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["な……なんですって……！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["セックスしなくても出られるなんて……"])
+    ShowText(["流石に、これほどの破壊は想定してないみたいだな。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["そ、そうか……"])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……………………"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そ、そうですか……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……………………"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["残念か……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["べ、別に残念ではないわ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["べ、別に残念ではありません！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["と、とにかく……"])
+    ShowText(["これで第六の試練もクリアだね！"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["ちょっと、マジ最悪～！"])
+    ShowText(["仕掛けを無視して、部屋を壊すとかありえなくない？"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["キミ達、なんだかインチキばっかりだしぃ……"])
+    ShowText(["それでも、本当に勇者ぁ？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["今回ばかりは、わざとではない！"])
+      ShowText(["これくらいで壊れる部屋を作るな！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["今回ばかりは、わざとではありません！"])
+      ShowText(["これくらいで壊れる部屋を作る方がいけないのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["こっちのせいにしないで欲しいんですけどー。"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["あー、もういいや。"])
+    ShowText(["次の部屋でその分お返しするから。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミュスカからの交信は途絶えた……"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["次はいよいよ、最後の試練ね……"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あれ……いつの間に戻ってきたの？"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["さっき、どさくさに紛れて……"])
+    ShowText(["……そんなの、今はどうでもいいでしょ！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ともかく、もうセックス部屋はあるまい。"])
+      ShowText(["次こそ向こうも勝負を仕掛けてくるだろうな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ともかく、もうセックス部屋はないでしょう。"])
+      ShowText(["次こそ向こうも勝負を仕掛けてくるはずです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["気合いを入れないとね……"])
+    ShowText(["さあ、行こう！"])
+    Wait([60])
+    FadeoutScreen([])
+    ControlVariables([1214, 1214, 0, 0, 8])
+    ControlSwitches([31, 31, 1])
+    Wait([60])
+    TransferPlayer([0, 949, 8, 13, 0, 2])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_tarutaro1\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])

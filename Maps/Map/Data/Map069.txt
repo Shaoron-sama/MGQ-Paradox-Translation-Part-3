@@ -1,0 +1,89 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["……………………"])
+    ShowPicture([6, "80_rafaera_st01b", 0, 0, -180, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 180, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["禍撫……ここであなたを討ち果たします！"])
+    ShowText(["我が奥義を受けなさい……聖雷輪舞！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowAnimation([4, 572, false])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["激しい雷の乱舞が禍撫を襲う！"])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["私は、ここまでね……"])
+    PlaySE(["RPG::SE(@name=\"mon_slash2\", @pitch=100, @volume=100)"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["禍撫の体は、粘液の塊となって破裂し――"])
+    ShowText(["そして、みるみるうちに蒸発してしまった！"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_rafaera_st03b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rafaera_fc1", 2, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["なんと……！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["禍撫は、あれしきで倒せる相手ではない――"])
+    ShowText(["それを、ラファエラはよく知っている。"])
+    ShowTextAttributes(["rafaera_fc1", 2, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["まさか……粘液の分裂体！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["だとしたら、いつから分裂体に入れ替わっていたのか。"])
+    ShowText(["グランゴルドに現れた初日は、確かに禍撫本体だった。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["いったい、いつから分裂体と入れ替わったのか。"])
+    ShowText(["そして今、禍撫の本体は――"])
+    ShowTextAttributes(["rafaera_fc1", 3, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["これは、まずい……イリアス様が……！"])
+    Wait([60])
+    FadeoutScreen([])
+    ErasePicture([5])
+    FadeoutBGM([1])
+    Wait([120])
+    ChangeTransparency([1])
+    TransferPlayer([0, 925, 22, 35, 6, 2])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])

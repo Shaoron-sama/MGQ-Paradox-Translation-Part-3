@@ -1,0 +1,241 @@
+Display Name = "魔導の塔 5F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 108, 4, 19, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 108, 26, 39, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 108, 39, 19, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1502, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([196, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_lusia_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["私を倒すため、ここまで来ましたか……"])
+    ShowText(["しかしリリィの思想は、あなたの想像以上に危険ですよ。"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["弱き者が力を持ち、強き者となれば……"])
+    ShowText(["その行動も、弱者のままとはなりません。"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["その者がまた新たな弱者を生み出し、同じ事の繰り返し……"])
+    ShowText(["いや、得た力が強い分、さらに大きな悲劇が生まれます。"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["そして結局は、力ある者だけが支配する秩序なき世界……"])
+    ShowText(["リリィが最も嫌った現状を、拡大する結果に終わるのです。"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["蝕魔導の秘術は、世に広げてはなりません。"])
+    ShowText(["独占のためではなく、管理のためです。"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["力は結局、弱者を救いません。"])
+    ShowText(["ただ力関係が変わるだけで、本質は変化しないのです。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["しかしそれは、選ばれた者のみによる力の管理……"])
+      ShowText(["意図はどうあれ、事実上の独占に他なるまい。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その通り……無軌道な力の拡散は、社会を無秩序にします。"])
+      ShowText(["力は、それが出来る者の元で管理せねばならないのです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_lusia_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["今一度、取引について考えませんか？"])
+    ShowText(["リリィを倒せば、私はあなたの仲間となりましょう。"])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["それでも、私と戦うというのですか？"])
+    ShowText(["そして、危険な蝕魔導を世に放つと……？"])
+    ShowChoices([["ルシアと戦う", "取引通り、リリィと戦う"], 2])
+    When([0, "ルシアと戦う"])
+      ShowPicture([5, "80_lusia_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["ならば、火の粉は払うまで……！"])
+      ShowText(["リリィに与する者とみなし、容赦はしません！"])
+      ConditionalBranch([4, 167, 0])
+        ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+        ShowText(["【ルシア’】"])
+        ShowText(["しかし、まだ心には迷いがあるのでしょう……"])
+        ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+        ShowText(["【ルシア】"])
+        ShowText(["これは、錬金実験の副産物でしょうか。"])
+        ShowText(["もう一人、私がいるなんて……"])
+        ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+        ShowText(["【ルシア’】"])
+        ShowText(["まだまだ、世の中には不思議が多いもの。"])
+        ShowText(["それを探究する事こそ、我が使命と思いませんか？"])
+        ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+        ShowText(["【ルシア】"])
+        ShowText(["その言葉、真理への誘いか……それとも、悪魔の囁きか。"])
+        ShowText(["この戦いで見定めましょう！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 280, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_lusia_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["なぜ分からないのです……"])
+      ShowText(["リリィの理想は、結局は暴虐を生むという事が……"])
+      ErasePicture([5])
+      ControlSwitches([2097, 2097, 0])
+      ControlSwitches([7016, 7016, 0])
+      PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+      ControlVariables([1029, 1029, 0, 0, 5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルシアは気を失ってしまった……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これだけ消耗させれば、当分蝕魔導は使えまい。"])
+        ShowText(["この一件、これで幕だな……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["これだけ消耗させれば、当分は蝕魔導の力が使えませんね。"])
+        ShowText(["この者の考えは、間違っていないと私は考えますが……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["いろいろ難しかったけど、これで良かったよね……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["でも、蝕魔導が彼女達を救ったっていう事実は確かなんだ。"])
+      ShowText(["弱者を救える力を、ただ秘匿するだけなんて……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["さあ、リリィのところに報告に行こう！"])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "取引通り、リリィと戦う"])
+      ControlSwitches([2095, 2095, 0])
+      ShowPicture([5, "80_lusia_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["理解してくれたのですね、リリィの危険性を……"])
+      ShowText(["秘術の無軌道な開示など、世に混乱を生むだけなのです。"])
+      ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["それでは、リリィ撃退の報を待っています。"])
+      ShowText(["成功の暁には、ここではなくマギステア村の方のアジトにて。"])
+      ErasePicture([5])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ConditionalBranch([0, 2094, 0])
+        Script(["gain_medal(2008)"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["癒しの魔法陣だ……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])

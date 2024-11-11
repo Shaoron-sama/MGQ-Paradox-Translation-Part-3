@@ -1,0 +1,836 @@
+Display Name = "おさかな号 B1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([0])
+    ConditionalBranch([6, -1, 8])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 376, 13, 27, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([0])
+    ConditionalBranch([6, -1, 8])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 376, 13, 27, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([0])
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 479, 20, 16, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([0])
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 479, 21, 16, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【牛】"])
+    ShowText(["モ～！"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["この牛、ひょっとして……食料？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この牛、ひょっとして……食料？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["その予定だったんだけどな……"])
+    ShowText(["お嬢が泣くから、さばけなくなったんだよ。"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["今じゃすっかり、無駄メシ食らいになっちまったぜ。"])
+    ShowText(["乳くらい出してくれりゃいいんだけどな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 2, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["なんだ、食わないのか……残念だぜ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["もぐもぐ……"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShotBalloonIcon([0, 1, true])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_bonny_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["これはな、違うぞ！"])
+    ShowPicture([5, "80_bonny_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_ashel_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["何が違うんですか、お嬢……"])
+    ShowText(["もう今日のおやつは済んだはずでしょう。"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["船長として、食料のチェックをしていただけだ！"])
+    ShowText(["それより、何の用事だ？"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["ほら、アレですよ。"])
+    ShowText(["海軍に選抜された、例の討伐メンバーです。"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["おお、お前達が噂の！"])
+    ShowText(["あたしがおさかな海賊団のお頭、ボニーだ！"])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅっ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["よろしくね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["お前達の事も、わうからの報告で知っているぞ。"])
+    ShowText(["海軍にそそのかされ、我らを逮捕しようとしているのだな！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["まあ、そういう契約になっているな。"])
+      ShowText(["我々は、グランドノアに行かねばならんのだ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["海軍のために働くわけではありません。"])
+      ShowText(["卑しい海賊団を討伐する事は、天の意志なのです。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まあ……グランドノアに行くためでもありますが。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["お前達、グランドノアに行きたいのか？"])
+    ShowText(["それじゃあ、このおさかな号で送ってやってもいいぞ？"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["えっ？　それじゃあ、問題解決じゃない？"])
+      ShowText(["この船でグランドノアに連れてってもらおうよ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["お嬢、それじゃ太っ腹すぎますよ。"])
+    ShowText(["こういう場合、何か条件を突きつけるのが海賊ってもんです。"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["そうか、そうだな……えっと……"])
+    ShowText(["よし、あの計画を手伝ってもらおう！"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["ここから西の孤島に、大海賊の洞窟と呼ばれる場所がある。"])
+    ShowText(["そこには、かの大海賊ロザの秘宝が眠っているのだ……"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["その秘宝、ロザの末裔たる私が手にするべきだと思わんか？"])
+    ShowText(["だが、その洞窟には簡単に踏み込めない理由があってだな……"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["海軍の厳重警戒地に指定されており、警備も厳しい。"])
+    ShowText(["私達だけで乗り込むには、少々ホネなのだ。"])
+    ConditionalBranch([4, 171, 0])
+      ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+      ShowText(["【ミランダ】"])
+      ShowText(["海軍に守られた海賊の秘宝か……"])
+      ShowText(["そりゃ胸が躍るねぇ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["それで、我々に手伝えと……"])
+      ShowText(["しかし海軍のシマに乗り込む以上、敵対は避けられんな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それを、私達に手伝えというのですか……"])
+      ShowText(["海軍の厳戒地に乗り込む以上、敵対は避けられませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 53, 0])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【ライム】"])
+      ShowText(["海軍が怒っちゃうね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["つまり……海軍に味方するか、海賊に味方するかって二択ね。"])
+      ShowText(["一方に手を貸すと、もう一方とは敵対する……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["しかし、どちらか選ばねば始まらんな。"])
+      ShowText(["我々は、グランドノアに行かねばならんのだから。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["とは言え、決断せねばなりませんね。"])
+      ShowText(["我々は、グランドノアに向かわねばならないのですから。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 12, 0])
+      ShowTextAttributes(["sylph_fc1", 2, 0, 2])
+      ShowText(["【シルフ】"])
+      ShowText(["海賊やろうよ～！　海賊～！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 13, 0])
+      ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+      ShowText(["【ノーム】"])
+      ShowText(["……………………"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 163, 0])
+      ShowTextAttributes(["lily_fc1", 3, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["海賊なんて、面白いじゃない……"])
+      ShowText(["私は断然、海賊側ね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 167, 0])
+      ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["海賊に協力するなど、私は反対です……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["さあ、選ぶがよい！"])
+    ShowText(["海軍の手先となるか、それとも私達と共に戦うのか！"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["ちょっとは頭使って下さい、お嬢……"])
+    ShowText(["ここで決断を迫ったら、色々と面倒でしょうが。"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["海軍側につくって話になったら、この至近距離で斬り合いですよ。"])
+    ShowText(["あたしもお嬢も無事では済まないし、船もメチャクチャでしょう。"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["ああ、そうだな……うん。"])
+    ShowText(["アシェルの言う通りだぞ、ここでは決断するなよ。"])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["やれやれ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["そういうわけで、いったん場を改めるよ。"])
+    ShowText(["元の場所に送ってやるから、そこで決めてくれ。"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["おさかな海賊団に味方するなら……"])
+    ShowText(["例の場所にボートを泊めてあるから、また来てくれ。"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["海軍の手先となるなら……"])
+    ShowText(["海軍の軍艦に乗って、敵として現れる事になるな。"])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["お前達とは、仲良くやれそうな気がするぞ。"])
+    ShowText(["仲間として戻ってくる事を期待しているぞ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["なにやら、面倒な成り行きとなったものだ――"])
+    ControlSwitches([100, 100, 1])
+    FadeoutScreen([])
+    PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達は、ボートで海軍本部まで送ってもらった……"])
+    Wait([60])
+    TransferPlayer([0, 279, 56, 6, 2, 2])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["海軍に協力するなら、軍艦に乗っておさかな号に乗り込もう。"])
+    ShowText(["その場合、海賊と敵対する事になるだろう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["おさかな海賊団に協力するなら、ボートで再度おさかな号に向かおう。"])
+    ShowText(["その場合、海軍とは敵対関係となってしまう。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["さて、決断の時だな。"])
+      ShowText(["貴様がリーダーだ、その判断に委ねよう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["どちらか決断しなければなりませんね……"])
+      ShowText(["後悔のない道を選ぶのですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅー！　きゅー！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1050, 1050, 0, 0, 6])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["もぐもぐ……"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShotBalloonIcon([0, 1, true])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_bonny_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["これはな、違うぞ！"])
+    ShowPicture([5, "80_bonny_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_ashel_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["何が違うんですか、お嬢……"])
+    ShowText(["そんなに食べ過ぎるから、胸ばっかり大きくなるんですよ。"])
+    ShowTextAttributes(["bonny_fc1", 2, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["これは非常用の浮き袋だ……"])
+    ConditionalBranch([4, 66, 0])
+      ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+      ShowText(["【ヴァニラ】"])
+      ShowText(["その浮き袋、我にも分けてくれ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["海賊団に入ったのを後悔する前に、話を進めていいか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["漫才は結構です、話を進めなさい……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_bonny_st02", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["おお、やはり来てくれたのだな！"])
+    ShowText(["仲間になってくれると、信じていたぞ！"])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["今こそ、悲願だったロザの秘宝をゲットする時！"])
+    ShowText(["さっそく大海賊の洞窟に行くのだ！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([60])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Script(["add_actor_ex(202)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ボニーが仲間に加わった！"])
+    Wait([60])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["それじゃあ、さっそく出航するぞ。"])
+    ShowText(["準備が終わり次第、船長室のネコマタに話し掛けてくれ。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["あのネコマタって、この船の何なの……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あのネコマタって、この船の何なの……？"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"umi\", @volume=100, @pitch=100)"])
+    ControlVariables([1051, 1051, 0, 0, 2])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 376, 7, 43, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 376, 7, 43, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["この階は、一般船員の部屋と……"])
+    ShowText(["あと、食堂やら台所やら食料貯蔵庫やらもあるよ。"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["おかしらは、この階段を下りた階にいるからね。"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["ここは食料貯蔵庫だよ。"])
+    ShowText(["つまみ食いは、スクリューの刑ね。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["おかしらは、あれで意外と頼りになるところも"])
+    ShowText(["ある気がするんだよね。"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["海軍が、あたし達を討伐するつもりなんだって……"])
+    ShowText(["正直、大して悪い事してないのに……ひどくない？"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["あたし達の獲物は悪党の船だけ。"])
+    ShowText(["殺しは御法度の善良海賊団なのにさぁ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["62"])
+    ShowTextAttributes(["gob_fc1", 0, 0, 2])
+    ShowText(["【ゴブ】"])
+    ShowText(["義賊ってのが本当だったら……"])
+    ShowText(["やっつけなくてもいいんじゃないかな？"])
+    ExitEventProcessing([])
+    Label(["167"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["とは言え、法には従わねばなりません……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["おかしらには、海賊として致命的に欠けているものがある……"])
+    ShowText(["ねぇ、何だと思う？"])
+    ShowChoices([["弱い", "頭が悪い", "泳げない"], 0])
+    When([0, "弱い"])
+      ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+      ShowText(["【海賊マーメイド】"])
+      ShowText(["おかしら、ああ見えて結構腕が立つんだよ。"])
+      ShowText(["ロザの子孫ってのは、看板だけじゃないんだからね。"])
+      Empty([])
+
+    When([1, "頭が悪い"])
+      ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+      ShowText(["【海賊マーメイド】"])
+      ShowText(["確かに、おかしらは頭が残念だけど……"])
+      ShowText(["アシェルの姉御がいるから、その点は全然大丈夫だよ。"])
+      Empty([])
+
+    When([2, "泳げない"])
+      ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+      ShowText(["【海賊マーメイド】"])
+      ShowText(["……おさかな海賊団の秘密を知ってしまったか。"])
+      ShowText(["こうなった以上、仲間になるか……もしくは死あるのみ。"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["おかしらは、海賊女王ロザの子孫なんだから。"])
+    ShowText(["あたし達って、絶対ビッグになるよね！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["あたしもビッグになりたいわぁ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["アシェル姉御の料理は、いつもおいしい！"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["姉御！　お料理手伝って下さいよ！"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["後で、手が空いたらな……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["アシェルさん、料理得意なの？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["アシェルさん、料理が得意なの？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["まあな。"])
+    ShowText(["船の食事を管理するのは、副船長としての務めだぜ。"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["姉御の料理は、大海一なんだよ！"])
+    ShowText(["プロの料理人にだって負けないんだから。"])
+    ShowTextAttributes(["ashel_fc1", 1, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["実際、プロの資格も持ってたりするんだけどな。"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「台所　おかしら立ち入り禁止」と書いてある……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんで、船長が立ち入り禁止になってるの……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["なんで、船長が立ち入り禁止なの……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["お嬢が料理しようとすると、毎回大惨事を起こすんだよ。"])
+    ShowText(["前回は船を全焼させかけたしな……"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「食料貯蔵庫　おかしら立ち入り禁止」と書いてある……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんで、船長が立ち入り禁止になってるの……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["なんで、船長が立ち入り禁止なの……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["お嬢、盗み食いするんだよ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["5"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんと、意地汚い団長だな……"])
+    ExitEventProcessing([])
+    Label(["70"])
+    ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+    ShowText(["【ラティ】"])
+    ShowText(["意地汚い団長……"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["盗み食いなんて、育ちが悪いんじゃない？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["栄養学を勉強中だよ！"])
+    ShowText(["長い航海には必須の知識だもんね！"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["栄養学の心得があるのは、乗員の中であたしだけなんだよ。"])
+    ShowText(["他の連中にも、ちょっとは学ばせないとな。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["166"])
+    ShowTextAttributes(["narcubus_fc1", 0, 0, 2])
+    ShowText(["【ナビス】"])
+    ShowText(["長い航海では、栄養管理が大切ですよね♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["食事当番は面倒くさいな～"])
+    ShowText(["見張りの方が、まだマシだよ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["168"])
+    ShowTextAttributes(["dodome_fc1", 0, 0, 2])
+    ShowText(["【まなこ】"])
+    ShowText(["見張りなら、任せてよね！"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["そんなにいっぱい目が合ったら、見張りも楽そうだな～"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["そうじ～♪　そうじ～♪"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["そこの隅、ホコリがたくさん残ってるぞ。"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["姉御、こまかいよ～！"])
+    ShowText(["姉御ほど、掃除スキル高くないもん……"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["お前達が雑すぎるんだよ……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["アシェルさん、掃除も得意なの？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["アシェルさん、掃除も得意なの？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["まあな。"])
+    ShowText(["船の状態を管理するのは、副船長としての務めだぜ。"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["dog_fc1", 4, 0, 2])
+    ShowText(["【わう】"])
+    ShowText(["わん！　わん！　わん！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["この子、甲板にいなかった？"])
+    ShowText(["別の犬じゃないよね……？"])
+    ShowTextAttributes(["dog_fc1", 0, 0, 2])
+    ShowText(["【わう】"])
+    ShowText(["おんなじ犬だよ！"])
+    ShowText(["船の中、走り回ってるだけ！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["ちわっす、姉御！"])
+    ShowText(["……あれ？　その人達は例の……"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["ああ。"])
+    ShowText(["お嬢に会ってもらうのと兼ねて、船の案内をしてるとこだ。"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["そうなんだー！　よろしくねっ♪"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([328, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

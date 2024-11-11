@@ -1,0 +1,268 @@
+Display Name = "北のお化け屋敷 台所"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 8, 26, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 8, 26, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    GatherFollowers([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["おいしそうなケーキがある……"])
+      ShowText(["一口だけ、食べてみようか。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["おいしそうなケーキがありますね……"])
+      ShowText(["一口だけ、食べてみましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ちょ、ちょっと……！"])
+      ShowText(["こんな得体の知れないケーキ、食べるつもりなの！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アリスはつまみ食いしようとしている……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["イリアスはつまみ食いしようとしている……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["止める", "放っておく"], 1])
+    When([0, "止める"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……………………"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……………………"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "放っておく"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 7, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ガマンできない……"])
+        ShowText(["ちょっとだけ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["アリスはケーキをつまみ食いした……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["我慢できません、一口だけ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["イリアスはケーキをつまみ食いした……"])
+        Empty([])
+      BranchEnd([])
+      ShotBalloonIcon([5, 1, false])
+      ShotBalloonIcon([6, 1, false])
+      ShotBalloonIcon([8, 1, false])
+      Wait([60])
+      SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Wait([60])
+      SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ShowTextAttributes(["ghost_fc1", 0, 0, 2])
+      ShowText(["【ゴースト】"])
+      ShowText(["つまみ食いをするのは……"])
+      PlaySE(["RPG::SE(@name=\"Scream\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["ghost_fc1", 0, 0, 2])
+      ShowText(["【ゴースト】"])
+      ShowText(["だ　～　れ　～　だ　～　！　！　！　！　！"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 4, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["余ではない！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["私ではありません！"])
+        Empty([])
+      BranchEnd([])
+      BattleProcessing([0, 185, false, false])
+      ControlSwitches([2069, 2069, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ふん！　全然大したことなかったわ！"])
+        ShowTextAttributes(["alice_fc5", 6, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["あ……ケーキが……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ぜ、ぜんぜん怖くなかったですよ！"])
+        ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["あれ……ケーキが……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["腐りきったケーキがある。"])
+    ShowText(["さすがに食べる気はしなかった……"])
+    ConditionalBranch([4, 70, 0])
+      ConditionalBranch([0, 2145, 1])
+        ControlSwitches([2145, 2145, 0])
+        ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
+        ShowText(["【ラティ】"])
+        ShowText(["わーい、ケーキだ！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ちょっと、食べる気！？"])
+        ShowText(["やめておいた方が……"])
+        ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
+        ShowText(["【ラティ】"])
+        ShowText(["むしゃむしゃむしゃ……"])
+        ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
+        ShowText(["【ラティ】"])
+        ShowText(["……………………"])
+        PlaySE(["RPG::SE(@name=\"mon_power\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
+        ShowText(["【ラティ】"])
+        ShowText(["毒の力が湧いてくる～！！"])
+        ChangeSkills([0, 70, 0, 3085])
+        ChangeSkills([0, 70, 0, 3081])
+        ChangeSkills([0, 70, 0, 860])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ラティは\\I[144]\\C[1]毒の息\\C[0]を修得した！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ラティは\\I[144]\\C[1]バイオブレス\\C[0]を修得した！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ラティは\\I[99]\\C[1]「ブレス」使用可能\\C[0]を修得した！"])
+        ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
+        ShowText(["【ラティ】"])
+        ShowText(["ごちそうさまでした！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["……………………"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴースト】"])
+    ShowText(["今日も大忙しね……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴースト】"])
+    ShowText(["夕食の準備よ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴースト】"])
+    ShowText(["いっぱい作らないと……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([79, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([329, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

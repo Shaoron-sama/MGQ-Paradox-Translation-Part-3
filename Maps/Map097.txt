@@ -1,0 +1,1192 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    FadeinScreen([])
+    Wait([60])
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["パンチラ♪　ハンバーガー♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["以上、たつのこマリンズの皆さんの演奏でした～！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【観客男】"])
+    ShowText(["へぇ、割と上手いもんだな……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【観客女】"])
+    ShowText(["とっても、かわい～♪"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……あいつら、どこにでもいるな。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あれ、アリス……控え室にいないでいいの？"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々の出番は、第二部の一番最後だ。"])
+      ShowText(["前半は暇だから、対戦者達の手並みを見ておこうと思ってな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["あの四匹……どこにでも出没しますね。"])
+      ShowText(["海兵というのは暇なのですか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あれ、イリアス様……控え室にいないでいいんですか？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私達の出番は、真打ちに相応しく第二部の一番最後です。"])
+      ShowText(["今は暇なので、有象無象の演奏でも聴いておきましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["それでは、たつのこマリンズの審査に入りましょう。"])
+    ShowText(["まずは……歌聖と名高いマッハさん。"])
+    ShowTextAttributes(["People2", 6, 0, 2])
+    ShowText(["【マッハ】"])
+    ShowText(["演奏はまだまだ拙いが、海のようなソウルを感じるよ……"])
+    ShowText(["……7点だね。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["次に、グランドールのトップアイドル――サキちゃん！"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["うん、とっても元気を感じるね……8点☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["最後に……"])
+    ShowText(["幻の大作曲家、カイラクスキーさんが審査に来てくれました！"])
+    ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+    ShowText(["【カイラクスキー】"])
+    ShowText(["なかなか悪くないじゃない……7点ね。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["アルマエルマ……あいつ、何をしているのだ？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["三人の審査員のうち、二人が身内なんて……"])
+      ShowText(["これ、僕達に有利なんじゃないの？"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["サキもアルマエルマも、"])
+      ShowText(["身内を贔屓にして審査を曲げる奴ではあるまい。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["アルマエルマ……"])
+      ShowText(["いったい、何をしているのです？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["三人の審査員のうち、二人が身内なんて……"])
+      ShowText(["これ、僕達に有利なんじゃないの？"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["サキもアルマエルマも……"])
+      ShowText(["身内に甘い採点をするとは思えませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["確かに、そうか……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["結局、実力勝負でいくしかない。"])
+    ShowText(["うちのチームは、本当に大丈夫なのだろうか――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["たつのこマリンズ、合計22点です！"])
+    ShowText(["最初のチームから、高得点が出ましたね！"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["やったのです！"])
+    ShowText(["みんな、応援ありがとうなのです！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["たつのこマリンズの大健闘に、客席は大いに盛り上がっている！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["なんだか、楽しそうだね。"])
+    ShowText(["せっかくだし、僕も女装して出れば良かったかな……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["すかさずツッコミを入れるはずのソニアがいない……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あれだけ大騒ぎをしていたソニアなのに、ヤマタイでは姿を見ない。"])
+    ShowText(["なんだか、嫌な予感がする――"])
+    FadeoutScreen([])
+    Wait([60])
+    ControlVariables([1122, 1122, 0, 0, 2])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["それでは、次のバンドは――"])
+    ShowText(["プリティ☆幼馴染みチーム！！"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["イェーイ！！"])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["わ～い♪"])
+    ShowTextAttributes(["inp_fc2", 2, 0, 2])
+    ShowText(["【レミ】"])
+    ShowText(["びくびく……"])
+    ShowTextAttributes(["inp_fc3", 4, 0, 2])
+    ShowText(["【ルミ】"])
+    ShowText(["しゃきーん！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["やっぱり、出てたか……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ルミの奴、珍しく張り切っているようだな。"])
+      ShowText(["審査員にアルマエルマがいるからか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ルミ……珍しく張り切っているようですね。"])
+      ShowText(["審査員にアルマエルマがいるからでしょうか……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["それでは、演奏スタートです！"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["みんな、練習の成果を見せるよ！"])
+    ShowText(["……せ～のっ！！"])
+    ShowAnimation([-1, 999, false])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sonia_fc2", 5, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ボエ～！"])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["ﾊﾟﾗﾘﾗﾊﾟﾗﾘﾗﾊﾟﾗﾘﾗﾊﾟﾗﾘﾗﾊﾟﾗﾘﾗﾊﾟﾗﾘﾗ……！！"])
+    ShowTextAttributes(["inp_fc3", 4, 0, 2])
+    ShowText(["【ルミ】"])
+    ShowText(["ぎゅいんぎゅいんぎゅいーん！！"])
+    ShowTextAttributes(["inp_fc2", 2, 0, 2])
+    ShowText(["【レミ】"])
+    ShowText(["観客よりメンバーが怖い……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["わぁっ！　ダメだこりゃ！！"])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([60])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"stage5\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["プリティ☆幼馴染みチームの得点は――合計2点でした！"])
+    ShowTextAttributes(["People2", 6, 0, 2])
+    ShowText(["【マッハ】"])
+    ShowText(["君達の存在は音楽に対して失礼だ。"])
+    ShowTextAttributes(["saki_fc1", 2, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["その演奏を聴いて、みんながどう感じるのか……"])
+    ShowText(["お客さんの立場になって、ちゃんと考えた方がいいよね。"])
+    ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+    ShowText(["【カイラクスキー】"])
+    ShowText(["各人がバラバラに音をかき鳴らすのは、音楽とは言わないわ。"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["私達の音楽は、大衆にはまだ早かったようね……"])
+    ShowTextAttributes(["inp_fc3", 2, 0, 2])
+    ShowText(["【ルミ】"])
+    ShowText(["しょんぼり……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、プリティ☆幼馴染みチームは無惨な敗北を喫する。"])
+    ShowText(["ソニアの音楽活動は、これが最後となった――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それにしても、あれでよく予選を勝ち抜けたなぁ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["それなのだが……予選、なかった。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そこが問題なのですが……"])
+      ShowText(["そもそも予選は存在しませんでした。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そうか、予選はなかったのか……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……えっ？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["登録申請をした18チーム、全てが本戦に出場している。"])
+      ShowText(["申請をしたチーム自体が、非常に少なかったのだ。"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["この邪馬台漢祭は、漢（おとこ）の祭典。"])
+      ShowText(["世界の豪傑達が、開催を待ち望んでいたのだが……"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["突如、今年はガールズバンド大会になることが発表されてな。"])
+      ShowText(["世界の漢（おとこ）達は泣き崩れたということだ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["登録申請をした18チーム、全てが本戦に出場しています。"])
+      ShowText(["申請をしたチーム自体が、非常に少なかったのですよ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この邪馬台漢祭は、漢（おとこ）の祭典。"])
+      ShowText(["世界の豪傑達が、開催を待ち望んでいたのですが……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["突如、今年のテーマはガールズバンドということに。"])
+      ShowText(["世界の漢（おとこ）達は泣き崩れたと聞いています。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それで、出場チームがとても少ないのか……"])
+    ShowText(["だとすると、本当に優勝が狙えるかもしれないね。"])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そんな話をしている間にも、様々なバンドが演奏を続けている。"])
+    ShowText(["そして、次に登場したチームは――"])
+    ControlVariables([1122, 1122, 0, 0, 3])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"stage4\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["次のバンドは――プラネットエレメント！"])
+    ShowTextAttributes(["salamander_fc1", 1, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["燃えたぎるハート！"])
+    ShowTextAttributes(["undine_fc1", 2, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["静かなるロンド……"])
+    ShowTextAttributes(["sylph_fc1", 3, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["まわるまわるワルツ～♪"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["また内輪の連中ではないか！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["またもや内輪の者達が！"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([60])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"stage5\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["People2", 6, 0, 2])
+    ShowText(["【マッハ】"])
+    ShowText(["演奏の中で、音と音が調和せず打ち消し合っている……"])
+    ShowText(["けど不思議だね、それもまた自然の息吹に聞こえるんだ。"])
+    ShowTextAttributes(["People2", 6, 0, 2])
+    ShowText(["【マッハ】"])
+    ShowText(["演奏技術はないに等しいが、神秘的な何かを感じるよ……"])
+    ShowText(["うむ、9点だ。"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["まさに、大自然の四重奏だね……9点☆"])
+    ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+    ShowText(["【カイラクスキー】"])
+    ShowText(["悪くはないけど、風の息吹がやや上滑りね……"])
+    ShowText(["少し厳しいけど、8点といったところかしら。"])
+    ShowTextAttributes(["sylph_fc1", 4, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["アルマエルマちゃん、辛口だよ～！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["おっと、26点という高得点が出ました！"])
+    ShowText(["プラネットエレメント、ここまでの最高点を記録です！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ふふ、なかなか頑張るではないか……"])
+      ShowText(["だが、我々の方が上だな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なかなかやるではないですか。"])
+      ShowText(["まあ、我々の前座としては悪くないでしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["すごい自信だ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["練習は見ていないが、サキちゃんは満足そうな様子だった。"])
+    ShowText(["きっと、レベルの高い仕上がりをしたのだろう。"])
+    FadeoutScreen([])
+    Wait([60])
+    ControlVariables([1122, 1122, 0, 0, 4])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"tamamo\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["それでは次は、茶飲み友達が集まったというチーム！"])
+    ShowText(["おこたティータイムの皆さんです！"])
+    ShowTextAttributes(["tamamo_fc1", 1, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["いぇーい！！"])
+    ShowTextAttributes(["enenra_fc1", 1, 0, 2])
+    ShowText(["【夕霧】"])
+    ShowText(["へーい！"])
+    ShowTextAttributes(["kirin_fc1", 1, 0, 2])
+    ShowText(["【キリン】"])
+    ShowText(["バリバリいくのじゃ！"])
+    ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+    ShowText(["【白蛇様】"])
+    ShowText(["ロックンロール！！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["あいつら全員、五百歳以上ではないか！"])
+      ShowText(["リーダーの毛玉に至っては、二千歳を超えているぞ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ガールズとは。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["でも……それを言い出すと、アリスも反則なんじゃない？"])
+      ShowText(["実年齢、二十を超えてるだろ？"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["余は……身も心もガールズよ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["なんだか適当だなぁ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["全員、五百歳以上ではありませんか！"])
+      ShowText(["たまもに至っては、二千歳を超えていますよ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ガールズとは。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["でも……それを言い出すと、イリアス様も反則なんじゃ？"])
+      ShowText(["イリアス様、いったい何歳なんです？"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……十四歳です。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["嘘です……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["分かってますよ……"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutBGM([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そう言っているうちに、たまも達の演奏は終わった――"])
+    PlayBGM(["RPG::BGM(@name=\"stage5\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["はい、見事な演奏でしたね！"])
+    ShowText(["27点と、これまでの最高得点が出ましたー！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【司会】"])
+    ShowText(["以上、これで第一部は終了です。"])
+    ShowText(["十五分の休憩の後、第二部でお会いしましょう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["では、そろそろ余も控え室に戻ろう。"])
+      ShowText(["大船に乗った気分で見ているがいい……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ああ、がんばってね！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["では、そろそろ私も控え室に戻りましょう。"])
+      ShowText(["私達の演奏、楽しみにしているのですよ……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["はい、がんばって下さい！"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、第一部は終了した。"])
+    ShowText(["短い休憩のあと、第二部が始まる。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["盛況のうちに、各チームの演奏は進み――"])
+    ShowText(["ついに最終盤、うちのチームの登場となった！"])
+    ControlVariables([1122, 1122, 0, 0, 5])
+    ControlSwitches([31, 31, 1])
+    FadeinScreen([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["それでは、いよいよ最後の演奏となりました。"])
+      ShowText(["大トリを飾るのは――ドリームコラボガールズ！！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["おっ、いよいよか……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ついに、アリス達の出番だ。"])
+      ShowText(["果たして、上手くいくだろうか――？"])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["では行くぞ、特訓の成果を見せるのだ！"])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["こんなに観客がいるなんて……"])
+      ShowText(["ちょっと、恥ずかしいけど……"])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["やるからには、本気で行くからね……！"])
+      ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+      ShowText(["【ターサ】"])
+      ShowText(["それじゃあみんな、楽しんでいっくよ～♪"])
+      FadeoutBGM([1])
+      PlaySE(["RPG::SE(@name=\"drums\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_a1", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg4", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([120])
+      PlaySE(["RPG::SE(@name=\"bass\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_a2", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg1", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([120])
+      PlaySE(["RPG::SE(@name=\"guitar1\", @pitch=100, @volume=60)"])
+      ShowPicture([5, "iv_gband_a3", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg3", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([120])
+      PlaySE(["RPG::SE(@name=\"piano\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_a4", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg2", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([180])
+      PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=110)"])
+      ShowPicture([5, "iv_gband_a5", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg1", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([240])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["す、すごい……！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アリス達の演奏は、他のバンドを完全に凌駕していた。"])
+      ShowText(["その熱気と卓越したテクニックによるサウンドは圧巻の一言だ！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【観客Ａ】"])
+      ShowText(["ウォォォォ――！！　す、すげぇ――！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【観客Ｂ】"])
+      ShowText(["四人とも、かわい～！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【観客Ｃ】"])
+      ShowText(["すごいバンドだ！　トップは決まりだな！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ドリームコラボガールズの熱演に、観客達は魅了されている！"])
+      ShowText(["演奏は大成功だ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["それでは、いよいよ最後の演奏となりました。"])
+      ShowText(["大トリを飾るのは――創世エンジェルズ！！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["おっ、いよいよか……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ついに、イリアス達の出番だ。"])
+      ShowText(["果たして、上手くいくだろうか――？"])
+      FadeoutBGM([1])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さあ……福音のサウンドで有象無象を魅了しましょう！"])
+      PlaySE(["RPG::SE(@name=\"piano\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_i1", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg2", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([180])
+      PlaySE(["RPG::SE(@name=\"bass\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_i2", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg1", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([120])
+      PlaySE(["RPG::SE(@name=\"drums\", @pitch=100, @volume=80)"])
+      ShowPicture([5, "iv_gband_i3", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg3", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([120])
+      PlaySE(["RPG::SE(@name=\"guitar1\", @pitch=100, @volume=60)"])
+      ShowPicture([5, "iv_gband_i5", 0, 0, 0, 0, 100, 100, 255, 0])
+      ErasePicture([2])
+      Wait([120])
+      PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=110)"])
+      ShowPicture([5, "iv_gband_i6", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowPicture([2, "iv_gband_bg4", 0, 0, 0, 0, 100, 100, 255, 0])
+      Wait([240])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["す、すごい……！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["イリアス達の演奏は、まさに人智を超えたものだった。"])
+      ShowText(["天使達の奏でるメロディが、甘く激しく心を沸き立てる！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【観客Ａ】"])
+      ShowText(["こ、心に染み渡るメロディ……"])
+      ShowText(["天国からの誘いのようだ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【観客Ｂ】"])
+      ShowText(["それでいながら、ハートを震わせるビート……！"])
+      ShowText(["これは、音楽会の革命（レボリューション）だ……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["創世エンジェルズの熱演に、観客達は圧倒されている！"])
+      ShowText(["演奏は大成功だ！"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    ErasePicture([5])
+    ErasePicture([2])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、観客達は熱狂し――"])
+    ShowText(["コロシアムを揺るがすような拍手の中で、演奏を終えたのだった。"])
+    FadeoutBGM([1])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue1\", @volume=100, @pitch=100)"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["ドリームコラボガールズ、素晴らしい演奏でした！"])
+      ShowText(["さて、採点は……！？"])
+      ShowTextAttributes(["People2", 6, 0, 2])
+      ShowText(["【マッハ】"])
+      ShowText(["みんな可愛いし、テクニックも最高だぁ……"])
+      ShowText(["出来れば、私も真ん中に挟まれたい……ダメかな？"])
+      ShowTextAttributes(["sonia_fc3", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["（こいつも、たぶんポルノフ出身ね……）"])
+      ShowTextAttributes(["People2", 6, 0, 2])
+      ShowText(["【マッハ】"])
+      ShowText(["えっ？　採点……？"])
+      ShowText(["点数は……5千兆点だ！！"])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["ちょっと厳しめに採点して……9点だね☆"])
+      ShowText(["本当、すごかったよ！"])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【カイラクスキー】"])
+      ShowText(["素晴らしいアッセンブルだったわ。"])
+      ShowText(["文句なしの10点満点ね……♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["さて、合計点は――5千兆19点！"])
+      ShowText(["ドリームコラボガールズ、ぶっちぎりの優勝だ～！！"])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ふっ、当然だ！　優勝は頂いたぞ！"])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["やった……"])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["ステージで大声援を受けるのって……最高♪"])
+      ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+      ShowText(["【ターサ】"])
+      ShowText(["特訓の甲斐があったね♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして、ドリームコラボガールズが栄冠を勝ち取った。"])
+      ShowText(["優勝チームに、賞品として転職アイテムが贈られたのである――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["創世エンジェルズ、素晴らしい演奏でした！"])
+      ShowText(["さて、採点は……！？"])
+      ShowTextAttributes(["People2", 6, 0, 2])
+      ShowText(["【マッハ】"])
+      ShowText(["この頬を伝う涙を止めるには、どうすればいいか……"])
+      ShowText(["誰か、教えてほしい……"])
+      ShowTextAttributes(["People2", 6, 0, 2])
+      ShowText(["【マッハ】"])
+      ShowText(["えっ？　採点……？"])
+      ShowText(["点数は……5千兆点だ！！"])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["【サキ】"])
+      ShowText(["ちょっと厳しめに採点して……9点だね☆"])
+      ShowText(["本当、すごかったよ！"])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【カイラクスキー】"])
+      ShowText(["素晴らしいアッセンブルだったわ。"])
+      ShowText(["文句なしの10点満点ね……♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【司会】"])
+      ShowText(["合計点は――5千兆19点！"])
+      ShowText(["創世エンジェルズ、ぶっちぎりの優勝だ～！！"])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["当然の結果ではありますが……"])
+      ShowText(["なかなかに達成感がありますね。"])
+      ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["わ～い、やった～♪"])
+      ShowTextAttributes(["micaelac_fc1", 1, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["嬉しい……♪"])
+      PlaySE(["RPG::SE(@name=\"guitar1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["【エデン】"])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして、創世エンジェルズが栄冠を勝ち取った。"])
+      ShowText(["優勝チームに、賞品として転職アイテムが贈られたのである――"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([180])
+    ChangeTransparency([1])
+    TransferPlayer([0, 954, 41, 1, 2, 2])
+    ControlVariables([1122, 1122, 0, 0, 6])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    FadeinScreen([])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ChangeItems([664, 0, 0, 1])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["これは、シールドナイトへの転職アイテムだな。"])
+      ShowText(["兵士をマスターしていれば、上位職に転職できるぞ。"])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["あらためて、礼を言わねばならんな。"])
+      ShowText(["リジェオ、ルヴィッサ、ターサ……我々の演奏は最高だ！！"])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["大変だったし恥ずかしかったけど……"])
+      ShowText(["楽しかったかな。"])
+      ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+      ShowText(["【ターサ】"])
+      ShowText(["リジェオちゃん、集中力がすごかったよ！"])
+      ShowText(["ルヴィッサちゃんも、ノリノリだったよねー♪"])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["まあ、ちょっとだけ……"])
+      ShowText(["ううん、かなり面白かったかな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これは、シールドナイトへの転職アイテムですね。"])
+      ShowText(["兵士をマスターしていれば、上位職に転職できますよ。"])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それにしても……三人とも、お疲れ様でした。"])
+      ShowText(["本当に素晴らしい演奏でしたよ。"])
+      ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["とっても、たのしかった～♪"])
+      ShowTextAttributes(["micaelac_fc1", 1, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["また、やりたいかも……"])
+      PlaySE(["RPG::SE(@name=\"guitar2\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["【エデン】"])
+      Wait([60])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["エデン……それ、気に入ってます？"])
+      PlaySE(["RPG::SE(@name=\"guitar3\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["【エデン】"])
+      Wait([60])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([581])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowPicture([1, "iv_iceybozb", 0, 0, 0, 0, 100, 100, 60, 1])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])

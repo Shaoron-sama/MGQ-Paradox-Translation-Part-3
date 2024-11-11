@@ -1,0 +1,47 @@
+CommonEvent 7113
+Name = "テレサ：敗北"
+
+  999([7113])
+  CallCommonEvent([7000])
+  ShowPicture([5, "80_mob_murabito2_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+  ErasePicture([6])
+  ShowTextAttributes(["mob_murabito2_fc1", 0, 0, 2])
+  ShowText(["【テレサ】"])
+  ShowText(["これで、あたしの勝ち……"])
+  ShowText(["お金、払ってね。"])
+  ConditionalBranch([0, 443, 1])
+    ChangeGold([1, 0, 200])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ルカは 200G 支払った！"])
+  ShowTextAttributes(["mob_murabito2_fc1", 0, 0, 2])
+  ShowText(["【テレサ】"])
+  ShowText(["また、バトルファックしようね。"])
+  ShowText(["いっぱい気持ちよくしてあげるから……"])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ErasePicture([5])
+    ChangeMapDisplay([1])
+    ConditionalBranch([1, 1143, 0, 9, 2])
+      TransferPlayer([0, 141, 10, 6, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1143, 0, 10, 1])
+      ControlVariables([57, 57, 0, 0, 1426])
+      TransferPlayer([0, 426, 10, 6, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,416 @@
+Display Name = "魔王城 4F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["なんか、天使達の寝言を真に受けて、"])
+    ShowText(["あたし達の世界の事を誤解してないか？"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["ケモノじゃないんだから、弱肉強食の掟なんてないさ。"])
+    ShowText(["弱者は弱者で群れ寄って、集団で自分達を守ってる。"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["自由の中にも、ちゃんと秩序はあるんだよ。"])
+    ShowText(["強い奴が自由気ままに暴れ回ってるとか、そんな訳ねーよ。"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["あたしは、天使達の社会の方がよっぽど過酷だと思うね。"])
+    ShowText(["連中、民を一級やら二級やらに区分してるんだろ？"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["あたし達の世界にも、身分の階層はあるけど……"])
+    ShowText(["上に昇るも、下に落ちるも自分次第なのさ。"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["結局、お前達の世界と同じだろ？"])
+    ShowText(["魔物社会も人間社会も、あんま変わらないのさ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["そういうわけで、あたし達の世界なら上手くやっていけるさ。"])
+      ShowText(["だから、これからも一緒に戦っていこうぜ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["モリガンは、邪神の陣営に属している。"])
+      ShowText(["当然ながら女神側につけば、モリガンは仲間から外れるだろう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["そういうわけで、あたし達の世界なら上手くやっていけるさ。"])
+      ShowText(["だから、今からでもこっちに鞍替えしようぜ！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["今は休戦中……"])
+    ShowText(["この天使達にも、決して手出しはさせません。"])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["我々が見張っていますので、ご安心を。"])
+    ShowText(["あなたが、我々の同志に加わってくれる事を期待しています。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["三姉妹と熾天使達が睨み合っている。"])
+    ShowText(["休戦中だが、一触即発の状態だ……"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["最初に、あなた達と戦った時から……"])
+    ShowText(["きっと同じ道を歩む事が出来ると感じていたわ。"])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["世界を守りたいという思いは、私達も同じ……"])
+    ShowText(["だからこそ、私達は協力すべきよ。"])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["あなたの存在は、私達にとっても希望なの。"])
+    ShowText(["一緒に戦える事を、心から望んでいるわ……"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
+    ShowText(["【エルベティエ】"])
+    ShowText(["私は、邪神様の世界合一計画を実行するため……"])
+    ShowText(["この身に、禍撫様の細胞を取り込んだわ。"])
+    ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
+    ShowText(["【エルベティエ】"])
+    ShowText(["邪神様の側につくなら、あなたは仲間。"])
+    ShowText(["女神の側につくなら、あなたは敵……それだけよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["エルベティエは、強固な決意を示している。"])
+    ShowText(["どこか悲愴な覚悟を感じ取れた――"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["転職の書が開かれたまま放置されている……"])
+    CallCommonEvent([113])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 409, 4, 13, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 408, 3, 15, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["sylph_fc1", 1, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["なんだか、大変な事になっちゃったね。"])
+    ShowText(["あたしは頭がちぃぱっぱだから、難しい事は分からないの。"])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["ルカがどっちを選んでも、あたし達はついていくよ。"])
+    ShowText(["ずっと一緒だからね～♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["シルフは、僕を信頼してくれているようだ。"])
+    ShowText(["いかなる選択を取っても、付き従ってくれるだろう。"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ノームは、僕を心配してくれているようだ……"])
+    ShowText(["無言ながら、その気持ちが伝わってくる。"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["邪神と女神が、それぞれ進める救済計画……"])
+    ShowText(["そのどちらも、問題点を抱えているのは事実ね。"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["結局、消極的選択しかありえない……"])
+    ShowText(["世の中とは難しいものね……"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["何を言う、ルカを迷わせるような事を言うな。"])
+    ShowText(["世の中がどうであろうと、己の信じる道を進むのだ！"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["単細胞トカゲは、頭が単純で良いわね……"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["なんだと！？"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["何かしら……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["両者の雰囲気は険悪だが……"])
+    ShowText(["それでも、僕に対する信頼が感じ取れる。"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["salamander_fc1", 0, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["己の人生、己の選択だ。"])
+    ShowText(["迷いなく、自分の道を突き進め！"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["単細胞トカゲ……"])
+    ShowText(["そんな熱血ムードで乗り切るような問題じゃないわ……"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["なんだと！？"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["何かしら……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["両者の雰囲気は険悪だが……"])
+    ShowText(["それでも、僕に対する信頼が感じ取れる。"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["sonia_fc1", 4, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ポケット魔王城で待ってる仲間達とも、話し合ったけど……"])
+    ShowText(["みんな、どちらを選んでもルカについていく事になったわ。"])
+    ShowTextAttributes(["sonia_fc1", 4, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["私達、みんなルカに惹かれて一緒になったもんね。"])
+    ShowText(["だから、最後まで付き合うから！"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["ＺＺＺ……"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["……………………きゅ？"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["きゅー！　きゅー！"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ヒルデ、難しい事は分からない……"])
+    ShowText(["誰を殴ればいいのか、マスターが決めてね。"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["相手が誰でも、ヒルデはマスターと一緒に戦うよ。"])
+    ShowText(["そのために、ヒルデは作られたから……"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["邪神につくか、女神につくか……"])
+    ShowText(["まったく、重い選択だよなぁ。"])
+    ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["まあ個人的には、邪神世界の方が好みだな。"])
+    ShowText(["女神の築いた天国なんて、どうせ俺には縁がねぇぜ……"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ラザロ……私の声が聞こえていますか？"])
+    ShowText(["女神に付き従いし勇者の仲間は、無条件で天国行きですよ。"])
+    ShowTextAttributes(["lazarus3_fc1", 2, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["えっ……本当か？"])
+    ShowText(["そりゃいいや。ルカ、女神に味方しようぜ。"])
+    ShowTextAttributes(["sonia_fc2", 5, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["おじさん、何言ってるのよ！"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["shion_fc1", 0, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["イリアス様と、邪神にまでスカウトされるなんて……"])
+    ShowText(["お前、マジですげー奴なんだな！"])
+    ShowTextAttributes(["shion_fc1", 0, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["もちろん、あたし達の側に加わるんだよな！？"])
+    ShowText(["一緒にバリバリ戦って、魔物どもをブチ殺そうぜ！"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["eden_fc2", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["この三姉妹は、私達が見張っています。"])
+    ShowText(["大いなる決断の時に、無粋な横槍は入れさせません……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["eden_fc2", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["勇者ルカ……まだ、遅くはありませんよ。"])
+      ShowText(["魔王の手から逃れ、イリアス様の導きに従うのです。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["eden_fc2", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["勇者ルカ……これからも、イリアス様と共にあるのですよ。"])
+      ShowText(["我等と共に、理想の楽園を築くのです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["三姉妹と熾天使達が睨み合っている。"])
+    ShowText(["休戦中だが、一触即発の状態だ……"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["カオス化の進行率101%……"])
+    ShowText(["イリアス神殿での第三種断界接触以来、不可解な減少……"])
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["ここまで歴史から乖離した状況でも、"])
+    ShowText(["アポトーシスは発生しない……"])
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["要因は不明……"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    CallCommonEvent([380])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    CallCommonEvent([380])
+    Empty([])
+
+CommonEvent 41
+Name = ""
+
+  Page 0
+    CallCommonEvent([380])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["大いなる決断を下すまで、外に出る訳にはいかない……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["大いなる決断を下すまで、外に出る訳にはいかない……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["大いなる決断を下すまで、外に出る訳にはいかない……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])

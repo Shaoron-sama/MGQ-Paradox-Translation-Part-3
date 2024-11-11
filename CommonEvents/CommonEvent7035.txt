@@ -1,0 +1,50 @@
+CommonEvent 7035
+Name = "ドン・ダリア：敗北"
+
+  999([7035])
+  Label(["敗北"])
+  CallCommonEvent([7000])
+  ErasePicture([6])
+  ShowTextAttributes(["dondaria_fc1", 0, 0, 2])
+  ShowText(["【ドン・ダリア】"])
+  ShowText(["さあ、これで勝負は終わりだ。"])
+  ShowText(["何度でも受けて立ってやるから、悔しいならまた来な。"])
+  ShowTextAttributes(["dondaria_fc1", 0, 0, 2])
+  ShowText(["【ドン・ダリア】"])
+  ShowText(["まあ、どうせすぐ白いのを撒き散らす事になるけどな。"])
+  ShowText(["せいぜいザーメン溜めてくるんだな、あはははっ……！"])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ErasePicture([5])
+    ChangeMapDisplay([1])
+    ConditionalBranch([1, 1143, 0, 9, 2])
+      TransferPlayer([0, 235, 14, 12, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1143, 0, 10, 1])
+      ConditionalBranch([1, 1143, 0, 24, 2])
+        ControlVariables([57, 57, 0, 0, 1437])
+        TransferPlayer([0, 437, 67, 99, 2, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1143, 0, 25, 1])
+      ControlVariables([57, 57, 0, 0, 1995])
+      TransferPlayer([0, 995, 14, 12, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

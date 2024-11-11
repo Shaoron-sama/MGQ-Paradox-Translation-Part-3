@@ -1,0 +1,223 @@
+Display Name = "忘れられし塔 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+    ShowText(["【コックローチ娘】"])
+    ShowText(["エルベティエの襲撃で、この塔は半壊状態よ。"])
+    ShowText(["二階への階段も崩れたから、上には行けないわ……"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["cockroacha_fc1", 5, 0, 2])
+    ShowText(["【コックローチ娘】"])
+    ShowText(["コックローチ一族を、再興しなきゃ……"])
+    ShowText(["ねぇ、私とたっぷり子作りしない？"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([0, 2596, 1])
+      ControlSwitches([2596, 2596, 0])
+      ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+      ShowText(["【コックローチ娘】"])
+      ShowText(["塔が崩れた時、壁の中からこんな宝箱が出てきたの。"])
+      ShowText(["いかにも禍々しい感じだから、まだ開けてないんだけどね。"])
+      ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+      ShowText(["【コックローチ娘】"])
+      ShowText(["そもそもこの塔、無人だったのを私達が拠点にしたの。"])
+      ShowText(["もしかしたら、この宝箱を封印するための塔だったり……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2596, 0])
+      ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+      ShowText(["【コックローチ娘】"])
+      ShowText(["そもそもこの塔、無人だったのを私達が拠点にしたの。"])
+      ShowText(["もしかしたら、この宝箱を封印するための塔だったり……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 2596, 1])
+      ControlSwitches([2596, 2596, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+      ShowText(["【コックローチ娘】"])
+      ShowText(["塔が崩れた時、壁の中からこんな宝箱が出てきたの。"])
+      ShowText(["いかにも禍々しい感じだから、まだ開けてないんだけどね。"])
+      ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+      ShowText(["【コックローチ娘】"])
+      ShowText(["そもそもこの塔、無人だったのを私達が拠点にしたの。"])
+      ShowText(["もしかしたら、この宝箱を封印するための塔だったり……"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この宝箱の中に、いったい何が……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([675, 0, 0, 1])
+    ConditionalBranch([0, 1577, 0])
+      ShowTextAttributes(["mob_mahousyouzyo_fc1", 0, 0, 2])
+      ShowText(["【マジカルまりんちゃん】"])
+      ShowText(["うわ、これきっついな……"])
+      ShowText(["見なかったことにしない？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ConditionalBranch([0, 1005, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これは……"])
+        ShowText(["魔法少女の最上位職に就くためのアイテムか。"])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これはまるで、怨念のカタマリではないか……"])
+        ShowText(["魔法少女の行き着く先が、このようなものとはな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1006, 0])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これは……"])
+        ShowText(["魔法少女の最上位職に就くためのアイテムか。"])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これはまるで、怨念のカタマリではないか……"])
+        ShowText(["魔法少女の行き着く先が、このようなものとはな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1007, 0])
+        ShowTextAttributes(["alice_fc7", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これは……"])
+        ShowText(["魔法少女の最上位職に就くためのアイテムか。"])
+        ShowTextAttributes(["alice_fc7", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これはまるで、怨念のカタマリではないか……"])
+        ShowText(["魔法少女の行き着く先が、このようなものとはな。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これは……"])
+      ShowText(["魔法少女の最上位職に就くためのアイテムですね。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まさしくこれは、魔法少女の行き着く先。"])
+      ShowText(["怨念にまみれた魔女が、その終着点というわけですね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 166, 353, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 166, 353, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 166, 353, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+    ShowText(["【コックローチ娘】"])
+    ShowText(["仲間の大半は、あのエルベティエに消化されたわ。"])
+    ShowText(["なんとか難を逃れた生き残りが、ここに集まってるけど……"])
+    ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+    ShowText(["【コックローチ娘】"])
+    ShowText(["みんな、結構気が立ってるから。"])
+    ShowText(["襲われないように、注意してね……"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+    ShowText(["【コックローチ娘】"])
+    ShowText(["ううっ、どうしてこんな事に……"])
+    ShowText(["コックローチ一族は、どうなっちゃうの……？"])
+    Empty([])

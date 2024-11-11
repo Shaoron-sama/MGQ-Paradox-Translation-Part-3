@@ -1,0 +1,26 @@
+CommonEvent 648
+Name = "イベント：ボニー"
+
+  999([648])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 427, 0])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["いつか、七つの海を支配してみせるぞ！"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+  ShowText(["【ボニー】"])
+  ShowText(["お前、気に入ったぞ！"])
+  ShowText(["おさかな海賊団が助けてやろう！"])
+  ControlSwitches([427, 427, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["おさかな海賊団のボニーに気に入られた！"])
+  ShowText(["次のボスフロアまで、支援砲撃が飛んでくる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

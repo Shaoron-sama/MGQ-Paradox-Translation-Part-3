@@ -1,0 +1,991 @@
+Display Name = "グランドノア城 4F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 60, 12, 37, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 60, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 60, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 60, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0-rikuso\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["ようやく来たわね、待っていたわ……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["禍撫……本体で間違いありませんね。"])
+    ShowText(["すでに待ち惚けであったという事ですか。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["しかし……グランゴルドに攻め寄せた時点では、"])
+    ShowText(["間違いなく本体が出張っていたはず。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["一体いつ、私達の動きに気付いて戻ったのです……？"])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["そんなの、どうでもいいわ……"])
+    ShowText(["あなた達はみんな、ここで溶かされるのよ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["くっ、実力差は歴然か……"])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["戦闘能力値、測定不可能……"])
+      ShowText(["ヒルデのセンサーが役に立たないよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["対面しているだけでも、圧倒的な実力差を感じ取る。"])
+    ShowText(["万に一つも、勝ち目はなさそうだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["全く同じ状況の、華音の時はというと――"])
+    ShowText(["城外に戦っている味方がおり、ラファエラを助け出してくれた。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかし今回、そうした援軍は期待できない。"])
+    ShowText(["かなり絶望的な状況なのだ――"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["臆してはなりません、ルカ……"])
+    ShowText(["ここは、なんとしても禍撫を打ち倒すのです！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["分かりました、イリアス様！"])
+    ShowText(["こうなったら、やるしかない……！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["死ぬ気でやりゃ、道も開けるってもんさ！"])
+      ConditionalBranch([4, 401, 0])
+        ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+        ShowText(["【グノーシス】"])
+        ShowText(["同感だ、シオン……"])
+        ShowText(["イリアス様を生かすため、我等は死兵となる……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 53, 0])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【ライム】"])
+      ShowText(["ご先祖様の、カナデ様だよね……"])
+      ShowText(["戦わなくちゃいけないの……？"])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["あなたは、私の同胞よ……"])
+      ShowText(["守ってあげるわ、こっちに来なさい。"])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【ライム】"])
+      ShowText(["ダメ！　あたしは、ルカの仲間だもん。"])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["仕方ないわね……"])
+      ShowText(["他の連中を倒した後、あなたを保護するわ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 679, 0])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫’】"])
+      ShowText(["自分がいっぱいいるのは、見慣れているわ……"])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["分裂体が、反抗を……？"])
+      ShowText(["いえ、違うわね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["……………………"])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss_rikuso2\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1784, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-rikuso\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ConditionalBranch([1, 111, 0, 1, 2])
+      ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["まさか、ここまで強いなんて……"])
+      ShowText(["こうなったら、物量で攻めるしかないみたいね……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["禍撫の分裂体が、次々に床から這い出してきた！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ぐっ……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["目の前から押し寄せてくる、とんでもない数の禍撫。"])
+      ShowText(["力では勝っていても、このままでは物量で押し切られてしまう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 111, 0, 2, 1])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["予想以上に、健闘しているみたいだけど……"])
+      ShowText(["まだ、脅威とも言える程じゃないわね。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ぐっ……！"])
+      ConditionalBranch([4, 34, 0])
+        ShowTextAttributes(["micaelac_fc1", 2, 0, 2])
+        ShowText(["【ミカエラちゃん】"])
+        ShowText(["やっぱり、力の差は歴然ね……"])
+        ShowText(["これが、六祖の実力……"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どれだけ攻撃しても、まるで効いている感じがしない。"])
+      ShowText(["粘魔の祖、なんとも捉え難い相手だ――"])
+      ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+      ShowText(["【禍撫】"])
+      ShowText(["でも、ここで終わりよ……"])
+      ShowText(["みんな、私の養分になりなさい……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そんな……ここまでというのですか……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["くっ……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["禍撫の圧倒的な力に、何の手も打てない。"])
+      ShowText(["絶望が、目の前まで迫っていた――"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["もう少し……もう少しじゃ……"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["同時刻、グランドノア地下牢――"])
+    Wait([60])
+    ControlSwitches([31, 31, 1])
+    ChangeTransparency([0])
+    TransferPlayer([0, 33, 0, 0, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["やはり、玉座の間まで追い込まれてしまいましたか……"])
+    ShowTextAttributes(["sonia_fc2", 4, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["華音の時と全く同じパターンじゃない！"])
+    ShowText(["二度もはめられるなんて……！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["わ、私のせいではありません……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そんなこと言ってる場合じゃないよ。"])
+    ShowText(["こうなったら、もう逃げ場はない……"])
+    ConditionalBranch([4, 401, 0])
+      ShowTextAttributes(["gnosis_fc1", 3, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["このような策略、禍撫の行動パターンにそぐわない……"])
+      ShowText(["別の何者かの意図が裏で働いている……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["グランゴルドを攻めていたはずが、なぜか戻っていた禍撫。"])
+    ShowText(["こちらの作戦は、またも読まれてしまったのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["だが、もはや悔やんでいる余裕もない。"])
+    ShowText(["この先に待ち受けている禍撫を倒さなければ、僕達はここで終わる――"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["逃がさないわ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["階段には、ずらりと分身体が控えている。"])
+    ShowText(["この数を突破するのは不可能だろう……"])
+    ErasePicture([5])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["逃がさないわ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["階段には、ずらりと分身体が控えている。"])
+    ShowText(["この数を突破するのは不可能だろう……"])
+    ErasePicture([5])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["逃がさないわ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["階段には、ずらりと分身体が控えている。"])
+    ShowText(["この数を突破するのは不可能だろう……"])
+    ErasePicture([5])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"mon_bom2\", @pitch=100, @volume=100)"])
+    ShakeScreen([5, 5, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["轟音と衝撃が、城全体を揺るがした。"])
+    ShowText(["階下で、何か爆発が起こったようだ――"])
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["……地下牢で爆発……？"])
+    ShowText(["いったい、何が……"])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["くくくっ、上手くいったぞ！"])
+    ShowText(["今回の功労者は、儂じゃな！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["クロムが勝ち誇った、次の瞬間――"])
+    PlayBGM(["RPG::BGM(@name=\"boss_nanadaitensi\", @volume=100, @pitch=100)"])
+    ErasePicture([5])
+    SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowAnimation([39, 501, false])
+    Wait([30])
+    ShowAnimation([40, 501, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([120])
+    ShowPicture([6, "80_metatorone_st11b", 0, 0, -160, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_sandalforne_st11b", 0, 0, 160, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, -160, 0, 100, 100, 255, 0, 60, false])
+    MovePicture([5, nil, 0, 0, 160, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["……待たせたわね！"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["間に合った、後は任せて……"])
+    ErasePicture([6])
+    ShowPicture([5, "80_kanade_st03b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["七大天使……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その場に降臨したのは、メタトローネとサンダルフォーネ。"])
+    ShowText(["どうやら、クロムがやってくれたらしい――"])
+    ShowPicture([6, "80_metatorone_st11b", 0, 0, -160, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_sandalforne_st11b", 0, 0, 160, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["行くわよ、サンダルフォーネちゃん！"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["行くよ、メタトローネちゃん……"])
+    ErasePicture([6])
+    ShowPicture([5, "iv_metatosanda1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サンダルフォーネとメタトローネは、"])
+    ShowText(["背中合わせになって武器を構えた！"])
+    ShowTextAttributes(["metatorone_fc1", 5, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["エネルギーリンク、ＯＫ！！"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["チャージ、開始……"])
+    PlaySE(["RPG::SE(@name=\"mon_power\", @pitch=100, @volume=100)"])
+    ShowPicture([5, "iv_metatosanda2", 0, 0, -213, 0, 100, 100, 255, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 90, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["二人のパワーが、異常なまでに高まっていく。"])
+    ShowText(["凄まじい大技の準備態勢に入っているのだ――"])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["こ、これは――"])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 2, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["な……なんというエネルギー量！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["まずい！　退きますよ！！"])
+    ErasePicture([5])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    GatherFollowers([])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShowPicture([5, "iv_metatosanda3", 0, 0, -213, 0, 100, 100, 255, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 45, false])
+    ShowTextAttributes(["metatorone_fc2", 2, 0, 2])
+    ShowText(["【サンダルフォーネ＆メタトローネ】"])
+    ShowText(["消滅しなさい……アトミックヘブン！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["次の瞬間、凄まじいエネルギーが照射された。"])
+    ShowText(["放たれた光は直線上のものを消滅させ、壁も床も軽く貫いていく。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そして、禍撫は――"])
+    ErasePicture([5])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["く、うぅっ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その一撃は、禍撫の半身をも消し去っていた。"])
+    ShowText(["しかし相手は不定形の粘魔、直撃しなければ致命傷には至らない――"])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["なんなの、あなた達の力……"])
+    ShowText(["その威力、ミカエラやルシフィナの大技にも匹敵するわ……"])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["あははっ、ナメないでよね！"])
+    ShowText(["これが、あたし達の合体技よ！"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["しかも、あたし達は核動力だから……"])
+    ShowText(["何発でも連続して撃てるの……"])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["ほぉら、もう一発――"])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShowPicture([5, "iv_metatosanda3", 0, 0, -213, 0, 100, 100, 255, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 45, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メタトローネ＆サンダルフォーネ】"])
+    ShowText(["……アトミックヘブン！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["さらに、ほとんどタメを置かない二発目。"])
+    ShowText(["禍撫は命中の寸前に、二体に分裂していた。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["うち一体は、直撃を受けて蒸発してしまう――"])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["くっ……！　なんて威力なの……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["禍撫はさらに、三体に分裂した。"])
+    ShowText(["しかしメタトローネとサンダルフォーネの砲撃は間を置かず続く。"])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["威力だけじゃないわ！"])
+    ShowText(["二人いれば、撃ち放題よ！！"])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["次の一撃も、分身のうち一体を吹き飛ばした。"])
+    ShowText(["流石の禍撫も、防戦一方となっている。"])
+    ShowTextAttributes(["metatorone_fc1", 0, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["当たるまで、何発でも撃ってやるわ！"])
+    ShowText(["どれだけ分裂体を作り出しても、全部消滅させるから！"])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["くっ……！　このままじゃ、城まで……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかも、吹き飛ばされているのは禍撫だけではなかった。"])
+    ShowText(["その直線上にある城壁や床も、全て消滅させていくのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こんな砲撃が続けば、グランドノア城は間違いなく崩壊するだろう――"])
+    ErasePicture([5])
+    Wait([30])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["……状勢は悪いわね。"])
+    ShowText(["この場は、退かせてもらうわ……"])
+    PlaySE(["RPG::SE(@name=\"mon_ero_slime3\", @pitch=100, @volume=100)"])
+    ControlSwitches([32, 32, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["禍撫の体が溶け、床の中へと沈んでいく。"])
+    ShowText(["メタトローネ達の猛攻の前に、とうとう背中を見せたのだ――"])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowPicture([6, "80_metatorone_st13b", 0, 0, -160, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_sandalforne_st11b", 0, 0, 160, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["metatorone_fc1", 2, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["ちょっと、逃がさないから――"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……追ってはなりません、メタトローネ。"])
+    ShowPicture([6, "80_metatorone_st15b", 0, 0, -160, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["……やっぱり？"])
+    ShowText(["あたしも、そんな気がしてたのよね～。"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["核融合炉も、少し冷却しないといけないしね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あの大技は連発できるが、無制限に撃てる訳ではないらしい。"])
+    ShowText(["それにしても、核融合炉の冷却……？"])
+    ErasePicture([5])
+    ErasePicture([6])
+    SetMoveRoute([39, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-5, 3])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-5, 3])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([40, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-3, 2])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-3, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["でも、禍撫を追っ払っちゃった！"])
+    ShowText(["あなた達、やっぱりすごい！"])
+    ConditionalBranch([4, 34, 0])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["さすが七大天使……すさまじい力ね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_metatorone_st02b", 0, 0, -160, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_sandalforne_st01b", 0, 0, 160, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["metatorone_fc1", 1, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["えへへっ、もっと褒めて～♪"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["褒められると、嬉しい……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["色々と危なかったけど、作戦成功だね。"])
+    ShowText(["グランドノアは制圧して、七大天使も解放できて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["これで、解放した七大天使は三人。"])
+    ShowText(["制圧した大都市は二つという事になる。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["危うい局面が続いたものの、結果だけを見れば大健闘だ――"])
+    ShowText(["それなのに、イリアス様の顔は少し浮かない。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["どうしたんですか、イリアス様……？"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["今の禍撫も、グランゴルドでの華音も……"])
+    ShowText(["撤退の決断が、少し早すぎる気がします。"])
+    ShowPicture([5, "80_metatorone_st05b", 0, 0, -160, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["禍撫は、あたし達の攻撃に手も足も出なかったんじゃないの？"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["禍撫がその程度なら、聖魔大戦で苦労はしていませんよ……"])
+    ShowText(["あきらかにあの者は、まだまだ余力を残していました。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それなのにあっさり去って、城を明け渡す……"])
+    ShowText(["本来なら、城を破壊してでも私達に渡すまいとすべきなのに。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ルカ……これがどういう事か、分かりますか？"])
+    ShowChoices([["城はいつでも取り返せる", "城は大切ではない", "六祖は意外に弱い"], 0])
+    When([0, "城はいつでも取り返せる"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["やはり、あなたもそう考えますか……"])
+      ShowText(["私も全く同意見です。"])
+      Empty([])
+
+    When([1, "城は大切ではない"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いえ……連中にとっても、城は大切ですよ。"])
+      ShowText(["自分の治める都市、そう簡単に捨てられるはずもありません。"])
+      Empty([])
+
+    When([2, "六祖は意外に弱い"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……そんな訳がないでしょう！"])
+      ShowText(["実際に戦って、あの強さを思い知ったはずですが？"])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["おそらく……"])
+    ShowText(["六祖は、城を奪われても取り返す算段があると考えています。"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["取り返す算段って……いったい、何なの？"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それはまだ、私にも分かりません……"])
+    ShowText(["ですが、敵は何やら時間を稼いでいるように思えるのです。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["だとすれば、大規模な作戦の準備か……"])
+    ShowText(["もしくは、秘密兵器の開発か……"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 2, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["おいおい……それ、本当だったらやべぇじゃねーか！"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["……私も同意見です、イリアス様。"])
+    ShowText(["敵は時間を稼ぎつつ、何らかの計画を進めているようです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["不意に、グランゴルドにいるラファエラからの声が届いた。"])
+    ShowText(["禍撫の撤退で、通信封鎖も解除されたのだろう。"])
+    ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["ともかく、作戦の成功を心より祝福いたします。"])
+    ShowText(["メタトローネもサンダルフォーネも、元気そうですね。"])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["ラファエラも相変わらず、悪巧み全開っぽいね。"])
+    ShowText(["解放されたのは、あたし達三人だけかぁ……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["封印中の七大天使は、残り三人……"])
+    ShowText(["サン・イリアにサバサ、あと一人はどこでしょうか。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["その件ですが、イリアス様……"])
+    ShowText(["この世界において、アジール通信が交わされております。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["アジール通信を使っているとは……"])
+    ShowText(["我々以外の天使――この魔界の天使によるものですね。"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["あの、アジール通信って……？"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["天使専用の暗号通信のようなものです。"])
+    ShowText(["この魔界の天使達が、連絡のために使用しているのでしょう。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["おそらく、魔界エデンの率いる天使解放軍ですね……"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["……はい、間違いありません。"])
+    ShowText(["そして通信解読の結果、いくつか重要な事実が分かりました。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["ヤマタイにおいて、「捕らえた天使」の身柄を搬入。"])
+    ShowText(["またヤマタイでは、捕虜への人体実験が行われているとか。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["捕らえられた天使……"])
+    ShowText(["ほぼ間違いなく、封印された七大天使の誰かですね。"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["あののどかな村で、非道な人体実験……？"])
+    ShowText(["なんだか、似合わないなぁ。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["この世界のヤマタイは、サイバー都市のようです。"])
+    ShowText(["玉藻がトップとなり、最先端の科学研究を行っているとか……"])
+    ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["サイバーヤマタイ！？"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["そして天使解放軍は、ヤマタイ攻撃計画を企図しています。"])
+    ShowText(["蓬莱山にて、着々と準備を進めているようですね。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["エデンも、蓬莱山にいるのですね。"])
+    ShowText(["天使解放軍のリーダーとして……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["その作戦……僕達も加われないかな。"])
+    ShowText(["ヤマタイに七大天使が囚われている以上、利害も一致するよ。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["そうしたいのは山々ですが……"])
+    ShowText(["あの魔界エデンが、私達の協力を認めるかどうか……"])
+    ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["また次も、エデンにスルーされたら……"])
+    ShowText(["意外にガラスだった私のハートが粉々に……"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["きゅ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ヌルコはイリアスの頭を撫で、慰めている……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["とにかく、蓬莱山に行こう。"])
+    ShowText(["魔界エデンに会って、協力を申し出るんだ！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["あなたがそうしたいなら……"])
+    ShowText(["私は、止めはしませんが……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それじゃあ、次の目的地は蓬莱山だね。"])
+    ShowText(["さあ、行こう！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["なぁ、エデン……"])
+      ShowText(["あの魔界エデン、お前なら説得できないのか？"])
+      ShowTextAttributes(["eden_fc1", 1, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["あまり自信はありません。"])
+      ShowText(["あのエデン、私とは異なるものを見てきたのでしょうね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ヤマタイ攻略を企図している天使のレジスタンス――"])
+    ShowText(["彼女達と接触し、協力体制を築くのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["いったいなぜ、あのエデンがイリアスを無視するまでに至ったか――"])
+    ShowText(["それも含め、本人に会って確かめよう。"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ChangeTransparency([0])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    TransferPlayer([0, 772, 0, 0, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 39
+Name = "メタトローネ"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "サンダルフォーネ"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺には癒やしの魔力が満ちていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2675, 2675, 0])
+    ChangeWeapons([185, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4017, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["kanade_fc1", 2, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玉座の上で、禍撫が睨んでいる……"])
+    ShowText(["彼女の目を盗んで開けられそうにない！"])
+    SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["転職の書が開かれたまま放置されている……"])
+    CallCommonEvent([113])
+    Empty([])

@@ -1,0 +1,1399 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([1, 1205, 0, 1, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["この村に、もう用はないんじゃない？"])
+      ShowText(["襲撃の後でゴタゴタしてるから、邪魔になっちゃうし……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1201, 0, 5, 0])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      ControlSwitches([33, 33, 1])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 937, 31, 49, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 852, 28, 58, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 1203, 0, 9, 0])
+      CallCommonEvent([534])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1204, 0, 5, 0])
+      CallCommonEvent([510])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlVariables([1201, 1201, 0, 0, 5])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["なんとか、無事に下山できたわね。"])
+    ShowText(["でも、この光景は……"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラットもリジェオも、唖然とするしかなかった。"])
+    ShowText(["周囲の風景は、本来いた場所とは全く異なっているのだ。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ここ、いったいどこなの……"])
+    ShowText(["ロウラット、こんな場所を見たことある？"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラットは、首を横に振る。"])
+    ShowText(["まったく見慣れない光景に、途方に暮れるしかなかった。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ScrollMap([4, 8, 5])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あっ……見て！"])
+    ShowText(["あそこに小さな町がある！"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あの町で、話を聞いてみましょう。"])
+    ShowText(["もしかしたら、帰り道を教えてくれるかも。"])
+    ScrollMap([6, 8, 5])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["帰り道、で済むような状況だろうか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ここはもはや、異世界そのもの。"])
+    ShowText(["道に迷ったなどといった次元ではないように思える。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["とは言え、今はあの町に行ってみるしかないだろう。"])
+    ShowText(["下山したロウラット達は、麓の町へと向かったのだった――"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 869, 21, 38, 8, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノアは、すぐ西でしょう。"])
+    ShowText(["わざわざ遠回りする必要はないんじゃない……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……そうだね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([1, 1205, 0, 4, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["ゴルド火山は、こっちじゃないわよ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1205, 0, 1, 0])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["サキュバスの村は、こっちじゃないわよ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1201, 0, 5, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1205, 0, 4, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["ゴルド火山は、こっちじゃないわよ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1205, 0, 1, 0])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["サキュバスの村は、こっちじゃないわよ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1201, 0, 5, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    FadeoutBGM([1])
+    RecoverAll([0, 0])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowAnimation([24, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    ShowAnimation([25, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 0])
+    Wait([60])
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_lira_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["万能剣士くん……"])
+    ShowText(["ここから先には行かせないわ。"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["まさか、この世界まで……"])
+    ShowText(["あなたが邪魔しに来るなんてねぇ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["お、お前達は――"])
+    ShowText(["ベル！　それにリラ！？"])
+    ShowTextAttributes(["tarsa_fc1", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["この二人、レストの知り合いなの……？"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["そうよ、お嬢ちゃん。"])
+    ShowText(["万能剣士くんには、ずいぶん世話になったわ。"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["その恨み、ここで晴らしてあげるからね～♪"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["「夢の主」の同盟者ってのは、お前達だな！？"])
+    ShowText(["それに、僕に刺客を差し向けたのも――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ベルとリラが、「夢の主」の同盟者。"])
+    ShowText(["なるほど、僕のことが知られていたのも頷ける。"])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["つまり二人は、レスト達の敵ってことね……！"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["あら……お嬢ちゃん、邪魔しないでくれる？"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["痛い目を見たくないなら、逃げた方がいいよぉ……？"])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["逃げたりしない……私も戦うわ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ベル、リラ……そこをどいてもらう！"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["それは出来ないわね。"])
+    ShowText(["困るのよ、あなたにグランドノアに行かれたら……"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["そういうわけでぇ……"])
+    ShowText(["ここで、イかされちゃいなよ。"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1330, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["くっ……やっぱり、強いわね。"])
+    ShowText(["でも、これで勝ったと思わないで！"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["いったん、退きま～す！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([30])
+    ShowAnimation([24, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 1])
+    ShowAnimation([25, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 1])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ベルとリラは、たちまち逃げ去ってしまった――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ベルとリラが、この世界にいるという事は……"])
+    ShowText(["やっぱり、あいつも……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ベルとリラの主人、有翼魔ミュゼット――"])
+    ShowText(["散々に手を焼かされた奴が、「夢の主」の同盟者に違いない。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ミュゼット達が相手なんて……"])
+    ShowText(["ずいぶんと、厄介な話になってきたな。"])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["でも、大丈夫よ。"])
+    ShowText(["レストにノビッサ、それに他の5人の勇者もいるし。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサの期待に、背くわけにはいかない。"])
+    ShowText(["それに、この世界で暮らす人達にも危機が迫っているのだ――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["これまで以上に、気合いを入れないと……"])
+    ShowText(["さあ、グランドノア女王に会いに行こう！"])
+    PlayBGM(["RPG::BGM(@name=\"field2\", @volume=100, @pitch=100)"])
+    ControlVariables([1203, 1203, 0, 0, 9])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ConditionalBranch([1, 1204, 0, 5, 1])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["グランドノアはそっちじゃないわよ。"])
+      ShowText(["今は寄り道無しで行きましょ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1203, 0, 8, 1])
+      ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+      ShowText(["【ターサ】"])
+      ShowText(["そっちは逆方向だと思うけど……"])
+      ShowText(["レストって、方向オンチなの？"])
+      ShowTextAttributes(["rest_fc1", 0, 0, 2])
+      ShowText(["【レスト】"])
+      ShowText(["そ、そういうわけじゃないけど……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["グランドノア城、行き過ぎたと思うけど……"])
+    ShowText(["レストって、方向オンチなの？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["そ、そういうわけじゃないけど……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["グランドノアへの洞窟は、すぐ南東だ。"])
+    ShowText(["聞いた話じゃ、割と長い洞窟らしいぜ。"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["こんなに苦労させるなんて……"])
+    ShowText(["これも全部、エストのせいね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["グランドノアはそっちじゃないわよ。"])
+    ShowText(["今は寄り道無しで行きましょ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"\", @volume=100, @pitch=100)"])
+    Script(["keep_all_equip"])
+    Script(["release_temp_actors"])
+    Script(["set_temp_actors(807,808,812)"])
+    RecoverAll([0, 0])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラット達は、貴婦人の村で同盟者の三姉妹と激突。"])
+    ShowText(["マガツの救援もあり、なんとか三姉妹を撃退する。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そこに現れた白兎が告げた衝撃の事実――"])
+    ShowText(["それは、世界を越えた「夢の主」の脅威だった。"])
+    Wait([60])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"field2\", @volume=100, @pitch=100)"])
+    Wait([30])
+    ControlVariables([1205, 1205, 0, 0, 1])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["まったく、面妖な話よ……"])
+    ShowText(["まさか、我々は異世界にいるとはな。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["しかも、私達とマガツは別世界から来たなんて……"])
+    ShowText(["想像もできないわね。"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["信じがたい事実だが、受け入れるしかない。"])
+    ShowText(["そして元の世界に戻るには、「夢の主」を倒すしかないのだ。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["さて、これからだが……"])
+    ShowText(["あてもなく、見知らぬ世界をうろつくのは避けたいのう。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ねぇ、この地図を見て。"])
+    ShowText(["割と近くに、「サキュバスの村」ってのがあるよね？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["貴婦人の村でもらった、周辺の地図――"])
+    ShowText(["ここからすぐ南東に、リジェオの言う村がある。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ここに行けば、いろいろ助けてもらえないかな？"])
+    ShowText(["これでも私も一応、サキュバスだし……"])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["ふむ、同胞達を頼るのか。"])
+    ShowText(["援助が期待できるかもしれんな……"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラットも、リジェオの案に賛同を示した。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["自分達はまだ、この世界は不慣れ。"])
+    ShowText(["ここに住む者達の助けは、ぜひ欲しい。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まして今の自分は、ルーンが使えない身。"])
+    ShowText(["白兎が言うには、魔術系統の違いという事だが――"])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["世界によって、術の法則も異なるとはな。"])
+    ShowText(["確かにここに来てから、儂の魔力は増したように感じるぞ。"])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["これは、非常に興味深いが……"])
+    ShowText(["ロウラットにとっては、不利益この上なかろう。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ロウラットのルーンは、なんとか使えるようにしたいよね。"])
+    ShowText(["サキュバスの村に、この世界の魔法に詳しい人がいないかな。"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔法の系統というのは、自分達の世界でさえ非常に複雑で子細。"])
+    ShowText(["それがゆえに、学問の一分野として確立されているのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["世界が違えば、また魔法の系統も異なるらしい。"])
+    ShowText(["この世界の魔法を、どうにか使えるようになれば――"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["それじゃあ、「サキュバスの村」に行こう。"])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["うむ……"])
+    ShowText(["地図を見る限り、日が暮れるまでには着くはずじゃな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サキュバスの村は、ここから南東にすぐ。"])
+    ShowText(["そこで、援助を受けることが出来れば良いのだが――"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["サキュバスの村は、こっちじゃないわよ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["サキュバスの村は、こっちじゃないわよ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["サキュバスの村は、こっちじゃないわよ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["ゴルド火山洞窟への道のりじゃが……"])
+    ShowText(["まずは、南東より山脈地帯に入る。"])
+    ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["そこからは、道なりに歩いて行き――"])
+    ShowText(["かなり進んだ先に、目的の火山があるという。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["私、村で地図をもらったから……"])
+    ShowText(["間違った方向に行こうとしたら、私が言ってあげる。"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["南東より山脈地帯に入り、後は道なりに進む――"])
+    ShowText(["そうすれば、火山洞窟に辿り着くという。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そこで四大精霊のサラマンダーに会い、力を授けてもらうのだ。"])
+    ShowText(["強大な存在、「夢の主」と戦うために――"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["この港町、あんまり治安が良くないらしいわ。"])
+    ShowText(["入らない方がいいんじゃない……？"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["人外排他思想が強いとサキュバスの村で聞いたな……"])
+    ShowText(["どの世界にも、そういう場所はあるものよ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["この港町、あんまり治安が良くないらしいわ。"])
+    ShowText(["入らない方がいいんじゃない……？"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["人外排他思想が強いとサキュバスの村で聞いたな……"])
+    ShowText(["どの世界にも、そういう場所はあるものよ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ゴルド火山、通り過ぎちゃったわよ。"])
+    ShowText(["ほら、ここからすぐ西ね。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["この洞窟……あやかしの巣窟だな。"])
+    ShowText(["用もないのに、足を踏み入れるのはお勧め出来ないぜ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 25, 16, 38, 8, 0])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 25, 16, 38, 8, 0])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ConditionalBranch([1, 1203, 0, 9, 0])
+      CallCommonEvent([534])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1204, 0, 5, 0])
+      CallCommonEvent([510])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["さっき見た町……こっちじゃないんじゃない？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    CallCommonEvent([509])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    CallCommonEvent([509])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 852, 28, 58, 8, 0])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ConditionalBranch([1, 1205, 0, 1, 1])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["この村に、もう用はないんじゃない？"])
+      ShowText(["襲撃の後でゴタゴタしてるから、邪魔になっちゃうし……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1201, 0, 5, 0])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      ControlSwitches([33, 33, 1])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 937, 31, 49, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 94
+Name = "EV094"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 850, 19, 91, 8, 0])
+    Empty([])
+
+CommonEvent 95
+Name = "EV095"
+
+  Page 0
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["ここは……霊山の類だな。"])
+    ShowText(["用もないのに、足を踏み入れるのはお勧め出来ないぜ。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 851, 36, 13, 8, 0])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
+      ShowText(["【大明海】"])
+      ShowText(["この感じ……"])
+      ShowText(["予想以上にだだっ広い洞窟だな。"])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["このジメジメ感が嫌な感じ……"])
+      ShowText(["常時実体化ってのも、考え物よね。"])
+      ShowTextAttributes(["lars_fc01", 0, 0, 2])
+      ShowText(["【ラルス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この洞窟を抜ければ、グランドノア。"])
+      ShowText(["当然、魔物も多く出没するだろう。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["目的地に着く前に、倒れるなど論外だ。"])
+      ShowText(["注意して進まなければならない――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 100
+Name = "EV100"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 854, 15, 6, 2, 0])
+    Empty([])
+
+CommonEvent 112
+Name = "EV112"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 845, 11, 48, 8, 0])
+    Empty([])
+
+CommonEvent 125
+Name = "EV125"
+
+  Page 0
+    ConditionalBranch([1, 1204, 0, 5, 1])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["グランドノアはそっちじゃないわよ。"])
+      ShowText(["今は寄り道無しで行きましょ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 848, 9, 5, 2, 0])
+    Empty([])
+
+CommonEvent 141
+Name = "EV141"
+
+  Page 0
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["ここはゴルド火山洞窟じゃないわよ。"])
+    ShowText(["目的地は、もっと先ね……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 252
+Name = "EV252"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["→　グランドノア城"])
+    ShowText(["↓　フィノア村"])
+    Empty([])
+
+CommonEvent 253
+Name = "EV253"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["↑　グランドノア城"])
+    ShowText(["→　ヤマタイ村への洞窟"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+      ShowText(["【ルヴィッサ】"])
+      ShowText(["ここから先は、道路に沿って進めばいいみたいね。"])
+      ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
+      ShowText(["【大明海】"])
+      ShowText(["ん～、ずいぶん親切よのう。"])
+      ShowText(["田舎とはえらい違いだぜ……"])
+      ShowTextAttributes(["lars_fc01", 0, 0, 2])
+      ShowText(["【ラルス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["いよいよ、グランドノアは近い。"])
+      ShowText(["だが、それだけ危険も大きいということだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここから先、より警戒しなければ――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 255
+Name = "EV255"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["→　グランドノア城"])
+    ShowText(["←　エスタ"])
+    Empty([])
+
+CommonEvent 256
+Name = "EV256"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["↑　ウンディーネの泉"])
+    ShowText(["↓　エスタ"])
+    ShowText(["※注意！　西の森に魔物の集落あり！"])
+    Empty([])
+
+CommonEvent 257
+Name = "EV257"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["↑　ウンディーネの泉"])
+    ShowText(["↓　エスタ"])
+    Empty([])
+
+CommonEvent 258
+Name = "EV258"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["北東：リマ村跡"])
+    ShowText(["　西：ゴルド砦"])
+    ShowText(["※要警戒戦域、ノア領民はただちに退去を"])
+    Empty([])
+
+CommonEvent 259
+Name = "EV259"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["※ここより北、要警戒戦域につき立ち入り禁止"])
+    Empty([])
+
+CommonEvent 261
+Name = "EV261"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["→　ウンディーネの泉"])
+    ShowText(["←　リマ村跡・ゴルド砦"])
+    Empty([])
+
+CommonEvent 263
+Name = "EV263"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["～ゴルド火山～"])
+    ShowText(["火精サラマンダーの住まう聖山につき、立ち入りを禁ずる。"])
+    Empty([])
+
+CommonEvent 264
+Name = "EV264"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["北東　ゴルドポート"])
+    ShowText(["北西　溶岩鉱窟"])
+    ShowText(["南西　ゴルド西の関所"])
+    Empty([])

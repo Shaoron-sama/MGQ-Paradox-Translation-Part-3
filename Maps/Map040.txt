@@ -1,0 +1,1150 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 10, 16, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 40, 29, 5, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 40, 30, 5, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 40, 29, 32, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 40, 30, 32, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 16, 18, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 31, 13, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 39, 14, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 22, 39, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 27, 39, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 41, 26, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 39, 21, 48, 0, 0])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["s_mermaid_fc1", 0, 0, 2])
+    ShowText(["【商人マーメイド】"])
+    ShowText(["武器に防具、ここで揃えていってな。"])
+    ShowText(["海賊の愛用品、パイレーツメットもあるで～"])
+    ShopProcessing([1, 15, 0, 0, false])
+    ShopItem([1, 65, 0, 0])
+    ShopItem([1, 125, 0, 0])
+    ShopItem([1, 675, 0, 0])
+    ShopItem([1, 900, 0, 0])
+    ShopItem([2, 168, 0, 0])
+    ShopItem([2, 200, 0, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["s_mermaid_fc1", 0, 0, 2])
+    ShowText(["【商人マーメイド】"])
+    ShowText(["お客さん、冒険者やな。"])
+    ShowText(["なら、アイテムはしっかり揃えていきや。"])
+    ShopProcessing([0, 2, 0, 0, false])
+    ShopItem([0, 7, 0, 0])
+    ShopItem([0, 11, 0, 0])
+    ShopItem([0, 13, 0, 0])
+    ShopItem([0, 14, 0, 0])
+    ShopItem([0, 15, 0, 0])
+    ShopItem([0, 16, 0, 0])
+    ShopItem([0, 17, 0, 0])
+    ShopItem([0, 18, 0, 0])
+    ShopItem([0, 19, 0, 0])
+    ShopItem([0, 23, 0, 0])
+    ShopItem([0, 35, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【アクセサリ屋】"])
+    ShowText(["旅のおともにアクセサリ！"])
+    ShowText(["できる冒険者は、みんな持ってるアクセサリ！"])
+    ShopProcessing([2, 1267, 0, 0, false])
+    ShopItem([2, 1270, 0, 0])
+    ShopItem([2, 1537, 0, 0])
+    ShopItem([2, 1554, 0, 0])
+    ShopItem([2, 1556, 0, 0])
+    ShopItem([2, 1558, 0, 0])
+    ShopItem([2, 1734, 0, 0])
+    ShopItem([2, 1736, 0, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["もぐもぐ、むしゃむしゃ……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["ごはん大盛り、追加なのです！"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["この食堂は、とってもごはんがおいしいのです！"])
+    ShowText(["本部の食堂とは比べものにならないのです！"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["これも海兵の務めなのです！"])
+    ShowText(["むしゃむしゃ……"])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです！"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["立派な海兵になるため、ごはんをいっぱい食べるのです！"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おなかいっぱいなのです……"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["……おかわり！"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["お茶がうまいのです……"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["ＺＺＺ……"])
+    ShowText(["むしゃむしゃ……"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["たつのこはドラゴン族なのです！"])
+    ShowText(["いっぱい食べて、立派な竜になるのです！"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おにぎり！"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おいしいのです……"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 1, 0, 2])
+    ShowText(["【食堂のおばちゃん】"])
+    ShowText(["海軍駐留以来、店は大繁盛だよ。"])
+    ShowText(["こんなんだったら、ずっといてもらいたいね。"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 1, 0, 2])
+    ShowText(["【ウェイトレス】"])
+    ShowText(["すみません！　今、テーブルいっぱいなんですよー！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["大盛況よね……"])
+    ShowText(["ここの宿も、儲かってるのかな？"])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 2, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["そりゃ残念……"])
+    ShowText(["人が食べてるとこ見てると、余計に腹が減ってくるぜ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["この店には、腕利きの鍛冶屋がいたんだけどねぇ……"])
+    ShowText(["今は、海軍本部の方で働いてるんだよ。"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["たつのこ……可愛いからって油断するなよ。"])
+    ShowText(["あいつら、れっきとした海竜族なんだからな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【あらくれ】"])
+    ShowText(["昨日も、酔って暴れたゴロツキがボコボコにされて……"])
+    ShowText(["おお、怖い怖い……"])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["海兵たる者、アイテムの備蓄もしっかりするのです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["144"])
+    ShowTextAttributes(["saboresu_fc1", 0, 0, 2])
+    ShowText(["【サニー】"])
+    ShowText(["冒険者なら、なおさらアイテムの備蓄は万全にね！"])
+    ExitEventProcessing([])
+    Label(["165"])
+    ShowTextAttributes(["onaho_fc1", 0, 0, 2])
+    ShowText(["【ナホ】"])
+    ShowText(["オナホの備蓄も、大切ですよ……♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["警備中なのです！"])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["スパイや不穏分子は、旅人に混じって現れる……"])
+    ShowText(["そういうわけで、大将の命令通り宿屋で見張っているのです。"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["ノア地方に向かう予定だったが、ここで足止めだ。"])
+      ShowText(["いっそ目的地を変更して、サバサにでも行ってみるかね。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【黒魔導師】"])
+      ShowText(["イヤよ、砂しかないようなところなんて……"])
+      ShowText(["それに、頭のおかしな女王に捕まったらどうするのよ。"])
+      ConditionalBranch([4, 529, 0])
+        ShowTextAttributes(["sara_fc1", 4, 0, 2])
+        ShowText(["【サラ】"])
+        ShowText(["汚名を払拭するのは、まだまだ大変そうね……"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["定期船運航停止の影響で、まだまだこの町から動けない。"])
+      ShowText(["くっ、これでは魔王を倒しにいけないではないか……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【黒魔導師】"])
+      ShowText(["そんな甲斐性も実力もないくせに……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【黒魔導師】"])
+    ShowText(["ヤマタイ村で、東方秘伝書を手に入れる予定だったの。"])
+    ShowText(["それがあれば、侍や陰陽師に転職できるっていう話よ。"])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["ＺＺＺ……"])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おやつ休憩なのです！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["161"])
+    ShowTextAttributes(["ustrel_fc1", 0, 0, 2])
+    ShowText(["【レモン】"])
+    ShowText(["冒険の旅にも、おやつ休憩が欲しいですね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【宿屋のおかみ】"])
+    ShowText(["20Gで泊まっていかないかい？"])
+    ShowText(["今なら、かわいいたつのこも一緒だよ！\\$"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      ConditionalBranch([7, 20, 0])
+        ChangeGold([1, 0, 20])
+        FadeoutScreen([])
+        PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+        Wait([150])
+        RecoverAll([0, 0])
+        FadeinScreen([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【宿屋のおかみ】"])
+        ShowText(["おや、手持ちが足りないみたいだね。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "いいえ"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【中年】"])
+    ShowText(["最近は、たつのこ目当ての女性宿泊客が増えたよ。"])
+    ShowText(["よし！　「たつのこに会えるツアー」を企画してみるか！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["172"])
+    ShowTextAttributes(["sinkiro_fc1", 4, 0, 2])
+    ShowText(["【ミラージュ】"])
+    ShowText(["「幽霊が出る宿」はどうですか～？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【中年】"])
+    ShowText(["考え得る限り、最悪だ！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性】"])
+    ShowText(["たつのこちゃん、かわい～♪"])
+    ShowText(["一匹持って帰りたいわ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["131"])
+    ShowTextAttributes(["doll_fc1", 0, 0, 2])
+    ShowText(["【みやび】"])
+    ShowText(["あたしも、持って帰っていいよ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性】"])
+    ShowText(["可愛いけど、呪われそう……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["おつとめ中なのです！"])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["こんなネックレスの似合う、大人の女性になりたいのです……"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["でも、山より大きい海竜にも憧れるのです！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["174"])
+    ShowTextAttributes(["sandw_fc1", 0, 0, 2])
+    ShowText(["【ダリア】"])
+    ShowText(["大きいと、いろいろ大変だよ……"])
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["そ、そうですね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["お酒を飲んで暴れてはいけないのです。"])
+    ShowText(["平和を乱す者は、おしおきなのです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["75"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["なぜに、こちらを見るのら……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["強くてかっこいい槍がほしいのです！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["171"])
+    ShowTextAttributes(["lizardboss_fc1", 3, 0, 2])
+    ShowText(["【ミランダ】"])
+    ShowText(["見た目で武器を選んじゃいけないよ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マーメイド】"])
+    ShowText(["音波の書があれば、音波属性の攻撃が強くなりますよ。"])
+    ShowText(["人魚にはぴったりのアクセサリですよね。"])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["海には、精神異常系の攻撃を使用してくる魔物が多い。"])
+    ShowText(["アクセサリで対策を整えておいた方がいいな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["……まあ、私には関係のない話だ。"])
+    ShowText(["港の封鎖で、海に出られないからな……"])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船員】"])
+      ShowText(["戦争が始まってから、仕事が増えたぜ……"])
+      ShowText(["缶詰に砲弾、ありったけ前線に送る毎日だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船員】"])
+      ShowText(["客船も、ほとんど徴用されて輸送任務に就いてるよ。"])
+      ShowText(["戦争が終わるまで、この状況は変わらないはずだぜ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船員】"])
+      ShowText(["魔王の宣戦布告以来、輸送業務がますます忙しくなったぜ。"])
+      ShowText(["民間船の多くが徴用されたもんで、にわか軍属船員も大増員さ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["この戦争は、いつ終わるのかねぇ……"])
+      ShowText(["実家がグランドノアだから、他人事じゃ済まないよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["もし、グランドノアにまでグランゴルドの軍隊が攻めてきたら……"])
+      ShowText(["ううっ、今のうちに疎開させた方がいいかなぁ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【商人】"])
+      ShowText(["今度は、魔王軍との戦いか……"])
+      ShowText(["この世はいったい、どうなるのかねぇ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["オレンジジュース、おいしいのです……"])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["仕事の後の一杯は、最高だねぇ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["……まあ、仕事してないんだけどね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["私も！　だから、お酒おごってよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["すまない、意味が分からないんだ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["グランドノアの王宮は、腕利きの魔導顧問を迎え入れたとか。"])
+      ShowText(["名前は、確かメフィストだったか……悪そうな名前だよな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["勇者ルカの活躍でグランゴルドが解放されたのは、周知の事実だが……"])
+      ShowText(["その作戦を立案したのは、魔導顧問メフィストであるらしい。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["魔王軍との戦いでも、メフィストは頼りになるはずだぜ。"])
+      ShowText(["まさに、グランドノア女王の懐刀だな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マスター】"])
+    ShowText(["いらっしゃい、何にするんだい？"])
+    ShopProcessing([0, 428, 0, 0, false])
+    ShopItem([0, 431, 0, 0])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ConditionalBranch([1, 1050, 0, 9, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船乗り】"])
+      ShowText(["おさかな海賊団が、海軍に摘発されたんだってな。"])
+      ShowText(["特務将校ってのが、速攻で始末したらしいぜ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船乗り】"])
+      ShowText(["おさかな海賊団一派はどうなったんだって？"])
+      ShowText(["どれも微罪だったもんで、海軍本部で労役刑を食らってるみたいだぜ。"])
+      ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+      ShowText(["【たつこ】"])
+      ShowText(["あたし達の手柄なのです！"])
+      ShowTextAttributes(["umiusi_k_fc1", 1, 0, 2])
+      ShowText(["【ステイシー】"])
+      ShowText(["あの時は、大立ち回りでしたね♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1051, 0, 5, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【船乗り】"])
+      ShowText(["おさかな海賊団って知ってるか？"])
+      ShowText(["あの海賊女王ロザの秘宝を手に入れたっていう噂でもちきりだぜ。"])
+      ConditionalBranch([1, 1051, 0, 6, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【船乗り】"])
+        ShowText(["おまけに海軍本部に殴り込みをかけたってんだから、ぶっ飛んでるよな。"])
+        ShowText(["団長ボニーはロザの末裔だって事、今じゃ疑う奴はいないぜ。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["ふふん！"])
+      ShowText(["おさかな海賊団は、ますます有名になっていくな！"])
+      ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+      ShowText(["【アシェル】"])
+      ShowText(["お嬢、あんまり調子こいてちゃダメですよ。"])
+      ShowText(["人の噂も75日って言うでしょう。"])
+      ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["分かってるぞ、うるさいなぁ……"])
+      ShowText(["ことわざ持ち出して説教するな、おばあちゃんか。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船乗り】"])
+    ShowText(["海軍が取り締まるようになってから、海賊も大人しいもんだよ。"])
+    ShowText(["最近、活きのいい海賊っていったら……おさかな海賊団くらいだな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船乗り】"])
+    ShowText(["噂じゃ、団長はあの海賊女王ロザの末裔って話だが……"])
+    ShowText(["さすがに、そりゃフカシじゃねぇかな？"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ライム】"])
+    ShowText(["おさかな海賊団！？"])
+    ShowText(["おさかな～♪　おさかな～♪"])
+    ExitEventProcessing([])
+    Label(["144"])
+    ShowTextAttributes(["saboresu_fc1", 0, 0, 2])
+    ShowText(["【サニー】"])
+    ShowText(["海賊団だって……憧れるなぁ。"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ロザって、すごく有名な人魚海賊よね。"])
+    ShowText(["その末裔なんて、本当にいるのかな……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【変態戦士】"])
+    ShowText(["ピ、ピ、ピ、ピンクのレオタード……"])
+    ShowText(["ハァハァ、ハァハァ……レオタード……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["123"])
+    ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+    ShowText(["【クリスティー】"])
+    ShowText(["レオタードだけ？"])
+    ShowText(["中身は不要なのですか……？"])
+    ExitEventProcessing([])
+    Label(["185"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["変態デす……"])
+    ShowText(["サナギになって、羽根が生えルノです……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["ごはんを食べさせてくれるのです！"])
+    ShowText(["むしゃむしゃ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["あたしも、ごはんを食べさせてほしいのです！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじいさん】"])
+    ShowText(["ほんに、可愛い海兵さんじゃのう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おばあさん】"])
+    ShowText(["好きなだけ、食べていっていいんじゃぞ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["166"])
+    ShowTextAttributes(["narcubus_fc1", 0, 0, 2])
+    ShowText(["【ナビス】"])
+    ShowText(["その愛くるしさで、ご老人に楽しみを与えているんですね。"])
+    ShowText(["たつのこセラピーとして、世界に広めましょうか。"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["お年寄りの話相手にもなってくれるのね。"])
+    ShowText(["この子達、とっても良い子じゃない。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじいさん】"])
+    ShowText(["ほんに、可愛い海兵さんじゃのう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おばあさん】"])
+    ShowText(["好きなだけ、食べていっていいんじゃぞ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["166"])
+    ShowTextAttributes(["narcubus_fc1", 0, 0, 2])
+    ShowText(["【ナビス】"])
+    ShowText(["その愛くるしさで、ご老人に楽しみを与えているんですね。"])
+    ShowText(["たつのこセラピーとして、世界に広めましょうか。"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["お年寄りの話相手にもなってくれるのね。"])
+    ShowText(["この子達、とっても良い子じゃない。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 1, 0, 2])
+      ShowText(["【若い女性】"])
+      ShowText(["おじいちゃんもおばあちゃんも、最近めっきり明るくなったわ。"])
+      ShowText(["……私？　港の封鎖で帰れなくなった孫娘よ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 1, 0, 2])
+      ShowText(["【若い女性】"])
+      ShowText(["おじいちゃんもおばあちゃんも、めっきり明るくなったのはいいけれど……"])
+      ShowText(["そろそろ私も、グランドノアに帰りたいわね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【マーメイド】"])
+      ShowText(["なるべくアイテムを買い溜めしておこうかしら。"])
+      ShowText(["戦争が激しくなったら、手に入らなくなるかもしれないし……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【マーメイド】"])
+      ShowText(["魔王様との戦争に備えて、買いだめしておかないと……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ConditionalBranch([1, 821, 0, 2, 1])
+      ConditionalBranch([0, 1570, 1])
+        ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+        ShowText(["【ジーナ】"])
+        ShowText(["あなた、ずいぶん腕に自信がありそうね。"])
+        ShowText(["私も旅に連れて行ってくれない……？"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+          ShowText(["【ジーナ】"])
+          ShowText(["私の剣、役に立ててね。"])
+          ShowText(["それじゃあ、行くわよ！"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(570)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["ジーナが仲間に加わった！"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+          ShowText(["【ジーナ】"])
+          ShowText(["そう……残念ね。"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7201])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【マーメイド】"])
+    ShowText(["いらっしゃいませ～♪"])
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([201, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([429, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([358, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([343, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

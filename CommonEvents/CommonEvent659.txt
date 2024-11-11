@@ -1,0 +1,25 @@
+CommonEvent 659
+Name = "イベント：フレデリカ"
+
+  999([659])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 438, 0])
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["クロム、風呂入ったか……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+  ShowText(["【フレデリカ】"])
+  ShowText(["死の……力を……"])
+  ControlSwitches([438, 438, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["フレデリカから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、屍技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

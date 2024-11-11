@@ -1,0 +1,356 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_serene_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["見えたわね……あれが幽霊船よ。"])
+    ConditionalBranch([4, 202, 0])
+      ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["さすがキャプテン・セレーネの海賊船……"])
+      ShowText(["おさかな号より大きいな。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["数十年もの間、海をさまよっているセレーネの海賊船か。"])
+    ShowText(["いったい、中で何が……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……ぶるぶるっ。"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["ひょっとして、怖がってる？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["し、潮風が寒いのだ……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……ぶるぶるっ。"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["ひょっとして、怖がってる？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["潮風が身に染みるのです……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["それじゃあ、接近するわ……"])
+    ShowText(["このまま接舷、乗り込むわよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["よし、戦闘準備だ！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["むぅぅ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["むむむ……"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    ErasePicture([5])
+    ChangeTransparency([1])
+    PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+    Wait([60])
+    ControlSwitches([5251, 5251, 0])
+    ControlSwitches([100, 100, 0])
+    ChangeMapDisplay([0])
+    RecoverAll([0, 0])
+    TransferPlayer([0, 369, 5, 30, 6, 0])
+    FadeinScreen([])
+    Empty([])
+
+  Page 1
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_serene_st12", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["serene_fc1", 4, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["ありがとう、勇者ルカ君と仲間達。"])
+    ShowText(["あなた達のおかげで、恐ろしい妖魔も滅びたわ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["セレナさん、あなたはいったい……"])
+    ShowPicture([5, "80_serene_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["みんなには、嘘を吐いていたわね。"])
+    ShowText(["私は、キャプテン・セレーネの孫なんかじゃなく……"])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["……キャプテン・セレーネ本人なのよ。"])
+    ConditionalBranch([4, 202, 0])
+      ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["なんだと！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["え……？　でも、キャプテン・セレーネはもう……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["え……？　でも、キャプテン・セレーネはもう……"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["私は、生きている人間じゃないの。"])
+    ShowText(["五十年前、あの箱を開けた私達は即座に命を奪われたわ。"])
+    ShowTextAttributes(["serene_fc1", 3, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["でも、私達が目覚めさせてしまった「蠅の女王」……"])
+    ShowText(["その事が心残りで、あの世に行けなかったのよ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そうだったのか……"])
+    ShowTextAttributes(["serene_fc1", 4, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["でも……これで、もう心残りはないわ。"])
+    ShowTextAttributes(["serene_fc1", 4, 0, 2])
+    ShowText(["【セレナ】"])
+    ShowText(["ありがとう、ルカ君。"])
+    ShowText(["あなた達の旅にも、幸運があらんことを……"])
+    ErasePicture([5])
+    Wait([60])
+    ShowAnimation([10, 501, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([60])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 4, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["安らかに旅立てたみたいね……"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それにしても……"])
+    ShowText(["まさか、乗ってきた船の方が幽霊船だったなんてなぁ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["びっくりしたよな、アリス……"])
+      ShowTextAttributes(["alice_fc5", 4, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……………………"])
+      SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……アリス？"])
+      ShowTextAttributes(["alice_fc5", 4, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["立ったまま気絶している……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["驚きましたよね、イリアス様……"])
+      ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……………………"])
+      Wait([60])
+      ShowAnimation([9, 501, false])
+      Wait([60])
+      ControlSwitches([32, 32, 0])
+      Wait([60])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["わぁっ！　こっちも！"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    FadeoutScreen([])
+    PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+    Wait([60])
+    ControlVariables([1067, 1067, 0, 0, 5])
+    ControlVariables([1002, 1002, 0, 0, 34])
+    ControlSwitches([100, 100, 1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ChangeTransparency([1])
+    ChangeMapDisplay([0])
+    RecoverAll([0, 0])
+    TransferPlayer([0, 143, 14, 7, 2, 0])
+    FadeinScreen([])
+    Script(["gain_medal(45)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["もう一度、セレナさんの家に行こうよ。"])
+    ShowText(["遺品を整理して、ちゃんと弔ってあげなくちゃ。"])
+    ConditionalBranch([4, 202, 0])
+      ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["うむ！"])
+      ShowText(["時代を築いた海賊女王に、敬意を示さなければな！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 143, 0])
+      ShowTextAttributes(["eva_fc1", 1, 0, 2])
+      ShowText(["【エヴァ】"])
+      ShowText(["金目のものを頂いて、売っ払っちゃおうってわけね。"])
+      ShowText(["あんた、ワルじゃない！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そういうんじゃないよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 4, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["お断りだ。呪われろ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["御免被ります。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["そういうこと言わないの……ほら、行くわよ。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そんなこと言わずに……ほら、行くよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])

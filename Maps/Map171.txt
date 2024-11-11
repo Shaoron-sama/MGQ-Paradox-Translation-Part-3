@@ -1,0 +1,1063 @@
+Display Name = "管理者の塔 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 170, 63, 27, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 170, 50, 20, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 170, 12, 27, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 170, 25, 20, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlVariables([1039, 1039, 1, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi3\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 30, true])
+    ChangeTransparency([0])
+    ControlSwitches([2109, 2109, 0])
+    Wait([30])
+    ScrollMap([8, 4, 4])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ａ】"])
+    ShowText(["やはり、DNAに割り込みが生じている……"])
+    ShowText(["アポトーシスのものに書き換えられているんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｂ】"])
+    ShowText(["偏差係数も極めて高い。"])
+    ShowText(["時空を隔ててきたからか……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｃ】"])
+    ShowText(["……もういいだろう！"])
+    ShowText(["こんな事、何の意味もない！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｃ】"])
+    ShowText(["どうせ俺達は滅びるんだ！"])
+    ShowText(["こんな研究、何になるんだよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ａ】"])
+    ShowText(["それでも、私達はやらねばならんのだ。"])
+    ShowText(["いつか、ここに何者かが訪れた時のために……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｃ】"])
+    ShowText(["誰かが来た時のために？"])
+    ShowText(["いったい誰が来るんだよ……宇宙人か何かか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ａ】"])
+    ShowText(["私達は何に直面し、何と戦ったのか……"])
+    ShowText(["それを伝えることが、武器を持てない我々の戦いであるはずだ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｂ】"])
+    ShowText(["ここで何か起きているか解明し、伝え残す……"])
+    ShowText(["それが、後に続く者達のためになるかもしれない。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｂ】"])
+    ShowText(["たとえ、行き着く先は絶望でも……"])
+    ShowText(["私達は、ここで戦い抜いた証を残したいんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｃ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ａ】"])
+    ShowText(["研究を続けよう、同志。"])
+    ShowText(["滅び行く世界があった事を、誰かに知ってもらうためにも……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者Ｂ】"])
+    ShowText(["我々は最期の瞬間まで戦い抜いたと……"])
+    ShowText(["そう、胸を張って言えるために。"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    FadeoutScreen([])
+    ScrollMap([2, 4, 6])
+    Wait([30])
+    ControlSwitches([2109, 2109, 1])
+    ChangeTransparency([1])
+    FadeoutBGM([1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    FadeinScreen([])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo1\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 170, 51, 51, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([708, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1713, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([65, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["三度目の大襲撃の時、避難民が最後に立てこもった部屋……"])
+    ShowText(["みんな死んでしまイマシた……"])
+    ConditionalBranch([4, 68, 0])
+      ShowTextAttributes(["dragonp_fc1", 2, 0, 2])
+      ShowText(["【パピ】"])
+      ShowText(["ひどいぞ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1039, 0, 5, 0])
+      CallCommonEvent([316])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["ここに、少しでも多くの植物を保護シヨウトシました……"])
+    ShowText(["でも、枯れてしまいマシた……"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["せめて乾燥させ、綺麗な頃の姿を保たせていマス……"])
+    ConditionalBranch([4, 134, 0])
+      ShowTextAttributes(["chrom_fc2", 7, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ここは……本当にもう、死んでしまった世界なのじゃな……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["ごめんナサい……"])
+    ShowText(["私には、花の美しさが分かリマせん……"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["残されたのは、こんな私ダケで……"])
+    ShowText(["ごめんナサい……"])
+    ConditionalBranch([1, 1039, 0, 5, 0])
+      CallCommonEvent([316])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["偉い人や妖魔は、この部屋で暮らしマシた……"])
+    ShowText(["でも、みんな死んでしまイマシた……"])
+    ConditionalBranch([4, 531, 0])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["ぬいぐるみに、子供用の衣服……"])
+      ShowText(["子供もいたのか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1039, 0, 5, 0])
+      CallCommonEvent([316])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["ここは研究室でス……"])
+    ShowText(["もう研究する人はいマセん……"])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["実験ノートや実験器具がそのままですね。"])
+      ShowText(["ノートの内容は……数値データばかりで詳細不明です。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["全ての研究データは、マスターが持っテイます……"])
+    ShowText(["マスターに会って下サイ……"])
+    ConditionalBranch([1, 1039, 0, 5, 0])
+      CallCommonEvent([316])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["図書館でス……後の世代のために……"])
+    ShowText(["知的資源を……一冊でも多く保護しようとしマシた……"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["でも……後の世代が残りまセンでした……"])
+    ShowText(["もう誰も読みマセん……"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["みんな、あんなに頑張っタノに……"])
+    ConditionalBranch([4, 121, 0])
+      ShowTextAttributes(["page65537_fc1", 4, 0, 2])
+      ShowText(["【コーネリア】"])
+      ShowText(["読む人のいない書物……なんと不憫なのでしょう。"])
+      ShowText(["何冊か持ち帰りましょうか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["色々と調べたいところですが……"])
+      ShowText(["その時間はないようですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1039, 0, 5, 0])
+      CallCommonEvent([316])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([805, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([341, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([3, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([60, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([44, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([40, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlVariables([1039, 1039, 1, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi3\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 30, true])
+    ChangeTransparency([0])
+    ControlSwitches([2109, 2109, 0])
+    Wait([30])
+    ScrollMap([8, 4, 4])
+    SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["ねぇねぇ、なんでお花がいっぱいあるの……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【アルラウネ】"])
+    ShowText(["外の環境では、植物は絶滅してしまいますから……"])
+    ShowText(["少しでも多くの植物を、ここに保管しておくんですよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【アルラウネ】"])
+    ShowText(["未来の子供達にも、お花の美しさを伝えたいから……"])
+    ShowText(["こんな世界にも綺麗なものはあるって、教えてあげたいから……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["未来の子供達も、お花が綺麗だって思ってくれるかな……？"])
+    ShowText(["その時はみんな、外に出られるかな……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【アルラウネ】"])
+    ShowText(["ええ、偉い人達ががんばっていますから……"])
+    ShowText(["その頃にはきっと、外もお花でいっぱいですよ♪"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    FadeoutScreen([])
+    ScrollMap([2, 4, 6])
+    Wait([30])
+    ControlSwitches([2109, 2109, 1])
+    ChangeTransparency([1])
+    FadeoutBGM([1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    FadeinScreen([])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo1\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlVariables([1039, 1039, 1, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi3\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 30, true])
+    ChangeTransparency([0])
+    ControlSwitches([2109, 2109, 0])
+    Wait([30])
+    SetMoveRoute([59, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Slash1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士の声】"])
+    ShowText(["くっ、一歩も引くかよ……！"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔の声】"])
+    ShowText(["命にかえても、ここは守る……！"])
+    Wait([30])
+    ScrollMap([8, 4, 4])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["こわいよ、ママ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【母親】"])
+    ShowText(["大丈夫……外でみんなが戦ってるから。"])
+    ShowText(["アポトーシスを退治してくれるから……ね。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ちくしょう、なんでこんな……"])
+    ShowText(["俺たちがこんな目に……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【犬娘】"])
+    ShowText(["わんわん……こわいよう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【中年】"])
+    ShowText(["今回の襲撃は数が多すぎるぞ……"])
+    ShowText(["もたないだろう、これ……"])
+    PlaySE(["RPG::SE(@name=\"Damage5\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士の声】"])
+    ShowText(["ぐっ、無念……"])
+    PlaySE(["RPG::SE(@name=\"mon_slash3\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【天使の声】"])
+    ShowText(["イリアス様、申し訳ありません……"])
+    ShowText(["民を……守る事が……"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Darkness5\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【アポトーシス】"])
+    ShowText(["生物は、全て削除する……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["うわぁぁぁーっ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["ママ、たすけてー！　ママー！！"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    FadeoutScreen([])
+    ScrollMap([2, 4, 6])
+    Wait([30])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([2109, 2109, 1])
+    ChangeTransparency([1])
+    FadeoutBGM([1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    FadeinScreen([])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo1\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlVariables([1039, 1039, 1, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi3\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 30, true])
+    ChangeTransparency([0])
+    ControlSwitches([2109, 2109, 0])
+    Wait([30])
+    ScrollMap([8, 7, 4])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["わぁ、クマさんのぬいぐるみだ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔】"])
+    ShowText(["地下の食料を漁っていた際に見つけてな……"])
+    ShowText(["喜ぶだろうと思って、持ってきたぞ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["リナ、ちゃんとお礼を言いなさいね。"])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["妖魔のお姉さん、ありがとう♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["ありがとうございます。"])
+    ShowText(["あなたには、本当にお世話になって……"])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["……あっ、うぅぅっ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔】"])
+    ShowText(["どうした、気分でも悪いのか？"])
+    ShowText(["それとも、まさか――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["いえ、大丈夫です……"])
+    ShowText(["ちょっと立ち眩ミニアッタ目眩マナ■々テリレ凹凹ラ箕■ニギ昨日ノノ"])
+    ShowText(["立ち眩マナナ■■■沌テ霧雨ロ■■■■ソニＫＬ螺ラ■■■■■混■■"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["ッテ■混沌ニ■■ジル所■■■孵っタキ■■■■……"])
+    ShowText(["特に生ジ■■Ⅶハイ■■■■■ニテ、混沌ヲ■ル。"])
+    ShowText(["■■■終■■■■■■■■■者■■■■沌■■■■■。"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    ShotBalloonIcon([51, 1, false])
+    ShotBalloonIcon([52, 1, false])
+    ShotBalloonIcon([54, 1, false])
+    SetMoveRoute([55, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([54, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([56, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([57, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([58, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【■■■■】"])
+    ShowText(["削除スル――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔】"])
+    ShowText(["くっ、アポトーシス化現象か！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ヴァンパイア】"])
+    ShowText(["危険じゃ！　小娘、そいつから離れよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["イヤぁぁぁぁ――■■■ヱト向カフ■■■■■！"])
+    ShowText(["混沌■■■ナル■■■■罪■■■■ッテ■■■■！！"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ControlSwitches([32, 32, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔】"])
+    ShowText(["この……化け物め！"])
+    SetMoveRoute([54, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    SetMoveRoute([52, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    FadeoutScreen([])
+    ScrollMap([2, 7, 6])
+    Wait([30])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([2109, 2109, 1])
+    ChangeTransparency([1])
+    FadeoutBGM([1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    FadeinScreen([])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo1\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ControlVariables([1039, 1039, 1, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi3\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 30, true])
+    ChangeTransparency([0])
+    ControlSwitches([2109, 2109, 0])
+    Wait([30])
+    ScrollMap([8, 7, 4])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["よし、こっちの棚にある本は目録にまとめたぜ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["こちらももうすぐです。"])
+    ShowText(["書物は人類の財産、必ず後世に残さなければなりませんからね。"])
+    SetMoveRoute([67, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([60, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([61, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["ひとつ、質問があリマす。"])
+    ShowText(["なぜ、そんなに熱心に書物を残すノデすか？"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["後の世代を想定している以上……"])
+    ShowText(["あなた達が死んだ後の事でスヨね？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["寂しいこと言うなよ、ラディオちゃん……"])
+    ShowText(["俺たちは、生きた証を残したいんだよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["このまま、おめおめ滅びるなんて悔しいですよね。"])
+    ShowText(["何も残せない一生なんて、悲しいでしょう？"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["悔しい……悲しい……"])
+    ShowText(["私には分かりマセん。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["まあ、ラディオちゃんは機械だからなぁ……"])
+    ShowText(["俺たちが死んだって、悲しくなったりはしないか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["彼女にも魂が宿っていると、私は思いますよ。"])
+    ShowText(["きっと悲しんでくれるだろうと……そう信じています。"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["……私には分かりマセん。"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_kodou\", @pitch=100, @volume=100)"])
+    FadeoutScreen([])
+    ScrollMap([2, 7, 6])
+    Wait([30])
+    ControlSwitches([2109, 2109, 1])
+    ChangeTransparency([1])
+    FadeoutBGM([1])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    FadeinScreen([])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo1\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    Empty([])

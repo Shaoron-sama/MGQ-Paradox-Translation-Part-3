@@ -1,0 +1,25 @@
+CommonEvent 650
+Name = "イベント：エリザベート"
+
+  999([650])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 429, 0])
+    ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
+    ShowText(["【エリザベート】"])
+    ShowText(["さて、我は眠るとするか……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
+  ShowText(["【エリザベート】"])
+  ShowText(["くくくくく、闇の力を貸してやろう！"])
+  ControlSwitches([429, 429, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["エリザベートから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、魔技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

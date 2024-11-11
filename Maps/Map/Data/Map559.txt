@@ -1,0 +1,649 @@
+Display Name = "サバサ城 2F"
+Parallax Name = "BlueSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 31, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 32, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 30, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 557, 33, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["書物の中に、ガブリエラの日記がある……"])
+    ShowText(["読んでみますか？"])
+    ShowChoices([["読む", "読まない"], 2])
+    When([0, "読む"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["日記の大半は、政務に関する内容だな。"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["農作物の収穫量に、イリアスからの命令内容……"])
+      ShowText(["どれも行政関連だ、特に重要情報はないか……"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["むっ、この記述は……？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["リリス、アスタロト、モリガンの3名の捕獲に成功。"])
+      ShowText(["魔王および審判の子一行は逃亡。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["あの方の要望により、リリス三姉妹を牢獄に監禁。"])
+      ShowText(["命は奪わないことを約束する。"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["リリス三姉妹の命を奪わず、監禁した理由がこれか……"])
+      ShowText(["あの方とは、誰なのだ？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアスの事じゃないのかな……？"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["イリアスならば、そう記すはず。"])
+      ShowText(["現に、他のところではそう記述されているのだ。"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["それに、命令ではなく要望というのも妙だな。"])
+      ShowText(["いったい、何者がリリス三姉妹を助命させた……？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["日記を調べたが、「あの方」が誰かを類推することは出来なかった。"])
+      ShowText(["ガブリエラは、いったいイリアス以外の誰から指示を受けたのだろうか――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "読まない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["投降した天使が予想外に多かったのも、嬉しい誤算だったな。"])
+      ShowText(["特に、政務に就いていた天使が多くサバサに残留したとか。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["彼女達のおかげで、都市機能は思ったよりも良好に動いてる。"])
+      ShowText(["混乱どころか、今まで通りに産業を維持できるほどだからな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["もちろん、投降した天使は精神チェック済みだ。"])
+      ShowText(["リリス三姉妹が、信頼できない者をはね除けてる。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["あんた達も忙しい身だろうが……"])
+      ShowText(["機会があったら、城下町を見学していきなよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["そういえば、城下にあった倉庫も開放されたってな。"])
+      ShowText(["貴重な秘宝の類いも、色々あったって話だぜ。"])
+      ShowTextAttributes(["alice_fc1", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["秘宝と聞けば、看過はできんな。"])
+      ShowText(["開放された倉庫、見ていくとするか。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["リリスさんがあんた達に合流してから……"])
+      ShowText(["俺の仕事がどっさりと増えましたよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["増えたと言えば、新規団員……"])
+      ShowText(["天界中から、志望者が殺到してますぜ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["まあ、もっとも……感心できないような奴も多い。"])
+      ShowText(["今までの鬱憤を、一級市民相手に晴らそうとするような……ね。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["そういう奴は、きっちり弾いときますよ。"])
+      ShowText(["あと、やたら鼻息の荒いタイプも危なっかしいねぇ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【エルカ】"])
+      ShowText(["そういうわけで、組織運営の方は任せといて下さい。"])
+      ShowText(["忙しいあんた達の手は患わさないようにしますんで。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowPicture([5, "80_lilith2_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["この国の統治は、私にお任せ下さい。"])
+    ShowText(["これでも、魔界ではそれなりの領地を持っている身です。"])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["姉さんは、ナタリア大陸で最大の領地を持つ領主なの。"])
+    ShowText(["魅凪様の側近筆頭だから……ね。"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["ここにも、人間牧場作るのかな？"])
+    ShowText(["大きい牧場が出来たら、しあわせミルクを飲みに来ようぜ！"])
+    ShowTextAttributes(["lilith2_fc1", 4, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["占領下において、そのような余裕はありませんよ。"])
+    ShowText(["当面は、治安維持と防衛に専念しましょう……"])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬシスター】"])
+      ShowText(["サバサ陥落後も、玉藻様がサム達を操ることになっていましたね。"])
+      ShowText(["しかし、誘惑術などなくともサムは非常に従順でした。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬシスター】"])
+      ShowText(["占領地の統治という観点から考えると、理想的ですが……"])
+      ShowText(["やはり、サムを今のままにしておくのはいけないと思います。"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["状況が落ち着いたら、サム達には教育を受けさせましょう。"])
+      ShowText(["これだけは、絶対に譲れません。"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["うむ……最終的には、サムの自由意志で先を判断すべきだ。"])
+      ShowText(["そのための教育が、目下の課題だな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬシスター】"])
+      ShowText(["私達の組織に、教師出身の者は多くおります。"])
+      ShowText(["教育体制を早急に整えましょう。"])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["はいっ！　性教育は、あたしが教えたい！"])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ダメでしょ、刺激が強すぎるわよ……"])
+      ShowTextAttributes(["arumaeruma_fc2", 1, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["それじゃあ、あたしが性教育を教えてあげるわ♡"])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ダメ！　サキュバスは性教育に関わるの禁止！！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬシスター】"])
+      ShowText(["サムの向学心は、目を見張るほどです。"])
+      ShowText(["今すぐ大学に入れるほど学んでいる者もいますよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬシスター】"])
+      ShowText(["彼らの元となった人物は、さぞ努力家で向学心のある方なのでしょう。"])
+      ShowText(["おそらく、もうこの世にはおられないでしょうが……"])
+      ConditionalBranch([4, 394, 0])
+        ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+        ShowText(["【アスタロト】"])
+        ShowText(["オリジナルのサム……"])
+        ShowText(["おそらく天界全土から選び出された最優秀個体でしょうね。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【まつろわぬ兵士】"])
+    ShowText(["現在、迷宮ゾーンは閉鎖しています。"])
+    ShowText(["謁見の間には、直通の通路が開通しましたので。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["12"])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["もう一回、入りたかったな～。"])
+    ExitEventProcessing([])
+    Label(["102"])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["【きつね】"])
+    ShowText(["迷路あそびみたいで、楽しかったよね～♪"])
+    ExitEventProcessing([])
+    Label(["394"])
+    ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["いったいなんで、城内にこんなものを作ったのかしら……"])
+    ShowText(["暇な時に入って遊んでたの？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【まつろわぬ兵士】"])
+    ShowText(["現在、迷宮ゾーンは閉鎖しています。"])
+    ShowText(["謁見の間には、直通の通路が開通しましたので。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["12"])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["もう一回、入りたかったな～。"])
+    ExitEventProcessing([])
+    Label(["102"])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["【きつね】"])
+    ShowText(["迷路あそびみたいで、楽しかったよね～♪"])
+    ExitEventProcessing([])
+    Label(["394"])
+    ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["いったいなんで、城内にこんなものを作ったのかしら……"])
+    ShowText(["暇な時に入って遊んでたの？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["多くの天使がお前達に降伏し、サバサに居続ける事を望んだ。"])
+      ShowText(["その数、四分の一に上るという。"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["その多くは、ここでの任務しか知らず……"])
+      ShowText(["ここを離れる事など、考えられない者達だ。"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["結局、我等もサムと同じなのだ……"])
+      ShowText(["皮肉な事よな。"])
+      ShowTextAttributes(["rifaiel_fc1", 1, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["無論、非道な農場経営に反発していた者もそれなりにいる。"])
+      ShowText(["サム達に情が移り、それゆえに残留を希望したのだ。"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["結局、サバサは落ちるべくして落ちた……"])
+      ShowText(["命を踏み付けにしすぎたのだ、当然の報いよ。"])
+      ConditionalBranch([4, 394, 0])
+        ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+        ShowText(["【アスタロト】"])
+        ShowText(["魔界が天使の侵攻を受けることがあったら……"])
+        ShowText(["グランゴルドあたりも、同じ事になりそうね。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["まさか、あのような災禍に見舞われるとは……"])
+      ShowText(["天界全土に、黒のアリスは侵攻を仕掛けたらしいな。"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["イリアス様の支配、もはや長くないかもしれん……"])
+      ShowText(["早々に鞍替えをして、やはり正解であったな。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ルプトン】"])
+    ShowText(["この庭園、とんでもない広さだな……"])
+    ShowText(["天使達、俺達を虐げてこんな暮らしをしてたのか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ルプトン】"])
+    ShowText(["それはともかく、謁見の間との直通路を開けときましたぜ。"])
+    ShowText(["いちいち、あの迷宮を抜けるのは面倒なので。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ルプトン】"])
+    ShowText(["さて、都市計画の報告書に目を通さなきゃ。"])
+    ShowText(["建築関連は、俺の担当になっているので……"])
+    ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+    ShowText(["【ラザロ】"])
+    ShowText(["へぇ……お前、結構役立ってんだな。"])
+    ShowText(["ただの賑やかしじゃなかったのか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ルプトン】"])
+    ShowText(["うわ、ひどいっすよ。"])
+    ShowText(["一芸を身につけろ、って言ったのはラザロさんじゃないっすか。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ豪商】"])
+      ShowText(["必要物資をただちに納入しなければ……"])
+      ShowText(["元より農業国家なので、食料の心配は不要ですね。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ豪商】"])
+      ShowText(["残留した天使達の助けを借りて、従来の通商ルートも利用……"])
+      ShowText(["大丈夫、今のところ物資不足に陥る事はありません。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ豪商】"])
+      ShowText(["黒のアリスの襲撃で、天界の流通網はズタズタですよ。"])
+      ShowText(["せっかく構築した兵站計画も、台無しになりました。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ豪商】"])
+      ShowText(["あれをまた、練り直すとなると……"])
+      ShowText(["眠れない日が続くなぁ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【まつろわぬ豪商】"])
+    ShowText(["さて、必要な品はありますか？"])
+    ShopProcessing([1, 81, 0, 0, false])
+    ShopItem([2, 686, 0, 0])
+    ShopItem([2, 840, 0, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ紳士】"])
+      ShowText(["あちこちの町から、組織のメンバーを招集しています。"])
+      ShowText(["このサバサ城が、リバースクロイツの本拠になるのですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ紳士】"])
+      ShowText(["サバサを中心に、反逆体制が整いつつあります。"])
+      ShowText(["多くの町や村で、女神の支配に反する一斉蜂起が起きていますよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ紳士】"])
+      ShowText(["地方に埋もれていた革命の闘士達も、次々と集いつつあります。"])
+      ShowText(["占領地の維持は、我々にお任せ下さい。"])
+      ConditionalBranch([4, 520, 0])
+        ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+        ShowText(["【ラザロ】"])
+        ShowText(["おう！　守りは任せたぜ！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["ルプトンさんと工兵部隊で、直通の通路を造りました。"])
+      ShowText(["あの人は建設職人出身ですから、こういう作業が得意なんですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["ルプトンさんと工兵部隊で、直通の通路を造りました。"])
+      ShowText(["あの人は建設職人出身ですから、こういう作業が得意なんですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["ああ、リリス様……"])
+      ShowText(["なんと美しい方なのだろう……"])
+      ConditionalBranch([4, 19, 0])
+        ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+        ShowText(["【アルマエルマ】"])
+        ShowText(["すっかり魅了されてるみたいね……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["リリス様が行ってしまわれた……"])
+      ShowText(["ああ、心に穴が開いたようだ……"])
+      ConditionalBranch([4, 19, 0])
+        ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+        ShowText(["【アルマエルマ】"])
+        ShowText(["すっかり魅了されてるみたいね……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["リリス様の盾になって死にたい……"])
+      ShowText(["リリス様に看取られたい……"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["死ぬな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【まつろわぬ兵士】"])
+      ShowText(["リリス様のいない玉座を見るたびに"])
+      ShowText(["溢れる涙、止められない"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["変な歌を詠むな。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 59, 2])
+      ShowPicture([5, "80_mob_ninzya2_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【スイキ】"])
+      ShowText(["もし、天使達がこの城を奪還するために攻め寄せてきたら……"])
+      ShowText(["私が配下を率い、足止めに当たる事になる。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【スイキ】"])
+      ShowText(["もちろん、我が部隊だけでは止めきれないだろう。"])
+      ShowText(["時間を稼いでいる間に、お前達の増援を待つ事になるのだ。"])
+      CallCommonEvent([7381])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 60, 1])
+      ShowPicture([5, "80_mob_ninzya2_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【スイキ】"])
+      ShowText(["妹のフウキは、私と互角の腕を持っていた。"])
+      ShowText(["諜報部隊を率い、組織の目や耳となって働いていたのだが……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【スイキ】"])
+      ShowText(["グランゴルド潜入の際に捕らえられ、公開処刑された。"])
+      ShowText(["その無念さは、言葉でも尽くしきれん……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【スイキ】"])
+      ShowText(["本当に、複数の平行世界とやらが存在するのなら……"])
+      ShowText(["妹が今も生きている世界があれば良いな。"])
+      CallCommonEvent([7381])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

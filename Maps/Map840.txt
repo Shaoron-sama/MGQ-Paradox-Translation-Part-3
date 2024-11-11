@@ -1,0 +1,88 @@
+Display Name = "ヘルゴンド大陸西の大穴"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Wait([60])
+    ShowTextAttributes(["tamamo_fc1", 0, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["やはり、Ei-Roブリッジはここに通じているか。"])
+    ShowText(["リリス達に楔を打たせ、精神体の通り道を繋いだな……"])
+    ShowTextAttributes(["tamamo_fc1", 0, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["そして向こう側が、邪神様の支配する並行世界……"])
+    ShowText(["ふむ、連中の開けた精神通路を辿ってみるか。"])
+    ShowTextAttributes(["tamamo_fc1", 0, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["……これは、なんじゃ？"])
+    ShowText(["向こうの世界とこの世界の間に、もう一つの大地があるとは……"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["しかも、この巨大さ……小惑星規模ではないか。"])
+    ShowText(["星を丸ごとひとつ、中継ステーションに仕立てたと見える。"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["おそらく、向こうのウチ……玉藻のみの仕業ではあるまい。"])
+    ShowText(["この大地を生み出すのに、華音と禍撫あたりも噛んでおるな……"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["ここを陥とすとなると、流石にウチの独力では……"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_warp\", @pitch=100, @volume=100)"])
+    ControlSwitches([31, 31, 0])
+    Wait([60])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ShowTextAttributes(["hatibi_fc1", 0, 0, 2])
+    ShowText(["【八尾】"])
+    ShowText(["……よろしいでしょうか、たまも様。"])
+    ShowText(["少々、お耳に入れたい事が……"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["……黒狸だな。"])
+    ShowText(["おおかた、黒のアリスに唆されたか。"])
+    ShowTextAttributes(["hatibi_fc1", 0, 0, 2])
+    ShowText(["【八尾】"])
+    ShowText(["はっ、すでに御存知だったようで。"])
+    ShowText(["第二次狐狸大戦も、もはや目前かと……"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["元来が女王級なのに加え、黒のアリスから力を得たとなれば……"])
+    ShowText(["今の黒狸は、並の脅威ではあるまい。"])
+    ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
+    ShowText(["【たまも】"])
+    ShowText(["仕方あるまい、ルカ達を頼らざるを得んか……"])
+    ShowTextAttributes(["hatibi_fc1", 0, 0, 2])
+    ShowText(["【八尾】"])
+    ShowText(["はっ、仰せの通りに……"])
+    Wait([60])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([120])
+    ControlSwitches([31, 31, 1])
+    TransferPlayer([0, 843, 1, 0, 0, 2])
+    FadeinScreen([])
+    Empty([])

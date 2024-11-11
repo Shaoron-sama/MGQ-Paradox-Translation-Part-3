@@ -1,0 +1,498 @@
+Display Name = "アルマエルマの部屋"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+    ShowText(["【アルマエルマ】"])
+    ShowText(["なんで、天使陣営の連中が"])
+    ShowText(["私の部屋に集まってくるのかしら……"])
+    ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+    ShowText(["【アルマエルマ】"])
+    ShowText(["それはともかく、ルカちゃんはもう決めた？"])
+    ShowText(["邪神の側につくか、それとも女神につくか……"])
+    ConditionalBranch([1, 1022, 0, 9, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["私は、邪神でも女神でもなく、ルカちゃんの味方よ。"])
+      ShowText(["どちらを選んだとしても、仲間から抜けたりしないわ♪"])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["私は、気ままに吹く風……"])
+      ShowText(["重い決断なんかとは、無縁でいたいのよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1022, 0, 8, 2])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["どちらにしても……"])
+      ShowText(["私は、ルカちゃんを助けてあげるわ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["えっ……！？"])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["私は、ルカちゃんが気に入ったのよ。"])
+      ShowText(["どちらを選んでも、仲間になってあげるわね♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["たとえ、イリアス陣営を選んでも仲間になってくれるなんて――"])
+      ShowText(["いったい、何を考えているのだろうか。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あれ？　どうやってここまで来たんですか……？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["過去のハインリヒと、エデンの助けを得ました。"])
+      ShowText(["それであなた達の後を追い、ここまで辿り着いたのですよ。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["現在の状況も、おおむね把握しています。"])
+      ShowText(["ルカ……あなたは大いなる選択の岐路にいるのですね。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これまで、魔王と旅をしてきたあなたですが……"])
+      ShowText(["正しき道に戻るのは、まだ遅くはありません。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["闇と決別し、光の道を歩むのです。"])
+      ShowText(["これから先は、真の勇者として私と共に戦いましょう。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["小さなイリアスも、女神世界のイリアスと同一の存在。"])
+      ShowText(["もし女神の側につけば、イリアスが仲間に加わるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ようやく、ここまで来ましたね……"])
+      ShowText(["思えば、実に長き旅路でした。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この苦難の道も、あなたが支えになってくれてこそ。"])
+      ShowText(["ここまでの功労は、賞賛に値します。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["当然、これからも私に付き従うのですよね……？"])
+      ShowText(["まさか、邪神の勧誘に心が揺らいではいませんか？"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["邪神の進める世界合一計画……"])
+      ShowText(["とても血生臭く、忌まわしい事は言うまでもありません。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["また、唯一の世界を邪神が抱え込む……"])
+      ShowText(["これが、どれだけ危険な事かも分かるでしょう。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["世界を救う手段は、箱船計画のみ。"])
+      ShowText(["たとえ少数でも、善なる者を救わねばならないのです……"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["分かりましたね、ルカ。"])
+      ShowText(["これからも、私に従うのですよ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["また、魔王の側に走ろうなど……"])
+      ShowText(["そんな事、絶対に許しません……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["女神と邪神は、絶対に相容れない存在。"])
+      ShowText(["もし邪神の側につけば、イリアスは仲間から外れるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あなたは、エデン様……"])
+      ShowText(["小さなイリアス様と一緒にいたんですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["いついかなる時でも、私はイリアス様と共にあります。"])
+    ShowText(["勇者ルカよ、あなたもそうあるべきなのです。"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["邪神の手下などに、耳を貸してはなりません。"])
+    ShowText(["イリアス様の導きに従えば、間違いはないのです。"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["もし邪神に与するならば、あなたは神敵……"])
+    ShowText(["しかし、そんな愚かな選択はしないと確信していますよ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["エデンはイリアス様の忠実な僕。"])
+      ShowText(["もし女神の側につけば、エデンは仲間に加わるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["エデンはイリアス様の忠実な僕。"])
+      ShowText(["もし邪神の側につけば、エデンは仲間から外れるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+    ShowText(["【ミカエラちゃん】"])
+    ShowText(["イリアス様と一緒に、邪神と戦うのよね？"])
+    ShowText(["まさか、邪神に味方したりしないわよね……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミカエラちゃんとルシフィナちゃんは、イリアス様の味方。"])
+    ShowText(["もし邪神の側につけば、この二人は仲間から外れるだろう――"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+    ShowText(["【ルシフィナちゃん】"])
+    ShowText(["ルカ！　いっしょに邪神をやっつけようよ！"])
+    ShowText(["邪神は、イリアス様の敵なんだよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミカエラちゃんとルシフィナちゃんは、イリアス様の味方。"])
+    ShowText(["もし邪神の側につけば、この二人は仲間から外れるだろう――"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あなたは、並行世界のハインリヒ……？"])
+      ShowText(["どうして、ここに？"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["あの後、変わった兎に連れられてイリアス様と出会ったんだ。"])
+      ShowText(["それで、この不思議な世界に導かれてね……"])
+      ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["事情は、おおむね聞いたよ。"])
+      ShowText(["全ての並行世界に、消滅の危機が迫っているとか。"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["もちろん僕は、イリアス様に従う。"])
+      ShowText(["君もイリアス様の側につくなら、僕の同志となるね。"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["とは言え、悔いのない決断をするといいよ。"])
+      ShowText(["信じるもののためなら、女神に剣を向ける事になっても……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ハインリヒは、イリアスに付き従う勇者。"])
+      ShowText(["もし女神の側につけば、ハインリヒが仲間に加わるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["大変な事になったね、ルカ君……"])
+      ShowText(["大いなる決断を前に、その心労を察するよ。"])
+      ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["僕の時代、ちょうど魔王城に乗り込む直前だったけど――"])
+      ShowText(["実は僕も、大きな決断に迫られていたんだ。"])
+      ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["決断の結果、僕はどうなるのか――"])
+      ShowText(["それをこの時代、あの罪人の封牢で見る事になった。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["ともかく、君も悔いのない決断をするといいよ。"])
+      ShowText(["信じるもののためなら、女神に剣を向ける事になっても……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ハインリヒは、イリアスに付き従う勇者。"])
+      ShowText(["もし邪神の側につけば、ハインリヒは仲間から外れるだろう――"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 407, 36, 18, 0, 0])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 407, 36, 18, 0, 0])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["dog_fc1", 0, 0, 2])
+    ShowText(["【わんこ】"])
+    ShowText(["天界って、天使ばっかりなんだよね？"])
+    ShowText(["あたしやぷるこちゃん、受け入れてもらえるかな……？"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["問題ありません、あなた達は天使ですから。"])
+    ShowText(["エデン……プルエルとイヌエルは天使ですよね？"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["イリアス様がそう仰せならば、もちろん天使です。"])
+    ShowText(["プルエルとイヌエル、天使名簿に載せておきましょう。"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["この二名は、私と苦難を共にした忠実なる僕。"])
+    ShowText(["もし、異議を挟む天使がいたならば……分かっていますね？"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["プルエルとイヌエルは、忠実なる天使……"])
+    ShowText(["それを疑う者がいれば、私が責任を持って炭にしましょう。"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ぷるこ】"])
+    ShowText(["イリアス様と冒険、楽しかったよ～♪"])
+    ShowText(["でも、もうお別れなのかなぁ……？"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ここから先は、あなた達には危険です。"])
+    ShowText(["共に旅するのは、ここで終わりとなるでしょう。"])
+    ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ですが、またいつでも会えますよ。"])
+    ShowText(["私の神殿に、あなた達の部屋を作りましょう。"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ぷるこ】"])
+    ShowText(["やったぁ、ずっとイリアス様と一緒だね♪"])
+    Empty([])

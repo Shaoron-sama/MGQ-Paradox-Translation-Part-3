@@ -1,0 +1,1144 @@
+Display Name = "コロシアム 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 471, 19, 13, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 471, 20, 13, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 21, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし係員】"])
+      ShowText(["こちらは出場受付となります。"])
+      ShowText(["あなた達も女神杯に出場されるのですか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ちょっと興味あるけど……"])
+      ShowText(["そんな事をしてる場合じゃないよね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 22, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし係員】"])
+      ShowText(["こちらは出場受付となります。"])
+      ShowText(["あなた達も女神杯に出場されるのですか？"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["天界の強者達が出場してくる以上、激戦が予想される。"])
+      ShowText(["準備は万端か、あらためて確認しておくが良い。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["※作戦が始まると、終了するまで退却できない！"])
+      ShowText(["　事前に万全の準備をしておこう！"])
+      ShowChoices([["まだ準備できていない", "出場の準備はできた"], 1])
+      When([0, "まだ準備できていない"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["もう少し、準備を整えてからだな……"])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "出場の準備はできた"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【係員】"])
+        ShowText(["了解致しました、女神杯に出場なさるのですね。"])
+        ShowText(["それでは、こちらの書類にサインを。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["えっと、名前はルカ……職業は勇者……"])
+        ShowTextAttributes(["alice_fc1", 7, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ちょっと待て、素性くらい偽れ！"])
+        ShowText(["正直に書くなドアホが！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["そ、そうだね……"])
+        ShowText(["名前はトンヌラ、職業は旅の巡礼者……と。"])
+        ConditionalBranch([4, 66, 0])
+          ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+          ShowText(["【ヴァニラ】"])
+          ShowText(["びっくりするほど偽名のセンスがないな……"])
+          ConditionalBranch([4, 64, 0])
+            ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+            ShowText(["【プチ】"])
+            ShowText(["ヴァニラなら、どんな偽名にするの？"])
+            ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+            ShowText(["【ヴァニラ】"])
+            ShowText(["アルス＝デ＝ジニュアール3世。"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Wait([30])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["こうして、受付に偽名の書類を提出した。"])
+        ShowText(["後は、女神杯の開催まで待つのみだ――"])
+        FadeoutBGM([1])
+        FadeoutScreen([])
+        Wait([60])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そして、宿屋で息を潜めて数日後――"])
+        ShowText(["ついに女神杯が開催される日となった！"])
+        Wait([60])
+        ControlSwitches([100, 100, 0])
+        ControlVariables([1002, 1002, 0, 0, 52])
+        ChangePlayerFollowers([1])
+        TransferPlayer([0, 662, 45, 20, 8, 2])
+        PlayBGM(["RPG::BGM(@name=\"dungeon_colosseum\", @volume=100, @pitch=100)"])
+        FadeinScreen([])
+        ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["さすが、私達よね！"])
+        ShowText(["天界の強者達も、バリバリ倒しちゃうなんて！"])
+        ShowTextAttributes(["alice_fc1", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["これから、女神イリアスを倒そうというのだ。"])
+        ShowText(["コロシアムの出場者などを相手に、手間取っていられるか。"])
+        ConditionalBranch([4, 394, 0])
+          ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+          ShowText(["【アスタロト】"])
+          ShowText(["私達は、魔界を転覆させるために少数精鋭で潜伏している身。"])
+          ShowText(["ここで苦戦なんてしたら、お先真っ暗よ。"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 382, 0])
+          ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+          ShowText(["【モリガン】"])
+          ShowText(["あんまり楽勝すぎるのも、物足りないな～！"])
+          ShowText(["あ～あ、ちょっとは歯応えがある奴と戦いたいな～！"])
+          ConditionalBranch([4, 419, 0])
+            ShowTextAttributes(["elfhime_fc1", 0, 0, 2])
+            ShowText(["【飛鳥命】"])
+            ShowText(["フラグ立て、乙。"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["予選は軽く勝ち抜き、本戦も三回戦まで堅実に勝利。"])
+        ShowText(["天使兵や上位妖魔、腕に覚えのある人間さえ大した敵ではなかった。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["次は準決勝であり、優勝まで残り二戦。"])
+        ShowText(["あと二度の試合に勝ち抜けば、ウリエラと戦える資格を得られるのだ――"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【選ばれし係員】"])
+      ShowText(["こちらは出場受付となります。"])
+      ShowText(["通常の試合に出場されますか？"])
+      ShowTextAttributes(["alice_fc1", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["腕試しは、もう十分だろう……"])
+      ShowText(["こんな所で時間を潰している暇はないぞ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【バニー】"])
+    ShowText(["出場者は、他試合の観戦は認められていません。"])
+    ShowText(["フェアな試合のためのルールなので、ご了承を。"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【バニー】"])
+    ShowText(["出場者は、他試合の観戦は認められていません。"])
+    ShowText(["フェアな試合のためのルールなので、ご了承を。"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ConditionalBranch([1, 1141, 0, 22, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["次の試合は準決勝だ。"])
+      ShowText(["闘技場に向かいますか？"])
+      ShowChoices([["行くぞ！", "まだ準備ができていない"], 2])
+      When([0, "行くぞ！"])
+        RecoverAll([0, 0])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ウリエラに挑むまで、あと二戦……"])
+        ShowText(["油断せずに行くぞ！"])
+        ConditionalBranch([4, 19, 0])
+          ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+          ShowText(["【アルマエルマ】"])
+          ShowText(["次の相手は、歯応えがあるといいわね……"])
+          Empty([])
+        BranchEnd([])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        ControlSwitches([31, 31, 0])
+        ControlSwitches([32, 32, 1])
+        ControlSwitches([33, 33, 1])
+        ControlSwitches([34, 34, 1])
+        ControlSwitches([35, 35, 1])
+        ControlSwitches([36, 36, 1])
+        ChangeMapDisplay([1])
+        TransferPlayer([0, 517, 31, 31, 6, 0])
+        Wait([60])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["入場したのは……トンヌラ率いる、謎の巡礼団！"])
+        ShowText(["まったくのノーマークながら、名のある強豪を次々と撃破～！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["彼らは、いったい何者なのか！"])
+        ShowText(["ただの巡礼者集団が、こんなに強くても良いのか～！"])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["審判のこのテンションは、どの世界でも共通なのだな……"])
+        ConditionalBranch([4, 316, 0])
+          ShowTextAttributes(["queenelf_fc1", 1, 0, 2])
+          ShowText(["【フレイヤ】"])
+          ShowText(["これが良いのではないですか！"])
+          ShowText(["これこそが、コロシアムの醍醐味！！"])
+          ShowTextAttributes(["queenelf_fc1", 0, 0, 2])
+          ShowText(["【フレイヤ】"])
+          ShowText(["……などという意見も耳にしますね。"])
+          ShowText(["私には理解できませんが……"])
+          Empty([])
+        BranchEnd([])
+        ShowPicture([5, "80_sabiriel_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["それに対するは、純白の戦天使チーム！"])
+        ShowText(["ウリエラ様の麾下、サビリエル率いる今大会の大本命！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["さあ、戦女神が巡礼者を蹴散らすか！"])
+        ShowText(["それとも、大番狂わせが起きるのか～！？"])
+        ShowTextAttributes(["sabiriel_fc1", 7, 0, 2])
+        ShowText(["【サビリエル】"])
+        ShowText(["ふん、番狂わせなど起きはしない……"])
+        ShowTextAttributes(["sabiriel_fc1", 7, 0, 2])
+        ShowText(["【サビリエル】"])
+        ShowText(["女神に仕える巡礼者といえど、コロシアムで容赦はせん！"])
+        ShowText(["我が剣で、斬り伏せてくれよう！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["流石に、準決勝ともなると強そうな相手が出て来るな……"])
+        ShowText(["でも、負けはしない！"])
+        ConditionalBranch([4, 350, 0])
+          ShowTextAttributes(["monk_demon_fc1", 0, 0, 2])
+          ShowText(["【アニー】"])
+          ShowText(["仮面の剣士……相手にとって、不足はないわ！"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 212, 0])
+          ShowTextAttributes(["durahan_fc1", 0, 0, 2])
+          ShowText(["【アーサー】"])
+          ShowText(["獲物は剣か……ならば、断じて遅れは取れんな！"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["それでは……準決勝、開始～！！"])
+        ErasePicture([5])
+        ControlVariables([1002, 1002, 0, 0, 52])
+        ControlSwitches([81, 81, 0])
+        ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+        ControlSwitches([22, 22, 0])
+        BattleProcessing([0, 1554, false, false])
+        ControlSwitches([22, 22, 1])
+        ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+        ControlSwitches([81, 81, 1])
+        ControlSwitches([32, 32, 0])
+        PlaySE(["RPG::SE(@name=\"mon_break\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["激しい戦いで、サビリエルの仮面が砕けた――"])
+        ShowPicture([5, "80_sabiriel_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["sabiriel_fc1", 2, 0, 2])
+        ShowText(["【サビリエル】"])
+        ShowText(["参った……"])
+        ShowText(["その手腕、巡礼者とは思えん……"])
+        ConditionalBranch([4, 56, 0])
+          ShowTextAttributes(["inp_fc1", 3, 0, 2])
+          ShowText(["【ラミ】"])
+          ShowText(["コロシアムの女闘士が、男に素顔を見られたら……"])
+          ShowText(["その男を殺すか、それとも愛するかしかないんだって。"])
+          ShowTextAttributes(["sabiriel_fc1", 0, 0, 2])
+          ShowText(["【サビリエル】"])
+          ShowText(["いや、特にそのような掟はないが……"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ともかく、僕達の勝利だ！"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["よし、僕達の勝利だ！"])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["なんと、番狂わせが起きました！"])
+        ShowText(["勝利したのは謎の巡礼団！　決勝戦進出だ～！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["番狂わせに次ぐ番狂わせ、誰も予想しなかった決勝戦の組み合わせ！"])
+        ShowText(["女神杯決勝で、まさか妖魔と巡礼団が激突するとは～！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["決勝戦の相手は……妖魔だって？"])
+        ConditionalBranch([4, 295, 0])
+          ShowTextAttributes(["cassandra_fc1", 5, 0, 2])
+          ShowText(["【カサンドラ】"])
+          ShowText(["てっきり、天使とばかり思っていたのに……"])
+          ShowText(["ずいぶん見所のある妖魔もいるものですね。"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 296, 0])
+          ShowTextAttributes(["cassandra_fc1", 1, 0, 2])
+          ShowText(["【カサンドラ】"])
+          ShowText(["てっきり、天使とばかり思っていたのに……"])
+          ShowText(["ずいぶん見所のある妖魔もいるものですね。"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["なんと、決勝の対戦相手は天使ではなく妖魔らしい。"])
+        ShowText(["驚きの事実を知りながらも、僕達は控え室へと退場したのだった――"])
+        FadeoutScreen([])
+        Wait([60])
+        ControlSwitches([31, 31, 1])
+        ControlSwitches([32, 32, 1])
+        TransferPlayer([0, 662, 45, 20, 8, 2])
+        ControlVariables([1141, 1141, 0, 0, 23])
+        RecoverAll([0, 0])
+        FadeinScreen([])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "まだ準備ができていない"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 23, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["次の試合は決勝だ。"])
+      ShowText(["闘技場に向かいますか？"])
+      ShowChoices([["行くぞ！", "まだ準備ができていない"], 2])
+      When([0, "行くぞ！"])
+        RecoverAll([0, 0])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["これに勝てば、次はウリエラ戦か……"])
+        ShowText(["次の試合も、断じて負けられない！"])
+        ConditionalBranch([4, 213, 0])
+          ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
+          ShowText(["【シーザー】"])
+          ShowText(["決勝戦も、気は抜くまいぞ！"])
+          ShowText(["うぉぉぉぉっ！！"])
+          Empty([])
+        BranchEnd([])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        ControlSwitches([31, 31, 1])
+        ControlSwitches([32, 32, 1])
+        ControlSwitches([34, 34, 1])
+        ControlSwitches([35, 35, 1])
+        ControlSwitches([36, 36, 1])
+        ControlSwitches([33, 33, 0])
+        TransferPlayer([0, 517, 31, 31, 6, 0])
+        ShowPicture([5, "80_cirquec_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["まさに、数百年に一度の番狂わせ！"])
+        ShowText(["決勝戦までに天使チームが全敗退するなんて、いつ以来か！？"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["決勝戦の相手は……エルフの剣士一人だって！？"])
+        ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+        ShowText(["【フェルナンデス】"])
+        ShowText(["私一人で十分よ……"])
+        ShowText(["仲間など、邪魔にしかならないわ。"])
+        ShowTextAttributes(["alice_fc2", 1, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["こいつがかの、魔剣士フェルナンデス……"])
+        ShowText(["我が世界でも、過去において名を馳せた強者よ。"])
+        ShowTextAttributes(["alice_fc2", 1, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["そのゾンビは、我々の仲間となったが……"])
+        ShowText(["この天界では、今も現役の剣士らしいな。"])
+        ConditionalBranch([4, 212, 0])
+          ShowTextAttributes(["durahan_fc1", 1, 0, 2])
+          ShowText(["【アーサー】"])
+          ShowText(["まさか、かのフェルナンデスと剣を交える事になろうとは……"])
+          ShowText(["剣士として、これ以上の昂ぶりはないぞ！"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 171, 0])
+          ShowTextAttributes(["lizardboss_fc1", 3, 0, 2])
+          ShowText(["【ミランダ】"])
+          ShowText(["我ながら、名のある武人とばかり斬り結ぶ人生だねぇ……"])
+          ShowText(["正直、もっと平穏に暮らしたかったもんさ。"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["もはや、長々と御託は必要なし！"])
+        ShowText(["両者の実力は、ここまでの試合で十分に目にしたはずだ～！"])
+        ShowPicture([5, "80_cirquec_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["cirquec_fc1", 1, 0, 2])
+        ShowText(["【フェルナンデス】"])
+        ShowText(["巡礼者と聞いていたけど……本当かしら？"])
+        ShowText(["その剣は、相当の修羅場をくぐり抜けてきたものと見たわ。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["剣を交える前から、そこまで分かるのか……"])
+        ShowText(["一瞬たりとも気は抜けないな。"])
+        ConditionalBranch([4, 419, 0])
+          ShowTextAttributes(["cirquec_fc1", 1, 0, 2])
+          ShowText(["【フェルナンデス】"])
+          ShowText(["特に、そこの姫装のエルフ……相当の使い手ね。"])
+          ShowText(["視線ひとつ、足運びひとつに達人の気が満ちているわ。"])
+          ShowTextAttributes(["elfhime_fc1", 2, 0, 2])
+          ShowText(["【飛鳥命】"])
+          ShowText(["私は、ただの引きこもりよ……"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【選ばれし審判】"])
+        ShowText(["それでは……決勝戦、開始～！！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["さあ、行くぞ……！"])
+        ConditionalBranch([4, 382, 0])
+          ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+          ShowText(["【モリガン】"])
+          ShowText(["楽しめそうだな、行くぜ……！"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["cirquec_fc1", 1, 0, 2])
+        ShowText(["【フェルナンデス】"])
+        ShowText(["受けて立つわ……！！"])
+        ConditionalBranch([4, 368, 0])
+          ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+          ShowText(["【フェルナンデス’】"])
+          ShowText(["自分自身と戦うのも、また修練ね……"])
+          ShowTextAttributes(["cirquec_fc1", 2, 0, 2])
+          ShowText(["【フェルナンデス】"])
+          ShowText(["なっ、これはいったい……！？"])
+          ShowText(["まやかしの術など、この剣で断つわ！"])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ChangeBattleBGM(["RPG::BGM(@name=\"boss2\", @volume=100, @pitch=100)"])
+        ControlSwitches([22, 22, 0])
+        BattleProcessing([0, 1557, false, false])
+        ControlSwitches([22, 22, 1])
+        ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+        ShowPicture([5, "80_cirquec_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["cirquec_fc1", 2, 0, 2])
+        ShowText(["【フェルナンデス】"])
+        ShowText(["なんて見事な剣……"])
+        ShowText(["まさか、この私が及ばないなんて……"])
+        ConditionalBranch([4, 212, 0])
+          ShowTextAttributes(["durahan_fc1", 2, 0, 2])
+          ShowText(["【アーサー】"])
+          ShowText(["そちらこそ、見事だった……"])
+          Empty([])
+        BranchEnd([])
+        PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+        ControlSwitches([33, 33, 1])
+        ErasePicture([5])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["フェルナンデスはリングに倒れ伏した――"])
+        PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["勝ったぞ……僕達の優勝だ！"])
+        ConditionalBranch([4, 382, 0])
+          ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+          ShowText(["【モリガン】"])
+          ShowText(["天界にも、骨のある奴がいるじゃないか！"])
+          ShowText(["今度、沙蛇様の親衛騎士団あたりに推薦してやるよ。"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["謎の巡礼団の勝利！"])
+        ShowText(["トンヌラ率いる巡礼団が、優勝を飾ったぞ～！！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["客席は、大歓声に沸き立った。"])
+        ShowText(["優勝そのものが目的でないとはいえ、なかなかの達成感だ――"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["さて、女神杯の優勝者にはウリエラ様への挑戦権が与えられる！"])
+        ShowText(["そして万が一ウリエラ様に勝てれば、いかなる望みも叶えられるぞ～！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["さあ、どうする巡礼団！"])
+        ShowText(["これよりウリエラ様に挑むのか……答えを聞こう！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["もちろん、僕達は――"])
+        ShowChoices([["ウリエラに挑む", "ウリエラに挑まない"], 0])
+        When([0, "ウリエラに挑む"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ウリエラに挑む！"])
+          ShowText(["そして、打ち勝ってみせる！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["次の瞬間、客席は静まり返り――"])
+          ShowText(["一瞬の静寂の後、あらためて熱狂的な大歓声に満たされた！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【審判】"])
+          ShowText(["なんと、勝利宣言だ～！"])
+          ShowText(["ここまで大胆不敵な挑戦者が、かつていただろうか～！？"])
+          Empty([])
+        When([1, "ウリエラに挑まない"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ウリエラには挑まない！"])
+          ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["……ホァッ！？"])
+          ShowTextAttributes(["alice_fc1", 7, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["いかん、またいつもの病気だ！"])
+          ShowText(["ちょっと待て審判、我等はウリエラに挑むぞ！"])
+          ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["今のはナシで！"])
+          ShowText(["この子、重要な場面で変な選択肢を選んじゃう病気なの！"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["挑まないと言っている！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【審判】"])
+          ShowText(["ど、どっちだ……？"])
+          ShowText(["なんと巡礼団チーム、意見が割れてしまったぞ～！"])
+          ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+          ShowText(["【玉藻】"])
+          ShowText(["まったく、手を焼かせおるわ……"])
+          ShowAnimation([-1, 854, true])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["玉藻の術で、ルカは誘惑状態になった……"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ウヘヘ……"])
+          ShowText(["玉藻様のために、ウリエラに挑むよ～♡"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【審判】"])
+          ShowText(["おっと、代表のトンヌラが意見を変えた！"])
+          ShowText(["やはり、ウリエラ様に挑むというのが巡礼団の総意だ～！"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["観客席は、熱狂的な大歓声に満たされた！"])
+          Empty([])
+        ChoicesEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【審判】"])
+        ShowText(["ウリエラ様との試合は、一時間後に行われる！"])
+        ShowText(["観客のみんな、歴史を塗り替えるかもしれない一戦を心して待て！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ウリエラとの試合は、一時間後――"])
+        ShowText(["大歓声を背に、僕達は控え室へと退場したのだった。"])
+        FadeoutScreen([])
+        ControlVariables([1141, 1141, 0, 0, 24])
+        Wait([60])
+        TransferPlayer([0, 662, 45, 20, 8, 2])
+        RecoverAll([0, 0])
+        FadeinScreen([])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["いよいよ、ウリエラ戦か……"])
+        ShowText(["ここまで順調に行ったが、次もそうありたいものだな。"])
+        ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["ウリエラは、七大天使の中でも戦闘に長けておるという。"])
+        ShowText(["ガブリエラより手を焼くのは明らかよ……"])
+        ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["まずはお主達が挑み、なんとしても隙をこじ開けよ。"])
+        ShowText(["隙あらば、ウチが一気に命を取る。"])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ガブリエラの時のように……か。"])
+        ShowText(["万一、失敗したらどうするのだ？"])
+        ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["その場合、即座に撤退せよ。"])
+        ShowText(["全てを振り捨て、一目散に逃げるのだ。"])
+        ShowTextAttributes(["alice_fc1", 4, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["簡単に言ってくれる……"])
+        ShowText(["撤退しようにも、コロシアムの真っ只中なのだぞ。"])
+        ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["さりとて、ウチがウリエラを討てねばどうにもならんわ。"])
+        ShowText(["なんとしても撤退路を切り開き、命を繋げ。"])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["やれやれ、作戦の成功を祈るしかないか……"])
+        ShowText(["覚悟を決めるぞ、ルカよ！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ああ！　なんとしても作戦を成功させよう！"])
+        ConditionalBranch([4, 129, 0])
+          ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+          ShowText(["【ヒルデ】"])
+          ShowText(["ヒルデ、任務をだいたい理解した。"])
+          ShowText(["ウリエラを全力で撃破するよ……"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["目的は、ウリエラ打倒の一点のみ。"])
+        ShowText(["この作戦、なんとしてもしくじる訳にはいかない――"])
+        PlaySE(["RPG::SE(@name=\"Knock\", @pitch=100, @volume=80)"])
+        Wait([10])
+        PlaySE(["RPG::SE(@name=\"Knock\", @pitch=100, @volume=80)"])
+        Wait([10])
+        PlaySE(["RPG::SE(@name=\"Knock\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["その時、控え室の扉がノックされた！"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["誰だろう……どうぞ。"])
+        PlaySE(["RPG::SE(@name=\"mon_door2\", @pitch=100, @volume=100)"])
+        SetEventLocation([38, 0, 39, 10, 0])
+        ControlSwitches([2542, 2542, 0])
+        ShowPicture([5, "80_cirquec_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+        ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+        ShowText(["【フェルナンデス】"])
+        ShowText(["失礼……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["来訪したのは、さっき戦ったフェルナンデスだった！"])
+        ShowText(["いったい、何の用なんだろうか――"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "まだ準備ができていない"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 24, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["いよいよウリエラとの戦いだ。"])
+      ShowText(["闘技場に向かいますか？"])
+      ShowChoices([["行くぞ！", "まだ準備ができていない"], 2])
+      When([0, "行くぞ！"])
+        RecoverAll([0, 0])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["次こそ本番だ！"])
+        ShowText(["全身全霊でウリエラと戦おう！"])
+        ShowTextAttributes(["tamamo_fc3", 3, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["手筈は分かっておろうな？"])
+        ShowText(["お主達は全力で戦い、ウリエラの意識を数秒でも逸らせ。"])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["隙を見せた瞬間、貴様が闇討ちだな……"])
+        ShowText(["上手く行けば良いのだが。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["戦法は、ガブリエラの時と同じ。"])
+        ShowText(["どちらにしろ、僕達は全力でウリエラと戦い抜くのみだ――"])
+        Wait([30])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        FadeoutScreen([])
+        Wait([60])
+        ControlSwitches([31, 31, 1])
+        ControlSwitches([32, 32, 1])
+        ControlSwitches([33, 33, 1])
+        ControlSwitches([34, 34, 1])
+        ControlSwitches([35, 35, 1])
+        ControlSwitches([36, 36, 1])
+        TransferPlayer([0, 517, 31, 31, 6, 2])
+        PlayBGM(["RPG::BGM(@name=\"dungeon_colosseum2\", @volume=100, @pitch=100)"])
+        FadeinScreen([])
+        Wait([60])
+        Empty([])
+      When([1, "まだ準備ができていない"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["転職の書が開かれたまま放置されている……"])
+    CallCommonEvent([113])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし商人】"])
+    ShowText(["うちの武具を使えば、次の試合も勝利間違いなしだぜ！"])
+    ShopProcessing([1, 82, 0, 0, false])
+    ShopItem([1, 115, 0, 0])
+    ShopItem([1, 136, 0, 0])
+    ShopItem([1, 169, 0, 0])
+    ShopItem([1, 4237, 0, 0])
+    ShopItem([1, 327, 0, 0])
+    ShopItem([1, 356, 0, 0])
+    ShopItem([1, 394, 0, 0])
+    ShopItem([1, 434, 0, 0])
+    ShopItem([1, 467, 0, 0])
+    ShopItem([1, 502, 0, 0])
+    ShopItem([1, 543, 0, 0])
+    ShopItem([1, 584, 0, 0])
+    ShopItem([1, 615, 0, 0])
+    ShopItem([1, 652, 0, 0])
+    ShopItem([1, 693, 0, 0])
+    ShopItem([1, 720, 0, 0])
+    ShopItem([1, 771, 0, 0])
+    ShopItem([1, 793, 0, 0])
+    ShopItem([1, 864, 0, 0])
+    ShopItem([1, 4788, 0, 0])
+    ShopItem([2, 440, 0, 0])
+    ShopItem([2, 100, 0, 0])
+    ShopItem([2, 535, 0, 0])
+    ShopItem([2, 161, 0, 0])
+    ShopItem([2, 687, 0, 0])
+    ShopItem([2, 228, 0, 0])
+    ShopItem([2, 750, 0, 0])
+    ShopItem([2, 826, 0, 0])
+    ShopItem([2, 323, 0, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし鍛冶屋】"])
+    ShowText(["いいだろう、最速で仕上げてやるぜ！"])
+    Script(["call_synthesize(28)"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["次の試合に備えて、アイテムや秘石を買っておくといいよ！"])
+    ShowChoices([["買い物をする", "秘石の加工を頼む", "用はない"], 3])
+    When([0, "買い物をする"])
+      ShopProcessing([0, 3, 0, 0, false])
+      ShopItem([0, 4, 0, 0])
+      ShopItem([0, 7, 0, 0])
+      ShopItem([0, 11, 0, 0])
+      ShopItem([0, 22, 0, 0])
+      ShopItem([0, 23, 0, 0])
+      ShopItem([0, 35, 0, 0])
+      ShopItem([0, 102, 0, 0])
+      ShopItem([0, 109, 0, 0])
+      ShopItem([0, 110, 0, 0])
+      ShopItem([0, 3728, 0, 0])
+      ShopItem([0, 3758, 0, 0])
+      ShopItem([0, 3812, 0, 0])
+      ShopItem([0, 3794, 0, 0])
+      ShopItem([0, 3782, 0, 0])
+      Empty([])
+
+    When([1, "秘石の加工を頼む"])
+      Script(["call_synthesize(70)"])
+      Empty([])
+
+    When([2, "用はない"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 38
+Name = "フェルナンデス"
+
+  Page 0
+    ShowPicture([5, "80_cirquec_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+    ShowText(["【フェルナンデス】"])
+    ShowText(["あなた達は、いったい何者なの……？"])
+    ShowText(["いや、素性はどうでもいいわ……"])
+    ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+    ShowText(["【フェルナンデス】"])
+    ShowText(["この、争いの少ない天界で……"])
+    ShowText(["いったい、どんな修練を積んでそこまで強くなったの？"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["それをわざわざ聞きにきたのか……"])
+    ShowText(["別に、特別な修練などしておらん。"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ただ、強者とひたすらに戦い抜く旅をしてきた……"])
+    ShowText(["……それだけだ。"])
+    ShowTextAttributes(["cirquec_fc1", 0, 0, 2])
+    ShowText(["【フェルナンデス】"])
+    ShowText(["強者と戦い抜く旅……！？"])
+    ShowText(["もし不足がなければ、私も同行させてもらえない？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["フェルナンデスは、僕達の旅に同行したいようだ。"])
+    ShowText(["どうしよう……？"])
+    ShowChoices([["仲間に迎える", "断る"], 0])
+    When([0, "仲間に迎える"])
+      ShowTextAttributes(["cirquec_fc1", 1, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["ありがとう、一緒に行きましょう……"])
+      ErasePicture([5])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Script(["add_actor_ex(369)"])
+      PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["フェルナンデスが仲間に加わった！"])
+      Wait([60])
+      ControlSwitches([2542, 2542, 1])
+      ControlSwitches([2543, 2543, 0])
+      ShowTextAttributes(["cirquec_fc1", 1, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["あなた達と一緒に、これからどんな強敵と戦えるのか……"])
+      ShowText(["期待に胸が高まるわね。"])
+      ShowTextAttributes(["alice_fc1", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……とりあえず、七大天使を全員倒すぞ。"])
+      ShowText(["あと、女神イリアスも倒す。"])
+      ShowTextAttributes(["cirquec_fc1", 2, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["ええっ！？！？"])
+      ShowTextAttributes(["cirqueb_fc1", 0, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["元気な頃の私ね……"])
+      ShowText(["今後とも、よろしく……"])
+      ShowTextAttributes(["cirquec_fc1", 2, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["！？！？！？！？"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "断る"])
+      ShowTextAttributes(["cirquec_fc1", 2, 0, 2])
+      ShowText(["【フェルナンデス】"])
+      ShowText(["そう……それは、残念ね……"])
+      ErasePicture([5])
+      Wait([30])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["フェルナンデスは、残念そうに立ち去った……"])
+      ControlSwitches([2542, 2542, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【バニー】"])
+    ShowText(["観戦ならこちらにどうぞ。"])
+    ShowText(["S席のチケットを10Gで購入されますか？"])
+    ShowChoices([["購入する", "購入しない"], 2])
+    When([0, "購入する"])
+      ShowTextAttributes(["alice_fc1", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["他人の試合を、のんびり観戦している場合か！"])
+      ShowText(["我々には、なすべき事があるのだぞ！"])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["そうよ、今はそんな場合じゃないでしょ……？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["（いつまで経っても、男のロマンを理解しない連中だ……）"])
+      Empty([])
+
+    When([1, "購入しない"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["「この兵、どこにでもいやがる」みたいなカオすんなよ。"])
+    ShowText(["コロシアムの受付は、やたらケンカが起きる場所なんだぜ。"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["そういうわけで、こうやって警備してるんだよ。"])
+    ShowText(["こっちも仕事なんだぜ、仕事！"])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["オレ達は、親しみやすい兵士なんだぜ！"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["市民と一緒に、泣いたり笑ったり熱狂したりするんだ！"])
+    ShowText(["特に、コロシアムじゃな～！！"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【闘士】"])
+      ShowText(["欲を言えば、エロい妖魔と対戦したいものだな。"])
+      ShowText(["ムチムチした天使も……たまらない……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【闘士】"])
+      ShowText(["大会では念願かなって、ムチムチした天使と当たったぜ。"])
+      ShowText(["あのサビリエル様と対戦する事になったんだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【闘士】"])
+      ShowText(["近接肉弾戦を挑んだ俺に、サビリエラ様はベアハッグを！"])
+      ShowText(["あの筋肉に、思いっきり抱かれて締め上げられて……！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【闘士】"])
+      ShowText(["もう、天国にイったよ。"])
+      ShowText(["あの時の出来事は、一生オカズに出来るな……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowTextAttributes(["youki_fc1", 0, 0, 2])
+    ShowText(["【妖鬼】"])
+    ShowText(["本番じゃ、思いっきり暴れてやるぜ～！！"])
+    ShowTextAttributes(["youki_fc1", 2, 0, 2])
+    ShowText(["【妖鬼】"])
+    ShowText(["……どうでもいいけど、俺の字ってクソ汚いな。"])
+    ShowText(["恥ずかしいから、習字でも習おうかな……"])
+    Empty([])

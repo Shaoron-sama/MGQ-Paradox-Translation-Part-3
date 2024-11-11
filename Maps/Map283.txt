@@ -1,0 +1,900 @@
+Display Name = "ミノタウロスの迷宮 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 16, 7, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 17, 7, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 18, 7, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 16, 35, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 327, 160, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 327, 160, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 328, 160, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 17, 35, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 18, 35, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 44, 35, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 45, 35, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 284, 46, 35, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([763, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([76, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["すきやき、最高だな！"])
+    ShowText(["ここが肉のパラダイスだぜ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["ふぅ、食った食った。"])
+    ShowText(["それじゃあ、さっそく妖怪退治を……ん？"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    Wait([60])
+    ShowPicture([5, "80_seitentaisei_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["なんだ、お前達？"])
+    ShowText(["ああ、もしかして例の……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["貴様が黒幕か！"])
+      ShowText(["いったい、何を企んでいる！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["あなたがこの一件の黒幕ですか！"])
+      ShowText(["……なんだか、どこかで見覚えがありますね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["おいおい、勘違いすんなよ……"])
+    ShowText(["俺はむしろ、黒幕を退治しに来たんだぜ？"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["黒幕を退治しに……って事は、敵じゃないの？"])
+      ShowText(["あなた、いったい何者？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["じゃあ、敵じゃないのか？　いったい何者なんだ？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["おばあちゃんの持っていた絵巻物で見たような……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 121, 0])
+      ShowTextAttributes(["page65537_fc1", 2, 0, 2])
+      ShowText(["【コーネリア】"])
+      ShowText(["その姿は、まさに伝承の通り……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["よくぞ聞いた、俺の名は孫悟空！"])
+    ShowText(["天に刃向かう魔猿の王とは、俺の事よ！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["孫悟空とは、いにしえの妖魔ではないか！"])
+      ShowText(["ただの紛い物か？　それとも子孫か……？"])
+      ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["ところがどっこい、本人様よ！"])
+      ShowText(["口にはできない諸事情で、ちょっと現世に戻ってな！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そう、孫悟空ではないですか！"])
+      ShowText(["聖魔大戦においても、何度も天使軍を悩ませた、あの……"])
+      ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["説明不要とは、ありがたい！"])
+      ShowText(["口にはできない諸事情で、ちょっと現世に戻ってな！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["お前達の事も、黒のアリスから聞いてるぜ！"])
+    ShowText(["ここで会ったが、百年目ってな！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["黒のアリス！？"])
+      ShowText(["アリスフィーズ8世が、貴様を蘇らせたというのか！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["黒のアリス！？"])
+      ShowText(["奴があなたを復活させたというのですか！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_seitentaisei_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["おっと、うっかり喋っちまった！"])
+    ShowText(["まあいい、お前達も敵って話だ！"])
+    ShowPicture([5, "80_seitentaisei_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["それじゃあ、行くぜ！　観念しな！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["気をつけろ、こいつは伝説に残るほどの妖魔だ！"])
+      ShowText(["すさまじく強いぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["気をつけなさい！"])
+      ShowText(["こいつは、かなり強力な妖魔ですよ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["敵はサル……戦闘、開始。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["【ヌルコ】"])
+      ShowText(["きゅー！　きゅー！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 753, 0])
+      ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+      ShowText(["【孫悟空’】"])
+      ShowText(["ははっ、自分自身が相手か！"])
+      ShowText(["燃えてきたぜ～！！"])
+      ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+      ShowText(["【孫悟空】"])
+      ShowText(["んっ、俺がもう一人……？"])
+      ShowText(["分身の消し忘れか、ほら解除解除！"])
+      ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+      ShowText(["【孫悟空’】"])
+      ShowText(["ちげーよ！　本物だよ！！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 625, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_seitentaisei_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["ちっ、やられちまったか！"])
+    ShowText(["すきやきの食い過ぎで、腹が重いぜ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["貴様、黒幕を倒しに来たと言っていたな。"])
+      ShowText(["詳しく語ってもらおうか。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さっき、黒幕を倒しに来たと言いましたね。"])
+      ShowText(["詳しく話さないと、あなたがすきやきになりますよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_seitentaisei_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["しゃーねーなー。俺に勝ったし、教えてやるか……"])
+    ShowText(["この一件の黒幕は、牛魔王っていう妖魔だよ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["牛魔王！？"])
+      ShowText(["これまた有名な、いにしえの妖魔ではないか！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["牛魔王！？　奴まで蘇ったというのですか……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 164, 0])
+      ShowTextAttributes(["kooni_fc1", 2, 0, 2])
+      ShowText(["【雫】"])
+      ShowText(["昔話で聞いた事があるけど、本当にいたなんて……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["ところがどっこい、こっちは本人じゃねぇ。"])
+    ShowText(["何代目だったか忘れたが、初代牛魔王の子孫のまた子孫だ。"])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["とは言え、けっこう強い妖魔には違いなくてな。"])
+    ShowText(["どうもクィーンビーストの座を狙い軍勢を集めてるんだとか。"])
+    ShowTextAttributes(["seitentaisei_fc1", 1, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["ミノタウロスどもを集め、すきやきで手懐け、"])
+    ShowText(["自分の軍隊にしようってハラらしいんだな、これが。"])
+    ConditionalBranch([4, 201, 0])
+      ShowTextAttributes(["ashel_fc1", 2, 0, 2])
+      ShowText(["【アシェル】"])
+      ShowText(["せ、せこい……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 203, 0])
+      ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+      ShowText(["【たつこ】"])
+      ShowText(["あたしも釣られてしまいそうなのです……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 143, 0])
+      ShowTextAttributes(["eva_fc1", 0, 0, 2])
+      ShowText(["【エヴァ】"])
+      ShowText(["すきやきくれるなら、あたしも協力するけど？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["だが、そんなの放っちゃおけねぇ！"])
+    ShowText(["初代牛魔王とは因縁のある俺が、退治しに来たってわけよ！"])
+    ShowPicture([5, "80_seitentaisei_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 2, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["……が、今の戦いですっかり疲れちまったな。"])
+    ShowText(["ちょっとすきやきでも食ってくるわ。"])
+    ErasePicture([5])
+    Wait([60])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ControlVariables([1054, 1054, 0, 0, 6])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["つまり……その牛魔王ってのが黒幕なわけね。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["つまり、牛魔王ってのが黒幕なんだね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["独自の軍勢を集めているとなると、放置はできんな。"])
+      ShowText(["いずれもっと大きな問題を起こすだろう……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["独自の軍勢を集めているならば、放置はできません。"])
+      ShowText(["いずれ必ず、世の中に害するでしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
+    ShowText(["【シーザー】"])
+    ShowText(["よし、行くぞ！"])
+    ShowText(["きっと牛魔王は最上階にいるはずだ！"])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 0, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["いざ、牛魔王退治だ～！"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_tower\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["うめー！　どれだけ食ってもうめー！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["このすきやきパーティの主催は、なんと……"])
+    ShowText(["……なんだっけ？　すきやき王だったっけ？"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["やめられねぇぜ！　止まられねぇぜ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["すきやき天国だよな！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["肉！　食べ放題だぜ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["どれだけ食ったか分からねぇぜ……おかわり！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["おお、シーザーじゃないか！"])
+    ShowText(["お前も、すきやき食いに来たのか？"])
+    ShowTextAttributes(["kerberos_fc1", 2, 0, 2])
+    ShowText(["【シーザー】"])
+    ShowText(["お前を探しに来たんだよ！"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["kerberos_fc1", 1, 0, 2])
+      ShowText(["【シーザー】"])
+      ShowText(["……それはそれとして、すきやきは食うぞ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は、すきやきを食べた……"])
+      PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+      RecoverAll([0, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達のHPとMPが全快した！"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["でも、これで事件解決とはいかないわよね。"])
+        ShowText(["いったい何故、こんなところでパーティしてるんだろ……"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["でも、これで事件解決とはいかないよね。"])
+        ShowText(["いったい何故、こんなところでパーティを……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["遺跡の中を探索してみるとしよう。"])
+        ShowText(["すきやきパーティの主催者が何を企んでいるのか、見極めねばな……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["遺跡の中を調べてみましょう。"])
+        ShowText(["すきやきパーティの主催者には、何か悪巧みがあるはずです。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1054, 0, 5, 0])
+      ShowTextAttributes(["mino_fc1", 2, 0, 2])
+      ShowText(["【ミノタウロス娘】"])
+      ShowText(["あのサル、どれだけ食うんだよ……"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["サル？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["さる？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["mino_fc1", 2, 0, 2])
+      ShowText(["【ミノタウロス娘】"])
+      ShowText(["さっきまで肉食いまくってた、変なサルの妖魔だよ。"])
+      ShowText(["ちょっと前に、どっか行ったぜ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1054, 0, 6, 0])
+      ShowTextAttributes(["mino_fc1", 2, 0, 2])
+      ShowText(["【ミノタウロス娘】"])
+      ShowText(["このサル、また戻ってきやがった！"])
+      ShowText(["畜生、どれだけ食うんだよ！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ConditionalBranch([1, 1054, 0, 5, 0])
+      ShowTextAttributes(["mino_fc1", 2, 0, 2])
+      ShowText(["【ミノタウロス娘】"])
+      ShowText(["この鍋、あの猿のせいで空っぽだぜ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1054, 0, 6, 0])
+      ShowTextAttributes(["mino_fc1", 2, 0, 2])
+      ShowText(["【ミノタウロス娘】"])
+      ShowText(["やめろォ！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["おかわり！　限りなくおかわり！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["感謝するぜ、牛肉王！"])
+    ShowText(["……あれ？　名前、違ったっけ？"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["すきやき肉に埋もれて死にてぇ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["最高のパーティーだな！"])
+    ShowText(["すきやき食べ放題だぜ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["これだけ御馳走になって、牛すき王には感謝だぜ！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowPicture([5, "80_seitentaisei_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【孫悟空】"])
+    ShowText(["すきやき、うめぇ！"])
+    ShowText(["なんだよ、邪魔するなよ？"])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["h_mino_fc1", 0, 0, 2])
+    ShowText(["【ハイミノタウロス娘】"])
+    ShowText(["すきやきパーティーへようこそ！"])
+    ShowText(["思う存分、食べて下さいね！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["62"])
+    ShowTextAttributes(["gob_fc1", 0, 0, 2])
+    ShowText(["【ゴブ】"])
+    ShowText(["おなかいっぱい食べるよ～！"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["趣旨を忘れちゃダメでしょ……"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Label(["68"])
+    ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+    ShowText(["【パピ】"])
+    ShowText(["よし！　いっぱい食べるのだ～！"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["趣旨を忘れちゃダメでしょ……"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["よっしゃ、頂くぜ！"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["趣旨を忘れちゃダメでしょ……"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["すきやきを食べると、もりもり力が湧いてくる……！"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([26, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([431, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([378, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([378, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,25 @@
+CommonEvent 609
+Name = "イベント：ノーム"
+
+  999([609])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 62, 0])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+  ShowText(["【ノーム】"])
+  ShowText(["……………………"])
+  ControlSwitches([62, 62, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ノームが力を貸してくれるようだ！"])
+  ShowText(["次のボスフロアまで、土の加護が与えられる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

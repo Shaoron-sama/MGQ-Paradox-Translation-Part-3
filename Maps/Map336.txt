@@ -1,0 +1,134 @@
+Display Name = "エルベティエの部屋"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 325, 56, 46, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 325, 56, 46, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ここは、エルベティエの部屋だな。"])
+      ShowText(["特に重要なものは何もなかろう……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ここは確か、エルベティエの部屋のようですね。"])
+      ShowText(["まったく、粗末なものです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["エルベティエって、四天王の一人なんでしょ？"])
+    ShowText(["そんな偉い妖魔が、こんな粗末な部屋に住んでるなんて……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["他の四天王と同様、ちゃんとした個室を与えたのだがな……"])
+      ShowText(["こちらの方が落ち着くと言って、水路に住み着きおった。"])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【ライム】"])
+        ShowText(["あたしも、大きくて綺麗なお部屋より、"])
+        ShowText(["水の流れるここの方がいいなぁ。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ともかく、長居する必要はあるまい。"])
+      ShowText(["今はいないようだが、エルベティエが戻ってきたら面倒だ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["魔王とは、そういうものなのです。"])
+      ShowText(["己の手下にこんな部屋を与え、自身は贅沢しているのですよ。"])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["イリアス様は、天使に温かい毛布のある部屋を下さいました。"])
+      ShowText(["ありがたいことです……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レバーがある……下ろしますか？"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      PlaySE(["RPG::SE(@name=\"Push\", @pitch=100, @volume=80)"])
+      ControlSwitches([2569, 2569, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["外で扉の開いた音がした……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "いいえ"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レバーはすでに下りている……"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺はマジックポットだった！"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])

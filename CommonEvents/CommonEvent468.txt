@@ -1,0 +1,24 @@
+CommonEvent 468
+Name = "邪神城近郊"
+
+  999([468])
+  ConditionalBranch([1, 1142, 0, 75, 2])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ちょっと……"])
+    ShowText(["邪神城に近付いてはならないと言っているでしょう！"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["さすがに、これ以上の危険は容認できません。"])
+    ShowText(["ほら、引き返しますよ！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  FadeoutScreen([])
+  ChangeTransparency([0])
+  TransferPlayer([0, 207, 8, 7, 0, 0])
+  FadeinScreen([])
+  Empty([])

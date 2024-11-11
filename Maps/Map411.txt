@@ -1,0 +1,348 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([2740, 2740, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["蒸気船はタルタロスの間近へと横付けした。"])
+    ShowText(["右舷側に、ぽっかりと巨大な大穴が広がっている――"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["さて、ここからどうやって降りるというのだ……？"])
+    ConditionalBranch([4, 56, 0])
+      ShowTextAttributes(["inp_fc1", 3, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["まさか、飛び降りたりしないよね……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 202, 0])
+      ShowTextAttributes(["bonny_fc1", 2, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["し、下を見てはならん……見てはならんぞ……"])
+      ConditionalBranch([4, 201, 0])
+        ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+        ShowText(["【アシェル】"])
+        ShowText(["お嬢……高所恐怖症なんだから、無理をしなくても。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船長】"])
+    ShowText(["よし！　野郎共、イカリを下ろせ！"])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ここでイカリを？"])
+    ShowText(["湖といっても、かなり水深があるんでしょ……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["船員達は、大きな機械に取り付けられたイカリを湖底へと発射した。"])
+    ShowText(["それは、まるで捕鯨に使う巨大な銛のようだ――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船員Ａ】"])
+    ShowText(["1番イカリ、湖底に着錨！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船員Ｂ】"])
+    ShowText(["2番イカリも、オッケーだぜ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船員Ｃ】"])
+    ShowText(["3番、4番も問題なしだ！"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["なんと、ここまで強固なイカリで船を固定するとは……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船長】"])
+    ShowText(["これで、船はほとんど揺れません。"])
+    ShowText(["サン・イリアから供出された機械技術の代物ですよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船長】"])
+    ShowText(["よぉし、次はハシゴを下ろすんだ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船員Ａ】"])
+    ShowText(["へいっ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["船の右舷から、縄ハシゴが投下される。"])
+    ShowText(["それはタルタロスの奥底まで吸い込まれていった――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【船長】"])
+    ShowText(["船の固定は完全ですので、縄梯子に揺れは伝わりません。"])
+    ShowText(["とは言え、足元には注意して下さいね。"])
+    ShowTextAttributes(["alice_fc1", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["うむ、世話になったな。"])
+    ShowText(["よし、下に降りるぞ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["さあ、行こう！"])
+    ConditionalBranch([4, 202, 0])
+      ShowTextAttributes(["bonny_fc1", 2, 0, 2])
+      ShowText(["【ボニー】"])
+      ShowText(["この高さを、縄梯子で降りるのか……"])
+      ShowText(["ううー！！"])
+      ConditionalBranch([4, 201, 0])
+        ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+        ShowText(["【アシェル】"])
+        ShowText(["ほら、命綱を結んであげますから……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 103, 0])
+      ShowTextAttributes(["kamuro_fc1", 2, 0, 2])
+      ShowText(["【かむろ】"])
+      ShowText(["これ、足を滑らせたら真っ逆さまじゃないですか……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 83, 0])
+      ShowTextAttributes(["hapy_a_fc1", 2, 0, 2])
+      ShowText(["【レイナ】"])
+      ShowText(["あたしは、飛べるからいいけど……"])
+      ShowText(["他の人には、なかなかきついよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 348, 0])
+      ShowTextAttributes(["kyoryuu_fc1", 2, 0, 2])
+      ShowText(["【ぎが】"])
+      ShowText(["はしごおりるの、むずかしい……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["足を滑らせても、大丈夫です。"])
+      ShowText(["私が即座に受け止めましょう……"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして僕達は、用心しつつ縄梯子を下りていった。"])
+    ShowText(["そして、前人未踏だったエスタのタルタロスに降り立ったのである――"])
+    Wait([60])
+    ControlSwitches([100, 100, 0])
+    ControlSwitches([5324, 5324, 0])
+    ChangeTransparency([1])
+    TransferPlayer([0, 392, 49, 5, 2, 2])
+    FadeinScreen([])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ここが、天界へと繋がるタルタロスか……"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["正直、すっかり見慣れた光景よね。"])
+    ShowText(["なんだか懐かしいくらいよ……"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["きゅーっ！"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その時――"])
+    ShowText(["頭の中に、聞いたことのある声が届いた。"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["ふむ、タルタロスまで着いたようじゃのう。"])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["これは……玉藻の声か！？"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["言ったであろう、お主達の戦いをサポートすると。"])
+    ShowText(["ウチの思念、異世界にまで通じるのは知っておるはず。"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["限定的だが、魔力も及ぼす事ができる。"])
+    ShowText(["短期間ながら肉体の転送も可能よ……"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["グランゴルドの一件で、身に染みて知っているわ。"])
+    ShowText(["その力、せいぜい役立ててもらうぞ。"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["だが、肉体の転送は乱用できんぞ。"])
+    ShowText(["あれは、多大な魔力を消費するのでな……"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["ウチが自ら出向くのは、肝心要の切り札だと知れ。"])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["もちろん、存じております。"])
+    ShowText(["私達が、ルカ一行の力となりましょう……"])
+    ConditionalBranch([4, 382, 0])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["任せておいてくれよ、玉藻様。"])
+      ShowText(["でも、あんまり口出しはナシで頼むぜ！"])
+      ConditionalBranch([4, 394, 0])
+        ShowTextAttributes(["astaroth_fc1", 4, 0, 2])
+        ShowText(["【アスタロト】"])
+        ShowText(["モリガン、口を慎みなさい……"])
+        ShowText(["我々は玉藻様の手下ではないけど、今作戦の司令官なのよ。"])
+        ShowTextAttributes(["morrigan_fc1", 6, 0, 2])
+        ShowText(["【モリガン】"])
+        ShowText(["は～い……"])
+        ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+        ShowText(["【玉藻】"])
+        ShowText(["まったく、御しがたいジャジャ馬三姉妹よ。"])
+        ShowText(["だが、魔界ではそれくらい鼻息の荒い方が良いかもしれん。"])
+        ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+        ShowText(["【アスタロト】"])
+        ShowText(["（私は妹を諫めたのに……"])
+        ShowText(["　ジャジャ馬三姉妹の枠に入れられている……）"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["では、行くが良い。"])
+    ShowText(["ウチは常に見守っておるぞ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玉藻からの通信は切れたようだ……"])
+    ShowTextAttributes(["alice_fc1", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ふん……見張っている、の間違いではないのか。"])
+    ShowText(["きつねめ……"])
+    ConditionalBranch([4, 382, 0])
+      ShowTextAttributes(["morrigan_fc1", 3, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["間違いなく、常時監視付きだぜ。"])
+      ShowText(["しばらくは、ぐっすり眠れないなぁ……"])
+      ConditionalBranch([4, 394, 0])
+        ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+        ShowText(["【アスタロト】"])
+        ShowText(["あなたは、いつでもぐっすり寝てるでしょう……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まあ、今後は味方なんだから心強いじゃないか。"])
+    ShowText(["さあ、行こう！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ここを抜けた先が、女神イリアスの支配する天界――"])
+    ShowText(["いよいよ、これから敵地に乗り込む事になるのだ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])

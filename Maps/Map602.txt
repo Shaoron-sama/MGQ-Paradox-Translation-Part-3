@@ -1,0 +1,225 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["影紬……祝福なき勇者はどうでしたか？"])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["さて……海の物やら、山の物やら。"])
+    ShowText(["私にはなんとも判断しかねます。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["あら、なんとも気のないお返事……"])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["私への評価も、似たようなものでしょう。"])
+    ShowText(["あなたにとっては、この私とて海の物やら山の物やら……"])
+    ScrollMap([8, 5, 4])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["……そうでしょう、アリスフィーズ8世陛下？"])
+    PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_alice8th_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["私は、あなたを高く評価していますわよ……"])
+    ShowText(["最後の人形遣い、4代目影紬。"])
+    ShowPicture([6, "80_kagetumugi_st51", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_alice8th_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["陛下は、500年前に初代影紬を見出されたお方。"])
+    ShowText(["そして現代、人形遣いの技は完成し、終わりを迎えました。"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["4代目影紬の私が編み出した、究極にして最後の人形術……"])
+    ShowText(["必ず陛下のお力となりましょう。"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["頼りにしておりますわ、二度も夢破れた身ですから。"])
+    ShowText(["負け続けてここまできた身、それもまた覇道の一興……"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["聖魔融合を果たす秘薬「白の兎」……"])
+    ShowText(["その力でさえ、祝福なき勇者には勝てなかった……"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["あの少年が、それほどのものとは……"])
+    ShowText(["正直、とても思えませんけれど。"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["今度のパーティは、少数精鋭という趣向でいきましょう。"])
+    ShowText(["聖魔大戦の時代に君臨した、神話クラスの魔物達を率いて――"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"mon_flash\", @pitch=100, @volume=100)"])
+    ShowPicture([10, "sys_white", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ControlSwitches([31, 31, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([10])
+    Wait([60])
+    ShowPicture([5, "80_azidahaka_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["azidahaka_fc1", 0, 0, 2])
+    ShowText(["【アジ・ダハーカ】"])
+    ShowText(["この世界、壊してやればいいのだな……"])
+    ShowPicture([5, "80_seitentaisei_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["seitentaisei_fc1", 0, 0, 2])
+    ShowText(["【斉天大聖】"])
+    ShowText(["任せなよ、思いっきり暴れてやるさ！"])
+    ShowPicture([5, "80_coatlus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["coatlus_fc1", 0, 0, 2])
+    ShowText(["【ケツァルコァトル】"])
+    ShowText(["脆弱な現世の魔物など、相手にもならないわ……"])
+    ShowPicture([5, "80_tezcatlipoca_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["tezcatlipoca_fc1", 0, 0, 2])
+    ShowText(["【テスカトリポカ】"])
+    ShowText(["ウニャー！　あたしの力を見せてやるニャー！"])
+    ShowPicture([5, "80_izanami_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["izanami_fc1", 0, 0, 2])
+    ShowText(["【イザナミ】"])
+    ShowText(["全て、黄泉に還すとしよう……"])
+    ShowPicture([5, "80_tukumokomati_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["tukumokomati_fc1", 0, 0, 2])
+    ShowText(["【ヒミコ】"])
+    ShowText(["くくっ……派手な宴になりそうだのう。"])
+    ShowPicture([6, "80_kagetumugi_st51", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_alice8th_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["ふふっ、なんとも頼もしき神話のお歴々……"])
+    ShowText(["では、私が作り上げた魔王人形もご覧にいれましょう。"])
+    ShowPicture([5, "80_alice9th_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ErasePicture([6])
+    ShowTextAttributes(["alice9th_fc1", 0, 0, 2])
+    ShowText(["【アリスフィーズ9世】"])
+    ShowText(["お、お姉様……"])
+    ShowText(["ご、ご機嫌……うるわしゅう……"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["うふふっ、アルテイスト家の者に劣らぬゾンビ術ですわね。"])
+    ShowText(["これぞまさに、ゾンビ術と人形術の究極融合……"])
+    ShowTextAttributes(["alice8th_fc1", 1, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["あれだけ私に刃向かった妹も、こうなれば大人しいもの……"])
+    ShowText(["今なら仲良く、人形遊びでも出来そうですわね。"])
+    ShowPicture([5, "80_alice11th12th_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["alice11th12th_fc2", 0, 0, 2])
+    ShowText(["【アリスフィーズ11＋12世】"])
+    ShowText(["うふふっ……"])
+    ShowText(["あははっ……"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["11世と12世は、死体の欠落箇所が多かったもので……"])
+    ShowText(["2体を融合させる事で、製作に成功したのです。"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["うふふっ、素敵な姿。"])
+    ShowText(["あなたのそういうセンス、大好きですわ……"])
+    ShowPicture([5, "80_alice6th_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["alice6th_fc1", 0, 0, 2])
+    ShowText(["【アリスフィーズ6世】"])
+    ShowText(["控……えよ……"])
+    ShowText(["我は、魔王……アリスフィーズなるぞ……"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["まあ、お婆様ではありませんか。"])
+    ShowText(["随分とご達者なようで……"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["死体は、ヤマタイの聖廟に安置されておりましたので……"])
+    ShowText(["損傷も少なく、早急に仕上げることが出来ました。"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["他の魔王人形は、少しばかりお待ちを。"])
+    ShowText(["死体はすでに揃えてありますが、損傷も多いもので……"])
+    ShowPicture([6, "80_kagetumugi_st51", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_alice8th_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["これだけの戦力があれば、さぞ楽しいお茶会が開けますわ。"])
+    ShowText(["たっぷりと楽しみましょう、うふふっ。"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["それでは、陛下に三度目の栄光を……"])
+    ShowText(["世界の全てを、その手に掴むために……"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["全ての世界を、この手に掴むために……"])
+    ShowText(["うふふふふっ……"])
+    FadeoutScreen([])
+    ControlSwitches([31, 31, 1])
+    ErasePicture([5])
+    ErasePicture([6])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    TransferPlayer([0, 2, 188, 294, 2, 2])
+    FadeinScreen([])
+    Script(["gain_medal(25)"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])

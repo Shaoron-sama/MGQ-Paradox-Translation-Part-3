@@ -1,0 +1,301 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([36, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([178, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["これより先は、立ち入り禁止です。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ConditionalBranch([1, 1022, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【衛兵】"])
+      ShowText(["どうぞ、お通り下さい。"])
+      ShowText(["無事に終わらんことを祈っております。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1022, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【衛兵】"])
+      ShowText(["体勢を立て直すのですか……？"])
+      ShowText(["どうぞ、お通り下さい。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1022, 0, 6, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【衛兵】"])
+      ShowText(["あなた方はいつでもお通しするよう承っています。"])
+      ShowText(["どうぞ、お通り下さい。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 220, 12, 9, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 220, 13, 9, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1022, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サン・イリア王を置いていくわけにはいかない……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([5271, 5271, 0])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 110, 29, 56, 8, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["少々、ここのお話でもしておきましょう。"])
+    ShowText(["これより立ち入る、古代神殿跡についてです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["教会派と反マキナ派が分裂する前……"])
+    ShowText(["まだラダイト村ができる以前まで話は遡ります。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["この洞窟に踏み込んだ地元の者が、偶然に古代遺跡を発見。"])
+    ShowText(["報を聞いて駆け付けた我等は、その信じがたい姿に驚愕しました。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["それ以来、我々はこの一件に箝口令を敷きました。"])
+    ShowText(["表向きは「古代神殿跡」として、信仰の場と喧伝したのです。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["つまり……本当は、神殿ではなかったのですか？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["つまり……本当は、神殿ではなかったんですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["さて、先に進みましょう……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["……話を続けましょう。"])
+    ShowText(["発見された遺跡は、外部には古代神殿として伝えられました。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["後にサン・イリアは分裂し、反マキナ派はこの地に村を作ります。"])
+    ShowText(["古代神殿のある地として、信仰回帰の意味合いがあったのですが……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["彼らは、この遺跡が本当は何なのか知らなかったのでしょう。"])
+    ShowText(["そうでなければ、絶対にこの地に村など築きません。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["その遺跡って、いったい……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["その遺跡って、いったい……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["……後は、実際に目にして下さい。"])
+    ShowText(["いかなる言葉よりも、実物が全てを語ります。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([4, 72, 0])
+      ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+      ShowText(["【ミニ】"])
+      ShowText(["ホーオー様だ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["猊下、一行をお連れしました。"])
+    ShowPicture([5, "80_saniria_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["うむ、大義だった。"])
+    ShowText(["お主は教会に戻るがいい。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["はっ……猊下、くれぐれもお気をつけを。"])
+    ShowText(["皆さんも、猊下の御身をよろしくお願い致します。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["神父は村に戻っていった……"])
+    ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["それでは、ここから先は私が同行しよう。"])
+    ShowText(["よろしく頼むぞ……"])
+    ErasePicture([5])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    ControlVariables([1022, 1022, 0, 0, 5])
+    ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["分かっているだろうが、私は全く戦えん。"])
+    ShowText(["そういうわけで、遺跡最奥までの護衛は頼んだぞ。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["はい、私にお任せ下さい！"])
+      ShowText(["猊下を害する者は、この棍棒でボコボコですよ！"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["その言葉が本当なら……"])
+      ShowText(["育ての親のラザロを、真っ先に叩きのめす羽目になるな。"])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["えっ！"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["これは失礼、ちょっとした冗談だよ……"])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["猊下のブラックジョークなんて、心臓に悪いですよ！"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["ラザロには、爆弾で派手に吹き飛ばされたからな……"])
+      ShowText(["私も聖人ではないから、そう簡単に恨みは忘れられんよ。"])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["聖人じゃないって……"])
+      ShowText(["法王猊下、世界でいちばん聖人デスヨネー！？"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["君の反応はいちいち面白いな。"])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ああ、法王猊下にノリツッコミなんて……"])
+      ShowText(["私、地獄行きになっちゃうかな……"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["いやいや、少しからかっただけだよ……"])
+      ShowText(["さあ、それでは行くとしようか。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["はい、お任せ下さい！"])
+      ShowTextAttributes(["saniria_fc1", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["君達の力に期待しているよ……"])
+      ShowText(["さあ、それでは行くとしようか。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

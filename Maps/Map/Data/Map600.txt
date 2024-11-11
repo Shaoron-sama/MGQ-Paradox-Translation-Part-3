@@ -1,0 +1,1115 @@
+Display Name = "プランセクト村"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 197, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 2, 0])
+      ShowPicture([5, "80_sisterlamia_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["クィーンラミア様は、ゴルド火山洞窟に向かいました。"])
+      ShowText(["火の精霊に力を借り、戦局を優位にしようとお考えです。"])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["それに対抗し、クィーンスキュラは水精の泉に……"])
+      ShowText(["水の精霊に力を得ようと目論んでいるようです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ゴルド火山は、グランゴルド城から西。"])
+      ShowText(["溶岩地帯にある巨大な火山洞窟だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["水精の泉は、僕達の世界ではウンディーネの泉と呼ばれていた。"])
+      ShowText(["この村から北西の方角にある、静かな泉だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どちらかが精霊の力を手にすれば、戦争を終わらせるどころではない。"])
+      ShowText(["ゴルド火山と水精の泉、両方で女王達を阻止しなければ――"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 3, 0])
+      ConditionalBranch([2, "A", 1])
+        ControlSelfSwitch(["A", 0])
+        ShowPicture([5, "80_sisterlamia_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["sisterlamia_fc1", 1, 0, 2])
+        ShowText(["【ソロミ】"])
+        ShowText(["流石はイリアス様！"])
+        ShowText(["女王を二人とも制したというご活躍、噂で広まっております！"])
+        ShowPicture([5, "80_iriasu_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["それは結構。"])
+        ShowText(["さて、次の手に関してですが……"])
+        PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……メフィスト、やはり結託はあると考えますか？"])
+        ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+        ShowText(["【メフィスト】"])
+        ShowText(["もちろん、間違いなく結託済みかと。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["結託……？　誰と誰が？"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["それは、直に分かりますよ。"])
+        ShowText(["結託しているなら、かえって話は簡単ですね……"])
+        ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+        ShowText(["【メフィスト】"])
+        ShowText(["ええ、簡単に誘いに乗ってくるかと……"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["それでは、次にして最後の一策が決まりました。"])
+        ShowText(["両女王に、和睦の宴を開くよう提案しましょう。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["和睦の宴……！？"])
+        ShowText(["ちょっと話が一気に進みすぎなんじゃ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["まだ、女王達が精霊の力を手にするのを阻止しただけ。"])
+        ShowText(["両者の戦争そのものは、進展自体がまったくないのに――"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["問題ありません……両陣営とも、必ず乗ってきます。"])
+        ShowText(["メフィスト、書状を作ってもらえませんか？"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["「古式に則り、神前で和睦の儀を行う」とか、そんな感じで。"])
+        ShowText(["場所は、グランドノア城が良いですね。"])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["準備はこちらがやりますが、宴の料理は向こうが持参。"])
+        ShowText(["そういう感じで、分かってますね？"])
+        ShowTextAttributes(["mefist_fc1", 1, 0, 2])
+        ShowText(["【メフィスト】"])
+        ShowText(["全てお任せを……ふふふ。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["何か、悪巧みをする気だ……"])
+        ShowPicture([5, "80_iriasu_st32", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["いえいえ、悪巧みをするのは向こうの方ですよ。"])
+        ShowText(["うふふふふ……"])
+        ShowTextAttributes(["mefist_fc1", 1, 0, 2])
+        ShowText(["【メフィスト】"])
+        ShowText(["ふふふふふ……"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ふふふふ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["二人に合わせて笑ってはみたが――"])
+        ShowText(["何を企んでいるのかは、まるで分からなかった。"])
+        FadeoutBGM([1])
+        FadeoutScreen([])
+        ErasePicture([5])
+        Wait([120])
+        FadeinScreen([])
+        Empty([])
+      BranchEnd([])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_plansect\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_sisterlamia_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["確かに、和睦の書状をお預かりしました。"])
+      ShowText(["私から、女王陛下にこれをお渡しいたします。"])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["クィーンスキュラの元にも書状が届くようにしましょう。"])
+      ShowText(["これで、いつでも和睦の誘いを通達できますよ。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["事前に、戦いの準備を整えておくことを忘れずに。"])
+      ShowText(["宴の場で、少々トラブルが起きる予定ですので。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["トラブルが起きる……予定？"])
+      ConditionalBranch([4, 397, 0])
+        ShowTextAttributes(["shion_fc1", 3, 0, 2])
+        ShowText(["【シオン】"])
+        ShowText(["なんだか分からないけど、楽しそうだな！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["さて、書状を送付してよろしいでしょうか……？"])
+      ShowChoices([["まだ準備する", "書状を送付する"], 1])
+      When([0, "まだ準備する"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["どうやら、荒事が起きるらしいね。"])
+        ShowText(["もう少し、準備を整えよう……"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "書状を送付する"])
+        FadeoutScreen([])
+        ErasePicture([5])
+        Wait([60])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["こうして、クィーンラミアとクィーンスキュラの元へと、"])
+        ShowText(["和睦の宴を開催する旨の書状が送られた。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そして驚いた事に、両者共に出席の返事が届いたのである。"])
+        ShowText(["こうして、グランドノアにて和睦の宴が行われる事となった。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["いったい、この豹変は何事なのか。"])
+        ShowText(["力を持っていたはずの主戦派は、なぜ和平推進に鞍替えしたのか――"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["僕にはさっぱり理解できないまま――"])
+        ShowText(["ついに、和睦の宴を行う日が訪れたのだった。"])
+        Wait([120])
+        ControlSwitches([31, 31, 1])
+        ControlSwitches([32, 32, 1])
+        ControlSwitches([33, 33, 1])
+        ChangeTransparency([0])
+        ChangeMapDisplay([1])
+        TransferPlayer([0, 71, 19, 10, 0, 2])
+        FadeinScreen([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["ああ、イリアス様……"])
+      ShowText(["お陰様で、この村に平和が戻りました。"])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【ソロミ】"])
+      ShowText(["復興中につき、盛大なおもてなしが出来ずお許し下さい。"])
+      ShowText(["いずれはここに、立派な神殿を築きましょう……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あれは、なんだろう……"])
+    ShowText(["魔物同士が、何か揉めているようだけど。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["放っておきなさい、ルカ。"])
+    ShowText(["そんなものに、我々が干渉するいわれなどありません。"])
+    ConditionalBranch([1, 1158, 0, 0, 0])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["醜いスキュラは森から出て行きなさい！"])
+      ShowText(["ここは私達の女王が治める土地よ！"])
+      ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+      ShowText(["【スキュラＡ】"])
+      ShowText(["やっぱりラミアは、汚い泥棒ヘビね！"])
+      ShowText(["ここはクィーンスキュラの領地、あんた達こそ消えなさい！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["魔物達の領地争いみたいだね……"])
+      ShowText(["確かに、事情も分からないのに干渉すべきじゃないな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["何より僕達は、グランドノア攻略という使命を控えている。"])
+      ShowText(["今のところは、関わらない方が良さそうだ――"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 1, 283, 197, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["でも……あのシスターラミアには見覚えがあるよ。"])
+    ShowText(["前に、僕達に助けを求めてきたラミアじゃないかな。"])
+    ShowPicture([5, "80_sisterlamia_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["皆さん、争いをやめて下さい！"])
+    ShowText(["イリアス様の教えに耳を傾け、剣を収めるのです……"])
+    ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+    ShowText(["【スキュラＡ】"])
+    ShowText(["イリアス……？"])
+    ShowText(["千年も前に滅んだ暴力女神の教えなんて、誰が聞くのよ。"])
+    ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+    ShowText(["【スキュラＢ】"])
+    ShowText(["インチキ女神みたいに、あんたも土に還りなさい。"])
+    ShowText(["あの世で女神様がほめてくれるかもね！"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["ああ……イリアス様、どうかお救いを……！"])
+    ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+    ShowText(["【スキュラＣ】"])
+    ShowText(["どれだけ祈っても、イリアスは助けになんて来ないわ。"])
+    ShowText(["さあ、私達の触手の餌食になりなさい！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["スキュラは触手を振り上げた！"])
+    ErasePicture([5])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShotBalloonIcon([7, 1, false])
+    ShotBalloonIcon([8, 1, false])
+    ShotBalloonIcon([9, 1, false])
+    ShotBalloonIcon([12, 1, false])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……やめなさい！！"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["あ……あなたは……！？"])
+    ShowText(["まさか、本当にイリアス様が……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["私は、創世の女神イリアス……"])
+    ShowText(["虐げられた信徒に、救いの手を差し伸べるため降臨しました。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["我が信徒を虐げる、愚かな罪人達よ……"])
+    ShowText(["裁きの雷に打たれ、己の罪を知りなさい。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["（思いっきり干渉してる……）"])
+    ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+    ShowText(["【スキュラＡ】"])
+    ShowText(["あんた、何者……！？"])
+    ShowText(["まさか、本物のイリアス……？"])
+    ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+    ShowText(["【スキュラＢ】"])
+    ShowText(["そんな訳ないでしょう……"])
+    ShowText(["どうせ、天使の残党よ。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["行きますよ、ルカ……"])
+    ShowText(["私が何者か、身をもって分からせてやるのです！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["結局、こうなるのか……"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 1, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["相手は雑魚かよ……一蹴だな！"])
+      Empty([])
+
+    BranchEnd([])
+    BattleProcessing([0, 686, false, false])
+    ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+    ShowText(["【スキュラＡ】"])
+    ShowText(["嘘でしょ……"])
+    ShowText(["なんなの、この強さ……"])
+    ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+    ShowText(["【スキュラＢ】"])
+    ShowText(["ま、まさか……本当に、あの暴虐の女神……"])
+    ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+    ShowText(["【スキュラＣ】"])
+    ShowText(["た、助けて！　バラバラにされて殺されるー！！"])
+    PlaySE(["RPG::SE(@name=\"mon_escape\", @pitch=100, @volume=100)"])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["スキュラ達は逃げ出した！"])
+    Wait([30])
+    ShowPicture([5, "80_sisterlamia_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["sisterlamia_fc1", 1, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["あなた達は、グランドノアで出会った……"])
+    ShowText(["まさか、本物のイリアス様であったとは……"])
+    ShowTextAttributes(["sisterlamia_fc1", 1, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["ああ、イリアス様……"])
+    ShowText(["私の祈りが、あなた様に届いたのですね！？"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……もちろんです。"])
+    ShowText(["このイリアス、従順な信徒を見捨てたりはしません。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["（干渉するな、って言ってたのに……）"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ともかく、事情を聞きましょう。"])
+    ShowText(["いったいなぜ、魔物同士が争っているのです……？"])
+    ConditionalBranch([4, 241, 0])
+      ShowTextAttributes(["a_emp_fc1", 0, 0, 2])
+      ShowText(["【プリエステス】"])
+      ShowText(["どうせ、いつもの事でしょう……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 242, 0])
+      ShowTextAttributes(["a_emp_fc1", 3, 0, 2])
+      ShowText(["【プリエステス】"])
+      ShowText(["どうせ、いつもの事でしょう……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["分かりました、お話ししましょう。"])
+    ShowText(["どうぞ、安全な場所までいらして下さい……"])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([60])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 600, 35, 42, 8, 2])
+    FadeinScreen([])
+    Wait([30])
+    ShowPicture([5, "80_sisterlamia_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["この村では、ラミア族とスキュラ族が暮らしていますが……"])
+    ShowText(["御存知の通り、両者はとても仲が悪いのです。"])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["そんな中、このプランセクト村の帰属を巡って……"])
+    ShowText(["とうとう、ラミアとスキュラの戦争が起きてしまいました。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ここでは、ラミア族とスキュラ族が争っているのか……"])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["どこの世界も、争いは絶えないのね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達の世界のプランセクト村では、植物族と昆虫族が争っていた。"])
+    ShowText(["世界が異なれば、そうした事情も異なるらしい。"])
+    ShowPicture([5, "80_sisterlamia_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["私達ラミア族の長は、クィーンラミア。"])
+    ShowText(["そしてスキュラ族の長は、クィーンスキュラなのですが……"])
+    ShowPicture([5, "80_cirquec_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["クィーンラミアは、元来お優しいお方。"])
+    ShowText(["スキュラ族との戦争など、望んでおられないのです。"])
+    ShowPicture([5, "80_cirquec_st51", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["かたや、クィーンスキュラも融和的な考えを持つと聞きます。"])
+    ShowText(["こたびの戦いは、両女王ともに本来望まぬ戦いなのです。"])
+    ShowPicture([5, "80_sisterlamia_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……なるほど、ありがちな話ですね。"])
+    ShowText(["しかし、種族内の主戦派に押し切られてしまったと。"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["流石はイリアス様、まさしくおっしゃる通りです。"])
+    ShowPicture([5, "80_jormungand_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["ラミア族主戦派のトップは、蛇魔貴族ヨルムンガンド……"])
+    ShowText(["クィーンラミアに次ぐナンバー2、実力でも女王に並びます。"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["非常に好戦的で、力による支配を旨とし……"])
+    ShowText(["スキュラ族との戦争を大いに後押ししたのも、この方です。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["そして、ラミア族の多くがヨルムンガンドに賛同したと……"])
+    ShowText(["魔物の大半は野蛮で血気盛んですから、そうもなりますか。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そんな状勢なら、いかに自分自身は戦争に反対だとしても……"])
+    ShowText(["クィーンラミアは、戦争を始めるしかないわけだね。"])
+    ShowPicture([5, "80_sisterlamia_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["そしてスキュラ族も、我が方と事情は似通っているのです。"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["クィーンスキュラは、スキュラ族でトップの実力者ですが……"])
+    ShowText(["理知的であり、無益な戦いには反対だったという話です。"])
+    ShowPicture([5, "80_asmodeus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["しかしスキュラ族にも、主戦派を束ねるナンバー2がいます。"])
+    ShowText(["それが、海魔貴族アスモデウス……"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["その力は、クィーンスキュラに迫るという実力者。"])
+    ShowText(["アスモデウスの強硬な開戦論が、女王を押し切ったのです。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["スキュラ族も、主戦派が穏健派を圧したのですね。"])
+    ShowText(["女王とて、内部最大派閥は無視できないという事ですか。"])
+    ConditionalBranch([4, 34, 0])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["主戦派を強引に圧すれば、今度は内部抗争が起きる……"])
+      ShowText(["内戦よりは、他種族と戦った方がマシという判断ね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_sisterlamia_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["こうして、ラミアとスキュラの戦争が始まってしまいました。"])
+    ShowText(["私は、なんとしてもこの戦いを止めたいのです……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["女王の意向さえ、派閥の論理に阻まれる政治状況……"])
+    ShowText(["あなた個人が、どうするというのです。"])
+    ShowTextAttributes(["sisterlamia_fc1", 1, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["神にすがれば、奇跡が起きると信じていました。"])
+    ShowText(["そして祈りが通じ、イリアス様が降臨なされたのです！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["祈りや奇跡で、物事を収めようとするなど……"])
+    ShowText(["こうした思考停止の愚者を量産したのは、信仰の弊害ですね。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["何を今さら……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["でも、争いを止めたい気持ちは理解できるよ。"])
+    ShowText(["イリアス様、なんとか助けられませんか……？"])
+    ConditionalBranch([4, 538, 0])
+      ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+      ShowText(["【ハインリヒ】"])
+      ShowText(["僕からもお願いします。"])
+      ShowText(["第三者の立場で、調停を進められないでしょうか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["まったく、仕方ないですね……"])
+    ShowText(["私が軽んじられているというのも、癪に障ります。"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……いいでしょう、一肌脱ぐとしましょうか。"])
+    ShowText(["この下らない争い、私の力で終わらせます。"])
+    ShowPicture([5, "80_sisterlamia_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["流石はイリアス様！　ありがとうございます！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["しかし、この村には弱い魔物しか残っていないようですね。"])
+    ShowText(["女王や強者達は、いったいどこに行ったのです？"])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["クィーンラミア様は、ゴルド火山洞窟に向かいました。"])
+    ShowText(["火の精霊に力を借り、戦局を優位にしようとお考えです。"])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソロミ】"])
+    ShowText(["それに対抗し、クィーンスキュラは水精の泉に……"])
+    ShowText(["水の精霊に力を得ようと目論んでいるようです。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["クィーンラミアもクィーンスキュラも、"])
+    ShowText(["精霊の力を求めに行ったのですか……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["どちらか、あるいは両者が精霊の力を手にしては厄介です。"])
+    ShowText(["今すぐ、阻止に向かいましょう！"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 3, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["ははっ、両方叩きのめす流れだな！"])
+      ShowText(["それが一番面白そうだぜ！"])
+      ConditionalBranch([4, 401, 0])
+        ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+        ShowText(["【グノーシス】"])
+        ShowText(["あくまで、女王が精霊の力を手にするのを防ぐ事が主目的。"])
+        ShowText(["全面的な激突は、回避する事を強く推奨……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["クィーンラミアは、ゴルド火山……"])
+    ShowText(["クィーンスキュラは、水精の泉だったね。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ゴルド火山は、グランゴルド城から西。"])
+    ShowText(["溶岩地帯にある巨大な火山洞窟だ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["水精の泉は、僕達の世界ではウンディーネの泉と呼ばれていた。"])
+    ShowText(["この村から北西の方角にある、静かな泉だ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["どちらかが精霊の力を手にすれば、戦争を終わらせるどころではない。"])
+    ShowText(["ゴルド火山と水精の泉、両方で女王達を阻止しなければ――"])
+    ErasePicture([5])
+    ControlVariables([1158, 1158, 0, 0, 2])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["lamia_fc1", 0, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["闇の契約により、この泉周辺での戦闘行為は禁止よ。"])
+      ShowText(["まあ、今ここには襲ってくる魔物なんていないけどね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["女王様、二人とも泣いてたわ。"])
+      ShowText(["暴虐の女神、やっぱりハンパないわね……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+      ShowText(["【スキュラ】"])
+      ShowText(["今のクィーンスキュラは、海棲種の血も混じった稀種。"])
+      ShowText(["深海の主としての力さえ備えた、歴代でも最強の女王よ。"])
+      ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+      ShowText(["【スキュラ】"])
+      ShowText(["それでいながら、非常に穏やかで心優しい方なのよ。"])
+      ShowText(["戦争を望んでおられないのに、どうしてこのような事に……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+      ShowText(["【スキュラ】"])
+      ShowText(["女王様にもアスモデウス様にも勝つなんて……"])
+      ShowText(["あなた達、とんでもなく強いのね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["lamiad_fc1", 0, 0, 2])
+      ShowText(["【デーモンラミア】"])
+      ShowText(["クィーンラミア様は、巫女ラミアの系譜から出た方なの。"])
+      ShowText(["だから、ラミアには珍しく癒しの力に通じているわ。"])
+      ShowTextAttributes(["lamiad_fc1", 0, 0, 2])
+      ShowText(["【デーモンラミア】"])
+      ShowText(["聖母と称され、とても強くお優しい方なのだけど……"])
+      ShowText(["この情勢下では、主戦派に反発される事も多いわね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["lamiad_fc1", 2, 0, 2])
+      ShowText(["【デーモンラミア】"])
+      ShowText(["クィーンは両名とも、女神の軍門に降る事になったわ。"])
+      ShowText(["いったい、どんな恐ろしい制裁が行われたのかしら……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["scyllad_fc1", 0, 0, 2])
+      ShowText(["【デーモンスキュラ】"])
+      ShowText(["海魔貴族アスモデウス様も、蛇族のヨルムンガンドも……"])
+      ShowText(["上位魔界貴族として、邪神城の最奥にも入れる方々なの。"])
+      ShowTextAttributes(["scyllad_fc1", 0, 0, 2])
+      ShowText(["【デーモンスキュラ】"])
+      ShowText(["その実力も、折り紙付きよ。"])
+      ShowText(["両者とも、戦闘能力ではクィーンに引けを取らないとか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["scyllad_fc1", 0, 0, 2])
+      ShowText(["【デーモンスキュラ】"])
+      ShowText(["主戦派は、まだ残ってるけど……"])
+      ShowText(["女神の報復を恐れて、村の離れをコソコソしてるくらいよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["alraune_fc1", 0, 0, 2])
+      ShowText(["【アルラウネ】"])
+      ShowText(["ラミアとスキュラは、この村でずっと争ってるんですよ。"])
+      ShowText(["どっちもニョロニョロしてるし、仲良くすればいいのに……"])
+      ShowTextAttributes(["alraune_fc1", 0, 0, 2])
+      ShowText(["【アルラウネ】"])
+      ShowText(["えっ、植物族と虫族の仲？"])
+      ShowText(["別に、敵対したりはしていませんよ……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["alraune_fc1", 2, 0, 2])
+      ShowText(["【アルラウネ】"])
+      ShowText(["みんな仲良しが、一番素敵ですよね……"])
+      ShowText(["このまま、世界中が平和になればいいのに。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["suzumebati_fc1", 0, 0, 2])
+      ShowText(["【スズメバチ娘】"])
+      ShowText(["蛇ト触手ノ戦争、不合理……"])
+      ShowText(["広イ村ダカラ、分ケ合エバイイノニ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["suzumebati_fc1", 0, 0, 2])
+      ShowText(["【スズメバチ娘】"])
+      ShowText(["戦争、終ワッタ……"])
+      ShowText(["コノ村、ミンナノモノ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["私は、ラミアの中でも弱い方だから……"])
+      ShowText(["戦争とか、あんまりついていけないのよね。"])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["実際、大半のラミアは戦争なんて望んじゃいないわよ。"])
+      ShowText(["覇権に熱心な、上の方の連中は知らないけどね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【ラミア】"])
+      ShowText(["ひゃっ、女神イリアス！？"])
+      ShowText(["たすけて、バラバラにするのはやめてー！！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+      ShowText(["【スキュラ】"])
+      ShowText(["天使の軍団が、魔界に攻めて来るっていう情勢なのに……"])
+      ShowText(["魔物同士で争っている場合なのかしら？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["scylla_fc1", 2, 0, 2])
+      ShowText(["【スキュラ】"])
+      ShowText(["この村の騒乱は収まっても、アポクリファは終わらないわ。"])
+      ShowText(["女神と邪神が激突すれば、どれだけ世界が壊れるのか……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["saboten_fc1", 0, 0, 2])
+      ShowText(["【サボテン娘】"])
+      ShowText(["ここの連中の言うこと、話半分に聞いていた方がいいですよ。"])
+      ShowText(["泉の周辺から離れられないのは、非戦派のみですから……"])
+      ShowTextAttributes(["saboten_fc1", 0, 0, 2])
+      ShowText(["【サボテン娘】"])
+      ShowText(["主戦派の連中は、女王と一緒に精霊の元に行っています。"])
+      ShowText(["かなり強力な者が多いので、お気をつけ下さいね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["saboten_fc1", 2, 0, 2])
+      ShowText(["【サボテン娘】"])
+      ShowText(["あら、戦争は終わってしまったのですか。"])
+      ShowText(["このまま両者が潰し合えば、植物族の天下もありえたのに……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["dryad_fc1", 6, 0, 2])
+      ShowText(["【ドリアード】"])
+      ShowText(["対岸の火事とは言っていられないわね。"])
+      ShowText(["以前に戦いに巻き込まれて、ラミアに呑まれかけたわ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["dryad_fc1", 6, 0, 2])
+      ShowText(["【ドリアード】"])
+      ShowText(["ヨルムンガンドもアスモデウスも……"])
+      ShowText(["天使の牢獄に、ずっと閉じ込めておけばいいのよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1158, 0, 4, 2])
+      ShowTextAttributes(["e_scylla_fc1", 0, 0, 2])
+      ShowText(["【エルダースキュラ】"])
+      ShowText(["アスモデウス様も、何を息巻いておられるのやら……"])
+      ShowText(["どうせ私達は、湿った場所が一番生きやすいのに。"])
+      ShowTextAttributes(["e_scylla_fc1", 0, 0, 2])
+      ShowText(["【エルダースキュラ】"])
+      ShowText(["こんな森、ラミア達にくれてやればいいのよ。"])
+      ShowText(["戦いなんて、馬鹿馬鹿しい……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1158, 0, 5, 1])
+      ShowTextAttributes(["e_scylla_fc1", 0, 0, 2])
+      ShowText(["【エルダースキュラ】"])
+      ShowText(["実は私、海賊団に入りたいのよ。"])
+      ShowText(["ロザ海賊団って、新規入団を受け付けているのかしら……？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4058, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([70, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([28, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1253, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([271, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([389, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([769, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["s_mermaid_fc1", 0, 0, 2])
+    ShowText(["【商人マーメイド】"])
+    ShowText(["プランセクト馴染みのよろず商人や。"])
+    ShowText(["いい秘石もあるで～！"])
+    ShowChoices([["買い物をする", "秘石の加工を頼む", "用はない"], 3])
+    When([0, "買い物をする"])
+      ShopProcessing([0, 3, 0, 0, false])
+      ShopItem([0, 4, 0, 0])
+      ShopItem([0, 7, 0, 0])
+      ShopItem([0, 11, 0, 0])
+      ShopItem([0, 22, 0, 0])
+      ShopItem([0, 23, 0, 0])
+      ShopItem([0, 35, 0, 0])
+      ShopItem([0, 102, 0, 0])
+      ShopItem([0, 109, 0, 0])
+      ShopItem([0, 110, 0, 0])
+      ShopItem([0, 65, 0, 0])
+      ShopItem([0, 69, 0, 0])
+      ShopItem([0, 73, 0, 0])
+      ShopItem([2, 4063, 0, 0])
+      ShopItem([2, 4101, 0, 0])
+      ShopItem([0, 2455, 0, 0])
+      ShopItem([0, 2460, 0, 0])
+      ShopItem([0, 3658, 0, 0])
+      ShopItem([0, 4034, 0, 0])
+      ShopItem([0, 4040, 0, 0])
+      ShopItem([0, 3442, 0, 0])
+      Empty([])
+
+    When([1, "秘石の加工を頼む"])
+      Script(["call_synthesize(80)"])
+      Empty([])
+
+    When([2, "用はない"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])

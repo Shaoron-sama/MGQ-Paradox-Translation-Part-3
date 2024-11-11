@@ -1,0 +1,1674 @@
+Display Name = "たぬきの里"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["明かり設定2160500"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment(["明かり設定2160500"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["明かり設定2160500"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["明かり設定2160500"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["屋内に入るのはやめておけ。"])
+      ShowText(["ここのたぬきは出払っている、情報は得られんぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["中に入るのは、時間の無駄です。"])
+      ShowText(["ここのたぬきも外で応戦しており、情報は得られません。"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["屋内に入るのはやめておけ。"])
+      ShowText(["ここのたぬきは出払っている、情報は得られんぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["中に入るのは、時間の無駄です。"])
+      ShowText(["ここのたぬきも外で応戦しており、情報は得られません。"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["屋内に入るのはやめておけ。"])
+      ShowText(["ここのたぬきは出払っている、情報は得られんぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["中に入るのは、時間の無駄です。"])
+      ShowText(["ここのたぬきも外で応戦しており、情報は得られません。"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["この家の中に、たまも様はいなかった……"])
+    ShowText(["よその家を土足で踏み荒らすのは、やはり嫌な気分だな。"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 210, 46, 12, 0, 0])
+    ConditionalBranch([2, "A", 1])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["洞の中には、誰もいない……"])
+        ShowText(["……いや、たまものように封印されているとしたら？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["洞の中には、誰もいませんね……"])
+        ShowText(["……いや、たまものように封印されているとしたら？"])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 396, 160, 0, 0])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["mametanuki_fc1", 0, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["故郷を守るためなら……"])
+    ShowText(["あたし達だって、戦えるんだからね！"])
+    BattleProcessing([0, 1464, false, false])
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["この里の洞はどこにある？　教えろ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さあ、吐きなさい！"])
+      ShowText(["この里の洞は、どこにあるのです！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["おだんご屋さんの北だよ……"])
+    ShowText(["建物の裏手に回って、まっすぐ進むの。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["洞の場所が分かったね……さあ、行こう！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["洞の場所は、おだんご屋さんの北だよ……"])
+    ShowText(["建物の裏手に回って、まっすぐ進むの。"])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowPicture([5, "80_kunoitisanbi_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["腹黒いたぬき共め！"])
+    ShowText(["たまも様を帰してもらうぞ！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["な、何のこと……？　ひゃぁっ！"])
+    ShowPicture([5, "80_onmyougobi_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["onmyougobi_fc1", 0, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["出でよ、前鬼並びに後鬼！"])
+    ShowText(["悪辣なるたぬき共に天誅を下すのだ！"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ShowPicture([5, "80_zenki_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_kouki_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["zenki_fc1", 0, 0, 2])
+    ShowText(["【前鬼】"])
+    ShowText(["召喚に応じて来てやったぜ！"])
+    ShowText(["タヌキ共と叩きのめせばいいんだな！"])
+    ShowTextAttributes(["kouki_fc1", 0, 0, 2])
+    ShowText(["【後鬼】"])
+    ShowText(["ふふふっ、腕が鳴るねぇ……"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["きつね共の襲撃だぁ！"])
+    ShowText(["であえ、であえー！！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["こちらの里も、すでに戦場か！"])
+      ShowText(["まずいぞ、戦火が拡大していく……！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["くくく……殺し合え、殺し合え……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……と言いたいところですが、黒のアリスを利するばかり。"])
+      ShowText(["今は、この争いを止めます！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 106, 0])
+      ShowTextAttributes(["nanabi_fc1", 2, 0, 2])
+      ShowText(["【七尾】"])
+      ShowText(["我々としても、このような戦いは本意ではありません。"])
+      ShowText(["しかし、これを止められるのは互いの長のみ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["捜索の魔網で、黒狸を探しましょう。"])
+    ShowText(["かの者とは面識がないので、感知できるかどうか……"])
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["……洞の方から、異質な力を感知しました。"])
+    ShowText(["強い力の持ち主が、そこにいるようですね。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["この里にも、洞はあったな……"])
+      ShowText(["よし、すぐそこに行くぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この里にも、洞がありましたね……"])
+      ShowText(["さっそく、そこに急ぐのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["でも、その洞の場所は……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["そこら辺のたぬきを叩きのめして、聞き出すのだ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そこらのたぬきを叩きのめし、吐かせるのです！"])
+      ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["今度はきつね狩り……じゃないのかぁ。"])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["だから、狩っては駄目だと言ってるでしょ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["乱暴だなぁ……"])
+    ShowText(["でも、早く黒狸を見つけないと！"])
+    ConditionalBranch([4, 102, 0])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["【きつね】"])
+      ShowText(["たまも様を助けるために、がんばるよ～！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_inugami_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["う、ウェヒ……るい～……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["隠神刑部狸はふらふらしている……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["目の前に、例の洞があるというのに……"])
+      ShowText(["このタヌキ、邪魔しているのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["目の前に、例の洞があるというのに……"])
+      ShowText(["この酔っ払いタヌキが邪魔ですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あの、悪いけど……そこをどいてもらえないかな？"])
+    ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["こ、こラぁ……のけ、そっちが……のけ……"])
+    ShowText(["ウヒ、ウェヒヒヒ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["相当に酔っているな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これは……ダメですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["こんな状況、飲まずにいられるかって……"])
+    ShowText(["ちょっと飲み過ぎてぇ、ウヒヒヒィ……"])
+    ShowPicture([5, "80_inugami_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["inugami_fc1", 2, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["……などと言っている場合ではありません、場を収めねば！"])
+    ShowText(["大丈夫、もう酔いは醒めました！"])
+    ShowPicture([5, "80_inugami_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["……なんつて！　チョット酔ってま～す！"])
+    ShowText(["ウェヒ、ヒヒヒヒィ……！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……もういい、ぶちのめすぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["付き合っていられません！　叩きのめします！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 74, 0])
+      ShowTextAttributes(["usagi_fc1", 2, 0, 2])
+      ShowText(["【バーニー】"])
+      ShowText(["私の人生、ヨッパライに苦労させられる宿命なのかしら……"])
+      ConditionalBranch([4, 75, 0])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【メリー】"])
+        ShowText(["うさぎよ。"])
+        ShowText(["それを言うなら、「人生」ではなく「兎生」ではないか？"])
+        ShowTextAttributes(["usagi_fc1", 4, 0, 2])
+        ShowText(["【バーニー】"])
+        ShowText(["ヨッパライは黙ってなさい！"])
+        ShowTextAttributes(["inugami_fc1", 2, 0, 2])
+        ShowText(["【隠神刑部狸】"])
+        ShowText(["あらぬ殺気を感じるわ！"])
+        ShowText(["これが噂の、ヨッパライ狩り……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1475, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_inugami_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["inugami_fc1", 2, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["さ、酒……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["あの……"])
+    ShowPicture([5, "80_inugami_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["inugami_fc1", 1, 0, 2])
+    ShowText(["【隠神刑部狸】"])
+    ShowText(["……ヘヒィ。"])
+    PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+    ControlSelfSwitch(["A", 0])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["隠神刑部狸はその場に倒れ伏した！"])
+    ShowText(["どうやら眠ってしまったようだ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["これが、狸族のナンバー2とは……"])
+      ShowText(["この種族、大丈夫なのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これが、狸族のナンバー2です。"])
+      ShowText(["この者達の未来は暗いですね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 406, 0])
+      ShowTextAttributes(["queenroach_fc1", 1, 0, 2])
+      ShowText(["【グロア】"])
+      ShowText(["部下に恵まれんとは……"])
+      ShowText(["黒狸とやら、哀れよな。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["とにかく、洞に入ろう！"])
+    PlayBGM(["RPG::BGM(@name=\"kiki1\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["shinobitanuki_fc1", 0, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["きつね族の手先め！"])
+    ShowText(["これ以上、ボク達の里を好きにはさせないぞ！！"])
+    BattleProcessing([0, 1467, false, false])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この里にある洞の場所を教えてくれないか……？"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["何で、そんなところに行きたいの？"])
+    ShowText(["ともかく、侵略者には何も教えないんだからね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["侵略者には何も教えないんだからね……"])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    ShowTextAttributes(["zyoutanuki_fc1", 0, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["故郷を守るためなら、この身を犠牲にしてでも……！"])
+    BattleProcessing([0, 1465, false, false])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この里にある洞の場所を教えてくれないか……？"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["ヒェッ！　拷問されても、何も言いませんから～！！"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["拷問されても、何も言いませんから～！！"])
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    ShowTextAttributes(["baketanuki_fc1", 0, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["この里にまで、戦火を及ぼした報い……"])
+    ShowText(["その身で受けてもらいましょう！"])
+    BattleProcessing([0, 1469, false, false])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この里にある洞の場所を教えてくれないか……？"])
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["侵略者に教える事など、何もありません……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["侵略者に教える事など、何もありません……"])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["ど、どうしよう～！"])
+    ShowText(["黒狸さま～！　わ～ん！！"])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["黒狸め、許すまじ……"])
+    ShowText(["間の抜けた者だと思っていたが、ここまで悪辣だったとは！"])
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["よくも我が里を踏み荒らしてくれたな！"])
+    ShowText(["今度はこっちの番だ！"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["仕掛けてきたのは、そっちが先じゃないですか！"])
+    ShowText(["返り討ちにして、黒狸様を返してもらいます！"])
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    ShowTextAttributes(["mononohuyonbi_fc1", 0, 0, 2])
+    ShowText(["【もののふ四尾】"])
+    ShowText(["よくも我が里を踏み荒らしてくれたな！"])
+    ShowText(["今度はこっちの番だ！"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["仕掛けてきたのは、そっちが先じゃないですか！"])
+    ShowText(["返り討ちにして、黒狸様を返してもらいます！"])
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 1, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["者ども、進め！"])
+    ShowText(["このまま、黒狸の奴を引きずり出すぞ！！"])
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["自分たちで捕らえておいて、世迷い言を……！！"])
+    ShowText(["あの方の家は、守り通します！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["言葉の説得は通じそうにないか……"])
+    ShowText(["でも、黒狸本人がここに来れば……！"])
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 1, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["者ども、進め！"])
+    ShowText(["このまま、黒狸の奴を引きずり出すぞ！！"])
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["自分たちで捕らえておいて、世迷い言を……！！"])
+    ShowText(["あの方の家は、守り通します！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["言葉の説得は通じそうにないか……"])
+    ShowText(["でも、黒狸本人がここに来れば……！"])
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 1, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["者ども、進め！"])
+    ShowText(["このまま、黒狸の奴を引きずり出すぞ！！"])
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["自分たちで捕らえておいて、世迷い言を……！！"])
+    ShowText(["あの方の家は、守り通します！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["言葉の説得は通じそうにないか……"])
+    ShowText(["でも、黒狸本人がここに来れば……！"])
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 1, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["者ども、進め！"])
+    ShowText(["このまま、黒狸の奴を引きずり出すぞ！！"])
+    ShowTextAttributes(["baketanuki_fc1", 2, 0, 2])
+    ShowText(["【化け狸】"])
+    ShowText(["自分たちで捕らえておいて、世迷い言を……！！"])
+    ShowText(["あの方の家は、守り通します！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["言葉の説得は通じそうにないか……"])
+    ShowText(["でも、黒狸本人がここに来れば……！"])
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    ShowTextAttributes(["zenki_fc1", 0, 0, 2])
+    ShowText(["【前鬼】"])
+    ShowText(["おらおら！　楽しませてもらうぜぇ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["さ、最上位の式神……"])
+    ShowText(["こんなの、やられちゃうよ～！"])
+    Empty([])
+
+CommonEvent 86
+Name = "EV086"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 0, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["さあ行け！　前鬼、後鬼！"])
+    Empty([])
+
+CommonEvent 87
+Name = "EV087"
+
+  Page 0
+    ShowTextAttributes(["kouki_fc1", 0, 0, 2])
+    ShowText(["【後鬼】"])
+    ShowText(["タヌキってのは、この程度なのかい？"])
+    ShowText(["ほぉら、もっと根性を見せなよ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["ま、負けないからね……！！"])
+    Empty([])
+
+CommonEvent 88
+Name = "EV088"
+
+  Page 0
+    ShowTextAttributes(["zenki_fc1", 0, 0, 2])
+    ShowText(["【前鬼】"])
+    ShowText(["おらおら！　楽しませてもらうぜぇ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["さ、最上位の式神……"])
+    ShowText(["こんなの、やられちゃうよ～！"])
+    Empty([])
+
+CommonEvent 89
+Name = "EV089"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["屋内に入るのはやめておけ。"])
+      ShowText(["ここのたぬきは出払っている、情報は得られんぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["中に入るのは、時間の無駄です。"])
+      ShowText(["ここのたぬきも外で応戦しており、情報は得られません。"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 90
+Name = "EV090"
+
+  Page 0
+    ShowTextAttributes(["kouki_fc1", 0, 0, 2])
+    ShowText(["【後鬼】"])
+    ShowText(["タヌキってのは、この程度なのかい？"])
+    ShowText(["ほぉら、もっと根性を見せなよ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 2, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["ま、負けないからね……！！"])
+    Empty([])
+
+CommonEvent 91
+Name = "EV091"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 2, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["互いに、互いの頭領を返せと言い合っている……"])
+    ShowText(["この戦い、何かおかしいぞ。"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["なんだか、陰謀の匂いがするよ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["少数の者が気付いたとて、歯止めはかかるまい。"])
+      ShowText(["一刻も早く、黒狸を見つけ出さねばな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私の扇動経験からするに……"])
+      ShowText(["三割の馬鹿が動けば、事態に歯止めが掛からなくなります。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["少数の者が陰謀に気付いたとて、止められません。"])
+      ShowText(["事態を収拾するには、黒狸を見つけ出すしかありませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 92
+Name = "EV092"
+
+  Page 0
+    ShowTextAttributes(["onmyougobi_fc1", 2, 0, 2])
+    ShowText(["【陰陽五尾】"])
+    ShowText(["互いに、互いの頭領を返せと言い合っている……"])
+    ShowText(["この戦い、何かおかしいぞ。"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["なんだか、陰謀の匂いがするよ……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["少数の者が気付いたとて、歯止めはかかるまい。"])
+      ShowText(["一刻も早く、黒狸を見つけ出さねばな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私の扇動経験からするに……"])
+      ShowText(["三割の馬鹿が動けば、事態に歯止めが掛からなくなります。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["少数の者が陰謀に気付いたとて、止められません。"])
+      ShowText(["事態を収拾するには、黒狸を見つけ出すしかありませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 93
+Name = "EV093"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 94
+Name = "EV094"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 95
+Name = "EV095"
+
+  Page 0
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["さあ、たまも様を解放せよ！"])
+    ShowText(["さもなくば、里を焼き払うぞ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 0, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["そっちこそ、たまも様を返せ！"])
+    ShowText(["こうなったら、忍術合戦だ～！！"])
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 97
+Name = "EV097"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 98
+Name = "EV098"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 99
+Name = "EV099"
+
+  Page 0
+    ShowTextAttributes(["kunoitisanbi_fc1", 0, 0, 2])
+    ShowText(["【くのいち三尾】"])
+    ShowText(["さあ、たまも様を解放せよ！"])
+    ShowText(["さもなくば、里を焼き払うぞ！"])
+    ShowTextAttributes(["shinobitanuki_fc1", 0, 0, 2])
+    ShowText(["【忍狸】"])
+    ShowText(["そっちこそ、たまも様を返せ！"])
+    ShowText(["こうなったら、忍術合戦だ～！！"])
+    Empty([])
+
+CommonEvent 100
+Name = "EV100"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 101
+Name = "EV101"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 102
+Name = "EV102"
+
+  Page 0
+    ShowTextAttributes(["oiranrokubi_fc1", 1, 0, 2])
+    ShowText(["【花魁六尾】"])
+    ShowText(["踊れや、踊れ……♪"])
+    ShowText(["力尽きて、果てるまでな……♪"])
+    ShowTextAttributes(["zyoutanuki_fc1", 2, 0, 2])
+    ShowText(["【上狸】"])
+    ShowText(["か、体が勝手に……！"])
+    ShowText(["踊るのを止められません……！！"])
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["うわ～ん！　疲れたよ、苦しいよ～！！"])
+    Wait([30])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ひどい事を……すぐにやめさせよう！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["我々が狐側を攻撃すれば、話はこじれるばかりだ。"])
+      ShowText(["やめさせるには、黒狸を見つけるのが得策だぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私たちが狐側を攻撃すれば、話はますますこじれますよ。"])
+      ShowText(["一刻も早く黒狸を見つけ、事態を収拾するのが得策です。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 103
+Name = "EV103"
+
+  Page 0
+    ShowTextAttributes(["mametanuki_fc1", 0, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["むしゃむしゃ……"])
+    ShowText(["戦いをサボってること、ヒミツにしてね。"])
+    Empty([])
+
+CommonEvent 104
+Name = "EV104"
+
+  Page 0
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["【銀牙】"])
+    ShowText(["もぐもぐ……"])
+    ShowText(["たぬきと仲良くしてるの、仲間にはヒミツにしてね。"])
+    Empty([])
+
+CommonEvent 105
+Name = "EV105"
+
+  Page 0
+    ShowTextAttributes(["mametanuki_fc1", 2, 0, 2])
+    ShowText(["【豆狸】"])
+    ShowText(["戦いが怖くて、ここで隠れてるの……"])
+    ShowText(["あたしって、臆病者かなぁ？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["望まぬ戦いを避けるのも、立派な勇気。"])
+      ShowText(["ここで隠れているのだぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 106
+Name = "EV106"
+
+  Page 0
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["【かむろ二尾】"])
+    ShowText(["補給狐です！　薬をどうぞ！"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])

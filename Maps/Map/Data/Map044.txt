@@ -1,0 +1,304 @@
+Display Name = "グランゴルド 地下水路"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 49, 21, 1, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["せっかくここまで逃げて来たのです。"])
+    ShowText(["なぜ、わざわざ窮地に戻ろうとするのですか……？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["この地下水路……私達の世界でも見覚えがあるわね。"])
+    ShowText(["グランゴルド城に潜入する時に使ったっけ。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["すなわち、この水路は市街に繋がっているはず。"])
+    ShowText(["このまま抜ければ、脱出できますね。"])
+    ScrollMap([2, 5, 4])
+    Wait([60])
+    PlayBGM(["RPG::BGM(@name=\"scene_kanasimi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それにしても……この骨の量はなんなのです？"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["目につく限り、全て人間の骨じゃな。"])
+    ShowText(["大半は若い男で間違いなかろう……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["グランゴルドで失踪した若い男性達……"])
+    ShowText(["城内で嫐り殺しにされて、地下水路に捨てられたってことか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["どこまで、残酷で卑劣な行いをすれば気が済むのか。"])
+    ShowText(["六祖の華音――絶対に許しはしない。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["メフィスト……"])
+    ShowText(["この中にスイキの遺体がないか、探せませんか？"])
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["スイキのメモから、持ち主を魔術走査してみましょう。"])
+    ShowText(["書の記憶、連ねし主を求めよ――"])
+    PlaySE(["RPG::SE(@name=\"Saint3\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["白骨死体の一つが、輝きを放った！"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["反応がありました……"])
+    ShowText(["あの遺体が、スイキのものです。"])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["そんな……もう亡くなってたなんて……"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 4, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["やれやれ……後味の悪い結末になっちまったな。"])
+      Empty([])
+
+    BranchEnd([])
+    ScrollMap([8, 5, 4])
+    Wait([60])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……遺体を調べよう。"])
+    ShowText(["何か残しているかもしれない。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 17, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まずは、あの遺骨を調べましょう。"])
+      ShowText(["ここから脱出するのは、その後です……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 45, 37, 9, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 45, 47, 42, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 45, 21, 29, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 45, 7, 42, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    GatherFollowers([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["イリアスクロイツの工作員、スイキ……"])
+    ShowText(["こんな形で見つかるなんて……"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["若い女性の骨で間違いなかろう。"])
+    ShowText(["骨の表面が痛んでおる、おそらく消化液で溶かされたな。"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["しかもこれは、ごく最近のものじゃ。"])
+    ShowText(["こうなったのは、おそらく一週間以内……"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["どうやら、間違いないようね……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ちょっと待って、これは……手帳？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["人骨の側に落ちていたのは――"])
+    ShowText(["表紙がボロボロになった手帳のような冊子だった。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["なんとか、中は読めそうだね。"])
+    ShowText(["なんでこれは溶けなかったんだろう……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["なんらかの魔術で守られていたようですね。"])
+    ShowText(["おそらく、自分が死んでも記録を残すため――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["中身は、えっと……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["城下町の地図や、地下水路の構造。"])
+    ShowText(["見張りの位置や巡回時間などが、事細かに記されていた。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["これは、いわば彼女の遺産。"])
+    ShowText(["命を賭してスイキが遺した情報、私達が引き継ぎましょう。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これがあれば、グランゴルド攻略計画の助けになるはず。"])
+    ShowText(["後は、ここを抜けてゴルドポートに――"])
+    FadeoutBGM([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["ちょっと……私に挨拶もせずに、帰ろうっていうの？"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"mon_ero_makituki3\", @pitch=100, @volume=100)"])
+    ControlSwitches([32, 32, 0])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    Wait([30])
+    ShowPicture([6, "80_kanon_st12", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_kanon_st11", 0, 0, 200, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([5, nil, 0, 0, 200, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["不意に、地下水路に響く声――"])
+    ShowText(["同時に、床を突き破り無数の巨大食虫植物が現れた！"])
+    ShowTextAttributes(["kanon_fc1", 0, 0, 2])
+    ShowText(["【華音】"])
+    ShowText(["そのネズミを溶かして食べたのは、あたしよ。"])
+    ShowText(["鍛えられた人間の肉、とっても美味しかったわ……♪"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["華音……！？"])
+    ShowText(["まずいですね、見つかりましたか……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["六祖の一人、植物妖魔の祖である華音――"])
+    ShowText(["今の僕達には、あまりにも強大すぎる相手だ。"])
+    ShowTextAttributes(["kanon_fc1", 0, 0, 2])
+    ShowText(["【華音】"])
+    ShowText(["残念だけど……今、ちょっと手が離せないのよ。"])
+    ShowText(["だから、私の分身が相手をしてあげるわ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["巨大な食虫植物が、口を開けて迫ってくる――"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["逃げますよ、ルカ！"])
+    ShowText(["道を塞ぐ食虫植物は、片っ端から倒します！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["華音本体が来ないなら、何とかなるかも……"])
+    ShowText(["さあ、行くぞ！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ControlSwitches([509, 509, 0])
+    BattleProcessing([0, 1768, false, false])
+    PlayBGM(["RPG::BGM(@name=\"dungeon1\", @volume=100, @pitch=100)"])
+    ControlSwitches([32, 32, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["華音の操る、巨大食虫植物を倒した――"])
+    ShowText(["だが、周囲にはまだ無数の植物がいるようだ。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["このまま突っ切って、地下水路を抜けます！"])
+    ShowText(["なんとしてもグランゴルドから脱出しますよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……はい！！"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["（……華音は、手が離せない？"])
+    ShowText(["　いったい、何から……？）"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 4, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["なぁ、スイキの遺骨を持って帰ってやれないかな？"])
+      ShowText(["ここに放置なんて、あんまりだぜ……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["今は追われる身、私達とて余裕はありません。"])
+      ShowText(["この城を奪還した暁には、あらためて丁重に葬りましょう。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["シオン、意外に親切なのね……"])
+      ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["我々とて、命を賭して任務に赴く身……"])
+      ShowText(["任務の果てに力尽きたこの者には、思う事もある。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["今は……ここから出ましょう。"])
+      ShowText(["この事をイリアスクロイツに伝えるのです……"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1142, 1142, 0, 0, 18])
+    ControlVariables([1002, 1002, 0, 0, 77])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 45, 9, 5, 0, 0])
+    Empty([])

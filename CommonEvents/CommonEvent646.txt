@@ -1,0 +1,29 @@
+CommonEvent 646
+Name = "イベント：ナターシャ"
+
+  999([646])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([1, 129, 0, 0, 0])
+    ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+    ShowText(["【ナターシャ】"])
+    ShowText(["魔導書のページが不足してはいませんか？"])
+    ShowText(["特別に、差し入れをしてあげましょう……"])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ChangeItems([109, 0, 0, 10])
+    ControlVariables([129, 129, 0, 0, 1])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 129, 0, 1, 0])
+    ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+    ShowText(["【ナターシャ】"])
+    ShowText(["これ以上は、差し上げられません……"])
+    ShowText(["ページを破った魔導書が、ずいぶん薄くなってしまったので。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

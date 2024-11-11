@@ -1,0 +1,902 @@
+Display Name = "グランドノア城 B3F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 871, 3, 41, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 871, 3, 41, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 871, 3, 41, 8, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    GatherFollowers([])
+    ChangePlayerFollowers([1])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["tarsa_fc2", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["ほら、ほぉら……♡"])
+    ShowText(["お腹が減ったの、もっと出してよ……♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["あぁぁ……もう、やめてくれぇ……"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ターサ……！？　これは、いったい――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["周囲に転がっている囚人達は、いずれも衰弱しきっている。"])
+    ShowText(["まだみんな、息はあるようだが――"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowPicture([5, "80_tarsa_st12", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["あっ……ノビッサにレスト……"])
+    ShowText(["来てくれたんだ……♡"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ターサ……何をしてるんだ！？"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["この四魔柱に力を注いで、ゲートを大きくするんだけど……"])
+    ShowText(["それって、すっごくお腹が空くのよ。"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["でも、お腹が減ったら囚人達から吸ってもいいって……"])
+    ShowText(["うふふっ、悪くない報酬よね♪"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ゲートを大きくする……？"])
+    ShowText(["それは、まさか――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミュゼットは、魔城の召喚を目論んでいるという。"])
+    ShowText(["そのために、よりゲートを大きく開くつもりなのだ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["やめるんだ、ターサ！"])
+    ShowText(["そんな事をしたら、この世界が――"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["ねぇ、二人も一緒にヤろうよ……♪"])
+    ShowText(["みんなで、気持ちよくなろ……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ターサ……！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ダメだ、全く聞き入れてくれない。"])
+    ShowText(["ミュゼットのせいで、正気を失っているようだ。"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ノビッサはおもむろに、巨剣を取り出した！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ショックを与えて、正気に戻すって……"])
+    ShowText(["ノビッサ、ちょっと乱暴すぎないか……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そうは言いつつも、他に有効な手立てはない。"])
+    ShowText(["多少乱暴でも、やるしかないか――"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["あははっ、激しくイくのぉ……？"])
+    ShowText(["いいわよ、いっぱい愉しみましょ♪"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["怪我はさせないように……"])
+    ShowText(["仕方ない、行くぞっ！"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1366, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_tarsa_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["あいたたた……"])
+    ShowText(["頭が、ガンガン響いて……"])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["あれ、ノビッサにレスト……！？"])
+    ShowText(["それに、ここは――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ようやく、元に戻ったのか……"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ノビッサは、簡単に事情を説明した――"])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["あっ、またやっちゃったんだ……"])
+    ShowText(["でも最近は、理性まで失う事はなかったのに。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["たぶん、ミュゼットの仕業だろう……"])
+    ShowText(["あいつは、洗脳や誘惑はお手のものなんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ともかく、これでターサは正気に戻った。"])
+    ShowText(["魔城の召喚を、なんとか未然に防いだのだ――"])
+    ErasePicture([5])
+    Wait([30])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ターサも助けたし、ここにもう用はない！"])
+    ShowText(["さあ、早く脱出しよう――"])
+    ConditionalBranch([6, -1, 8])
+      ControlVariables([11, 11, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([6, -1, 4])
+      ControlVariables([11, 11, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([6, -1, 6])
+      ControlVariables([11, 11, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ふふ……そうはいかないわ。"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowAnimation([7, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    Wait([120])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ミュゼット……！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["四魔柱へのエナジー充填度、95%といったところね。"])
+    ShowText(["あと少しで、こんな邪魔が入るなんて――"])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["もう、私は正気を取り戻したわ！"])
+    ShowText(["あなたの操り人形なんて、ならないわよ！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["すぐに再洗脳するのは困難なようね。"])
+    ShowText(["仕方ない、力尽くでも従ってもらうわ……！"])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_dageki2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=14, @parameters=[-5, 5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_dageki2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-5, 5])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["そんな事、させはしない！"])
+    ShowText(["ミュゼット、ここでお前を倒す！！"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["私も、戦うわ……"])
+    ShowText(["今まで迷惑をかけた分まで、働くから！"])
+    Script(["add_temp_actors(825)"])
+    ConditionalBranch([12, "actor_class_level_over?(825, 175, 1)"])
+      Empty([])
+
+    Else([])
+      Script(["force_change_equip(825,1,1,740)"])
+      Script(["set_class_level(825, 97, 10, false, false)"])
+      ScriptMore(["set_class_level(825, 175, 10, false, false)"])
+      ScriptMore(["set_class_level(825, 176, 10, false, true)"])
+      Script(["persona_change(825)"])
+      Empty([])
+
+    BranchEnd([])
+    RecoverAll([0, 825])
+    ChangeSkills([0, 824, 0, 273])
+    ChangeSkills([0, 824, 0, 274])
+    ChangeSkills([0, 825, 0, 2509])
+    ChangeSkills([0, 825, 0, 2047])
+    ChangeSkills([0, 825, 0, 2068])
+    ChangeSkills([0, 823, 0, 5838])
+    ChangeSkills([0, 823, 0, 5839])
+    ChangeSkills([0, 823, 0, 5840])
+    ChangeSkills([0, 823, 0, 5841])
+    ChangeSkills([0, 823, 0, 5842])
+    PlayME(["RPG::ME(@name=\"mon_fanfale3\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサが再び仲間になった！"])
+    ShowText(["ノビッサは、アシストスキルが使えるようになった！"])
+    Wait([60])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["万能剣士、それに異世界の勇者……"])
+    ShowText(["あなた達も洗脳して、私の手駒にしてあげるわ！"])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss2\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1367, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -2])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -2])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["くっ、ずいぶん小癪な真似を……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達の奮戦の前に、ミュゼットはたじろいだ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["観念するんだ、ミュゼット！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["四魔柱へのエナジー充填度は、95%……"])
+    ShowText(["これだけあれば、不完全でも魔城召喚は出来るはず。"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！？"])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["……まずいわ！"])
+    ShowText(["力不足でも、強引に魔城を召喚する気よ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["くっ……させるか！！"])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_dageki2\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"mon_dageki2\\\", @pitch=100, @volume=100)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["このグランドノア城を依代にして……"])
+    ShowText(["魔城トゥーロマンサ、夢の導きに応じて現界しなさい！"])
+    PlaySE(["RPG::SE(@name=\"mon_earth1\", @pitch=100, @volume=100)"])
+    ShakeScreen([9, 9, 120, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["じ、地震……！？　いや――"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ホホホ……刮目しなさい！"])
+    ShowText(["この世界に君臨する、魔城の偉容を――"])
+    PlaySE(["RPG::SE(@name=\"mon_earth2\", @pitch=100, @volume=100)"])
+    ShakeScreen([9, 9, 120, true])
+    ControlSwitches([31, 31, 1])
+    TransferPlayer([0, 846, 20, 23, 8, 1])
+    Wait([60])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["き、きもちいい……"])
+    ShowText(["けど、死んじゃう……"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["tarsa_fc2", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["うふふっ……ほらぁ♡"])
+    ShowText(["もっと、もっと出してよぉ……♡"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["ひぃっ……！　あ、あぁぁぁぁ～～！！"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ControlVariables([1207, 1207, 0, 0, 10])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["地下三階……"])
+    ShowText(["政治犯専用の牢獄って話だったな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサが、ここまで連れて来られたのは確かだ。"])
+    ShowText(["しかし、いったい何の為に――"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ、分かってる。"])
+    ShowText(["力を合わせて、ターサを救い出そう！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【将軍】"])
+      ShowText(["君達、どうか聞いてくれ！"])
+      ShowText(["信じられないかもしれないが、女王陛下は操られているんだ！"])
+      ShowTextAttributes(["rest_fc1", 0, 0, 2])
+      ShowText(["【レスト】"])
+      ShowText(["いえ、知っています。"])
+      ShowText(["白い羽の魔物、でしょう……？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【将軍】"])
+      ShowText(["なんと、すでに知っていたのか……"])
+      ShowText(["それゆえに、この牢獄に送られたのか？"])
+      ShowTextAttributes(["rest_fc1", 0, 0, 2])
+      ShowText(["【レスト】"])
+      ShowText(["ええ、まあそんなところです。"])
+      ShowText(["ところで、緑髪の踊り子を見ませんでしたか？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【将軍】"])
+      ShowText(["すまんが、心当たりはないな……"])
+      ShowTextAttributes(["rest_fc1", 0, 0, 2])
+      ShowText(["【レスト】"])
+      ShowText(["そうですか……"])
+      ShowText(["女王を洗脳した妖魔は、僕達が必ず倒します。"])
+      ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+      ShowText(["【ノビッサ】"])
+      ShowText(["……………………"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【将軍】"])
+    ShowText(["誰かは知らんが、歴戦の勇士と見た。"])
+    ShowText(["この国の未来、頼んだぞ……"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【大臣】"])
+    ShowText(["三人の天使様が、女王陛下を操っているのを見てしまった……"])
+    ShowText(["そのせいで、政治犯の汚名を着せられこのザマだ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ミュゼット達は、有翼魔という妖魔。"])
+    ShowText(["姿は似てるけど、天使なんかじゃないんだ。"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["罪なき罪にて、獄中で朽ち果てていくとは……"])
+    ShowText(["これ以上の無念はありません。"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["イリアス様……"])
+    ShowText(["女王陛下を誑かす妖魔をお裁き下さい……"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["隣の房の奴が、どこかに連れ去られ帰ってこない……"])
+    ShowText(["次は俺の番かもな。"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【紳士】"])
+    ShowText(["一人、また一人と囚人達が奥へと連れ去られます。"])
+    ShowText(["いったい、この階の奥に何があるのでしょうか……"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["mino_fc1", 2, 0, 2])
+    ShowText(["【ミノタウロス娘】"])
+    ShowText(["俺が政治犯とか、冗談だろ！"])
+    ShowText(["脳まで筋肉なんだぜ！　犯罪なんて食い逃げがせいぜいだ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["みんな、無実も同然じゃないか。"])
+    ShowText(["一刻も早く、何とかしないと……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【吟遊私人】"])
+    ShowText(["女王を批判する歌を作ったら、たちまち逮捕です。"])
+    ShowText(["これで政治犯など、愚の骨頂ですね……"])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【向かいのミノタウロス娘】"])
+    ShowText(["おーい、吟遊詩人！"])
+    ShowText(["「ごちそうの歌」、歌ってくれー！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【吟遊私人】"])
+    ShowText(["やれやれ、好きですねぇ……"])
+    ShowText(["『食卓に盛られた、肉いっぱいの皿～♪』"])
+    ShowTextAttributes(["", 0, 1, 1])
+    ShowText(["関係のない話だが――"])
+    ShowText(["この吟遊詩人とミノタウロス娘は、一年後に結婚する。"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["なんか、奥の部屋から声が聞こえてくるんだよ。"])
+    ShowText(["男女の喘ぎ声……それも、男は一人や二人じゃないぜ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【囚人】"])
+    ShowText(["ううっ……ムラムラして、眠れない……"])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【侍女】"])
+    ShowText(["陛下の異変を見抜いてしまったばっかりに……"])
+    ShowText(["ああ、陛下……おいたわしい……"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowPicture([5, "80_monk_sucubuss_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["あんた達が、話に聞く異世界の勇者達ね。"])
+    ShowText(["儀式の邪魔はさせないわよ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["儀式だって……！？"])
+    ShowText(["お前達、もしかして同盟者か！？"])
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["自分で言うのも何だけど……そんな大層なものじゃないわ。"])
+    ShowText(["異世界じゃなく、この世界で生まれ育った魔物よ。"])
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["でも、「夢の主」の啓示を受けて……"])
+    ShowText(["あの方の為に、戦うことにしたのよ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["「夢の主」……この世界でも、手下を集めていたのか。"])
+    ShowText(["とにかく、この先に行かせてもらうぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["儀式が行われているとなれば、ターサが関わっているはず。"])
+    ShowText(["魔城召喚とやらのために、彼女は捕らえられたのだ――"])
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["行かせないわ……"])
+    ShowText(["「夜の国」到来のために！"])
+    ErasePicture([5])
+    BattleProcessing([0, 1430, false, false])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["行こう、ノビッサ！"])
+    ShowText(["この先に、ターサがいるはずだ！"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["転職の書が開かれたまま放置されている……"])
+    Script(["SceneManager.call(Scene_JobChange)"])
+    Wait([1])
+    RecoverAll([0, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([131, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1587, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([9, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([12, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([3, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([440, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【商人】"])
+    ShowText(["ここに物資や装備品を納入しております。"])
+    ShowText(["何かお入り用ですかな……？"])
+    ShopProcessing([1, 104, 0, 0, false])
+    ShopItem([2, 85, 0, 0])
+    ShopItem([2, 215, 0, 0])
+    ShopItem([2, 310, 0, 0])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["タルの中には、たくさんの食料や薬草が詰まっていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["パーティのHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["タルの中には、たくさんの食料や薬草が詰まっていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["パーティのHPとMPが全快した！"])
+    Empty([])

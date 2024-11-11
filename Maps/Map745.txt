@@ -1,0 +1,427 @@
+Display Name = "ひつじのもり"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ヒツジおやだま】"])
+    ShowText(["ウェヒヒヒ……なんぞ用か？"])
+    ConditionalBranch([1, 1086, 0, 2, 0])
+      ShowChoices([["高級絨毯が欲しい", "話をする", "用はない"], 2])
+      When([0, "高級絨毯が欲しい"])
+        ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+        ShowText(["【ヴァニラ】"])
+        ShowText(["王宮向けの最高級赤絨毯をオーダーしたいのだ。"])
+        ShowText(["代金は小切手でお願いするのだ。"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジおやだま】"])
+        ShowText(["ウェヒヒヒ、まいどあり。"])
+        ShowText(["それじゃあ……"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジおやだま】"])
+        ShowText(["……しつじ！　出番なのら！"])
+        SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【しつじ】"])
+        ShowText(["へい！　マトン、来るのら！"])
+        SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Wait([120])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【マトン】"])
+        ShowText(["ア”ア”ア”ア”ア”ア”ア”～！！"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["……………………"])
+          Empty([])
+        BranchEnd([])
+        Wait([60])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        SetEventLocation([5, 0, 11, 5, 2])
+        SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+        Wait([60])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジおやだま】"])
+        ShowText(["いっちょあがり！　最高級の品なのら！"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeItems([559, 0, 0, 1])
+        ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+        ShowText(["【ヴァニラ】"])
+        ShowText(["よし、絨毯を調達したのだ！"])
+        ShowText(["それじゃあ、サバサに戻るのだ！"])
+        FadeoutScreen([])
+        Wait([60])
+        TransferPlayer([0, 477, 161, 20, 8, 2])
+        ChangeItems([559, 1, 0, 1])
+        ControlVariables([1086, 1086, 0, 0, 3])
+        FadeinScreen([])
+        ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+        ShowText(["【クィーンヴァンパイア】"])
+        ShowText(["うむ、実に見栄えが良くなったものだ。"])
+        ShowText(["後はテーブルと椅子を並べ……そして酒の調達だな。"])
+        ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+        ShowText(["【クィーンヴァンパイア】"])
+        ShowText(["テーブルや椅子、戸棚などの諸々は、吸血鬼の魔城より運び込もう。"])
+        ShowText(["お主達には、酒の調達を頼みたい。"])
+        ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+        ShowText(["【クィーンヴァンパイア】"])
+        ShowText(["無論、そこらの安酒では話にならん。"])
+        ShowText(["最高級の美酒を頼むぞ。"])
+        ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+        ShowText(["【ヴァニラ】"])
+        ShowText(["ならば、酒造ギルドに話を通すか……"])
+        ShowText(["むしろ、その上部組織と直接交渉した方が良いかもな。"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["酒造ギルドの上部組織って……ラザロおじさんの組織？"])
+          ShowText(["裏社会と関わっちゃっていいの？"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["酒造ギルドの上部組織って……ラザロおじさんの組織？"])
+          ShowText(["裏社会と関わっちゃっていいのかな……"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+        ShowText(["【クィーンヴァンパイア】"])
+        ShowText(["妾は構わんぞ、どうせ我等も闇に生きる者……"])
+        ShowText(["それでは、酒の調達は任せたぞ。"])
+        ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+        ShowText(["【クィーンヴァンパイア】"])
+        ShowText(["その間に、妾達は椅子やテーブルを運び込もう。"])
+        ShowText(["酒が届けば、吸血鬼パブ一号店は完成だ！"])
+        ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+        ShowText(["【ヴァニラ】"])
+        ShowText(["ではさっそくドン・ファーザーの元に交渉に行くのだ！"])
+        ConditionalBranch([0, 2196, 1])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["それじゃあ、ラザロおじさんの居場所を探さないとね……"])
+            ShowText(["どうせ、どこかの酒場にでもいるんじゃないの？"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["それじゃあ、ラザロおじさんの居場所を探さないと……"])
+            ShowText(["どうせ、どこかの酒場にでもいると思うけど。"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+          ShowText(["【ラザロ】"])
+          ShowText(["それじゃあ、ポケット魔王城の方に来てくれよ……"])
+          ShowText(["グランドールのアジトにゃ、俺はいないからな。"])
+          Empty([])
+        BranchEnd([])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "話をする"])
+        JumpToLabel(["話"])
+        Empty([])
+      When([2, "用はない"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowChoices([["話をする", "用はない"], 2])
+      When([0, "話をする"])
+        JumpToLabel(["話"])
+        Empty([])
+      When([1, "用はない"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["話"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ヒツジおやだま】"])
+    ShowText(["ここは絨毯工場……"])
+    ShowText(["ヒツジの悲鳴と嘆きがこだまする場所なのら。"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ヒツジおやだま】"])
+    ShowText(["絨毯が欲しいなら、オーダーしてほしいのら。"])
+    ShowText(["世界でも最高の品質を保証するのら……"])
+    ConditionalBranch([1, 1086, 0, 2, 5])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["絨毯は……別にいらないな。"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 308, 242, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 308, 242, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 308, 242, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【しつじ】"])
+    ShowText(["ここから先は、ヒツジ以外は立ち入り禁止なのら。"])
+    ShowText(["ウェヒヒヒヒ……"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([1, 1086, 0, 2, 2])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【マトン】"])
+      ShowText(["ドナドナド～ナ♪　ド～ナ♪"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【マトン】"])
+      ShowText(["食われてゆくよ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1086, 0, 3, 1])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【マトン】"])
+      ShowText(["汚れっちまった悲しみに……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【シーピー】"])
+    ShowText(["ここは、ひつじのもり……"])
+    ShowText(["たくさんのひつじが暮らす、羊毛の楽園なのら。"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【レッドラム】"])
+    ShowText(["アミルスタン羊の肉が食べたいのら？"])
+    ShowChoices([["食べたい", "食べたくない"], 2])
+    When([0, "食べたい"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【レッドラム】"])
+      ShowText(["それでは狩りに行ってくるのら。"])
+      ShowText(["ヒヒヒ……"])
+      Empty([])
+
+    When([1, "食べたくない"])
+      ConditionalBranch([4, 41, 0])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["【プロメスティン】"])
+        ShowText(["いいえ、私は遠慮しておきます。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【レッドラム】"])
+      ShowText(["それは残念……"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ラム】"])
+    ShowText(["あんまりソワソワしないで～♪"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【テムジン】"])
+    ShowText(["ジン♪　ジン♪　ジンギスカ～ン♪"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【羊】"])
+    ShowText(["メ～！"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【羊】"])
+    ShowText(["メ～！"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ひつじ】"])
+    ShowText(["ひつじのもりの特産品は、やわらか絨毯なのら。"])
+    ShowText(["もちろん、あたし達の毛で造られているのら……"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【羊】"])
+    ShowText(["メ～！"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【おおとら】"])
+    ShowText(["ひつじのもりでは、たくさんのひつじがノビノビ暮らしています。"])
+    ShowText(["ウェヒヒヒヒ……"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【バショウ】"])
+    ShowText(["ひつじ飛び込む　池のおと"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【バショウ】"])
+    ShowText(["そういうわけで、酔って飛び込んだから羊毛がヌレヌレなのら～！"])
+    ShowTextAttributes(["hituzi_fc1", 1, 0, 2])
+    ShowText(["【バショウ】"])
+    ShowText(["……ひつじさん、ヌレヌレ。"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【バッファロー】"])
+    ShowText(["うらー！　酒もってこーい！"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ぱらいそ】"])
+    ShowText(["ここはひつじの楽園なのら～！"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ぱらいそ】"])
+    ShowText(["……毛さえ剃られなかったらね。"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【パイパン】"])
+    ShowText(["ここで行われている恐ろしい事は、とても口には出来ないのら。"])
+    ShowText(["あたし達は、毎日のように……毛を……毛を……"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【パイパン】"])
+    ShowText(["もうお嫁さんに行けない。"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【へべれけ】"])
+    ShowText(["このまま北上すれば、砂浜に上陸するのら。"])
+    ShowText(["そこから東に進むと、ノア大陸最南の村フィノアに着くのらよ。"])
+    Empty([])

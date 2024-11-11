@@ -1,0 +1,49 @@
+CommonEvent 310
+Name = "タルタロスコメント1"
+
+  999([310])
+  ControlSwitches([2050, 2050, 0])
+  ConditionalBranch([0, 6, 0])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["なんで、大穴の中に森があるの……？"])
+    Empty([])
+
+  Else([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["なんで、こんなところに森が……？"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 72, 0])
+    ShowTextAttributes(["phoenix_fc1", 2, 0, 2])
+    ShowText(["【ミニ】"])
+    ShowText(["この中、わけがわからないぞ！"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc6", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["時空のねじれ……"])
+    ShowText(["周囲の空間を巻き込み、取り込んでいるのか？"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["時空間の変異現象ですね。"])
+    ShowText(["周囲の空間を巻き込み、取り込んでいるようです……"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 79, 0])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["きゅ……"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,30 @@
+CommonEvent 152
+Name = "死神：スキルを忘れる/思い出す"
+
+  999([152])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["【死神】"])
+  ShowText(["いったん忘れたスキルやアビリティだが……"])
+  ShowText(["レベルや職業・種族で覚える技能は思い出す事ができる。"])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["【死神】"])
+  ShowText(["だが、イベントで習得した技能は思い出せない。"])
+  ShowText(["再び周回し、イベントをこなさなければ再習得できないぞ。"])
+  ErasePicture([5])
+  ShowChoices([["技能を忘れる", "技能を思い出す", "やめる"], 3])
+  When([0, "技能を忘れる"])
+    Script(["SceneManager.call(Scene_Forget)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([1, "技能を思い出す"])
+    Script(["SceneManager.call(Scene_InitSkill)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([2, "やめる"])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

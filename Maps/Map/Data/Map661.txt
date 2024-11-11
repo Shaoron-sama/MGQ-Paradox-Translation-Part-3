@@ -1,0 +1,129 @@
+Display Name = "サバサ城 地下牢"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["morrigan_fc1", 2, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["なんだか、上がやけに騒がしいな……"])
+    ShowTextAttributes(["astaroth_fc1", 2, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["定時の見回りも来ないわね……"])
+    ShowText(["何かあったのかしら？"])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["……始まったようですね。"])
+    ShowText(["二人とも、準備はいいですか？"])
+    ShowTextAttributes(["morrigan_fc1", 6, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["始まったって、何が――"])
+    ControlSwitches([32, 32, 0])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サム】"])
+    ShowText(["サムは牢を開けます……"])
+    ShowText(["玉藻様のために、牢を開けるのです……"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["なんだ、出してくれるのか！？"])
+    ShowText(["……ところで、お前ダレ？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サム】"])
+    ShowText(["サムはサムです……"])
+    ShowText(["天使は敵、サム0745980は牢を開けるのが役目……"])
+    PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サムは牢獄の扉を開けた！"])
+    PlayBGM(["RPG::BGM(@name=\"kiki4\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["玉藻様の術で操られているようね。"])
+    ShowText(["つまり……"])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["……いよいよ、反撃開始って事だな！"])
+    ShowText(["それじゃあ、こんなところはさっさと出て行くぜ！"])
+    ShowTextAttributes(["lilith2_fc1", 3, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["ルカ達の狙いは、間違いなくガブリエラの首。"])
+    ShowText(["さあ、玉座の間に急ぎますよ……！"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ChangeTransparency([1])
+    TransferPlayer([0, 869, 30, 24, 8, 2])
+    ControlSwitches([2457, 2457, 0])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

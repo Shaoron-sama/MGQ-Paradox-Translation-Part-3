@@ -1,0 +1,1577 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 35, 45, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 6, 39, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 30, 30, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 30, 30, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 30, 30, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 49, 8, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 49, 8, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 19, 2, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 19, 2, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 20, 44, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 20, 44, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 14, 8, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowPicture([5, "80_minccubus_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_renccubus_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+    ShowText(["【ミンキュバス】"])
+    ShowText(["あの勇者達だよ、あの人達にいじめられたの～！"])
+    ShowTextAttributes(["renccubus_fc1", 1, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["私の妹をいじめるなんて、ひどい人達……"])
+    ShowText(["お返しに、たっぷりいじめ返してあげますね。"])
+    ShowTextAttributes(["renccubus_fc1", 1, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["今の私、とっても強いですよ。"])
+    ShowText(["ここの人達の力、全部吸い取っちゃったから……♪"])
+    ConditionalBranch([4, 226, 0])
+      ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+      ShowText(["【白蛇様】"])
+      ShowText(["こやつも理性を失っているようだな……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これ以上、そんな事はさせない！"])
+    ShowText(["正気に戻るんだ！"])
+    ShowPicture([6, "80_renccubus_st04", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["renccubus_fc1", 3, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["あなたの力も、搾り尽くしてあげますね……♪"])
+    ShowText(["私に吸われるのは、とっても気持ちいいんですから……"])
+    ShowPicture([5, "80_minccubus_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["minccubus_fc1", 1, 0, 2])
+    ShowText(["【ミンキュバス】"])
+    ShowText(["あたしだって、手伝うから～！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["元は人間とは言え、遠慮はするな！"])
+      ShowText(["手を抜けば、こちらがやられるぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["正気に戻さねばなりません！"])
+      ShowText(["頭を重点的に殴るのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["オシオキ開始……対象、淫魔。"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 740, false, false])
+    ControlSwitches([22, 22, 1])
+    ControlSwitches([2207, 2207, 0])
+    ShowPicture([5, "80_minccubus_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_renccubus_st03", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["renccubus_fc1", 4, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["あれ……？　私は、いったい何を……？"])
+    ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+    ShowText(["【ミンキュバス】"])
+    ShowText(["お姉ちゃん！　あたし、どうしちゃったの～？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["むっ……正気に戻ったか。"])
+      ShowText(["ここまでサキュバスの力に順応している以上、心配はいらんだろう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ちっ、正気に戻りましたか……"])
+      ShowText(["はい、もう殴るのやめやめ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["しばらく、この家を出ちゃダメよ。いいわね？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["しばらく、この家に隠れているんだよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["renccubus_fc1", 4, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["なんだか分からないけど……妹は、私が守らないと！"])
+    ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+    ShowText(["【ミンキュバス】"])
+    ShowText(["おねぇちゃ～ん！"])
+    ConditionalBranch([4, 84, 0])
+      ShowTextAttributes(["hapy_bc_fc1", 0, 0, 2])
+      ShowText(["【ピナ＆ピィ】"])
+      ShowText(["この二人も、仲良し姉妹なんだね♪"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_minccubus_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_renccubus_st03", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["renccubus_fc1", 4, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["村長様は、どうされてるんでしょう……？"])
+    ShowText(["男の人を渡す渡さないで、この騒ぎが始まったみたいなんですけど……"])
+    ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+    ShowText(["【ミンキュバス】"])
+    ShowText(["そうだ、お姉ちゃん！"])
+    ShowText(["騒ぎのドサクサに紛れて、イモ焼き払っちゃおう！"])
+    Script(["actor_label_jump"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["【エヴァ】"])
+    ShowText(["イモを焼くなら、手伝ってあげてもいいわよ。"])
+    ShowTextAttributes(["renccubus_fc1", 4, 0, 2])
+    ShowText(["【レンキュバス】"])
+    ShowText(["あ……あなたは、まさか……"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([0, 2207, 1])
+      ShowPicture([5, "80_minccubus_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+      ShowText(["【ミンキュバス】"])
+      ShowText(["わわっ、追いかけてきたぁ！"])
+      ErasePicture([5])
+      Empty([])
+
+    Else([])
+      ShowPicture([5, "80_minccubus_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+      ShowPicture([6, "80_renccubus_st03", 0, 0, 150, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+      MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+      ShowText(["【ミンキュバス】"])
+      ShowText(["おねえちゃ～ん！"])
+      ShowText(["この男の人たち、なんで倒れてるの？　こわいよ～！"])
+      ShowTextAttributes(["renccubus_fc1", 4, 0, 2])
+      ShowText(["【レンキュバス】"])
+      ShowText(["あっ、それは多分私が……"])
+      ShowText(["大丈夫、怖くないし美味しかったよ。"])
+      ErasePicture([5])
+      ErasePicture([6])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ごろつき】"])
+    ShowText(["はぅぅぅ……"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["す、吸い尽くされた……"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【おじさん】"])
+    ShowText(["ふぁぁぁ……"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["あぅぅぅぅ……"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少年】"])
+    ShowText(["もう、だめぇ……"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowPicture([5, "80_d_succubus_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+    ShowText(["【ナターシャ】"])
+    ShowText(["これ以上、邪魔をしないで下さい。"])
+    ShowText(["それとも、私に味方して村長を倒してくれるのですか……？"])
+    ConditionalBranch([0, 2097, 0])
+      ConditionalBranch([0, 1163, 0])
+        ShowTextAttributes(["lily_fc1", 0, 0, 2])
+        ShowText(["【リリィ】"])
+        ShowText(["まずは、邪魔な村長を黙らせましょう。"])
+        ShowText(["……大丈夫、私を信じて下さい。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowChoices([["ナターシャに味方しサキュバスと戦う", "やめておく"], 2])
+    When([0, "ナターシャに味方しサキュバスと戦う"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["分かった、ここはナターシャに手を貸そう！"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["へぇ、本当に味方してくれるのですね。"])
+      ShowText(["それでは、村長の相手はあなた達に任せましょう。"])
+      ShowPicture([5, "80_succubus_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["まさか、ここで敵に増援とは……"])
+      ShowText(["しかし村の同胞を守るため、相手が誰でも戦い抜きます！"])
+      ConditionalBranch([4, 287, 0])
+        ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+        ShowText(["【サキュバス’】"])
+        ShowText(["自分と戦うなんて、複雑ねぇ……"])
+        ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+        ShowText(["【サキュバス】"])
+        ShowText(["これは、どういう事なのです？"])
+        ShowText(["いいえ、惑わされはしません……！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["恨みはないけど……行くぞ！"])
+      ConditionalBranch([4, 129, 0])
+        ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+        ShowText(["【ヒルデ】"])
+        ShowText(["対象、敵淫魔……戦闘開始だよ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 79, 0])
+        ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+        ShowText(["【ヌルコ】"])
+        ShowText(["きゅきゅー！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      ChangeBattleBack(["DecorativeTile", "Castle3"])
+      BattleProcessing([0, 741, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ControlSwitches([7007, 7007, 0])
+      RecoverAll([0, 0])
+      ChangeMapDisplay([1])
+      TransferPlayer([0, 720, 11, 38, 8, 2])
+      SetEventLocation([66, 0, 10, 36, 2])
+      PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_succubus_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["ううっ、こんな……"])
+      ShowText(["あなた達は、私刑に手を貸そうというのですか……"])
+      ErasePicture([5])
+      Wait([60])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["それでは、正当なる報復を果たしましょう……"])
+      ShowText(["あなたには、快楽ではなく暴力による死を……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["ひぃぃぃっ……！！"])
+      ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["これで私は、新たな自分に生まれ変われるのです……！"])
+      ConditionalBranch([0, 2097, 0])
+        ConditionalBranch([0, 1163, 0])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["いいえ、そんなものは生まれはしないわ。"])
+          ShowText(["それで新たな一歩を踏み出せると思っているなら、大間違いよ。"])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+          ShowPicture([5, "80_d_succubus_st03b", 0, 0, 0, 0, 100, 100, 0, 0])
+          MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["大間違い……？"])
+          ShowText(["なぜ、あなたにそんな事が分かるのです！？"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["経験者だから。"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["毎日のように虐待され、蹂躙され……"])
+          ShowText(["食事も与えられず、泥水を啜った事があるとでも！？"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["私は、ネズミや革靴を食べたけどね。"])
+          ShowText(["踏み躙られた年月で言えば、私の方が長いわ。"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["ならば分かるでしょう、私の苦しみや怒りが！"])
+          PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["分かるからこそ、その感情の行き着く果ても見えるのよ。"])
+          ShowText(["復讐を成し遂げたとして、その怒りや苦しみは消えないわ。"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["むしろ憎悪の対象を失い、怒りは果てしなく暴走していくわ。"])
+          ShowText(["そのまま狂気を孕み、自己や周囲の人間を破壊するまでに……"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["リリィ……"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["でも、私は許せないのです！"])
+          ShowText(["何も出来なかった私を、この男は――"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["あなたが本当に憎悪しているのは、この男なの？"])
+          ShowText(["それとも、何も抵抗できなかった自分？"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["それは――"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["対象を履き違えた憎悪は、際限なく暴走するわ。"])
+          ShowText(["そしてあなたは、平気で弱者を踏み躙るようになってしまう……"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["私は、そんな過ちなど――"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["なら、あなたがこの村でやった事は何？"])
+          ShowText(["倒れている者達は、あなたにとって紛れもなく弱者のはず……"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["でも！　でも――"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["私とあなたは、同じ苦しみを知っているわ……"])
+          ShowText(["だから、私達を虐げ、踏み躙った連中と同じ存在にならないで。"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["あなた達がこの村を蹂躙した時、あなたを見上げた少女の目――"])
+          ShowText(["それは、かつてのあなたと同じだったはずよ。"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["……………………"])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+          PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+          ShowPicture([5, "80_d_succubus_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["そうですね……"])
+          ShowText(["なんだか、馬鹿馬鹿しくなってきました。"])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["確かに、こんな男一人を殺そうが生かそうが……"])
+          ShowText(["私の鬱屈した感情が、晴れる気はしません。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【男】"])
+          ShowText(["た、助かった……"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["私が救おうとしたのは、この下衆男ではなく傷ついた少女。"])
+          ShowText(["下衆男の方は、むしろ殺したいくらいなのを忘れないように。"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["あんたの声を聞けば、つい私の手で殺したい衝動に駆られるわ。"])
+          ShowText(["ここまでの流れが台無しだから、頼むから黙っていて。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["【男】"])
+          ShowText(["……………………"])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 2, 0, 2])
+            ShowText(["【アリス】"])
+            ShowText(["さて、ナターシャよ。"])
+            ShowText(["これから、どうするつもりなのだ……？"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+            ShowText(["【イリアス】"])
+            ShowText(["ナターシャ……これからどうするつもりです？"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["さて……"])
+          ShowText(["これからの事は、この男を殺してから考えるつもりだったので……"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["予定がないなら、私達と一緒に来ない？"])
+          ShowText(["ぶつけ所のない焦燥に、世界を救う使命感は良い薬になるわ。"])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["そうですね……"])
+          ShowText(["迷惑でないなら、ご厄介になりましょうか。"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(288)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["ナターシャが仲間に加わった！"])
+          Wait([60])
+          ShowPicture([5, "80_succubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+          MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+          ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+          ShowText(["【サキュバス】"])
+          ShowText(["これで、話は丸く収まりましたか……"])
+          ShowText(["この男は責任を持ち、我が村にて法に照らした罰を与えましょう。"])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["私も、この村に暴虐を働いた罰を受けるべきでは……"])
+          ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+          ShowText(["【サキュバス】"])
+          ShowText(["罪に思うなら、世界を救うため働きなさい。"])
+          ShowText(["勇者のパーティに尽くすのですよ。"])
+          ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["……ご迷惑をお掛けしました。"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["こうして、この事件は解決した。"])
+          ShowText(["幸いにして犠牲者も出ず、僕達は村長の屋敷を後にしたのだった――"])
+          FadeoutScreen([])
+          ErasePicture([5])
+          Wait([60])
+          TransferPlayer([0, 45, 39, 11, 2, 2])
+          ControlSwitches([2210, 2210, 0])
+          FadeinScreen([])
+          Script(["gain_medal(47)"])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["これで、一件落着よね！"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["これで、一件落着だね！"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["私の研究も、ほとんど完成したわ……"])
+          ShowText(["この成果、あなた達に管理を任せてもいいかしら？"])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["これは、自身の肉体を媒介とした触手召喚術。"])
+          ShowText(["研究を重ねて、肉体や精神の負担も限界まで抑えたわ……"])
+          PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+          ChangeItems([638, 0, 0, 1])
+          ShowTextAttributes(["lily_fc1", 0, 0, 2])
+          ShowText(["【リリィ】"])
+          ShowText(["これを習得できるのは、人間の身を持つ者のみ。"])
+          ShowText(["イリアス神殿で、種族「ワームサマナー」に転種できるわよ。"])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 1, 0, 2])
+            ShowText(["【アリス】"])
+            ShowText(["分かった、これは我々が管理しよう。"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+            ShowText(["【イリアス】"])
+            ShowText(["このような危険なものは、私が管理しなければなりませんね。"])
+            ShowText(["使用者はパーティのみ、門外不出の禁術とします。"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["人間のみ、転種可能か……"])
+            ShowText(["僕はちょっとイヤだけど、ソニアはどう？"])
+            ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["触手召喚かぁ……"])
+            ShowText(["抵抗はあるけど、ちょっと使ってみたい気もするかも。"])
+            Empty([])
+          BranchEnd([])
+          CallCommonEvent([343])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      FadeoutScreen([])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"mon_slash\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["ぎゃぁぁ――――っ！！"])
+      Wait([60])
+      TransferPlayer([0, 45, 39, 11, 2, 2])
+      ControlSwitches([2211, 2211, 0])
+      FadeinScreen([])
+      Script(["gain_medal(47)"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["なんだか、後味の悪い結末よね……"])
+        ShowText(["ああするより他に、なかったのかな？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["後味の悪い結末だったね……"])
+        Empty([])
+      BranchEnd([])
+      CallCommonEvent([343])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "やめておく"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["全部……吸われた……"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["はぅぅぅぅ……"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Comment(["明かり設定1243070015"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Comment(["明かり設定3300200"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["うぐぅ……歯が立たない……"])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 20, 44, 0, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 14, 8, 0])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 49, 8, 0])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowPicture([5, "80_maccubus_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["あ、あぅぅぅ……"])
+    ShowTextAttributes(["maccubus_fc1", 4, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["ほらほら……天国でしょう？"])
+    ShowText(["もっとイかせてあげる……ほぉら、ほらほら……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["あひ……あぁぁぁぁぁ――！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["戦士は絶頂し、意識を失った……"])
+    ShowPicture([5, "80_maccubus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["maccubus_fc1", 2, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["もう打ち止めなの……？"])
+    ShowText(["ずるいじゃない、自分だけ先に果てちゃうなんて……"])
+    ErasePicture([5])
+    Wait([60])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    Wait([60])
+    ShowPicture([5, "80_maccubus_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["maccubus_fc1", 4, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["それじゃあ、次は君を食べてあげるわ……"])
+    ShowText(["ここに転がる餌達の一人にしてあげる……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["全身を男達の精液にまみれさせながら、元娼婦のサキュバスが迫ってきた！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["完全に正気を失っているか……"])
+      ShowText(["仕方ない、攻撃して目を覚まさせろ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["うわっ、汚ない……私はパスしていいですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["仕方ない……行くぞっ！"])
+    ShowTextAttributes(["maccubus_fc1", 4, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["あなたの精液も、搾り取ってあげるからね……"])
+    ShowText(["カラカラに干からびるまで、吸い取ってあげるわ……"])
+    ConditionalBranch([12, "exist_party_persona_id?(241)"])
+      ShowTextAttributes(["a_emp_fc1", 0, 0, 2])
+      ShowText(["【プリエステス】"])
+      ShowText(["やらねばなりませんか……"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 739, false, false])
+    ControlSwitches([22, 22, 1])
+    ControlSwitches([2208, 2208, 0])
+    ShowPicture([5, "80_maccubus_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["maccubus_fc1", 6, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["うぅっ……私、何をしてたの……？"])
+    ShowText(["なんで精液まみれ……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["貴様はサキュバス化したのだ。"])
+      ShowText(["言いにくいが、もう人間には戻れん……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["あなたは薄汚いサキュバスになったのです。"])
+      ShowText(["もはや、戻る事はできません……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_maccubus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["maccubus_fc1", 2, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["そう……まあいいわ。"])
+    ShowText(["とりあえず、シャワー浴びてくるわね。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["切り替え、早っ！"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["それでいいの……？"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    ShowPicture([5, "80_maccubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["maccubus_fc1", 2, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["あのラダイト村から来た男が、ゴタゴタの種になったのね……"])
+    ShowText(["私は、あの男はあまり好きじゃなかったわ。"])
+    ShowTextAttributes(["maccubus_fc1", 2, 0, 2])
+    ShowText(["【マキュバス】"])
+    ShowText(["ちょっと前から、あのナターシャって淫魔は村に姿を見せてたの。"])
+    ShowText(["村長と何度か交渉してたみたいだけど、こんな事になるなんて……"])
+    ErasePicture([5])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["あ、あぅぅぅ……"])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【剣士】"])
+    ShowText(["なんてテクニックだ……"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 719, 30, 30, 0, 0])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【屈強そうな男】"])
+    ShowText(["あぁぁ……天国が……"])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【旅の剣士】"])
+    ShowText(["こんなの……無理……"])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["根こそぎ搾り取られました……"])
+    ShowText(["幸せです……"])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["もう出ない……はぅぅぅ……"])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 720, 66, 19, 2, 0])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ごろつき】"])
+    ShowText(["ぉ……ぅぅ……"])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowPicture([5, "80_succubus_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["旅の方、助力をお願いできない？"])
+    ShowText(["この少女の怒りは理解できるけど、だからこそ止めないと……！"])
+    ConditionalBranch([0, 2096, 0])
+      ConditionalBranch([0, 1167, 0])
+        ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+        ShowText(["【ルシア】"])
+        ShowText(["リリィと同じ悲劇は、歩ませはしません……"])
+        ShowText(["さあ、ナターシャを止めましょう！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowChoices([["サキュバスに味方しナターシャと戦う", "やめておく"], 2])
+    When([0, "サキュバスに味方しナターシャと戦う"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["分かりました、ナターシャを止めます！"])
+      ShowPicture([5, "80_d_succubus_st03b", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["やっぱり邪魔をするのですね……"])
+      ShowText(["私を助けてくれなかったのに、こんな男は救うなんて……！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["男は助けるし、君にも道を誤らせない……行くぞ！"])
+      ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["……なら、あなたをメチャクチャになるまで嫐り尽くします！"])
+      ShowText(["この私がされたように！"])
+      ConditionalBranch([4, 288, 0])
+        ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
+        ShowText(["【ナターシャ’】"])
+        ShowText(["確かに悲しいものですね……"])
+        ShowText(["復讐しか行き場がないと信じ込んだ者は……"])
+        ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+        ShowText(["【ナターシャ】"])
+        ShowText(["誰が何を言おうが、私にはこれしかないんです！"])
+        ShowText(["この男を殺さないと、私は前に進めない！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 129, 0])
+        ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+        ShowText(["【ヒルデ】"])
+        ShowText(["対象、敵淫魔……戦闘開始だよ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 79, 0])
+        ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+        ShowText(["【ヌルコ】"])
+        ShowText(["きゅきゅー！"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      ChangeBattleBack(["DecorativeTile", "Castle3"])
+      BattleProcessing([0, 742, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ControlSwitches([7008, 7008, 0])
+      RecoverAll([0, 0])
+      ChangeMapDisplay([1])
+      TransferPlayer([0, 720, 11, 38, 8, 2])
+      SetEventLocation([66, 0, 10, 36, 2])
+      PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_d_succubus_st03b", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["こんな……私の復讐が……"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowPicture([5, "80_succubus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["ありがとう、手を貸してくれて……"])
+      ShowText(["あなた達がいなければ、彼女は止められなかったわ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["へへ、助かったぜ……"])
+      ShowText(["守ってくれて、ありがとな！"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["あなたの事も、確かに聞いたわ。"])
+      ShowText(["ナターシャの私刑に応じる事は断じて出来ないけれど……"])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["この村の一員として、正当なる法に基づき裁判を行うわ。"])
+      ShowText(["おそらく、数十年の禁固刑は免れないはずよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["そ、そんな……！"])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["ナターシャも、我が村で預かる事にして良いかしら？"])
+      ShowText(["罪人としてではなく、行き場をなくした子羊として……ね。"])
+      ShowPicture([5, "80_succubus_st01", 0, 0, -150, 0, 100, 100, 255, 0])
+      ShowPicture([6, "80_d_succubus_st03", 0, 0, 150, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+      ShowText(["【ナターシャ】"])
+      ShowText(["どうせ私は敗者、お好きなように……"])
+      ConditionalBranch([0, 2096, 0])
+        ConditionalBranch([0, 1167, 0])
+          ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+          ShowText(["【ルシア】"])
+          ShowText(["あなたはきっと、綺麗事と断じるでしょうが……"])
+          ShowText(["自身の無力感を振り払う処方箋として、復讐は最も勧められません。"])
+          ShowTextAttributes(["d_succubus_fc1", 2, 0, 2])
+          ShowText(["【ナターシャ】"])
+          ShowText(["……………………"])
+          ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+          ShowText(["【ルシア】"])
+          ShowText(["あなたを見ていると、私の友人を思い出します。"])
+          ShowText(["私自身、そう違った境遇でもないですが……"])
+          ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+          ShowText(["【ルシア】"])
+          ShowText(["でも……あなたは、まだ手を血で汚していない。"])
+          ShowText(["きっと立ち直る事ができるはずです。"])
+          ErasePicture([6])
+          ShowPicture([5, "80_succubus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 0, 0, 2])
+            ShowText(["【アリス】"])
+            ShowText(["うむ……それでは村長、後の始末は任せたぞ。"])
+            ShowText(["我々も為すべき事が多い身、あまりのんびりはしていられん。"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+            ShowText(["【イリアス】"])
+            ShowText(["さて……村長、後の始末は任せましたよ。"])
+            ShowText(["我々は忙しいのです、時間の無駄遣いはできません。"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+          ShowText(["【サキュバス】"])
+          ShowText(["あなた達には、感謝の言葉もないわね……"])
+          ShowText(["何かあれば、今度は私から力を貸すわ。"])
+          ErasePicture([5])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["こうして、この事件は解決した。"])
+          ShowText(["幸いにして犠牲者も出ず、僕達は村長の屋敷を後にしたのだった――"])
+          FadeoutScreen([])
+          Wait([60])
+          TransferPlayer([0, 45, 39, 11, 2, 2])
+          ControlSwitches([2212, 2212, 0])
+          FadeinScreen([])
+          Script(["gain_medal(47)"])
+          PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+            ShowText(["【ソニア】"])
+            ShowText(["これで、一件落着よね！"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["【ルカ】"])
+            ShowText(["これで、一件落着だね！"])
+            Empty([])
+          BranchEnd([])
+          CallCommonEvent([343])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ナターシャは、まだまだ反抗的なようだが……"])
+        ShowText(["まあ、仕方あるまい。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ナターシャは、まだまだ反抗的なようですね……"])
+        ShowText(["調教が足りなかったでしょうか。"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([6])
+      ShowPicture([5, "80_succubus_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["手を焼くでしょうけど、なんとかやっていくわ。"])
+      ShowText(["あなた達には、世話になったわね……"])
+      ShowTextAttributes(["succubus_fc1", 0, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["お礼をしたいけれど、当分はこちらも忙しい身よ。"])
+      ShowText(["村人の救護やら、ナターシャの監視やら……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["うむ……それでは村長、後の始末は任せたぞ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["では……村長、後の始末は任せましたよ。"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして、この事件は解決した。"])
+      ShowText(["幸いにして犠牲者も出ず、僕達は村長の屋敷を後にしたのだった――"])
+      FadeoutScreen([])
+      Wait([60])
+      TransferPlayer([0, 45, 39, 11, 2, 2])
+      ControlSwitches([2213, 2213, 0])
+      FadeinScreen([])
+      Script(["gain_medal(47)"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["ナターシャは可哀想だったけど……まあ解決よね。"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ナターシャは可哀想だったけど……まあ解決だね。"])
+        Empty([])
+      BranchEnd([])
+      CallCommonEvent([343])
+      Empty([])
+
+    When([1, "やめておく"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["す、すごかった……"])
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【村のサキュバス】"])
+    ShowText(["ウィッチ様がいれば……"])
+    ShowText(["勝てないまでも、善戦できたのに……"])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["村長様が……地下に追い詰められて……"])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowTextAttributes(["mob_ozyou_fc1", 0, 0, 2])
+    ShowText(["【アレリア】"])
+    ShowText(["わたくしも、バトルファッカーのはしくれ……"])
+    ShowText(["この程度の淫魔に、遅れは取りませんわ。"])
+    ShowTextAttributes(["mob_ozyou_fc1", 0, 0, 2])
+    ShowText(["【アレリア】"])
+    ShowText(["バトルファックのお誘いならば、また後日。"])
+    ShowText(["落ち着いたときに、楽しみましょう……"])
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【攻めてきたサキュバス】"])
+    ShowText(["に、人間に……負けるなんて……"])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["あぁ、天に昇るよう……"])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["ウィッチ様は、何かの儀式で出掛けられて……"])
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【メイド】"])
+    ShowText(["村長様を……早く……"])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["ひぃぃ……俺が悪いわけじゃないんだ！"])
+    ShowText(["なあ、何とかしろよ！　お前、勇者なんだろ！？"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["171"])
+    ShowTextAttributes(["lizardboss_fc1", 5, 0, 2])
+    ShowText(["【ミランダ】"])
+    ShowText(["見下げ果てた下衆だね……"])
+    ExitEventProcessing([])
+    Label(["226"])
+    ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+    ShowText(["【白蛇様】"])
+    ShowText(["このような者を守らねばならんとは……"])
+    ShowText(["勇者も大変じゃのう。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    CallCommonEvent([342])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])

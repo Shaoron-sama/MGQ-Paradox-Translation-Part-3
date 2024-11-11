@@ -1,0 +1,130 @@
+CommonEvent 144
+Name = "アイテム倉庫"
+
+  999([144])
+  ConditionalBranch([0, 93, 1])
+    ControlVariables([13, 13, 0, 0, 0])
+    Empty([])
+
+  Else([])
+    ControlVariables([13, 13, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  ShowChoices([["アイテム倉庫を開く", "まとめて倉庫に入れる", "まとめて手持ちに戻す", "やめる"], 4])
+  When([0, "アイテム倉庫を開く"])
+    Script(["SceneManager.call(Scene_Storehouse)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([1, "まとめて倉庫に入れる"])
+    ConditionalBranch([0, 93, 1])
+      ShowChoices([["全アイテムを倉庫に入れる", "全装備品を倉庫に入れる", "やめる"], 3])
+      When([0, "全アイテムを倉庫に入れる"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "全装備品を倉庫に入れる"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "やめる"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowChoices([["全アイテムを倉庫に入れる", "全通常装備品を倉庫に入れる", "全秘装備を倉庫に入れる", "やめる"], 4])
+      When([0, "全アイテムを倉庫に入れる"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "全通常装備品を倉庫に入れる"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "全秘装備を倉庫に入れる"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_enchant_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([3, "やめる"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  When([2, "まとめて手持ちに戻す"])
+    ConditionalBranch([0, 93, 1])
+      ShowChoices([["全アイテムを手持ちに戻す", "全装備品を手持ちに戻す", "やめる"], 3])
+      When([0, "全アイテムを手持ちに戻す"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "全装備品を手持ちに戻す"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "やめる"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowChoices([["全アイテムを手持ちに戻す", "全通常装備品を手持ちに戻す", "全秘装備を手持ちに戻す", "やめる"], 4])
+      When([0, "全アイテムを手持ちに戻す"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "全通常装備品を手持ちに戻す"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "全秘装備を手持ちに戻す"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_enchant_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([3, "やめる"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  When([3, "やめる"])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  ExitEventProcessing([])
+  Empty([])

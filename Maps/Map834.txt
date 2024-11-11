@@ -1,0 +1,462 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["AD-5_fc1", 0, 0, 2])
+      ShowText(["【AD-5】"])
+      ShowText(["回復スキルと、ターンHP回復が無効になる……"])
+      ShowText(["だが、最大HPがアップするアビリティ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誰が「反回復の陣」を修得しますか？"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),864)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのキャラは、すでに「反回復の陣」を習得済みだ……"])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 864])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\I[99]\\C[1]反回復の陣\\C[0]を修得した！"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["AD-5_fc1", 0, 0, 2])
+      ShowText(["【AD-5】"])
+      ShowText(["命が……欲しい……"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+      ShowText(["【リザードボス】"])
+      ShowText(["通常攻撃の付加属性が物理属性のみになるんだけど……"])
+      ShowText(["その代わり、通常攻撃の威力が上がるアビリティはどうだい？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誰が「属性否定の陣」を修得しますか？"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),865)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのキャラは、すでに「属性否定の陣」を習得済みだ……"])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 865])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\I[99]\\C[1]属性否定の陣\\C[0]を修得した！"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+      ShowText(["【リザードボス】"])
+      ShowText(["どこまでも、己を貫き通しなよ！"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["nurukox_fc1", 0, 0, 2])
+      ShowText(["【■■■】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["混沌武器のマスタリーを教えてくれるようだ。"])
+      ShowText(["誰が「混沌マスタリー」を修得しますか？"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),5655)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのキャラは、すでに「混沌マスタリー」を習得済みだ……"])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 5655])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\I[99]\\C[1]混沌マスタリー\\C[0]を修得した！"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["nurukox_fc1", 7, 0, 2])
+      ShowText(["【■■■】"])
+      ShowText(["……………………"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["jeraira_fc1", 0, 0, 2])
+      ShowText(["【ジェライラ】"])
+      ShowText(["究極の音波奥義を、あなた達にお伝えしましょう。"])
+      ShowText(["ただし「歌う」が使えなければ、発動はできませんよ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誰が「ヘルクライ」を修得しますか？"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),2106)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのキャラは、すでに「ヘルクライ」を習得済みだ……"])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 2106])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\I[184]\\C[1]ヘルクライ\\C[0]を修得した！"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["jeraira_fc1", 0, 0, 2])
+      ShowText(["【ジェライラ】"])
+      ShowText(["ここから先も、お気を付け下さいね。"])
+      ShowText(["禍々しい音色が満ちています……"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 4
+    CallCommonEvent([634])
+    Empty([])
+
+  Page 5
+    CallCommonEvent([637])
+    Empty([])
+
+  Page 6
+    CallCommonEvent([638])
+    Empty([])
+
+  Page 7
+    CallCommonEvent([639])
+    Empty([])
+
+  Page 8
+    CallCommonEvent([633])
+    Empty([])
+
+  Page 9
+    CallCommonEvent([629])
+    Empty([])
+
+  Page 10
+    CallCommonEvent([636])
+    Empty([])
+
+  Page 11
+    CallCommonEvent([635])
+    Empty([])
+
+  Page 12
+    CallCommonEvent([628])
+    Empty([])
+
+  Page 13
+    CallCommonEvent([644])
+    Empty([])
+
+  Page 14
+    CallCommonEvent([663])
+    Empty([])
+
+  Page 15
+    CallCommonEvent([664])
+    Empty([])
+
+  Page 16
+    CallCommonEvent([665])
+    Empty([])
+
+  Page 17
+    CallCommonEvent([666])
+    Empty([])
+
+  Page 18
+    CallCommonEvent([667])
+    Empty([])
+
+  Page 19
+    CallCommonEvent([668])
+    Empty([])
+
+  Page 20
+    CallCommonEvent([669])
+    Empty([])
+
+  Page 21
+    CallCommonEvent([670])
+    Empty([])
+
+  Page 22
+    CallCommonEvent([671])
+    Empty([])
+
+  Page 23
+    CallCommonEvent([672])
+    Empty([])
+
+  Page 24
+    CallCommonEvent([673])
+    Empty([])
+
+  Page 25
+    CallCommonEvent([674])
+    Empty([])
+
+  Page 26
+    CallCommonEvent([675])
+    Empty([])
+
+  Page 27
+    CallCommonEvent([676])
+    Empty([])
+
+  Page 28
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 29
+    CallCommonEvent([678])
+    Empty([])
+
+  Page 30
+    CallCommonEvent([679])
+    Empty([])
+
+  Page 31
+    CallCommonEvent([680])
+    Empty([])
+
+  Page 32
+    ConditionalBranch([1, 607, 0, 5, 2])
+      CallCommonEvent([681])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ControlVariables([14, 14, 0, 2, 1, 4])
+      ConditionalBranch([1, 14, 0, 3, 2])
+        CallCommonEvent([681])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 14, 0, 4, 0])
+        CallCommonEvent([682])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 33
+    CallCommonEvent([683])
+    Empty([])
+
+  Page 34
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["【ドーメイマ】"])
+      ShowText(["この私のように、常に瀕死になるアビリティを伝授しましょう。"])
+      ShowText(["瀕死になる代わり、全能力値がアップするメリットもありますよ。"])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["【ドーメイマ】"])
+      ShowText(["またこのアビリティは、ターンHP回復の効果も無効化します。"])
+      ShowText(["瀕死状態を維持したい時など、良いですね。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誰が「背水の陣」を修得しますか？"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+        ShowText(["【ドーメイマ】"])
+        ShowText(["グエー！！"])
+        EraseEvent([])
+        PlayBGM(["RPG::BGM(@name=\"scene_kanasimi2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ドーメイマは力尽きた……"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),863)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのキャラは、すでに「背水の陣」を習得済みだ……"])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 863])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\I[99]\\C[1]背水の陣\\C[0]を修得した！"])
+      ControlSwitches([73, 73, 1])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["【ドーメイマ】"])
+      ShowText(["グエー！！"])
+      EraseEvent([])
+      PlayBGM(["RPG::BGM(@name=\"scene_kanasimi2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ドーメイマは力尽きた……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["次のフロアに進みますか？"])
+    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
+    When([0, "まだ行かない"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "次のフロアに進む"])
+      ControlVariables([121, 121, 2, 0, 1])
+      CallCommonEvent([901])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    FadeoutScreen([])
+    ControlSwitches([41, 41, 1])
+    ControlSwitches([52, 52, 1])
+    ChangeSaveAccess([1])
+    ControlSwitches([61, 61, 1])
+    ControlSwitches([62, 62, 1])
+    ControlSwitches([63, 63, 1])
+    ControlSwitches([64, 64, 1])
+    ControlSwitches([65, 65, 1])
+    ControlSwitches([69, 69, 1])
+    ControlSwitches([70, 70, 1])
+    ControlSwitches([71, 71, 1])
+    ControlSwitches([72, 72, 1])
+    ControlSwitches([54, 54, 1])
+    ControlSwitches([66, 66, 1])
+    ControlSwitches([67, 67, 1])
+    ControlSwitches([68, 68, 1])
+    ControlVariables([131, 131, 0, 0, 0])
+    ControlVariables([121, 121, 0, 0, 0])
+    CallCommonEvent([112])
+    ConditionalBranch([1, 121, 1, 122, 1])
+      ControlVariables([122, 122, 0, 1, 121])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 576, 14, 50, 2, 2])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["終章開始につき、過去の迷宮から弾き出された！"])
+    ConditionalBranch([1, 912, 0, 0, 0])
+      ConditionalBranch([0, 2332, 0])
+        ConditionalBranch([0, 4, 0])
+          Script(["delete_actor_ex(26)"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          Script(["delete_actor_ex(5)"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Empty([])

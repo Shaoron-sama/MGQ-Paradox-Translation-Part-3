@@ -1,0 +1,82 @@
+Display Name = "？？？"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 277, 30, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 277, 30, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 277, 30, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["石碑にはこう刻まれている……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「1445年、聖ヨハネスの記念日　6月の26日"])
+    ShowText(["　サーカス団に130人の子供らが誘い出され"])
+    ShowText(["　デグリスの丘でいなくなった」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その碑文の周りに、後から乱雑に以下の文が掘られている……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「テグリスの丘から大量の人骨が見つかった」"])
+    ShowText(["「子供の骨、130人には足りない」"])
+    ShowText(["「頭が少ない、腕も少ない、サーカス団が持っていった」"])
+    ConditionalBranch([1, 1142, 0, 62, 2])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["なにこれ……すごく不気味なんだけど……"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["不気味な碑文だな……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["不気味な碑文だな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["いったいなぜ、こんな外洋の孤島に石碑が……"])
+      ShowText(["それに、この内容はいったい……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いったいなぜ、こんな外洋の孤島に石碑が……"])
+      ShowText(["それに、この内容はいったい……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

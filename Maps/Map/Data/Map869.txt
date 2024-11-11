@@ -1,0 +1,827 @@
+Display Name = "サバサ城 2F"
+Parallax Name = "BlueSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 31, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 32, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 60, 17, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 30, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 868, 33, 29, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_gaburiera_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    GatherFollowers([])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["とうとう追い詰めたぞ、ガブリエラよ！"])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["年貢の納め時……って言うんだっけ？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["追い詰めたとは、面白いことを言いますね……"])
+    ShowText(["私はここで、あなた達を待っていたのですよ。"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["この混乱、あなた達の仕業であることは明らかです。"])
+    ShowText(["ならば、のんびり待っていればそちらから来るなど自明……"])
+    ErasePicture([5])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowAnimation([37, 501, false])
+    ShowAnimation([40, 501, false])
+    ShowAnimation([33, 501, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ガブリエラが指を鳴らすと、潜んでいた伏兵が現れた！"])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["くっ、待ち伏せか……！"])
+    ConditionalBranch([4, 319, 0])
+      ShowTextAttributes(["walraune_fc1", 2, 0, 2])
+      ShowText(["【ベラドンナ】"])
+      ShowText(["ちょっとぉ！　どうするのよぉ！！"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["わざわざ罠に掛かりに来るなんて、間の抜けたこと……"])
+    ShowText(["ふふっ、これで終わりです。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ぐっ……！"])
+    ConditionalBranch([4, 58, 0])
+      ShowTextAttributes(["inp_fc2", 2, 0, 2])
+      ShowText(["【レミ】"])
+      ShowText(["さよなら……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ガブリエラに加え、敵の大群。"])
+    ShowText(["これは、絶体絶命か――"])
+    PlaySE(["RPG::SE(@name=\"mon_wind1\", @pitch=100, @volume=100)"])
+    PlayBGM(["RPG::BGM(@name=\"kiki4\", @volume=100, @pitch=100)"])
+    ControlSwitches([32, 32, 0])
+    Wait([60])
+    ShowPicture([5, "80_morrigan_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["ちょっと待ったぁ！！"])
+    ShowPicture([5, "80_lilith2_st01b", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_astaroth_st01b", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["この連中は、私達に任せなさい！"])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["あなた達は、ガブリエラを倒すのです……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["リリス三姉妹が、天使の軍勢の前に立ちはだかった！"])
+    ShowTextAttributes(["alice_fc1", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["リリス三姉妹！　脱出していたのか！"])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 7, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["やれやれ、また借りを作っちゃったわね……"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([6])
+    ShowPicture([5, "80_gaburiera_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    PlayBGM(["RPG::BGM(@name=\"boss0-nanadaitenshi\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["たかだか三匹の助勢があったところで、何だというのです？"])
+    ShowText(["伏兵などいなくとも、私一人で用は足ります……"])
+    ShowTextAttributes(["tamamo_fc3", 2, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["（……駄目じゃ、まだガブリエラに隙は見えん。"])
+    ShowText(["　なんとか、敵の注意を引きつけるのじゃ……）"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ここに至るまでに、貴様達の統治は見せてもらった。"])
+    ShowText(["これが天界の、そしてイリアスのやり方か……"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["自由を踏みにじり、尊厳まで奪うやり方など看過できん！"])
+    ShowText(["ただちに城を明け渡し、労働者達を解放しろ！"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["労働者を解放……？"])
+    ShowText(["いったい、何から解放しようというのです？"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["あの連中は、労働する事こそ喜びなのですよ。"])
+    ShowText(["満足している者達を、どう解放しようというのです。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そんな風に造り出して、洗脳しておいて何を言うんだ！"])
+    ShowText(["あれが人のあり方なんて、僕は絶対に認めない！"])
+    ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["それが驕りだというのです！"])
+    ShowText(["労働の為に造られた者に、それ以外の何を与えられるのです？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["それは、自由のための意志だ！"])
+    ShowText(["ゆえに我等は、ここで貴様を倒すぞ！"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["実力の差が、分からないはずはないでしょう……"])
+    ShowText(["六祖レベルならいざ知らず、あなた達程度では……ねぇ。"])
+    ShowTextAttributes(["tamamo_fc3", 2, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["（まだ無理じゃ……"])
+    ShowText(["　ガブリエラの警戒は、常に全方向に向いておる）"])
+    ShowTextAttributes(["tamamo_fc3", 2, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["（数秒で良い、なんとしても奴の意識を逸らせ。"])
+    ShowText(["　それが叶えば、ウチが始末をする……！）"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["我等を侮るでないぞ、ガブリエラ……！"])
+    ShowText(["魔王の力、存分に味わわせてくれるわ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["勇者の力も……"])
+    ShowText(["いや、人間の意志の力も見せてやる！"])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["メカの力もね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["あなた達は、すぐに悟る事になるでしょう。"])
+    ShowText(["七大天使の力が、どれほどのものかを……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["凍てつくようなオーラが、周囲一帯を満たす。"])
+    ShowText(["いよいよ、ガブリエラがその強大な力を見せようとしているのだ――"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["私の植物に精気を奪われ、力尽きる瞬間まで後悔しなさい。"])
+    ShowText(["ちっぽけな身で、大いなる存在に挑んでしまった事を――！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これくらいで、臆すものか……！"])
+    ShowText(["犠牲になってきた人々の分まで、戦い抜く！！"])
+    ConditionalBranch([4, 413, 0])
+      ShowTextAttributes(["kurodanuki_fc1", 0, 0, 2])
+      ShowText(["【黒狸】"])
+      ShowText(["相手にとって、不足はねぇ！"])
+      ShowText(["黒狸様の力、天界に轟かせてやるぜ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 511, 0])
+      ShowTextAttributes(["gaburiera_fc1", 2, 0, 2])
+      ShowText(["【ガブリエラ’】"])
+      ShowText(["悪いことは言いません、今すぐ撤退しなさい。"])
+      ShowText(["邪神の後ろ盾も、頼りにはなりません……"])
+      ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+      ShowText(["【ガブリエラ】"])
+      ShowText(["な、何を……まるで、私が邪神と通じているかのように！"])
+      ShowText(["これは敵の離反策ですね、そんなものにはかかりません！！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss_nanadaitensi\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1544, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-nanadaitenshi\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_gaburiera_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ConditionalBranch([1, 111, 0, 1, 2])
+      ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+      ShowText(["【ガブリエラ】"])
+      ShowText(["そんな、ここまで強いとは聞いていません……"])
+      ShowText(["その力、すでに六祖をも凌駕している……"])
+      ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+      ShowText(["【ガブリエラ】"])
+      ShowText(["ですが、ここでおめおめと倒されるわけにはいきません！"])
+      ShowText(["こうなれば、私の全回復力を破壊力に変換して――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 111, 0, 2, 1])
+      ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+      ShowText(["【ガブリエラ】"])
+      ShowText(["なるほど、悪くはありませんね……"])
+      ShowText(["イリアス様のご執心も納得です。"])
+      ShowTextAttributes(["alice_fc2", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["馬鹿な……ほとんどダメージがないだと！？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["まさか、ここまで強いなんて……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["あれだけ、ダメージを与えたと思ったのに――"])
+      ShowText(["ガブリエラの体は、揺らぎもしなかった。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["これが、七大天使の実力。"])
+      ShowText(["六祖にも匹敵するという、人智を超えた存在――"])
+      ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+      ShowText(["【ガブリエラ】"])
+      ShowText(["決して、悪くはありませんが……"])
+      ShowText(["七大天使に挑むには、少々早すぎましたね。"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"mon_power\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ガブリエラの鞭に、聖なる力が集中する！"])
+    ShowText(["一気に僕達を吹き飛ばす気だ――"])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ぐっ、まずい……！　あんなものを食らえば――"])
+    ConditionalBranch([4, 82, 0])
+      ShowTextAttributes(["suzume_fc1", 3, 0, 2])
+      ShowText(["【ちゅん】"])
+      ShowText(["ひゃぁぁ……た、助けて～！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["gaburiera_fc1", 1, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["さあ、消滅しなさい。"])
+    ShowText(["魂まで消え果て、イリアス様に――"])
+    FadeoutBGM([1])
+    ErasePicture([5])
+    ShowAnimation([28, 542, false])
+    Wait([60])
+    ControlSwitches([33, 33, 0])
+    Wait([30])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["ようやく、隙を見せたな……"])
+    ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["な……！？"])
+    PlaySE(["RPG::SE(@name=\"mon_slash3\", @pitch=100, @volume=100)"])
+    PlayBGM(["RPG::BGM(@name=\"boss_vs\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "iv_tamamo_v_gabriera1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玉藻の尾が、ガブリエラの胸を貫いた！"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["この一撃のために、みな命を賭けたのだ……"])
+    ShowText(["確実にあの世へ逝けい！"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["九十九の送り火、黄泉の通い路……"])
+    ShowText(["闇に誘え、九十九葬炎！！"])
+    ShowTextAttributes(["gaburiera_fc1", 3, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["あ……あぁぁぁぁぁっ！！"])
+    PlaySE(["RPG::SE(@name=\"mon_fire1\", @pitch=100, @volume=100)"])
+    ShowPicture([6, "iv_tamamo_v_gabriera2", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["紅蓮の炎がガブリエラを体内から焼き尽くした！"])
+    ShowTextAttributes(["gaburiera_fc1", 4, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["こんな……！　まさか、この私が……！"])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["ぐっ、なんという熱気だ……みな、下がれ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["熱っ！　離れてるのに、すごい熱が……！"])
+    ConditionalBranch([4, 102, 0])
+      ShowTextAttributes(["youko_fc1", 2, 0, 2])
+      ShowText(["【きつね】"])
+      ShowText(["すごいけど、あたし達まで熱いよ～！！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["gaburiera_fc1", 4, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["話が……ち、がう……"])
+    PlaySE(["RPG::SE(@name=\"Fire2\", @pitch=100, @volume=80)"])
+    ShowPicture([7, "iv_tamamo_v_gabriera3", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ガブリエラの体は、灼熱の炎の中で焼き尽くされた――"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["ふん……塵も残さず消え果てよ。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["やった……のか？"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["玉藻よ、確かに滅ぼしたのか？"])
+    ShowText(["逃げられた、なんて事はあるまいな？"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["体内から、我が禁術の炎を流し込んでやったのだ。"])
+    ShowText(["元より炎に弱い相手、ひとたまりもあるまい。"])
+    ConditionalBranch([4, 286, 0])
+      ShowTextAttributes(["witchs_fc1", 0, 0, 2])
+      ShowText(["【ウィッチ】"])
+      ShowText(["生命反応、確実に消えているわ……"])
+      ShowText(["間違いなく、ガブリエラは滅び去ったわよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["あんなに強かった相手なのに……"])
+    ShowText(["なんだか、呆気ないような……"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["貴様達が、死ぬ気で戦ってこそ出来た一瞬の隙よ。"])
+    ShowText(["あれで殺れねば、こちらが危うかったわ。"])
+    ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+    ShowText(["【玉藻】"])
+    ShowText(["さて……ウチは力を使い果たした。"])
+    ShowText(["これでしばらくは出ては来られんぞ……"])
+    ShowAnimation([28, 542, false])
+    Wait([60])
+    ControlSwitches([33, 33, 1])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玉藻は姿を消した……"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([5, "80_ratael_st03", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_ratael_st03", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["ratael_fc1", 2, 0, 2])
+    ShowText(["【ラタエルＡ】"])
+    ShowText(["まさか……！"])
+    ShowText(["ガブリエラ様が、滅ぼされた……！？"])
+    ShowTextAttributes(["ratael_fc1", 2, 0, 2])
+    ShowText(["【ラタエルＢ】"])
+    ShowText(["我々は、誰に指示を受ければ……"])
+    ShowText(["と、とにかく退却を……！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowAnimation([37, 501, false])
+    ShowAnimation([40, 501, false])
+    ShowAnimation([33, 501, false])
+    Wait([60])
+    ControlSwitches([31, 31, 1])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["主を失った天使達は混乱し、城外に逃げ去っていった――"])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue1\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_morrigan_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+    ShowText(["【モリガン】"])
+    ShowText(["ははっ、やっぱ天使共は無能だな。"])
+    ShowText(["ボスがいなくなりゃ、何も出来ないのか！"])
+    ShowPicture([5, "80_morrigan_st01b", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_astaroth_st01b", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+    ShowText(["【アスタロト】"])
+    ShowText(["この城から、次々に天使の気配が消えていくわ。"])
+    ShowText(["散り散りに逃げていくみたいね。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([30])
+    SetMoveRoute([42, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([43, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([44, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([30])
+    ShowPicture([5, "80_lilith2_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["【リリス】"])
+    ShowText(["魔王アリス、それに勇者ルカ……大した手際です。"])
+    ShowText(["あなた達のサバサ陥落作戦、見事に成功しましたね。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ああ、僕達の勝利だ……"])
+    ShowText(["玉藻に最初から最後まで助けてもらって、なんとかね。"])
+    ConditionalBranch([4, 420, 0])
+      ShowTextAttributes(["hatibi_fc1", 0, 0, 2])
+      ShowText(["【八尾】"])
+      ShowText(["流石は、魔界でのたまも様。"])
+      ShowText(["お見事であった……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ともかく、ガブリエラを初めとした天使達を城から排除した。"])
+    ShowText(["彼女達の支配から、サバサを解放したのだ――"])
+    ErasePicture([5])
+    ShowTextAttributes(["alice_fc1", 1, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["さあ、リバースクロイツの連中をサバサ城内に呼び込むぞ。"])
+    ShowText(["体勢を整え、この城を天界攻略の足掛かりとするのだ！"])
+    ConditionalBranch([4, 340, 0])
+      ShowTextAttributes(["queenvampire_fc1", 0, 0, 2])
+      ShowText(["【ファティマ】"])
+      ShowText(["ふはははは！　この城も、我がものとなったわ！"])
+      ConditionalBranch([4, 338, 0])
+        ShowTextAttributes(["carmilla_fc1", 0, 0, 2])
+        ShowText(["【カーミラ】"])
+        ShowText(["クィーンヴァンパイア様の名が、天界にも轟きますね～！！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 339, 0])
+        ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
+        ShowText(["【エリザベート】"])
+        ShowText(["実にめでたいですな、我が君！　はっはっは！！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["サム達も、奴隷みたいな扱いは止めさせないと……"])
+    ShowText(["そこら辺も、考えていかなくちゃね。"])
+    ConditionalBranch([4, 233, 0])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["間違いなく、教育が必要となるでしょう。"])
+      ShowText(["その時は、私の出番かもしれませんね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 391, 0])
+      ShowTextAttributes(["mefist_fc2", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["間違いなく、教育が必要となるでしょう。"])
+      ShowText(["その時は、私の出番かもしれませんね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして僕達は、サバサ城を陥落させた。"])
+    ShowText(["しかしまだ、女神イリアス率いる軍勢との戦いは始まったばかりだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["重要都市の1つを落とされ、重臣1人を討たれて敵が黙っているとも思えない。"])
+    ShowText(["女神イリアスとの戦いは、この先どんどん熾烈になっていくだろう――"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([180])
+    ControlSwitches([32, 32, 1])
+    ChangeTransparency([0])
+    TransferPlayer([0, 870, 29, 31, 0, 0])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["gaburiera_fc1", 0, 0, 2])
+    ShowText(["【ガブリエラ】"])
+    ShowText(["私を前にして、本棚の方が気になるのですか……？"])
+    ShowText(["そこまで本好きとは、ラファエラと気が合いそうですね。"])
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["この先に立ちこめる圧迫感……"])
+    ShowText(["余にも分かるぞ、ここにガブリエラがいるな。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ああ、間違いない……"])
+    ShowText(["いよいよだね、気合いを入れて行こう。"])
+    ConditionalBranch([4, 15, 0])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["【サラマンダー】"])
+      ShowText(["いかに超越しているといえど、奴は植物。"])
+      ShowText(["火が弱点に違いない……私が死力を尽くさねばならんな。"])
+      ConditionalBranch([4, 72, 0])
+        ShowTextAttributes(["phoenix_fc1", 4, 0, 2])
+        ShowText(["【ミニ】"])
+        ShowText(["あたしも、燃えてるぞ！"])
+        ShowText(["ガブリエラ、思いっきり燃やしてやるからな～！"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "ラタエル3"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "ラタエル1"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "ラタエル2"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "ラタエル"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺には癒やしの魔力が満ちていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+    ShowText(["【リファイール】"])
+    ShowText(["この先には、ガブリエラ様がおられる……"])
+    ShowText(["断じて、通す事は出来んぞ！"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1531, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+    ShowText(["【リファイール】"])
+    ShowText(["もし、お前達がサバサを統治するとして……"])
+    ShowText(["サム達を、どうするつもりだというのだ？"])
+    ShowChoices([["自由にする", "働かせる", "処刑する"], 0])
+    When([0, "自由にする"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["そうか……そう思うよな……"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["……行け、阻む気はない。"])
+      Empty([])
+
+    When([1, "働かせる"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["お前達さえ、そうだというのか……"])
+      ShowText(["……失望したぞ。"])
+      Empty([])
+
+    When([2, "処刑する"])
+      ShowTextAttributes(["rifaiel_fc1", 2, 0, 2])
+      ShowText(["【リファイール】"])
+      ShowText(["しょせん邪神の手先だな。"])
+      ShowText(["私は、何を期待したのか……"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["nagael_fc1", 0, 0, 2])
+    ShowText(["【ナガエル】"])
+    ShowText(["ガブリエラ様は、雲の上のお方よ。"])
+    ShowText(["あなた達ごときに、どうこう出来るはずもないわ……"])
+    Empty([])

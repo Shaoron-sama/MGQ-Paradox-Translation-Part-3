@@ -1,0 +1,25 @@
+CommonEvent 651
+Name = "イベント：エル"
+
+  999([651])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 430, 0])
+    ShowTextAttributes(["ningyohime_fc1", 3, 0, 2])
+    ShowText(["【エル】"])
+    ShowText(["カニさんと遊びに行こうっと♪"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["ningyohime_fc1", 4, 0, 2])
+  ShowText(["【エル】"])
+  ShowText(["海の力、貸してあげる～♪"])
+  ControlSwitches([430, 430, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["エルから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、海技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

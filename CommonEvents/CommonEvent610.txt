@@ -1,0 +1,25 @@
+CommonEvent 610
+Name = "イベント：シルフ"
+
+  999([610])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 61, 0])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["風の力は、すごいんだから！"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+  ShowText(["【シルフ】"])
+  ShowText(["わーい、あたしが助けてあげるねー！"])
+  ControlSwitches([61, 61, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["シルフが力を貸してくれるようだ！"])
+  ShowText(["次のボスフロアまで、風の加護が与えられる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

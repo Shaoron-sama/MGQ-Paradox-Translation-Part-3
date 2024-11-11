@@ -1,0 +1,32 @@
+CommonEvent 7563
+Name = "魅凪：敗北"
+
+  999([7698])
+  CallCommonEvent([7000])
+  ShowPicture([5, "80_minagi_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+  ErasePicture([6])
+  ShowTextAttributes(["minagi_fc1", 0, 0, 2])
+  ShowText(["【魅凪】"])
+  ShowText(["そういうわけで、お前の負けだ……"])
+  ShowText(["まだまだ修行が足りなかったようだな。"])
+  ShowTextAttributes(["minagi_fc1", 0, 0, 2])
+  ShowText(["【魅凪】"])
+  ShowText(["悔しければ、また我に挑むが良い。"])
+  ShowText(["何度でも、屈辱の体液を搾り出してくれよう……"])
+  ErasePicture([5])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ChangeMapDisplay([1])
+    ControlVariables([57, 57, 0, 0, 1287])
+    TransferPlayer([0, 287, 134, 124, 2, 0])
+    PlayBGM(["RPG::BGM(@name=\"scene_sinpi\", @volume=100, @pitch=100)"])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

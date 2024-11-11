@@ -1,0 +1,409 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 86, 24, 6, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 86, 24, 6, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 86, 24, 6, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺には癒やしの魔力が満ちていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["なんか騒がしいわね……何かあったの？"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ベッドでは、サキュバスが金髪騎士にのしかかろうとしていた！"])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["あははっ、その整った顔が屈辱に歪む様がたまらないわね。"])
+    ShowText(["それじゃあ、いただきまーす♪"])
+    ShowTextAttributes(["Actor1", 4, 0, 2])
+    ShowText(["【ヨハネ】"])
+    ShowText(["くっ……イリアス様、どうか救いの手を……"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……やめなさい！"])
+    ShowText(["そのような狼藉、この私が許しません！！"])
+    ShowTextAttributes(["Actor1", 4, 0, 2])
+    ShowText(["【ヨハネ】"])
+    ShowText(["あなたは……イリアス様！？"])
+    ShowText(["それにしては、小さいな……"])
+    ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["助けに来たのに、その言い様は何なのです！"])
+    ShowText(["あなたも天罰が欲しいのですか！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あの騎士が、反乱組織の工作員。"])
+    ShowText(["そして、クィーンの正体はなんと――"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_evaq_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["美味しいところで、邪魔に入ってくれちゃって……"])
+    ShowText(["あんた達、そんなに私を怒らせたいの？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まさか、エヴァ……！？"])
+    ConditionalBranch([4, 143, 0])
+      ShowTextAttributes(["eva_fc1", 2, 0, 2])
+      ShowText(["【エヴァ】"])
+      ShowText(["ええっ……！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["この村の統治者は、僕達のよく知った人物だった。"])
+    ShowText(["まさか、魔界のエヴァがサキュバスクィーンだったとは――"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["この世界では、ずいぶんと出世したようですね。"])
+    ShowText(["ですが、結局は落ちぶれるのがあなたの宿命です！"])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["いきなり現れて、訳の分からないことを……"])
+    ShowText(["クィーンに逆らった罪、あんた達の体で払ってもらうわよ。"])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["天使は、とっても高く売れるしねぇ。"])
+    ShowText(["天使を玩具にしたいっていう妖魔は、意外に多いのよ……"])
+    ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ううっ、背筋がゾワゾワします……"])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["それに、そこの少年勇者……"])
+    ShowText(["勇者を犯したい、ってロールプレイは大人気よ。"])
+    ShowTextAttributes(["evaq_fc1", 0, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["あんたなら、最上級の値が付くわ……"])
+    ShowText(["もちろん私がたっぷり味見した後でね、うふふっ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そんな事、させはしない！"])
+    ShowText(["ここでお前を倒し、この村の悪行を止めさせる！"])
+    ShowTextAttributes(["shion_fc1", 1, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["さあ、処刑タイムだ！"])
+    ShowText(["この屋敷ごと圧壊してやるぜ！"])
+    ConditionalBranch([4, 401, 0])
+      ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["馬鹿、屋敷は残せ……"])
+      ShowText(["屋敷は圧壊させるな……"])
+      ShowTextAttributes(["shion_fc1", 4, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["ノリで言っただけだって、怒るなよ～！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 5, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["クィーンサキュバスが、どういうものか……"])
+      ShowText(["あなたには、教育が必要なようね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 611, 0])
+      ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+      ShowText(["【クィーンエヴァ’】"])
+      ShowText(["今、客観的に見て気付いたんだけど……"])
+      ShowText(["こうして見ると、この屋敷って成金趣味全開じゃない？"])
+      ShowTextAttributes(["evaq_fc1", 3, 0, 2])
+      ShowText(["【クィーンエヴァ】"])
+      ShowText(["なっ……私の偽物！？"])
+      ShowText(["この私に成り代わって、財産財宝を全て奪う気ね！？"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1745, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_evaq_st03b", 0, 0, 0, 0, 100, 100, 255, 0])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["そんな……この私が……"])
+    ConditionalBranch([4, 34, 0])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["魔界の女王も、大したことないわね……"])
+      ShowText(["辺境でお山の大将を気取っていたレベルなのかしら。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["あまり偉そうに説教できる立場でもないけれど……"])
+      ShowText(["この村での振る舞い、サキュバスとして目に余るわ。"])
+      ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+      ShowText(["【クィーンエヴァ】"])
+      ShowText(["あんた、魅凪の使いね！"])
+      ShowText(["こんな所まで、私を追いかけてくるなんて……！！"])
+      ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+      ShowText(["【クィーンエヴァ】"])
+      ShowText(["その偉そうな言い草も態度も、そっくりよ！"])
+      ShowText(["私を見下して、馬鹿にして……！！"])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["私が、魅凪にそっくり……？"])
+      ShowText(["よく知らないけど、賛同できないわね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["さあ、大人しく降参するのですね。"])
+    ShowText(["奴隷業など根絶やしにし、あなたは村から放り出します。"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["イヤよ……もう、あんな暮らしには戻りたくないわ！"])
+    ShowText(["貧しいのは、もうイヤなの……"])
+    PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["私は、生まれた頃から貧しかったわ。"])
+    ShowText(["食べるものにさえ困り、盗みを働いた私を……"])
+    FadeoutBGM([1])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ちょっとちょっと……BGM、ストップ！"])
+    ShowText(["悪党が悲しい過去を独白するとか、私が許しませんよ！"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……はい、このBGMでどうぞ。"])
+    ShowText(["お気の毒な話を続けていいですよ。"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["盗みを働いた私は、情状酌量も許されず監獄に――"])
+    ShowTextAttributes(["evaq_fc1", 3, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["……ちょっと！　なんなの、このBGM！"])
+    ShowText(["これじゃ、全然気分が出ないじゃないの！"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["悪党の過去独白など、悲劇ではなく喜劇で結構。"])
+    ShowText(["さあ、話を続けなさい……"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["監獄の中は、三人の大囚人が牛耳っていたわ。"])
+    ShowText(["私はその一人ジャイナに取り入り、脱獄計画を練ったの。"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["でも、ジャイナのライバルであるギナが黙っていなかったわ。"])
+    ShowText(["ギナは前科二十五犯の重罪人で、私達に戦争を仕掛けたの。"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["こうして、監獄を二つに割った囚人大抗争が始まったわ。"])
+    ShowText(["そこで私は気付いたの、ジャイナとギナが同一人物だと――"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["（意外に面白くなってきた……）"])
+    ShowTextAttributes(["evaq_fc1", 2, 0, 2])
+    ShowText(["【クィーンエヴァ】"])
+    ShowText(["……もういいわよ。"])
+    ShowText(["お願いだから、このBGMを止めて……"])
+    ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["この手はなかなか有効ですね、今後も使いましょう。"])
+    ShowText(["次に悲劇的な過去を独白する敵が待ち遠しいです……♪"])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["（正直、続きが気になる……）"])
+    Wait([30])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、クィーンエヴァは簀巻きにされて川に放り込まれた。"])
+    ShowText(["手下達もあっさり降参し、村はイリアス様の傘下に収まったのである――"])
+    Wait([60])
+    TransferPlayer([0, 99, 24, 8, 8, 2])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_colosseum\", @volume=100, @pitch=100)"])
+    FadeinScreen([])
+    Script(["gain_medal(109)"])
+    RecoverAll([0, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["そろそろ、潮時みたいね。"])
+    ShowText(["美術品の三つや四つでも盗んで、とんずらしちゃおっと。"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["クィーンったら、読みもしないのに見栄で本なんて揃えて……"])
+    ShowText(["この文学全集、ホコリが積もってるじゃない。"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2654, 2654, 0])
+    ChangeWeapons([930, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2653, 2653, 0])
+    ChangeArmor([825, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([109, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([109, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([109, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2722, 2722, 0])
+    ChangeArmor([784, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])

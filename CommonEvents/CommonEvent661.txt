@@ -1,0 +1,26 @@
+CommonEvent 661
+Name = "イベント：クィーンフェアリー"
+
+  999([661])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 440, 0])
+    ShowTextAttributes(["queenfairy_fc1", 0, 0, 2])
+    ShowText(["【クィーンフェアリー】"])
+    ShowText(["自然は大切にするのですよ。"])
+    ShowText(["粗末に扱えば、必ず牙を剥くでしょう。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([440, 440, 0])
+  ShowTextAttributes(["queenfairy_fc1", 0, 0, 2])
+  ShowText(["【クィーンフェアリー】"])
+  ShowText(["自然の力を授けましょう……キラッ☆"])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["クィーンフェアリーから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、自然感応の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,526 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 20, 41, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 39, 23, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 15, 49, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 13, 44, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 28, 50, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 26, 21, 24, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShotBalloonIcon([34, 1, false])
+    ShotBalloonIcon([35, 1, false])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([60])
+    ShowPicture([5, "80_ranccubus_st03", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_leeccubus_st03", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ここの奴隷も解放させてもらうぞ！"])
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ちょっと！　うちのペットをどうする気なのよ！"])
+    ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["あなた達が、代わりにペットになりたいのかしら……"])
+    ShowText(["それじゃあ、望み通りにしてあげるわ！"])
+    ConditionalBranch([4, 401, 0])
+      ShowTextAttributes(["gnosis_fc1", 3, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["人を人とも思わぬ者どもよ……"])
+      ShowText(["天罰を下す……"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1740, false, false])
+    ControlSwitches([81, 81, 1])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["なんでよ、ちゃんと可愛がってるのに……"])
+    ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["人間はペットじゃありません！"])
+    ConditionalBranch([4, 284, 0])
+      ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
+      ShowText(["【セーラ】"])
+      ShowText(["ご、ごめんなさい……"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["捕らえられていた男達を、ポケット魔王城に送り込んだ！"])
+    ControlSwitches([2508, 2508, 0])
+    TransferPlayer([0, 27, 38, 11, 2, 2])
+    FadeinScreen([])
+    ConditionalBranch([0, 2509, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["まだ、宿屋で奴隷が捕まってる。"])
+      ShowText(["あっちも解放しに行こう！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これで、村の奴隷はみんな保護したね。"])
+      ShowText(["いよいよ大詰め、クィーンの屋敷に乗り込もう！"])
+      ControlVariables([1157, 1157, 0, 0, 9])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ここに捕まってる奴隷を解放しろ！"])
+    ShowPicture([5, "80_ranccubus_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["それはうちの商売道具よ！"])
+    ShowText(["勝手な事をしないで！"])
+    ConditionalBranch([4, 34, 0])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["人の尊厳を踏みにじる事、許しはしないわ……"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 1736, false, false])
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["こんな事をして……"])
+    ShowText(["私達は、明日から何を食べて生きていけばいいのよ……"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["明日の食事を気にする必要はありません。"])
+    ShowText(["あなたは、ここで死ぬのですから……"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["イリアス様……それ悪党のセリフじゃない？"])
+    ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["生きる糧なら、弱者を虐げる以外の事を見つけてくれ。"])
+    ShowText(["僕は同じ人間だ、こんな扱いは看過できない……"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["そう、こういう感じ！"])
+    ShowText(["さすが勇者の中の勇者！"])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["捕らえられていた男達を、ポケット魔王城に送り込んだ！"])
+    SetMoveRoute([25, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([30, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    TransferPlayer([0, 27, 43, 44, 4, 2])
+    FadeinScreen([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["こっちの部屋にも奴隷が捕まってる！"])
+    ShowText(["彼等も助けないと！"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Wait([30])
+    ShowPicture([5, "80_ranccubus_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_greatorc_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["おい、何を勝手してやがるんだ……？"])
+    ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["この村の決まりを乱すような真似は許さないわ。"])
+    ShowText(["あなた達も、奴隷堕ちよ……！"])
+    ConditionalBranch([4, 36, 0])
+      ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["そっちが地獄に落ちたら……？"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    BattleProcessing([0, 1743, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([31, 31, 1])
+    ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["この村には、この村の秩序があるのよ……"])
+    ShowText(["よそから来た者が、勝手な正義感で乱さないで……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["その秩序、虐げられる側も納得の上なのですか？"])
+    ShowText(["結局は、力をもって押しつけているに過ぎないのでしょう……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["力がある者が弱者を虐げるのが、秩序と言うならば……"])
+    ShowText(["最も強い我々が、弱いあなた達を虐げても文句はないはず！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それも乱暴な理論だけど……"])
+    ShowText(["まあ、僕達は殴り込みを掛ける側だし間違っちゃいない。"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 1, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["文句があるなら、力で抗ってみろよ！"])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["捕らえられていた男達を、ポケット魔王城に送り込んだ！"])
+    ControlSwitches([2509, 2509, 0])
+    TransferPlayer([0, 27, 42, 46, 4, 2])
+    FadeinScreen([])
+    ConditionalBranch([0, 2508, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["まだ、民家で奴隷が捕まってる。"])
+      ShowText(["あっちも解放しに行こう！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これで、村の奴隷はみんな保護したね。"])
+      ShowText(["いよいよ大詰め、クィーンの屋敷に乗り込もう！"])
+      ControlVariables([1157, 1157, 0, 0, 9])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["ちょっと、店で騒ぎを起こさないでよ……"])
+    ShowText(["早く出て行ってよね。"])
+    Empty([])

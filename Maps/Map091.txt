@@ -1,0 +1,574 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 11, 34, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 11, 42, 0, 0])
+    ConditionalBranch([1, 1111, 0, 3, 0])
+      ConditionalBranch([0, 2392, 1])
+        ControlVariables([11, 11, 0, 0, 1])
+        CallCommonEvent([566])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 24, 34, 0, 0])
+    ConditionalBranch([1, 1111, 0, 1, 0])
+      ConditionalBranch([0, 2380, 1])
+        SetMoveRoute([13, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+        SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["くっ……遅かったか！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["すでに、ピザ屋はヴィヌムの自室に誘い込まれてしまった。"])
+        ShowText(["こうなれば、乗り込んで助けるしかない――"])
+        ControlSwitches([2380, 2380, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1111, 0, 1, 0])
+      ConditionalBranch([0, 2380, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["この先に、誰かの気配がする……"])
+        ShowText(["このまま進めば、鉢合わせになってしまうな。"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 24, 41, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 4, 7, 0, 0])
+    ConditionalBranch([0, 2386, 0])
+      ConditionalBranch([0, 2385, 1])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["よし、ここでミュスカをやり過ごそう……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["しばらく、トイレで息を潜めていると――"])
+        ShowText(["階段を降りるミュスカの足音が聞こえてきた。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["そのまま、足音はトイレの前を通り過ぎ――"])
+        ShowText(["そして、台所の方へと遠ざかっていく。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["……行ったみたいだな。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["玄関のドアが閉じる音がした。"])
+        ShowText(["ミュスカは、外出した可能性が高い――"])
+        ControlSwitches([2385, 2385, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 26, 30, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 27, 15, 0, 0])
+    ConditionalBranch([1, 1111, 0, 2, 0])
+      ScrollMap([8, 3, 5])
+      SetMoveRoute([16, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShotBalloonIcon([-1, 1, false])
+      ShowTextAttributes(["nemea_fc2", 2, 0, 2])
+      ShowText(["【ネメア】"])
+      ShowText(["あら……？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["わぁっ……！！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["まずい、ネメアが入浴中だった――"])
+      ShowTextAttributes(["nemea_fc2", 0, 0, 2])
+      ShowText(["【ネメア】"])
+      ShowText(["見慣れない子ね……しかも、その気配……"])
+      ShowText(["もしかして別世界から召喚されて来たのかしら？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["くっ……！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["僕は、その場から離れようとしたが――"])
+      ShowTextAttributes(["nemea_fc2", 4, 0, 2])
+      ShowText(["【ネメア】"])
+      ShowText(["あらあら……逃げなくてもいいのよ？"])
+      ShowText(["怖がらなくていいの……♡"])
+      Script(["display_skill_name(\"誘惑の魔眼\")"])
+      Wait([15])
+      PlaySE(["RPG::SE(@name=\"mon_flash\", @pitch=100, @volume=100)"])
+      FlashScreen(["Color(@red=255.0, @green=204.0, @blue=255.0, @alpha=255.0)", 60, true])
+      Wait([15])
+      Script(["clear_skill_name"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あ、あぁぁ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誘惑の魔力が、たちまち全身を駆け巡る。"])
+      ShowText(["これでは、もはや抵抗もできない――"])
+      ControlSwitches([2408, 2408, 0])
+      CallCommonEvent([5785])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 31, 30, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ConditionalBranch([1, 1111, 0, 2, 0])
+      ConditionalBranch([0, 2385, 1])
+        ControlSwitches([31, 31, 0])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 153, 33, 35, 0, 0])
+        CallCommonEvent([546])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 153, 33, 35, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ConditionalBranch([1, 1111, 0, 2, 0])
+      ConditionalBranch([0, 2385, 1])
+        ControlSwitches([31, 31, 0])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 153, 33, 35, 0, 0])
+        CallCommonEvent([546])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 153, 34, 35, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 94, 5, 7, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1111, 0, 2, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["戻っている余裕はない！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 95, 5, 5, 2, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([0, 2382, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["牛乳に眠り薬を仕込んである。"])
+      ShowText(["これを、誰かが飲んでくれれば――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2383, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["コーラに眠り薬を仕込んである。"])
+      ShowText(["これを、誰かが飲んでくれれば――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2384, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["オレンジジュースに眠り薬を仕込んである。"])
+      ShowText(["これを、誰かが飲んでくれれば――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["飲み物が色々あるな……"])
+    ConditionalBranch([1, 1111, 0, 1, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["だが、今は冷蔵庫を漁っている場合ではない……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2373, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["だが、今は冷蔵庫を漁っている場合ではない……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この飲み物に、眠り薬を混ぜれば――"])
+      ShowText(["後に、ミュスカ達への足止めになるかもしれない。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["だが、眠り薬は一回分しかないようだ。"])
+      ShowText(["どの飲み物に眠り薬を入れようか……？"])
+      ShowChoices([["牛乳", "コーラ", "オレンジジュース", "やめておく"], 4])
+      When([0, "牛乳"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["牛乳に眠り薬を仕込んだ。"])
+        ShowText(["これを、誰かが飲んでくれれば――"])
+        ControlSwitches([2382, 2382, 0])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "コーラ"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["コーラに眠り薬を仕込んだ。"])
+        ShowText(["これを、誰かが飲んでくれれば――"])
+        ControlSwitches([2383, 2383, 0])
+        ExitEventProcessing([])
+        Empty([])
+      When([2, "オレンジジュース"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["オレンジジュースに眠り薬を仕込んだ。"])
+        ShowText(["これを、誰かが飲んでくれれば――"])
+        ControlSwitches([2384, 2384, 0])
+        ExitEventProcessing([])
+        Empty([])
+      When([3, "やめておく"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そういえば、このまま階段を上がったら――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ちょうど、階段を降りてきたミュスカと鉢合わせになる。"])
+    ShowText(["以前に僕は、それを体験しているのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["どこかに隠れて、やり過ごさないと。"])
+    ShowText(["いい場所はないかな……？"])
+    ControlSwitches([2386, 2386, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そういえば、このまま階段を上がったら――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ちょうど、階段を降りてきたミュスカと鉢合わせになる。"])
+    ShowText(["以前に僕は、それを体験しているのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["どこかに隠れて、やり過ごさないと。"])
+    ShowText(["いい場所はないかな……？"])
+    ControlSwitches([2386, 2386, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ControlSwitches([2391, 2391, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まだピザ屋は来ていないが、そろそろチャイムを押す頃だ。"])
+    ShowText(["迅速に、かつ油断せずに事を進めなければ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["これから、地下室にいる透と合流。"])
+    ShowText(["その後、この家から脱出するのみだ――"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["ＺＺＺ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["眠り薬の入ったコーラを飲んだのか。"])
+    ShowText(["しっかり眠ってるみたいだけど……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["だが、いつ目が覚めるか分からない。"])
+    ShowText(["あまり近付かないようにしよう――"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([0, 2392, 1])
+      ControlVariables([11, 11, 0, 0, 2])
+      CallCommonEvent([566])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([0, 2392, 1])
+      ControlVariables([11, 11, 0, 0, 3])
+      CallCommonEvent([566])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    CallCommonEvent([567])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    CallCommonEvent([567])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ControlSwitches([2386, 2386, 0])
+    ControlSwitches([2385, 2385, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そう言えば、このまま階段を上がったら――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ちょうど、階段を降りてきたミュスカと鉢合わせになる。"])
+    ShowText(["以前に僕は、それを体験しているのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ここで隠れて、やり過ごすか……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しばらく、トイレで息を潜めていると――"])
+    ShowText(["階段を降りるミュスカの足音が聞こえてきた。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そのまま、足音はトイレの前を通り過ぎ――"])
+    ShowText(["そして、台所の方へと遠ざかっていく。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……行ったみたいだな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["玄関のドアが閉じる音がした。"])
+    ShowText(["ミュスカは、外出した可能性が高い――"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])

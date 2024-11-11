@@ -1,0 +1,302 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 47, 21, 10, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 47, 36, 13, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 47, 13, 22, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 47, 34, 23, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 47, 19, 32, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1035, 1035, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["この店は道具屋ですが、売り物は綺麗に整頓されています。"])
+    ShowText(["ここを後にする前に、ざっと整理したようですね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["残っていた納品書によれば、なくなっているアイテムはありません。"])
+    ShowText(["自分達の意志で出て行ったのなら、アイテムを持ち出すはずなのに……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["ここは宿屋でした……"])
+    ShowText(["我々派遣調査員も、ここで休ませてもらっています。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["あなた達も、ここで休んでいかれますか？"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      FadeoutScreen([])
+      PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+      Wait([150])
+      RecoverAll([0, 0])
+      FadeinScreen([])
+      Empty([])
+
+    When([1, "いいえ"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1035, 1035, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["失踪した村人達は、何のメッセージも残しませんでしたが……"])
+    ShowText(["ここにあった一文のみの手紙が、唯一の例外なのです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["手紙には、綺麗な文字でこう書かれていた……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「私達は、神の世界に旅立ちます」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["「神の世界に旅立つ」とは、どういう意味でしょう。"])
+    ShowText(["集団自殺を示唆しているという調査員もいますが……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["いくらなんでも、村民全員が自殺してしまうとは思えません。"])
+    ShowText(["抵抗する人や、逃げ出す人は必ずいるはずなんです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["また、なぜ残された書き置きはこれだけなのでしょうか。"])
+    ShowText(["自分達がどこに行くか、他の者に伝えようとはしなかったのでしょうか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["当然ながら、この村の者達も外部に親戚や知人達がたくさんいます。"])
+    ShowText(["そういった人達に、何もメッセージを残さなかった理由は……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["時間がなかった、という事はありません。"])
+    ShowText(["どの家の住民も、出発前に家の中を片付けているんです。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["そんな時間がありながら、なぜメッセージを残さなかったのか……"])
+    ShowText(["……まったく、何もかもが謎ですね。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1035, 1035, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["非常に奇妙な点なのですが……"])
+    ShowText(["住民達は、自分達の持ち物を全て置いていっています。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["財産や日用品はもちろん、食料や薬まで……"])
+    ShowText(["全員で旅に出たとするなら、置いていくはずがありません。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["いったい、彼らはどこに……"])
+    ShowText(["そして、何の目的で……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1035, 1035, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["見ての通り、争った跡もなければ荒らされた形跡もありません。"])
+    ShowText(["自分達の意志で出て行ったであろう証拠も、いくつかあります。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["しかし彼らは、どこへ消えてしまったのでしょうか。"])
+    ShowText(["これだけの大人数が移動し、目撃証言が皆無なんて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["まさに、煙のように消えてしまったとしか思えません。"])
+    ShowText(["いったい何があったのでしょうか……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([335, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([176, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([188, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["この家は、犬を飼っていたようです。"])
+    ShowText(["しかし、その犬も見つかっていません……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["他の家も同様に、ペットや家畜ごと失踪しているのです。"])
+    ShowText(["村人達が連れて行ったのでしょうか……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["60"])
+    ShowTextAttributes(["dog_fc1", 0, 0, 2])
+    ShowText(["【ポチ】"])
+    ShowText(["わんこも一緒に消えちゃったの……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["妙な事に、どの家も片付きすぎています。"])
+    ShowText(["村を出る前に、ざっと整理をしていったとしか思えません……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【調査員】"])
+    ShowText(["ナマモノは処分されていますし、台所も非常に綺麗。"])
+    ShowText(["身の回りのものを全て清めてから、全員が失踪するなど……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([36, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

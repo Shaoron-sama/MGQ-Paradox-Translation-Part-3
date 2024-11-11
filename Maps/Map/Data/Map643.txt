@@ -1,0 +1,1005 @@
+Display Name = "魔界駅"
+Parallax Name = "DarkSpace1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 5, 0])
+      ControlVariables([1142, 1142, 0, 0, 6])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ここで、列車とやらが来るのを待てば良いのか……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["あくまでも、ここが敵地である事を忘れずに。"])
+      ShowText(["騒ぎになるようであれば、列車を強奪しましょう。"])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["いいのかな、そんな事して……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["それから数分後。"])
+      ShowText(["レールの向こうから、何か奇妙な車両が接近してきた！"])
+      ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+      ConditionalBranch([4, 36, 0])
+        ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+        ShowText(["【ルシフィナちゃん】"])
+        ShowText(["わぁっ、変なのが来た！"])
+        ShowText(["魔界って、おもしろ～い♪"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["お客様を確認、停車します……"])
+      ShowText(["当列車は、ゴルド大陸行きになります。"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ま、魔物の列車……！？"])
+      ShowText(["いや、列車が魔物なのですか……？"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["私は魔物でも列車でもなく、魔列車です。"])
+      ShowText(["乗車には乗車券が必要ですが、お持ちですか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["定期券なら、持ってるけど……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["僕達が侵入者なのはバレていないのか、気にしていないのか――"])
+      ShowText(["ともかく、僕は魔列車に定期券を見せてみる。"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["定期券を拝見いたしました。"])
+      ShowText(["それでは、お乗り下さいませ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ちょっと不安ですが……"])
+      ShowText(["とりあえず、乗ってみましょうか。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["本当に大丈夫なのかな……"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["不安を抱きながらも、僕達は車両へと乗り込む。"])
+      ShowText(["車両の中は割と普通で、大きめの馬車と変わらないようだ。"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      ConditionalBranch([4, 383, 0])
+        ShowTextAttributes(["eden_fc1", 0, 0, 2])
+        ShowText(["【エデン】"])
+        ShowText(["動き出しましたね……"])
+        ShowText(["このエデン、こうしたものに乗るのは初めてです。"])
+        ConditionalBranch([4, 36, 0])
+          ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+          ShowText(["【ルシフィナちゃん】"])
+          ShowText(["あたしも、はじめてだよ～！"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      FadeoutScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして僕達は、得体の知れない列車に乗り込んだ。"])
+      ShowText(["そのまま、南へと運ばれていったのである――"])
+      Wait([60])
+      TransferPlayer([0, 643, 32, 11, 2, 2])
+      ShowPicture([5, "80_niprell_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車に揺られて、一時間ほど。"])
+      ShowText(["僕達は、乗車したのとは異なる駅へと辿り着いていた。"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["到着しました、ゴルド北駅となります。"])
+      ShowText(["それでは、またご乗車下さい……"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして、魔列車は走っていった。"])
+      ShowText(["静かな駅に、僕達のみが残される――"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["本当に、着いてしまったようですね。"])
+      ShowText(["あんなに怪しい列車だったのに……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ちゃんと定期券を持ってたからじゃないかな？"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["そういう問題じゃないと思うけど……"])
+      ShowText(["……そういう問題なのかな？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ともかく、駅から出ましょう。"])
+      ShowText(["こんな目立つ場所で、敵と鉢合わせしたら困りますしね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 6, 1])
+      ConditionalBranch([1, 1142, 0, 75, 2])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["レールの向こうから、魔列車がやってきた！"])
+        ShowPicture([5, "80_niprell_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+        ShowText(["【魔列車】"])
+        ShowText(["お客様を確認、停車します……"])
+        ShowText(["当列車は、ヘルゴンド大陸行きになります。"])
+        ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+        ShowText(["【魔列車】"])
+        ShowText(["定期券をお持ちですね、お乗り下さいませ。"])
+        ShowChoices([["乗る", "乗らない"], 2])
+        When([0, "乗る"])
+          ChangeTransparency([0])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["ルカ達は魔列車に乗り込んだ！"])
+          ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+          ShowText(["【魔列車】"])
+          ShowText(["それでは、発車します……"])
+          ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+          MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+          ErasePicture([5])
+          FadeoutScreen([])
+          ErasePicture([5])
+          Wait([60])
+          TransferPlayer([0, 643, 32, 11, 2, 2])
+          ChangeTransparency([1])
+          FadeinScreen([])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "乗らない"])
+          ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+          ShowText(["【魔列車】"])
+          ShowText(["ご乗車なさらないのですね。"])
+          ShowText(["それでは、発車します……"])
+          MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+          ErasePicture([5])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["魔列車は走り去っていった……"])
+          ExitEventProcessing([])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 76, 1])
+      EraseEvent([])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どれだけ待っても、魔列車はやって来ない。"])
+      ShowText(["この路線は封鎖されたのだろうか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([2460, 2460, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ここは……もしかして、駅ですか！？"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["こんな変な場所、初めて見た……"])
+    ShowText(["変なレールが、はるか彼方まで続いてるみたいね。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["これが道なのかな……"])
+    ShowText(["とても歩きにくそうだけど。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["未開人ですか、あなた達は……"])
+    ShowText(["ここは鉄道駅、汽車か電車の停車場ですよ。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ともかく、早急にこの場から離れるべきですね。"])
+    ShowText(["私達の目的と無関係ですし、見つかると厄介です。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ConditionalBranch([0, 2460, 1])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ここは……もしかして、駅ですか！？"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["こんな変な場所、初めて見た……"])
+      ShowText(["変なレールが、はるか彼方まで続いてるみたいね。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これが道なのかな……"])
+      ShowText(["とても歩きにくそうだけど。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["未開人ですか、あなた達は……"])
+      ShowText(["ここは鉄道駅、汽車か電車の停車場ですよ。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ここ、鉄道駅って場所よね。"])
+      ShowText(["船は出てないのかな……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["そう言えば、ほこらで乗車チケットを受け取りましたね。"])
+    ShowText(["しかし侵入者の身で、安全に乗れるのかどうか……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ルカ、列車が来るのを待ってみましょう。"])
+    ShowText(["正面から乗車できなくても、密航できるかもしれません。"])
+    ControlVariables([1142, 1142, 0, 0, 5])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlSwitches([2741, 2741, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 192, 121, 2, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    TransferPlayer([0, 1, 201, 100, 8, 2])
+    ConditionalBranch([1, 1142, 0, 3, 2])
+      PlayBGM(["RPG::BGM(@name=\"ooana\", @volume=100, @pitch=100)"])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 330, 243, 8, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 283, 248, 2, 0])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["サン・イリアは、ここから西ですが――"])
+      ShowText(["すぐ南のナタリアポートで、情報を集めていきませんか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そうですね……"])
+      ShowText(["魔界のサン・イリアについて、知っている事は少ないし。"])
+      ConditionalBranch([4, 327, 0])
+        ShowTextAttributes(["ningyohime_fc1", 4, 0, 2])
+        ShowText(["【エル】"])
+        ShowText(["魔界のナタリアポートって、どんな町かなぁ？"])
+        ShowText(["人魚と人間が仲良くしてるといいね……♪"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サン・イリアは魅凪が支配している事以外、ほとんど何も知らない。"])
+      ShowText(["乗り込む前に、出来れば情報を集めておきたいところだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["そのためにも、ナタリアポートへ寄るべきだろう。"])
+      ShowText(["そこで情報を集めつつ、サン・イリア潜入の準備を整えるのだ――"])
+      ControlVariables([1160, 1160, 0, 0, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 258, 264, 8, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 264, 304, 2, 0])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["天使の斥候がもたらした情報によれば……"])
+      ShowText(["この大陸は、先の聖魔大戦で壊滅的な被害を受けたとか。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["半分の大きさになった、って言ってたね……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この大陸に存在する街や村は、エンリカのみ……"])
+      ShowText(["あと、未確認ながら古城があると聞いています。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["イリアスヴィルも……ないの？"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ええ……存在しないようです。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この魔界には、僕達の故郷は存在しない――"])
+      ShowText(["別世界とはいえ、やはり悲しくなってしまう。"])
+      ConditionalBranch([1, 1142, 0, 58, 2])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["しかし、なぜこの大陸に来たのですか？"])
+        ShowText(["冒険心も結構ですが、今は特に用事がないはずですよ……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1142, 0, 59, 1])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ともかく、目的を果たしましょう。"])
+        ShowText(["エンリカは、このまま南に進めば辿り着けるはずです。"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["そこで、救世主の堕天使と会いましょう。"])
+        ShowText(["もしかしたら、手詰まりの状況が打開できるしれません……"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 75, 2])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["レールの向こうから、魔列車がやってきた！"])
+      ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["お客様を確認、停車します……"])
+      ShowText(["当列車は、ヘルゴンド大陸行きになります。"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["定期券をお持ちですね、お乗り下さいませ。"])
+      ShowChoices([["乗る", "乗らない"], 2])
+      When([0, "乗る"])
+        ChangeTransparency([0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ルカ達は魔列車に乗り込んだ！"])
+        ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+        ShowText(["【魔列車】"])
+        ShowText(["それでは、発車します……"])
+        ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+        MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+        ErasePicture([5])
+        FadeoutScreen([])
+        ErasePicture([5])
+        Wait([60])
+        TransferPlayer([0, 643, 6, 11, 2, 2])
+        ChangeTransparency([1])
+        FadeinScreen([])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "乗らない"])
+        ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+        ShowText(["【魔列車】"])
+        ShowText(["ご乗車なさらないのですね。"])
+        ShowText(["それでは、発車します……"])
+        MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+        ErasePicture([5])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["魔列車は走り去っていった……"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 76, 1])
+      EraseEvent([])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どれだけ待っても、魔列車はやって来ない。"])
+      ShowText(["この路線は封鎖されたのだろうか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、ナタリア大陸行きになります。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかし、この路線の定期券を持っていない……"])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["乗車券をお持ちではないのですね。"])
+    ShowText(["無賃乗車はお断りしております……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["乗車券がないと、乗せてもらえないみたいだね。"])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["それでは、発車します……"])
+    ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+    MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔列車は走り去っていった……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["どこかで定期券を手に入れないと、"])
+    ShowText(["ナタリア大陸には渡れないのか……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ここまでの旅路で、少々疲れましたね。"])
+    ShowText(["フィノアでゆっくり休みながら考えませんか？"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、ナタリア大陸行きになります。"])
+    ConditionalBranch([0, 2533, 0])
+      ConditionalBranch([0, 2534, 1])
+        CallCommonEvent([467])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["定期券をお持ちですね、お乗り下さいませ。"])
+    ShowChoices([["乗る", "乗らない"], 2])
+    When([0, "乗る"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は魔列車に乗り込んだ！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      FadeoutScreen([])
+      Wait([60])
+      TransferPlayer([0, 643, 86, 11, 2, 2])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "乗らない"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ご乗車なさらないのですね。"])
+      ShowText(["それでは、発車します……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車は走り去っていった……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、ノア大陸行きになります。"])
+    ConditionalBranch([0, 2533, 0])
+      ConditionalBranch([0, 2534, 1])
+        CallCommonEvent([467])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["定期券をお持ちですね、お乗り下さいませ。"])
+    ShowChoices([["乗る", "乗らない"], 2])
+    When([0, "乗る"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は魔列車に乗り込んだ！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      FadeoutScreen([])
+      Wait([60])
+      TransferPlayer([0, 643, 59, 11, 2, 2])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "乗らない"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ご乗車なさらないのですね。"])
+      ShowText(["それでは、発車します……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車は走り去っていった……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、旧イリアス大陸行きになります。"])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["乗車券をお持ちではないのですね。"])
+    ShowText(["無賃乗車はお断りしております……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["乗車券がないと、乗せてもらえないみたいだね……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["いちいち乗車券を探すのも馬鹿げています。"])
+    ShowText(["叩きのめして、強引に乗りましょう。"])
+    ShowChoices([["いったん退く", "暴力に訴える"], 1])
+    When([0, "いったん退く"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ご乗車なさらないのですね。"])
+      ShowText(["それでは、発車します……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車は走り去っていった……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "暴力に訴える"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["腕尽くでも、乗車する！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["列車に対する暴力はお断りしております。"])
+      ShowText(["反撃プロトコルを実行いたします……"])
+      ConditionalBranch([4, 383, 0])
+        ShowTextAttributes(["eden_fc1", 1, 0, 2])
+        ShowText(["【エデン】"])
+        ShowText(["これまで、幾多の敵を誅してきましたが……"])
+        ShowText(["列車と戦うのは、初めての経験です。"])
+        ConditionalBranch([4, 538, 0])
+          ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+          ShowText(["【ハインリヒ】"])
+          ShowText(["僕も、流石に初めてだね……"])
+          ShowText(["だけど、負けるわけにはいかない！"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss2\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 1884, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ControlSwitches([2481, 2481, 0])
+      ShowPicture([5, "80_niprell_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["niprell_fc1", 2, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["暴力はおやめ下さい！"])
+      ShowText(["列車に対する暴力はおやめ下さい！"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["やめてほしければ、私達を乗せなさい。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ほとんど強盗じゃない……"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["分かりました、お乗り下さいませ。"])
+      ShowText(["どうか列車に対する暴力はご勘弁を……"])
+      ConditionalBranch([4, 397, 0])
+        ShowTextAttributes(["shion_fc1", 0, 0, 2])
+        ShowText(["【シオン】"])
+        ShowText(["なんだ、話せば分かる奴じゃないか。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["最初から、素直にそうしていれば良いのです。"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は魔列車に乗り込んだ！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      Wait([30])
+      FadeoutScreen([])
+      ErasePicture([5])
+      ConditionalBranch([1, 1142, 0, 59, 1])
+        ConditionalBranch([0, 2482, 1])
+          Wait([120])
+          TransferPlayer([0, 121, 0, 0, 0, 2])
+          FadeinScreen([])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      TransferPlayer([0, 643, 140, 11, 2, 2])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、旧イリアス大陸行きになります。"])
+    ConditionalBranch([0, 2533, 0])
+      ConditionalBranch([0, 2534, 1])
+        CallCommonEvent([467])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["あなた達は、暴力を振るうお客様……"])
+    ShowText(["……お乗り下さいませ。"])
+    ShowChoices([["乗る", "乗らない"], 2])
+    When([0, "乗る"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は魔列車に乗り込んだ！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      FadeoutScreen([])
+      ErasePicture([5])
+      Wait([60])
+      TransferPlayer([0, 643, 140, 11, 2, 2])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "乗らない"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ご乗車なさらないのですね。"])
+      ShowText(["それでは、発車します……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車は走り去っていった……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レールの向こうから、魔列車がやってきた！"])
+    ShowPicture([5, "80_niprell_st01", 0, 0, 640, 0, 50, 50, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["お客様を確認、停車します……"])
+    ShowText(["当列車は、ナタリア大陸行きになります。"])
+    ConditionalBranch([0, 2533, 0])
+      ConditionalBranch([0, 2534, 1])
+        CallCommonEvent([467])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+    ShowText(["【魔列車】"])
+    ShowText(["あなた達は、暴力を振るうお客様……"])
+    ShowText(["……お乗り下さいませ。"])
+    ShowChoices([["乗る", "乗らない"], 2])
+    When([0, "乗る"])
+      ChangeTransparency([0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達は魔列車に乗り込んだ！"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["それでは、発車します……"])
+      ShowText(["ガタン、ゴトン……ガタン、ゴトン……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      FadeoutScreen([])
+      Wait([60])
+      TransferPlayer([0, 643, 113, 11, 2, 2])
+      ChangeTransparency([1])
+      FadeinScreen([])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "乗らない"])
+      ShowTextAttributes(["niprell_fc1", 0, 0, 2])
+      ShowText(["【魔列車】"])
+      ShowText(["ご乗車なさらないのですね。"])
+      ShowText(["それでは、発車します……"])
+      MovePicture([5, nil, 0, 0, -640, 0, 150, 150, 0, 0, 60, true])
+      ErasePicture([5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔列車は走り去っていった……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「ヘルゴンド南駅」"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「ゴルド北駅」"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「ゴルド南駅」"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「サン・イリア東駅」"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「サン・イリア南駅」"])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「イリアス北駅」"])
+    Empty([])

@@ -1,0 +1,252 @@
+Display Name = "グランゴルド城 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 609, 30, 30, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 609, 57, 22, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 609, 3, 22, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["サリエラ様は見た目がヤバめだけど、至って常識人の方だ。"])
+    ShowText(["軍律違反には厳しいが、ちゃんとやってりゃ問題ねぇ。"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["獄卒は、過酷な職務だけに……福利厚生もしっかりしてる。"])
+    ShowText(["天界で唯一、勤務外なら天使が酒飲んでも許されるんだぜ。"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["それに比べ、ガブリエラ様なんかはひどかったみたいだな。"])
+    ShowText(["ここに左遷されたラタエラ達が、むしろイキイキしてたぜ。"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["ここは空席だぜ。占領軍の連中も、"])
+    ShowText(["わざわざここまで来て玉座には座りたくないみたいだな。"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSwitches([2635, 2635, 0])
+    ChangeItems([4022, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2634, 2634, 0])
+    ChangeArmor([490, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([772, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([771, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSwitches([2635, 2635, 0])
+    ChangeItems([3126, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSwitches([2635, 2635, 0])
+    ChangeItems([2460, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+    ShowText(["【パイパイ】"])
+    ShowText(["ふふ、また新しい秘石を開発してしまったアル！"])
+    ShowText(["次は、この秘石の能力値をさらに――"])
+    ShowTextAttributes(["alice_fc1", 3, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["おい、もう牢は開いている。"])
+    ShowText(["貴様は自由の身なのだが……"])
+    ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+    ShowText(["【パイパイ】"])
+    ShowText(["この部分の魔力伝達を、よりスムーズに――"])
+    ShowText(["伝達路の彫り込みを、より繊細に――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["一人の天使が、黙々と秘石を造っている。"])
+    ShowText(["あまりに熱中しすぎていて、こちらに気付いてもいないようだ――"])
+    ConditionalBranch([1, 1233, 0, 1, 2])
+      ControlVariables([1233, 1233, 0, 0, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1233, 0, 2, 0])
+      ConditionalBranch([8, 365])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["チャーハンを見せると、正気に戻るって話だったね。"])
+        ShowText(["ほら、ごはんだよ……"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        ShowTextAttributes(["tennyo_fc1", 1, 0, 2])
+        ShowText(["【パイパイ】"])
+        ShowText(["……チャーハンの香りアル！"])
+        ShowText(["そう言えば、一ヶ月ほど何も食べてなかったアルね！"])
+        ChangeItems([365, 1, 0, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["パイパイは、差し出したチャーハンをあっという間に食べてしまった！"])
+        ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+        ShowText(["【パイパイ】"])
+        ShowText(["ふう、久々に満足アルね……"])
+        ShowText(["あれ？　なんで牢の中に部外者がいるアルか？"])
+        ShowTextAttributes(["alice_fc1", 5, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["やれやれ……"])
+        ShowText(["監獄から解放された事にさえ気付いておらんのか。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["アリスは、グランゴルドが陥落した事を伝えた――"])
+        ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+        ShowText(["【パイパイ】"])
+        ShowText(["なんと、弟子が心配しているアルか……"])
+        ShowText(["それじゃあ、すぐにイリアスベルクに戻るアルよ。"])
+        ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+        ShowText(["【パイパイ】"])
+        ShowText(["みんなには、ずいぶん世話になったアル。"])
+        ShowText(["イリアスベルクで営業を再開するから、ぜひ来るアルよ～♪"])
+        ShowTextAttributes(["tennyo_fc1", 0, 0, 2])
+        ShowText(["【パイパイ】"])
+        ShowText(["それじゃあネ～♪"])
+        FadeoutScreen([])
+        ControlVariables([1233, 1233, 0, 0, 3])
+        PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["パイパイは、ハーピーの羽でイリアスベルクに戻った！"])
+        FadeinScreen([])
+        ShowTextAttributes(["alice_fc1", 1, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["イリアスベルクで営業を再開すると言っていたな。"])
+        ShowText(["貴重な秘石を入手できそうだ、ぜひ行ってみるぞ。"])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["チャーハンを見せると、正気に戻るって話だったね。"])
+        ShowText(["でも、手持ちにチャーハンがないな……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["パイパイは秘石作りに集中し、まったく反応しない……"])
+        ShowText(["チャーハンを用意して、あらためて来てみよう。"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

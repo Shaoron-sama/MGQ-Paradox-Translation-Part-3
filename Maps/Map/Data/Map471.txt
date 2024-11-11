@@ -1,0 +1,960 @@
+Display Name = "コロシアム"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 662, 14, 18, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 577, 1, 28, 6, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 577, 1, 28, 6, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 577, 1, 28, 6, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 577, 1, 28, 6, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし商人】"])
+    ShowText(["試合に出るのかい？"])
+    ShowText(["だったら、アイテムや秘石を揃えておかなきゃ！"])
+    ShowChoices([["買い物をする", "秘石の加工を頼む", "用はない"], 3])
+    When([0, "買い物をする"])
+      ShopProcessing([0, 3, 0, 0, false])
+      ShopItem([0, 4, 0, 0])
+      ShopItem([0, 7, 0, 0])
+      ShopItem([0, 11, 0, 0])
+      ShopItem([0, 22, 0, 0])
+      ShopItem([0, 23, 0, 0])
+      ShopItem([0, 35, 0, 0])
+      ShopItem([0, 102, 0, 0])
+      ShopItem([0, 109, 0, 0])
+      ShopItem([0, 110, 0, 0])
+      ShopItem([0, 3728, 0, 0])
+      ShopItem([0, 3758, 0, 0])
+      ShopItem([0, 3812, 0, 0])
+      ShopItem([0, 3794, 0, 0])
+      ShopItem([0, 3782, 0, 0])
+      Empty([])
+
+    When([1, "秘石の加工を頼む"])
+      Script(["call_synthesize(70)"])
+      Empty([])
+
+    When([2, "用はない"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【選ばれし商人】"])
+    ShowText(["うちの武具を使えば、優勝間違いなしだぜ！"])
+    ShopProcessing([1, 82, 0, 0, false])
+    ShopItem([1, 115, 0, 0])
+    ShopItem([1, 136, 0, 0])
+    ShopItem([1, 169, 0, 0])
+    ShopItem([1, 4237, 0, 0])
+    ShopItem([1, 327, 0, 0])
+    ShopItem([1, 356, 0, 0])
+    ShopItem([1, 394, 0, 0])
+    ShopItem([1, 434, 0, 0])
+    ShopItem([1, 467, 0, 0])
+    ShopItem([1, 502, 0, 0])
+    ShopItem([1, 543, 0, 0])
+    ShopItem([1, 584, 0, 0])
+    ShopItem([1, 615, 0, 0])
+    ShopItem([1, 652, 0, 0])
+    ShopItem([1, 693, 0, 0])
+    ShopItem([1, 720, 0, 0])
+    ShopItem([1, 771, 0, 0])
+    ShopItem([1, 793, 0, 0])
+    ShopItem([1, 864, 0, 0])
+    ShopItem([1, 4788, 0, 0])
+    ShopItem([2, 440, 0, 0])
+    ShopItem([2, 100, 0, 0])
+    ShopItem([2, 535, 0, 0])
+    ShopItem([2, 161, 0, 0])
+    ShopItem([2, 687, 0, 0])
+    ShopItem([2, 228, 0, 0])
+    ShopItem([2, 750, 0, 0])
+    ShopItem([2, 826, 0, 0])
+    ShopItem([2, 323, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【戦士】"])
+      ShowText(["大会が近いだけあって、流石に盛り上がっているな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【戦士】"])
+      ShowText(["大会が終わっても、やはりここは盛況だな……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["堅いことは言わねぇよ……"])
+    ShowText(["さあ、燃え上がりな！！"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["……でも、スリや強盗はシバくぜ。"])
+    ShowText(["ケンカは両成敗な。"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["大会当日は非番だぜ！"])
+      ShowText(["思いっきり観戦できるな！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["大会当日は非番で良かったぜ……"])
+      ShowText(["あんなゴタゴタが起きるなんてな。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["オレも大会に出たいなー！"])
+      ShowText(["その日はシフト入ってるんだよ……"])
+      ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["公務のサボりとか、ウリエラ様がガチ切れするからな。"])
+      ShowText(["仕方ねぇか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["giriel_fc1", 2, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["大会の日は、散々だったぜ。"])
+      ShowText(["魔王の手先を逃がしたって事で、ウリエラ様から懲罰を……"])
+      ShowTextAttributes(["giriel_fc1", 2, 0, 2])
+      ShowText(["【ギリエル】"])
+      ShowText(["ひぃっ、あの日の事は思い出したくねぇ！"])
+      ShowText(["いいか、大会の話はするなよ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["おいおい、巡礼者までコロシアム観戦か……？"])
+    ShowText(["神父サマには黙っといてやるぜ。"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+      ShowText(["【トルーパーロイド】"])
+      ShowText(["今年の大会も盛り上がりそうだな。"])
+      ShowText(["まあ、流石にウリエラ様の戦いは見られないだろうが……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["trooperloid_fc1", 2, 0, 2])
+      ShowText(["【トルーパーロイド】"])
+      ShowText(["大会の話はやめろ……"])
+      ShowText(["あたし達は、地獄の懲罰を……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["kirin_fc1", 0, 0, 2])
+      ShowText(["【キリン】"])
+      ShowText(["数年前に優勝したのは、人間の戦士だった。"])
+      ShowText(["挑戦権を行使し、ウリエラ様に挑んだのじゃが……"])
+      ShowTextAttributes(["kirin_fc1", 0, 0, 2])
+      ShowText(["【キリン】"])
+      ShowText(["その結果は、無残なものじゃった。"])
+      ShowText(["それから、挑戦権を行使した優勝者はいないのう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["kirin_fc1", 0, 0, 2])
+      ShowText(["【キリン】"])
+      ShowText(["大会に乱入した、あの狐の妖魔……"])
+      ShowText(["伝説に残る、六祖の玉藻様に酷似しておった。"])
+      ShowTextAttributes(["kirin_fc1", 0, 0, 2])
+      ShowText(["【キリン】"])
+      ShowText(["ウリエラ様に圧倒されたものの、妖魔側も凄まじい力よ。"])
+      ShowText(["いったいあれは、何者だったのじゃ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【あらくれ】"])
+      ShowText(["大会に優勝すると、賞品として強力な武器が与えられる。"])
+      ShowText(["三本の中から、好きなのを選ばせてくれるんだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【あらくれ】"])
+      ShowText(["さらに勝者は、ウリエラ様への挑戦権が与えられる。"])
+      ShowText(["ここでウリエラ様に勝てば、何でも願いを叶えてくれるとか。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【あらくれ】"])
+      ShowText(["まあ……実際に挑戦権を行使した優勝者はほとんどいない。"])
+      ShowText(["ウリエラ様と戦うなんて、自殺同然だからな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【あらくれ】"])
+      ShowText(["あの優勝者達と、狐の化物……"])
+      ShowText(["ウリエラ様が戦う姿を、まさか二度も見られるなんてな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【あらくれ】"])
+      ShowText(["だが、ウリエラ様の力は圧倒的だった！"])
+      ShowText(["あの方とまともに戦える奴なんて、この世にいないぜ！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+      ShowText(["【トルーパーロイド】"])
+      ShowText(["あたしは、来週からグランゴルドに異動だ。"])
+      ShowText(["最近はやけに異動が多いけど、何かあんのかな……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["trooperloid_fc1", 0, 0, 2])
+      ShowText(["【トルーパーロイド】"])
+      ShowText(["グランゴルドへの異動が取り止めになったぜ。"])
+      ShowText(["なんか脱走騒ぎがあって、向こうがゴタゴタしてるんだって。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["tatunoko_k_fc2", 0, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["たつのこチームが、優勝いただきなのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["tatunoko_k_fc2", 1, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["大会では、敗退したものの好成績だったのです！"])
+      ShowText(["空兵の強さを知らしめたのです！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["tatunoko_k_fc2", 0, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["優勝したら、伝説の武器がもらえるのです！"])
+      ShowText(["強い槍だったら嬉しいです！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["tatunoko_k_fc2", 1, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["予想以上の大健闘なのです！"])
+      ShowText(["おかしらに褒めてもらえるのです！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["tatunoko_k_fc2", 2, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["緊張してきたのです……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["tatunoko_k_fc2", 0, 0, 2])
+      ShowText(["【たつのこ空兵】"])
+      ShowText(["そろそろ、次の作戦が始まるのです。"])
+      ShowText(["飛行船に戻りましょう！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["ああ……エキサイトしてきました！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["いつでも私は、エキサイトしています！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【貴族の女性】"])
+    ShowText(["サン・イリアからはるばる参りました。"])
+    ShowText(["特等席で、殿方が惨めに負ける姿を眺めるのです……ふふっ。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["私は、観戦が目当てだよ。"])
+    ShowText(["戦いにはからっきし自信がないからね……"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【予想屋】"])
+      ShowText(["ヘイヘイ、そこのボーイズ！"])
+      ShowText(["次の大会、とっておきの予想を聞きたくないかい……？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【予想屋】"])
+      ShowText(["……って、巡礼者か。"])
+      ShowText(["流石にまずいな、やめとくよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【予想屋】"])
+      ShowText(["ヘイヘイ、そこのボーイズ！"])
+      ShowText(["次の試合、とっておきの予想を聞きたくないかい……？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【予想屋】"])
+      ShowText(["……って、巡礼者か。"])
+      ShowText(["流石にまずいな、やめとくよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1141, 0, 31, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【実況屋】"])
+      ShowText(["大会当日に向けて、今から眠っておくんだ。"])
+      ShowText(["ＺＺＺ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【実況屋】"])
+      ShowText(["……家で寝ろ、って思っただろ？"])
+      ShowText(["大会前の空気は味わっていたいんだよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1141, 0, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【実況屋】"])
+      ShowText(["大会当日、寝過ごしたよ。"])
+      ShowText(["ずっとここで眠ってて、誰も起こしてくれなかった。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【実況屋】"])
+      ShowText(["ショックのあまり、俺は今でも起き上がれない。"])
+      ShowText(["このままここで眠り続けて、地縛霊にでもなろう……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["ヒヒイロカネってのを知ってるか？"])
+    ShowText(["天界に伝わる、最も硬い鉱物のことだ。"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["イリアス様がお造りになる、伝説の装備品なんかは……"])
+    ShowText(["そのヒヒイロカネが使われてるっていう話だな。"])
+    ShowTextAttributes(["giriel_fc1", 0, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["そんな武器を賜るのは、熾天使レベルの方々さ。"])
+    ShowText(["あたしみたいな下っ端には、縁の無い話だぜ……"])
+    Empty([])
+
+CommonEvent 27
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 662, 13, 18, 0, 0])
+    Empty([])
+
+CommonEvent 56
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 66
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 67
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 68
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 69
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 70
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 71
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 72
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 73
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 74
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 75
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 76
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 77
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 78
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 79
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 80
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 81
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 82
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 83
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 84
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 85
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 86
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 87
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 88
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 89
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 90
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 91
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 92
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 93
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 94
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 95
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["40人のバトルファッカーを撃破すると……"])
+    ShowText(["なんと、特殊な転職アイテムがもらえるって聞いたわ。"])
+    Empty([])

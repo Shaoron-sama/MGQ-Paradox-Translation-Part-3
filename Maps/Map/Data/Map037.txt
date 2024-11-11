@@ -1,0 +1,785 @@
+Display Name = "グランドノア城 4F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 36, 12, 37, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 36, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 36, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 36, 31, 19, 0, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 34, 22, 41, 2, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 43, 2])
+      ShowTextAttributes(["whiteyel_fc1", 0, 0, 2])
+      ShowText(["【ワイティエル】"])
+      ShowText(["城内には水が流れて美しいですが……"])
+      ShowText(["構造が複雑で、驚くほど使いにくいですね。"])
+      ShowTextAttributes(["whiteyel_fc1", 2, 0, 2])
+      ShowText(["【ワイティエル】"])
+      ShowText(["どうやら、スライム達は流水や排水口内を通って動けたとか。"])
+      ShowText(["私達固形の生命には、非常に移動しづらい城です……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["whiteyel_fc1", 2, 0, 2])
+      ShowText(["【ワイティエル】"])
+      ShowText(["水の城も、なかなか悪くないと思えてきました。"])
+      ShowText(["この、水の流れる音が素敵なんですよね……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    CallCommonEvent([478])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    CallCommonEvent([478])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 43, 2])
+      ShowTextAttributes(["yuriel_fc1", 0, 0, 2])
+      ShowText(["【ユリエル】"])
+      ShowText(["メタトローネ様とサンダルフォーネ様は、"])
+      ShowText(["自室におられます。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["yuriel_fc1", 0, 0, 2])
+      ShowText(["【ユリエル】"])
+      ShowText(["サリエラ様は、天界ではグランゴルドを治めておられます。"])
+      ShowText(["この地の統治も、手慣れたものですよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 43, 2])
+      ShowTextAttributes(["whiteyel_fc1", 0, 0, 2])
+      ShowText(["【ワイティエル】"])
+      ShowText(["ずいぶん備蓄がありますね。"])
+      ShowText(["我々には不要なので、少しづつ住人に配分しましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["whiteyel_fc1", 0, 0, 2])
+      ShowText(["【ワイティエル】"])
+      ShowText(["食料の供給と配給も、ちゃんと安定しています。"])
+      ShowText(["サリエラ様の管理能力は、天界でも一番ですので。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["むしゃむしゃ……"])
+    ShotBalloonIcon([0, 1, false])
+    Wait([30])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["毒味チェック、ＯＫ！"])
+    ShowText(["大丈夫、ちゃんと食べられるよ！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 35, 2])
+      ShowTextAttributes(["maid_angel_fc1", 0, 0, 2])
+      ShowText(["【メイドエンジェル】"])
+      ShowText(["もうそろそろ、お二方がお昼寝する時間です。"])
+      ShowText(["あらためて、ベッドを整えておきましょう……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 36, 1])
+      ConditionalBranch([1, 1142, 0, 43, 2])
+        ShowTextAttributes(["maid_angel_fc1", 0, 0, 2])
+        ShowText(["【メイドエンジェル】"])
+        ShowText(["お二方が、いつ帰還されても良いように……"])
+        ShowText(["休んで頂く準備は、常に整えております。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["maid_angel_fc1", 0, 0, 2])
+      ShowText(["【メイドエンジェル】"])
+      ShowText(["ウリエラ様は猛々しい方ですが、理不尽な事はなされません。"])
+      ShowText(["乱暴者と勘違いしている者も多いのでは……？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 43, 2])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["天使に食事は不要だと言われているが……"])
+      ShowText(["大気中の聖素によるカロリー摂取は、栄養に偏りが出て来る。"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["それに嗜好としての食は、近年脚光を浴びているのだ。"])
+      ShowText(["これからは、天使も料理を食べる時代なのだぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["食材チェック……良し！"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["……私は仕事でやっているのだ。"])
+      ShowText(["あそこのキューピッドと一緒にするなよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1178, 0, 1, 0])
+      ControlVariables([1178, 1178, 0, 0, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["コックエンジェルに、サリエラに関して尋ねてみた……"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["サリエラ様の好きなこと……？"])
+      ShowText(["あの方は、実は美食家であられる。"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["特に、ヤマタイ料理をお好みでな……"])
+      ShowText(["過酷な任務の後は、いつもお寿司を注文されるぞ。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なるほど……お寿司ですか。"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["だが、天界ではすでにヤマタイは滅んでいてな……"])
+      ShowText(["不完全な古文書でしか、ヤマタイ料理の事は分からんのだ。"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["しかし、この魔界ではヤマタイが現存しておる。"])
+      ShowText(["もしかしたら……幻の料理、古代寿司の事も分かるかも……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["幻の料理、古代寿司……"])
+      ShowText(["それを食べさせてあげれば、サリエラは喜ぶかな？"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["もちろん、大いに喜ばれるはずだ。"])
+      ShowText(["幻の古代寿司を、実際に用意する事さえ出来ればな。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それでは、魔界のヤマタイに行ってみますか。"])
+      ShowText(["ちなみに、サリエラの笑顔を見た事はありますか……？"])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["えっ？　あの方に、笑う機能が備わっているのか……？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これは、大変そうだな……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ともかく、古代寿司とやらを用意してみよう。"])
+      ShowText(["魔界ヤマタイの飲食店で、話を聞いてみるのだ――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1178, 0, 2, 0])
+      ShowTextAttributes(["cooc_angel_fc1", 0, 0, 2])
+      ShowText(["【コックエンジェル】"])
+      ShowText(["なお、サリエラ様は美食家でな……"])
+      ShowText(["過酷な任務の後は、いつもお寿司を注文されるぞ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サリエラを笑わせるため、古代寿司とやらを用意してみよう。"])
+      ShowText(["魔界ヤマタイの飲食店で、話を聞いてみるのだ――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["furiel_fc1", 0, 0, 2])
+    ShowText(["【フーリエル】"])
+    ShowText(["メタトローネ様とサンダルフォーネ様の"])
+    ShowText(["メンテナンスは、私が担当しております。"])
+    ShowTextAttributes(["furiel_fc1", 0, 0, 2])
+    ShowText(["【フーリエル】"])
+    ShowText(["とはいえ、この城ではメンテナンス設備がありません。"])
+    ShowText(["水は潤沢なので、核魔導炉の冷却は問題ないのですが……"])
+    ShowTextAttributes(["furiel_fc1", 0, 0, 2])
+    ShowText(["【フーリエル】"])
+    ShowText(["ヤマタイはサイバー都市だとか。"])
+    ShowText(["そこならば、使える施設があるかもしれませんね。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 43, 2])
+      ShowTextAttributes(["holmiel_fc1", 0, 0, 2])
+      ShowText(["【ホルミエル】"])
+      ShowText(["イリアスクロイツも、よく働いてくれているな。"])
+      ShowText(["流石は、女神崇拝組織というだけの事はある。"])
+      ShowTextAttributes(["holmiel_fc1", 0, 0, 2])
+      ShowText(["【ホルミエル】"])
+      ShowText(["兵站も、天界からの物資転送により問題はない。"])
+      ShowText(["そもそも天使は、食事が不要だしな……"])
+      ShowTextAttributes(["holmiel_fc1", 0, 0, 2])
+      ShowText(["【ホルミエル】"])
+      ShowText(["そういうわけで、こちらは心配無用。"])
+      ShowText(["残る七大天使の解放に専念してもらえれば幸いだ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 44, 1])
+      ShowTextAttributes(["holmiel_fc1", 0, 0, 2])
+      ShowText(["【ホルミエル】"])
+      ShowText(["サリエラ様にウリエラ様……お二方がいれば、心強い。"])
+      ShowText(["ここは任せておけ、サバサは頼んだぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowPicture([5, "80_uriera_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([1, 1175, 0, 0, 0])
+      ControlVariables([1175, 1175, 0, 0, 1])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["それにしても……お前らは、本物だったな！"])
+      ShowText(["審判の子なんて、賑やかしの神輿だと思ってたぜ！"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["魔界の都市を片っ端から落としながら、六祖を撃退！"])
+      ShowText(["痛快だな、愉快な気分になってきやがったぜ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そ、そんな大した話じゃないよ……"])
+      ShowText(["逃げ回った事も一度や二度じゃないし……"])
+      ShowTextAttributes(["uriera_fc1", 0, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["それに比べて、俺は不甲斐ねぇ！"])
+      ShowText(["しょっぱなから捕まるなんて、役立たずもいいとこだぜ！"])
+      ShowTextAttributes(["uriera_fc1", 5, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["そのまま、助けを待つだけなんて……お姫様かよ！"])
+      ShowTextAttributes(["uriera_fc1", 6, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["うおおおおお、腹が立ってきたぜ！"])
+      ShowText(["俺自身の不甲斐なさにな！"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["わぁっ、落ち着いて！　火が出てますよ！！"])
+      ShowTextAttributes(["uriera_fc1", 2, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["俺達が、惨めに閉じ込められている間に……"])
+      ShowText(["お前達は、健気にも魔界中を走り回って……"])
+      ShowTextAttributes(["uriera_fc1", 4, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["六祖の元に乗り込んで、時には忍び込んで……"])
+      ShowText(["ううっ、泣かせやがるぜ……"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["すごい感情の揺り幅……"])
+      ShowText(["この短い時間で、喜怒哀楽をコンプしちゃった。"])
+      ShowTextAttributes(["uriera_fc1", 0, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["俺は誓う！"])
+      ShowText(["次こそは、お前達の力になるぜ！"])
+      ShowTextAttributes(["uriera_fc1", 5, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["この命！　この魂を！"])
+      ShowText(["お前達のために！　燃やし尽くす……うぉぉぉっ！！"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["うるさい、少し落ち着け……"])
+      ShowText(["お前の怒鳴り声で、城が崩れかねん……"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["おお、サリエラ！"])
+      ShowText(["相変わらずテンション低いな！"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["お前のテンションがおかしいのだ……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……二人は、なんだか仲が良さそうだね。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["仲良しってわけじゃないが、気心は知れてるな。"])
+      ShowText(["こいつは暗くてジメジメしてるが、意外に熱い奴だぜ！"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["こいつは騒がしいが、戦闘においては冷静な奴だ……"])
+      ShowText(["表面上の態度ほど、馬鹿ではない。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["はいはい、分かりました。"])
+      ShowText(["二人とも、今後よろしくお願いしますね。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["おうよ、お前達には借りがある！"])
+      ShowText(["この俺が、守ってやるぜ！"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["あなた達の存在は、天界の希望……"])
+      ShowText(["この私が、命に代えても守りましょう。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["二人とも、とても頼もしい。"])
+      ShowText(["これで、今後の戦いは今までよりも楽になるだろう――"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["さてと、せっかくの魔界だ。"])
+      ShowText(["兵器技術がどんなものか、この眼で確かめるか。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["魔界の……兵器技術？"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["おうよ、俺の全身には神具が備わってる。"])
+      ShowText(["どれも、イリアス様がお造りになられた神罰兵器よ。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["そういうわけで、俺も機械兵器いじりが趣味でな。"])
+      ShowText(["魔界の兵器技術も、興味があるって事さ。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["もし、とびきり強い魔界兵器が手に入ったら……"])
+      ShowText(["ぜひ、俺に見せてくれよ。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["魔界の兵器ですか……"])
+      ShowText(["もし入手できれば、戦力アップにも繋がりますね。"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["分かりました……発見次第、見せてあげましょう。"])
+      ShowText(["ただし見せるだけ、使うのは私達ですからね。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["おう、それで構わねぇよ。"])
+      ShowText(["良いモノを見せてくれたら、礼はするぜ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["魔界で最も機械技術が進んでるのは、ヤマタイだよね。"])
+      ShowText(["ちょっと行って、探してみようか。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ヤマタイで、強力な機械兵器を探し――"])
+      ShowText(["ぜひ、ウリエラに見せてみよう。"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1175, 0, 1, 0])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["俺の趣味は機械兵器いじりでな。"])
+      ShowText(["魔界の兵器技術も、大いに興味があるんだよ。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["もし、とびきり強い魔界兵器が手に入ったら……"])
+      ShowText(["ぜひ、俺に見せてくれよ。"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["見たりいじったりするだけで、ちゃんと返してやる。"])
+      ShowText(["良いモノを見せてくれたら、礼はするぜ！"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1175, 0, 2, 0])
+      ControlVariables([1175, 1175, 0, 0, 3])
+      ChangeItems([591, 1, 0, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ウリエラに、試作型荷電粒子砲を見せた……"])
+      ShowTextAttributes(["uriera_fc1", 2, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["なるほど、これが魔界最新鋭の機械兵器か……"])
+      ShowText(["ふむ、流石に大したシロモノだな。"])
+      ShowTextAttributes(["uriera_fc1", 2, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["粒子加速機構は、天界より進んでやがるぜ。"])
+      ShowText(["だが、収束機能に無駄があるな……"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["天界の技術で、いくつか改善できる点がある。"])
+      ShowText(["少し待ってな、バッチリ仕上げてやるよ！"])
+      FadeoutScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ウリエラは技師を呼び集め、荷電粒子砲の改良を行った――"])
+      FadeinScreen([])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["よし、出来たぜ！"])
+      ShowText(["天界と魔界の技術の合作ってやつだ！"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([725, 0, 0, 1])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["前の品より、断然強力になったぜ。"])
+      ShowText(["それを使って、邪神軍を薙ぎ倒してやれよ！"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["……さて、ずいぶん楽しませてもらったな。"])
+      ShowText(["こっちは約束の品だ、取っときな！"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([665, 0, 0, 1])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これは、封印職の解禁アイテムですね。"])
+      ShowText(["ありがたく頂いておきます。"])
+      ShowTextAttributes(["uriera_fc1", 0, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["これから、戦いはどんどん激しくなっていくはずだぜ。"])
+      ShowText(["間近まで火が迫っちゃ、敵も必死になるからな……"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["だが、俺達は負けねぇ！"])
+      ShowText(["俺達の力で、邪神も六祖も叩きのめしてやろうぜ！"])
+      ErasePicture([5])
+      Script(["gain_medal(2134)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1175, 0, 3, 0])
+      ShowTextAttributes(["uriera_fc1", 0, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["これから、戦いはどんどん激しくなっていくはずだぜ。"])
+      ShowText(["間近まで火が迫っちゃ、敵も必死になるからな……"])
+      ShowTextAttributes(["uriera_fc1", 1, 0, 2])
+      ShowText(["【ウリエラ】"])
+      ShowText(["だが、俺達は負けねぇ！"])
+      ShowText(["俺達の力で、邪神も六祖も叩きのめしてやろうぜ！"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowPicture([5, "80_sariera_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["無言ながら、すごい目力ですね。"])
+      ShowText(["何か言いたい事があるのでしょうか……？"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……あらためて、お礼申し上げます。"])
+      ShowText(["小イリアス様、そして審判の子……"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["あの六祖と、何度も激戦を繰り広げ……"])
+      ShowText(["私のみならず、他の七大天使をも封印から救い……"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["そのご活躍、まさしく驚異にして奇跡……"])
+      ShowText(["あなた達こそ、天界の救世主……"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["七大天使の助けがあってこそです。"])
+      ShowText(["私達だけならば、とっくに敗れていましたよ。"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["あなた達のため、この命を燃やすと誓いましょう。"])
+      ShowText(["それが、天界の希望を紡ぐということ……"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……あっ、話は終わりですか。"])
+      ShowText(["言うだけ言って、急に黙らないで下さい。"])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……すみません。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いえ、責めたわけではないのですが。"])
+      ShowText(["なんだか、やりにくいですね……"])
+      CallCommonEvent([482])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 0])
+      ShowTextAttributes(["sariera_fc1", 0, 0, 2])
+      ShowText(["【サリエラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……………………"])
+      CallCommonEvent([482])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([760, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2675, 2675, 0])
+    ChangeWeapons([185, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])

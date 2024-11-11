@@ -1,0 +1,311 @@
+Display Name = "魔城トゥーロマンサ"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 874, 10, 48, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 874, 10, 48, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 874, 10, 48, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 13, 2])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["まだ引き返せないわよ……"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 328, 187, 2, 1])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["なんとか、外に脱出できた……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["それでは、さっそく作戦会議を始めよう。"])
+      ShowText(["みんな、ポケット魔王城に来てくれ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アリスは、ポケット魔王城を取り出した！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それでは、さっそく作戦会議を始めましょう。"])
+      ShowText(["皆の者、ポケット魔王城に集まるのです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["イリアスは、ポケット魔王城を取り出した！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["byakunen_fc1", 1, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["小さなお城なのに、中に入れるなんて……"])
+    ShowText(["なんと面妖な道具なのでしょう。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ふふふ、すごいだろう……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ふふふ、良いものでしょう。"])
+      ShowText(["この世界の魔王より奪ってやったのですよ……"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして一同は、ポケット魔王城の一室へと集まった。"])
+    ShowText(["「夢の主」との決戦に向けて、作戦を練るために――"])
+    Wait([60])
+    ChangeTransparency([0])
+    ControlSwitches([31, 31, 1])
+    TransferPlayer([0, 943, 22, 19, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Script(["keep_all_equip"])
+    Script(["set_temp_actors(807,808,812,815,811,813,816,817)"])
+    RecoverAll([0, 0])
+    ShowPicture([1, "iv_castle1", 0, 0, 0, 0, 100, 100, 255, 0])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    Wait([60])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["あれが、魔城トゥーロマンサ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まさしく、目を疑うような光景。"])
+    ShowText(["とうてい現実のものとは思えない、異様な巨城がそこにあった。"])
+    ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["なんて事なの、間に合わなかったなんて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["結局、フルビュアの言う魔城召喚を阻止できなかった。"])
+    ShowText(["グランドノア城に辿り着く直前に、事は起きてしまったのだ――"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["でも……「夜の国」の広がりは予想以上に遅いみたい。"])
+    ShowText(["魔城の召喚に、なにかミスがあったのかも……"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["それでは……まだ、間に合うという事でしょうか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔城が出現すれば、この世界は一気に破滅に向かうという事だった。"])
+    ShowText(["しかし今、少なくともそのような状態にはなっていない。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["でも、あくまで時間の問題よ。"])
+    ShowText(["あの魔城から、今も夢の力が侵蝕し続けているわ。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["ならば、早急に手を打たねばなるまい。"])
+    ShowText(["リジェオよ、どのような手立てを取りうる？"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["……なんとなく、城内に「夜の国」との繋がりを感じる。"])
+    ShowText(["おそらく……異世界のゲートが魔城の中にあるんじゃない？"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["そのゲートを封鎖してしまえば……"])
+    ShowText(["この世界は救われる、ってことか？"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["封鎖さえ出来れば……ね。"])
+    ShowText(["でも、どうやればいいのか……"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["ゲートというのは、あの黒い渦のようなものですよね？"])
+    ShowText(["私達を、この世界に吸い寄せた――"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["そうだけど、もっと大きいと思う。"])
+    ShowText(["でもどうやって塞げばいいのかは、私も分からない……"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["どのみち、誰も現物を見てないから"])
+    ShowText(["今のままじゃ、想像しかできないって事か……"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["ここで頭を悩ますより……"])
+    ShowText(["現物の前で、色々試してみる方がいいんじゃないか？"])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["出たとこ勝負ですか……"])
+    ShowText(["少々、不安なのですが。"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["手遅れになってからじゃ、選択肢が狭まってしまう。"])
+    ShowText(["まだ余裕があるうちに、行動を起こしておこう。"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["破れかぶれでも、やるしかない――か。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["……結局、正面から乗り込むわけね。"])
+    ShowText(["他にやりようもないし、仕方ないんじゃない？"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ロウラットは、静かに頷く。"])
+    ShowText(["その目には、強い意志が宿っていた。"])
+    ShowTextAttributes(["lanpass_fc2", 3, 0, 2])
+    ShowText(["【ランパス】"])
+    ShowText(["う～ん、難しいことは任せるね。"])
+    ShowText(["私は、花粉を撒き散らす担当だから。"])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【夢狐】"])
+    ShowText(["右に同じ。"])
+    ShowText(["ウチ、正直ただのキツネだし。"])
+    ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+    ShowText(["【躯】"])
+    ShowText(["私も、この世界の事情は知らん。"])
+    ShowText(["私の目的は、カズヤを守ることだけだ。"])
+    ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+    ShowText(["【躯】"])
+    ShowText(["それで結果的に、カズヤは元の世界に帰るのだろう？"])
+    ShowText(["ならば、全力で向かうのみだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、話は決まった。"])
+    ShowText(["魔城トゥーロマンサに、正面から乗り込むのだ――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["無謀でも、やるしかない。"])
+    ShowText(["手をこまねいていれば、それだけ世界は破滅に近付くのだから。"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["覚悟を決めて……さあ、行こう！"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["分かりました、お供します！"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["【ロウラット】"])
+    ShowText(["…………！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして勇者達は、魔城へと乗り込んだのだった――"])
+    PlaySE(["RPG::SE(@name=\"mon_asioto3\", @pitch=100, @volume=100)"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ErasePicture([1])
+    FadeinScreen([])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["なにか……ひどく奇妙な雰囲気ですね。"])
+    ShowText(["おぞましさと安らぎを同時に感じます。"])
+    ScrollMap([8, 5, 4])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["魔城トゥーロマンサ……探索はあまりできてなかったけど、"])
+    ShowText(["見た所は私達の世界のものと、ほとんど変わらない……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["リジェオは、警戒しながら周囲を見回した――"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["でも、ガーゴイルが動かないわ。"])
+    ShowText(["なんで襲ってこないんだろう……"])
+    ScrollMap([2, 5, 4])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["がぁごいる、とは……？"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あの石像だけど、あれも夢魔なの。"])
+    ShowText(["本来なら、近付くと襲ってくるんだけど――"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["まあ、余計な戦闘をせずに済んだってことだ。"])
+    ShowText(["よし、慎重に先に進もう……"])
+    ControlVariables([1208, 1208, 0, 0, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])

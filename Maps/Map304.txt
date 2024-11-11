@@ -1,0 +1,467 @@
+Display Name = "世界樹 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 305, 5, 23, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 305, 20, 22, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 305, 42, 22, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 305, 17, 8, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([65, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 21, 331, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([12, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([276, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんなの、この大木……"])
+      ShowText(["木の中が、ダンジョンになってるなんて。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この大木、すごいな……"])
+      ShowText(["木の中がダンジョンになってるなんて。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ここは、世界樹だな……"])
+      ShowText(["何か用事でもあるのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ここは、世界樹ですね……"])
+      ShowText(["何か用事でもあるのですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1011, 0, 4, 1])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["そういえば、世界樹の実が必要なんじゃなかった？"])
+        ShowText(["クィーンハーピーの病気を治すために……"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["そういえば、世界樹の実が必要だったな。"])
+        ShowText(["クィーンハーピーの病気を治すために……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["walraune_fc1", 3, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["ちょっと、ここは植物族の聖地よ？"])
+    ShowText(["人間が土足で入ってこないでくれる……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["いや、僕達は――"])
+    ShowTextAttributes(["walraune_fc1", 3, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["ほら、出てってよ！"])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 21, 332, 2, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["追い出されてしまった……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["門前払いだけど……良かったの？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あっちも悪いことをしているわけじゃないし……"])
+      ShowText(["強引に押し通るわけにはいかないだろ？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あっちも悪いことをしているわけじゃないし……"])
+      ShowText(["強引に押し通るわけにはいかないね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["なんだか悪そうだったけどな……"])
+      ShowText(["まあいい、別の目的地へ行くぞ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なんだか悪そうでしたが……"])
+      ShowText(["まあ、別の目的地へ行きましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんなの、この大木……"])
+      ShowText(["木の中が、ダンジョンになってるなんて。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この大木、すごいな……"])
+      ShowText(["木の中がダンジョンになってるなんて。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ここが植物族の聖地、世界樹だ。"])
+      ShowText(["クィーンアルラウネは、おそらく上層にいるだろう。"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["そして、精神操作の呪法がここで行われているのも間違いない。"])
+      ShowText(["ここを満たした呪いの波動が、妖精の島に流れ込んだのだな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ここが植物族の聖地、世界樹です。"])
+      ShowText(["クィーンアルラウネは、どうせ上層にいるのでしょうね……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["また、精神操作の呪法がここで行われているのも間違いないようです。"])
+      ShowText(["ここを満たした呪いの波動が、妖精の島に流れ込んだのですね……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["精神操作の呪法は、本来は植物族に向けられたものなのね。"])
+      ShowText(["偶発的に、近くの妖精の島まで効果が及んじゃっただけで……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["精神操作の呪法は、本来は植物族に向けられたものなんだな。"])
+      ShowText(["偶発的に、近くの妖精の島まで効果が及んだだけで……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["そうした状況を、黒のアリス一派が利用したといったところか。"])
+      ShowText(["人間とエルフ達の潰し合わせを期待し、漁夫の利を狙った――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そうした状況を、黒のアリス一派が利用したのでしょう。"])
+      ShowText(["人間とエルフ達の潰し合わせを期待し、漁夫の利を狙った――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 45, 0])
+      ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+      ShowText(["【アリストロメリア】"])
+      ShowText(["漁夫の利などという物言いは、興醒めですわね……"])
+      ShowText(["おそらく、パーティを賑やかにしたかったのでしょう。"])
+      ShowTextAttributes(["alicetromeria_fc1", 1, 0, 2])
+      ShowText(["【アリストロメリア】"])
+      ShowText(["私には分かります……うふふっ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["walraune_fc1", 3, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["ちょっと、ここは植物族の聖地よ？"])
+    ShowText(["人間が土足で入ってこないでくれる……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["悪いけど、無理矢理にでも通らせてもらう。"])
+    ShowText(["僕達は、ここのみんなの洗脳を解かなきゃいけないんだ！"])
+    ShowTextAttributes(["walraune_fc1", 3, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["敵襲ってわけね……"])
+    ShowText(["それじゃ、後腐れなく搾り尽くしてあげるから！"])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 1, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["世界樹に住んでいる魔物……"])
+      ShowText(["ぜひ、体片のサンプルが欲しいですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 789, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSwitches([2249, 2249, 0])
+    ConditionalBranch([12, "exist_party_persona_id?(241)"])
+      ShowTextAttributes(["a_emp_fc1", 1, 0, 2])
+      ShowText(["【プリエステス】"])
+      ShowText(["同種を叩きのめすのも、なかなか気晴らしになりますね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["walraune_fc1", 2, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["これだから、人間ってキライ～！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["よし、先に進むぞ！"])
+      ShowText(["クィーンアルラウネを正気に戻すのだ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それでは、先に進みましょう。"])
+      ShowText(["クィーンアルラウネを正気に戻すのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "exist_party_persona_id?(391)"])
+      ShowTextAttributes(["mefist_fc2", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["洗脳の解呪は、この私にお任せを。"])
+      ShowText(["漂っている波動を解析する限り、解除は難しくないでしょう。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["洗脳の解呪は、この私にお任せを。"])
+      ShowText(["漂っている波動を解析する限り、解除は難しくないでしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["あと、世界樹から虹の結晶が採れるって話だったわよね。"])
+      ShowText(["虹の武具を造ってもらうためにも、忘れずゲットしないと。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あと、世界樹から虹の結晶が採れるって話だったね。"])
+      ShowText(["虹の武具を造ってもらうためにも、確保しておかないと。"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    ControlVariables([1220, 1220, 0, 0, 3])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["この木の最上階に、神癒の宝玉があるのですね。"])
+    ShowText(["さあ、登りましょう！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["で、でも……うん、登ろうか。"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["残酷なようだけど、ちゃんと言うべきじゃない……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そうだね……"])
+    ShowText(["まあ、神癒の宝玉を見付けてからにしよう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["宝玉の力で、アマビエの癒しの力が本当に増したとしても――"])
+    ShowText(["いや、今はそれは言うまい。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["walraune_fc1", 3, 0, 2])
+    ShowText(["【ワルラウネ】"])
+    ShowText(["一番上の階層まで、送ってあげようか？"])
+    ShowChoices([["送ってもらう", "断る"], 2])
+    When([0, "送ってもらう"])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 306, 26, 26, 8, 1])
+      Empty([])
+
+    When([1, "断る"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])

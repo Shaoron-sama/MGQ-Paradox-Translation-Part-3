@@ -1,0 +1,541 @@
+Display Name = "ゴルド砦 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 20, 19, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 21, 19, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 33, 19, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 34, 19, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 13, 42, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 14, 42, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 12, 42, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 40, 42, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 41, 42, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 291, 42, 42, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([52, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["夢精しちゃった……"])
+    ShowText(["もう、夢なのか何なのか……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["冥土の土産ができたよ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["おもらし、しちゃった……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["サキュバスって、すごい……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["はぅぅぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["夢の世界……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["あなたの知らない世界……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["女だから大丈夫だと思ったのに……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["ママぁ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["あぅぅぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["らめぇぇぇぇ……！！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["昇天しちゃうわ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["こんなの、知っちゃったら……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["はぅぅぅぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["体に力が入らないわ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【騎士】"])
+    ShowText(["む、無念……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["こんなに良いなんて……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【騎士】"])
+    ShowText(["こんなぁ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【騎士】"])
+    ShowText(["うぅぅぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["将軍の日誌がある……読んでみますか？"])
+    ShowChoices([["読んでみる", "読まない"], 2])
+    When([0, "読んでみる"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["4月1日"])
+      ShowText(["王妃様ああ王妃様、王妃様……王妃様、王妃様、王妃様、ああ王妃様、王妃様"])
+      ShowText(["あお王妃様。王妃様おお王妃様……あああおお王妃様、王妃様、王妃様、おお"])
+      ShowText(["王妃様、王妃様あおおうひひ様、王妃様、おおう妃様様様……お王妃様ああ様"])
+      ConditionalBranch([2, "A", 1])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["なんなの、これ……？"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["なんなんだ、これ……？"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["4月8日"])
+      ShowText(["ああ、王妃様……"])
+      ShowText(["王妃様……ああ、王妃様……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["4月15日"])
+      ShowText(["我々は、麗しの王妃様のために尽くす。"])
+      ShowText(["王妃様のために、命を落としても本望だ。"])
+      ShowText(["この命、王妃様のために捧げるのみ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["4月22日"])
+      ShowText(["この砦に赴任して三週間、徐々に理性が戻ってきた。"])
+      ShowText(["しかし、王妃様に対する狂おしい想いはこの胸を支配し続ける。"])
+      ShowText(["私だけでなく、この砦の皆が同じ気持ちだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["4月25日"])
+      ShowText(["頭が冴えるにつれ、これまでの精神異常を自覚する。"])
+      ShowText(["今も王妃様を敬愛しているが、かつてほど狂おしいものではない。"])
+      ShowText(["これは明らかに異常だ、私の精神に何が起きていたのだろうか。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["5月3日"])
+      ShowText(["同じく砦に赴任した兵達も、私ほどではないが正気を取り戻しつつある。"])
+      ShowText(["グランゴルドから来て日の浅い兵ほど、精神の錯乱も深いようだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["5月15日"])
+      ShowText(["もはや、明らかだ。"])
+      ShowText(["グランゴルド城での我々は、洗脳されていた。"])
+      ShowText(["城から離れれば離れるほど、その呪縛も弱まるようだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["思えば、あの王妃は何者なのだ？"])
+      ShowText(["いつからあの女は、我が国の王妃となった？"])
+      ShowText(["そしていつから、あの女は我が国を支配している？"])
+      ShowText(["王は、王は――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["日誌はここで途切れている……"])
+      ConditionalBranch([2, "A", 1])
+        ControlSelfSwitch(["A", 0])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 3, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["……………………"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["……………………"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "読まない"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["最高でした……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["すでに力尽きているようだ――"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ConditionalBranch([1, 1063, 0, 3, 2])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc6", 0, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["おい、アルマエルマ！"])
+          ShowText(["貴様、まさか……！"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["アルマエルマ！！"])
+          ShowText(["誰も殺していないのではなかったのですか！？"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["arumaeruma_fc2", 2, 0, 2])
+        ShowText(["【アルマエルマ】"])
+        ShowText(["濡れ衣よ……"])
+        ShowText(["この人は、最初からここで死んでいたわ。"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["この人、亡くなってから数日は経ってるみたい……"])
+          ShowText(["死因は不明だけど、外傷はないわね。"])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["ソニア、そういうの分かるの？"])
+          ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+          ShowText(["【ソニア】"])
+          ShowText(["ルカは忘れてるみたいだけど……"])
+          ShowText(["私は神殿僧侶で、医療の基本も学んでるの。"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["【ルカ】"])
+          ShowText(["亡くなってから、何日か経ってるみたいだ……"])
+          ShowText(["見たところ、傷はないみたいだね。"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc6", 0, 0, 2])
+          ShowText(["【アリス】"])
+          ShowText(["いったいなぜ、この砦の責任者は死んだ？"])
+          ShowText(["そして、なぜずっと放置されていたのだ……？"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["【イリアス】"])
+          ShowText(["いったいなぜ、この砦の責任者は死んだのか……"])
+          ShowText(["そして、なぜ放置されたままでいたのか……"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["何度もイっちゃった……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導師】"])
+    ShowText(["こんな……屈辱……"])
+    Empty([])
+
+  Page 1
+    Empty([])

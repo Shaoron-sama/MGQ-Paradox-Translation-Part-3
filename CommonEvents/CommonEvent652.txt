@@ -1,0 +1,28 @@
+CommonEvent 652
+Name = "イベント：パープルスライム"
+
+  999([652])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 431, 0])
+    ShowTextAttributes(["slime_purple_fc1", 1, 0, 2])
+    ShowText(["【パープルスライム】"])
+    ShowText(["ブーメラン、ブーメラン……"])
+    ShowTextAttributes(["slime_purple_fc1", 0, 0, 2])
+    ShowText(["【パープルスライム】"])
+    ShowText(["……見ましたか？"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["slime_purple_fc1", 0, 0, 2])
+  ShowText(["【パープルスライム】"])
+  ShowText(["粘液の力、強化してあげましょう……"])
+  ControlSwitches([431, 431, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["パープルスライムから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、粘液技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

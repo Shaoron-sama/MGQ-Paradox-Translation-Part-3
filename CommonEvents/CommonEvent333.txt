@@ -1,0 +1,30 @@
+CommonEvent 333
+Name = "蛇神社"
+
+  999([333])
+  ControlSwitches([2339, 2339, 0])
+  PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc6", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["これは、いったい……！？"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["な、何事です……！？"])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+  ShowText(["【ルカ】"])
+  ShowText(["誰かが襲撃してきたのか……！？"])
+  ShowText(["でも、これだけの人数を倒すなんて……"])
+  ShowTextAttributes(["durahan_fc1", 2, 0, 2])
+  ShowText(["【アーサー】"])
+  ShowText(["見た限り、一方的な撫で斬りだぞ……"])
+  ShowText(["襲撃者は、いったいどんな化け物だというのだ……？"])
+  ExitEventProcessing([])
+  Empty([])

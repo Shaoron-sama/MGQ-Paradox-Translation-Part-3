@@ -1,0 +1,312 @@
+Display Name = "グランドノア城 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["謁見の間になります。"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【衛兵】"])
+    ShowText(["女王陛下の御身をお守りするのが、我々近衛兵の務めです。"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowPicture([5, "80_grandnoa_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["女王陛下……お目通りが適いまして、光栄です。"])
+    ShowText(["私、剣士レストと申します。"])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["コモドの巫女、ターサです。"])
+    ShowText(["えっと……ご機嫌麗しく存じます。"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["【グランドノア女王】"])
+    ShowText(["遠いところより、よくお越し下さいました。"])
+    ShowText(["事態は危急につき、畏まった礼は不要です。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["では、異世界に関してご説明を――"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["【グランドノア女王】"])
+    ShowText(["いえ、それには及びません。"])
+    ShowText(["全ての事情は、すでに聞き知っておりますので……"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["なるほど、お耳がお早い。"])
+    ShowText(["では、七人の勇者をお求めになっておられるのですね？"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["【グランドノア女王】"])
+    ShowText(["……そんな者達に、用などありませんよ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["えっ……？"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["【グランドノア女王】"])
+    ShowText(["コモドの巫女、ターサ……"])
+    ShowText(["彼女こそ、我々が求める者。"])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["私が……？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["どういう事です、女王陛下――"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["【グランドノア女王】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["妖しげな輝きを放つ、グランドノア女王の目。"])
+    ShowText(["かつて僕は、あれと同じ目を見た事があった。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["意志を奪われ、傀儡とされている者の目――"])
+    ShowText(["間違いない、グランドノア女王は洗脳されている！"])
+    ErasePicture([5])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["そこにいるな……"])
+    ShowText(["出てこい、ミュゼット！"])
+    ShowAnimation([5, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    Wait([90])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ふふふっ、ずいぶん早く見破ったわね。"])
+    ShowText(["もう少し、遊んでやるつもりだったのに……"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([7, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 0])
+    Wait([30])
+    ShowAnimation([6, 501, false])
+    Wait([30])
+    ControlSwitches([33, 33, 0])
+    Wait([90])
+    ShowPicture([7, "80_lira_st01", 0, 0, -200, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 200, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, -200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["まんまと、罠のど真ん中に飛び込んできたわね。"])
+    ShowText(["上手く行って嬉しいわ、万能剣士くん。"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["グランドノアに行かせない、って言ったら……"])
+    ShowText(["君なら、逆に勇んで乗り込んで来ちゃうよね？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["まさか、すでに女王が洗脳されていたなんて……"])
+    ShowText(["これが、お前達のやり口だったな。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["そうよ……この大国は、すでに私のもの。"])
+    ShowText(["それが「夢の主」との同盟条件なのよ。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["後は、巫女の力さえあれば……"])
+    ShowText(["この世界は、一気に「夜の国」へと沈むわ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ターサ、理由は分からないが、狙いは君だ！"])
+    ShowText(["僕から、決して離れないで――"])
+    ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["分かっているわよ、うふふっ……♡"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    Wait([30])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサは、僕に身を寄せ……"])
+    ShowText(["そのまま、ぎゅっと抱き寄せてきた！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["な、何をするんだ……！？"])
+    ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["うふふっ、何をされると思う……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサの手が、ズボンの中に滑り込んでくる。"])
+    ShowText(["そして、僕のモノを柔らかく握込んできた。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかも、そのターサの姿は――"])
+    ShowPicture([5, "80_tarsa_st12", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["そんな……サキュバス……！？"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["その娘……なぜか淫魔の因子を持っていたようね。"])
+    ShowText(["そうなれば、洗脳するのはとても簡単だったわ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ミュゼット……！　これも、お前の仕業か……！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ほら、ターサ……"])
+    ShowText(["その万能剣士を、弱らせてやりなさい。"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["……だってさ、レスト。"])
+    ShowText(["それじゃあ、いたぶってあげる……♡"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["や、やめ……あぅぅっ……！"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_ero_koki1\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサの柔らかな掌が、巧みにペニスを扱きたてる。"])
+    ShowText(["あまりにも甘い快感に、僕はたちまち脱力し――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ダメだ、ターサ……はぅぅっ！"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あえなく、ターサの掌でイかされてしまった。"])
+    ShowText(["体から力が抜け、その場にくずおれてしまう――"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["正面から戦うと、厄介だけれど……"])
+    ShowText(["こうなれば、万能剣士も脆いものね。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["こんな……うぅぅっ……"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["もっと弱ってもらわないとね、レスト。"])
+    ShowText(["まだまだこんなものじゃ終わらないから……♡"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["や、やめてくれ……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ターサはそのまま、僕に馬乗りになる。"])
+    ShowText(["そして、自身の蜜壺にペニスを導いた――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["あ、あぁぁぁ……"])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして、僕は――"])
+    ShowText(["ミュゼット達の前で、ターサに犯されてしまった。"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そのまま精気を吸い取られ、散々に陵辱され――"])
+    ShowText(["抗う力も、失ってしまい――"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["これで、万能剣士も終わりね。"])
+    ShowText(["そして巫女も私の元に……ふふふっ。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["巫女の力さえあれば、魔城召喚の儀が行えるわ。"])
+    ShowText(["そうすれば、私の計画も――"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ぅ……ぅぅ……"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして僕は、ミュゼット達に捕らえられてしまった。"])
+    ShowText(["そしてターサも、彼女達の手に堕ちたのである――"])
+    ControlVariables([1203, 1203, 0, 0, 11])
+    Wait([60])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([120])
+    ShowPicture([5, "iv_chapter04", 0, 0, 0, 0, 100, 100, 255, 0])
+    FadeinScreen([])
+    Wait([180])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([120])
+    TransferPlayer([0, 938, 0, 0, 2, 2])
+    Empty([])

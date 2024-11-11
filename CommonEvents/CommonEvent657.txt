@@ -1,0 +1,25 @@
+CommonEvent 657
+Name = "イベント：クィーンアント"
+
+  999([657])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 436, 0])
+    ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+    ShowText(["【クィーンアント】"])
+    ShowText(["それでは、娘達が待っているので帰りましょうか。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+  ShowText(["【クィーンアント】"])
+  ShowText(["虫の本能、刺激して差し上げましょう……"])
+  ControlSwitches([436, 436, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["クィーンアントから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、虫技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,233 @@
+Display Name = "ピラミッド"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 77, 296, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 77, 296, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 77, 296, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 114, 30, 55, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+      ShowText(["【サソリ娘】"])
+      ShowText(["あなた達、竜印の試練を受けに来たのよね……？"])
+      ShowChoices([["その通り", "別件で来た", "ちょっと寄っただけ"], 0])
+      When([0, "その通り"])
+        ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["なら、ピラミッドの中で激戦が予想されるわね。"])
+        ShowText(["中でも、ミイラ娘の特殊能力が厄介なのよ……"])
+        Empty([])
+      When([1, "別件で来た"])
+        ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["あら、そうなの……でもピラミッドには入るわよね？"])
+        ShowText(["中で出て来る、ミイラ娘の特殊能力が厄介なのよ……"])
+        Empty([])
+      When([2, "ちょっと寄っただけ"])
+        ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["あら、そうなの……せっかくだし、中も見ていかない？"])
+        ShowText(["そこで出て来る、ミイラ娘の特殊能力が厄介なのよ……"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+    ShowText(["【サソリ娘】"])
+    ShowText(["ミイラ娘の呪い攻撃を受けると、体が石になってしまうわ。"])
+    ShowText(["そうなると動けないし、戦闘終了後も治らないの。"])
+    ShowTextAttributes(["sasori_fc1", 0, 0, 2])
+    ShowText(["【サソリ娘】"])
+    ShowText(["そこで！　石化を解くのは、この金の針！"])
+    ShowText(["後で泣かないように、ここでたっぷり買っていきなさい！"])
+    ConditionalBranch([1, 1001, 0, 30, 2])
+      ShopProcessing([0, 20, 0, 0, true])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 31, 1])
+      ConditionalBranch([0, 2275, 1])
+        ControlSwitches([2275, 2275, 0])
+        ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["それと……"])
+        ShowText(["あたし最近、宅配サービスを始めたのよ。"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["宅配って、サソリを送るの？"])
+        ShowText(["嫌がらせにしかならないと思うけど……"])
+        ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["違うわよ、宅配するのはお客。"])
+        ShowText(["お客をピラミッドの最深部まで配達してあげようって言ってるのよ。"])
+        Empty([])
+      BranchEnd([])
+      ShowChoices([["ピラミッドの最奥まで送ってもらう", "金の針を買う", "用はない"], 3])
+      When([0, "ピラミッドの最奥まで送ってもらう"])
+        ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+        ShowText(["【サソリ娘】"])
+        ShowText(["それじゃあ、行くわよ！"])
+        ControlSwitches([100, 100, 0])
+        PlaySE(["RPG::SE(@name=\"mon_umaru\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 117, 19, 7, 2, 0])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "金の針を買う"])
+        ShopProcessing([0, 20, 0, 0, true])
+        Empty([])
+      When([2, "用はない"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([282])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ControlSwitches([2275, 2275, 0])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+    ShowText(["【サソリ娘】"])
+    ShowText(["ねぇ、ちょっと。"])
+    ShowText(["あたし最近、宅配サービスを始めたのよ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["宅配って、サソリを送るの？"])
+    ShowText(["嫌がらせにしかならないと思うけど……"])
+    ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+    ShowText(["【サソリ娘】"])
+    ShowText(["違うわよ、宅配するのはお客。"])
+    ShowText(["お客をピラミッドの最深部まで配達してあげようって言ってるのよ。"])
+    ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+    ShowText(["【サソリ娘】"])
+    ShowText(["サービスを利用する場合は、私に話しかけて。"])
+    ShowText(["ピラミッドの最奥まで送ってあげるから。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,131 @@
+Display Name = "転送のほこら"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 350, 285, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカは仲間を外に待たせ、一人で建物に入った……"])
+    ChangePlayerFollowers([1])
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 213, 34, 15, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 213, 11, 15, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 213, 12, 15, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["name_fc1", 0, 0, 2])
+    ShowText(["【ナメクジ娘】"])
+    ShowText(["ここは、なかなかの穴場ね……"])
+    ShowText(["じめじめ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["61"])
+    ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
+    ShowText(["【ミミー】"])
+    ShowText(["あら、ナメちゃんじゃない。"])
+    ShowText(["良い場所をみつけたわね……"])
+    ExitEventProcessing([])
+    Label(["73"])
+    ShowTextAttributes(["hiru_fc1", 0, 0, 2])
+    ShowText(["【ヒル】"])
+    ShowText(["コケもいっぱいで、ナメちゃんは大喜びでしょう。"])
+    ShowText(["私はコケ食べないから、味も分からないけど……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
+    ShowText(["【ミミズ娘】"])
+    ShowText(["日陰で湿気もたっぷり……まさに天国よね。"])
+    ShowText(["じめじめ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["55"])
+    ShowTextAttributes(["name_fc1", 2, 0, 2])
+    ShowText(["【メルク】"])
+    ShowText(["コケもいっぱい……"])
+    ShowText(["少し頂いていいかしら？"])
+    ExitEventProcessing([])
+    Label(["73"])
+    ShowTextAttributes(["hiru_fc1", 0, 0, 2])
+    ShowText(["【ヒル】"])
+    ShowText(["少しゆっくりしていきましょう……"])
+    ShowText(["じめじめ……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["hiru_fc1", 0, 0, 2])
+    ShowText(["【ヒル娘】"])
+    ShowText(["このまま、ずっとここでのんびりしていたいわ……"])
+    ShowText(["じめじめ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["55"])
+    ShowTextAttributes(["name_fc1", 2, 0, 2])
+    ShowText(["【メルク】"])
+    ShowText(["私達にとっては、楽園よね……"])
+    ShowText(["じめじめ……"])
+    ExitEventProcessing([])
+    Label(["61"])
+    ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
+    ShowText(["【ミミー】"])
+    ShowText(["地面も良い腐葉土だし……天国よね。"])
+    ShowText(["じめじめ……"])
+    ExitEventProcessing([])
+    Empty([])

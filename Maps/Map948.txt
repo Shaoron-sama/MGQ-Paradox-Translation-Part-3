@@ -1,0 +1,391 @@
+Display Name = ""
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Wait([60])
+    ShowPicture([5, "80_mistilteinn_st31", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["……そろそろ、やめましょうか。"])
+    ShowText(["これ以上の戦いは無益です。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ミステルテインは、勇者達の気配が消えた事を感知した。"])
+    ShowText(["彼らは「夜の国」の領域まで踏み込んでしまったのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そうなれば、もはや追撃の意味もない。"])
+    ShowText(["ここでの戦いさえ、力の浪費に他ならない――"])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_lilith2_st01b", 0, 0, -150, 0, 100, 100, 255, 0])
+      ShowPicture([6, "80_mistilteinn_st01", 0, 0, 240, 20, 100, 100, 255, 0])
+      ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+      ShowText(["【リリス】"])
+      ShowText(["……意外に、諦めが早いのですね。"])
+      ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+      ShowText(["【リリス】"])
+      ShowText(["せめて私達だけでも倒す――"])
+      ShowText(["などとは考えないのですか？"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["互いに憎い戦いでもありませんしね。"])
+      ShowText(["時空を超えたこの戦いも、もはや幕引きは目前です。"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["夢の主が勝つか――"])
+      ShowText(["それとも、勇者達が勝つかは分かりませんが。"])
+      ErasePicture([6])
+      ShowPicture([5, "80_morrigan_st02b", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["morrigan_fc1", 4, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["もちろん、ルカ達が――勇者達が勝つぜ！"])
+      ShowPicture([5, "80_executioner_st01", 0, 0, 70, -50, 70, 70, 255, 0])
+      ShowPicture([6, "80_ogretooth_st01", 0, 0, -150, 80, 100, 100, 255, 0])
+      ShowPicture([7, "80_mistilteinn_st01", 0, 0, 280, 130, 80, 80, 255, 0])
+      ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+      ShowText(["【オーガトゥース】"])
+      ShowText(["……どっちが勝っても、俺達には関係ないさ。"])
+      ShowText(["勇者達が勝った方が、都合がいいくらいだ。"])
+      ShowTextAttributes(["executioner_fc1", 0, 0, 2])
+      ShowText(["【エクスキューショナー】"])
+      ShowText(["「あれ」を手に入れるのに……"])
+      ShowText(["勇者達の方が、役立ちそうだもんね。"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["そういうわけで、私達は去りましょう。"])
+      ShowText(["互いに本気でなかったとはいえ、楽しかったですよ。"])
+      ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+      ShowText(["【リリス】"])
+      ShowText(["あなた達の求める「もの」――"])
+      ShowText(["見つかれば良いですね。"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["ええ、あなた達も目的を果たさんことを。"])
+      ShowText(["それでは……"])
+      ErasePicture([5])
+      ErasePicture([6])
+      ErasePicture([7])
+      Wait([30])
+      ShowAnimation([5, 542, false])
+      Wait([60])
+      ControlSwitches([31, 31, 0])
+      Wait([60])
+      ShowTextAttributes(["morrigan_fc1", 6, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["行かせちまって良かったのか、姉貴……？"])
+      ShowTextAttributes(["astaroth_fc1", 0, 0, 2])
+      ShowText(["【アスタロト】"])
+      ShowText(["足止めは十分に出来たわ。"])
+      ShowText(["これ以上、戦いを続ける意味はないのよ。"])
+      ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+      ShowText(["【リリス】"])
+      ShowText(["私達の役割も終わりました。"])
+      ShowText(["さあ、帰りましょう――"])
+      ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
+      ShowText(["【モリガン】"])
+      ShowText(["あたしは、ルカ達のところに戻るぜ。"])
+      ShowText(["相手は「夢の主」、淫魔の力が役に立つからな！"])
+      PlaySE(["RPG::SE(@name=\"mon_wind1\", @pitch=150, @volume=100)"])
+      ControlSwitches([32, 32, 0])
+      ShowTextAttributes(["lilith2_fc1", 3, 0, 2])
+      ShowText(["【リリス】"])
+      ShowText(["魔王アリスフィーズ、そしてルカ……"])
+      ShowText(["どうか、勝利を……"])
+      PlaySE(["RPG::SE(@name=\"mon_wind1\", @pitch=150, @volume=100)"])
+      ControlSwitches([33, 33, 0])
+      ControlSwitches([34, 34, 0])
+      Wait([120])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_eden_st34", 0, 0, -150, 0, 100, 100, 0, 0])
+      ShowPicture([6, "80_mistilteinn_st31", 0, 0, 150, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+      MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["eden_fc2", 3, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["見切りが早いのですね。"])
+      ShowText(["あなた達は、天使を憎んでいるのでは……？"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["厳密に言えば、この世界の天使とは別種です。"])
+      ShowText(["あなた達に、直接の恨みはありません。"])
+      ShowPicture([5, "80_executioner_st03", 0, 0, -150, 0, 80, 80, 255, 0])
+      ShowPicture([6, "80_ogretooth_st03", 0, 0, 150, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["ogretooth_fc1", 2, 0, 2])
+      ShowText(["【オーガトゥース】"])
+      ShowText(["確かに……良く考えたら、そうだよな。"])
+      ShowTextAttributes(["executioner_fc1", 2, 0, 2])
+      ShowText(["【エクスキューショナー】"])
+      ShowText(["まあ、嫌いには違いないけどね……"])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["ずいぶん、嫌われたもんだな……"])
+      ShowText(["お前達の世界で、天使達は何やらかしたんだ？"])
+      ShowPicture([5, "80_eden_st34", 0, 0, -150, 0, 100, 100, 255, 0])
+      ShowPicture([6, "80_mistilteinn_st31", 0, 0, 150, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["非道な事ですよ。ともかく……"])
+      ShowText(["時空を超えたこの戦いも、もはや幕引きは目前です。"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["夢の主が勝つか――"])
+      ShowText(["それとも、勇者達が勝つかは分かりませんが。"])
+      ShowTextAttributes(["eden_fc2", 3, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["もちろんイリアス様が勝利します。"])
+      ShowText(["勇者ルカ達の勝利と言い換えても良いでしょう。"])
+      ShowPicture([5, "80_executioner_st01", 0, 0, 70, -50, 70, 70, 255, 0])
+      ShowPicture([6, "80_ogretooth_st01", 0, 0, -150, 80, 100, 100, 255, 0])
+      ShowPicture([7, "80_mistilteinn_st01", 0, 0, 280, 130, 80, 80, 255, 0])
+      ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+      ShowText(["【オーガトゥース】"])
+      ShowText(["……どっちが勝っても、俺達には関係ないさ。"])
+      ShowText(["勇者達が勝った方が、都合がいいくらいだ。"])
+      ShowTextAttributes(["executioner_fc1", 0, 0, 2])
+      ShowText(["【エクスキューショナー】"])
+      ShowText(["「あれ」を手に入れるのに……"])
+      ShowText(["勇者達の方が、役立ちそうだもんね。"])
+      ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+      ShowText(["【ミステルテイン】"])
+      ShowText(["そういうわけで、私達は去りましょう。"])
+      ShowText(["互いに本気でなかったとはいえ、楽しかったですよ。"])
+      ShowTextAttributes(["eden_fc2", 3, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["ちょっと、待ちなさい――"])
+      ErasePicture([5])
+      ErasePicture([6])
+      ErasePicture([7])
+      Wait([30])
+      ShowAnimation([5, 542, false])
+      Wait([60])
+      ControlSwitches([31, 31, 0])
+      Wait([60])
+      ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["処刑し損なったか……"])
+      ShowTextAttributes(["shion_fc1", 2, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["畜生、逃げられるなんて……！"])
+      ShowTextAttributes(["eden_fc2", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["まあ、いいでしょう……"])
+      ShowText(["足止めの任務は、確かに果たしました。"])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["不完全燃焼だけど、仕方ないな。"])
+      ShowText(["それじゃあ、行くか。"])
+      ShowAnimation([19, 501, false])
+      Wait([30])
+      ControlSwitches([33, 33, 0])
+      Wait([60])
+      ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["次は、処刑する……"])
+      ShowAnimation([15, 501, false])
+      Wait([30])
+      ControlSwitches([32, 32, 0])
+      Wait([60])
+      ShowTextAttributes(["eden_fc2", 3, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["eden_fc2", 0, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["イリアス様、どうかご武運を……"])
+      ShowAnimation([17, 501, false])
+      Wait([30])
+      ControlSwitches([34, 34, 0])
+      Wait([180])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([120])
+    ChangeTransparency([1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlVariables([1212, 1212, 0, 0, 7])
+    ChangeMapDisplay([0])
+    RecoverAll([0, 0])
+    TransferPlayer([0, 932, 19, 29, 8, 2])
+    FadeinScreen([])
+    Wait([30])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["もう、ほとんど空間が侵蝕されているわね……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["これが、「夜の国」――"])
+      ShowText(["世界が全てこうなってしまうなど、耐えられんな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["これが、「夜の国」――"])
+      ShowText(["我々が勝利しなければ、世界は全てこの有様になるのですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["宙に浮いてる人達は何なんだ？"])
+    ShowText(["夢魔と人が交わってるみたいだけど……"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["きっと、現実世界で夢に堕とされた人達……"])
+    ShowText(["ああやって、夢世界で夢魔に犯されているの。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["目が覚めるまで、ずっとね……"])
+    ShowText(["この夢世界は、ああいう人達の夢で出来てるみたい。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こんな世界で、全ての人間が快楽の夢に沈む――"])
+    ShowText(["それは、まさしく悪夢だ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ゲートまでは、あと少し。"])
+    ShowText(["夢の終わりまで、あと少しだ――"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここはリリス三姉妹に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここは三人の熾天使に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここはリリス三姉妹に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここは三人の熾天使に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここはリリス三姉妹に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ここは三人の熾天使に任せて、僕達は先へと急ごう――"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,224 @@
+Display Name = "イズモ村"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    FadeinScreen([])
+    Wait([60])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ここが、異変のあったイズモ村か……"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ここ、初めて来る村よね。"])
+    ShowText(["それなのに、こんな事になってるなんて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["あちこちに、昏睡した村人が倒れている。"])
+    ShowText(["それを、近隣から救援に来た人達が保護しているのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達がここに来たのは、すでに事態が収束した後だった。"])
+    ShowText(["完全に出遅れてしまったのだ――"])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["三人の妖魔が、ここを襲撃したそうだな。"])
+      ShowText(["そして、村の女達がサキュバス化した――"])
+      ShowPicture([5, "80_alice_st73", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["「夢の主」の手引きがあったと見て、間違いあるまい。"])
+      ShowText(["おそらく、その同盟者とやらの仕業であろう。"])
+      ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ひどい事をする連中ね。"])
+      ShowText(["元の世界に叩き返さないと……！"])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["しかし、その三人を撃退した者達というのが気になるな。"])
+      ShowText(["赤髪の剣士にちっちゃな子、それに変な退魔師――"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["三人の妖魔が、ここを襲撃したそうですね。"])
+      ShowText(["そして、村の女達がサキュバス化してしまった――"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["間違いなく、「夢の主」の仕業ですね。"])
+      ShowText(["三人の妖魔というのは、おそらく同盟者でしょう。"])
+      ShowTextAttributes(["sonia_fc1", 5, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ひどい事をする連中ね。"])
+      ShowText(["元の世界に叩き返さないと……！"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["しかし、その三人を撃退した者達というのも気になります。"])
+      ShowText(["赤髪の剣士に小さい女の子、それに奇妙な退魔師――"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["その三人がいなければ、もっと被害は広がっていただろうね。"])
+    ShowText(["何者だったんだろう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その三人は、たまたま居合わせた名も無き強者か。"])
+    ShowText(["それとも、もしかしたら――"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["大変です……！"])
+    ShowText(["フィノアの村が、謎の淫魔に占拠されたようです。"])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st81", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["フィノアが……占拠されただと！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st36", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["フィノアが、占拠された……！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["魔力によって封鎖され、出入りは禁じられています。"])
+    ShowText(["内部には、住民の大部分が取り残されているとか……"])
+    ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["かなりの数の死者が出ているという情報もあります。"])
+    ShowText(["至急、対処しなければなりません……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["フィノアに急ぐぞ、ルカ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ルカ、フィノアに急ぎましょう！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ああ、すぐに行こう！！"])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["謎の淫魔に占拠されたという、フィノアの村。"])
+    ShowText(["世界中に、次々と広がっていく異変――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["これも、「夢の主」によるものだろうか。"])
+    ShowText(["僕達は取り急ぎ、フィノアへと向かったのだった――"])
+    Wait([60])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    ChangeTransparency([1])
+    Wait([120])
+    ShowPicture([5, "iv_chapter05", 0, 0, 0, 0, 100, 100, 255, 0])
+    FadeinScreen([])
+    Wait([180])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([120])
+    TransferPlayer([0, 920, 20, 16, 2, 2])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])

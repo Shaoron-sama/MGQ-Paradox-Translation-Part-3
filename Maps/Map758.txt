@@ -1,0 +1,1110 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["さあ、イリアス様を称える歌を歌いましょう！"])
+    ShowTextAttributes(["micaelac_fc1", 3, 0, 2])
+    ShowText(["【ミカエラちゃん】"])
+    ShowText(["おお、創世の女神～♪"])
+    ShowText(["希望の光、まばゆい星～♪"])
+    ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+    ShowText(["【ルシフィナちゃん】"])
+    ShowText(["女神は天より～♪"])
+    ShowText(["地の子を慈しむ～♪"])
+    ShowAnimation([-1, 723, false])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["そォォォのしらァァァァきコッロモ！！"])
+    ShowText(["ハッハァ！！なるイヤーーーー！！シッ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["ギャー！！　耳がー！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["こ、鼓膜が……ぎぇー！！"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+    ShowText(["【ルシフィナちゃん】"])
+    ShowText(["エデンおねえちゃん、お歌がヘタ～♪"])
+    ShowTextAttributes(["micaelac_fc1", 1, 0, 2])
+    ShowText(["【ミカエラちゃん】"])
+    ShowText(["うふふっ、いっぱい練習したのに……"])
+    ShowTextAttributes(["eden_fc1", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["うふふふっ……"])
+    ShowText(["エデンお姉さん、失敗してしまいました♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["み、耳から血が……たすけて……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["あれ、何も聞こえない……"])
+    ShowText(["音響がいかれたのか？　何でみんな喋らないんだ……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは大混乱だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["耳から血が……目や鼻からも……"])
+    ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+    ShowText(["【ルシフィナちゃん】"])
+    ShowText(["血がダラダラこぼれてる、おもしろ～い♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1518, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["うふふっ……この世は舞台とは、よく言ったものですね。"])
+    ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["それでは、皆様をお茶会に招待いたしましょう……"])
+    PlaySE(["RPG::SE(@name=\"Scream\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["……地獄へようこそ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["うわっ！　なんだ！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["て、停電か……！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｃ】"])
+    ShowText(["ぎゃぁぁぁぁぁ！！"])
+    ControlSwitches([31, 31, 0])
+    FadeinScreen([])
+    ShowTextAttributes(["alicetromeria_fc1", 1, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["……なんて、冗談ですよ。"])
+    ShowText(["うふふふふっ、驚かれましたか……？"])
+    ShowTextAttributes(["alicetromeria_fc1", 1, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["このような趣向も、愉しいものでしょう。"])
+    ShowText(["うふふふふふっ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["ふぅ、びっくりしたぜ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["なんか、客がずいぶん減ってないか？"])
+    ShowText(["俺の隣にいた奴はどこに行った……？"])
+    ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+    ShowText(["【アリストロメリア】"])
+    ShowText(["うふふふふふっ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは静まり返っている……"])
+    Wait([30])
+    FadeoutScreen([])
+    ControlSwitches([31, 31, 1])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["いやぁ、デンジャラスなステージだったね。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1522, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["それでは、おさかな海賊団の海賊歌を歌うぞ！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイドＡ】"])
+    ShowText(["えっ、何それ……！？"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイドＢ】"])
+    ShowText(["そんな歌、あったの……！？"])
+    SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["ashel_fc1", 0, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["お嬢……みんな、うちの団歌なんて知りませんよ。"])
+    SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["bonny_fc1", 0, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["海賊体操、第一～！"])
+    ShowText(["腕を腰に当てて、体を前に倒す運動！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["bonny_fc1", 2, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["ふぬぬ、腰が曲がらない……"])
+    ShowText(["アシェル、背中から押して～！"])
+    SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ShowTextAttributes(["ashel_fc1", 2, 0, 2])
+    ShowText(["【アシェル】"])
+    ShowText(["やれやれ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["ダメダメじゃないか……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["う～ん、次はもっとがんばらないとね。"])
+    ShowTextAttributes(["bonny_fc1", 2, 0, 2])
+    ShowText(["【ボニー】"])
+    ShowText(["うう～！"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1654, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["levia_fc1", 0, 0, 2])
+    ShowText(["【リヴィア】"])
+    ShowText(["さあ、海軍歌を歌うのだ！"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵Ａ】"])
+    ShowText(["正義の旗が～♪　白波受けて～♪"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵Ｂ】"])
+    ShowText(["高くたなびく～♪　蒼い空～♪"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつのこ海兵Ｃ】"])
+    ShowText(["おいしいメザシに～♪　白ごはん～♪"])
+    ShowTextAttributes(["levia_fc1", 2, 0, 2])
+    ShowText(["【リヴィア】"])
+    ShowText(["歌詞を忘れたからといって、適当な歌詞をつけて歌うな！"])
+    ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
+    ShowText(["【ウミウシ海兵】"])
+    ShowText(["ﾝ-ﾝ-ﾝﾝﾝ-ﾝ-ﾝ-ﾝ-♪　ﾝﾝﾝ-ﾝﾝ-♪"])
+    ShowTextAttributes(["levia_fc1", 2, 0, 2])
+    ShowText(["【リヴィア】"])
+    ShowText(["歌詞を忘れたからといって、ハミングするな！"])
+    ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+    ShowText(["【たつのこ海兵Ｄ】"])
+    ShowText(["ああ……われら……ＺＺＺ……"])
+    ShowTextAttributes(["levia_fc1", 2, 0, 2])
+    ShowText(["【リヴィア】"])
+    ShowText(["寝るな！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["海軍も、割とゆるいんだね……"])
+    ShowTextAttributes(["levia_fc1", 2, 0, 2])
+    ShowText(["【リヴィア】"])
+    ShowText(["ぐぬぬ……恥ずかしいところを見せてしまった……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1217, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["durahan_fc1", 0, 0, 2])
+    ShowText(["【アーサー】"])
+    ShowText(["大勢の前で戦うのは慣れているが……"])
+    ShowText(["舞台ともなると、初めてだな。"])
+    ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
+    ShowText(["【シーザー】"])
+    ShowText(["まったくだ、何をすればいいのやら……"])
+    ShowText(["お前の頭で、ボーリングでもするか？"])
+    ShowTextAttributes(["durahan_fc1", 0, 0, 2])
+    ShowText(["【アーサー】"])
+    ShowText(["いや……バカ犬の調教ショーはどうだ？"])
+    SetMoveRoute([42, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["kerberos_fc1", 2, 0, 2])
+    ShowText(["【シーザー】"])
+    ShowText(["なんだと、やるか！？"])
+    SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["durahan_fc1", 0, 0, 2])
+    ShowText(["【アーサー】"])
+    ShowText(["ふん、受けて立つぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["おっ、ステージ乱闘か！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["いいぞ、やれー！！"])
+    ShowTextAttributes(["durahan_fc1", 2, 0, 2])
+    ShowText(["【アーサー】"])
+    ShowText(["……なんだか、気が乗らんな。"])
+    ShowText(["決着はまたにしておくか。"])
+    ShowTextAttributes(["kerberos_fc1", 2, 0, 2])
+    ShowText(["【シーザー】"])
+    ShowText(["……そうだな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージはそれなりに盛り上がっている！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["いやあ、ここで決闘はやめてくれよ……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1274, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_odayaka1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["【たま】"])
+    ShowText(["ＺＺＺ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["かわいい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["かわいい……"])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["【たま】"])
+    ShowText(["ＺＺＺ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["【たま】"])
+    ShowText(["ＺＺＺ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージはほっこりしている……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["いやあ、ほっこりするね～"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1698, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+    ShowText(["【牛魔王】"])
+    ShowText(["我が同胞たる猛牛達よ！"])
+    ShowText(["いざ、鬨の声を上げるのだ！！"])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["ウォォォォ！　いざ、牛丼！！"])
+    ShowTextAttributes(["h_mino_fc1", 3, 0, 2])
+    ShowText(["【キャロル】"])
+    ShowText(["いっぱいおっぱい、頑張っちゃうわよ～！！"])
+    ShowTextAttributes(["m_mino_fc1", 3, 0, 2])
+    ShowText(["【オデット】"])
+    ShowText(["体が火照っちゃったわね、うふふふふっ……"])
+    ShowTextAttributes(["zinitauros_fc1", 1, 0, 2])
+    ShowText(["【トーラ】"])
+    ShowText(["頭脳労働なら、任せとけ！"])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["燃えろ、我が棍棒！！"])
+    SetMoveRoute([49, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["……って、なんで私が牛の仲間に入れられてるの！？"])
+    ShowTextAttributes(["mino_fc1", 1, 0, 2])
+    ShowText(["【ミナ】"])
+    ShowText(["そりゃ、剛力女子だし……"])
+    ShowTextAttributes(["h_mino_fc1", 0, 0, 2])
+    ShowText(["【キャロル】"])
+    ShowText(["おっぱいも大きいし……"])
+    SetMoveRoute([49, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["だからって、ミノタウロス扱いしないでよー！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["なんだか、牛丼が食べたくなってきたなぁ……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1307, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["もう、放っておいて下さい！"])
+    ShowText(["私は疲れたのです！"])
+    ShowTextAttributes(["a_alm_fc1", 0, 0, 2])
+    ShowText(["【アルム】"])
+    ShowText(["辛い事があったら、私達に話して下さい。"])
+    ShowText(["みんな、プリエステス様の事を心配しております……"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["それが、それがダメなんですよ！"])
+    ShowText(["私は誰からも忘れ去られたい……"])
+    ShowTextAttributes(["a_looty_fc1", 0, 0, 2])
+    ShowText(["【ルーティ】"])
+    ShowText(["そうだ、みんなで飲みに行こうぜ。"])
+    ShowText(["人間は、ノミュニケーションって言うんだってさ！"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["イヤー！！"])
+    ShowTextAttributes(["a_vore_fc1", 1, 0, 2])
+    ShowText(["【ボア】"])
+    ShowText(["病は気から！"])
+    ShowText(["心機一転、憂鬱なんて吹き飛ばそうよ！"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["あなた達が吹き飛べばいい！"])
+    ShowTextAttributes(["a_parasol_fc1", 0, 0, 2])
+    ShowText(["【パラソル】"])
+    ShowText(["大丈夫です、プリエステス様……"])
+    ShowText(["どんなに辛くても、明日は来るのですから。"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["明日が来るから、辛いんですよ！"])
+    ShowTextAttributes(["a_prison_fc1", 0, 0, 2])
+    ShowText(["【プリズン】"])
+    ShowText(["元気出してよ！"])
+    ShowText(["私も、プリエステス様の力になるから！"])
+    ShowTextAttributes(["a_emp_fc1", 2, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["日光に当たらないと！"])
+    ShowText(["セロトニンを補給しないと！"])
+    ShowTextAttributes(["a_mash_fc1", 0, 0, 2])
+    ShowText(["【マッシュ】"])
+    ShowText(["ウケケケケケ！！"])
+    ShowTextAttributes(["a_emp_fc1", 1, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["ウケケケケケ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["なんだか、胃が痛くなってきた……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["仕事、やめようかな……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["仕事とかやめたいよね。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1397, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["ant_fc1", 0, 0, 2])
+    ShowText(["【アント】"])
+    ShowText(["コッチノ女王サマノ方ガ、強クテ大キイ！"])
+    ShowTextAttributes(["suzumebati_fc1", 0, 0, 2])
+    ShowText(["【ビー】"])
+    ShowText(["コッチノ女王サマノ方ガ、甘クテ優シイ！"])
+    ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+    ShowText(["【アンティーヌ・アン】"])
+    ShowText(["これこれ我が娘よ、ケンカは良くありませんよ……"])
+    ShowTextAttributes(["queenbee_fc1", 0, 0, 2])
+    ShowText(["【蜜璃亜】"])
+    ShowText(["そうだぞ、みんな仲良くせねばな……"])
+    ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+    ShowText(["【アンティーヌ・アン】"])
+    ShowText(["まあ、私の方が強いのは間違っていませんが……"])
+    ShowTextAttributes(["queenbee_fc1", 2, 0, 2])
+    ShowText(["【蜜璃亜】"])
+    ShowText(["むっ？　だが妾は甘くて優しいぞ。"])
+    ShowText(["妾の方が、優れた女王と言えるだろう……"])
+    ShowTextAttributes(["queenant_fc1", 1, 0, 2])
+    ShowText(["【アンティーヌ・アン】"])
+    ShowText(["妾の親族といえど、聞き捨てなりませんね……"])
+    ShowText(["ならばここで、どちらが優れた女王か決めましょうか？"])
+    SetMoveRoute([54, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([56, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["ant_fc1", 0, 0, 2])
+    ShowText(["【アント】"])
+    ShowText(["女王サマ、ケンカ良クナイ……"])
+    ShowTextAttributes(["suzumebati_fc1", 0, 0, 2])
+    ShowText(["【ビー】"])
+    ShowText(["女王サマ、ミンナ仲良ク……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["子供の喧嘩に親が出張ると、こうなるんだな……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["客席は微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["なんか劇場の周りに、ハチ娘やアリ娘がうろついてるんだけど……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1394, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"dungeon1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["beelzebub_fc1", 0, 0, 2])
+    ShowText(["【バーバレラ】"])
+    ShowText(["恐れおののきなさい、人間達……"])
+    ShowText(["私達こそが、偉大なる魔蠅の女王よ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["おおっ！　でっかいハエ娘だ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["おっぱいがいっぱい！"])
+    ShowTextAttributes(["beelzebub_fc1", 2, 0, 2])
+    ShowText(["【バーバレラ】"])
+    ShowText(["なぜ、この人間達は私達を恐れないの……？"])
+    ShowTextAttributes(["beelzebub_fc2", 2, 0, 2])
+    ShowText(["【ストリガ】"])
+    ShowText(["意味不明ですね……"])
+    ShowText(["やはり、この時代は怖いです。"])
+    ShowTextAttributes(["beelzebub_fc3", 0, 0, 2])
+    ShowText(["【メディア】"])
+    ShowText(["そこの売店で、ダンゴ売ってた……"])
+    ShowTextAttributes(["beelzebub_fc1", 2, 0, 2])
+    ShowText(["【バーバレラ】"])
+    ShowText(["ああ、元の時代に戻りたい……"])
+    ShowTextAttributes(["beelzebub_fc2", 2, 0, 2])
+    ShowText(["【ストリガ】"])
+    ShowText(["昔は良かったですね……"])
+    ShowTextAttributes(["beelzebub_fc3", 0, 0, 2])
+    ShowText(["【メディア】"])
+    ShowText(["いい加減、この時代に慣れればいいのに……"])
+    ShowText(["……ダンゴ、食べる？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["ダンゴおいしいかい？"])
+    ShowTextAttributes(["beelzebub_fc3", 0, 0, 2])
+    ShowText(["【メディア】"])
+    ShowText(["うん……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([408, 0, 0, 10])
+      ChangeItems([409, 0, 0, 10])
+      ChangeItems([410, 0, 0, 10])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    Empty([])

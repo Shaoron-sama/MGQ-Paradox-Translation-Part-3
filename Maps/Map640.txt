@@ -1,0 +1,919 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["【ラゴラ】"])
+    ShowText(["みんな、今日は私のために集まってくれてありがとう！"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["【ラゴラ】"])
+    ShowText(["それじゃあ、歌います……"])
+    ShowText(["『葉っぱひらひら』♪"])
+    ShowTextAttributes(["mdg_fc1", 2, 0, 2])
+    ShowText(["【ラゴラ】"])
+    ShowText(["ひ　ゃ　ぁ　ぁ　ぁ　ぁ　ぁ　ぁ　ぁ　！　！　！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["うわぁー！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["ぎゃぁぁぁ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは阿鼻叫喚だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["まだ、右腕に痺れが……"])
+    ShowText(["耳栓効かないんですね……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1558, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["うい～！　ひっく！"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ウェヒヒヒヒ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["なに見てるのら～！"])
+    ShowTextAttributes(["hituzi_fc1", 7, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ぐびぐびぐび……"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["ウェヒヒヒヒ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["usagi_fc1", 4, 0, 2])
+    ShowText(["【バーニー】"])
+    ShowText(["もう、またこんなところで酔っ払って……"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【メリー】"])
+    ShowText(["うさぎはガミガミうるさいのら……"])
+    ShowTextAttributes(["usagi_fc1", 4, 0, 2])
+    ShowText(["【バーニー】"])
+    ShowText(["ほら、帰るわよ！"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlSwitches([31, 31, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["私も、少し酒を控えようかな……"])
+    ShowText(["いえいえ、こちらの事です。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1556, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["ノームちゃんと漫才するよ～♪"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["隣の家に塀が出来たんだってね！"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["……へ～！"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["隣の家に囲いが出来たんだってね！"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["……かっこい～！"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["……いつもみたいにツッコミ入れないの？"])
+    ShowTextAttributes(["gnome_fc1", 1, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["あっ、スポットまぶしいんだ……"])
+    ShowTextAttributes(["gnome_fc1", 1, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["無為な時間が過ぎていく……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["なんだか切ない気分になるね。"])
+    ShowText(["次はネタを仕入れてきてくれよ！"])
+    ShowTextAttributes(["sylph_fc1", 7, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["まかせて～！"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1057, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["gnome_fc1", 1, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
+    ShowText(["【ヌルコ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは静まり返っている……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["……………………"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1553, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"amira\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["アミラの悩み相談室～♪"])
+    ShowText(["今日の相手は、ちっちゃなヴァンパイアよ。"])
+    ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["実は我、胸がないのが悩みなのだ……"])
+    ShowText(["どうすればいいと思う？"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["ちっちぇな……"])
+    ShowTextAttributes(["vgirl_fc1", 4, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["ち、小さいのは分かっているぞ！"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["ちっちゃいのは、そのメンタルよ……"])
+    ShowText(["その程度で悩みなんて、おこがましいわね。"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["持たざる者は幸いだわ。"])
+    ShowText(["失うことを恐れずに済むのだから……"])
+    ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["う、失う事とな……？"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["持っている者は、今度は失うことを恐れるようになるものよ。"])
+    ShowText(["でも持たざる者は、失うことを恐れる必要はない……"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["つまりあなたは、もう恐れる必要はないの。"])
+    ShowText(["最初から持っていないんだから、失う恐怖だってないのよ。"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["あなたは自由なの……"])
+    ShowText(["失う恐怖に怯えている者よりも、ずっとね……"])
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["頭にガツンと来たぞ！"])
+    ShowText(["我は恐怖から解放されていたのだな！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["（言いくるめられた……）"])
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["もう我は、悩みなどない！"])
+    ShowText(["胸がなくても、失う事はないのだからな！"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["えっ、ムネの話だったの……？"])
+    ShowText(["カネじゃなくて……？"])
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["えっ……？"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["てっきり、カネがないっていう悩みだと……"])
+    ShowText(["ああ、うん……胸ねぇ……"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["牛乳飲めば？"])
+    ShowTextAttributes(["vgirl_fc1", 5, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["なにそれー！？"])
+    ShowTextAttributes(["amira_fc1", 2, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["そういうわけで、アミラのお悩み相談室は終わりよ。"])
+    ShowText(["迷える子羊、私の元にいらっしゃい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["（色々ひどいな……）"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは静まり返っている……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["まあ、気を落としちゃダメだよ。"])
+    ShowText(["まだまだ人生、これからさ。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([342, 0, 0, 5])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["gob_fc1", 5, 0, 2])
+    ShowText(["【ゴブ】"])
+    ShowText(["おゆうぎ会だよ！"])
+    ShowTextAttributes(["dragonp_fc1", 3, 0, 2])
+    ShowText(["【パピ】"])
+    ShowText(["みんなで歌を歌うのだ！"])
+    ShowTextAttributes(["pramia_fc1", 3, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["あたまのお花が、ちぃぱっぱ～♪"])
+    ShowTextAttributes(["vgirl_fc1", 3, 0, 2])
+    ShowText(["【ヴァニラ】"])
+    ShowText(["みんなでおゆうぎ、ちぃぱっぱ～♪"])
+    ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+    ShowText(["【ミニ】"])
+    ShowText(["紅蓮の炎が――"])
+    ShowTextAttributes(["phoenix_fc1", 5, 0, 2])
+    ShowText(["【ミニ】"])
+    ShowText(["……歌を間違えてしまったぞ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["がんばれー！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性客】"])
+    ShowText(["かわいい～！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは大盛況だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["いやぁ、なかなか好評だったよ！"])
+    ShowText(["またよろしくね！"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([373, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["lizardthief_fc1", 0, 0, 2])
+    ShowText(["【リル】"])
+    ShowText(["腕に自信のある奴、ウロコ盗賊団に入らないか！？"])
+    ShowTextAttributes(["lizardthief_fc2", 0, 0, 2])
+    ShowText(["【レン】"])
+    ShowText(["ウロコ盗賊団に、特別な資格は必要ありません。"])
+    ShowText(["ただ、腕に覚えがあればいいのですよ……"])
+    ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+    ShowText(["【ミランダ】"])
+    ShowText(["さあ、骨のある野郎ども！"])
+    ShowText(["あたしについてきなよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["（ただの勧誘じゃないか……）"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["団員、集まるといいね。"])
+    ShowText(["でも、この町は襲わないでおくれよ……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1700, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["syuree_fc1", 1, 0, 2])
+    ShowText(["【シュリー】"])
+    ShowText(["あわあわー♪"])
+    ShowTextAttributes(["minikani_fc1", 0, 0, 2])
+    ShowText(["【エイミ】"])
+    ShowText(["ぶくぶくー♪"])
+    ShowTextAttributes(["kani_fc1", 1, 0, 2])
+    ShowText(["【ソープ】"])
+    ShowText(["あわあわあわー♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["わぁっ、ステージが泡だらけだ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["おいおい、こっちまで流れ込んできたぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｃ】"])
+    ShowText(["でもこの泡……きもちいいよぉぉぉ……♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["観客達は恍惚に浸っている！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["あへぇぇぇ……"])
+    ShowText(["あわあわ、きもちいいよぉぉ……♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1584, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"dungeon_obakeyasiki\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["jack_fc1", 1, 0, 2])
+    ShowText(["【かぼちゃ】"])
+    ShowText(["ハロウィンだよ！"])
+    ShowText(["あたし、かぼちゃ！"])
+    ShowTextAttributes(["ghost_fc1", 0, 0, 2])
+    ShowText(["【キャリー】"])
+    ShowText(["おばけよ……"])
+    ShowTextAttributes(["wormv_fc1", 0, 0, 2])
+    ShowText(["【ユリア】"])
+    ShowText(["魔女です、うふふふっ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["やけに本格的だな……"])
+    ShowTextAttributes(["jack_fc1", 1, 0, 2])
+    ShowText(["【かぼちゃ】"])
+    ShowText(["お菓子くれないと、いたずらするよー♪"])
+    ShowTextAttributes(["ghost_fc1", 1, 0, 2])
+    ShowText(["【キャリー】"])
+    ShowText(["お菓子をくれないと、呪い殺してやるわ……"])
+    ShowTextAttributes(["wormv_fc1", 1, 0, 2])
+    ShowText(["【ユリア】"])
+    ShowText(["お菓子をくれないと、干物になりますよ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["ひぃっ、これヤバいぞ……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは戦慄している……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["今回の公演は、やけに差し入れが多いなぁ……"])
+    ShowTextAttributes(["jack_fc1", 1, 0, 2])
+    ShowText(["【かぼちゃ】"])
+    ShowText(["大収穫♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([434, 0, 0, 7])
+      ChangeItems([435, 0, 0, 10])
+      ChangeItems([414, 0, 0, 4])
+      ChangeItems([415, 0, 0, 2])
+      ChangeItems([417, 0, 0, 1])
+      ChangeItems([421, 0, 0, 1])
+      ChangeItems([423, 0, 0, 1])
+      ChangeItems([444, 0, 0, 1])
+      ChangeItems([432, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["きんぐ・おぶ・ぞんび……"])
+    ShowTextAttributes(["zonbe_fc3", 1, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["すりらぁ……"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["ぉぅぃぇ☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["こんなダンス、初めて見るぜ……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["すげぇ！　これは流行るぞ……！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは大盛況だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["さすがサキちゃん、新たな境地を切り開いたね！"])
+    ShowText(["またよろしくね！"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["【サキ】"])
+    ShowText(["ぉぅぃぇ☆"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeGold([0, 0, 3500])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["公演料として3500Gをもらった！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])

@@ -1,0 +1,111 @@
+Display Name = "グランドノア城 B1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlVariables([1142, 1142, 0, 0, 33])
+    ShowTextAttributes(["metatorone_fc1", 3, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["あたし達、どうなるのかな。"])
+    ShowText(["もしかして、ずっとこのままとか……"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["メタトローネちゃん……誰か来たよ？"])
+    ControlSwitches([31, 31, 0])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowPicture([5, "80_chromdoll_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["chromdoll_fc1", 0, 0, 2])
+    ShowText(["【クロムドールMk.I】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["おおっ！？"])
+    ShowText(["なんなの、こいつ……！？"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["たぶん、味方のからくり人形だと思う……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["よし、辿り着いたな……"])
+    ShowTextAttributes(["chromdoll_fc1", 0, 0, 2])
+    ShowText(["【クロムドールMk.I】"])
+    ShowText(["……………………"])
+    PlaySE(["RPG::SE(@name=\"Open3\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["クロムドールは、牢の鉄格子を掴んだ！"])
+    ShowText(["そのまま、一気に力を込める――"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["……が、力が足りず開けられなかった。"])
+    Wait([30])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["何よ、めちゃくちゃ非力じゃない！"])
+    ShowTextAttributes(["sandalforne_fc1", 0, 0, 2])
+    ShowText(["【サンダルフォーネ】"])
+    ShowText(["弱そうだしね……"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["やっぱり出力が足りんか……"])
+    ShowText(["仕方ない、アレをやるぞ！"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["……ポチっとな。"])
+    PlaySE(["RPG::SE(@name=\"Autodoor\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["chromdoll_fc1", 0, 0, 2])
+    ShowText(["【クロムドールMk.I】"])
+    ShowText(["ビー！　ビー！　ビー！"])
+    ShowTextAttributes(["metatorone_fc1", 4, 0, 2])
+    ShowText(["【メタトローネ】"])
+    ShowText(["ちょっとちょっと！"])
+    ShowText(["なんなの！？　なんなの！？"])
+    ShowTextAttributes(["chromdoll_fc1", 0, 0, 2])
+    ShowText(["【クロムドールMk.I】"])
+    ShowText(["自爆装置、作動……"])
+    ShowText(["これより、自爆します……"])
+    PlaySE(["RPG::SE(@name=\"mon_bom3\", @pitch=100, @volume=100)"])
+    ShowPicture([10, "sys_white", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    Wait([120])
+    FadeoutScreen([])
+    ErasePicture([5])
+    ErasePicture([10])
+    Wait([60])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ChangeTransparency([1])
+    TransferPlayer([0, 61, 18, 7, 8, 2])
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])

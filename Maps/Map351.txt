@@ -1,0 +1,778 @@
+Display Name = "北のお化け屋敷 地下室"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 19, 17, 2, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 19, 17, 2, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 19, 17, 2, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 343, 19, 17, 2, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["癒しの魔法陣だ……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 6, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["今度こそ、追い詰めたわよ！"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["今度こそ、追い詰めたぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_chrom_st07", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["なんなのだ、お前達は。"])
+    ShowText(["なぜ、儂の研究所で暴れておるのじゃ？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["お前こそ、何者だ？"])
+    ShowText(["研究所って、どういう事なんだ？"])
+    ShowPicture([5, "80_chrom_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["儂の名はクロム、偉大なるネクロマンサーじゃ。"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["この場所は、かつては処刑場……"])
+    ShowText(["その後は、墓場として使われた場所なのじゃ。"])
+    ShowPicture([5, "80_chrom_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["死体がゴロゴロしておるから、儂の研究には最適でのう……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["研究って、いったい何を……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["研究って、いったい何を……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["儂はネクロマンサーなのじゃから、"])
+    ShowText(["アンデッドの研究に決まっておる！"])
+    ConditionalBranch([4, 531, 0])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["アンデッド……なんと忌まわしい研究を……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_chrom_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["特に、この屋敷で病死したフレデリカは良い素材でのう。"])
+    ShowText(["それを材料に、究極のゾンビを造るのが儂の野望じゃ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["処刑場、墓場、病死した少女、悪い魔導師……"])
+    ShowText(["町で聞いた噂は、全部本当だったのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この屋敷にうろついてるゾンビ達も、まさかお前が！？"])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ゴーストは勝手に湧いてきたものじゃが……"])
+    ShowText(["確かに、ゾンビは全て儂の作品じゃぞ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["死者の冒涜など、感心せんな……"])
+      ShowText(["そのような振る舞い、見過ごすわけにはいかん。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そのような鬼畜の振る舞い、許すわけにはいきません！"])
+      ShowText(["灰と化し、己の所行を悔いなさい！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ふん、まだまだ儂は研究せねばならん事があるのじゃ。"])
+    ShowText(["貴様のような邪魔者も、儂の実験体にしてくれるわ！"])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["フレデリカ、行くぞ！"])
+    ShowText(["儂とお前の強さを思い知らせてやるのじゃ！"])
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["私は、クロムの僕……"])
+    ShowText(["クロムの敵には、容赦しない……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["人間の死体は、オモチャじゃないんだ！"])
+    ShowText(["死者の安らかな眠りを乱し、苦しませるなんて許さない！"])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["えっ、何が悪いんです……？"])
+      ShowText(["ともかく、流れ的に戦うんですよね？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["ターゲット確認、戦闘行動開始……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 134, 0])
+      ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ぬおっ、ドッペルゲンガーじゃ！"])
+      ShowText(["見たら死ぬ！"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム’】"])
+      ShowText(["違うぞ、儂はお前じゃ。"])
+      ShowText(["そしてお前は、儂なのじゃ。"])
+      ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["なんかしゃべってる！"])
+      ShowText(["聞いたら死ぬ！"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 196, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_chrom_st41", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ぬぐぐ……"])
+    ShowText(["儂とフレデリカが、負けてしまうとは……！"])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["ターゲット、戦意喪失……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_chrom_st08", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 7, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["アルテイスト家の復権を果たさねばならんというのに……"])
+    ShowText(["儂が、一族の復興を……"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["アルテイスト家だと……？"])
+      ShowText(["貴様、あのアルテイスト家の者なのか……？"])
+      ShowPicture([5, "80_chrom_st07", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["アルテイスト家を知っているとは……"])
+      ShowText(["貴様、高位の妖魔なのか……？"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["今はこんな姿だが、余は魔王アリスフィーズ16世だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アリスは自分が魔王である事を説明した……"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["信じがたい話だが……"])
+      ShowText(["アルテイスト家の悲劇を知っているとなると……"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["あと、余はゾンビやゴーストが大嫌いだ。"])
+      ShowText(["いかに究極のゾンビを造っても、一族の復権はならんぞ。"])
+      ShowPicture([5, "80_chrom_st41", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["えっ……！？"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["確かに、魔王がこんなに恐がりなんじゃ……"])
+        ShowText(["ゾンビ芸で魔王直属の出し物係なんて、無理よね。"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["確かに、魔王がこんなに恐がりなんじゃ……"])
+        ShowText(["ゾンビ芸で魔王直属の出し物係なんて、無理だよね。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["こ、恐がりではない！"])
+      ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["そ、そんな……"])
+      ShowText(["ならば、究極のゾンビを造るという野望は……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ちょうどいい話の流れだし……"])
+      ShowText(["もう、ゾンビ作りなんてやめようよ。"])
+      ShowPicture([5, "80_chrom_st42", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc1", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ゾンビ芸は駄目、降霊術も論外……"])
+      ShowText(["なら三大魔芸の一つ、からくり人形はどうじゃ？"])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["うむ、それなら余も怖くない。"])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["い、いや……ゾンビも怖くないから！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その忌まわしき血も、ここで断ちます！"])
+      ShowText(["さあ、塵と化しなさい！"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["ちょ、ちょっと待ってよ！"])
+        ShowText(["問答無用で殺すなんて、ひどいでしょ……！？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["ちょ、ちょっと待ってよ！"])
+        ShowText(["問答無用で殺すなんて、駄目だよ！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まあ、ここで止められると思っていましたけどね……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["クロム……死体の冒涜はやめてくれないか？"])
+      ShowText(["死者の魂も、その家族もみんな悲しむよ。"])
+      ShowPicture([5, "80_chrom_st07", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["……無様に敗北した以上、勝者に従うのみ。"])
+      ShowText(["そのくらいの矜持は、儂でも持っているぞ。"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ゾンビ芸は駄目、降霊術も論外……"])
+      ShowText(["なら三大魔芸の一つ、からくり人形はどうじゃ？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["うん、それなら問題ないんじゃないかな。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["からくり人形――それなら、問題ないだろう。"])
+    ShowText(["クロムがゾンビ研究をやめるのなら、この騒動は解決だ。"])
+    ShowPicture([5, "80_chrom_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["アルテイスト家は三大魔芸に通じている。"])
+    ShowText(["からくり人形術も、むろんそれなりの造詣はあるぞ！"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["そういうわけで、これ以上の死体漁りはせん。"])
+    ShowText(["クロムちゃんのゾンビ研究は、ここで幕じゃ……"])
+    ConditionalBranch([4, 531, 0])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["うむ、改心してくれたか。"])
+      ShowText(["これで、屋敷のよからぬ噂も消えるだろう……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ただし、フレデリカの処分は勘弁してくれ。"])
+    ShowText(["こやつは、心血を注いだ儂のパートナーなのじゃ。"])
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["私は、クロムに世話になった……"])
+    ShowText(["これからも、クロムに尽くしたい……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["うん……死体漁りをやめるなら、問題ないよね。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["うん……死体漁りをやめるなら、問題ないよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_chrom_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["よし、ならば死体パーツ以外でフレデリカの改良を……"])
+    ShowText(["からくり人形に、いま流行のマキナを取り入れ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["……本当に、反省したのか？"])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ともかく、これで事件は解決だ。"])
+    ShowText(["ゾンビ研究も幕を下ろし、この屋敷にも平穏が戻ってくるだろう。"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["僕達の出来る事は、これで終わり。"])
+    ShowText(["さあ、冒険を続けるとしよう！"])
+    ControlVariables([1023, 1023, 0, 0, 2])
+    Script(["gain_medal(22)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowPicture([5, "80_chrom_st07", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["でも……からくり人形セット、どこにしまったっけ？"])
+      ShowText(["確か、3階の屋根裏に押し込んで……"])
+      SetMoveRoute([17, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+      ShowText(["【フレデリカ】"])
+      ShowText(["クロム、あの荷物なら……"])
+      ShowText(["三年前の大掃除の時に、処分しなかったか……？"])
+      ShowPicture([5, "80_chrom_st41", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["そうじゃ、しまった！"])
+      ShowText(["からくり人形セット、またゼロから揃えなおさねば……"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["からくり人形術は、三大魔芸で最も倫理的に健全だが……"])
+        ShowText(["確か、非常に金が掛かるという話だったな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["からくり人形は、確か三魔芸で最もお金がいるのでしたね。"])
+        ShowText(["さすがは私、おぞましき妖魔の事情にまで通じているとは……"])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([5, "80_chrom_st07", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["貧乏だからこそ、ゾンビ術に絞ったのじゃ……"])
+      ShowText(["なにせ、素材はあちこちに転がっておるからのう。"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["他の素材はどうにかなっても、魔導懸糸が厄介じゃ。"])
+      ShowText(["あれはほぼ流通していない希少品じゃからのう……"])
+      ShowPicture([5, "80_chrom_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["……もし魔導懸糸を見つけたら、儂に譲ってくれんか？"])
+      ShowText(["そうすれば、貴様達に手を貸してやってもいいぞ！"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["手を貸すって……仲間になるってこと？"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["うむ、貴様達には色々と事情があると見た。"])
+      ShowText(["強い戦力が多く必要じゃろう？"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["儂とフレデリカならば、百人力じゃ。"])
+      ShowText(["良い条件だと思わんか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["うん……確かに頼りになるかもね。"])
+      ConditionalBranch([4, 118, 0])
+        ShowTextAttributes(["meia_fc1", 2, 0, 2])
+        ShowText(["【メイア】"])
+        ShowText(["新しい仲間が増えるのは、大歓迎ですよ。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["魔導懸糸がどこにあるかは、見当がつかん……"])
+      ShowText(["このナタリア地方や、イリアス大陸にないのは確かじゃな。"])
+      ConditionalBranch([4, 66, 0])
+        ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+        ShowText(["【ヴァニラ】"])
+        ShowText(["我も、噂さえ聞いたことがないぞ……"])
+        ShowText(["商人として、まだまだ未熟だな。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["魔芸に縁のある場所に行った場合、注意深く探すのじゃ。"])
+      ShowText(["よろしく頼むぞ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["分かった、手に入ったら持ってくるよ。"])
+      ErasePicture([5])
+      SetMoveRoute([17, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["魔導懸糸と引き替えに、クロムとフレデリカが仲間になるという。"])
+      ShowText(["冒険の最中に入手する事があったら、持ってこよう。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([8, 518])
+        ShowPicture([5, "80_chrom_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+        ShowText(["【クロム】"])
+        ShowText(["おお、それは魔導懸糸ではないか！"])
+        ShowText(["約束通り、それと引き替えに仲間になるのじゃ！"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["クロムに魔導懸糸を渡しますか？"])
+        ShowChoices([["はい", "いいえ"], 2])
+        When([0, "はい"])
+          ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+          ShowText(["【クロム】"])
+          ShowText(["礼を言うぞ、さっそくからくり人形作りじゃ！"])
+          ShowText(["もちろん、ちゃんと力を貸してやるぞ……"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(134)"])
+          ShowPicture([5, "80_frederika_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+          MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+          ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+          ShowText(["【フレデリカ】"])
+          ShowText(["私も、クロムと共に……"])
+          ErasePicture([5])
+          SetMoveRoute([17, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(135)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["クロムとフレデリカが仲間に加わった！"])
+          ControlSwitches([2136, 2136, 0])
+          Wait([60])
+          ConditionalBranch([4, 66, 0])
+            ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+            ShowText(["【ヴァニラ】"])
+            ShowText(["闇の芸をたしなむ者か……"])
+            ShowText(["くくく、歓迎するぞ。"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([4, 79, 0])
+            ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+            ShowText(["【ヌルコ】"])
+            ShowText(["きゅきゅー！"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+          ShowText(["【クロム】"])
+          ShowText(["大好物はプリンじゃ！"])
+          ShowText(["それじゃあ、行くのじゃ！"])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "いいえ"])
+          ShowPicture([5, "80_chrom_st41", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["chrom_fc1", 6, 0, 2])
+          ShowText(["【クロム】"])
+          ShowText(["なんでじゃー！"])
+          ErasePicture([5])
+          ExitEventProcessing([])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      Else([])
+        ShowPicture([5, "80_chrom_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+        ShowText(["【クロム】"])
+        ShowText(["……もし魔導懸糸を見つけたら、儂に譲ってくれんか？"])
+        ShowText(["そうすれば、仲間になってやろう。"])
+        ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+        ShowText(["【クロム】"])
+        ShowText(["魔導懸糸がどこにあるかは、見当がつかん……"])
+        ShowText(["このナタリア地方や、イリアス大陸にないのは確かじゃな。"])
+        ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+        ShowText(["【クロム】"])
+        ShowText(["魔芸に縁のある場所に行った場合、注意深く探すのじゃ。"])
+        ShowText(["よろしく頼むぞ。"])
+        ErasePicture([5])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["魔導懸糸と引き替えに、クロムとフレデリカが仲間になるという。"])
+        ShowText(["冒険の最中に入手する事があったら、持ってこよう。"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["私は、クロムの僕……"])
+    ShowText(["クロムの敵には、容赦しない……"])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["ヒルデも、マスターの敵には容赦しないよ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["私は、クロムの僕……"])
+    ShowText(["クロムの命令に、従うのみ……"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["た、助けてくれー！"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["もしかして……行方不明になった討伐隊の人達！？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["もしかして……行方不明になった討伐隊の人達！？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["そ、そうです！"])
+      ShowText(["ゾンビやゴーストにやられて、ここに監禁されて……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["戦死者や怪我人はいないけど……"])
+      ShowText(["お婿さんに行けないような事をされて……ううっ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["サン・イリアに連絡して、救出隊を向かわせますので……"])
+      ShowText(["あと少しだけ、待っていて下さい！"])
+      ConditionalBranch([4, 68, 0])
+        ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+        ShowText(["【パピ】"])
+        ShowText(["ここの悪者は、あたし達がやっつけるのだ！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【兵士】"])
+      ShowText(["分かりました、お待ちしています！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["監禁されているものの、危険は迫っていない。"])
+      ShowText(["後は救援隊に任せ、クロムを追った方が良さそうだ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([40, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

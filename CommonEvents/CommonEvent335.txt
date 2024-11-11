@@ -1,0 +1,21 @@
+CommonEvent 335
+Name = "レド山戦闘封鎖"
+
+  999([335])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["下手に近付いたら、戦闘に巻き込まれるな……"])
+    ShowText(["長居は無用だぞ、ルカ。"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["こんなところで、魔物同士が小競り合いを……"])
+    ShowText(["関わらない方が良いですよ、ルカ。"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

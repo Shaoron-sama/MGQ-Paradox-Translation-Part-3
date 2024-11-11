@@ -1,0 +1,448 @@
+Display Name = "魔王城 3F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 120, 31, 41, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 120, 31, 41, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 120, 31, 41, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([256, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1590, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1212, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([237, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["まずい、この先は魔王の間だぞ……"])
+      ShowText(["早く引き返せ、黒のアリスと戦うでない！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["何をしているのです、この先は魔王の間ですよ！"])
+      ShowText(["この階段を下りて、さっさととんずらするのです！"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["vouivre_fc1", 0, 0, 2])
+    ShowText(["【ヴィーヴル娘】"])
+    ShowText(["黒の三貴は、さっき出て行ったわ……"])
+    ShowText(["どこに行ったのかしらね。"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["enenra_fc1", 0, 0, 2])
+    ShowText(["【煙々羅】"])
+    ShowText(["人間の勇者が黒のアリスに挑むじゃと！？"])
+    ShowText(["命を無駄にするでないぞ……"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_alice8th_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["おや、よくぞ我が城においで下さいました。"])
+    ShowText(["うふふっ、遠いところから来た旅人のようですね……"])
+    ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+    ShowText(["【黒のアリス】"])
+    ShowText(["私に何のご用でしょうか？"])
+    ShowText(["まさかこの私を倒し、世界を平和にしようとでも……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["く、黒のアリス……！"])
+      ShowText(["ルカ、まさか戦う気ではないだろうな！？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["く、黒のアリス……！"])
+      ShowText(["ルカ、まさか戦う気ではないでしょうね！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["戦う", "逃げる"], 2])
+    When([0, "戦う"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["黒のアリス……ここで僕が倒してみせる！"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["やる気か……仕方ない、付き合うぞ！"])
+        ShowText(["余とて元は、黒のアリスと比肩される魔王だ！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["そうですね……勇者は魔王を倒すのが仕事！"])
+        ShowText(["ここで退くなど、私らしくありませんでした！"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["うふふっ、お付き合いを致しましょう。"])
+      ShowText(["私を楽しませて頂ければ、贈り物を差し上げますわ……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["伝説の魔王、黒のアリス……！"])
+      ShowText(["さあ、行くぞっ！"])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss_maou1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      ChangeBattleBack(["DecorativeTile", "DemonCastle3"])
+      BattleProcessing([0, 837, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_alice8th_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["やった……！"])
+      ConditionalBranch([2, "A", 1])
+        ControlSelfSwitch(["A", 0])
+        ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+        ShowText(["【黒のアリス】"])
+        ShowText(["なるほど……ハインリヒ以上かもしれませんね。"])
+        ShowText(["健闘を賞し、これを差し上げましょう。"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeItems([548, 0, 0, 1])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["それでは、次は少し本気でいきましょうか……"])
+      ShowText(["うふふっ、楽しませて下さいね……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そんな……あれで倒したんじゃなかったのか！？"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["伝説の魔王が、あの程度なものか！"])
+        ShowText(["気を抜くな、本気で来るぞ！"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["まさか、黒のアリスの力があれしきだと思ったのですか？"])
+        ShowText(["真の力は、こんなものではありませんよ……！"])
+        Empty([])
+      BranchEnd([])
+      ControlSwitches([31, 31, 0])
+      ShowPicture([5, "80_alice8th2_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["黒のアリスは、スカートをまくり上げた！"])
+      ShowText(["そこから、異形の器官が這い出してくる！"])
+      ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["では遊びましょう、勇者ルカ……"])
+      ShowText(["あっさり果てて、私をがっかりさせないで下さいね……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["負けるもんか……行くぞっ！"])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss_maou1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      ChangeBattleBack(["DecorativeTile", "DemonCastle3"])
+      BattleProcessing([0, 838, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_alice8th2_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["はぁ、はぁ……勝った……！"])
+      ConditionalBranch([2, "B", 1])
+        ControlSelfSwitch(["B", 0])
+        ShowTextAttributes(["alice8th_fc1", 2, 0, 2])
+        ShowText(["【黒のアリス】"])
+        ShowText(["これは、素晴らしい力ですね……"])
+        ShowText(["あなたに相応しい品、受け取ってもらいますわ。"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeArmor([159, 0, 0, 1, false])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice8th_fc1", 3, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["分かりました、真の姿をお見せしましょう。"])
+      ShowText(["夢にも思いませんでした、この姿で戦う事になるなんて……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["まさか……真の姿だって！？"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc6", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["奴の真の姿は、異形の妖蛇……！"])
+        ShowText(["まさか、実際に目にする事になろうとは……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["これこそが、黒のアリスの本性。"])
+        ShowText(["ルカ……あなたが真の勇者なら、超えて行けるはずです！"])
+        Empty([])
+      BranchEnd([])
+      ControlSwitches([32, 32, 0])
+      ShowPicture([5, "80_alice8th3_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["黒のアリスは真の力を解放した！"])
+      ShowTextAttributes(["alice8th_fc2", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["この姿の私を倒せば、あなたの勝利です……"])
+      ShowText(["さあ、最後の決戦を楽しみましょう……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["行くぞ！　今度こそ全力をぶつけてやる！"])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss_maou2\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      ChangeBattleBack(["DecorativeTile", "DemonCastle3"])
+      BattleProcessing([0, 839, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      Script(["gain_medal(3009)"])
+      PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_alice8th3_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ぐっ……僕達の、勝利だ！"])
+      ShowTextAttributes(["alice8th_fc2", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["なんと素晴らしい力……"])
+      ShowText(["この私の本気さえ、踏み越えていけるとは……"])
+      ShowTextAttributes(["alice8th_fc2", 0, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["いいでしょう……これを持っていくのです。"])
+      ShowText(["この武器は、強き者にこそ相応しい……"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeWeapons([322, 0, 0, 1, false])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      ShowPicture([5, "80_alice8th_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice8th_fc1", 1, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["……でも、私を退治するつもりはないのでしょう。"])
+      ShowText(["それはこの並行世界、この時代の勇者の仕事なのですから。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……そうだね。"])
+      ShowText(["黒のアリスを倒すのは、英雄ハインリヒであるはずなんだ。"])
+      ShowPicture([5, "80_alice8th_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice8th_fc1", 1, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["……では、これにてお別れと致しましょう。"])
+      ShowText(["さようなら。異なる世界、異なる時の勇者達……"])
+      ErasePicture([5])
+      Wait([60])
+      PlaySE(["RPG::SE(@name=\"mon_warp\", @pitch=100, @volume=80)"])
+      ControlSwitches([2261, 2261, 0])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_maouzyou\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "逃げる"])
+      ErasePicture([5])
+      Wait([60])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ShowTextAttributes(["alice8th_fc1", 2, 0, 2])
+      ShowText(["【黒のアリス】"])
+      ShowText(["あら、挨拶もなしに行ってしまわれるのですか？"])
+      ShowText(["お茶ぐらい、飲んでいけばよろしいのに……"])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_maouzyou\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["黒のアリスは……いないのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["黒のアリスは……いない！？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["【ハインリヒ】"])
+    ShowText(["おや、代わりにクマのぬいぐるみがいるね。"])
+    ShowText(["ひょっとして、キミが魔王なのかな……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【クマ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ともかく、今のうちに退散した方が良さそうだな。"])
+      ShowText(["さっさと行くぞ、ルカ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["（そうか、パーティにハインリヒがいるから……）"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["とにかく、黒のアリスはいないようです。"])
+      ShowText(["今のうちに、ここから退散しましょう。"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 4
+    Empty([])

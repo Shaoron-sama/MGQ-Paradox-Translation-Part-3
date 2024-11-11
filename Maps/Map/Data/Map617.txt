@@ -1,0 +1,180 @@
+Display Name = "グランゴルド 地下水路"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["市街では天使軍が魔物達を圧倒しています！"])
+    ShowText(["私達は、地下水路を抜けて城内に潜入しましょう！"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ChangeTransparency([0])
+    TransferPlayer([0, 67, 0, 0, 2, 2])
+    ControlSwitches([1, 1, 1])
+    FadeinScreen([])
+    ShowPicture([5, "80_gnosis_st05b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["gnosis_fc1", 4, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["悪の魂よ、天に滅せ……"])
+    PlaySE(["RPG::SE(@name=\"Thunder1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["greatorc_fc1", 2, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["うわぁぁぁっ！！"])
+    ShowPicture([6, "80_eden_st31", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_gnosis_st01b", 0, 0, 180, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["eden_fc2", 0, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["そちらの敵も掃討したようですね、グノーシス。"])
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["ああ、万事順調だ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["市街戦も、もはや一方的な展開になってきた。"])
+    ShowText(["市内の重要施設は大半が陥落、天使側が大いに優勢だ。"])
+    ShowPicture([6, "80_eden_st34", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["eden_fc2", 3, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["ですが、この状況で華音に動きがないとは……"])
+    ShowText(["なぜ、市街地の陥落を黙って見ているのです？"])
+    ShowTextAttributes(["gnosis_fc1", 3, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["もしかして、イリアス様率いる別働隊に気付いて――"])
+    ShowPicture([5, "80_shion_st03", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_gnosis_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["shion_fc1", 2, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["……だとしたら、ヤバいじゃねーか！"])
+    ShowText(["イリアス様達が城内で待ち伏せされてるって事になるぜ！"])
+    ShowTextAttributes(["shion_fc1", 2, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["よーし、あたしが今すぐ行くからな！！"])
+    ShowText(["どうせ元々、暴れ飽きたら城に突っ込む手筈だ！"])
+    PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    ShowTextAttributes(["eden_fc2", 4, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["待つのです、シオン――"])
+    ShowPicture([6, "80_eden_st34", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_gnosis_st03b", 0, 0, 180, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["gnosis_fc1", 2, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["……行ってしまったか、馬鹿め。"])
+    ShowText(["だが奴が城に突っ込めば、華音も撹乱されるかもしれん……"])
+    ShowTextAttributes(["eden_fc2", 3, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["我々は、我々のなすべき事をするのみです。"])
+    ShowText(["皆の者、このまま一気に市内を制圧しますよ！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["もはや市街戦において、天使軍の優勢は明白だ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["しかし、華音が出ないがゆえの優勢であり――"])
+    ShowText(["華音が現れれば、この優勢も一気に崩れ去るのである。"])
+    ShowTextAttributes(["eden_fc2", 3, 0, 2])
+    ShowText(["【エデン】"])
+    ShowText(["イリアス様……どうか、ご無事で……"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["最悪なのは、城内に入ったイリアス達が倒され――"])
+    ShowText(["その後で、華音が城下町の奪還に乗り出す場合。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうなれば形成は逆転し、天使軍は一気に危機へと陥る。"])
+    ShowText(["この優勢を維持できるかどうかは、城内での潜入作戦次第なのだ――"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ControlSwitches([1, 1, 1])
+    Wait([60])
+    ChangeTransparency([1])
+    TransferPlayer([0, 43, 8, 16, 2, 0])
+    FadeinScreen([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["なんとか、城内に潜入できたね……"])
+    ShowText(["城下町の方は、どうなってるんだろう。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……今は、なすべき事に専念しましょう。"])
+    ShowText(["外の戦況を気にしたところで、私達に出来る事はありません。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["一刻も早く、城内に囚われている七大天使を発見します。"])
+    ShowText(["華音は、外の天使軍が引きつけている事を祈りながら――"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["でも、七大天使の居場所は分からないのよね。"])
+    ShowText(["行き当たりばったりで探るしかないってわけか……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["贅沢は言えません……行きますよ！"])
+    ConditionalBranch([4, 401, 0])
+      ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["せめて、向こうから何らかの発信があれば……"])
+      ShowText(["具体的な場所も分かるのだが……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうなれば、城内を洗いざらい調べるしかない。"])
+    ShowText(["なんとしても、七大天使の居場所を探し出そう――"])
+    ControlVariables([1142, 1142, 0, 0, 23])
+    ControlVariables([1002, 1002, 0, 0, 81])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 644, 37, 9, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 644, 47, 42, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 644, 21, 29, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 644, 7, 42, 0, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 644, 9, 5, 0, 0])
+    Empty([])

@@ -1,0 +1,523 @@
+Display Name = "地下図書館 第1層"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 355, 40, 56, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 355, 40, 56, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 355, 40, 56, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 355, 40, 56, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 355, 40, 56, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ControlSwitches([5215, 5215, 0])
+    ControlSwitches([100, 100, 0])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 164, 28, 44, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ControlSwitches([5215, 5215, 0])
+    ControlSwitches([100, 100, 0])
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 164, 29, 44, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["魔神斬りは、必ず会心の一撃を発生させる剣技だ。"])
+    ShowText(["ミスする事も多い……というか、半分以上は外れるけどな。"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["文献によれば、職業「勇者」はターンごとにSPが自動回復するとか。"])
+    ShowText(["さすが、女神に認められた上級職は違いますね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["しかし女神イリアスなき今、もはや絶滅した職業です。"])
+    ShowText(["一度で良いから、実物を見てみたいものですが……"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["いったいなぜ、魔物達は最近になって地下図書館を占拠したのでしょう。"])
+    ShowText(["魔物が喜びそうなものは、全くもって存在しないはずですが……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["……もしかして、本に興味があるのでしょうか？"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["119"])
+    ShowTextAttributes(["page17_fc1", 0, 0, 2])
+    ShowText(["【アニー】"])
+    ShowText(["むしろ、我々は本そのものなのだが……"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["まあ、間違ってはおりませんね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔芸師見習い】"])
+    ShowText(["ゾンビ召喚は、術者の生命力の一部を捧げる必要がある。"])
+    ShowText(["つまり、HPを消費してスキルを使用するんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔芸師見習い】"])
+    ShowText(["同様に、ゴースト召喚に必要なのはMP。"])
+    ShowText(["からくり人形の使用に必要なのはSPなんだよ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["134"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["様々な魔芸を覚えていれば、状況によって使い分けできる。"])
+    ShowText(["すごいじゃろう、えっへん！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["ここは、図書館の第1階層。"])
+    ShowText(["この階にまでは、魔物の手は伸びていないよ。"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【兵士】"])
+    ShowText(["地下図書館の深層には、ここから入れます。"])
+    ShowText(["魔物が出現するので、ご注意を。"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["魔芸というのは、魔物達の間に伝わる魔性の芸。"])
+    ShowText(["ゾンビやゴーストの操作や、からくり人形の技などだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["一般職「魔芸師」は、こうした魔芸の初歩的な技術を覚えるらしい。"])
+    ShowText(["「魔芸師」をマスターすると、それぞれの専門職に就けるぞ。"])
+    ConditionalBranch([8, 614])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["ただし、転職アイテムがなければ魔芸師にはなれない。"])
+      ShowText(["どこで手に入るのかは、ちょっと分からないな。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["魔芸師なら持っているはずだが、ほとんどは妖魔だからな……"])
+      ShowText(["つてを当たるのは、おそらく難しかろう。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["そういえば北の屋敷に、人ならぬ魔導師が潜んでいると聞いた。"])
+      ShowText(["ゾンビを研究しているのなら、そいつは魔芸師かもしれないな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["この図書館の第2層より先は、人が全くいない。"])
+    ShowText(["魔物に占拠されてるんだから、当然だよな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["探したい本があるなら、自力で見つけるしかないぞ。"])
+    ShowText(["目録もグチャグチャだし、頼りにならないからな……"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["ここの第3層に、必要な本があるのですが……"])
+    ShowText(["魔物が巣食っており、取りに行くことができません。"])
+    ShowChoices([["取ってきてあげる", "無視する"], 2])
+    When([0, "取ってきてあげる"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["あ……！　いや、いいんですよ！"])
+      ShowText(["そんな人の手をわずらわせる本では……あはは……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["……察してあげよう。"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["5"])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……エロめ。"])
+      ExitEventProcessing([])
+      Label(["121"])
+      ShowTextAttributes(["page65537_fc1", 2, 0, 2])
+      ShowText(["【コーネリア】"])
+      ShowText(["魔導司書である私には分かります、あなたが求める本は……"])
+      ShowText(["……これですね、『女体のすべて』。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["あぁぁぁぁ――！！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "無視する"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["北西にある、精霊の森にはシルフ信仰の源流がある。"])
+      ShowText(["立ち寄って調査したいが、エルフが怖くてなぁ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["このシルフ信仰だが、近年になって復興されつつあるようだ。"])
+      ShowText(["やはりルネッサンスの影響だろうな、実に興味深いよ……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["12"])
+      ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+      ShowText(["【シルフ】"])
+      ShowText(["昔みたいに、みんな拝んでくれるのかな……？"])
+      ExitEventProcessing([])
+      Label(["136"])
+      ShowTextAttributes(["elf_fc1", 0, 0, 2])
+      ShowText(["【クローディア】"])
+      ShowText(["この荒れた時代、みんなナーバスなのよ。"])
+      ShowText(["研究なのは分かるけど、あんまり立ち寄ってほしくないわね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["精霊の森、立ち入り自粛要請だとさ……"])
+      ShowText(["禁止じゃないけど、行けば村八分にするっていう意味だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【学者】"])
+      ShowText(["精霊信仰への弾圧が、また始まりそうな雰囲気だぜ。"])
+      ShowText(["次は例によって、書物まで燃やすのかね？"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["ここには、全世界において出版された全ての本が存在するという……"])
+    ShowText(["あくまで人間が出版したものっていう前提だけどね。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["魔王城にも大図書館があるって話だけど、すごいんだろうな……"])
+    ShowText(["天界にも図書館ってあるのかな、行ってみたいなぁ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["天界の図書館は、神学書ばかり……"])
+    ShowText(["行く価値なんて欠片もありませんよ。"])
+    ExitEventProcessing([])
+    Label(["121"])
+    ShowTextAttributes(["page65537_fc1", 1, 0, 2])
+    ShowText(["【コーネリア】"])
+    ShowText(["魔王城の図書館も、よく入り浸っております。"])
+    ShowText(["私の人生において、あそこで過ごした時間の方が長いかも……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導学者】"])
+    ShowText(["聖素と魔素を融合すれば、すさまじい反応が起きる。"])
+    ShowText(["この際のエネルギーを使えば、新たな動力炉が作れるのではないか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【魔導学者】"])
+    ShowText(["しかし実現には、技術的障害が山積みだ。"])
+    ShowText(["実用化など、夢のまた夢だな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["26"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それこそが、再創世計画の中核……"])
+    ShowText(["しかし今は、言い知れない悪い予感がするのです……"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["ええ……聖魔の融合反応は、昔から知られているんですよね。"])
+    ShowText(["しかし実用化するとなると、ハードルがかなり高くて……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["ノームは、サバサ地方で信仰されていた。"])
+    ShowText(["やはり大地の精霊だけに、砂漠に縁が深いのだろうな……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["ルネッサンス以前から、サバサは魔物に寛容なところがあった。"])
+    ShowText(["サバサ王家にも、魔物の血が混じっているというのだからな……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["13"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["それは、ノームのコスプレかい？"])
+    ShowText(["その格好は古書にしか出てないのに、よく知ってたね。"])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc1", 4, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["そのせいで、ひどい目に合っちゃったけどね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["あくまで噂だが……"])
+    ShowText(["このサン・イリア城には、秘密の研究施設があるという。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["反マキナ派がばら撒いたデマかもしれんが……"])
+    ShowText(["確かに設計上、奇妙な空き区画があるんだよな。"])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["教会上層部がマキナに寛容なのって、意外に思わなかったか？"])
+    ShowText(["まあ、ああいう神職者って意外と時流に敏感だからな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【学者】"])
+    ShowText(["それに、今の法王猊下は時計職人出身だ。"])
+    ShowText(["最先端技術に偏見がないどころか、むしろ専門だったりするんだよな。"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【貴族の娘】"])
+    ShowText(["この図書館には、小説や物語もありますわ。"])
+    ShowText(["ここで時間を潰すのが、何よりの娯楽ですの……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["うふふっ、気が合うのですね……"])
+    ExitEventProcessing([])
+    Label(["147"])
+    ShowTextAttributes(["saboten_fc1", 0, 0, 2])
+    ShowText(["【キャスタ】"])
+    ShowText(["わたしも、小説など読みますの。"])
+    ShowText(["何か良い本があれば、紹介してもらいたいですわ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["気になる女性から紹介された小説を読んでみたけど……"])
+    ShowText(["なんだか、すごく哲学的で難しいな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["でも話を合わせるために、下心全開で読んでるんだ。"])
+    ShowText(["なんとか読破して、それをきっかけにするぞ……！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["74"])
+    ShowTextAttributes(["usagi_fc1", 0, 0, 2])
+    ShowText(["【バーニー】"])
+    ShowText(["あらあら、いけない子……"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["うふふっ、そういうのも素敵ですわね……"])
+    ShowText(["恋愛小説のような展開を期待していますわ。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老貴族】"])
+    ShowText(["王たる者に必要な要素……それはまず、高貴な血統である事だ。"])
+    ShowText(["よって、王への転職には職業「貴族」をマスターせねばならん。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老貴族】"])
+    ShowText(["さらに王とは、人並み外れた武芸も必要となる。"])
+    ShowText(["よって職業「戦士」をマスターせねばならん。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老貴族】"])
+    ShowText(["では、貴族と戦士をマスターすれば王になれるか……"])
+    ShowText(["ところが、そうはいかんのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老貴族】"])
+    ShowText(["王の証となるアイテムを所持していなければ、王には転職できん。"])
+    ShowText(["そのようなものがどこで手に入るかは、皆目分からんがな……"])
+    ConditionalBranch([0, 4, 0])
+      ConditionalBranch([12, "actor_class_level_over?(5, 135, 1)"])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ならば余も、王たる者。"])
+        ShowText(["貴族と戦士をマスターせねばならんな……"])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["まったく……"])
+        ShowText(["魔王たる者が、イチから修行のやり直しとは……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

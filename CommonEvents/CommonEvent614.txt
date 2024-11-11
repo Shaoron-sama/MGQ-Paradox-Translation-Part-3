@@ -1,0 +1,30 @@
+CommonEvent 614
+Name = "イベント：職業経験値"
+
+  999([614])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([1, 129, 0, 0, 0])
+    ShowTextAttributes(["saniria_fc1", 1, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["皆で神に祈り、職業経験を高めようぞ……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["サン・イリア王の祈りで、パーティ全員に職業経験値が与えられた！"])
+    Script(["gain_party_class_exp(200)"])
+    ControlVariables([129, 129, 0, 0, 1])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 129, 0, 1, 0])
+    ShowTextAttributes(["saniria_fc1", 1, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["何度も神を煩わせる訳にはいくまい。"])
+    ShowText(["また時をおいてから、祈って差し上げようぞ。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

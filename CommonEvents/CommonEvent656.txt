@@ -1,0 +1,26 @@
+CommonEvent 656
+Name = "イベント：クィーンハーピー"
+
+  999([656])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 435, 0])
+    ShowTextAttributes(["queenhapy_fc1", 0, 0, 2])
+    ShowText(["【クィーンハーピー】"])
+    ShowText(["今度、私の集落にいらっしゃって下さい。"])
+    ShowText(["たっぷり歓迎して差し上げましょう……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["queenhapy_fc1", 0, 0, 2])
+  ShowText(["【クィーンハーピー】"])
+  ShowText(["翼の力、高めて差し上げましょう。"])
+  ControlSwitches([435, 435, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["クィーンハーピーから不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、翼技の威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

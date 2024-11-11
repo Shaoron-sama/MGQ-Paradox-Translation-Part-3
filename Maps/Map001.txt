@@ -1,0 +1,419 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_comi1\", @volume=100, @pitch=100)"])
+    Wait([60])
+    ShowPicture([5, "80_amabie_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["フリーハグです。"])
+    ShowText(["さあ、私とハグをするのです……"])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【村人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["とても癒されますよ。"])
+    ShowText(["さあ、ハグをしましょう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【村人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["村人達は、誰も近付いてこない……"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["予想通り、引かれてるわね。"])
+    ShowText(["誰も濃厚接触してこないみたいだけど……"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["なぜ私に対してソーシャルディスタンスを……"])
+    ShowText(["遠慮はいりません、濃厚接触するのです……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【村人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["さあ、ハグをするのです……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【村人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["結局、民衆は不気味がって近寄ってこなかった――"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ControlVariables([1220, 1220, 0, 0, 2])
+    Wait([60])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"mura7\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_amabie_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["なんという事でしょう……"])
+    ShowText(["誰一人として、ハグをしてくれないとは……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ざ、残念だったね……"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["これも、私の力不足ゆえ……"])
+    ShowText(["もっと癒しの力を高め、出直しましょう。"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["いや、根本的な解決になってないと思うけど……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["癒しの力は関係なく、見た目が不気味だから――"])
+    ShowText(["――などとは、流石に言えなかった。"])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["癒しの力を高めるというのなら……良案がありますよ。"])
+    ShowText(["伝説の秘宝、「神癒の宝玉」の力を得れば良いのでは？"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["神癒の宝玉……聞いたことがあります。"])
+    ShowText(["その秘宝の力があれば、私の力も増すでしょう。"])
+    ConditionalBranch([0, 4, 0])
+      ConditionalBranch([0, 1005, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["その宝玉だが、今は行方不明ではなかったか？"])
+        ShowText(["過去に、ラミア族とスキュラ族の争いで――"])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……っと、当事者が仲間にいるではないか。"])
+        ShowText(["クィーンラミアにクィーンスキュラ、話を聞かせろ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1006, 0])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["その宝玉だが、今は行方不明ではなかったか？"])
+        ShowText(["過去に、ラミア族とスキュラ族の争いで――"])
+        ShowTextAttributes(["alice_fc1", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……っと、当事者が仲間にいるではないか。"])
+        ShowText(["クィーンラミアにクィーンスキュラ、話を聞かせろ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1007, 0])
+        ShowTextAttributes(["alice_fc7", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["その宝玉だが、今は行方不明ではなかったか？"])
+        ShowText(["過去に、ラミア族とスキュラ族の争いで――"])
+        ShowTextAttributes(["alice_fc7", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……っと、当事者が仲間にいるではないか。"])
+        ShowText(["クィーンラミアにクィーンスキュラ、話を聞かせろ。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その宝玉ですが、今は確か……"])
+      ShowText(["数百年前、ラミア族とスキュラ族の争いで……"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……おっと、当事者が仲間にいましたね。"])
+      ShowText(["クィーンラミアにクィーンスキュラ、話は任せます。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["cirqueb_fc4", 0, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["「神癒の宝玉」は、ラミア族の秘宝。"])
+    ShowText(["ラミアの祖たる六祖の沙蛇様が造り出した品で――"])
+    ShowTextAttributes(["cirqueb_fc6", 0, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["「神癒の宝玉」は、スキュラの祖である蛭蟲様の造った品。"])
+    ShowText(["ゆえに、我がスキュラ族の秘宝として伝わり――"])
+    ShowTextAttributes(["cirqueb_fc4", 0, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["ですが、スキュラ族は厚かましくも宝玉の所有権を主張。"])
+    ShowText(["ラミアとスキュラの長きにわたる抗争の一因となり――"])
+    ShowTextAttributes(["cirqueb_fc6", 0, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["しかしラミア族は、盗人のように宝玉を欲しがりました。"])
+    ShowText(["我々スキュラ族はこの秘宝を守るため、長き闘争に――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["話が見事に食い違ってるね……"])
+    ConditionalBranch([0, 4, 0])
+      ConditionalBranch([0, 1005, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["相変わらず、ラミアとスキュラは仲が悪いな……"])
+        ShowText(["それで結局、神癒の宝玉はどうなったのだ？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1006, 0])
+        ShowTextAttributes(["alice_fc1", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["相変わらず、ラミアとスキュラは仲が悪いな……"])
+        ShowText(["それで結局、神癒の宝玉はどうなったのだ？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1007, 0])
+        ShowTextAttributes(["alice_fc7", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["相変わらず、ラミアとスキュラは仲が悪いな……"])
+        ShowText(["それで結局、神癒の宝玉はどうなったのだ？"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ふふふ……"])
+      ShowText(["憎み合いなさい……殺し合いなさい……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……などと、今は言っていられません！"])
+      ShowText(["結局、神癒の宝玉はどうなったのですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["cirqueb_fc4", 2, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["あれは確か、アボルン砦の攻防戦の際……"])
+    ShowText(["そう、スキュラ族の砲撃で宝玉は砕けてしまったのです。"])
+    ShowTextAttributes(["cirqueb_fc6", 2, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["あんな係争地の、戦火が届く場所に安置するとは愚の骨頂……"])
+    ShowText(["宝玉が壊れた責任は全面的にラミア側にあります。"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["つまり、宝玉は壊れちゃったの？"])
+    ShowText(["それじゃあ、もう手に入らないじゃない……"])
+    ShowTextAttributes(["cirqueb_fc4", 0, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["ですが、それから七年後……"])
+    ShowText(["ニスカの和議で、宝玉を共同修復することが決まりました。"])
+    ShowTextAttributes(["cirqueb_fc6", 0, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["まずは、壊れた宝玉に霊気を溜め込むため……"])
+    ShowText(["癒しの力に満ちた地に、数百年ほど安置する事になりました。"])
+    ShowTextAttributes(["cirqueb_fc6", 2, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["しかしその直後、ラミア族はまさかの裏切りを働いたのです。"])
+    ShowText(["ラミア族の重臣であるボアンの奇襲で、和議はご破算に……"])
+    ShowTextAttributes(["cirqueb_fc4", 2, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["……あれはボアンの独断による愚行です。"])
+    ShowText(["そもそもボアンは、スキュラ族側に手引きされていたのでは？"])
+    ConditionalBranch([0, 4, 0])
+      ConditionalBranch([0, 1005, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……ああもう、過去のいざこざは後にしろ。"])
+        ShowText(["それで、壊れた宝玉を安置した地はどこなのだ？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1006, 0])
+        ShowTextAttributes(["alice_fc1", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……ああもう、過去のいざこざは後にしろ。"])
+        ShowText(["それで、壊れた宝玉を安置した地はどこなのだ？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1007, 0])
+        ShowTextAttributes(["alice_fc7", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……ああもう、過去のいざこざは後にしろ。"])
+        ShowText(["それで、壊れた宝玉を安置した地はどこなのだ？"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……いつまで過去の憎悪に踊らされているのです！"])
+      ShowText(["しがらみなど捨て、未来に目を向けなさい！"])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なおボアンの裏切りの一件、裏で手を引いていたのは私です。"])
+      ShowText(["ラミア族とスキュラ族は、末長く潰し合ってほしかったので。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……相変わらず、汚いやり方だなぁ。"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ともかく、壊れた宝玉をどこに安置したのです？"])
+      ShowText(["陰謀で忙しくて、私もすっかり記憶にありません。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["cirqueb_fc4", 0, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["その場所とは……世界樹です。"])
+    ShowText(["この一件は極秘であり、知る者は世界でただ三人。"])
+    ShowTextAttributes(["cirqueb_fc6", 0, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["私とクィーンラミア……そして、当時のクィーンアルラウネ。"])
+    ShowText(["世界樹を守る植物族に、壊れた宝玉の管理を委ねたのです。"])
+    ShowTextAttributes(["cirqueb_fc4", 0, 0, 2])
+    ShowText(["【アリア・ラミア】"])
+    ShowText(["クィーンアルラウネも、今は代替わりしましたが……"])
+    ShowText(["現在のクィーンアルラウネよ、先代から聞いていませんか？"])
+    ShowTextAttributes(["a_emp_fc1", 4, 0, 2])
+    ShowText(["【プリエステス】"])
+    ShowText(["私はクィーンではありません。"])
+    ShowText(["路傍に咲くひとひらの花です。"])
+    ShowTextAttributes(["cirqueb_fc6", 2, 0, 2])
+    ShowText(["【ゼノビア】"])
+    ShowText(["相変わらず、植物族は壊れていますね。"])
+    ShowText(["先代のアルルーナに聞きましょうか。"])
+    ShowTextAttributes(["queenalraune_fc1", 3, 0, 2])
+    ShowText(["【アルルーナ】"])
+    ShowText(["あの宝玉は、確か……"])
+    ShowText(["世界樹の、最も高いところに安置してあるはずです。"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["世界樹の最高階層に、神癒の宝玉が……"])
+    ShowText(["どうか、私をそこに連れて行ってくれませんか？"])
+    ShowTextAttributes(["amabie_fc1", 0, 0, 2])
+    ShowText(["【アマビエ】"])
+    ShowText(["その宝玉の力で、癒しの力が増せば――"])
+    ShowText(["きっと民は、私とのハグに応じてくれるはずです。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["いや、それは……うん……"])
+    ShowText(["とにかく、世界樹に行ってみよう！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["世界樹のある島は、世界地図の最南西だ。"])
+    ShowText(["アマビエのため、神癒の宝玉を取りに行こう――"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([60])
+    ChangeTransparency([1])
+    TransferPlayer([0, 2, 372, 165, 2, 2])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

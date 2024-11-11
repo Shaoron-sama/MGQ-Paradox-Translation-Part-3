@@ -1,0 +1,483 @@
+Display Name = "魔城トゥーロマンサ 第2層"
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 45, 66, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 45, 66, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 922, 45, 66, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 2, 2])
+      ControlVariables([1228, 1228, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 924, 13, 73, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 2, 2])
+      ControlVariables([1228, 1228, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 924, 13, 73, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 2, 2])
+      ControlVariables([1228, 1228, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 924, 13, 73, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 2, 2])
+      ControlVariables([1228, 1228, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 924, 13, 73, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([1, 1228, 0, 2, 2])
+      ControlVariables([1228, 1228, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 924, 13, 73, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    CallCommonEvent([499])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShotBalloonIcon([-1, 1, false])
+    PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+    ShowAnimation([10, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    ShowAnimation([11, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 0])
+    ShowAnimation([12, 501, false])
+    Wait([30])
+    ControlSwitches([33, 33, 0])
+    Wait([120])
+    ShowPicture([7, "80_lira_st01", 0, 0, -200, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 200, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, -200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["来たわね、勇者達……"])
+    ShowText(["私がいる以上、先には進ませないわよ。"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["私とリラ、それにミュゼット様の力が合わされば……"])
+    ShowText(["あなた達なんて、敵じゃないわね。"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["そういうわけで……"])
+    ShowText(["みんな、ここでやられちゃってよ。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ミュゼット……いったい、何を考えているんだ？"])
+    ShowText(["お前は、誰かに従うようなタイプじゃないだろう。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ふふっ……私は「夢の主」と約束を交わしたの。"])
+    ShowText(["手下となって働く代わりに、グランドノアを頂くとね。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["グランドノアの支配のため、だと……？"])
+      ShowText(["それが貴様の目的か？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["グランドノアの支配――"])
+      ShowText(["それがあなたの目的だというのですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ホホホ、私がそんなスケールに収まるとでも？"])
+    ShowText(["私が欲しいのは、この世界よ……！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["ここで、あなた達全員を洗脳して――"])
+    ShowText(["この私の、忠実な手駒にするのよ。"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["その戦力をもって、同盟者も「夢の主」をも滅ぼし――"])
+    ShowText(["そしてこの世界は、私の掌に収まるのよ！"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["なるほど、支配欲が動機か。"])
+    ShowText(["正直、夢魔どもよりはよほど理解できるが――"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["だが、そのような事は看過できんな。"])
+    ShowText(["其方の支配下では、何万何億もの無辜の民が苦しもう。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["決着の時だ、ミュゼット――"])
+    ShowText(["お前の野望、僕の剣が斬り払う！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["来なさい、万能剣士――そして、勇者達！"])
+    ShowText(["どうせみんな、私の傀儡に成り下がるのよ……！"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss3\", @volume=100, @pitch=100)"])
+    BattleProcessing([0, 1413, false, false])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["こんな……まさか、この私が……！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["僕達の勝ちだ！"])
+    ShowText(["観念しろ、ミュゼット！！"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["ミュゼット様、どうします……？"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["どうしよう……大ピンチ！"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["私は、まだ負けないわ……！"])
+    ShowText(["ベル、リラ！　退くわよ！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    ShowAnimation([10, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 1])
+    Wait([60])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["くっ……今度こそ、吠え面をかかせてやるわ！"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["あっ、待って～！"])
+    ShowAnimation([11, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 1])
+    ShowAnimation([12, 501, false])
+    Wait([30])
+    ControlSwitches([33, 33, 1])
+    Wait([60])
+    ControlVariables([1212, 1212, 0, 0, 2])
+    PlayBGM(["RPG::BGM(@name=\"cb1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["あっ、逃げちゃった……"])
+    ShowText(["どうする？　追いかける？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["残念ながら、後を追う余裕はないな……"])
+      ShowText(["今は、ゲートを閉じる事を優先しよう。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アリスの言うように、まずは問題の大元を解決し――"])
+      ShowText(["その後に、ミュゼットに対処した方がいいだろう。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["残念ながら、後を追う余裕はありませんね……"])
+      ShowText(["今は、ゲートを閉じる事を優先しましょう。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["イリアスの言うように、まずは問題の大元を解決し――"])
+      ShowText(["その後に、ミュゼットに対処した方がいいだろう。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["byakunen_fc1", 1, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["でも、これで同盟者の方を三人も倒しましたね！"])
+    ShowText(["良い調子ではないですか！"])
+    ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["ああ……だが、まだまだ厄介なのが残ってるんだ。"])
+    ShowText(["ここから先も、油断は出来ないぞ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まだ、ここから先も同盟者達は襲ってくるだろう。"])
+    ShowText(["ミュゼットを倒したからといって、気は抜けない――"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["さあ、先に進もう。"])
+      ShowText(["気を抜くな、まだまだ先は長いぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さあ、先に進みましょう。"])
+      ShowText(["まだ先は長いです、断じて気を抜かないように！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["魔城の最奥にあるという、魔力供給室へと向かって――"])
+    ShowText(["僕達は、確実に歩を進めるのだった。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ControlVariables([1229, 1229, 0, 0, 3])
+    ConditionalBranch([0, 2930, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2931, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2932, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1229, 0, 0, 0])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["【妖狐】"])
+      ShowText(["このフロアの宝箱は、もう残ってないみたいだね。"])
+      ShowText(["おめでと～♪"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["【妖狐】"])
+      ShowText(["このフロアの宝箱は、あと\\V[1229]個だね。"])
+      ShowText(["がんばって探してみてよ！！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([6, -1, 4])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"hand-drum01\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"sanmai\\\", 1])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"hand-drum01\\\", @pitch=100, @volume=100)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"sanmai\", 1])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Sand\\\\\\\", @pitch=150, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"!Flame\\\", 7])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Sand\\\", @pitch=150, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"!Flame\", 7])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+      ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
+      ShowText(["【妖狐】"])
+      ShowText(["むぎゃっ！！\\^\\.\\."])
+      ControlSelfSwitch(["A", 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["youkosan_fc2", 0, 0, 2])
+      ShowText(["【狐像】"])
+      ShowText(["フフフ……。ウチは石像狐。"])
+      ShowText(["「お尻」から話しかけない限り退かないのだ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2930, 2930, 0])
+    ChangeWeapons([963, 0, 0, 1, false])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["これ……私のだ♪"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ターサ、鎌なんて使えるの……？"])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["この鎌は、扇のように使えるの。"])
+    ShowText(["これ持って踊ると、気分良いんだよ～♪"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2932, 2932, 0])
+    ChangeArmor([333, 0, 0, 1, false])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["こ、このお洒落なチュニックは……！！"])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["これが似合うのは、間違いなくラルスよね。"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2931, 2931, 0])
+    ChangeArmor([359, 0, 0, 1, false])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【夢狐】"])
+    ShowText(["これ……色狐ちゃんの！？"])
+    ShowText(["はーい、ウチ！　ウチにちょうだい！"])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【夢狐】"])
+    ShowText(["ほらほら、似合う？"])
+    ShowText(["色狐ちゃんみたいに可愛い！？"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["少し落ち着け……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["ここ、第10層まであるんだって……"])
+    ShowText(["長丁場だから、回復はしっかりね。"])
+    Empty([])
+
+  Page 1
+    Empty([])

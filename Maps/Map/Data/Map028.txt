@@ -1,0 +1,424 @@
+Display Name = "グランゴルド"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Wait([60])
+    ShowPicture([5, "80_kanade_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["kanade_fc1", 0, 0, 2])
+    ShowText(["【禍撫】"])
+    ShowText(["さあ、攻めなさい……"])
+    ShowText(["目に付くもの、全てを粘液の海に沈めなさい……"])
+    ShowPicture([5, "80_gigaslime_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["gigaslime_fc2", 0, 0, 2])
+    ShowText(["【ギガスライム】"])
+    ShowText(["禍撫様の仰る通り……"])
+    ShowText(["全てを、私の中に取り込む……"])
+    ShowPicture([6, "80_bombslime_st01", 0, 0, -180, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_liqurslime_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["bombslime_fc1", 0, 0, 2])
+    ShowText(["【ボムスライム】"])
+    ShowText(["溶かすのもいいが……"])
+    ShowText(["派手に吹っ飛ばすのも楽しいぜ！"])
+    ShowTextAttributes(["liqurslime_fc1", 0, 0, 2])
+    ShowText(["【リキュルスライム】"])
+    ShowText(["暴力は好みません。"])
+    ShowText(["緩やかに包み溶かしましょう……"])
+    ErasePicture([6])
+    ShowPicture([5, "80_sabiriel_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["sabiriel_fc1", 7, 0, 2])
+    ShowText(["【サビリエル】"])
+    ShowText(["まさか、ここで敵の援軍が来るとは……"])
+    ShowTextAttributes(["giriel_fc1", 2, 0, 2])
+    ShowText(["【ギリエル】"])
+    ShowText(["おいおい、こっちも結構疲れてるんだぜ……"])
+    ShowTextAttributes(["sabiriel_fc1", 7, 0, 2])
+    ShowText(["【サビリエル】"])
+    ShowText(["ひるむな、天使達よ！！"])
+    ShowText(["第一師団の戦いぶり、魔物共に見せつけてやれ！！"])
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["【ヴァルキリー】"])
+    ShowText(["イリアス様のために、戦い抜くわ……！"])
+    Wait([60])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([60])
+    ChangeTransparency([1])
+    TransferPlayer([0, 46, 21, 7, 4, 2])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_colosseum\", @volume=100, @pitch=100)"])
+    FadeinScreen([])
+    Wait([30])
+    ShowPicture([5, "80_gnosis_st01b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["グランゴルド軍の残党も加わり、城下は混戦状態……"])
+    ShowText(["こちらは精兵なれど、連戦の疲れは隠せません……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ならば、我々も出ましょう！"])
+    ShowText(["ここで禍撫軍を倒し、グランゴルドを制圧します！"])
+    ShowPicture([5, "80_rafaera_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["……イリアス様、私に良策があります。"])
+    ShowText(["禍撫がここにいるという事は、グランドノアはガラ空き……"])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["それは、まさか――"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["イリアス様およびルカと仲間達全員で……"])
+    ShowText(["禍撫不在のグランドノアに乗り込み、制圧してしまうのです。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["こちらの戦線は、このラファエラにお任せ下さい。"])
+    ShowText(["私の指揮で、禍撫軍の攻撃を食い止めましょう。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ずいぶん、大胆な策ですね……"])
+    ShowText(["私達だけで、グランドノアが制圧できると思いますか？"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["七大天使のうち、封印されている残り五人の身柄……"])
+    ShowText(["六祖が、それぞれの管轄都市で管理していると思われます。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラファエラ一人がグランゴルドで封じられていた以上――"])
+    ShowText(["その可能性は非常に高いと、僕も考えていた。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["ですので……"])
+    ShowText(["グランドノアにも七大天使の一人が封じられているはず。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["イリアス様ご一行のお力で、その者を解放できれば……"])
+    ShowText(["禍撫のいないグランドノアなど、一気に制圧できるはずです。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["希望的観測が目立つ作戦ですね。"])
+    ShowText(["このグランゴルド作戦も、ずいぶん予定と狂ったのですが……"])
+    ShowPicture([5, "80_rafaera_st02b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["……でも、結果的に上手く行ったでしょう？"])
+    ShowText(["私は、イリアス様やルカの力を信じております。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["この小さな体で、見下されるのは慣れましたが……"])
+    ShowText(["あまり買い被られるのも、困りものですね。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……どうしますか、ルカ？"])
+    ShowChoices([["ラファエラに賛成する", "ラファエラに反対する", "任せる"], 2])
+    When([0, "ラファエラに賛成する"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ラファエラの作戦に賛成だよ。"])
+      ShowText(["禍撫のいない隙に、グランドノアを攻めよう！"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["でも、ちょっと無茶じゃない……？"])
+      ShowText(["グランドノアの七大天使を解放出来るかも分からないし。"])
+      Empty([])
+
+    When([1, "ラファエラに反対する"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["僕は反対だな……色々と不確実すぎるよ。"])
+      Empty([])
+
+    When([2, "任せる"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["僕には分からないから、任せるよ。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["でも、ちょっと無茶じゃない……？"])
+      ShowText(["グランドノアの七大天使を解放出来るかも分からないし。"])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["かと言って、このまま防衛に徹するのも良くないですね。"])
+    ShowText(["なんとか禍撫軍を撃退したとして……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["結局、禍撫の守るグランドノアに攻め込む事になりますね。"])
+    ShowText(["他の六祖もどう動くか分かりませんし、危なっかしいです……"])
+    ShowPicture([5, "80_rafaera_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["ここで守りに専念する方が危険だと、私は考えます。"])
+    ShowText(["敵に時間を与えれば、不利になる一方ですよ。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……そうですね。"])
+    ShowText(["ここは、ラファエラの作戦を採用する事とします。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["これより私達は、グランドノアに攻め込みましょう。"])
+    ShowText(["ラファエラ……その間、ここの防衛は任せますよ"])
+    ShowPicture([5, "80_rafaera_st02b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["承りました、イリアス様。"])
+    ShowText(["せいぜい禍撫を引き付け、撹乱させてやりましょう。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["グノーシスとシオンは、私達に同行しなさい。"])
+    ShowText(["グランドノア攻略戦では、護衛を務めるのですよ。"])
+    ShowPicture([5, "80_gnosis_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+    ShowText(["【グノーシス】"])
+    ShowText(["お言葉のままに……"])
+    ShowText(["シオンも、ただちに呼び寄せましょう……"])
+    ShowTextAttributes(["shion_fc1", 3, 0, 2])
+    ShowText(["【シオン】"])
+    ShowText(["また一緒だな！　よろしく～♪"])
+    ErasePicture([5])
+    Script(["add_actor_ex(397)"])
+    Script(["add_actor_ex(401)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["シオンとグノーシスが仲間に復帰した！"])
+    Wait([60])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["グランドノアに行くには……"])
+    ShowText(["ここから南方にある、ゴルド砦を抜けねばなりませんね。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それじゃあ、まずはゴルド砦の突破だね。"])
+    ShowText(["話は決まった、さっそく向かおう！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["禍撫軍は、グランゴルド攻めに集中している――"])
+    ShowText(["その間に、迅速に事を運ばなければならないのだ。"])
+    ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+    ShowText(["【ラファエラ】"])
+    ShowText(["ご武運を、イリアス様……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["そちらも、任せましたよ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["こうして僕達は――"])
+    ShowText(["グランゴルドの制圧も定まらぬまま、グランドノアへと旅立つ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["そこには、七大天使のうち一人が囚われているはず。"])
+    ShowText(["彼女を救い出し、一挙にグランドノアを制圧するのだ――"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([100, 100, 1])
+    ControlVariables([1002, 1002, 0, 0, 79])
+    TransferPlayer([0, 1, 234, 153, 2, 2])
+    RecoverAll([0, 0])
+    FadeinScreen([])
+    Script(["gain_medal(111)"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["あっ……"])
+    ShowText(["エデンに、指示を出すのを忘れていました。"])
+    ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+    ShowText(["【メフィスト】"])
+    ShowText(["ラファエラに総指揮権が移った旨、伝わっていませんね。"])
+    ShowText(["……まあ、ラファエラならば上手く言いくるめるでしょうが。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["でも多分、エデンはすねるでしょうね。"])
+    ShowText(["グランドノアで、お土産でも買って帰りましょう……"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["イリアス様、最近そういう心遣いが出来るようになったよね。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["正史では散々でしたからね……"])
+    ShowText(["絶対者たる私とて、色々と反省はするのです。"])
+    ConditionalBranch([4, 36, 0])
+      ShowTextAttributes(["rucyfinac_fc1", 0, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["散々だったの？"])
+      ConditionalBranch([4, 34, 0])
+        ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+        ShowText(["【ミカエラちゃん】"])
+        ShowText(["散々だったんでしょ……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["それはともかく……"])
+    ShowText(["ゴルド砦は、ここから南方だったよね。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["グランドノアで、激戦が控えている事でしょう。"])
+    ShowText(["ゴルド砦はさっくりと突破したいところですが……"])
+    ConditionalBranch([4, 397, 0])
+      ShowTextAttributes(["shion_fc1", 3, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["そこら辺は、全部あたしに任せとけよ！"])
+      ShowText(["立ち塞がる奴等なんざ、まとめて圧壊だぜ！"])
+      ConditionalBranch([4, 401, 0])
+        ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+        ShowText(["【グノーシス】"])
+        ShowText(["このグノーシス……"])
+        ShowText(["イリアス様の御為、露払いを務めましょう。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["シオンたちがいてくれれば、非常に心強い。"])
+      ShowText(["こうして僕達は、南にあるゴルド砦に向かったのだった――"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["そう上手く行くかどうかは分からない。"])
+      ShowText(["ともかく僕達は、南にあるゴルド砦に向かったのだった――"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])

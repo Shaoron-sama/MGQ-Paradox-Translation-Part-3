@@ -1,0 +1,37 @@
+CommonEvent 7363
+Name = "ショウキ：敗北"
+
+  999([7363])
+  CallCommonEvent([7000])
+  ShowPicture([5, "80_mob_ninzya1_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+  ErasePicture([6])
+  ShowTextAttributes(["mob_ninzya1_fc1", 0, 0, 2])
+  ShowText(["【ショウキ】"])
+  ShowText(["私の勝ちだな……"])
+  ShowText(["賭け金を支払ってもらおうか。"])
+  ConditionalBranch([0, 443, 1])
+    ChangeGold([1, 0, 2000])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ルカは 2000G 支払った！"])
+  ShowTextAttributes(["mob_ninzya1_fc1", 0, 0, 2])
+  ShowText(["【ショウキ】"])
+  ShowText(["また挑むがいい……"])
+  ShowText(["そのたびに、無様に果てる事になっても良いならばな。"])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ErasePicture([5])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 41, 46, 22, 2, 0])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

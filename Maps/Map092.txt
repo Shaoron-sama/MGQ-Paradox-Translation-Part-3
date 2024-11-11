@@ -1,0 +1,550 @@
+Display Name = "クロムの部屋"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この死体は……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ザルザネブ樹海の中で見つかった遺体じゃ。"])
+    ShowText(["自宅に書き置きがあり、自殺と断定されておる。"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この死体は……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["港町ナブラの沖から上がった水死体じゃ。"])
+    ShowText(["数年前に行方不明になった地元の漁師の遺体じゃろう。"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この死体は……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["サバサ砂漠で遭難死した商人の屍じゃ。"])
+    ShowText(["お前も、遭難には気をつけるのじゃぞ。"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1105, 0, 6, 0])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ぬぐぐ、やはり疲れる術じゃ……"])
+      ShowText(["早く聞きたい事を聞くが良い。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([551])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([36, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この死体は……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["独居老人、死因は心臓発作……"])
+    ShowText(["社会の不合理を感じるが、不審な死体ではない。"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1105, 0, 2, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この死体は……何か、他の死体とは違う気がする。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ほう、その死体が気になるか。"])
+      ShowText(["なかなか良い目の付け所をしているな。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["これは……いや、この人は？"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["フィノア村から運び込まれた、身元不明の死体でな……"])
+      ShowText(["あの、夢の国事件の際の犠牲者じゃ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あの事件で、フィノアの……"])
+      ShowText(["ミュスカ達の犠牲者か……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["夢の国事件において、ミュスカ達はフィノア村を占拠。"])
+      ShowText(["その際に、多大な数の住民が犠牲になったのだ。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["知っての通り、あの事件で大量の死体が出たじゃろう。"])
+      ShowText(["今もまだ、身元不明の者がいてな……"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["儂にも検死の仕事が回り、こうして受け入れたわけじゃ。"])
+      ShowText(["中でもその死体は、特に奇妙でな……"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["彼が淫魔の餌食になったのは、明らかなのじゃが……"])
+      ShowText(["どうにも時期が合わん、死亡時期はフィノア事件より前じゃ。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ミュスカ達がフィノアを襲う前に、犠牲になったってこと？"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ああ、奇妙な話じゃろう。"])
+      ShowText(["それに、彼が手にしている奇妙な機器……"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["これはおそらく、極めて高度な通信マキナじゃ。"])
+      ShowText(["間違いなく、儂等の世界の技術ではない。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["いったい、この死体は何者なのか……"])
+      ShowText(["どうじゃ？　好奇心が刺激されんか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この死体が、ここに収容されたのはいつ？"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["今日の午後一時じゃが……それがどうかしたのか？"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["午後一時……"])
+      ShowText(["いつも、僕が戻される時刻……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この、謎の死体――"])
+      ShowText(["今回の異変に大きく関わっている予感がする。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あの……"])
+      ShowText(["この死体が持っている小型マキナ、借りてもいいかな？"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["構わんが……"])
+      ShowText(["故人の持ち物じゃ、手荒く扱うでないぞ。"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["謎の通信マキナを手に入れた！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["このマキナの正体が分かれば、死体の身元に繋がるかもしれない。"])
+      ShowText(["詳しそうな仲間にこれを見せて、情報を集めよう――"])
+      ControlVariables([1105, 1105, 0, 0, 3])
+      ControlSwitches([2365, 2365, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この死体が持っていたマキナの正体が分かれば、身元に繋がるかも。"])
+      ShowText(["詳しそうな仲間にこれを見せて、情報を集めよう――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この死体が持っていたマキナの正体が分かった。"])
+      ShowText(["今はまず、プロメスティンに報告に行こう――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この死体は、ミュスカの世界から来た人物……"])
+      ShowText(["いったい、何者なんだ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカは、死体を調べてみた……"])
+      ShowText(["……が、専門ではないので良く分からない。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["やっぱり、分からないか。"])
+      ShowText(["死体と話が出来たらなぁ……"])
+      SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["死体と話じゃと……？"])
+      ShowText(["もちろん、出来るぞ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["えっ……！？"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["魔芸とは……屍を舞わせ、霊と話し、人形を遊ばせる芸。"])
+      ShowText(["死者の霊を呼び出すなど、朝飯前じゃ。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["儂が、アルテイスト家の才女であることを忘れたか？"])
+      ShowText(["専門ではない降霊術とて、並の術士よりは上じゃぞ。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["それじゃあ、頼むよ。"])
+      ShowText(["この死体の霊を呼び出してほしいんだ。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["本来、検死に降霊を使うのは邪道じゃが……"])
+      ShowText(["状況が状況、仕方なかろう。"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["では、行くぞ！"])
+      ShowText(["無念をたたえし魂よ、今一度現世に舞い降りよ……！"])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["クロムの降霊術に、魂が反応し――"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowAnimation([18, 51, false])
+      Wait([60])
+      ControlVariables([1105, 1105, 0, 0, 6])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["死体の主が、亡霊となって姿を現した！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【謎の亡霊】"])
+      ShowText(["ここは……俺は……"])
+      ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["さあ、聞くことがあれば聞くが良い。"])
+      ShowText(["結構疲れる術じゃ、あまり長くは維持できんぞ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 7, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["この死体の身元は分かった。"])
+      ShowText(["そして、異変の核心も――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["今すぐに、プロメスティンに報告に行こう。"])
+      ShowText(["彼女なら、有効な解決策を見出してくれるはずだ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["むっ、何の用じゃ？"])
+    ShowText(["見学なら、邪魔にならないようにするのじゃぞ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……ひどい部屋だなぁ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ともかく、何かが引っ掛かる。"])
+    ShowText(["この部屋を、少し調べてみるとしよう――"])
+    ControlVariables([1105, 1105, 0, 0, 2])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【謎の亡霊】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["君は……いったい、何者なんだ……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【謎の亡霊】"])
+    ShowText(["俺の名は、透……"])
+    ShowText(["あのサキュバス……ミュスカに、命を奪われた……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【透】"])
+    ShowText(["何度も、何度も……ミュスカに……"])
+    ShowText(["ネメアに、ヴィヌムに……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【透】"])
+    ShowText(["吸い殺されるたびに、時間が巻き戻って……"])
+    ShowText(["何度も、何度も……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["ミュスカ達に……"])
+    ShowText(["やっぱり……"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["話は手短に済ませるのじゃぞ。"])
+    ShowText(["さっき言ったように、維持できる時間は短いのじゃ……"])
+    Label(["メイン"])
+    Script(["ex_choice_add(\"異変について相談する\",2,"])
+    ScriptMore(["\"s[2341]\",0)"])
+    ScriptMore(["ex_choice_add(\"後悔していることについて聞く\",3,"])
+    ScriptMore(["\"s[2342]\",0)"])
+    ScriptMore(["ex_choice_add(\"時を繰り返す道具について聞く\",4,"])
+    ScriptMore(["\"s[2343]\",0)"])
+    ScriptMore(["ex_choice_add(\"ピザを注文したか聞く\",5,"])
+    ScriptMore(["\"s[2345]\",0)"])
+    ScriptMore(["ex_choice_add(\"謎のマキナについて聞く\",6,"])
+    ScriptMore(["\"s[2365]\",0)"])
+    Script(["ex_choice_show(0,11,[0,0])"])
+    ConditionalBranch([1, 9, 0, 2, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカは、異変について相談した……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["俺も、同じだ……"])
+      ShowText(["何度も何度も、同じ時間を繰り返して……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["吸われるたびに、力尽きて……"])
+      ShowText(["何度も、何度も……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あの、この時空異変を開始するには――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["同じ時間を、何度も……何度も……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["その、僕の世界は――"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["……無駄じゃな、その霊は妄念に近い。"])
+      ShowText(["論理的思考は期待できんじゃろう……"])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["俺は、自分が助かるために……"])
+      ShowText(["他の人間の命を、犠牲にしてしまったんだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["何度も、時間を戻って探したんだよ。"])
+      ShowText(["彼の命が助かる道を……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["でも、何度やっても駄目だった。"])
+      ShowText(["あの家で、彼は俺の代わりに死に続けたんだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["名前も知らない彼を、助けたかった……"])
+      ShowText(["それが、俺の後悔だ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["その誰かを助けるために、透は同じ時間を何度も繰り返した――"])
+      ShowText(["これこそ、この異変の確信に違いない。"])
+      ControlSwitches([2359, 2359, 0])
+      ConditionalBranch([0, 2360, 0])
+        ConditionalBranch([0, 2361, 0])
+          CallCommonEvent([544])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["あの家で、拾った……"])
+      ShowText(["あの像で、同じ時間を何度も何度も……"])
+      ConditionalBranch([1, 1102, 0, 5, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【透】"])
+        ShowText(["感じる……あるはずだ……"])
+        ShowText(["あの像が、ここにも……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【透】"])
+        ShowText(["たぶん、効果も同じ……"])
+        ShowText(["その像で、同じ時間を繰り返し……何度も……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["透は、その像の力で時間を何度も繰り返したらしい。"])
+        ShowText(["今回の異変に関わっているなら、同じ像を入手しなければ――"])
+        ControlSwitches([2360, 2360, 0])
+        ConditionalBranch([0, 2359, 0])
+          ConditionalBranch([0, 2361, 0])
+            CallCommonEvent([544])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["メイン"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1102, 0, 6, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["透の亡霊は、ルカの持っている「時戻りの像」に視線をやった。"])
+        ShowText(["淀んだ目に、微かな理性の光が戻った気がする……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【透】"])
+        ShowText(["それは、俺の手にした像とは別の物だ……"])
+        ShowText(["でも、とても似ている……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【透】"])
+        ShowText(["たぶん、効果も同じ……"])
+        ShowText(["その像で、同じ時間を繰り返し……何度も……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["透も、同じような像を手にしたらしい。"])
+        ShowText(["それが、今回の異変に影響したのだろうか……？"])
+        ControlSwitches([2360, 2360, 0])
+        ConditionalBranch([0, 2359, 0])
+          ConditionalBranch([0, 2361, 0])
+            CallCommonEvent([544])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["メイン"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["……ピザを頼んだのは、俺なんだ。"])
+      ShowText(["あの悪魔の家に、他の人間を呼び込むために。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["そして……俺の代わりに、犠牲になってもらった……"])
+      ShowText(["あの、ピザの配達人を……俺は……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["俺が、殺したんだ……"])
+      ShowText(["悔やんでも、悔やみきれない……"])
+      ControlSwitches([2361, 2361, 0])
+      ConditionalBranch([0, 2359, 0])
+        ConditionalBranch([0, 2360, 0])
+          CallCommonEvent([544])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 6, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【透】"])
+      ShowText(["それは……"])
+      ShowText(["俺の、スマホだ……"])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    CallCommonEvent([552])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 77, 3, 18, 6, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])

@@ -1,0 +1,322 @@
+Display Name = ""
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 918, 7, 1, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 910, 7, 6, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_battle1\", @volume=100, @pitch=100)"])
+    Script(["keep_all_equip"])
+    Script(["set_temp_actors(819,823,802,801,825,814)"])
+    Script(["persona_change(825)"])
+    RecoverAll([0, 0])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    FadeinScreen([])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["グランドノア地下牢で、ターサを救出したものの――"])
+    ShowText(["魔城トゥーロマンサが、この世界に召喚されてしまった。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["襲い来る多数の夢魔達、そして新たなる仲間――"])
+    ShowText(["この窮地を切り抜け、魔城から脱出しなければならない。"])
+    ShowPicture([5, "80_succubusm_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["はっ……！"])
+    PlaySE(["RPG::SE(@name=\"mon_karaburi\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["夢魔に対し、僕は剣で突きを繰り出すが――"])
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["それじゃあ、ダメ……"])
+    ShowText(["もっと別なので突いてくれない？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["やはり、効かないか……！"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["レスト……だったっけ？"])
+    ShowText(["あなたは支援に専念して！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……分かった！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ノビッサやラルスのようなセックスバトルの力――"])
+    ShowText(["それを、僕は持っていないのだ。"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([-1, 856, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    ShowPicture([5, "80_succubusm_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_succubusm_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["うふふっ、遊びましょう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["夢魔はさらに数を増やした！"])
+    ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["ちょっとぉ、まだ来るのぉ……？"])
+    ShowText(["せめて三人ずつ……ね？"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！！"])
+    ErasePicture([5])
+    ErasePicture([6])
+    BattleProcessing([0, 1368, false, false])
+    ControlSwitches([32, 32, 0])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["流石に、かなり数が減ってきたわね。"])
+    ShowText(["もう少しよ……！"])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["…………！！"])
+    BattleProcessing([0, 1369, false, false])
+    ControlSwitches([33, 33, 0])
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["これでタダ働きかよ……"])
+    ShowText(["誰ぞから報酬もらえんのか？"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["敵は残り少数だ……"])
+    ShowText(["みんな、がんばってくれ！"])
+    BattleProcessing([0, 1369, false, false])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlVariables([1209, 1209, 0, 0, 1])
+    PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["ざっと、こんなものね。"])
+    ShowTextAttributes(["tarsa_fc2", 0, 0, 2])
+    ShowText(["【ターサ】"])
+    ShowText(["うふふっ、気持ち良かった……♡"])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["激戦の後、ようやく夢魔の群れを撃退した。"])
+    ShowText(["あれだけの敵を倒すなんて、心強い仲間達だ――"])
+    ShowPicture([5, "80_rovissa_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["魔城の召喚は阻止できなかったけど……"])
+    ShowText(["二人の勇者に出会えたのは、ラッキーだったわね。"])
+    ShowPicture([5, "80_daimeikai_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["だが、この状況は厄介だな。"])
+    ShowText(["魔城の地下深くに、少数で孤立状態だぜ。"])
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["敵の第一波は乗り切ったが……"])
+    ShowText(["まだまだ、襲ってくるはずだしな。"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["追い込まれる前に、ここから脱出しよう。"])
+    ShowPicture([5, "80_lars_st11", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_nobissa_st01", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラルスとノビッサが、無言のまま頷く。"])
+    ShowText(["非常に寡黙な二人だが、実に心強い。"])
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["なあ、お前ら……"])
+    ShowText(["なんか、性格（キャラ）かぶってないか？"])
+    ShowTextAttributes(["lars_fc01", 0, 0, 2])
+    ShowText(["【ラルス】"])
+    ShowText(["…………！？"])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["【ノビッサ】"])
+    ShowText(["…………！？"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["【ルヴィッサ】"])
+    ShowText(["……失礼なこと言わないでよね。"])
+    ShowText(["さっさと行くわよ！"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["【レスト】"])
+    ShowText(["ああ……早くここから脱出しよう。"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ここは魔城の深部、かなり危険な道のりになるはず。"])
+    ShowText(["力を合わせ、先に進むしかない――"])
+    FadeoutScreen([])
+    ControlSwitches([2959, 2959, 0])
+    RecoverAll([0, 0])
+    TransferPlayer([0, 919, 20, 25, 2, 2])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"cb1\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([142, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    CallCommonEvent([500])
+    Empty([])

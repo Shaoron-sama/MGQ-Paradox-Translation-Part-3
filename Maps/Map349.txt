@@ -1,0 +1,180 @@
+Display Name = "北のお化け屋敷 倉庫"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 346, 2, 16, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["きんぐ・おぶ・ぞんび……"])
+    ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["すりらぁ……"])
+    ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["ぉぅぃぇ……"])
+    ConditionalBranch([0, 2080, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ゾンビ達は楽しそうに踊っている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ゾンビ達は楽しそうに踊っている……"])
+    ShowText(["どうしようか？"])
+    ShowChoices([["退治する", "そっとしておく"], 2])
+    When([0, "退治する"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["本当にいいの？"])
+        ShowText(["ここで踊ってる分には、人に迷惑はかけないと思うけど……"])
+        Empty([])
+      BranchEnd([])
+      ShowChoices([["それでも退治する", "そっとしておく"], 2])
+      When([0, "それでも退治する"])
+        BattleProcessing([0, 193, false, false])
+        ControlSwitches([2085, 2085, 0])
+        ControlSwitches([2080, 2080, 0])
+        ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
+        ShowText(["【ゾンビ娘】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ゾンビ娘達は、寂しそうに棺桶に戻っていった……"])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "そっとしておく"])
+        ControlSwitches([2080, 2080, 0])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["別に退治する必要はないよね……"])
+        ShowText(["何も悪いことはしていないんだし。"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    When([1, "そっとしておく"])
+      ControlSwitches([2080, 2080, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["別に退治する必要はないよね……"])
+      ShowText(["何も悪いことはしていないんだし。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([213, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……なんだ？"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["おどってる……"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["あ……ぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["あぅぅ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["おぉぉ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["すりらぁ……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゾンビ娘】"])
+    ShowText(["ぉぅぃぇ……"])
+    Empty([])
+
+  Page 1
+    Empty([])

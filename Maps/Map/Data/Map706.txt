@@ -1,0 +1,1728 @@
+Display Name = "サキュバスの村"
+Parallax Name = "DarkSea1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([1, 1157, 0, 1, 0])
+      ControlVariables([1157, 1157, 0, 0, 2])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["男が奴隷として扱われているなんて……"])
+      ShowText(["こんなの、見過ごせない！"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まったくもって同感ですが……"])
+      ShowText(["今は、はやる気持ちを抑え情報収集を続けましょう。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["騒ぎを起こしてしまえば、聞ける話も聞けなくなります。"])
+      ShowText(["村で大暴れするのは、情報を集め終えた後ですよ。"])
+      ConditionalBranch([4, 34, 0])
+        ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+        ShowText(["【ミカエラちゃん】"])
+        ShowText(["ここは敵地……"])
+        ShowText(["失策一つで、たやすく全滅してしまうわね。"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1157, 0, 3, 0])
+      ControlVariables([1157, 1157, 0, 0, 4])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["この村、ひどすぎる……"])
+      ConditionalBranch([4, 538, 0])
+        ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+        ShowText(["【ハインリヒ】"])
+        ShowText(["同感だ……"])
+        ShowText(["ここまでひどい村落、僕も初めて見るよ。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["邪神の支配する世界とは、このようなものです。"])
+      ShowText(["まず手始めに、この村の者達から救いましょう。"])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["とは言え、当面の目的を忘れてはなりません。"])
+      ShowText(["この地域の情報を、少しでも多く集めなければ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1157, 0, 5, 0])
+      ControlVariables([1157, 1157, 0, 0, 6])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この村の男達は、多くが動く気力さえ失っています。"])
+      ShowText(["うまく解放作戦を進めねば、危険は捕虜にも及ぶでしょう。"])
+      ShowTextAttributes(["shion_fc1", 0, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["ポケット魔王城に、片っ端から放り込めばいいんじゃね？"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["それは、なかなか良い案ですね。"])
+      ShowText(["そうすれば、より安全に捕虜を保護出来るはずです。"])
+      ShowTextAttributes(["shion_fc1", 3, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["そうだろ……♪"])
+      ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["……周囲に有益な情報を探知。"])
+      ShowText(["傍らのサキュバスの会話に耳を傾けること推奨――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サキュバス達の会話が、耳に入ってきた――"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ちょっと聞いた？"])
+      ShowText(["昨日捕まった、イケメン騎士の話だけど……"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["クィーンの屋敷に務める召使いが教えてくれたわ。"])
+      ShowText(["あの騎士、反抗組織の潜入工作員だったらしいわね……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["今晩は、クィーンが直々にお楽しみかぁ。"])
+      ShowText(["あんなイケメンなら、精も美味しいんだろうなー。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["まったく、羨ましい話よねぇ。"])
+      ShowText(["私達も、おこぼれをもらえないかしら……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サキュバス達は話題を変え、職場の愚痴を交わし始めた……"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["反抗組織の潜入工作員が、クィーンに捕らえられた……"])
+      ShowText(["これは、有力情報ですね。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["魔物が支配する世界にも、反抗組織はあるのね……"])
+      ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
+      ShowText(["【ラザロ】"])
+      ShowText(["どんな社会にも、気に食わねぇ奴はいるもんさ。"])
+      ShowText(["まして、こんなろくでもない世界じゃな。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["可能なら、その工作員に接触したいところです。"])
+      ShowText(["今回の救出作戦に、ぜひ組み込むべきでしょう。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そういうわけで……"])
+      ShowText(["メフィスト、作戦を練りなさい。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["サキュバスクィーンの屋敷から、"])
+      ShowText(["工作員を救出する事になりますが……"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["ざっと見た限り、潜入は不可能ですね。"])
+      ShowText(["サキュバスは鼻が利きます、間違いなく見つかるでしょう。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["ですので……まずは村内の捕虜を次々に解放。"])
+      ShowText(["騒ぎを広げつつ、クィーンの屋敷に向かいます。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["そのまま正面から乗り込み、警護を突破。"])
+      ShowText(["工作員を救出し、即座に脱出するという流れが良いかと。"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんだか、ものすごく強引じゃない？"])
+      ShowText(["もう少し作戦を練った方が……"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["今回は多くの捕虜を助けなければなりません。"])
+      ShowText(["常に、彼等の安全に気を払う必要があるのです。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["ゆえに、細かな小細工は逆効果。"])
+      ShowText(["私達が派手に動き、敵を引き付けるのです。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["村をざっと見た限り、そこまで強力な妖魔はいません。"])
+      ShowText(["私達なら、十分に対処できるでしょう。"])
+      ShowTextAttributes(["shion_fc1", 1, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["サキュバスなんて、何百匹来ようが屁でもないぜ！"])
+      ShowText(["全部、あたしに任せとけよ！"])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["問題は、クィーンサキュバスの妨害ですが……"])
+      ShowText(["こればかりは、臨機応変に対応するしかないですね。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["女王レベルである以上、厄介なのは間違いないでしょう。"])
+      ShowText(["なるべく、遭わずに済ませたいですが……"])
+      ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+      ShowText(["【グノーシス】"])
+      ShowText(["そう上手く、作戦が運ぶ事は期待できない。"])
+      ShowText(["クィーンサキュバスとの遭遇率79パーセント……"])
+      ShowTextAttributes(["arumaeruma_fc2", 0, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["大丈夫、クィーンサキュバスはこっちにもいるわ。"])
+      ShowText(["少々、お灸を据えてやらないとね……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こちらには、アルマエルマもいるのだ。"])
+      ShowText(["たとえクィーンサキュバスが出てきても、負けはしないはず。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["なお……作戦決行の際は、"])
+      ShowText(["奴隷屋にいる捕虜達の救出から始めるべきかと。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["あそこに捕らえられている男の数が最も多いですから……"])
+      ShowText(["作戦の初頭に、最優先で救出すべきです。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それでは……まず、奴隷屋を襲撃しましょう。"])
+      ShowText(["解放した男は、片っ端からポケット魔王城に放り込みます。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その後は、宿屋や民家に殴り込んで奴隷を解放。"])
+      ShowText(["邪魔するサキュバスは叩きのめしつつ、クィーンの屋敷へ。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["屋敷に入った後は、襲い来る淫魔共を千切っては投げ……"])
+      ShowText(["工作員を救い出し、そのままおさらばします。"])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんて強引な作戦……"])
+      ShowText(["ほとんど殴り込みじゃない。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["不服ですか、ソニア？"])
+      ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["……全然。"])
+      ShowText(["この村の惨状を見た後じゃ、棍棒にも力がこもるわ。"])
+      ShowTextAttributes(["shion_fc1", 3, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["サイコーな作戦だな！"])
+      ShowText(["片っ端からぶっ飛ばしてやるぜ！！"])
+      ShowTextAttributes(["micaelac_fc1", 0, 0, 2])
+      ShowText(["【ミカエラちゃん】"])
+      ShowText(["シンプルで、やりやすいわ……"])
+      ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+      ShowText(["【ルシフィナちゃん】"])
+      ShowText(["みんな、吹っ飛ばすよ～！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["みんな、闘志は十分のようだ。"])
+      ShowText(["かく言う僕も、かなり乱暴な作戦にさえ躊躇はない――"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["それじゃあ、救出作戦を始めよう！"])
+      ShowText(["邪魔する奴は、片っ端から叩きのめす！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["まずは奴隷屋に乗り込み、捕虜を全て解放する。"])
+      ShowText(["そのままクィーンの屋敷に殴り込み、工作員を救出するのだ――"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 97, 24, 46, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 66, 15, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 33, 59, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 16, 18, 0, 0])
+    ConditionalBranch([0, 2506, 1])
+      ConditionalBranch([0, 2507, 1])
+        ControlSwitches([2507, 2507, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["何者かが、階段を上がっていく足音がした――"])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["誰か、入れ違いに階段を上がっていったようですね。"])
+        ShowText(["この気配、どこかで覚えがあるのですが……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ほら、あたしが村を案内してあげるわ。"])
+      ShowText(["ただし、ここで騒ぎを起こさないでよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ほら、あたしが村を案内してあげるわ。"])
+      ShowText(["ただし、もう村じゃ奴隷は扱ってないわよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["unlimited_choices(11, [\"宿屋に行く\","])
+    ScriptMore(["\"武器・防具・鍛冶屋に行く\",\"教会に行く\","])
+    ScriptMore(["\"クィーンの屋敷に行く\",\"やめる\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      TransferPlayer([0, 706, 28, 50, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      TransferPlayer([0, 706, 39, 23, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      TransferPlayer([0, 706, 10, 27, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      TransferPlayer([0, 706, 25, 10, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 4, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["もうすぐ、天使の軍団が攻めてくるって噂よ。"])
+      ShowText(["一度滅ぼされたのに、懲りないわよねぇ……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["その天使達って、異世界から来るんでしょ？"])
+      ShowText(["そもそも異世界って何？って話なんだけど……"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["まあ、難しい事は分からないけど……"])
+      ShowText(["邪神様や六祖の方々が片付けてくれるでしょう。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["そうなったら、天使の奴隷がたくさん流れてこないかな？"])
+      ShowText(["天使をいたぶるのって、最高の贅沢なんだよね～♪"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使の一人が、極秘イモレシピってのを落としていったのよ。"])
+      ShowText(["すぐ回収に来たけど、全部書き写しておいたわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["さっそくレシピ通りに作ってみたけど……"])
+      ShowText(["スイートポテトってのが、とっても美味しかったわね。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["天使の連中……"])
+      ShowText(["そんなに美味しいものを、こっそり食べてたのね。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["そのレシピ、私にも見せてよ。"])
+      ShowText(["スイートポテトっていうの、さっそく食べてやるわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使もガッカリよね～！"])
+      ShowText(["ヒミツの御馳走が、バラされちゃってさ！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["もうすぐ、天使の軍団が攻めてくるって噂よ。"])
+      ShowText(["一度滅ぼされたのに、懲りないわよねぇ……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["その天使達って、異世界から来るんでしょ？"])
+      ShowText(["そもそも異世界って何？って話なんだけど……"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["まあ、難しい事は分からないけど……"])
+      ShowText(["邪神様や六祖の方々が片付けてくれるでしょう。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["そうなったら、天使の奴隷がたくさん流れてこないかな？"])
+      ShowText(["天使をいたぶるのって、最高の贅沢なんだよね～♪"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使の一人が、極秘イモレシピってのを落としていったのよ。"])
+      ShowText(["すぐ回収に来たけど、全部書き写しておいたわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["さっそくレシピ通りに作ってみたけど……"])
+      ShowText(["スイートポテトってのが、とっても美味しかったわね。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["天使の連中……"])
+      ShowText(["そんなに美味しいものを、こっそり食べてたのね。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["そのレシピ、私にも見せてよ。"])
+      ShowText(["スイートポテトっていうの、さっそく食べてやるわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使もガッカリよね～！"])
+      ShowText(["ヒミツの御馳走が、バラされちゃってさ！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowPicture([5, "80_ranccubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+    ShowText(["【ランキュバス】"])
+    ShowText(["ここは、クィーンのお屋敷よ。"])
+    ShowText(["ただの旅人を通すことは出来ないわ……"])
+    ConditionalBranch([1, 1157, 0, 5, 2])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["無理に通ろうとしたら、騒ぎになりそうだ。"])
+      ShowText(["特に用もないし、引き返すか……"])
+      ErasePicture([5])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1157, 0, 6, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["まずは、奴隷の店を襲撃します。"])
+      ShowText(["クィーンの屋敷に乗り込むのは、その後ですよ……"])
+      ErasePicture([5])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 9, 10, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 13, 49, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 618, 38, 20, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 165, 141, 2, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ここが、サキュバスの村……"])
+    ShowText(["私達の知ってる村に比べて、ずいぶん荒れてるわね。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["まるで、スラムのようです。"])
+    ShowText(["なんと薄汚い村なのでしょう……"])
+    ConditionalBranch([4, 287, 0])
+      ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["村長は、いったい何をしているのよ……"])
+      ShowText(["こんな有様を放置するなんて、考えられないわ。"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([5, "80_leeccubus_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["……止まりなさい。"])
+    ShowText(["あなた達は、冒険者みたいね。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["（状況が分かるまでは、騒ぎを起こすべきではありません。"])
+    ShowText(["　ここは話を合わせますよ……）"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そ、そう……冒険者だよ。"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["奴隷が応対するなんて、面白いパーティね。"])
+    ShowText(["それに、勇者のコスプレなんてさせて……"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ええ、勇者のコスプレです。"])
+    ShowText(["面白いでしょう……？"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["それに、天使ってのも珍しいわね。"])
+    ShowText(["売り物以外で村に来たのは、ずいぶん久々よ……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["（珍しい……という事は、魔界にも天使はいる？"])
+    ShowText(["　しかし売り物とは……）"])
+    ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["ところで、村に来た目的は何？"])
+    ShowText(["ちゃんとした理由がなければ、通行許可は出せないわ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["えっと、目的は――"])
+    Label(["理由"])
+    ShowChoices([["観光のため", "商売のため", "制圧するため", "言えない"], 0])
+    When([0, "観光のため"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ここで観光をしたいんだけど……"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あのねぇ、ここは観光地じゃないの。"])
+      ShowText(["ジロジロ見回るつもりなら、出てってくれる？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["いえ、もちろん別の理由がありますよ。"])
+      ShowText(["それは……"])
+      JumpToLabel(["理由"])
+      Empty([])
+
+    When([1, "商売のため"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ここには、物を売買するために来たんだ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["なるほどねぇ……"])
+      ShowText(["私が見たところ、とっても高値が付くと思うわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["でも、ここでの取引は全部クィーンが仕切ってるのよ。"])
+      ShowText(["誰かの仲介が必要だけど、ツテはあるの？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なるほど、ここで商売は難しそうですね。"])
+      ShowText(["他にも、来た理由があるのですが……"])
+      JumpToLabel(["理由"])
+      Empty([])
+
+    When([2, "制圧するため"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["この村を制圧して、軍事拠点にするつもりなんだ。"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["……などと、この者は妄言を吐く癖があるのです！"])
+      ShowText(["本気にしないで下さいね！"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ええ、分かってるわよ……"])
+      ShowText(["性奴隷の男は、すぐ頭がイカれちゃうから。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["それで、この村に来た理由は……？"])
+      JumpToLabel(["理由"])
+      Empty([])
+
+    When([3, "言えない"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["それは、言えない……"])
+      ShowPicture([5, "80_leeccubus_st02", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["leeccubus_fc1", 1, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ああそう、なるほどねぇ……"])
+      ShowText(["お楽しみ、ってわけね。"])
+      ShowTextAttributes(["leeccubus_fc1", 1, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["それじゃあ、通りなさい。"])
+      ShowText(["あんまりハメは外さない事ね……"])
+      ErasePicture([5])
+      SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どうやら、向こうは勝手に納得してしまったらしい。"])
+      ShowText(["通してくれるというなら、それに越した事はないが――"])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["なんだか分からないけど、良かったじゃない。"])
+      ShowText(["さっそく中に入りましょうよ！"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["とはいえ、このようなスラムでは……"])
+      ShowText(["建物の強度も弱く、軍事拠点には適しませんね。"])
+      ShowTextAttributes(["mefist_fc1", 0, 0, 2])
+      ShowText(["【メフィスト】"])
+      ShowText(["同感です……これではあのほこらの方がマシかと。"])
+      ShowText(["ここでは情報集めに専念する事をお勧めします。"])
+      ConditionalBranch([4, 401, 0])
+        ShowTextAttributes(["gnosis_fc1", 0, 0, 2])
+        ShowText(["【グノーシス】"])
+        ShowText(["了解致しました、イリアス様……"])
+        ShowText(["情報収集モードに移行します。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["それでは、村の中を探りましょう。"])
+      ShowText(["くれぐれも、軽挙妄動は謹んで下さいね。"])
+      ShowTextAttributes(["shion_fc1", 3, 0, 2])
+      ShowText(["【シオン】"])
+      ShowText(["先生！"])
+      ShowText(["サキュバスをぶん殴るのは、軽挙妄動に入りますか～？"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私は先生ではありませんし……"])
+      ShowText(["軽挙妄動以外の何物でもありません。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["やれやれ、大丈夫なのかな……"])
+      ShowText(["それじゃあ、ここで情報を集めよう！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["僕達は、魔界に辿り着いたばかり。"])
+      ShowText(["この村どころか、この世界の事さえよく分かっていないのだ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["入念に話を聞き、情報を集めよう――"])
+      ShowText(["そうすれば、やるべき事が見えてくるはずだ。"])
+      ControlVariables([1142, 1142, 0, 0, 7])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["今夜はどうする？"])
+      ShowText(["久々に、宿屋で男でも買う？"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["悪いけど、今夜は遠慮しておくわ。"])
+      ShowText(["昨日買った奴隷が、とっても活きが良いのよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あんた、そう言ってすぐ壊しちゃうんだから……"])
+      ShowText(["この前も、上級の奴隷を三日でダメにしたよね？"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["そう言うあなただって、ひどい大食らいじゃない。"])
+      ShowText(["一日で三人ほど吸い尽くしたって話、聞いてるわよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["誰よ、そんな噂を流したの……"])
+      ShowText(["吸い尽くしたのは二人だし、あの時はお腹空いてたのよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["そういうわけで、今夜は宿屋で楽しむわ。"])
+      ShowText(["僧侶を堕とすプレイに、今すっごくハマってるのよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["友達が言ってたけど……"])
+      ShowText(["イモの密売ってのが、ずいぶん儲かるみたいね。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使に見付からないように、"])
+      ShowText(["イモの密作を始めた人もいるみたいよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["これからの時代は、奴隷よりイモよね。"])
+      ShowText(["天使の目を盗んで、イモで儲けちゃおう～♪"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["今夜はどうする？"])
+      ShowText(["久々に、宿屋で男でも買う？"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["悪いけど、今夜は遠慮しておくわ。"])
+      ShowText(["昨日買った奴隷が、とっても活きが良いのよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あんた、そう言ってすぐ壊しちゃうんだから……"])
+      ShowText(["この前も、上級の奴隷を三日でダメにしたよね？"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["そう言うあなただって、ひどい大食らいじゃない。"])
+      ShowText(["一日で三人ほど吸い尽くしたって話、聞いてるわよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["誰よ、そんな噂を流したの……"])
+      ShowText(["吸い尽くしたのは二人だし、あの時はお腹空いてたのよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["そういうわけで、今夜は宿屋で楽しむわ。"])
+      ShowText(["僧侶を堕とすプレイに、今すっごくハマってるのよね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["友達が言ってたけど……"])
+      ShowText(["イモの密売ってのが、ずいぶん儲かるみたいね。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使に見付からないように、"])
+      ShowText(["イモの密作を始めた人もいるみたいよ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["これからの時代は、奴隷よりイモよね。"])
+      ShowText(["天使の目を盗んで、イモで儲けちゃおう～♪"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["あらリーム、グランゴルドから帰ってきたんだ。"])
+      ShowText(["名物の植物園、どうだった……？"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あたしは、ちょっとノーサンキューだったかな。"])
+      ShowText(["あそこまでグロいと、ちょっと好みじゃないわね……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["でも、あんたなら気に入るんじゃない？"])
+      ShowText(["あんたって、サドっ気が強めでしょ？"])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["私だって、程度はあるわよ……"])
+      ShowText(["やっぱり男は、快楽で攻めるのが一番よね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["ねぇ、天使達が作ったイモ畑とやらの立て札を見た？"])
+      ShowText(["「これは天使の食べ物、淫魔立ち入り禁止」だって。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ふざけてるわよね～！"])
+      ShowText(["さっそく夜に忍び込んで、盗んでやったわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["サラダにして食べると、割とイけるみたい……"])
+      ShowText(["天使の食べ物を奪ってやったっていう優越感がたまらないわ。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["私も、今夜あたり盗んでやろうかしら。"])
+      ShowText(["天使ってマヌケよね、食料が奪われてる事を知らないで……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["あらリーム、グランゴルドから帰ってきたんだ。"])
+      ShowText(["名物の植物園、どうだった……？"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あたしは、ちょっとノーサンキューだったかな。"])
+      ShowText(["あそこまでグロいと、ちょっと好みじゃないわね……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["でも、あんたなら気に入るんじゃない？"])
+      ShowText(["あんたって、サドっ気が強めでしょ？"])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["私だって、程度はあるわよ……"])
+      ShowText(["やっぱり男は、快楽で攻めるのが一番よね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["ねぇ、天使達が作ったイモ畑とやらの立て札を見た？"])
+      ShowText(["「これは天使の食べ物、淫魔立ち入り禁止」だって。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["ふざけてるわよね～！"])
+      ShowText(["さっそく夜に忍び込んで、盗んでやったわ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["サラダにして食べると、割とイけるみたい……"])
+      ShowText(["天使の食べ物を奪ってやったっていう優越感がたまらないわ。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["私も、今夜あたり盗んでやろうかしら。"])
+      ShowText(["天使ってマヌケよね、食料が奪われてる事を知らないで……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["あら……見ない顔ね。"])
+    ShowText(["この村に旅人なんて、珍しいわ……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あなたは？"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["私は、ただのサキュバスよ。"])
+    ShowText(["名前なんて、どうでもいいわ……"])
+    ConditionalBranch([4, 287, 0])
+      ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["……………………"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そうね……少しだけ、昔話をしましょう。"])
+    ShowText(["魅凪様の治めるサン・イリアから、少数の淫魔が旅立ち……"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そして、この荒れ果てた地に村を築いたのだけれど……"])
+    ShowText(["彼女達を導いた前村長は、村を追われてしまう話よ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["全ての淫魔の祖は、御存知の通り六祖の魅凪様。"])
+    ShowText(["あの方はとても正しく、そして厳格な方だわ……"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["千年前、聖魔大戦においてイリアスを滅ぼした後……"])
+    ShowText(["魅凪様は、邪神様からサン・イリアの都を与えられたわ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そしてサン・イリアは、淫魔の都として大いに発展するの。"])
+    ShowText(["魅凪様は、統治者としても並外れた手腕を持っていたから。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["サン・イリアは商業的にも文化的にも大成功を収めた。"])
+    ShowText(["今では、四大国で最も栄えている大国となったのよ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["ただ……魅凪様は、あまりにも厳格過ぎたわ。"])
+    ShowText(["ご自身にも厳しい方だったから、余計にね……"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["サキュバスたる者、欲に支配されず欲を支配すべし――"])
+    ShowText(["心身を常に修練し、己を高めるべし――"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["サキュバスの大半は、魅凪様に心酔しているから……"])
+    ShowText(["厳格なあの方のご期待に沿うべく、自身を高め邁進したわ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["でも……"])
+    ShowText(["やっぱり、そういう方針についていけない者もいるの。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["サン・イリアは、大いなる繁栄の下で……"])
+    ShowText(["多くの落伍者を出してきたわ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["怠惰な者、能力に欠ける者、欲に流される者――"])
+    ShowText(["魅凪様の下では、そういう者達はいっさい顧みられなかった。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そんな中、とある淫魔は落伍者達を救おうとしたの。"])
+    ShowText(["彼女達が、社会で窮乏していくのを見るに見かねて……ね。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["その淫魔は、社会から爪弾きにされた者達を集め――"])
+    ShowText(["そして、新天地を求めて旅立ったのよ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["その旅は、苛烈を極めたわ。"])
+    ShowText(["落伍した淫魔の集団なんて、どこに言っても邪魔者よ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そうして一団は、北の果てに辿り着き――"])
+    ShowText(["ゴルド地方を治める華音様と取引をしたのよ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["こうして与えられた土地が、このサキュバスの村。"])
+    ShowText(["荒れ果てたこの地が、落伍した淫魔達の新天地となったの。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そして彼女達をここに導いたサキュバスが、村長となった。"])
+    ShowText(["この新天地で、新たな暮らしがスタートしたのだけど――"])
+    ShowTextAttributes(["succubus_fc1", 5, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["……結局、上手くはいかなかったわね。"])
+    ShowText(["元より、構成員は社会に馴染めなかった落ちこぼればかり。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["村長は必死で働き、労働を奨励したのだけど……"])
+    ShowText(["怠惰で欲深い村人達は、村長を敬遠するようになった。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["こうして、村長と村人達の関係は断絶し――"])
+    ShowText(["とうとう村人達は、村長に対して革命を起こしたのよ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["この革命を率いたのは、今のクィーン。"])
+    ShowText(["人身売買を推し進め、華音様の支持をも取り付けたわ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["村人達は、人間を売買し利益を得る生業を望んだ。"])
+    ShowText(["それに反対する村長は、村から追放されてしまったのよ。"])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["そういうわけで、サキュバスの村はこうなった。"])
+    ShowText(["今では、魔界全土での人身売買を主導する一大拠点よ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["追放された前村長って、まさか……"])
+    ShowTextAttributes(["succubus_fc1", 5, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["どうして、こうなったのかしらね……"])
+    ShowText(["私は、辛い生活からみんなを助け出したかっただけなのに。"])
+    ShowTextAttributes(["succubus_fc1", 5, 0, 2])
+    ShowText(["【謎の淫魔】"])
+    ShowText(["……長い話になってしまったわね。"])
+    ShowText(["聞いてくれて、感謝するわ。"])
+    PlaySE(["RPG::SE(@name=\"mon_wind1\", @pitch=100, @volume=100)"])
+    ControlSwitches([2506, 2506, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["謎の淫魔は、風と共に姿を消した……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([4, 287, 0])
+      ShowTextAttributes(["succubus_fc1", 3, 0, 2])
+      ShowText(["【サキュバス】"])
+      ShowText(["この村を……普通の村に戻しましょう。"])
+      ShowText(["男達だけじゃなく、きっと淫魔達をも不幸にしているわ。"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["今はいないみたいだけど……"])
+    ShowText(["あの屋根の上から、たまに人影が見下ろしてるのよ。"])
+    ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+    ShowText(["【リーキュバス】"])
+    ShowText(["私も一度、見たことがあるんだけど……"])
+    ShowText(["あれってまさか、前村長……？"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["なんだ、旅人か……？"])
+    ShowText(["この村で問題を起こすなよ！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["用心棒でしょうか……"])
+    ShowText(["ガラの悪い魔物がウロウロしていますね。"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["村の巡回は、キューピッドの担当なの。"])
+    ShowText(["威圧感は無しで、親しまれるイメージを押し出すんだって。"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["クィーンは偉大なお方。"])
+      ShowText(["この村での、全ての取引を仕切っておられるのよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["まさか、天使達との戦争が始まっていたとはね。"])
+      ShowText(["アポクリファなんて、ただのデマだと思ってたわ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["前村長の時代は、とっても息苦しかったわ。"])
+      ShowText(["ヒトの売り買いさえ認めてくれないんだもの。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["でも、今のクィーンは違うわ。"])
+      ShowText(["あの方は、とっても話の分かる方なのよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["天使達に占領されたけど、悪い話じゃないわね。"])
+      ShowText(["だって、クィーンの財宝をいっぱいもらったもの。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["これだけあれば、しばらく遊んで暮らせるわ。"])
+      ShowText(["その後のこと？　……知らないわよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+    ShowText(["【シスターサキュバス】"])
+    ShowText(["この村でさえ、信仰が絶えたわけではありません。"])
+    ShowText(["さあ、女神に祈りましょう……"])
+    ShowChoices([["お祈りをする", "用はない"], 2])
+    When([0, "お祈りをする"])
+      ControlVariables([1002, 1002, 0, 0, 73])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["それでは、イリアス様に祈りましょう。"])
+      ShowText(["……ああ、この場に導きの縁を感じます。"])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["もし旅先で何かあった場合、この場に導かれるでしょう。"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    When([1, "用はない"])
+      ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+      ShowText(["【シスターサキュバス】"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["この町を仕切っているのは、クィーンサキュバスよ。"])
+      ShowText(["ここで何をするにも、クィーンの許可が必要ね。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["クィーンサキュバスが、この町に……？"])
+      ShowText(["アルマエルマか、それとも他の誰かか……"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["クィーンは、北のお屋敷におられるわ。"])
+      ShowText(["立派な建物だから、一目で分かるはずよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["あのキューピッド達って、なんだか間抜けで憎めないよね。"])
+      ShowText(["天使って厳しくて残虐だと思ったら、そうでもないみたい。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["すぐ逃げるつもりだったけど、もう少し村にいようかな？"])
+      ShowText(["どうせ、逃げるあても無いしね……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["北の大陸で、大きな動きがあるみたいね。"])
+      ShowText(["六祖が全員、出払ってるとか……"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["まあ、私達には関係ない話よ。"])
+      ShowText(["邪神様や六祖の方々に任せておけば、全部大丈夫だから。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["奴隷システムは廃止されたわ……"])
+      ShowText(["まあ、私達は精液以外の食事でも生きてはいけるんだけど。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["自由恋愛なら、天使達も認めてくれるわよね。"])
+      ShowText(["ねぇキミ、私と恋愛セックスしない……？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowPicture([5, "80_greatorc_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, false])
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["お前達……なんだかトラブルの臭いがするな。"])
+    ShowText(["ここで何かやらかしたら、命はねぇぜ。"])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["こうして、あたし達天使が占領したわけだけど……"])
+    ShowText(["サキュバス達も、割と普通通りに暮らしてるみたい。"])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["話を聞けば、彼女達も他に行くところがないんだって……"])
+    ShowText(["魔物も、色々苦労してるんだね。"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["あなた達、極上の奴隷を飼ってるじゃない。"])
+      ShowText(["それ、どこで買ったの……？"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["この手でイチからじっくり育てました。"])
+      ShowText(["あなたには譲りませんよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["圧制者の排斥を記念して、クィーンの財産が配られたのよ。"])
+      ShowText(["天使達って、割といいコトするじゃない。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["このゴルド大陸を支配してるのは……"])
+      ShowText(["グランゴルド城の主、華音様よ。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["だからこの大陸は、植物妖魔の勢力が強いのよ。"])
+      ShowText(["私達は、華音様に金や奴隷を上納して居住を許されてるの。"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["華音……"])
+      ShowText(["六祖の中で、最初に戦う相手になるかもしれませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["奴隷が禁止って、どういう事よ！"])
+      ShowText(["私達は、何を食べて生きていけばいいのよ！"])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["……と言っても、移住できる当てもないし……"])
+      ShowText(["天使に従って、生きていくしかないのかなぁ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["leeccubus_fc1", 2, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["領地から上納された食べ物も、財宝も、奴隷も……"])
+      ShowText(["クィーンは、一番美味しいところを持ってくのよね。"])
+      ShowTextAttributes(["leeccubus_fc1", 1, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["いつか、下剋上なんて……"])
+      ShowText(["ふふ、悪くはないわね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["これでまた、時代が変わったわね。"])
+      ShowText(["天使達は財宝をくれたし、クィーンより太っ腹じゃない。"])
+      ShowTextAttributes(["leeccubus_fc1", 0, 0, 2])
+      ShowText(["【リーキュバス】"])
+      ShowText(["奴隷が禁止されたのは、痛いけど……"])
+      ShowText(["まあ、もらった宝物を売れば当分は楽が出来そうね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["クィーンは、ものすごくケチなのよ。"])
+      ShowText(["財宝なんて、全部自分で独占してしまったわ。"])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["たまに、上級の奴隷がお下がりでもらえるけど……"])
+      ShowText(["精を吸われきって、死にかけの時も多いわよ。"])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["今は権勢があるから、みんな従ってるけど……"])
+      ShowText(["あれじゃ、先は長くないかもしれないわね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 2, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["天使達には騙されないわよ……"])
+      ShowText(["私達を手懐けた後、掌を返すつもりなんでしょう。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["ったく……食い物の処分なんて用心棒の仕事じゃないぜ。"])
+    ShowText(["……おい、見世物じゃねぇぞ！"])
+    ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["こんなに、犠牲者が出てるなんて……"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["このような蛮行、許すわけにはいきません。"])
+    ShowText(["ただちに天罰を下しましょう。"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["ariel_fc1", 2, 0, 2])
+    ShowText(["【アリエル】"])
+    ShowText(["これだけの屍が、野晒しとは……"])
+    ShowText(["墓地を整え、正式に葬ってやらねばならんな。"])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowPicture([5, "80_granabass_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["granabass_fc1", 0, 0, 2])
+    ShowText(["【グラナバス】"])
+    ShowText(["この村の事を、魅凪様は憂慮しておられるわ。"])
+    ShowText(["それにしても、予想以上にひどい有様ねぇ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["この村にいる他の淫魔よりも、はるかに強力な雰囲気だ。"])
+    ShowText(["かなり高位のサキュバスだろうか……"])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["あなた達、アポクリファって聞いた事あるかしら……？"])
+      ShowChoices([["ある", "ない"], 2])
+      When([0, "ある"])
+        ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+        ShowText(["【エルダーサキュバス】"])
+        ShowText(["そう……耳が早いのね。"])
+        ShowText(["どちらにしろ、私達には関係ない話だけど。"])
+        Empty([])
+      When([1, "ない"])
+        ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+        ShowText(["【エルダーサキュバス】"])
+        ShowText(["異世界から現れた天使軍との大戦争のことらしいわ。"])
+        ShowText(["それで、今は魔界中の偉い人達が大忙しだって……"])
+        ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+        ShowText(["【エルダーサキュバス】"])
+        ShowText(["まあ、私達には関係のない話よね。"])
+        ShowText(["そういう天の上の出来事は、お偉い人達に任せるわ。"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["天使の軍団が、この村に攻めてくるなんて……"])
+      ShowText(["これ、実は大事件じゃないの？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowPicture([5, "80_barakizoku_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["barakizoku_fc1", 0, 0, 2])
+    ShowText(["【薔薇貴族】"])
+    ShowText(["ふふ、この村は実に愉しめますわ。"])
+    ShowText(["グランゴルド城勤務の暇を見ては、ここに来ていますの。"])
+    ShowTextAttributes(["barakizoku_fc1", 0, 0, 2])
+    ShowText(["【薔薇貴族】"])
+    ShowText(["昨晩も、汚れない童貞の精を……"])
+    ShowText(["干涸らびるまで、吸い尽くして……ふふふ。"])
+    ErasePicture([5])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["北東のゴルドポートは、人間達だけの町よ。"])
+      ShowText(["結構な上納金を上げてるから、華音様もお目こぼししてるの。"])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["だから、妖魔は立ち入り禁止になっているのよ。"])
+      ShowText(["残念よね、獲物がいっぱいなのに……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["ranccubus_fc1", 0, 0, 2])
+      ShowText(["【ランキュバス】"])
+      ShowText(["こういう政変の時こそ、儲け話のチャンスよ。"])
+      ShowText(["今こそ耳をそばだてて、情報をたくさん仕入れないとね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 7, 2])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["華音様に逆らおうなんて命知らずは、この村にいないわ。"])
+      ShowText(["あの方を怒らせれば、こんな村なんてチリ一つ残さず消滅よ。"])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["だから、ご機嫌を取るのを忘れてはいないわ。"])
+      ShowText(["極上の奴隷や金銀を、たっぷりとゴルド城に送っているの。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 8, 1])
+      ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+      ShowText(["【エルダーサキュバス】"])
+      ShowText(["村が天使に占領されても、グランゴルド本国は動き無しね。"])
+      ShowText(["華音様が、辺境の村の事なんて気にすると思えないわ……"])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["華音が粗雑な性格の者で幸いでしたね。"])
+      ShowText(["これが玉藻あたりなら、即座に逆侵攻を仕掛けてきますよ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["greatorc_fc1", 0, 0, 2])
+    ShowText(["【グレートオーク】"])
+    ShowText(["まあ、せいぜい愉しんでいけよ。"])
+    ShowText(["この村に来る客の目的は、みんなアレだからな……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["cupid_fc1", 4, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["あっ、ちっちゃなイリアス様！"])
+    ShowText(["この村の事は、あたし達に任せてね……♪"])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([23, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4145, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([251, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 50
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "通行止め"
+
+  Page 0
+    Empty([])

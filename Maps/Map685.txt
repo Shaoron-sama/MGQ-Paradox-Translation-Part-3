@@ -1,0 +1,650 @@
+Display Name = "おさかな号 1F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 696, 12, 32, 0, 0])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ChangeMapDisplay([0])
+    ConditionalBranch([6, -1, 2])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 696, 20, 16, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Wait([60])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["さあ、海賊との対決だ！"])
+      ShowText(["気を抜くな、間抜けな連中だが腕は立つぞ！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さあ、海賊狩りの時間です！"])
+      ShowText(["あまさず海に叩き込んでやりましょう！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["【ヒルデ】"])
+      ShowText(["戦闘行動、開始……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 185, 0])
+      ShowTextAttributes(["radio_fc1", 0, 0, 2])
+      ShowText(["【ラディオ】"])
+      ShowText(["弾丸のお届けモのデす……"])
+      ShowText(["大人しく往生しナサい……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["敵襲！　敵襲だよ～！"])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 581, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["ひどいよぉ……"])
+    ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
+    ShowText(["【たつこ】"])
+    ShowText(["やっつけたのです！　逮捕するのです！"])
+    ShowTextAttributes(["umiusi_k_fc1", 1, 0, 2])
+    ShowText(["【ステイシー】"])
+    ShowText(["このまま、海賊を倒しながら船長室をめざしましょう！"])
+    ShowText(["ボニー船長を倒し、船を制圧するのです！"])
+    ConditionalBranch([4, 164, 0])
+      ShowTextAttributes(["kooni_fc1", 3, 0, 2])
+      ShowText(["【雫】"])
+      ShowText(["よ～し、いっくよ～！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 167, 0])
+      ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+      ShowText(["【ルシア】"])
+      ShowText(["無頼の輩、打ち倒します！"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【補給たつのこ】"])
+    ShowText(["物資を補給するのです！"])
+    ShowText(["転職の書も持ってきているのです！"])
+    ShowChoices([["全回復", "物資の購入", "転職の書", "用はない"], 4])
+    When([0, "全回復"])
+      ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+      ShowText(["【補給兵】"])
+      ShowText(["薬草と霊薬の詰め合わせなのです！"])
+      PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+      RecoverAll([0, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ルカ達のHPとMPが全快した！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "物資の購入"])
+      ShopProcessing([0, 2, 0, 0, false])
+      ShopItem([0, 7, 0, 0])
+      ShopItem([0, 11, 0, 0])
+      ShopItem([0, 13, 0, 0])
+      ShopItem([0, 14, 0, 0])
+      ShopItem([0, 15, 0, 0])
+      ShopItem([0, 16, 0, 0])
+      ShopItem([0, 17, 0, 0])
+      ShopItem([0, 18, 0, 0])
+      ShopItem([0, 19, 0, 0])
+      ShopItem([0, 23, 0, 0])
+      ShopItem([0, 35, 0, 0])
+      ShopItem([0, 102, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([2, "転職の書"])
+      CallCommonEvent([113])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([3, "用はない"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["観念するのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["負けないからねー！"])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["右舷、異常なし！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["……って、なんなのこれ！？"])
+    ShowText(["敵襲じゃない！？"])
+    ConditionalBranch([4, 101, 0])
+      ShowTextAttributes(["cent2_fc1", 0, 0, 2])
+      ShowText(["【リヒティーヌ】"])
+      ShowText(["行くわよ、海賊っ！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 581, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["うっかり見逃しちゃった……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["大砲がちゃんと撃てれば、簡単に乗り込まれなかったのに……"])
+    ShowText(["こうなったら、白兵戦だよっ！"])
+    ConditionalBranch([4, 99, 0])
+      ShowTextAttributes(["namazu_fc1", 0, 0, 2])
+      ShowText(["【ギギ】"])
+      ShowText(["若造が、年季の違いを思い知らせてくれる！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 581, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["大砲……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
+    ShowText(["【ウミウシ海兵】"])
+    ShowText(["ここは大丈夫です、任せて下さい！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["ま、負けてる……！？"])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
+    ShowText(["【ウミウシ海兵】"])
+    ShowText(["ここは大丈夫です、任せて下さい！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["ま、負けてる……！？"])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["まったくの互角なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["このー！"])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["御用なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["この人数差はヒキョーでしょ！"])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["御用なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["この人数差はヒキョーでしょ！"])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["討ち入り上等！　いっくよー！"])
+    ConditionalBranch([4, 140, 0])
+      ShowTextAttributes(["taran_fc1", 1, 0, 2])
+      ShowText(["【ラチュラ】"])
+      ShowText(["ぐるぐる巻きにして、お縄よ！"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([81, 81, 0])
+    BattleProcessing([0, 581, false, false])
+    ControlSwitches([81, 81, 1])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["負けちゃった……"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["まったくの互角なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["このー！"])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["観念するのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["負けないからねー！"])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["御用なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["この人数差はヒキョーでしょ！"])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
+    ShowText(["【たつのこ海兵】"])
+    ShowText(["御用なのです！"])
+    ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
+    ShowText(["【海賊マーメイド】"])
+    ShowText(["この人数差はヒキョーでしょ！"])
+    Empty([])

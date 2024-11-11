@@ -1,0 +1,194 @@
+Display Name = "水精の泉"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 260, 180, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 260, 180, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 1, 260, 180, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["水精の泉に飛び込みますか？"])
+    ShowChoices([["飛び込む", "飛び込まない"], 2])
+    When([0, "飛び込む"])
+      ControlSwitches([100, 100, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -2])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Water1\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -2])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Water1\\\", @pitch=100, @volume=80)\"])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 246, 12, 1, 2, 0])
+      Empty([])
+
+    When([1, "飛び込まない"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([2889, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ここは……水の精が眠る地、ウンディーネの泉ですね。"])
+    ShowText(["こんな辛気臭い場所に、用事などないはずですが……"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["水の精霊の住処である事は間違いないけど……"])
+    ShowText(["今は不在ね、散歩にでも行ったのかしら？"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["今は、この中に入っても得るものは無いでしょう。"])
+    ShowText(["水中洞窟の散歩は、またの機会にしておきなさい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["今後、あらためてここに来る機会があるかもしれない。"])
+    ShowText(["今は、やるべき事を優先しよう――"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Wait([30])
+    ShowPicture([5, "80_utubom_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["utubom_fc1", 0, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["クィーンスキュラは、水精契約という大切な仕事があるの。"])
+    ShowText(["私達が、邪魔はさせないんだからね！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["いや、それはいいとして……"])
+    ShowText(["あなた達もスキュラ族なのですか？"])
+    ShowTextAttributes(["utubom_fc1", 0, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["もちろん、スキュラ族だけど……？"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["でも……ウツボでしょう？"])
+    ShowPicture([5, "80_utubom_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["utubom_fc1", 2, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["えっ……ウツボって、スキュラの仲間じゃないの？"])
+    ShowText(["ニョロニョロしてるし……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["魚だから、違うでしょう。"])
+    ShowText(["外見上だけで言えば、ヘビの方が近いですし……"])
+    ShowTextAttributes(["utubom_fc1", 2, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["…………！！"])
+    ConditionalBranch([1, 1142, 0, 62, 2])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ちょっと、やめてあげて下さいよ！"])
+      ShowText(["本気でショック受けてるじゃないですか……！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["utubom_fc1", 2, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["私達、普通にスキュラ族の集会とかに出てたけど……"])
+    ShowText(["他のスキュラはみんな、どう思ってたのかな……？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まあ、水に由来した魔物だし……"])
+    ShowText(["向こうも仲間だと思ってるはずだよ……たぶん……"])
+    ShowTextAttributes(["utubom_fc1", 2, 0, 2])
+    ShowText(["【ウツボ娘】"])
+    ShowText(["……………………"])
+    PlaySE(["RPG::SE(@name=\"mon_escape\", @pitch=100, @volume=100)"])
+    ControlSwitches([2513, 2513, 0])
+    ErasePicture([5])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ウツボ娘は、とぼとぼと去って行った……"])
+    ConditionalBranch([1, 1142, 0, 62, 2])
+      ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["ちょっと、なんて事言うんですか……"])
+      ShowText(["普通に叩きのめした方が、よっぽどマシでしょう……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["彼女には、自らのアイデンティティに深い疑念が生まれた。"])
+    ShowText(["もう、今まで通りに仲間とはやっていけない。"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["えっ……これ、私が悪いんですか？"])
+    ShowText(["ただ、疑問を口に出しただけで……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ともかく、泉への道は開いた。"])
+    ShowText(["水面に飛び込めば、中には地下洞窟が広がっているはずだ――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["クィーンスキュラも、泉の奥まで進んだはずだ。"])
+    ShowText(["後を追って、契約を阻止するんだ！"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……私は悪くありません。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

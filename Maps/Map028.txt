@@ -1,0 +1,2100 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 61, 5, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 61, 5, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 61, 5, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 8, 16, 0, 0])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 21, 25, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 16, 53, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 56, 23, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 70, 29, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 61, 40, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 28, 57, 51, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 28, 58, 51, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 48, 54, 0, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 28, 57, 73, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 28, 58, 73, 0, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【防具屋のおばさん】"])
+    ShowText(["うちの防具は、神殿騎士団の制式装備！"])
+    ShowText(["硬さは保証済みだよ！"])
+    ShopProcessing([2, 7, 0, 0, false])
+    ShopItem([2, 22, 0, 0])
+    ShopItem([2, 71, 0, 0])
+    ShopItem([2, 126, 0, 0])
+    ShopItem([2, 185, 0, 0])
+    ShopItem([2, 204, 0, 0])
+    ShopItem([2, 261, 0, 0])
+    ShopItem([2, 298, 0, 0])
+    ConditionalBranch([8, 153])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【防具屋のおばさん】"])
+      ShowText(["ミスリル製の防具は、うちでは扱ってないんだよ。"])
+      ShowText(["そっちをお求めなら鍛冶屋だね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【武器屋のおやじ】"])
+    ShowText(["神殿騎士も愛用する品々、どれも品質は保証するよ！"])
+    ShopProcessing([1, 11, 0, 0, false])
+    ShopItem([1, 89, 0, 0])
+    ShopItem([1, 211, 0, 0])
+    ShopItem([1, 300, 0, 0])
+    ShopItem([1, 369, 0, 0])
+    ShopItem([1, 409, 0, 0])
+    ShopItem([1, 481, 0, 0])
+    ShopItem([1, 519, 0, 0])
+    ShopItem([1, 558, 0, 0])
+    ShopItem([1, 666, 0, 0])
+    ShopItem([1, 800, 0, 0])
+    ShopItem([1, 870, 0, 0])
+    ShopItem([1, 892, 0, 0])
+    ConditionalBranch([8, 153])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【武器屋のおやじ】"])
+      ShowText(["ミスリル製の武器は、うちでは扱ってないんだ。"])
+      ShowText(["そっちが欲しけりゃ、鍛冶屋に行ってくれないか？"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【店主】"])
+    ShowText(["いらっしゃい、要望の多かった聖水を入荷したよ。"])
+    ShowText(["北の屋敷に行くんなら、ぜひ買っていってくれ。"])
+    ShopProcessing([0, 2, 0, 0, false])
+    ShopItem([0, 7, 0, 0])
+    ShopItem([0, 11, 0, 0])
+    ShopItem([0, 13, 0, 0])
+    ShopItem([0, 14, 0, 0])
+    ShopItem([0, 15, 0, 0])
+    ShopItem([0, 16, 0, 0])
+    ShopItem([0, 17, 0, 0])
+    ShopItem([0, 18, 0, 0])
+    ShopItem([0, 19, 0, 0])
+    ShopItem([0, 23, 0, 0])
+    ShopItem([0, 35, 0, 0])
+    ShopItem([0, 101, 0, 0])
+    CallCommonEvent([279])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【売り子】"])
+    ShowText(["どれも美味しいですよ、ぜひどうぞ♪"])
+    Script(["actor_label_jump"])
+    JumpToLabel(["店"])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["これが聖都の食品……"])
+    ShowText(["たっぷり食べて、神々しい気分に浸りましょう。"])
+    JumpToLabel(["店"])
+    Label(["115"])
+    ShowTextAttributes(["kurage_fc1", 0, 0, 2])
+    ShowText(["【くらげ】"])
+    ShowText(["お肉は売ってないの……？"])
+    JumpToLabel(["店"])
+    Label(["116"])
+    ShowTextAttributes(["iso_fc1", 0, 0, 2])
+    ShowText(["【イザベル】"])
+    ShowText(["力の出ない食べ物ばかりねぇ……"])
+    ShowText(["こんなの食べてるから、人間は弱いのよ。"])
+    JumpToLabel(["店"])
+    Label(["122"])
+    ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+    ShowText(["【ソフィア】"])
+    ShowText(["ニンニクは神聖な野菜。"])
+    ShowText(["ここで買い込んでいきましょう……"])
+    JumpToLabel(["店"])
+    Label(["123"])
+    ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
+    ShowText(["【クリスティー】"])
+    ShowText(["なんだか粗食……"])
+    ShowText(["いえいえ、質素こそ美徳ですよね。"])
+    JumpToLabel(["店"])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ニンニクは邪を祓う効果があるって知ってる？"])
+    ShowText(["まあ、微々たるものらしいけどね……"])
+    JumpToLabel(["店"])
+    Label(["店"])
+    ShopProcessing([0, 304, 0, 0, false])
+    ShopItem([0, 316, 0, 0])
+    ShopItem([0, 317, 0, 0])
+    ShopItem([0, 342, 0, 0])
+    ShopItem([0, 343, 0, 0])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【鍛冶屋】"])
+    ShowText(["私は、神聖なる鍛冶屋……"])
+    ShowText(["聖なる力を携えた武具を造りましょう。"])
+    ShowChoices([["鍛冶を頼む", "ミスリル製品を造ってもらう", "話をする"], 5])
+    When([0, "鍛冶を頼む"])
+      Script(["call_synthesize(9)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "ミスリル製品を造ってもらう"])
+      ConditionalBranch([8, 153])
+        ShopProcessing([1, 12, 0, 0, false])
+        ShopItem([1, 61, 0, 0])
+        ShopItem([1, 151, 0, 0])
+        ShopItem([1, 196, 0, 0])
+        ShopItem([1, 302, 0, 0])
+        ShopItem([1, 340, 0, 0])
+        ShopItem([1, 371, 0, 0])
+        ShopItem([1, 412, 0, 0])
+        ShopItem([1, 448, 0, 0])
+        ShopItem([1, 482, 0, 0])
+        ShopItem([1, 520, 0, 0])
+        ShopItem([1, 560, 0, 0])
+        ShopItem([1, 597, 0, 0])
+        ShopItem([1, 630, 0, 0])
+        ShopItem([1, 669, 0, 0])
+        ShopItem([1, 705, 0, 0])
+        ShopItem([1, 733, 0, 0])
+        ShopItem([1, 758, 0, 0])
+        ShopItem([1, 779, 0, 0])
+        ShopItem([1, 801, 0, 0])
+        ShopItem([1, 827, 0, 0])
+        ShopItem([1, 849, 0, 0])
+        ShopItem([2, 37, 0, 0])
+        ShopItem([2, 60, 0, 0])
+        ShopItem([2, 108, 0, 0])
+        ShopItem([2, 197, 0, 0])
+        ShopItem([2, 241, 0, 0])
+        ShopItem([2, 286, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【鍛冶屋】"])
+        ShowText(["ミスリルの武具は、一般のお客様にはお売り致しません。"])
+        ShowText(["ミスリル鉱石を持ってきた方のみ、特別に鋳造するという事で。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【鍛冶屋】"])
+        ShowText(["ミスリル鉱石の採れる場所ですか……？"])
+        ShowText(["聖山アモスの中腹より上で採掘できますよ。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【鍛冶屋】"])
+        ShowText(["ですが貴重な鉱石なので、必ず事前に採掘許可を。"])
+        ShowText(["手続きは色々と面倒ですね、上の人の許可でもあれば別ですが。"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([2, "話をする"])
+      ConditionalBranch([8, 153])
+        ConditionalBranch([1, 1007, 0, 1, 0])
+          ConditionalBranch([4, 68, 0])
+            ConditionalBranch([2, "A", 1])
+              ControlSelfSwitch(["A", 0])
+              ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+              ShowText(["【パピ】"])
+              ShowText(["お願いがあるのだ。"])
+              ShowText(["ミスリルの打ち方を、教えて欲しいのだ！"])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["【鍛冶屋】"])
+              ShowText(["ミスリルの精製方法は、誰にでも伝えられるものではありません。"])
+              ShowText(["篤き信仰心が必要なのです……"])
+              ShowTextAttributes(["dragonp_fc1", 2, 0, 2])
+              ShowText(["【パピ】"])
+              ShowText(["信仰心には自信がないのだ……"])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["【鍛冶屋】"])
+              ShowText(["ああっ、泣かないで！"])
+              ShowText(["それでは、「信仰の証」というアイテムを私に見せて下さい。"])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["【鍛冶屋】"])
+              ShowText(["それがあれば、信仰の篤い者とみなしましょう。"])
+              ShowText(["ミスリルの扱いを伝授すると約束します。"])
+              ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+              ShowText(["【パピ】"])
+              ShowText(["それじゃあ、見つけるのだ！"])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["【鍛冶屋】"])
+              ShowText(["信仰心の篤い魔物がよく持っていると聞きます。"])
+              ShowText(["彼女達を仲間にして信仰を深めれば、もらえるのではないでしょうか。"])
+              ExitEventProcessing([])
+              Empty([])
+            Else([])
+              ConditionalBranch([8, 524])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["【鍛冶屋】"])
+                ShowText(["それは確かに、信仰の証。"])
+                ShowText(["それでは、ミスリルの扱い方を伝授しましょう……"])
+                ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+                ShowText(["【パピ】"])
+                ShowText(["いっぱい頑張るのだ！"])
+                FadeoutScreen([])
+                Wait([60])
+                PlaySE(["RPG::SE(@name=\"mon_kazi\", @pitch=100, @volume=100)"])
+                Wait([60])
+                PlaySE(["RPG::SE(@name=\"mon_kazi\", @pitch=100, @volume=100)"])
+                Wait([60])
+                FadeinScreen([])
+                ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+                ShowText(["【パピ】"])
+                ShowText(["……分かったぞ、こうだな！？"])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["【鍛冶屋】"])
+                ShowText(["……ずいぶんと腕が良いのですね。"])
+                ShowText(["私など、修得に数年を掛けたのに……"])
+                ShowTextAttributes(["dragonp_fc1", 3, 0, 2])
+                ShowText(["【パピ】"])
+                ShowText(["親方に鍛えられたからなのだ！"])
+                ShowText(["ありがとうございます、お世話になったのだ！"])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["【鍛冶屋】"])
+                ShowText(["ミスリルの心は、信仰の心……"])
+                ShowText(["それでは、がんばって下さいね。"])
+                PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["パピはミスリルの装備を造れるようになった！"])
+                ControlVariables([1007, 1007, 0, 0, 2])
+                Wait([60])
+                ExitEventProcessing([])
+                Empty([])
+              Else([])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["【鍛冶屋】"])
+                ShowText(["「信仰の証」というアイテムを私に見せて下さい。"])
+                ShowText(["それがあれば、ミスリルの扱いを伝授すると約束します。"])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["【鍛冶屋】"])
+                ShowText(["信仰心の篤い魔物がよく持っていると聞きます。"])
+                ShowText(["彼女達を仲間にして信仰を深めれば、もらえるのではないでしょうか。"])
+                ExitEventProcessing([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【鍛冶屋】"])
+      ShowText(["猫のために働いています。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    WhenCancel([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ConditionalBranch([1, 813, 0, 2, 1])
+      ConditionalBranch([0, 1556, 1])
+        ShowTextAttributes(["mob_sister1_fc1", 0, 0, 2])
+        ShowText(["【マリア】"])
+        ShowText(["あなたには、大いなる宿命があると見ました。"])
+        ShowText(["私もご一緒させてくれませんか……？"])
+        ShowChoices([["仲間にする", "仲間にしない"], 0])
+        When([0, "仲間にする"])
+          ShowTextAttributes(["mob_sister1_fc1", 0, 0, 2])
+          ShowText(["【マリア】"])
+          ShowText(["それでは、行きましょう。"])
+          ShowText(["神のために、そして皆のために……"])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(556)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["マリアが仲間に加わった！"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "仲間にしない"])
+          ShowTextAttributes(["mob_sister1_fc1", 0, 0, 2])
+          ShowText(["【マリア】"])
+          ShowText(["そうですか……私の力は不要なのですね。"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7121])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["アンデッドモンスターには、炎属性が大いに有効です。"])
+    ShowText(["もちろん聖属性も、絶大な威力を発揮しますよ。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["72"])
+    ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+    ShowText(["【ミニ】"])
+    ShowText(["なら、あたしが大活躍だな！"])
+    ExitEventProcessing([])
+    Label(["91"])
+    ShowTextAttributes(["candle_fc1", 0, 0, 2])
+    ShowText(["【キャンドラ】"])
+    ShowText(["私も炎に弱いの……困ったものね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神官】"])
+    ShowText(["ゴーストは霊体であるため、物理攻撃は通じにくいです。"])
+    ShowText(["その分、魔法攻撃には弱い事を覚えておいて下さい。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["56"])
+    ShowTextAttributes(["inp_fc1", 1, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["ゴースト退治は、あたしにお任せ～♪"])
+    ShowTextAttributes(["inp_fc1", 2, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["……なんてウソ、すっごく怖いの……"])
+    ExitEventProcessing([])
+    Label(["130"])
+    ShowTextAttributes(["ghost_fc1", 0, 0, 2])
+    ShowText(["【キャリー】"])
+    ShowText(["ま、魔法になんて弱くないわ……"])
+    ShowText(["だから、ゴーストに魔法は使わないで……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女武道家】"])
+    ShowText(["私達のパーティは、攻撃超特化型よ。"])
+    ShowText(["全員で強力な攻撃技を連発し、圧倒する事を信条としているの。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女武道家】"])
+    ShowText(["その分、防御は紙のごとし……"])
+    ShowText(["守勢に回れば、あっという間に壊滅だけどね……"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["grizzly_fc1", 0, 0, 2])
+    ShowText(["【グリズリー娘】"])
+    ShowText(["うががー！　あたしの格闘技は強烈だぞー！"])
+    ShowText(["でも獣系だから、防御力はボロボロだー！"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["cent2_fc1", 0, 0, 2])
+    ShowText(["【セントール娘】"])
+    ShowText(["強力無比かつ発動の早い槍技で敵を沈黙させるわ！"])
+    ShowText(["座右の銘は「1ターンで倒せなかったら負け」。"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【旅のギャンブラー】"])
+    ShowText(["占い師をマスターすると、ギャンブラーに転職できる。"])
+    ShowText(["運に左右されるギャンブル的なスキルを多く覚えるぞ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【旅のギャンブラー】"])
+    ShowText(["しかし……"])
+    ShowText(["隣の部屋のパーティの方が、よほどギャンブルな気がするな。"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【旅の踊り子】"])
+    ShowText(["踊りは、敵に状態異常を起こすものが多いわ。"])
+    ShowText(["上手く使えば、サポート役として役に立つわよ♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["83"])
+    ShowTextAttributes(["hapy_a_fc1", 0, 0, 2])
+    ShowText(["【レイナ】"])
+    ShowText(["えへへっ、踊りなら任せてね～♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["scylla_fc1", 0, 0, 2])
+    ShowText(["【スキュラ】"])
+    ShowText(["スキュラの連続攻撃は圧倒的よ！"])
+    ShowText(["防御ってなに？　攻撃を受けたら潔く死ぬだけよ……"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([27, 0, 0, 1])
+    SetMoveRoute([30, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShotBalloonIcon([30, 1, false])
+    ShotBalloonIcon([31, 1, false])
+    ShotBalloonIcon([32, 1, false])
+    ShotBalloonIcon([35, 1, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女格闘家】"])
+    ShowText(["…………！？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["このパーティに、守りの種を譲りますか？"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【女格闘家】"])
+      ShowText(["いいえ、それはあなたの物よ。"])
+      ShowText(["それを最初に手に入れた者こそが所有者……それが冒険者のルール。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【女格闘家】"])
+      ShowText(["守りの種1個で、このパーティ編成がどうにかなるとは思えないし……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["パーティは守りの種を受け取らなかった……"])
+      Empty([])
+
+    When([1, "いいえ"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["気まずい沈黙が流れている……"])
+      Empty([])
+
+    ChoicesEnd([])
+    SetMoveRoute([30, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["状態異常「ゾンビ」というのは、非常に厄介だ……"])
+    ShowText(["肉体がゾンビとなり、回復技でダメージを受けてしまうのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["まあ、バイオ属性や即死魔法が効かなくなるが……"])
+    ShowText(["まともに回復できないので、危険な事この上ない。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["さらに厄介な事に、ゾンビは戦闘が終わっても自然治癒しないのだ。"])
+    ShowText(["治すには、アイテムの聖水が必要になるぞ。"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["教会経営「巡礼の宿」です。"])
+    ShowText(["20Gになりますが、泊まっていかれますか？\\$"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      ConditionalBranch([7, 20, 0])
+        ChangeGold([1, 0, 20])
+        FadeoutScreen([])
+        PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+        Wait([150])
+        RecoverAll([0, 0])
+        FadeinScreen([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【神父】"])
+        ShowText(["なんと、お金が足りないとは……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "いいえ"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【神父】"])
+    ShowText(["慎ましき神の家にようこそ。"])
+    ShowText(["何のご用ですかな？"])
+    ShowChoices([["お祈りをする", "用はない"], 2])
+    When([0, "お祈りをする"])
+      ControlVariables([1002, 1002, 0, 0, 13])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神父】"])
+      ShowText(["それでは、イリアス様に祈りましょう。"])
+      ShowText(["……ああ、この場に導きの縁を感じます。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神父】"])
+      ShowText(["もし旅先で何かあった場合、この場に導かれるでしょう。"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    When([1, "用はない"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神父】"])
+      ShowText(["イリアス様のご加護があらん事を……"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【戦士】"])
+      ShowText(["北の屋敷には、変な女魔導師が住み着いているという。"])
+      ShowText(["その魔導師は背徳的な研究をしているのだとか――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【戦士】"])
+      ShowText(["結構な報酬で退治を頼まれたのだが、断らざるを得なかった。"])
+      ShowText(["なぜかって……？　暗い屋敷は怖いからさ。"])
+      ConditionalBranch([1, 1023, 0, 1, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["変な魔導師が住んでる……？"])
+        ShowText(["どういうことなんだ……？"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["人によって、言ってることがバラバラだな……"])
+        Empty([])
+      BranchEnd([])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["88"])
+      ShowTextAttributes(["jack_fc1", 2, 0, 2])
+      ShowText(["【かぼちゃ】"])
+      ShowText(["暗い屋敷……？"])
+      ShowText(["こわいよう……びくびく……"])
+      ExitEventProcessing([])
+      Label(["134"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["魔導師ではない、ネクロマンサーじゃ。"])
+      ShowText(["まったく、モノを知らん連中じゃのう……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【戦士】"])
+    ShowText(["攻めてきた人魚達のリーダーは、なんと少女だったぞ。"])
+    ShowText(["まさか、あの娘がクィーンマーメイドだったのか？"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["327"])
+    ShowTextAttributes(["ningyohime_fc1", 7, 0, 2])
+    ShowText(["【エル】"])
+    ShowText(["もう、この町は歩けないね……"])
+    ExitEventProcessing([])
+    Label(["328"])
+    ShowTextAttributes(["queenmermaid_fc1", 1, 0, 2])
+    ShowText(["【ローラ】"])
+    ShowText(["娘にまで、不名誉を強いてしまうなんて……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【武器屋のバイト】"])
+      ShowText(["仕事仲間達が、北のお化け屋敷に肝試しに行ったんだよ。"])
+      ShowText(["数日後に衰弱して戻ってきて、何があったか語ろうともしない。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【武器屋のバイト】"])
+      ShowText(["なんだか怯えきってて、仕事も手に付かない様子なんだ。"])
+      ShowText(["いったい、あの屋敷で何があったんだろうな……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["58"])
+      ShowTextAttributes(["inp_fc2", 0, 0, 2])
+      ShowText(["【レミ】"])
+      ShowText(["びくびく……こわいよう……"])
+      ExitEventProcessing([])
+      Label(["134"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["【クロム】"])
+      ShowText(["ちゃんと解放してやったこと、ありがたく思うがいい。"])
+      ShowText(["クロムちゃんは地域に優しいネクロマンサーなのじゃ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【武器屋のバイト】"])
+      ShowText(["最近は武器が飛ぶように売れる。"])
+      ShowText(["あんな事があった後だから、みんな自衛用に持ちたがるんだろうな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【女の子】"])
+      ShowText(["妖精ちゃんとお友達になってね、こっそり精霊の森に遊びに行ってるの。"])
+      ShowText(["お母さんには、ナイショだよ♪"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["139"])
+      ShowTextAttributes(["fairys_fc1", 3, 0, 2])
+      ShowText(["【フェアリーズ】"])
+      ShowText(["今度は、こっちからあそびにきたよ♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【女の子】"])
+      ShowText(["わ～い♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女の子】"])
+    ShowText(["こわかったよぉ……"])
+    ShowText(["魔物なんて、キライだよぉ……"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["327"])
+    ShowTextAttributes(["ningyohime_fc1", 7, 0, 2])
+    ShowText(["【エル】"])
+    ShowText(["ごめんね、あたしが悪いの……"])
+    ExitEventProcessing([])
+    Label(["328"])
+    ShowTextAttributes(["queenmermaid_fc1", 1, 0, 2])
+    ShowText(["【ローラ】"])
+    ShowText(["少女の心に刷り込まれてしまった恐怖は、もはや消えないでしょう……"])
+    ShowText(["私は、決して癒えない傷を付けてしまったのですね。"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ConditionalBranch([1, 1093, 0, 2, 2])
+      ConditionalBranch([1, 1001, 0, 28, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【母親】"])
+        ShowText(["西の橋を渡って、立て看板のところを北に進むと……"])
+        ShowText(["精霊の森と呼ばれる森林地帯があります。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【母親】"])
+        ShowText(["そこには、危険なエルフやフェアリーがうろついているとか。"])
+        ShowText(["娘にも、精霊の森には近付かないよう言い聞かせないと……"])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["97"])
+        ShowTextAttributes(["fairy_fc1", 2, 0, 2])
+        ShowText(["【フェル】"])
+        ShowText(["妖精はいたずらするけど、ひどい事はしないよ～！"])
+        ExitEventProcessing([])
+        Label(["136"])
+        ShowTextAttributes(["elf_fc1", 0, 0, 2])
+        ShowText(["【クローディア】"])
+        ShowText(["失礼ね、私達は危険じゃないわ。"])
+        ShowText(["人間の方が、よほど野蛮でしょう……"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1001, 0, 29, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【母親】"])
+        ShowText(["娘が、もう少しで大怪我をするところでした。"])
+        ShowText(["魔王も人魚の女王も、早く勇者様に滅ぼされればいいのに……"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1093, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ゴンザレスの妻】"])
+      ShowText(["夫がアモス聖山で大怪我をしてから、すっかりおかしくなって……"])
+      ShowText(["ああ、なんという事でしょう。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1093, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ゴンザレスの妻】"])
+      ShowText(["あのセーターをもらってから、夫の様子がますます変になって……"])
+      ShowText(["ああ、なんという事でしょう。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【町娘】"])
+      ShowText(["この町はとても神聖で、観光や巡礼の方には良いんですけど……"])
+      ShowText(["ここで生活するとなると、色々と神聖すぎて困る事も多いです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["なんだか、遺跡の中に住んでるような心地だよ……"])
+      ShowText(["もう少し肩の力が抜ける場所に引っ越そうかな？"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["62"])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["確かに、なんだか暮らしにくそう……"])
+      ExitEventProcessing([])
+      Label(["120"])
+      ShowTextAttributes(["page257_fc1", 0, 0, 2])
+      ShowText(["【ヨーコ】"])
+      ShowText(["荘厳で良いではないですか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【町娘】"])
+      ShowText(["田舎への疎開を考えています。"])
+      ShowText(["またあのような事があると、怖くて……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["でも、そこも魔王に攻められたらと思うと……"])
+      ShowText(["もはや世界中、逃げ場はないのかもしれませんね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【町娘】"])
+      ShowText(["この町はとても神聖で、観光や巡礼の方には良いんですけど……"])
+      ShowText(["ここで生活するとなると、色々と神聖すぎて困る事も多いです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["なんだか、遺跡の中に住んでるような心地だよ……"])
+      ShowText(["もう少し肩の力が抜ける場所に引っ越そうかな？"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["62"])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["確かに、なんだか暮らしにくそう……"])
+      ExitEventProcessing([])
+      Label(["120"])
+      ShowTextAttributes(["page257_fc1", 0, 0, 2])
+      ShowText(["【ヨーコ】"])
+      ShowText(["荘厳で良いではないですか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【町娘】"])
+      ShowText(["田舎への疎開を考えています。"])
+      ShowText(["またあのような事があると、怖くて……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【男】"])
+      ShowText(["でも、そこも魔王に攻められたらと思うと……"])
+      ShowText(["もはや世界中、逃げ場はないのかもしれませんね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【神官】"])
+        ShowText(["ラダイトの連中は、明らかに神の教えを曲解しています。"])
+        ShowText(["今さら原始生活を始めたとて、神は喜ばれませんよ。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【神官】"])
+        ShowText(["しかも連中は、マキナ容認派を口汚く罵る有様。"])
+        ShowText(["隣人を愛せよという教えを、都合良く忘れてしまったのでしょうか？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["【神官】"])
+        ShowText(["ラダイトの連中は、神の教えを曲解していましたが……"])
+        ShowText(["あそこまでの裁きを受けるほどの罪を犯したのでしょうか？"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["魔物への憎悪も相まって、熱狂的な信徒も増えました。"])
+      ShowText(["しかし、それが良いことなのかどうか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["これは、教会関係者しか知らない事ですが……"])
+      ShowText(["年に1回、法王猊下は古代神殿跡に出向かれるようですね。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["なんでも、イリアス様に祈りを捧げる儀式があるとか……"])
+      ShowText(["実にありがたい儀式のようなので、公開すべきだと思うのですが。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["神聖な教会において、魔王や魔物を呪う声が囁かれるようになりました。"])
+      ShowText(["信仰は誤った方向に進もうとしています……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["法王暗殺未遂事件の際、私は少し離れたところにいました。"])
+      ShowText(["爆発の大きさを見た瞬間、もはや助かられまいと思いましたが――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["後にご無事な姿を拝見し、歓喜しました。"])
+      ShowText(["やはり法王猊下には、神のご加護があるのですね……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["531"])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["【サン・イリア王】"])
+      ShowText(["神のご加護、か……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["神よ、我らを救い給え……"])
+      ShowText(["どうか、邪悪なる魔物に天罰を……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女戦士】"])
+    ShowText(["聖山アモスにミスリル鉱石を採りに行ったけど……"])
+    ShowText(["中腹まで到達する前に引き返したわ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女戦士】"])
+    ShowText(["あそこ、やけに僧侶タイプの魔物が多かったわね。"])
+    ShowText(["さすが巡礼地として有名な聖山よ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女戦士】"])
+    ShowText(["聖山アモスの場所は、ここサン・イリアの真北だけど……"])
+    ShowText(["すぐ北の山脈を東回りに迂回する必要があるわね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["世界の聖地を巡礼して回る……"])
+    ShowText(["これも、私の夢なのです。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女僧侶】"])
+    ShowText(["聖山アモスは、ナタリア地方で最も天国に近いと言われています。"])
+    ShowText(["そのせいか、不思議な力が満ちていたように思えました……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女僧侶】"])
+    ShowText(["ぜひ、山頂まで登ってみたかったのですが……"])
+    ShowText(["私達では、少々実力が不足していたようです。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["125"])
+    ShowTextAttributes(["grizzly_fc1", 0, 0, 2])
+    ShowText(["【アイシャ】"])
+    ShowText(["あたしの仲間が邪魔したか……？"])
+    ShowText(["ごめんな！"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【剣士】"])
+    ShowText(["この宿、正直……"])
+    ShowText(["……ちょっと高いよな。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["【プチ】"])
+    ShowText(["サービスも良くないし、高いし……"])
+    ShowText(["清潔さ以外、あんまり参考にはできないわよね。"])
+    ExitEventProcessing([])
+    Label(["540"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["【アミラ】"])
+    ShowText(["教会経営だから、お布施も込みなのよね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【吟遊詩人】"])
+      ShowText(["この神聖なる地にいると、詩作がはかどりますね。"])
+      ShowText(["こういう畏まった雰囲気が苦手、という方も多いのでしょうが……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["66"])
+      ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+      ShowText(["【ヴァニラ】"])
+      ShowText(["我はダメだ、いるだけで疲れてしまうぞ……"])
+      ExitEventProcessing([])
+      Label(["86"])
+      ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+      ShowText(["【ロザリオ】"])
+      ShowText(["なんとも荘厳な空気が素晴らしいです。"])
+      ShowText(["もう少しヌルヌルしていれば、なお良いのですけど……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【吟遊詩人】"])
+      ShowText(["人魚の美しさを歌った詩が、出版停止になりました。"])
+      ShowText(["「人魚のローラ」や「人魚姫の結婚」などの絵本も、図書館から廃棄されたのです。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【吟遊詩人】"])
+      ShowText(["このままだと、また魔女狩りが始まってしまうかもしれませんね。"])
+      ShowText(["悲しい時代です……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【猫】"])
+    ShowText(["にゃ～ん。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["70"])
+    ShowTextAttributes(["nezumi_fc1", 2, 0, 2])
+    ShowText(["【ラティ】"])
+    ShowText(["きゃあ！　ネコだぁ！"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 1, 0, 2])
+    ShowText(["【かむろ】"])
+    ShowText(["あっ、ニャンコです！"])
+    ShowText(["おいで……ごろごろごろ……"])
+    ExitEventProcessing([])
+    Label(["222"])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["【たま】"])
+    ShowText(["にゃ～♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【猫】"])
+    ShowText(["にゃあ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【老人】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["老人は静かに祈りを捧げている……"])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【少年】"])
+      ShowText(["家族がみんな、幸せでいられますように……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【少年】"])
+      ShowText(["戦争が早く終わりますように……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【おじさん】"])
+      ShowText(["お金を……もっとお金を……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["143"])
+      ShowTextAttributes(["eva_fc1", 0, 0, 2])
+      ShowText(["【エヴァ】"])
+      ShowText(["楽してお金を……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【おじさん】"])
+      ShowText(["お金を……もっとお金を……"])
+      ShowText(["田舎に疎開するための軍資金を……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["青年は居眠りしている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["青年は一心不乱に祈っている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若者】"])
+      ShowText(["俺は正直、イリアス様とかどうでもいいんだけど……"])
+      ShowText(["ほら、やっぱりこういう町に住んでいると色々あるだろ？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若者】"])
+      ShowText(["週に一回、お祈りするふりは欠かせないわけよ……"])
+      ShowText(["ああ、シルフ祭りの方が楽しそうだよなぁ……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["26"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["なんと罪深い……！"])
+      ShowText(["私の雷ノートに名前を追加しておきます。"])
+      ExitEventProcessing([])
+      Label(["12"])
+      ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+      ShowText(["【シルフ】"])
+      ShowText(["楽しいよ～♪　シルフ祭りの方が、楽しいよ～♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若者】"])
+      ShowText(["シルフ祭りも中止になってしまった……"])
+      ShowText(["おっと、精霊の名を口に出しただけで異端者扱いされるな。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["どうか煩悩をお払い下さい……"])
+      ShowText(["ああ、教会で淫らな妄想を抱く私を許したまえ……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["123"])
+      ShowTextAttributes(["sisccubus_fc1", 1, 0, 2])
+      ShowText(["【クリスティー】"])
+      ShowText(["大丈夫！　私なんて、いつもです！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["どうか我らをお救い下さい……"])
+      ShowText(["女神様の力で、魔王を滅ぼして下さい……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["私は、実は人間ではありません……"])
+      ShowText(["人間に化けていますが、正体はラミアなのですよ。"])
+      ShowTextAttributes(["sisterlamia_fc1", 0, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["私のように、イリアス様を信仰する魔物も少数ながらいます。"])
+      ShowText(["神父様は私の正体を知りながら、黙ってくれているのです……"])
+      ShowTextAttributes(["sisterlamia_fc1", 4, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["ああ、なんて親切な神父様……"])
+      ShowText(["巻き付いてあげたい……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["113"])
+      ShowTextAttributes(["lamia_fc1", 2, 0, 2])
+      ShowText(["【アナスタシア】"])
+      ShowText(["変わった同胞もいるものね……"])
+      ExitEventProcessing([])
+      Label(["123"])
+      ShowTextAttributes(["sisccubus_fc1", 2, 0, 2])
+      ShowText(["【クリスティー】"])
+      ShowText(["神の徒として、いかがなものか……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+      ShowText(["【シスター】"])
+      ShowText(["一度の襲撃で、大衆の心がここまで揺らぐとは……"])
+      ShowText(["魔王様は、これを狙っていたのでしょうか。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["……むむっ？"])
+      ShowText(["この教会に、いやらしい妄想を抱く者がいる気がします。"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["56"])
+      ShowTextAttributes(["inp_fc1", 3, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["私の事かなぁ……？"])
+      ExitEventProcessing([])
+      Label(["123"])
+      ShowTextAttributes(["sisccubus_fc1", 2, 0, 2])
+      ShowText(["【クリスティー】"])
+      ShowText(["わわわ、私ではありませんよ！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【神官】"])
+      ShowText(["信仰の力で、魔王軍の次の攻撃に備えなくては……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["各地の教会に比べ、やはりサン・イリアの教会は豪華だな。"])
+      ShowText(["さらに城内には、大聖堂があるという……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["86"])
+      ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+      ShowText(["【ロザリオ】"])
+      ShowText(["大聖堂ほどとは申しませんが……"])
+      ShowText(["ここと同じくらいの教会を築くのが夢なのです。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【旅の戦士】"])
+      ShowText(["神よ……どうか私に、悪を討つ力を……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【おばさん】"])
+      ShowText(["毎日、教会でのお祈りは欠かしたことがないよ。"])
+      ShowText(["おかげで家内安全、病気知らずさ。"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["41"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["【プロメスティン】"])
+      ShowText(["教会での祈りと、家族の健康には何の相関関係もありません。"])
+      ShowText(["神だって、いちいち聞いてはいませんよ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【おばさん】"])
+      ShowText(["夫の怪我が、早く治りますように……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["いちゃいちゃ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["いちゃいちゃ……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["26"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["神聖なる教会でなんという事を！"])
+      ShowText(["雷ノートが名前で埋まっていきます……"])
+      ExitEventProcessing([])
+      Label(["163"])
+      ShowTextAttributes(["lily_fc1", 3, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["青春を謳歌する輩は滅びればいいの……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["うわっ、触手が！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["きゃぁぁぁ！！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["神に祈ってれば、また魔物が攻めてきても助かるんだよね？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["うちのじいさんは、そう言ってたぜ。"])
+      ShowText(["不信心なヤツから、先に死ぬんだってさ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["いちゃいちゃ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["いちゃいちゃ……"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["26"])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["神聖なる教会でなんという事を！"])
+      ShowText(["雷ノートが名前で埋まっていきます……"])
+      ExitEventProcessing([])
+      Label(["163"])
+      ShowTextAttributes(["lily_fc1", 3, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["青春を謳歌する輩は滅びればいいの……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["うわっ、触手が！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["きゃぁぁぁ！！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【若い女】"])
+      ShowText(["神に祈ってれば、また魔物が攻めてきても助かるんだよね？"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【青年】"])
+      ShowText(["うちのじいさんは、そう言ってたぜ。"])
+      ShowText(["不信心なヤツから、先に死ぬんだってさ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["ミニマムになると、体が小さくなって攻撃力や防御力が大幅に下がります。"])
+    ShowText(["打出の小槌があれば、ミニマム状態を解除してくれますよ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男】"])
+    ShowText(["ミニマムにする攻撃は、妖精が多用してきます。"])
+    ShowText(["妖精の出現地域に向かう前に、打出の小槌を多く用意した方がいいですね。"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["88"])
+    ShowTextAttributes(["jack_fc1", 0, 0, 2])
+    ShowText(["【かぼちゃ】"])
+    ShowText(["ちっちゃくなる踊りだね……"])
+    ShowText(["羽の生えた子が得意だから、注意してね。"])
+    ExitEventProcessing([])
+    Label(["97"])
+    ShowTextAttributes(["fairy_fc1", 0, 0, 2])
+    ShowText(["【フェル】"])
+    ShowText(["フェアリーダンス、得意だよ～♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([427, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([342, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([2, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([361, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【防具屋の隠居】"])
+    ShowText(["アクセサリはいらんかね？"])
+    ShowText(["属性技の威力を高める優れモノだよ。"])
+    ShopProcessing([2, 1243, 0, 0, false])
+    ShopItem([2, 1246, 0, 0])
+    ShopItem([2, 1249, 0, 0])
+    ShopItem([2, 1252, 0, 0])
+    ShopItem([2, 1255, 0, 0])
+    ShopItem([2, 1258, 0, 0])
+    ShopItem([2, 1276, 0, 0])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【時魔導師】"])
+    ShowText(["あなた、時魔法は使ってる？"])
+    ShowText(["熟練のパーティでも、意外と使いこなしてるのは少ないのよね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【時魔導師】"])
+    ShowText(["スロウは敵の動きを遅くするわ。"])
+    ShowText(["素早さが激減し、回避もほとんどできなくなるの。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【時魔導師】"])
+    ShowText(["クィックは逆に、味方の素早さが大幅アップ。"])
+    ShowText(["行動順が早くなる以外に、回避率も高まるわ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【時魔導師】"])
+    ShowText(["ストップは数ターンの間、敵の時間を止めるの。"])
+    ShowText(["ボスなどにも、効くことが多いわ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【時魔導師】"])
+    ShowText(["補助魔法が主だから、敬遠されがちな職業だけど……"])
+    ShowText(["実力以上の敵と戦う場合、時魔導師はかなりの力を発揮するわよ。"])
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    ConditionalBranch([1, 1093, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ゴンザレスの娘】"])
+      ShowText(["お父さんは、山で足を怪我しちゃったの。"])
+      ShowText(["それから、お手紙をいっぱい送ってるんだよ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1093, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【ゴンザレスの娘】"])
+      ShowText(["アリンコを捕まえてくると、お父さんからおこづかいがもらえるの！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["おお、お前達か。"])
+    ShowText(["……アリ、なめるか？"])
+    ConditionalBranch([1, 1142, 0, 63, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["なめないわよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["はっはっは、冗談さ。"])
+    ShowText(["この通り、もうアリクイメールを送るのもやめたよ。"])
+    ConditionalBranch([4, 124, 0])
+      ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+      ShowText(["【杏奈】"])
+      ShowText(["仲直りできて、うれしいな！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["……おっ、アリだ。"])
+    ShowText(["ありんこ、なめなめ……"])
+    ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["ところで、ちょっと聞きたいんだけど……"])
+    ShowText(["出身はどこ？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["俺の出身？"])
+    ShowText(["ポルノフ生まれだけど……"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["やっぱりね……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    ControlSwitches([2334, 2334, 0])
+    Empty([])
+
+  Page 1
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["あんたがゴンザレスだね！"])
+    ShowText(["アリクイ娘を悪者にするような手紙をやめなさい！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["わぁっ、とうとうアリクイ娘が殺しに来た！"])
+    ShowText(["俺の妻は本当に未亡人となり、アリクイメールを送る事になるのか……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["……しかし、それも本望だぜ。"])
+    ShowText(["俺は、アリクイ娘の非道さを世間に訴えなければならないんだ……！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["詐欺による金銭目当てではないのか？"])
+      ShowText(["どうやら、アリクイ娘の評判を落とす事が目的のようだが……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["詐欺による金銭目当てではないのですか？"])
+      ShowText(["どうもアリクイ娘の評判を落とす事が目的のようですが……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["ああ、その通りだ。"])
+    ShowText(["詐欺で得る金はむしろ、手紙を大量送付するための活動資金なのさ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["俺はアモス聖山でアリクイ娘に襲われ、足を折る怪我をしたんだ！"])
+    ShowText(["今はだいぶ治ったが、しばらくは不自由な毎日だったんだぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["折れた足を引きずる日々の中で、俺は誓ったのさ。"])
+    ShowText(["アリクイ娘の危険さを、世間に訴えなきゃならないってな……！"])
+    ShowTextAttributes(["arikui_fc1", 2, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["アリクイ娘は、人を襲ったりしないよ～！"])
+    ShowText(["きっと、何かの間違いなんじゃない？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["間違いなものか、思いっきり後ろから体当たりされたんだ！"])
+    ShowText(["あれは去年の秋、三合目の山道でな！"])
+    ShowTextAttributes(["arikui_fc1", 2, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["去年の秋、三合目の山道……？"])
+    ShowText(["もしかして、アリクイ娘達が集団で走ってなかった？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["ああ、アリクイ娘が30体以上はいたぜ。"])
+    ShowText(["みんな、戦争とか出陣とかアリジゴクとか叫んでたよ。"])
+    ShowTextAttributes(["arikui_fc1", 2, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["やっぱり、アリクイ・アリジゴクウォーの時……"])
+    ShowText(["そう言えば、進撃時に誰かを突き飛ばしたような……"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["犯人はお前かよ！！"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["ごめ～ん！"])
+    ShowText(["急いでたから、ついうっかり。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["うっかりで済むか！"])
+    ShowText(["突き飛ばされた俺は山道を転げ落ち、足が変な方向に曲がったんだぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["いったい、どれだけ痛かったと思う！"])
+    ShowText(["俺はこの年で、シクシク泣いたんだぞ！"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["不幸な事故だったね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["不幸で済むか！"])
+    ShowText(["謝罪しろ、そして責任を取れ！"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["アリ、なめる？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["なめねーよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["……いいか、それからどうなったと思う？"])
+    ShowText(["地面に倒れた俺は、登山者に助けられ救急搬送されたんだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["その頃には、足はすっかり感覚がなくなってたよ。"])
+    ShowText(["僧侶に回復魔法をかけられながら、俺は悪夢を――"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["（あっ、アリだ。なめたいな……）"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["……なぁ、ちゃんと聞いてる？"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["……うん、聞いてるよ。"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["おわびに「月刊アリ」読む……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["読まねーよ！　"])
+    ShowText(["いったいどこで売ってるんだ、そのドマイナーな雑誌！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["……その後で診療所に、妻と娘も駆けつけてきた。"])
+    ShowText(["妻は夕食の準備を放り出して――"])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ゴンザレスの延々と続く愚痴を聞いた……"])
+    ShowText(["その後、話し合いの末に和解が成立した！"])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"city1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["本当に、このセーターもらってもいいのか！？"])
+    ShowText(["うおー、モコモコしてあったかいー！"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["あたしの不注意が招いた事故だからね……"])
+    ShowText(["お詫びの証に、受け取ってよ。"])
+    PlaySE(["RPG::SE(@name=\"mon_fanfale2\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["杏奈は自らの罪と向き合い、そして克服した！"])
+    ChangeSkills([0, 124, 0, 276])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["杏奈は\\I[102]\\C[1]素早さ40%アップ\\C[0]を修得した！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["それにしても「月刊アリ」、なかなか読ませるよな。"])
+    ShowText(["レッドアントって鉄もかじるんだってよ、ハンパねー。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ゴンザレス】"])
+    ShowText(["おっ、クィーンアントのコラムも載ってるぜ。"])
+    ShowText(["「尊敬されるリーダーとは？」だってよ、うちの上司にも読ませてーな。"])
+    ConditionalBranch([4, 268, 0])
+      ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+      ShowText(["【アンティーヌ・アン】"])
+      ShowText(["そのコーナー、なかなか人気なのですよ。"])
+      ShowText(["全国のアリファンからおたよりが……ウフフ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["【ソニア】"])
+    ShowText(["……これで、事件は解決よね？"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["【杏奈】"])
+    ShowText(["うん！　付き合ってくれて、ありがとうね！"])
+    FadeoutScreen([])
+    ControlSwitches([2334, 2334, 1])
+    ControlVariables([1093, 1093, 0, 0, 4])
+    Wait([60])
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 27, 16, 53, 2, 0])
+    FadeinScreen([])
+    Script(["gain_medal(2117)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ゴンザレスは改心し、アリクイメールを送るのをやめた。"])
+    ShowText(["さあ、冒険を続けよう！"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 2
+    Empty([])

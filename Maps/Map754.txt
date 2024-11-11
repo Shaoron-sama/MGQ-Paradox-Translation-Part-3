@@ -1,0 +1,125 @@
+Display Name = "？？？"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([2318, 2318, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["古ぼけた日誌がある……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「この島に漂着して、半月が過ぎた。"])
+    ShowText(["　船に積んであった食料も尽き、もはや死を待つのみとなった」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「あてもなく島をさまよう。"])
+    ShowText(["　長い長い坂を上がっていると、周囲に霧が出てきたようだ」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「磁石があらぬ方向を示し、正常に動作しなくなった。"])
+    ShowText(["　周囲には、尋常でない気配が立ちこめている」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「長い長い坂を登ると、石碑があった。"])
+    ShowText(["　かなり古いもののようだが、碑文はなんとか判読できる」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「……………………」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「碑文は、非常に不気味な内容だった。"])
+    ShowText(["　いったいなぜ、誰がこんなものを造ったのか？」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「不気味な気配はますます濃くなり、周囲を霧が覆い尽くす。"])
+    ShowText(["　冒険者のサガか、私は慌ててこの文章をしたためた」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["「この日誌を誰かが読む事があるならば……"])
+    ShowText(["　ただちに、この島から逃げよ」"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ここで文章は途切れている……"])
+    ConditionalBranch([1, 1142, 0, 62, 2])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["石碑なんて、どこにもないじゃない。"])
+        ShowText(["こんな狭い島に、そんな長い坂もないし……"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["石碑なんてどこにもないじゃないか……"])
+        ShowText(["そもそも、こんな狭い島に長い坂もないし。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["石碑なんてどこにもないじゃないか……"])
+      ShowText(["そもそも、こんな狭い島に長い坂もないし。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["死に直面し、幻を見ていたのか……"])
+      ShowText(["それとも……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["死に直面し、幻を見ていたのか……"])
+      ShowText(["それとも……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ただの屍のようだ……"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["道具箱の中には、大したものは入っていない……"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["道具袋の中には、大したものは入っていない……"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 87, 207, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 87, 207, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 87, 207, 2, 0])
+    Empty([])

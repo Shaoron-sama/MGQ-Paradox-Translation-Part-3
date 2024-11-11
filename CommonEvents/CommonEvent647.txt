@@ -1,0 +1,30 @@
+CommonEvent 647
+Name = "イベント：ルシア"
+
+  999([647])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([1, 129, 0, 0, 0])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["錬金素材が余ってしまいましたね……"])
+    ShowText(["よろしければ、差し上げましょう。"])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ChangeItems([110, 0, 0, 10])
+    ChangeItems([111, 0, 0, 3])
+    ControlVariables([129, 129, 0, 0, 1])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 129, 0, 1, 0])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["錬金術とは、なかなかにお金が掛かるもの……"])
+    ShowText(["真理の追究も安くはありませんね。"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

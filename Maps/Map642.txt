@@ -1,0 +1,834 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["【ヨーコ】"])
+    ShowText(["さあ、本を読みましょう。"])
+    ShowText(["読書は人生を豊かにしますよ……"])
+    ShowTextAttributes(["page17_fc1", 0, 0, 2])
+    ShowText(["【アニー】"])
+    ShowText(["少年～青年期の読書量と、生涯年収には相関関係がある……"])
+    ShowText(["そのような統計データも存在するのだ……"])
+    ShowTextAttributes(["page65537_fc1", 1, 0, 2])
+    ShowText(["【コーネリア】"])
+    ShowText(["さあ、最寄りの図書館に行きましょう。"])
+    ShowText(["書物はあなたを待っていますよ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["本か、帰りにちょっと買ってみようかな……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["子供の頃の絵本以来、読んでなかったなぁ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージはそれなりに盛況だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["なかなか好評だったね。"])
+    ShowText(["図書ギルドからも、祝電が届いてるよ。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1354, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"irias\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["私が創世の女神、イリアスです。"])
+    ShowText(["さあ愚かなる民よ、私に祈りを捧げなさい……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["おお、イリアス様のコスプレだ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性客】"])
+    ShowText(["かわいい～！　ちっちゃな天使様みたい！"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["何を言っているのです！"])
+    ShowText(["私こそ、創世の女神イリアスなのですよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性客】"])
+    ShowText(["はねてる！　かわいい～！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージはそこそこ盛況だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["なかなか好評でしたね。"])
+    ShowText(["でも、教会に怒られないかなぁ……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["私がイリアスです……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1541, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"zukan\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["それでは、生物学の講義を始めましょう。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["俗に聞かれる言質ですが……"])
+    ShowText(["魔物を野放しにすると、人間が滅びるというのがあります。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["基本的に魔物は女性型しか産まないので、増える一方。"])
+    ShowText(["このままでは人間は激減し、滅びの道を辿る……"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["しかしこれは、繁殖生態学を完全に無視した考え方です。"])
+    ShowText(["どこかの性悪が、無知な民衆に教え込んだのでしょう。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["原則的に、有性生殖における繁殖は、"])
+    ShowText(["生殖スパンの長いメスの方がキーとなります。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["人間のメスは、生殖に一年弱の時間がかかりますが……"])
+    ShowText(["オスの方は、事実上無制限に生殖を行えるのです。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["そうなりますと、次世代の個体を確保する事において、"])
+    ShowText(["オスの重要性はそう大したものではなくなってくるのです。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["オスは少数でも、多数のメスを孕ませる事ができるので……"])
+    ShowText(["相対的に、オスの価値が落ちる事は分かりますよね？"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["ゆえに男が魔物に対しても種を振りまいたところで……"])
+    ShowText(["人間の次世代個体数は、ほぼ影響しないのです。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["もし魔物の性質が逆だったなら、人間は絶滅の危機でした。"])
+    ShowText(["仮に魔物はオスしか存在せず、オスしか産まれないならば――"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["そうなれば、魔物は人間のメスの子宮を占有し続けます。"])
+    ShowText(["そして人間は個体数を増やせず、絶滅の道を辿るでしょう。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……もちろん、魔物も後を追うことになりますけど。"])
+    ShowText(["結局、生殖を人間に委ねている事に変わりありませんから。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["……まあ、そういうわけですね。"])
+    ShowText(["魔物と交わると人間が滅びるなど、戯言に過ぎません。"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["正しい知識がないと、非科学的な俗説に惑わされます。"])
+    ShowText(["学ぶという事がいかに重要か、分かってもらえたでしょうか？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["まあ、うん……ここは大学じゃないからねぇ。"])
+    ShowText(["次はもっとやわらかい話を頼むよ。"])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["【プロメスティン】"])
+    ShowText(["がんばったのに……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1131, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"dungeon_obakeyasiki\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["くくく……"])
+    ShowText(["それでは、クロムちゃんのネクロマンサー講義を始めよう。"])
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["クロム……ちゃんと風呂入ってきたか？"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["なぜ、それを今言う！"])
+    ShowText(["関係ないじゃろうが……"])
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["【フレデリカ】"])
+    ShowText(["クロム、珍しく風呂に入る時でも……"])
+    ShowText(["湯船に浸かるだけで、体を洗わない……"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["それを不潔と思うのは、素人の発想じゃ……"])
+    ShowText(["仮に、石鹸でしっかり洗った場合の綺麗度を10としよう。"])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["では、湯船に浸かるだけで洗わない場合……"])
+    ShowText(["体を洗った10と比べ、浸かるだけの綺麗度は何だと思う？"])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["そこ！　そこの若造、答えてみよ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【青年】"])
+    ShowText(["えっと……浸かるだけで洗わないんだろ？"])
+    ShowText(["だったら3くらいなんじゃないか？"])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["ハズレじゃな……正解は、8じゃ！"])
+    ShowText(["お湯に浸かるだけでも、そこまで綺麗になるのじゃ！"])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["湯に浸かると毛穴が収縮し、表皮の汚れが排出される……"])
+    ShowText(["よって、湯船に浸かるだけでも十分に綺麗になるのじゃ！"])
+    ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["それに、過度に石鹸で洗いすぎるとかえって肌を傷付ける！"])
+    ShowText(["お肌にも優しくないのじゃぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["（何の講義なんだ……）"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["風呂はちゃんと入った方がいいよ……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1231, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"mura3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["虐げられた者達……"])
+    ShowText(["このリリィ・メーストルが力を与えましょう。"])
+    ShowTextAttributes(["wormv_fc1", 0, 0, 2])
+    ShowText(["【ユリア】"])
+    ShowText(["この力は、まさに希望……"])
+    ShowText(["あらゆる暴虐に屈さず、自由を求める光なのです。"])
+    ShowTextAttributes(["suckvore_fc1", 2, 0, 2])
+    ShowText(["【アンナ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["lily_fc1", 4, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["さあ、弱き民よ……リリィの元に来なさい。"])
+    ShowText(["この私が、皆を導きましょう。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["新興宗教かい？"])
+    ShowText(["うちの劇場で、ああいうのはちょっと困るかな……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1318, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"mura3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["錬金術とは、真理の探究……"])
+    ShowText(["万物の理を追求する、崇高な学問です。"])
+    ShowTextAttributes(["c_homunculus_fc1", 1, 0, 2])
+    ShowText(["【クロウリー】"])
+    ShowText(["金を錬成するというのは、あくまで卑近な目的の一つ……"])
+    ShowText(["錬金の志とは、すなわち真理に迫る事なのだ……"])
+    ShowTextAttributes(["ironmaiden_k_fc1", 0, 0, 2])
+    ShowText(["【トーチャ】"])
+    ShowText(["知的怠惰に己を浸す者よ、その罰を受けよ……"])
+    ShowText(["さもなければ、錬金の道を志せ……"])
+    ShowTextAttributes(["lusia_fc1", 0, 0, 2])
+    ShowText(["【ルシア】"])
+    ShowText(["錬金の扉は、誰にでも開け放たれています。"])
+    ShowText(["さあ、私と共に真理を追究しようではありませんか！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは微妙な雰囲気だ……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["新興宗教かい？"])
+    ShowText(["うちの劇場で、ああいうのはちょっと困るかな……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1318, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"castle2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sara_fc1", 1, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["舞台はよく見に来るけど、自分で立つのは初めてね……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["あの女性、どこかで見覚えが……"])
+    ShowText(["まさか、サバサのサラ女王！？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["そっくりさんじゃないのか……？"])
+    ShowText(["でも、そこはかとなく高貴な雰囲気が……"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_obakeyasiki\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sara_fc1", 1, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["じゃあ、小さい頃からたしなんでたバイオリンを……"])
+    ShowText(["……やぁっ！"])
+    PlaySE(["RPG::SE(@name=\"Darkness2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["なんだこれ、音波攻撃……うぁぁっ！！"])
+    PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["ぎゃぁぁ！　観客に死人が出るぞ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは大混乱だ！"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["み、耳が……ああ、目眩もする……"])
+    ShowTextAttributes(["sara_fc1", 4, 0, 2])
+    ShowText(["【サラ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1288, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"dungeon_colosseum\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["来たれ、機械の国！"])
+    ShowText(["鉄血の体にこそ、真理あり！"])
+    ShowTextAttributes(["jeid_fc1", 0, 0, 2])
+    ShowText(["【ジェイド】"])
+    ShowText(["ジーク・マキナ！"])
+    ShowTextAttributes(["XX-7_fc1", 0, 0, 2])
+    ShowText(["【ロビン】"])
+    ShowText(["ジーク・マキナ！"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["機械こそ不滅！　機械こそ安寧！"])
+    ShowTextAttributes(["kaniloid_fc1", 0, 0, 2])
+    ShowText(["【ジリアン】"])
+    ShowText(["ジーク・マキナ！"])
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["【ヒルデ】"])
+    ShowText(["ジーク・マキナ！"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["自由意志などまやかしに過ぎん！"])
+    ShowText(["この世はしょせん、機械なり！"])
+    ShowTextAttributes(["valt_fc1", 0, 0, 2])
+    ShowText(["【ヴァルト】"])
+    ShowText(["ジーク・マキナ！"])
+    ShowTextAttributes(["radio_fc1", 0, 0, 2])
+    ShowText(["【ラディオ】"])
+    ShowText(["ジーク・マきナ！"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["さあ、皆の者！"])
+    ShowText(["機械の国で、ネジとなるのだ！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ステージは静まり返っている……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["いやぁ、緊迫感のある舞台でした。"])
+    ShowText(["もちろん、冗談ですよね……"])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["【サン・イリア王】"])
+    ShowText(["当然、ただの冗談だよ……"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1363, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"stage1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["このような舞台で見世物になるとは、気が乗らんな……"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["芸の一つも出来ないなんて、役に立たないトカゲね……"])
+    SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["……なんだと？"])
+    ShowText(["衆人環視の中で蒸発させられたいか？"])
+    SetMoveRoute([40, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["undine_fc1", 1, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["その炎を消して、みっともない姿にされたいの……？"])
+    ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+    ShowText(["【サラマンダー】"])
+    ShowText(["おのれ！"])
+    ShowAnimation([-1, 1160, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ａ】"])
+    ShowText(["うわーっ！！"])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["ふん……"])
+    ShowAnimation([-1, 1178, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｂ】"])
+    ShowText(["ひぇーっ！！"])
+    ShowTextAttributes(["sylph_fc1", 2, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["あたしも、いっくよー！"])
+    ShowAnimation([-1, 1168, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【客Ｃ】"])
+    ShowText(["ぎゃーっ！！"])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    SetMoveRoute([37, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["ノームちゃんは、やらないの？"])
+    ShowTextAttributes(["gnome_fc1", 1, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 1, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["あっ……やっぱり、照明がまぶしいんだ。"])
+    ShowText(["舞台に上がらないと、意外に分からないよね……"])
+    ShowTextAttributes(["gnome_fc1", 1, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowAnimation([-1, 1173, false])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["【ノーム】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["sylph_fc1", 2, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["わーい！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["その日、グランドールは大災害に見舞われた……"])
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([60])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    CallCommonEvent([129])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【支配人】"])
+    ShowText(["すごい額の損害請求が来てるよ。"])
+    ShowText(["私の人生、もう真っ暗じゃないかな。"])
+    ShowTextAttributes(["sylph_fc1", 3, 0, 2])
+    ShowText(["【シルフ】"])
+    ShowText(["ゴメンね♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeArmor([1373, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2119, 2119, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])

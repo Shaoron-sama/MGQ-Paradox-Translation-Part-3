@@ -1,0 +1,18 @@
+CommonEvent 937
+Name = "ランク5報酬"
+
+  999([937])
+  Script(["gain_medal(3085)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["経験値100000を獲得した！"])
+  Script(["gain_party_exp(100000,true)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["職業経験値1000を獲得した！"])
+  Script(["gain_party_class_exp(1000,true)"])
+  ScriptMore(["gain_party_tribe_exp(1000,true)"])
+  Script(["gain_party_friend(500)"])
+  ChangeGold([0, 0, 1000000])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["100万Gを獲得した！"])
+  ShowText(["パーティ全員の好感度が500上がった！"])
+  Empty([])

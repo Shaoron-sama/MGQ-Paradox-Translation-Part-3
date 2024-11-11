@@ -1,0 +1,1216 @@
+Display Name = "リリィの館 1F西"
+Parallax Name = "DarkSpace1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([5, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1315, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 360, 1, 9, 6, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["むっ……何か妙な感じだな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……なにやら、妙な感じですね。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["1階の階段を降りたのに、なんでまた1階なの……？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["1階の階段を降りたのに、また1階だなんて……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのだな。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さねば……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのです。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さないと……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["明かり設定3000800"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=0.0, @gray=68.0)", 1, true])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["むっ……何か妙な感じだな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……なにやら、妙な感じですね。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["1階の階段を降りたのに、なんでまた1階なの……？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["1階の階段を降りたのに、また1階だなんて……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのだな。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さねば……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのです。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さないと……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1029, 0, 5, 1])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2091, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["扉は固く閉ざされている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 359, 38, 28, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 359, 39, 28, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1029, 0, 5, 1])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2091, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["扉は固く閉ざされている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([52, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["待っていたわ……"])
+    ShowText(["私がこの村の領主、リリィ・メーストルよ。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["私に話を聞きたいのでしょう？"])
+    ShowText(["それじゃあ、こちらへどうぞ……"])
+    ErasePicture([5])
+    FadeoutScreen([])
+    ControlVariables([1029, 1029, 0, 0, 3])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 359, 34, 36, 4, 2])
+    FadeinScreen([])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["あんたが、この村でやった事だけど……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 2, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["悪いけれど、すぐに本題に入るわ。"])
+      ShowText(["まずは、この村の男性達を私的に処刑した疑いについて……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["村の者達から、話は聞いたでしょう？"])
+    ShowText(["この村の男達は、女性に苛烈な暴力と虐待を働いてきたの。"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["それを因習で正当化し、弾圧を続け……"])
+    ShowText(["この村の女の大半は、20歳になる前に死ぬのよ。"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["そんな悲惨な現状を打破するには、力しかないわ……"])
+    ShowText(["私達は、自分の身を守っただけよ。"])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["でも、男達を殺してしまうなんて……"])
+      ShowText(["サバサ本国に訴えるとか、何かなかったんですか？"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["何もなかったの、サバサはこの村を放置し続けたわ……"])
+      ShowText(["この村では、男女の平均寿命に30歳以上もの差があったのよ。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["どんな事情があろうとも、私刑は私刑よ。"])
+      ShowText(["法治国家において、それは許されないわ。"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["法治国家を気取る中央政府が、今まで何をしてきたの？"])
+      ShowText(["この村では、男女の平均寿命に30歳以上もの差があったのよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["男女の平均寿命が、30歳以上……？"])
+      ShowText(["いったい何をしたら、そんなに……"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["男女の平均寿命が、30歳以上……？"])
+      ShowText(["いったい何をしたら、そんなに……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["自治権の独立を盾にとって、この村は中央の統制を逃れた。"])
+      ShowText(["事実上、法は暴虐を行っている者を守ってきたのよ。"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["中央の人間は、それを確実に把握してたわよね？"])
+      ShowText(["把握していたのに、何も……ずっと何の手も打たなかったわ。"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["地方行政権は、サバサ憲法の第5条で保障されているから……"])
+      ShowText(["中央政府が強制的に介入すれば、それは憲法違反に……"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["ええ、確かに法律的には地方自治権の侵害ね。"])
+      ShowText(["虐待の多くも、民事への国権不介入で片付けられるわ……"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["多くの因習は、思想の自由で保護されているし……"])
+      ShowText(["何より、訴える者がいなければ事件にさえならない……"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["この村の女達に、正当な司法手続きなんて出来たと思う！？"])
+      ShowText(["家に閉じ込められ、外に出られず、暴力を受け続けた女達が！"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["私だって、領主の娘だからチヤホヤされたとでも思うの！"])
+      ShowText(["逆よ！　生け贄同然だったわ、ずっとね……！"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["結局、法は暴虐を行っている者達を守ったのよ！"])
+      ShowText(["私達に必要なのは、現状を打ち破る事のできる力だった！"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["この屋敷に残された蝕魔導の書物を、独力で学び……"])
+    ShowText(["そして力を手にして、ようやく村の女達は救われたのよ。"])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……………………"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["この世には、白黒つけられん事もある……"])
+        ShowText(["それを裁くのは、我々の目的ではない。"])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["それに、我々に何か用事があるのだろう？"])
+        ShowText(["わざわざ領主自ら迎えたのは、頼みがあるからではないのか？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["人間社会には、色々と理不尽な事もあるでしょう……"])
+        ShowText(["その一つ一つにまで、私は関与するつもりもありません。"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["そもそも、私達に何か用事があるのでしょう？"])
+        ShowText(["領主自ら迎えたのは、頼みがあるからではないのすか？"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["あなた達の境遇は、同情に余りあるわ。"])
+      ShowText(["そして中央政府の非は非常に大きい……"])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["ここで私情を述べるなら、あなた達の行動は黙認したい……"])
+      ShowText(["でも私は、法で動かなければならない立場なの。"])
+      ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["法治国家の精神に則って考えるなら……"])
+      ShowText(["今のあなたに、司法権はあるのかしら？"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["女王を退位し、議会制に移行の最中……"])
+      ShowText(["実質的に、民間人にあたるわよね？"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["ええ、その通りね……"])
+      ShowText(["あくまで司法に通報する一市民、という立場でしかないわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それに、この村で男達が虐殺されたという事だけど……"])
+      ShowText(["私は力を与えただけで、何も指示はしていないわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["彼女達は、自分達の意志で現状を打破したのよ。"])
+      ShowText(["己の命を守るため、仕方なく……ね。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["これは、事実上の正当防衛よ。"])
+      ShowText(["個別的な正当防衛の集積であり、集団的虐殺にはあたらない。"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["それは無茶よ……"])
+      ShowText(["あくまで首謀者としての責任は問われるわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それで……それを法廷で証明できるのかしら？"])
+      ShowText(["法治国家である以上、立証しなければならないわよね。"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["ともかく……"])
+      ShowText(["あなたに何の法的権限もない以上、出頭には応じられない。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それでも客人として遇したのは、理解してほしかったからよ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["私達がどんな境遇にあったか……"])
+      ShowText(["そして、何をしないと生きられなかったか……"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それでも、私を訴えるというならご自由に。"])
+      ShowText(["ただ、独立自治権や民事不介入の壁は厚いわよ……"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["……あなたの父親が、結局私達を救えなかったようにね。"])
+      ShowText(["法律は、今度は私達の味方になるわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それでも私を捕らえるなら、正当な訴状を持って出直すのね。"])
+      ShowText(["今は何の権限もない、元女王の一市民さん。"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["……そうさせてもらうわ。"])
+      ShowText(["しばらく後の事になりそうだけど……"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["この村で何が行われていたか、全て明らかにするべき……"])
+      ShowText(["その上であらゆる情状酌量を鑑み、正当な判決を期待するわ。"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["……まったく、あまりサラをいじめてやるな。"])
+        ShowText(["事件当時はまだ子供、この一件に責任など持てる立場にない。"])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["そして、用件は元王女をやり込めるだけとは思えんな。"])
+        ShowText(["旅人としての我々に、何か話があるのではないのか？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……うちの元女王を、あまりいじめないでもらえますか。"])
+        ShowText(["この一件、神でもなければ適正な裁きはできないでしょう。"])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["そして、用件は元女王をやり込めるだけではないでしょう？"])
+        ShowText(["旅人としての我々に、何か話があるのでは……？"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ええ……あなた達に、取引を持ちかけたいの。"])
+    ShowText(["知っているとは思うけど、私達に反抗する者達がいるのよ。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ルシアという魔導師率いる、暴力的な一派。"])
+    ShowText(["彼女達は、蝕魔導の力を世界に広げたくないそうよ。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ルシアも元々は私の同志で、力を与えられた者だけれど……"])
+    ShowText(["この力を危険なものとみなし、秘匿しようとしているのよ。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ついに先日には、武力攻撃に踏み切ってきたわ……"])
+    ShowText(["そこであなた達に、ルシアを倒してきてほしいのよ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["反乱軍のリーダーを倒すのが、取引だって……？"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["もちろん取引である以上、見返りはあるわ。"])
+    ShowText(["この私が、あなた達の旅に同行してあげる。"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["それ、私達の仲間になるって事……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["つまり、僕達の仲間に……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ええ、その通りよ……"])
+    ShowText(["世界には、まだまだ虐げられた者達がいるわ。"])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["力を持たないがゆえ、人間としての尊厳どころか、"])
+    ShowText(["生命までが危険にさらされている者達が……"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["聞こえるかしら、そうした者達の悲鳴を……"])
+    ShowText(["私には聞こえるのよ、助けを……そして力を求める声が。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["私は、そういう者達の嘆きに応えてあげたいの。"])
+    ShowText(["現状を打破するための、蝕魔導という力を授ける事でね……"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 0, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["虐げられてる人を救うために旅を……？"])
+      ShowText(["それ、本当に……？"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["本当に……？"])
+      ShowText(["嘘とか、吐いてないよね……？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["だって、ほら……今も聞こえるでしょう、子供の泣き声が……"])
+    ShowText(["こんなに大きな声で泣いているのに、あなたは聞こえないの？"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ほら、そこからも……あそこからも……！"])
+    ShowText(["泣いてる、みんな泣いてるでしょう……！？"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["この泣き声が聞こえなくなるまで……"])
+    ShowText(["それまで、私は弱者を救済しなければならないのよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["この村にいる者は、全て私が救ったわ。"])
+    ShowText(["でも、外の世界から泣き声は止まないのよ……"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["それを全て止めるために、私は近く村を出るつもりでいたの。"])
+    ShowText(["そこに、今回の反乱騒ぎなのよ……"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["ルシアさえいなくなれば、私も旅に出られるわ。"])
+    ShowText(["虐げられた者達を救い、力を与える旅にね……"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["あなたも、これまで弱者を救ってきたのでしょう？"])
+    ShowText(["ならば、あなたと私は同じなのよ……"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["だから、ルシアを倒してきて。"])
+    ShowText(["そうすれば私も、あなた達と共に行くわ。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["別にルシアを殺さなくてもいい……黙らせるだけでいいの。"])
+    ShowText(["この村に混乱をもたらさないようになれば、それでいいのよ。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["……………………"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["嘘は言っていないようだな。"])
+      ShowText(["どうする、ルカ？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その言葉、全て本心のようですね。"])
+      ShowText(["どうするのですか、ルカ……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1529, 0])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["【サラ】"])
+      ShowText(["元女王としての判断は、さっきも言った通りよ。"])
+      ShowText(["この取引は……ルカの決断に任せるわ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["さて、どうするべきか――"])
+    ShowChoices([["取引に応じ、ルシアを倒す", "取引に応じず、リリィを倒す", "取引に応じず、リリィを見逃す", "もう少し考える"], 0])
+    When([0, "取引に応じ、ルシアを倒す"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["やっぱり、私とあなたは似ているわね……"])
+      ShowText(["きっと分かってくれると思っていたわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それじゃあ、私はここで待っているわよ。"])
+      ShowText(["ルシアを倒してくれたら、晴れて私も仲間になるわ。"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "取引に応じず、リリィを倒す"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["あくまで敵対するというのね。"])
+      ShowText(["ならば、ここから出て行きなさい……"])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["リリィの魔力で、屋敷の外に放り出された！"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([2, "取引に応じず、リリィを見逃す"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["取引は決裂ね。"])
+      ShowText(["ならば、ここから出て行きなさい……"])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["リリィの魔力で、屋敷の外に放り出された！"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([3, "もう少し考える"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["言葉での返答は不要よ……"])
+      ShowText(["ルシア撃退の報を、返事の代わりに受け取るわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それじゃあ、私はここで待っているわよ。"])
+      ShowText(["ルシアを倒してくれたら、晴れて私も仲間になるわ。"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["あら、まだルシアを倒していないようね。"])
+    ShowText(["それとも……何か心変わりでもあったのかしら？"])
+    ShowChoices([["心変わりはない", "やっぱりリリィを倒す", "まだ考え中"], 3])
+    When([0, "心変わりはない"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それじゃあ、私はここで待っているわよ。"])
+      ShowText(["ルシアを倒してくれたら、晴れて私も仲間になるわ。"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "やっぱりリリィを倒す"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["あくまで敵対するというのね。"])
+      ShowText(["ならば、ここから出て行きなさい……"])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["リリィの魔力で、屋敷の外に放り出された！"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([2, "まだ考え中"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["言葉での返答は不要よ……"])
+      ShowText(["ルシア撃退の報を、返事の代わりに受け取るわ。"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["【リリィ】"])
+      ShowText(["それじゃあ、私はここで待っているわよ。"])
+      ShowText(["ルシアを倒してくれたら、晴れて私も仲間になるわ。"])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["約束通り、ルシアを倒してくれたようね。"])
+    ShowText(["心から、礼を言うわ……"])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["……あの娘が、私のことを一番分かってくれていたはずなの。"])
+    ShowText(["小さい頃から一緒で、同じ苦しみを分かち合って……"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["大人達の目を盗みながら、魔導の本を読み漁って……"])
+    ShowText(["協力しながら研究を進めて、ついに力を得たのに……"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["いつしか、あの娘は力を恐れるようになっていたのよ。"])
+    ShowText(["村の圧制者達を全て駆逐した、あの惨劇の日から……"])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["【ゴブ】"])
+      ShowText(["リリィさん、昔の友達を自分で倒したくなかったんだよね……"])
+      ShowText(["ズルいけど、そういうの分かるよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["……それじゃあ、約束通り私も行くわ。"])
+    ShowText(["もうこの村に、救うべき者はいないから。"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["まだまだ世界中に、虐げられた者達がいるはずよ。"])
+    ShowText(["私にはいつも聞こえているの、助けを聞こえる泣き声が……"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["【リリィ】"])
+    ShowText(["同志として、共に力なき者達を救いましょう。"])
+    ShowText(["それが、力を持った者の責務なのだから……"])
+    ErasePicture([5])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Script(["add_actor_ex(163)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["リリィが仲間に加わった！"])
+    ControlSwitches([2137, 2137, 0])
+    ControlVariables([1029, 1029, 0, 0, 6])
+    Wait([60])
+    Script(["gain_medal(28)"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["【ソニア】"])
+      ShowText(["……本当にいいの、ルカ？"])
+      ShowText(["なんだか危なっかしい気も……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["一緒に旅をすることで、色々と変わる事があるはずだよ。"])
+      ShowText(["特に彼女は、村に閉じこもっているべきじゃないと思う……"])
+      ConditionalBranch([4, 529, 0])
+        ShowTextAttributes(["sara_fc1", 4, 0, 2])
+        ShowText(["【サラ】"])
+        ShowText(["一人で思い詰める方が、危険よね……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 18, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ともかく、この件は片付いたな。"])
+      ShowText(["そろそろノームと契約を結びに行きたいところだが……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ともかく、この件は片付きましたね。"])
+      ShowText(["気は進みませんが、そろそろノームのところに行きませんか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1031, 0, 2, 2])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["その前に、サルーンに行ってみない？"])
+        ShowText(["クリスタル製の装備が造れる鍛冶屋がいるって話じゃない。"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["その前に、サルーンに行いきたいな。"])
+        ShowText(["クリスタル製の装備が造れる鍛冶屋がいるって話を聞いたよ。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["うむ……激戦に挑む以上、装備も整えておきたいな。"])
+        ShowText(["貴様の判断に任せよう。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["激戦に備え、装備を固めるのは悪くありませんね。"])
+        ShowText(["あなたの判断に任せましょう。"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["サルーンは確か、サバサ最北の町。"])
+      ShowText(["グランドールから北にサファル砂漠遺跡があるが、さらに北。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["山脈の切れ目に、砂漠から荒野に変わる地点がある。"])
+      ShowText(["そこを東側に進むと、サルーンがある……そういう話だ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["そこに、クリスタル製の装備品が造れる鍛冶屋がいるという。"])
+      ShowText(["ノームに会いに行く前に、揃えておくべきだろう。"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["それじゃあ、次の目的地に行こう！"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["マギステア村の騒動は収束し、新たな仲間を迎えた。"])
+      ShowText(["こうして僕達は、次の目的地へ旅立つのだった――"])
+      ConditionalBranch([1, 1031, 0, 0, 0])
+        ControlVariables([1031, 1031, 0, 0, 1])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["ノームのいるサファル遺跡は、グランドールの北だったね。"])
+      ShowText(["それじゃあ、行こう！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["むっ……何か妙な感じだな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["……なにやら、妙な感じですね。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["【ソニア】"])
+        ShowText(["1階の階段を降りたのに、なんでまた1階なの……？"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["1階の階段を降りたのに、また1階だなんて……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのだな。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さねば……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["階段に備わった移動魔術で、別の場所に飛ばされたのです。"])
+        ShowText(["先の階段を降りるためには、魔術を破る手段を探さないと……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([25, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺は蜜壺だった！"])
+    BattleProcessing([0, 269, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])

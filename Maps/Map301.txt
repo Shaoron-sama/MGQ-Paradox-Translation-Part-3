@@ -1,0 +1,337 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 300, 16, 25, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 300, 39, 33, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 300, 7, 46, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 300, 49, 46, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["kunoitielf2_fc1", 0, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["ここが、里で唯一の宿よ。"])
+    ShowText(["10Gになるけど、泊まっていく？\\$"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      ConditionalBranch([7, 10, 0])
+        ChangeGold([1, 0, 10])
+        FadeoutScreen([])
+        PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+        Wait([150])
+        RecoverAll([0, 0])
+        FadeinScreen([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["kunoitielf2_fc1", 0, 0, 2])
+        ShowText(["【くのいちエルフ】"])
+        ShowText(["お金が足りないわね……"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "いいえ"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["kunoitielf2_fc1", 0, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["ここが村で唯一の道具屋よ。"])
+    ShowText(["とっても優れたアクセサリも扱っているわ。"])
+    ShopProcessing([0, 2, 0, 0, false])
+    ShopItem([0, 4, 0, 0])
+    ShopItem([0, 7, 0, 0])
+    ShopItem([0, 11, 0, 0])
+    ShopItem([0, 13, 0, 0])
+    ShopItem([0, 14, 0, 0])
+    ShopItem([0, 15, 0, 0])
+    ShopItem([0, 16, 0, 0])
+    ShopItem([0, 17, 0, 0])
+    ShopItem([0, 18, 0, 0])
+    ShopItem([0, 19, 0, 0])
+    ShopItem([0, 20, 0, 0])
+    ShopItem([0, 21, 0, 0])
+    ShopItem([0, 23, 0, 0])
+    ShopItem([0, 35, 0, 0])
+    ShopItem([0, 102, 0, 0])
+    ShopItem([0, 109, 0, 0])
+    ShopItem([0, 110, 0, 0])
+    ShopItem([2, 1186, 0, 0])
+    ShopItem([2, 1092, 0, 0])
+    ShopItem([2, 1096, 0, 0])
+    ShopItem([2, 1717, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["kunoitielf2_fc1", 2, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["武器も防具も売り切れよ……"])
+    ShowText(["ここにあるのは、ハリボテの展示品ね。"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["kunoitielf2_fc3", 2, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["急に厳戒態勢になったから、武具が不足してるの。"])
+    ShowText(["この店でも売り切れよ……"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    CallCommonEvent([7371])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 1138, 0, 6, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【くのいちエルフ】"])
+      ShowText(["急な戦闘招集で、大わらわよ。"])
+      ShowText(["薬やら武器やら、必要な品を揃えないと……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1138, 0, 7, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["【くのいちエルフ】"])
+      ShowText(["結局、戦争が起きなくて助かったわ。"])
+      ShowText(["エルフ姫が、脅威の根を断ってくれたのね……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([1, 1138, 0, 6, 2])
+      ShowTextAttributes(["kuno_succubus_fc1", 0, 0, 2])
+      ShowText(["【くのいちサキュバス】"])
+      ShowText(["大きな戦いの前には、遺書をしたためる……"])
+      ShowText(["そのくらいの覚悟で、戦場に行くのさ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1138, 0, 7, 1])
+      ShowTextAttributes(["kuno_succubus_fc1", 0, 0, 2])
+      ShowText(["【くのいちサキュバス】"])
+      ShowText(["先に書いた遺書、無駄になっちゃったねぇ。"])
+      ShowText(["まあ、次の戦いがあったら再利用するさ。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1138, 0, 6, 2])
+      ShowTextAttributes(["kuno_scylla_fc1", 0, 0, 2])
+      ShowText(["【くのいちスキュラ】"])
+      ShowText(["今度の敵は、魔王軍という情報を掴んだわ。"])
+      ShowText(["エルフ姫と近しい幹部から聞いた話よ。"])
+      ShowTextAttributes(["kuno_scylla_fc1", 0, 0, 2])
+      ShowText(["【くのいちスキュラ】"])
+      ShowText(["まさか、魔王への反乱を起こすつもりなの……？"])
+      ShowText(["エルフ姫は、いったい何を考えているのかしら……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1138, 0, 7, 1])
+      ShowTextAttributes(["kuno_scylla_fc1", 0, 0, 2])
+      ShowText(["【くのいちスキュラ】"])
+      ShowText(["今度の敵は、魔王軍という情報があったんだけど……"])
+      ShowText(["魔王は魔王でも、黒のアリスの間違いだったみたいね。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["kuno_hapy_fc1", 0, 0, 2])
+    ShowText(["【くのいちハーピー】"])
+    ShowText(["私たちは、くのいち四姉妹（義理）！"])
+    ShowText(["生まれし時は違えども、死ぬ時は一緒よ！"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["kuno_arachne_fc1", 0, 0, 2])
+    ShowText(["【くのいちアラクネ】"])
+    ShowText(["エルフ姫は、武芸百般。"])
+    ShowText(["刀を持てば無双、槍術も弓術も天下一品……"])
+    ShowTextAttributes(["kuno_arachne_fc1", 0, 0, 2])
+    ShowText(["【くのいちアラクネ】"])
+    ShowText(["まさしく、最強の引きこもり。"])
+    ShowText(["姫を部屋から引きずり出せる者はいないわ。"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【エルフ】"])
+    ShowText(["ああ、忙しい忙しい……"])
+    ShowText(["バトルファックなら、あっちの部屋の娘とやってね。"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["がんばって、ここまで来てみたよ♪"])
+    ShowText(["旅のゴールまで、あと少し！"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ゴールも間近だね。"])
+    ShowText(["あたし達の冒険も、そろそろ終わりかな……？"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1138, 0, 6, 2])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["【枕流漱石】"])
+      ShowText(["なんだか、里が物々しいね。"])
+      ShowText(["面倒な時に、遊びに来ちゃったなぁ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1138, 0, 7, 1])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["【枕流漱石】"])
+      ShowText(["あたし、自分の名前を漢字で書けないんだよ。"])
+      ShowText(["どういう意味かも知らない。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([1, 1138, 0, 6, 2])
+      ShowTextAttributes(["mametanuki_fc1", 0, 0, 2])
+      ShowText(["【豆狸】"])
+      ShowText(["たぬきの毒消し薬を納入に来たんだけど……"])
+      ShowText(["戦いに巻き込まれちゃったらイヤだなぁ。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1138, 0, 7, 1])
+      ShowTextAttributes(["mametanuki_fc1", 0, 0, 2])
+      ShowText(["【豆狸】"])
+      ShowText(["ゴタゴタも収まったみたいで、商談も無事に済んだよ。"])
+      ShowText(["もう少しだけ、この里でゆっくりして行こうかな。"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([405, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺はマジックポットだった！"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["kunoitielf2_fc1", 0, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["会心回避能力って、会心の一撃を回避するわけじゃないの。"])
+    ShowText(["会心の一撃を、普通の攻撃として受けるのよ。"])
+    ShowTextAttributes(["kunoitielf2_fc1", 0, 0, 2])
+    ShowText(["【くのいちエルフ】"])
+    ShowText(["上位の強敵は、効果の高い会心回避能力を持っているわ。"])
+    ShowText(["ボス戦で会心の一撃が出にくいのは、それが原因なのよ。"])
+    Empty([])

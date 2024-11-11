@@ -1,0 +1,25 @@
+CommonEvent 662
+Name = "イベント：ドラゴン娘"
+
+  999([662])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 441, 0])
+    ShowTextAttributes(["dragon_fc1", 0, 0, 2])
+    ShowText(["【ドラゴン娘】"])
+    ShowText(["せいぜい火傷せんようにな！"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["dragon_fc1", 0, 0, 2])
+  ShowText(["【ドラゴン娘】"])
+  ShowText(["竜の力、授けてやろう！"])
+  ControlSwitches([441, 441, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ドラゴン娘から不思議な力が与えられた！"])
+  ShowText(["次のボスフロアまで、ブレスの威力が二倍になる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

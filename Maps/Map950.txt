@@ -1,0 +1,373 @@
+Display Name = "ポケット魔王城 コラボルーム"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ようやく、同盟者達を全員確保できたな。"])
+      ShowText(["しかし、よくここまで厄介な連中が揃ったものよ……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["ようやく、同盟者達を全員確保できましたね。"])
+      ShowText(["まったく、厄介な連中の勢揃いです……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["この全員を監視なんて……"])
+    ShowText(["本当に、僕達だけで出来るのかな？"])
+    ShowPicture([5, "80_executioner_st01", 0, 0, 70, -50, 70, 70, 255, 0])
+    ShowPicture([6, "80_ogretooth_st01", 0, 0, -150, 80, 100, 100, 255, 0])
+    ShowPicture([7, "80_mistilteinn_st01", 0, 0, 280, 130, 80, 80, 255, 0])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["【ミステルテイン】"])
+    ShowText(["監視の必要はありません。"])
+    ShowText(["少なくとも私達三人は、事を起こす気はないので……"])
+    ShowTextAttributes(["ogretooth_fc1", 0, 0, 2])
+    ShowText(["【オーガトゥース】"])
+    ShowText(["必要なものは、手に入ったからな。"])
+    ShowText(["これでも、お前達にはそれなりに感謝してるんだぜ！"])
+    ShowTextAttributes(["executioner_fc1", 0, 0, 2])
+    ShowText(["【エクスキューショナー】"])
+    ShowText(["だから、しばらく大人しくするね♪"])
+    ShowText(["……少しのつまみ食いも、ダメかな？"])
+    ShowPicture([5, "80_myuska_st11", 0, 0, -200, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_nemea_st01", 0, 0, 15, 0, 100, 100, 255, 0])
+    ShowPicture([7, "80_vinum_st01", 0, 0, 250, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["vinum_fc1", 2, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["元より、あまり深くは関わらぬつもりじゃった。"])
+    ShowText(["そもそも儂は元の世界でやる事がある身じゃ。"])
+    ShowTextAttributes(["vinum_fc1", 2, 0, 2])
+    ShowText(["【ヴィヌム】"])
+    ShowText(["戻れるものなら、さっさと元の世界に戻りたいものよ。"])
+    ShowTextAttributes(["myuska_fc1", 7, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["ええ～？　あたしはもっと遊びたいなぁ。"])
+    ShowText(["折角の海外旅行みたいなもんなんだしさぁ。"])
+    ShowTextAttributes(["myuska_fc1", 5, 0, 2])
+    ShowText(["【ミュスカ】"])
+    ShowText(["どーせ帰るんなら、やりたい放題してからでも……"])
+    ShowTextAttributes(["nemea_fc1", 0, 0, 2])
+    ShowText(["【ネメア】"])
+    ShowText(["……ミュスカちゃんは、私達が目を配っておくわ。"])
+    ShowText(["これ以上、お婆様を煩わせるつもりもないし……ね？"])
+    ErasePicture([6])
+    ErasePicture([7])
+    ShowPicture([5, "80_daimeikai_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+    ShowText(["【大明海】"])
+    ShowText(["……ところで、なんで俺がここにいるんだ？"])
+    ShowText(["この連中とまとめられてるのは不本意なんだが。"])
+    ShowPicture([7, "80_lira_st01", 0, 0, -200, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 200, 0, 100, 100, 255, 0])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["【ミュゼット】"])
+    ShowText(["私も、そろそろ元の世界に戻りたいわね。"])
+    ShowText(["不本意だけど、そのためなら手を貸してあげる。"])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["【ベル】"])
+    ShowText(["ミュゼット様の、ご意志のままに……"])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["【リラ】"])
+    ShowText(["私達は、一心同体だからね……♪"])
+    ErasePicture([6])
+    ErasePicture([7])
+    ShowPicture([5, "80_gilgoon_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["gilgoon_fc1", 0, 0, 2])
+    ShowText(["【ギルゴーン】"])
+    ShowText(["元の世界に戻りたいのは、我も同じ。"])
+    ShowText(["そのための方法を発見せねばならん……"])
+    ShowPicture([5, "80_fulbeua_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["私が元の世界に戻れば……"])
+    ShowText(["この世界から、究極の美が失われる事になるわ。"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["【フルビュア】"])
+    ShowText(["それでも……戻らなければならないわね。"])
+    ShowText(["今この瞬間も、元の世界で私は求められているのだから。"])
+    ConditionalBranch([0, 4, 0])
+      ShowPicture([5, "80_alice_st73", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["元の世界に戻りたいのは、みな同じだろう。"])
+      ShowText(["だが、お前達の通ってきたゲートはもはや存在しない。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["元の世界に戻りたいのは、みな同じでしょう。"])
+      ShowText(["ですが、貴方達の通ってきたゲートはもう存在しません。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["est_fc1", 1, 0, 2])
+    ShowText(["【エスト】"])
+    ShowText(["白兎の力は、もう借りられないのかしら？"])
+    ShowText(["あの子がいれば、私が夢に堕としてあげるけど……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["最初のゲートは、白兎のミスで開かれた。"])
+    ShowText(["その後、エストは白兎を操り他の異世界に干渉したのだ。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["もう一度、白兎にゲートを開いてもらうという手もあるが――"])
+    ShowText(["肝心の白兎と接触する手立ては無いのだ。"])
+    ShowPicture([5, "80_dakki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["それに関して、ひとつ聞きたいのだが……"])
+    ShowText(["なぜ、白兎はあそこまで弱っていた？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["白兎が、弱っていた……？"])
+      ShowText(["エストが快楽に堕としたからではないのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["白兎が、弱っていた……？"])
+      ShowText(["エストが快楽に堕としたからではないのですか？"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["いや……それ以前から奴は弱っていた。"])
+    ShowText(["妾から見ても、衰弱振りは隠せんほどにな。"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["そもそも最初に誤ってゲートを開いたのも、"])
+    ShowText(["衰弱ゆえの失態であろう。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["そう言えば、貴様はずっと白兎に化けていたな。"])
+      ShowText(["記憶や性格も、コピーしていたように見えたが……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["そう言えば、貴方はずっと白兎に化けていましたね。"])
+      ShowText(["記憶や性格も、コピーしていたようですが……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["妾の変化は、記憶を含め寸分違わずコピーする……"])
+    ShowText(["だが、それは相手の分析が完了していたらの話じゃ。"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["あの白兎への変身は、正直中途半端だったのだ。"])
+    ShowText(["それゆえに記憶部分が曖昧で、ボロを出した。"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["「『勇者』の素性を知っているかどうか」……"])
+    ShowText(["妾の記憶で補完したのがマズかったようじゃな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["白兎に化けた妲己は、カズヤの過去に関する事を口にした――"])
+    ShowText(["それゆえ、正体を見破られてしまったのだ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["白兎は、完全に分析できなかったのか……？"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["分析も何も、「白兎」という実体は存在せんのだ。"])
+    ShowText(["奴は存在ではなく、概念に過ぎん。"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["妾とて、フィボナッチ数や熱力学第二法則といった、"])
+    ShowText(["法則や概念そのものには化けられん……"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["ゆえに、白兎への完全変化は不可能よ。"])
+    ShowText(["奴は法則であり、実体をもって存在するものではない。"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["白兎本人も、自分でそんな事を言っていたが……"])
+      ShowText(["デタラメではなかったようだな。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["白兎本人も、自身でそのような事を言っていましたが……"])
+      ShowText(["出任せではなかったようですね。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["「白兎」というのは、あくまで物理法則。"])
+    ShowText(["あの兎の肉体は、あくまで法則により動く稼働端末に過ぎん。"])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["【妲己】"])
+    ShowText(["その端末の一つが、知っての通りエストによって捕獲された。"])
+    ShowText(["妾は、その精神に潜り込んだのだが――"])
+    Wait([30])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    Wait([60])
+    ErasePicture([5])
+    ControlSwitches([31, 31, 1])
+    ChangeMapDisplay([0])
+    TransferPlayer([0, 951, 9, 8, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    CallCommonEvent([111])
+    Empty([])

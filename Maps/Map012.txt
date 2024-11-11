@@ -1,0 +1,1917 @@
+Display Name = "イリアスヴィルの裏山"
+Parallax Name = "Mountains5"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["村に戻ってる暇はないぞ。"])
+      ShowText(["早くハンスさんを助け出さないと！"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["そろそろ洗礼の儀式の時間だな。"])
+      ShowText(["急いで村に戻らないと……"])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["イリアス神殿は、まっすぐ北だ。"])
+      ShowText(["この時間だと、もしかしたら遅刻かも……"])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ぷるぷるー！"])
+    ShowText(["あたし、悪いスライムじゃないよ。"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["悪いスライムじゃないから、薬草あげる♪"])
+      ShowText(["友達のしるしだよ♪"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([1, 0, 0, 3])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["全部使っちゃったら、また来てね。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([8, 1])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["今は、手持ちの薬草がないの。"])
+        ShowText(["つんでくるから、ちょっと待っててね。"])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["悪いスライムじゃないから、薬草あげる♪"])
+        ShowText(["友達のしるしだよ♪"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeItems([1, 0, 0, 3])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["全部使っちゃったら、また来てね。"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["いらっしゃいませー♪"])
+    ShowText(["スライムのお店屋さんだよ♪"])
+    ShopProcessing([0, 1, 0, 0, true])
+    ShopItem([0, 322, 0, 0])
+    ShopItem([1, 657, 0, 0])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["またきてねー♪"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["おさかなは、スライムの大好物なんだよ♪"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["おさかな、つかまえるよー♪"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["おさかな、あげる♪"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([322, 0, 0, 1])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["おさかな、つかまらないよぉ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["おさかなー♪　おさかなー♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["542"])
+    ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+    ShowText(["【ドーメイマ】"])
+    ShowText(["み、水……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["お店で売る野菜を育ててるんだよ。"])
+    ShowText(["とってもおいしい野菜、村で買っていってね♪"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 3, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["木こりの人なら、山頂の方に連れて行かれたよ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["木こりの人、村に戻っていったよ。"])
+      ShowText(["何もなくて、よかったね♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["今日も平和だよ♪"])
+      ShowText(["ずっとずっと、平和だといいな♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン♪　ブーメラン♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["野菜を食べる鳥を追い払うよー！"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["82"])
+    ShowTextAttributes(["suzume_fc1", 0, 0, 2])
+    ShowText(["【ちゅん】"])
+    ShowText(["私もダメですか……？"])
+    ShowText(["そうですか……"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン♪　ブーメラン♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["スライム族は、ブーメランが大好きなんだよー♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【ライム】"])
+    ShowText(["一緒に、踊ろうよ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["あたし達は、わるい事しないよ。"])
+    ShowText(["だから、いじめないでね。"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["この山にはわるいスライムもいるから、気をつけてね。"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([1, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([657, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["人間をさらったのは、うさちゃんだよ。"])
+      ShowText(["うさちゃんは、とっても悪いスライムなんだよ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ConditionalBranch([4, 54, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["うさちゃん、戻ってきたんだ～♪"])
+        ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+        ShowText(["【うさ】"])
+        ShowText(["うさうさー！　ちょっと立ち寄っただけだよ。"])
+        ShowText(["あたしは今、世界を救うために旅してるんだから♪"])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["うさちゃん、すっご～い！"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["反省したうさちゃんは、心を鍛える旅に出かけたよ……"])
+      ShowText(["と思ったら、すぐ近くの原っぱでにんじん食べてた。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeGold([0, 0, 100])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["100G 手に入れた！"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ぶんぶんぶーん♪"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン♪　ブーメラン♪"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["こうそくかいてーん♪"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([51, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["うさちゃんも、本当はそんなにわるいスライムじゃないよ。"])
+    ShowText(["ちょっと悪ぶってるだけの、ロンリースライムなんだよ……"])
+    ConditionalBranch([4, 54, 0])
+      ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+      ShowText(["【うさ】"])
+      ShowText(["うにゅにゅ、はずかしいよぉ……"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["とん、てん、かん♪"])
+    ShowText(["スライムの鍛冶屋さんだよー♪"])
+    ShowChoices([["説明を聞かない", "説明を聞く"], 1])
+    When([0, "説明を聞かない"])
+      Empty([])
+
+    When([1, "説明を聞く"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["鍛冶屋さんでは、新しい武器や防具が合成できるの。"])
+      ShowText(["ただし元になる武器や防具と、素材を用意してね。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["例えば、うちの店ではね。"])
+      ShowText(["ブーメランとおさかなを持ってきてくれれば……"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["……後は、持ってきてからのおたのしみ♪"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["あと、装備している武器や防具は合成できなかったけど……"])
+      ShowText(["今は装備したままでも合成できるようになったんだって。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["もちろん、合成にかかる代金もいるよ。"])
+      ShowText(["それじゃあ、お仕事するね♪"])
+      Empty([])
+
+    ChoicesEnd([])
+    Script(["call_synthesize(1)"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["またきてねー♪"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["スライムの大好物はねぇ……"])
+    ShowText(["きれいな水と、おいしいおさかな。"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["イリアスヴィルで売ってる、甘いお菓子も大好き♪"])
+    ShowText(["お金を貯めて、買いに行くんだよ♪"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 3, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["さすが、うさちゃん！"])
+      ShowText(["人間をさらっちゃうなんて、超ワルスライムー！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["さすが、うさちゃん！"])
+      ShowText(["人間を逃がすなんて、超余裕スライムー！"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ConditionalBranch([4, 54, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["さすが、うさちゃん！"])
+        ShowText(["人間をさらっちゃうなんて、超ワルスライムー！"])
+        ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+        ShowText(["【うさ】"])
+        ShowText(["こういう声に負けて、あたしは道を踏み外してしまった……"])
+        ShowText(["だから今、あたしはしょくざいの旅を続けてるの。"])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["【スライム娘】"])
+        ShowText(["……食材？"])
+        ShowText(["人間を食材にするなんて、超ワルスライムー！"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["さすが、うさちゃん！"])
+      ShowText(["人間をさらっちゃうなんて、超ワルスライムー！"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["でも最近、うさちゃんの姿を見かけないの。"])
+      ShowText(["きっとどこかで、すっごく悪いコトしてるんだよ。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Script(["actor_label_jump"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わぁ、葉っぱにナメクジついてる。"])
+    ShowText(["ナメクジきらーい……"])
+    ExitEventProcessing([])
+    Label(["55"])
+    ShowTextAttributes(["name_fc1", 0, 0, 2])
+    ShowText(["【メルク】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わぁ、おっきなナメクジだぁ……"])
+    ShowText(["あっちいけー！"])
+    ShowTextAttributes(["name_fc1", 0, 0, 2])
+    ShowText(["【メルク】"])
+    ShowText(["スライムは嫌いよ……"])
+    ExitEventProcessing([])
+    Label(["85"])
+    ShowTextAttributes(["highslag_fc1", 0, 0, 2])
+    ShowText(["【エリザベス】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わぁ、おっきなナメクジだぁ……"])
+    ShowText(["あっちいけー！"])
+    ShowTextAttributes(["highslag_fc1", 0, 0, 2])
+    ShowText(["【エリザベス】"])
+    ShowText(["ふん、食べてやろうかしら……"])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わぁ、おっきなナメクジだぁ……"])
+    ShowText(["あっちいけー！"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["【ロザリオ】"])
+    ShowText(["このようなところで、迫害を受けるとは……"])
+    ShowText(["ヌルヌルだからですか……？"])
+    ExitEventProcessing([])
+    Label(["85"])
+    ShowTextAttributes(["name2_fc2", 1, 0, 2])
+    ShowText(["【メルティ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わぁ、おっきなナメクジが3匹も！"])
+    ShowText(["あっちいけー！"])
+    ShowTextAttributes(["name2_fc1", 0, 0, 2])
+    ShowText(["【メルティＡ】"])
+    ShowText(["失礼ね、野菜をかじったりはしないわよ……"])
+    ShowTextAttributes(["name2_fc1", 3, 0, 2])
+    ShowText(["【メルティＢ】"])
+    ShowText(["むしゃむしゃ……"])
+    ShowText(["姉さん、何か言った……？"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["うさうさー！　たべちゃうぞ～！"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ａ】"])
+    ShowText(["わーい、たべちゃうぞー♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ｂ】"])
+    ShowText(["わーい、しぼっちゃうぞー♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ハンス】"])
+    ShowText(["た、たすけてくれー！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["やめるんだ！　ハンスさんを放せ！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowPicture([5, "80_bunnyslime_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["へぇ、この村人を助けに来たの……？"])
+    ShowText(["このヒトよりも、キミの方がおいしそうだね。"])
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["うさうさー！　キミもたべちゃうぞ～♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ａ】"])
+    ShowText(["わーい、たべちゃうぞー♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ｂ】"])
+    ShowText(["わーい、しぼっちゃうぞー♪"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["くっ、戦うしかないか……！"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ErasePicture([5])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 3, false, false])
+    ShowPicture([10, "sys_black", 0, 0, 0, 0, 100, 100, 255, 0])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 1])
+    ControlSwitches([2001, 2001, 1])
+    SetEventLocation([40, 0, 41, 5, 0])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 12, 41, 6, 8, 2])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ErasePicture([10])
+    Script(["gain_medal(1)"])
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["きゅう……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ハンス】"])
+    ShowText(["ありがとう、ルカ！"])
+    ShowText(["まさか、お前に助けてもらえるなんてな。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ハンス】"])
+    ShowText(["それじゃあ、俺は先に村に戻ってるよ。"])
+    ShowText(["ありがとうな！"])
+    SetMoveRoute([40, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ControlVariables([1001, 1001, 0, 0, 4])
+    CallCommonEvent([112])
+    ChangeEncounter([0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……ふぅ、良かった良かった。"])
+    ShowText(["それじゃあ、僕も村に戻ろうか。"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["むぎゅう……"])
+    ShowText(["もう、悪さしないよう……"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ａ】"])
+    ShowText(["わーい、たべちゃうぞー♪"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘Ｂ】"])
+    ShowText(["わーい、しぼっちゃうぞー♪"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([176, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 2, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["なんだろうね……？"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["なんだったの……？"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["前に落ちてきたのは、何だったんだろうね。"])
+      ShowText(["ひょっとして、お星さまかな……？"])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["この私は、星にも等しいほど偉大な存在。"])
+        ShowText(["なかなか本質をつきますね、このぷるぷるは……"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["わーい♪　わーい♪"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["木の枝を拾って、ブーメラン作るの。"])
+    ShowText(["きれいにできたら、みんなに自慢できるよ♪"])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン♪　ブーメラン♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ここは、傷が治るイリアスヴィルの泉だよ♪"])
+    ShowText(["おさかなもいっぱいいるよー♪"])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン、だいすきー♪"])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメランは、スライム族のお守りだよ♪"])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ブーメラン♪　ブーメラン♪"])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ぷるちゃんのブーメランさばき、すごいね……"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["ねぇ、ブーメランの説明を聞きたい？"])
+    ShowChoices([["聞く", "聞かない"], 2])
+    When([0, "聞く"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["ブーメランは、全部の敵を一気に攻撃できる武器だよ。"])
+      ShowText(["装備すると、通常攻撃が敵全体に当たるようになるの。"])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["でもその分、剣に比べると命中率が低いの……"])
+      ShowText(["外すことも多いから、気をつけてね。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["あとブーメランで攻撃する場合、「器用さ」も大事だよ。"])
+      ShowText(["「攻撃力」と「器用さ」で、ダメージが決まるの。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["「器用さ」が高いヒトは、ブーメランが得意って事だよ。"])
+      ShowText(["「攻撃力」が重要な剣とは違うから、気をつけてね。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["ちょっと話がそれるけど……"])
+      ShowText(["「攻撃力」以外の数値が重要な武器は他にもあるよ。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["ブーメランは「器用さ」も大事だし……"])
+      ShowText(["他にも、「素早さ」が重要な武器もあるって話だよ。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["そういう事も考えながら、使う武器を選びたいよね。"])
+      ShowText(["詳しい話は、イリアス神殿でも聞けるよ。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["そういうわけで、ブーメランをよろしくね。"])
+      Empty([])
+
+    When([1, "聞かない"])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["そうなんだ……"])
+      Empty([])
+
+    ChoicesEnd([])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["こけこっこー！"])
+    ShowText(["おいしいタマゴだよー！"])
+    ShopProcessing([0, 340, 0, 0, true])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["またきてねー♪"])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["こけこっこー！"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["イリアスヴィルの人達に、にわとりの育て方を"])
+    ShowText(["教えてもらったよ！"])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ニワトリ】"])
+    ShowText(["コケコッコー！"])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ニワトリ】"])
+    ShowText(["コケコッコー！"])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ニワトリ】"])
+    ShowText(["コケコッコー！"])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["さっきの爆音は、この辺のはずだけど……"])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……あれは！？"])
+    PlayBGM(["RPG::BGM(@name=\"scene_sinpi\", @volume=100, @pitch=100)"])
+    ShowPicture([1, "iv_iriasu1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([1, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["地面に倒れていたのは、なんと天使様だった。"])
+    ShowText(["今朝の夢で見た、イリアス様に似ているような……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["……でも、なんだか小さいぞ。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……だ、大丈夫ですか！？"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["う……うう……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【？？？】"])
+    ShowText(["ここは……"])
+    ShowText(["いったい、何が……？"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["空から落ちてきた天使様は、ゆっくりと体を起こした――"])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 12, 63, 34, 0, 2])
+    ControlSwitches([2002, 2002, 0])
+    MovePicture([1, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    ErasePicture([1])
+    PlayBGM(["RPG::BGM(@name=\"irias\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_iriasu_st31", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……私は、創世の女神イリアス。"])
+    ShowText(["この世界を作った神、絶対にして唯一の存在。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["まさか、本当にイリアス様……！？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……でも、なんだか小さいような……"])
+    ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ち、小さい……？"])
+    ShowText(["全能なる神に対し、なんと不遜な物言いを……！"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["神の雷に打たれ、己こそ矮小な存在である事を"])
+    ShowText(["思い知るのです……！"])
+    Script(["display_skill_name(\"さばきのいかづち\")"])
+    PlaySE(["RPG::SE(@name=\"mon_denpa1\", @pitch=100, @volume=80)"])
+    ShakeScreen([5, 5, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["イリアスはさばきのいかづちを放った！"])
+    Script(["clear_skill_name"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……うわっ、ビリッとした！"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_iriasu_st36", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……あれっ？"])
+    ShowText(["なぜ消し炭にならないのです？"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["確かに、少しビリッときたけど……"])
+    ShowText(["これで消し炭ってのは、ちょっと……"])
+    ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["今度こそ、消し炭となりなさい！"])
+    ShowText(["炭化した肉体を、村に燃料として振る舞いましょう！"])
+    Script(["display_skill_name(\"さばきのいかづち\")"])
+    PlaySE(["RPG::SE(@name=\"mon_denpa1\", @pitch=100, @volume=80)"])
+    ShakeScreen([5, 5, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["イリアスはさばきのいかづちを放った！"])
+    Script(["clear_skill_name"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……うわっ！"])
+    ShowText(["なんなのこれ……？　静電気？"])
+    ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……なぜ、これほどまでに出力が弱いのです？"])
+    ShowText(["いったい、私の身に何が……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……鏡よ鏡。"])
+    ShowText(["この世で最も尊いこの私の、現在の姿を映しなさい。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["イリアスの前に魔力の鏡が現れた！"])
+    ShowText(["イリアスは、自らの姿を覗き込む……"])
+    ShowPicture([5, "80_iriasu_st36", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["……ちっちゃい！"])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["どういう事なのです、これは！？"])
+    ShowText(["まさか……六祖大縛呪！？"])
+    ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["ううっ……記憶さえ断片的とは……"])
+    ShowText(["いったい何者が、この私にこんな……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["黒のアリス？　プロメスティン？　それとも邪神の計略？"])
+    ShowText(["……ああ、思い当たる節が多すぎます！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["突然に落ちてきた謎の天使は、なにやら焦っている。"])
+    ShowText(["さて、いったいどうしたものか……"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["こうしてはいられません、ともかく天界に戻らないと……"])
+    ShowText(["……ルカ、あなたとの話は後です！"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    SetMoveRoute([59, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["行っちゃった……"])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_urayama\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["今のちっちゃな天使様は、いったい何者だったんだろう。"])
+    ShowText(["そして、なぜ名乗ってもいない僕の名前を知っていたのか。"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まさか、本当に本物のイリアス様だったりして――"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……ははっ、まさかそんなはずないよね。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……おっと、のんびりしてる場合じゃないか。"])
+    ShowText(["早くハンスさんを助けないと！"])
+    ControlVariables([1001, 1001, 0, 0, 3])
+    ControlSwitches([2002, 2002, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    PlayBGM(["RPG::BGM(@name=\"\", @volume=100, @pitch=100)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    SetMoveRoute([43, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([180])
+    ShotBalloonIcon([-1, 1, false])
+    ShotBalloonIcon([43, 1, false])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["な、何だ……！？"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["【スライム娘】"])
+    ShowText(["あっちから、何か落ちてきたみたいだよ……？"])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_urayama\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【小さな妖魔】"])
+    ShowText(["むっ……そこの少年。"])
+    ShowText(["このあたりで、ウサギ型の魔物を見なかったか？"])
+    ShowChoices([["山頂にいた", "見覚えはない"], 0])
+    When([0, "山頂にいた"])
+      ShowPicture([5, "80_alice_st72", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["【小さな妖魔】"])
+      ShowText(["……山頂か、礼を言うぞ。"])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【小さな妖魔】"])
+      ShowText(["奴め、よくも余をこんな目に……"])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["……何だったんだろう。"])
+      ShowText(["今日は、ちっちゃな天使やら妖魔によく会うなぁ。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["しかし……あの妖魔が探しているウサギ型の魔物と、"])
+      ShowText(["さっき戦ったバニースライムは違うような気もする。"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["様子を見に行った方が良いかもしれない……"])
+      ControlVariables([1001, 1001, 0, 0, 5])
+      ControlSwitches([2003, 2003, 0])
+      Empty([])
+
+    When([1, "見覚えはない"])
+      ShowPicture([5, "80_alice_st74", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【小さな妖魔】"])
+      ShowText(["……そうか。"])
+      ShowText(["この辺りにいると、スライムどもから聞いたのだが……"])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["なんでこんな目に……"])
+    ShowText(["もう悪いことしないよぉ……"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["やめてー！　たすけてー！"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["やめてー！　たすけてー！"])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["【小さな妖魔】"])
+    ShowText(["よくも、余をこんな姿に！"])
+    ShowText(["今すぐ元に戻せ、ドアホめ！"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["何を言ってるのか分からないよー！"])
+    ShowText(["きっとウサギ違いだよー！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetEventLocation([0, 0, 40, 8, 0])
+    ShotBalloonIcon([0, 8, false])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【小さな妖魔】"])
+    ShowText(["むぅ……"])
+    ShowText(["確かに、あの時のウサギと違う気がするな。"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["【小さな妖魔】"])
+    ShowText(["あのウサギめ、いったいどこに隠れたのだ！"])
+    ShowText(["ええい、絶対に逃がさんぞ！"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["いったい、なんなんだ……？"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["【バニースライム】"])
+    ShowText(["むぎゅう……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……とにかく、村に戻ろうか。"])
+    ShowText(["洗礼の儀式も、もうすぐだしね。"])
+    ControlSwitches([2003, 2003, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["泉の水には癒しの効果があるようだ……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ControlVariables([1041, 1041, 0, 0, 2])
+    ControlSwitches([2116, 2116, 0])
+    GatherFollowers([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetEventLocation([65, 0, 44, 1, 0])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ChangeMapDisplay([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラミが空を飛ぶ練習をするため、山頂に来たのだが――"])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["おい、いつまでそうしているつもりだ。"])
+      ShowText(["ここから飛べば、揚力が発生するのではなかったのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["さあ、覚悟を決めて投身じ……いえ、飛ぶ練習をしましょう。"])
+      ShowText(["大丈夫、私の言葉を信じるのです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["ちょっと、高すぎない？"])
+    ShowText(["そこらへんの木じゃダメなの……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["覚悟を決めろ。"])
+      ShowText(["貴様は仮にも魔物、落ちても死にはせん……たぶん。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["信じる心が、奇跡をなしとげるのですよ……"])
+      ShowText(["さあ、私を信じて飛ぶのです。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["よし……それじゃあ……！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラミは覚悟を決めた！"])
+    ShowTextAttributes(["inp_fc1", 2, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["や～～っ！！"])
+    PlaySE(["RPG::SE(@name=\"mon_fall1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["まったく飛べていない！"])
+    ShowText(["ただの自由落下だ！"])
+    PlaySE(["RPG::SE(@name=\"mon_bom2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……………………"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ダメだったか……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["楽しいと思ったのですが……"])
+      ShowText(["なんだかこの山に落ちてきた事を思い出し、嫌な気分です。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["落下したラミを拾いに行かなければ……"])
+    FadeoutScreen([])
+    Wait([60])
+    TransferPlayer([0, 12, 56, 48, 4, 2])
+    SetEventLocation([65, 0, 55, 48, 6])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    FadeinScreen([])
+    ShowTextAttributes(["inp_fc1", 2, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["わ～ん、いたいよ～！"])
+    ShowText(["頭にコブできちゃった～！"])
+    ShowTextAttributes(["inp_fc1", 1, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["でもおっぱいがクッションになって、ボディは無傷！"])
+    ChangeSkills([0, 56, 0, 544])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ラミは\\I[98]\\C[1]防御力10%アップ\\C[0]を修得した！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["その胸が、飛べない原因ではないのか……？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["その胸がなければ、即死でしたね……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["でも、まったく飛べなかったね。"])
+    ShowText(["もっと高い山で挑んでみる？"])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["えっ……？"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["貴様、存外に無慈悲だな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["私以上に容赦のない……"])
+      ShowText(["流石は、ルシフィナの直系……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["……えっ？"])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["……でも、あたし諦めないよ！"])
+    ShowText(["もっと高い山から飛び降りてみる！"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["【アリス】"])
+      ShowText(["ふむ……ならば、アモス聖山などどうだ？"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["【イリアス】"])
+      ShowText(["では、アモス聖山などどうでしょう。"])
+      ShowText(["天使がお迎えに来るかもしれませんよ。"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["【ラミ】"])
+    ShowText(["よ～し、がんばるよ～！"])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetEventLocation([65, 0, 69, 0, 0])
+    ConditionalBranch([1, 1001, 0, 12, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["アモス聖山は、北のセントラ大陸にある巨大な山。"])
+      ShowText(["今すぐ行ける場所ではないが、立ち寄る機会もあるだろう――"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["こうして、ラミを連れてアモス聖山に向かうことになった。"])
+      ShowText(["今度こそ、飛べるようになるだろうか――"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])

@@ -1,0 +1,25 @@
+CommonEvent 611
+Name = "イベント：ウンディーネ"
+
+  999([611])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 63, 0])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["【ウンディーネ】"])
+    ShowText(["私の力、すでに作用しているはずよ……"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["undine_fc1", 0, 0, 2])
+  ShowText(["【ウンディーネ】"])
+  ShowText(["私の力、使いなさい……"])
+  ControlSwitches([63, 63, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["ウンディーネが力を貸してくれるようだ！"])
+  ShowText(["次のボスフロアまで、水の加護が与えられる！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

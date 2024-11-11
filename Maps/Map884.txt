@@ -1,0 +1,379 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 20, 21, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 20, 21, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 20, 21, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 51, 21, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 51, 21, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 883, 51, 21, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowPicture([5, "80_succubusm_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["ここは、宝物庫……"])
+    ShowText(["通すわけにはいかないわ♡"])
+    ErasePicture([5])
+    BattleProcessing([0, 1369, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([909, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([538, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowPicture([5, "80_succubusm_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([1, 1208, 0, 3, 0])
+      ControlVariables([1208, 1208, 0, 0, 4])
+      ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+      ShowText(["【夢魔】"])
+      ShowText(["解除装置の場所が知りたいの？"])
+      ShowText(["でも、タダじゃねぇ……"])
+      ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+      ShowText(["【夢魔】"])
+      ShowText(["そっちの男三人の誰かから、少し精を吸わせてよ。"])
+      ShowText(["そうしたら、教えてあげる。"])
+      ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+      ShowText(["【マガツ】"])
+      ShowText(["うむ、良いぞ。"])
+      ShowText(["さあ、誰に吸わせる？"])
+      ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["めっちゃ快諾してるぅ！？"])
+      ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["ちょっと、そんな勝手に――"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["誰の精を夢魔に与えますか？"])
+      ShowChoices([["カズヤ", "白念", "ロウラット"], 0])
+      When([0, "カズヤ"])
+        ShowTextAttributes(["kazuya_fc4", 7, 0, 2])
+        ShowText(["【カズヤ】"])
+        ShowText(["僕か、仕方ない……"])
+        ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+        ShowText(["【躯】"])
+        ShowText(["カズヤ、声が上ずっているぞ……"])
+        ShowText(["もしかして、期待しているのか？"])
+        ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+        ShowText(["【カズヤ】"])
+        ShowText(["ち、違うよ！"])
+        ShowText(["本当に仕方なくだって……！"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["それじゃあ、ちゅっ♡"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_pyu1\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔はカズヤに唇を重ねた！"])
+        ShowTextAttributes(["kazuya_fc3", 0, 0, 2])
+        ShowText(["【カズヤ】"])
+        ShowText(["うぅっ……！"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["ちゅぅぅっ……♡"])
+        ShowTextAttributes(["kazuya_fc3", 4, 0, 2])
+        ShowText(["【カズヤ】"])
+        ShowText(["あ……うぁぁぁ……"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_chupa6\", @pitch=100, @volume=80)"])
+        ChangeHP([0, 815, 1, 0, 1500, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["カズヤの精が吸われていく……"])
+        ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+        ShowText(["【躯】"])
+        ShowText(["……………………"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["lanpass_fc2", 5, 0, 2])
+        ShowText(["【ランパス】"])
+        ShowText(["ねぇ、もうそれくらいでいいんじゃない？"])
+        ShowText(["躯ちゃんの髪の毛がゾワゾワし出したんだけど……"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["うふふっ、味わわせてもらったわ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔は、カズヤから唇を離した……"])
+        Empty([])
+      When([1, "白念"])
+        ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+        ShowText(["【マガツ】"])
+        ShowText(["では白念、お主が行け。"])
+        ShowTextAttributes(["byakunen_fc2", 4, 0, 2])
+        ShowText(["【白念】"])
+        ShowText(["そ、そんな……お師匠様……"])
+        ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+        ShowText(["【マガツ】"])
+        ShowText(["これも修行と思うがいい……さあ。"])
+        ShowTextAttributes(["byakunen_fc3", 2, 0, 2])
+        ShowText(["【白念】"])
+        ShowText(["は、はい……お手柔らかにお願いします。"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["それじゃあ、ちゅっ♡"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_pyu1\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔は白念に唇を重ねた！"])
+        ShowTextAttributes(["byakunen_fc3", 5, 0, 2])
+        ShowText(["【白念】"])
+        ShowText(["んんっ……"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["ちゅぅぅっ……♡"])
+        ShowTextAttributes(["byakunen_fc3", 4, 0, 2])
+        ShowText(["【白念】"])
+        ShowText(["ふぁぁぁぁ……"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_chupa6\", @pitch=100, @volume=80)"])
+        ChangeHP([0, 811, 1, 0, 1500, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["白念の精が吸われていく……"])
+        ShowTextAttributes(["magatu_fc1", 4, 0, 2])
+        ShowText(["【マガツ】"])
+        ShowText(["くくく……感じておるな、白念。"])
+        ShowText(["とろけた顔をしおって……くくくっ。"])
+        ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+        ShowText(["【リジェオ】"])
+        ShowText(["（この人、変なシュミでもあるの……？）"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["うふふっ、味わわせてもらったわ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔は、白念から唇を離した……"])
+        Empty([])
+      When([2, "ロウラット"])
+        ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+        ShowText(["【リジェオ】"])
+        ShowText(["えっ、ちょっと……！"])
+        ShowText(["ロウラットが行かなくても……"])
+        ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+        ShowText(["【ロウラット】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["それじゃあ、ちゅっ♡"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_pyu1\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔はロウラットに唇を重ねた！"])
+        ShowTextAttributes(["lawrat_fc1", 1, 0, 2])
+        ShowText(["【ロウラット】"])
+        ShowText(["…………！！"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["ちゅぅぅっ……♡"])
+        ShowTextAttributes(["lawrat_fc1", 1, 0, 2])
+        ShowText(["【ロウラット】"])
+        ShowText(["……………………"])
+        PlaySE(["RPG::SE(@name=\"mon_ero_chupa6\", @pitch=100, @volume=80)"])
+        ChangeHP([0, 807, 1, 0, 1500, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ロウラットの精が吸われていく……"])
+        ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+        ShowText(["【マガツ】"])
+        ShowText(["どうした、リジェオ。"])
+        ShowText(["ずいぶん苛立っているようだが……"])
+        ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+        ShowText(["【リジェオ】"])
+        ShowText(["別に……苛立って、ないし……"])
+        ShowText(["このぐらい、全然珍しいことでもないから……"])
+        ShowTextAttributes(["succubusm_fc1", 1, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["うふふっ、味わわせてもらったわ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["夢魔は、ロウラットから唇を離した……"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1208, 0, 4, 1])
+      ConditionalBranch([1, 1208, 0, 6, 2])
+        ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+        ShowText(["【夢魔】"])
+        ShowText(["それじゃあ、約束通り……ヒントをあげるわ。"])
+        ShowText(["夢魔が踊ってるフロアに行ってみなさい。"])
+        ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+        ShowText(["【リジェオ】"])
+        ShowText(["精をもらっておいて……ヒントだけ？"])
+        ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+        ShowText(["【マガツ】"])
+        ShowText(["とりあえず、該当フロアを探し回ってみよう。"])
+        ShowText(["その部屋にいる者なら、何か知っているかもしれんしな。"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["succubusm_fc1", 2, 0, 2])
+    ShowText(["【夢魔】"])
+    ShowText(["ああもう、忙しいわ……"])
+    ShowText(["ちょっと、邪魔しないでよ。"])
+    ErasePicture([5])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["どれ、少々つまみ食いでも……"])
+    ShowText(["……見ないでよ。"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["monk_demon_fc1", 0, 0, 2])
+    ShowText(["【モンクデーモン】"])
+    ShowText(["夢魔は本来、食事する必要がないみたいね。"])
+    ShowText(["でも、味を楽しむ夢魔も多いみたい。"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([191, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([67, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])

@@ -1,0 +1,471 @@
+Display Name = ""
+Parallax Name = "白地"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 882, 7, 9, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 882, 27, 9, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 886, 40, 20, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 886, 51, 20, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["て……天使！？"])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["夢の中に、「夢の主」ってのが出てきて……"])
+    ShowText(["フラフラと、このお城に来ちゃったの。"])
+    ShowTextAttributes(["cupid_fc1", 4, 0, 2])
+    ShowText(["【キューピッド】"])
+    ShowText(["ここ、とっても楽しいよね♪"])
+    ShowText(["このままずっと、夢を見ていたいな～♪"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["ここには、泉があったんだけど……"])
+    ShowText(["転送される時に、ついて来なかったみたいね。"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 3, 2])
+      ShowTextAttributes(["succubusm_fc1", 2, 0, 2])
+      ShowText(["【夢魔】"])
+      ShowText(["ちょっと、踊りの邪魔をしないでよ……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1208, 0, 4, 0])
+      ControlVariables([1208, 1208, 0, 0, 5])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【夢魔】"])
+    ShowText(["解除装置の場所？"])
+    ShowText(["私の真後ろの壁……注意深く調べてみなさい。"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["いいぞ！　いいぞ～！"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["よその世界のお客さんも、ずいぶんいっぱい来てるわね。"])
+    ShowText(["私達は、愉しければいいのよ……♡"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["【ランパス】"])
+    ShowText(["このお城は、楽しいね～♪"])
+    ShowText(["バーゲストも連れて来ればよかったな。"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["「夢の主」ねぇ……"])
+    ShowText(["楽しいコトなら、協力してもいいかな。"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["この世界も、なかなか愉しめそうね……うふふっ♡"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["飲んで、食って、寝て、遊んで……"])
+    ShowText(["これが夢の世界か～！"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["【マガツ】"])
+    ShowText(["よその世界まで来て、堕落するでない。"])
+    ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["げっ、マガっつぁん！"])
+    ShowText(["なんでここにいるの～！？"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["同盟者っての、何人か見たことがあるけど……"])
+    ShowText(["みんな、好きになれそうにないわね～。"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["【ランパス】"])
+    ShowText(["毎日が、お祭りみたい♪"])
+    ShowText(["ねぇねぇ、一緒に踊ろうよ～♪"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["【サキュバス】"])
+    ShowText(["「夜の国」って、面白そう……"])
+    ShowText(["まさに夢魔の天国よね♪"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["あれ、キミ……白念君じゃないの？"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["はい、そうですけど……"])
+    ShowText(["お狐さん達も、まほろば山に帰りましょうよ。"])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["もうちょっとだけ、遊んでからね。"])
+    ShowText(["この魔城のお酒、全部飲み尽くしてから……"])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["【白念】"])
+    ShowText(["……帰る気、ないでしょう？"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["【モンクサキュバス】"])
+    ShowText(["魔王城より、この城の方がいいわね。"])
+    ShowText(["毎日宴で、大騒ぎよ……♪"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["【ミミック娘】"])
+    ShowText(["夢の中で啓示を受けて、たくさんのミミックがここに来たわ。"])
+    ShowText(["みんな引きこもり気質だから、夜の国の到来は大歓迎なの。"])
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["【ミミック娘】"])
+    ShowText(["でも、ウェーイな雰囲気には馴染めないから……"])
+    ShowText(["みんな、魔城の地下フロアに引きこもっていったわ。"])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["【カズヤ】"])
+    ShowText(["地下の宝箱は、ミミックだらけかもしれないな。"])
+    ShowText(["気をつけないと……"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 4, 2])
+      ShowTextAttributes(["byakunen_fc3", 0, 0, 2])
+      ShowText(["【白念】"])
+      ShowText(["この壁、何か……"])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["【夢狐】"])
+      ShowText(["どうしたの？"])
+      ShowText(["そんなところに突っ立って……"])
+      ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+      ShowText(["【白念】"])
+      ShowText(["いえ……考えすぎですね、失礼しました。"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1208, 0, 5, 0])
+      ControlVariables([1208, 1208, 0, 0, 6])
+      ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+      ShowText(["【白念】"])
+      ShowText(["あっ……ここに、隠し扉がありますよ！"])
+      PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$!mazyou_door\\\", 0])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$!mazyou_door\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      ShowTextAttributes(["kazuya_fc2", 1, 0, 2])
+      ShowText(["【カズヤ】"])
+      ShowText(["よく見つけたな、白念くん。"])
+      ShowText(["解除装置も、この先にあるんじゃないか……？"])
+      ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+      ShowText(["【マガツ】"])
+      ShowText(["この壁のヒビ、隠し部屋の入り口だったか。"])
+      ShowText(["他の場所にもないか、目を光らせておかねばな。"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 887, 10, 11, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$!mazyou_door\\\", 0])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$!mazyou_door\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 887, 10, 11, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["【ヴィクトリア】"])
+    ShowText(["私は、キューピッドの付き添いで来ただけよ。"])
+    ShowText(["ダラダラしたいなんて、思っていないわ……"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["【ヒツジ娘】"])
+    ShowText(["メェェ……メェェェェ……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ヒツジ娘は悲しげに鳴いている……"])
+    ConditionalBranch([0, 2914, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["【リジェオ】"])
+      ShowText(["……酒飲み羊？"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【ヒツジ娘】"])
+      ShowText(["夢の中で、「夢の主」に誘われて……"])
+      ShowText(["ここまで来たのはいいものの……"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【ヒツジ娘】"])
+      ShowText(["なんだかひどく場違いで……"])
+      ShowText(["後悔しながら、すみっこでヤケ飲み……"])
+      ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+      ShowText(["【白念】"])
+      ShowText(["なんだか可哀相ですね……"])
+      ShowText(["私達に、力になれることはありますか？"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["【ヒツジ娘】"])
+      ShowText(["酒、もってきて……"])
+      ShowText(["おいしいやつ……"])
+      ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+      ShowText(["【マガツ】"])
+      ShowText(["まったく、仕方のない奴じゃな……"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([8, 431])
+      ShowChoices([["ヤマタイ酒をあげる", "あげない"], 2])
+      When([0, "ヤマタイ酒をあげる"])
+        ChangeItems([431, 1, 0, 1])
+        ControlSwitches([2914, 2914, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ヒツジ娘にヤマタイ酒を渡した！"])
+        ShowTextAttributes(["hituzi_fc1", 7, 0, 2])
+        ShowText(["【ヒツジ娘】"])
+        ShowText(["ぐびぐびぐび……"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジ娘】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+        ShowText(["【リジェオ】"])
+        ShowText(["……満足した？"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジ娘】"])
+        ShowText(["……………………"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["【ヒツジ娘】"])
+        ShowText(["メェェ……メェェェェ……"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["ヒツジ娘は悲しげに鳴いている……"])
+        Empty([])
+      When([1, "あげない"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["s_mermaid_fc1", 1, 0, 2])
+    ShowText(["【商人マーメイド】"])
+    ShowText(["なんか知らんけど、「夢の主」に呼ばれたから来たで。"])
+    ShowText(["ほら、何か買っていってや！"])
+    ShopProcessing([1, 74, 0, 0, false])
+    ShopItem([1, 276, 0, 0])
+    ShopItem([1, 316, 0, 0])
+    ShopItem([1, 427, 0, 0])
+    ShopItem([1, 534, 0, 0])
+    ShopItem([1, 609, 0, 0])
+    ShopItem([1, 644, 0, 0])
+    ShopItem([1, 743, 0, 0])
+    ShopItem([2, 12, 0, 0])
+    ShopItem([2, 25, 0, 0])
+    ShopItem([2, 90, 0, 0])
+    ShopItem([2, 137, 0, 0])
+    ShopItem([2, 219, 0, 0])
+    ShopItem([2, 251, 0, 0])
+    ShopItem([2, 268, 0, 0])
+    ShopItem([2, 274, 0, 0])
+    ShopItem([2, 314, 0, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["この魔城の最下層には、誰かが引きこもってるんだって。"])
+    ShowText(["夢魔のオモチャだって噂だよ。"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["【リジェオ】"])
+    ShowText(["それって、まさか――"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["【ランパス】"])
+    ShowText(["夢魔は快楽に貪欲だから、すぐ「敏感」になるんだって。"])
+    ShowText(["夢魔と戦うなら、覚えておいた方がいいよね。"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["「敏感」になると、受ける快楽ダメージが上がるんだけど……"])
+    ShowText(["与える快楽ダメージも、ちょっとだけ上がるんだって。"])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["【妖狐】"])
+    ShowText(["まあ、ほんのちょっとだけらしいけど。"])
+    ShowText(["念のため、覚えておいた方がいいんじゃないかな？"])
+    Empty([])

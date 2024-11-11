@@ -1,0 +1,381 @@
+Display Name = "蓬莱山 第3層"
+Parallax Name = "CloudySky1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 48, 13, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 48, 13, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 48, 13, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 48, 13, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 48, 13, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([22, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([271, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1257, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([754, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "アリス"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "エデン"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "エルベティエ"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "たまも"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    CallCommonEvent([439])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    CallCommonEvent([439])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["壺には癒やしの魔力が満ちていた……"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["ルカ達のHPとMPが全快した！"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 34, 2])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["今もヤマタイ研究所の地下に、多くの同胞が囚われているわ。"])
+      ShowText(["玉藻の非道な人体実験を受けているはずよ……"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["なんとしても、仲間達を助け出す……"])
+      ShowText(["あなた達にも、いらぬ手出しをしてもらいたくないわね。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 35, 1])
+      ConditionalBranch([1, 1170, 0, 6, 2])
+        ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+        ShowText(["【ヴァルキリー】"])
+        ShowText(["ヤマタイ研究所に囚われていた仲間達を救出できたわ。"])
+        ShowText(["あなた達には感謝ね……"])
+        ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+        ShowText(["【ヴァルキリー】"])
+        ShowText(["そして今、各地の防備も乱れているわ。"])
+        ShowText(["多くの仲間を救出するチャンス、逃さないようにしないと……"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1170, 0, 7, 1])
+        ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+        ShowText(["【ヴァルキリー】"])
+        ShowText(["まさか、ここまで邪神勢の力が弱まるなんて……"])
+        ShowText(["全て、あなた達のおかげよ。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ConditionalBranch([1, 1142, 0, 34, 2])
+      ShowTextAttributes(["angels_fc1", 0, 0, 2])
+      ShowText(["【天使兵】"])
+      ShowText(["敵が格上なら、複数でのチームワークで狩る。"])
+      ShowText(["正々堂々一対一など、甘い考えは聖魔大戦敗北時に捨てた。"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1142, 0, 35, 1])
+      ConditionalBranch([1, 1170, 0, 6, 2])
+        ShowTextAttributes(["angels_fc1", 0, 0, 2])
+        ShowText(["【天使兵】"])
+        ShowText(["しばらくは、救出作戦で忙しくなりそうだ。"])
+        ShowText(["お前達のおかげで、各地の警戒網が崩れつつあるからな。"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1170, 0, 7, 1])
+        ShowTextAttributes(["angels_fc1", 0, 0, 2])
+        ShowText(["【天使兵】"])
+        ShowText(["我等に暇を出された後も、天使長は戦いを続ける。"])
+        ShowText(["しかも、邪神に決戦を挑むとは……大したお方だ。"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["宝箱には鍵が掛かっている……"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([472, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["ラミが空を飛べるように特訓するため――"])
+      ShowText(["ついに、世界最高峰の蓬莱山へと立った。"])
+      ShowTextAttributes(["inp_fc1", 0, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["ちょっと高すぎる気もするけど……"])
+      ShowText(["それじゃあ、行くよ～！！"])
+      SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["何をするの！　若き身空で身投げなど！"])
+      ShowTextAttributes(["inp_fc1", 3, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["ちょっと、止めないでよ！"])
+      ShowText(["あたしは、お空に飛び立つの！！"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["駄目よ……何かあるなら、私に相談しなさい。"])
+      ShowTextAttributes(["inp_fc1", 3, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["最初から空が飛べる人に……"])
+      ShowText(["あたしの気持ちなんて、分からないから！"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["私では、力になれないというの……"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["【ルカ】"])
+      ShowText(["微妙に話が噛み合ってないね。"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["とにかく、絶対に身投げはさせないわ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どうしても、ヴァルキリーに止められてしまう。"])
+      ShowText(["今はラミの飛行特訓を後回しにした方が良さそうだ。"])
+      SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 0])
+      SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["inp_fc1", 3, 0, 2])
+      ShowText(["【ラミ】"])
+      ShowText(["飛び降りる隙は……なさそうだね。"])
+      ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+      ShowText(["【ヴァルキリー】"])
+      ShowText(["絶対に身投げはさせないわ……"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["どうしても、ヴァルキリーに止められてしまう。"])
+      ShowText(["今はラミの飛行特訓を後回しにした方が良さそうだ。"])
+      SetMoveRoute([23, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["【ヴァルキリー】"])
+    ShowText(["美しい風景ね……"])
+    ShowText(["これだけ荒れ果てた世界にも、美しいものは残っているわ。"])
+    Empty([])

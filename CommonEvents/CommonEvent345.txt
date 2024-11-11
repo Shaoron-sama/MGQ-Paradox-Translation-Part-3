@@ -1,0 +1,30 @@
+CommonEvent 345
+Name = "悪夢の荒野突破"
+
+  999([345])
+  ControlSwitches([2214, 2214, 0])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["悪夢の荒野を抜け、いよいよ砂漠地帯に出たな。"])
+    ShowText(["西に行けば、タルタロスがあるわけだが……"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["【アリス】"])
+    ShowText(["その前に、ここから北西にある神鳥のほこらに向かってくれないか？"])
+    ShowText(["事前に確認しておきたい事があるし、体を休める場もあるだろう。"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["悪夢の荒野を抜け、いよいよ砂漠地帯に突入ですね。"])
+    ShowText(["西に行けば、タルタロスがあるわけですが……"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["その前に、ここから北西にある怪鳥のほこらに行きませんか？"])
+    ShowText(["確認しておきたい事がありますし、体も休めなければ……"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,25 @@
+CommonEvent 603
+Name = "イベント：ミニ"
+
+  999([603])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 69, 0])
+    ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+    ShowText(["【フェニックス娘】"])
+    ShowText(["これで、不死鳥のようにはばたけるのだ！"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+  ShowText(["【フェニックス娘】"])
+  ShowText(["あたしの不死鳥パワー、分けてやるぞ！"])
+  ControlSwitches([69, 69, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["フェニックス娘から不死鳥の力が与えられた！"])
+  ShowText(["次のボスフロアまで、再蘇生効果が発動する！"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

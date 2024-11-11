@@ -1,0 +1,59 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 96, 9, 10, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 91, 4, 47, 2, 0])
+    ConditionalBranch([1, 1111, 0, 2, 0])
+      ConditionalBranch([1, 1098, 0, 11, 0])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["この家から脱出しないと……"])
+        ShowText(["でも、どうすればいいんだ？"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["玄関に向かい、脱出路を確保するか――"])
+        ShowText(["だが、そんな簡単に正面から出られるものなのか？"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["この家の情報は、まったくない。"])
+        ShowText(["結局、よく分からないまま探索するしかないのだ。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["しかも、ぐずぐずしていたらピザ屋が来てしまう。"])
+        ShowText(["とにかく迅速に、脱出の準備を進めないと――"])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["この家から脱出するためには……"])
+        ShowText(["確か、黒い宝石っていうのが必要だったな。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["その宝石はヴィヌムの部屋にあるという。"])
+        ShowText(["かなりの危険を伴うが、取りに行かなければならない。"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["しかも、ぐずぐずしていたらピザ屋が来てしまう。"])
+        ShowText(["とにかく迅速に、脱出の準備を進めないと――"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
