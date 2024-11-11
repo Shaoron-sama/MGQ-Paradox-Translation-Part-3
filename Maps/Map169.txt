@@ -1,4 +1,4 @@
-Display Name = "管理者の塔 1F"
+Display Name = "Административная Башня: 1 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -43,14 +43,12 @@ Name = "EV005"
     ShowPicture([5, "80_radio_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["radio_fc1", 0, 0, 2])
-    ShowText(["【ラディオ】"])
-    ShowText(["この階段を上がってくダサい……"])
-    ShowText(["マスターは最上階にイマす……"])
+    ShowText(["\\n<\\C[6]Радио\\C[0]>ПожалУЙСтА, идите наверх..."])
+    ShowText(["...ХоЗЯЙкА на верхнем этаже..."])
     ConditionalBranch([4, 129, 0])
       ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
-      ShowText(["【ヒルデ】"])
-      ShowText(["マスター……"])
-      ShowText(["ヒルデのマスター以外に、マスターがいるの……？"])
+      ShowText(["\\n<\\C[6]Хильди\\C[0]>Хозяйка... это другая хозяйка?"])
+      ShowText(["Не Хозяин Хильди...?"])
       Empty([])
 
     BranchEnd([])

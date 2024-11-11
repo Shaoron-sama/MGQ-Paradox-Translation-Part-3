@@ -180,15 +180,14 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["zyakotuonna_fc1", 0, 0, 2])
-    ShowText(["【蛇骨女】"])
-    ShowText(["黒のアリスは、初代を除いて歴代最強の魔王。"])
-    ShowText(["人間の勇者が、あの者を倒せるものか……"])
+    ShowText(["\\n<\\C[6]Джакоцу\\C[0]>Черная Алиса - сильнейшая Владыка Монстров"])
+    ShowText(["в истории. Кроме, разве что, Первой."])
+    ShowText(["Возможно ли людскому герою ее победить...?"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["538"])
     ShowTextAttributes(["heinrich_fc1", 3, 0, 2])
-    ShowText(["【ハインリヒ】"])
-    ShowText(["だからといって、負けるわけにはいかない！"])
+    ShowText(["\\n<\\C[6]Генрих\\C[0]>Просто я не могу позволить себе проиграть...!"])
     ExitEventProcessing([])
     Empty([])
 
@@ -197,22 +196,20 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["kirin_fc1", 0, 0, 2])
-    ShowText(["【麒麟】"])
-    ShowText(["この町に、酒場は二つあるが……"])
-    ShowText(["こっちは、魔物用の酒場じゃぞ。"])
+    ShowText(["\\n<\\C[6]Кирин\\C[0]>В этом городе есть две таверны..."])
+    ShowText(["Это таверна монстров..."])
     ShowTextAttributes(["kirin_fc1", 0, 0, 2])
-    ShowText(["【麒麟】"])
-    ShowText(["別に酒場が分かれてるのは、差別じゃないが……"])
-    ShowText(["うっかり人間用の酒場に入って、豆なんぞを食わされるのもたまらん。"])
+    ShowText(["\\n<\\C[6]Кирин\\C[0]>В том, что они разделены нет никакой"])
+    ShowText(["дискриминации... Но лучше все-таки в людскую"])
+    ShowText(["таверну не заходить, а то можно случайно"])
+    ShowText(["съесть бобов на обед."])
     ShowTextAttributes(["kirin_fc1", 2, 0, 2])
-    ShowText(["【麒麟】"])
-    ShowText(["……豆、だいきらいじゃ……"])
+    ShowText(["\\n<\\C[6]Кирин\\C[0]>...Ненавижу бобы..."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["111"])
     ShowTextAttributes(["suika_fc1", 0, 0, 2])
-    ShowText(["【メロン】"])
-    ShowText(["スイカは好き？"])
+    ShowText(["\\n<\\C[6]Мелон\\C[0]>А арбузы любишь?"])
     ExitEventProcessing([])
     Empty([])
 
@@ -221,9 +218,8 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【魚売りのおばさん】"])
-    ShowText(["新鮮な魚だよっ！"])
-    ShowText(["魚を食べると、頭が良くなるよっ！"])
+    ShowText(["\\n<\\C[6]Продавщица Рыбы\\C[0]>Свежая рыба!"])
+    ShowText(["Ешьте рыбу чтобы стать умнее!"])
     ShopProcessing([0, 322, 0, 0, false])
     ShopItem([0, 323, 0, 0])
     ShopItem([0, 324, 0, 0])
@@ -240,21 +236,18 @@ Name = "EV027"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老女】"])
-    ShowText(["イリアスヴィルで採れた、おいしい野菜を買っていかんか……？"])
+    ShowText(["\\n<\\C[6]Старушка\\C[0]>Не хотите ли купить вкусных овощей из Илиасвиля...?"])
     ConditionalBranch([1, 1142, 0, 62, 2])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["五百年前から、イリアスヴィルじゃ野菜作ってたのね……"])
-        ShowText(["きっと私達の時代から五百年経っても、野菜作ってるわよ。"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Овощи из Илиасвиля пятисотлетней давности...?"])
+        ShowText(["Даже в наше время, спустя 500 лет, мы до сих пор"])
+        ShowText(["поставляем овощи."])
         ShowTextAttributes(["sonia_fc4", 0, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["世界を救っても、何をしても……"])
-        ShowText(["イリアスヴィルじゃ、野菜を作ってるのは変わらない……"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Даже если мы спасем мир, ничего не поменяется..."])
+        ShowText(["Илиасвиль всегда будет поставлять овощи..."])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["なんだか悲しくなる事を言うなよ……"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Не надо о грустном..."])
         Empty([])
       BranchEnd([])
       Empty([])
@@ -273,9 +266,8 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【イモおやじ】"])
-    ShowText(["おいも～♪　おいも♪"])
-    ShowText(["栄養たっぷり、保存もばっちり、おいもだよ～♪"])
+    ShowText(["\\n<\\C[6]Продавец Картофеля\\C[0]>Картошка~♪ Картошка ♪"])
+    ShowText(["Очень питательная и долго хранится! Вкусная картошка~♪"])
     ShopProcessing([0, 319, 0, 0, false])
     ShopItem([0, 413, 0, 0])
     Empty([])
@@ -285,8 +277,7 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【商人】"])
-    ShowText(["肉はどうだい？　生でも焼いてもいけるよ～！"])
+    ShowText(["\\n<\\C[6]Торговец\\C[0]>Хотите мяса? Можете его приготовить или даже так съесть~!"])
     ShopProcessing([0, 329, 0, 0, false])
     ShopItem([0, 330, 0, 0])
     ShopItem([0, 331, 0, 0])
@@ -300,15 +291,13 @@ Name = "EV030"
 
   Page 0
     ShowTextAttributes(["succubuses_fc3", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["保存ができて、栄養たっぷりかぁ……"])
-    ShowText(["村長に、このイモを備蓄食料として紹介してみようかな？"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Питательная и может долго храниться...?"])
+    ShowText(["Может показать эту картошку старосте?"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["143"])
     ShowTextAttributes(["eva_fc1", 2, 0, 2])
-    ShowText(["【エヴァ】"])
-    ShowText(["こいつを止めないと！"])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Я должна это остановить!"])
     ExitEventProcessing([])
     Empty([])
 
@@ -317,10 +306,9 @@ Name = "EV031"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ねこまたは魚を狙っている……"])
+    ShowText(["Некомата крадется к рыбе..."])
     Empty([])
 
 CommonEvent 32
@@ -328,10 +316,9 @@ Name = "EV032"
 
   Page 0
     ShowTextAttributes(["dog_fc1", 4, 0, 2])
-    ShowText(["【犬娘】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Девушка-Собака\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["犬娘は骨付き肉を狙っている……"])
+    ShowText(["Девушка-Собака крадется к мясным косточкам..."])
     Empty([])
 
 CommonEvent 33
@@ -339,15 +326,13 @@ Name = "EV033"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["勇者ハインリヒと仲間達が、クィーンサキュバスを打ち倒したとか。"])
-    ShowText(["このまま一気に魔王討伐かと、みな色めきたっておるぞ。"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Генрих и его товарищи уже победили Королев Суккубов."])
+    ShowText(["Недолго нам осталось терпеть гнет Владыки Монстров."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["538"])
     ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
-    ShowText(["【ハインリヒ】"])
-    ShowText(["そうなると、いいんだけどね……"])
+    ShowText(["\\n<\\C[6]Генрих\\C[0]>Это конечно хорошо, но..."])
     ExitEventProcessing([])
     Empty([])
 
@@ -356,8 +341,7 @@ Name = "EV034"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【僧侶】"])
-    ShowText(["なんと淫らな……"])
+    ShowText(["\\n<\\C[6]Жрец\\C[0]>Какое распутство..."])
     Empty([])
 
 CommonEvent 35
@@ -365,8 +349,7 @@ Name = "EV035"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【冒険家】"])
-    ShowText(["まさか、秒殺とは……"])
+    ShowText(["\\n<\\C[6]Приключенец\\C[0]>Невозможно, мгновенное поражение..."])
     Empty([])
 
 CommonEvent 36
@@ -374,8 +357,7 @@ Name = "EV036"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の勇者】"])
-    ShowText(["私の冒険は、ここまでだ……"])
+    ShowText(["\\n<\\C[6]Странствующий Герой\\C[0]>Мое приключение окончится здесь..."])
     Empty([])
 
 CommonEvent 37
@@ -383,9 +365,8 @@ Name = "EV037"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["なんで教会の連中が、技術を認めないんだろうな。"])
-    ShowText(["いずれ世界の全ての問題が、科学で解決してしまうぜ。"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>И почему люди в церкви не могут принять технологию?"])
+    ShowText(["Ведь все проблемы в мире можно решить наукой."])
     Empty([])
 
 CommonEvent 38
@@ -393,13 +374,13 @@ Name = "EV038"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["この乱れた時代……"])
-    ShowText(["レミナが攻められないのは、町に滞在している大勢の魔物のおかげなんですよね。"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Что за беспокойная эпоха..."])
+    ShowText(["На Ремину не нападают только из-за того, что тут"])
+    ShowText(["живет много монстров."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["彼女達がいなければ、この町はたちまち魔王に滅ぼされるでしょう。"])
-    ShowText(["そう考えると、魔物排斥運動など盛り上がるはずもありません。"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Если бы не они, Владыка Монстров уничтожила бы этот город."])
+    ShowText(["Из-за того, что все мыслят так, ни у кого не возникает"])
+    ShowText(["желания возмутиться присутствию монстров в городе."])
     Empty([])
 
 CommonEvent 39
@@ -407,18 +388,15 @@ Name = "EV039"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の勇者】"])
-    ShowText(["ううむ、小腹が空いたな……"])
-    ShowText(["何か食べ物を買って帰ろうか。"])
+    ShowText(["\\n<\\C[6]Странствующий Герой\\C[0]>Ухх, я проголодался."])
+    ShowText(["Может купить еды на обратном пути?"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["111"])
     ShowTextAttributes(["suika_fc1", 0, 0, 2])
-    ShowText(["【メロン】"])
-    ShowText(["スイカ、食べる？"])
+    ShowText(["\\n<\\C[6]Мелон\\C[0]>Поешь арбузика?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の勇者】"])
-    ShowText(["それじゃあ、ひとつ頂こうか。"])
+    ShowText(["\\n<\\C[6]Странствующий Герой\\C[0]>Можно один кусочек?"])
     ExitEventProcessing([])
     Empty([])
 
@@ -427,15 +405,14 @@ Name = "EV040"
 
   Page 0
     ShowTextAttributes(["tora_fc1", 0, 0, 2])
-    ShowText(["【虎娘】"])
-    ShowText(["ここの鍛冶屋は、良い仕事をする。"])
-    ShowText(["お前も旅を続けるなら、武器の手入れは入念にな。"])
+    ShowText(["\\n<\\C[6]Девушка-Тигрица\\C[0]>Здешний кузнец хорошо работает."])
+    ShowText(["Вам, кстати, тоже стоит ухаживать за оружием"])
+    ShowText(["если хотите продолжать свое приключение."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["68"])
     ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
-    ShowText(["【パピ】"])
-    ShowText(["もちろんだぞ！"])
+    ShowText(["\\n<\\C[6]Папи\\C[0]>Конечно!"])
     ExitEventProcessing([])
     Empty([])
 
@@ -444,16 +421,15 @@ Name = "EV041"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ごろつき】"])
-    ShowText(["俺も昔は、勇者だったんだがな……"])
-    ShowText(["厳しい現実を知って、今はこのザマさ。"])
+    ShowText(["\\n<\\C[6]Бандит\\C[0]>Когда-то я тоже был героем..."])
+    ShowText(["Но познав жестокую реальность, я стал вот таким."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["538"])
     ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
-    ShowText(["【ハインリヒ】"])
-    ShowText(["僕は、勇者でいる事の辛さを知っている……"])
-    ShowText(["「がんばれ」とか、無責任な事を言う気はないさ。"])
+    ShowText(["\\n<\\C[6]Генрих\\C[0]>Я знаю о тяготах в жизни героев..."])
+    ShowText(["Так что не буду говорить бессмысленные вещи,"])
+    ShowText(["вроде \"Держись\"."])
     ExitEventProcessing([])
     Empty([])
 
@@ -462,19 +438,16 @@ Name = "EV042"
 
   Page 0
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["勇者ハインリヒは、黒の三貴をも打ち破ったとか……"])
-    ShowText(["黒のアリスの配下の中でも、特に名高いあの三人の事だ。"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Генрих - герой, победивший даже Черных Княгинь..."])
+    ShowText(["Из слуг Черной Алисы, они особенно знамениты."])
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["ハインリヒの血、ぜひ味わってみたいが……"])
-    ShowText(["私では、返り討ちだろうな。"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Хотела бы я попробовать на вкус его кровь..."])
+    ShowText(["Но, думаю, для меня это был бы конец."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["538"])
     ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
-    ShowText(["【ハインリヒ】"])
-    ShowText(["悪いけど、火の粉は払わせてもらうよ。"])
+    ShowText(["\\n<\\C[6]Генрих\\C[0]>Прости, но я буду защищаться."])
     ExitEventProcessing([])
     Empty([])
 
@@ -483,9 +456,8 @@ Name = "EV043"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["レミナ王は、様々な慈善事業に手を広げておられる。"])
-    ShowText(["技術研究にも投資し、資金援助をされておられるのじゃ。"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Король Ремины часто занимается благотворительностью."])
+    ShowText(["Кроме того, он инвестирует в технологические исследования."])
     Empty([])
 
 CommonEvent 44
@@ -565,11 +537,11 @@ Name = "EV050"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の勇者】"])
-    ShowText(["最上級職の多くには、職業アビリティとしてマスタリーが備わっている。"])
-    ShowText(["こうした職業は、得意武器の性能が大いに強化されるのだ。"])
+    ShowText(["\\n<\\C[6]Странствующий Герой\\C[0]>Многие из высших профессий обладают мастерством,"])
+    ShowText(["как пассивной способностью. У этих профессий эффективность"])
+    ShowText(["оружия значительно повышается."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の勇者】"])
-    ShowText(["もちろん、マスタリーのついていない最上級職もある。"])
-    ShowText(["転職時、職業アビリティをしっかりチェックしておくようにな。"])
+    ShowText(["\\n<\\C[6]Странствующий Герой\\C[0]>Конечно же, есть высшие профессии и без мастерства."])
+    ShowText(["Так что вам лучше тщательно проверять способности"])
+    ShowText(["профессии на которую идете."])
     Empty([])

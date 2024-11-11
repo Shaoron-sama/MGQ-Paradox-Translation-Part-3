@@ -1,4 +1,4 @@
-Display Name = "試しの洞窟 B2F"
+Display Name = "Пещера Испытаний: 2 Ярус"
 Parallax Name = ""
 Note = ""
 
@@ -17,7 +17,7 @@ Name = "EV002"
   Page 0
     ConditionalBranch([8, 503])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["「兵士の鍵」で鍵を開けた！"])
+      ShowText(["Отпираем \\C[3]Ключом Солдата\\C[0]!"])
       PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
       SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
@@ -31,7 +31,7 @@ Name = "EV002"
 
     Else([])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       Empty([])
 
     BranchEnd([])

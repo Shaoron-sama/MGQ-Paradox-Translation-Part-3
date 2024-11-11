@@ -1,4 +1,4 @@
-Display Name = "狸神社"
+Display Name = "Храм Енота"
 Parallax Name = ""
 Note = ""
 
@@ -93,8 +93,8 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["↑：狸神社"])
-    ShowText(["←：神社坂"])
+    ShowText(["↑:Храм Енота"])
+    ShowText(["←:Храмовый Склон"])
     Empty([])
 
 CommonEvent 12
@@ -103,28 +103,26 @@ Name = "EV012"
   Page 0
     ConditionalBranch([1, 1059, 0, 1, 2])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["ここは狸神社です。"])
-      ShowText(["しかし、タヌキ様はどこへ行かれたのでしょう……？"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Добро пожаловать в Храм Енота."])
+      ShowText(["Хотя наша богиня куда-то пропала..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1059, 0, 2, 1])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["ここは狸神社です。"])
-      ShowText(["タヌキ様とキツネ様は、今日も仲良しですよ。"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Добро пожаловать в Храм Енота."])
+      ShowText(["Тануки-сама и Кицунэ-сама очень дружны сегодня."])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["神社坂の入り口に戻りますか？"])
-    ShowChoices([["戻らない", "戻る"], 1])
-    When([0, "戻らない"])
+    ShowText(["Вернуться на храмовый склон?"])
+    ShowChoices([["Остаться", "Вернуться"], 1])
+    When([0, "Остаться"])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "戻る"])
+    When([1, "Да"])
       TransferPlayer([0, 485, 14, 5, 2, 0])
       Empty([])
 
@@ -136,23 +134,20 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["ここでちょっと、一休み……"])
-    ShowText(["長く険しい神社坂は、儂のような年寄りには辛いのう。"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Я перевожу дух..."])
+    ShowText(["Храмовый склон слишком крутой для такого старика,"])
+    ShowText(["как я."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["99"])
     ShowTextAttributes(["namazu_fc1", 2, 0, 2])
-    ShowText(["【ギギ】"])
-    ShowText(["儂のようなナマズにも、なかなか辛いのう……"])
+    ShowText(["\\n<\\C[6]Гиги\\C[0]>Для сома тоже тяжело по нему подниматься..."])
     ExitEventProcessing([])
     Label(["185"])
     ShowTextAttributes(["radio_fc1", 0, 0, 2])
-    ShowText(["【ラディオ】"])
-    ShowText(["階段を平坦化しマスか？"])
+    ShowText(["\\n<\\C[6]Радио\\C[0]>Мне уМЕНьШИть наклон лестницЫ?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["何だか分からんが、やめた方がよさそうだのう。"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Я не знаю о чем ты, но лучше не надо."])
     ExitEventProcessing([])
     Empty([])
 
@@ -161,13 +156,12 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["村に偏在するねこまたにより、追い込まれたネズミ達……"])
-    ShowText(["今こそ、反撃の狼煙を！"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>Нас слишком долго притесняли неравенством"])
+    ShowText(["прав между нами и деревенскими кошками!"])
+    ShowText(["Настало время революции!"])
     ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["鬨の声を上げよ！"])
-    ShowText(["チューッ！　チューッ！"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>Пусть они услышат наш боевой клич!"])
+    ShowText(["Пиии! Пиии!"])
     Empty([])
 
 CommonEvent 15
@@ -175,8 +169,7 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["チューッ！　チューッ！"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>Пиии! Пиии!"])
     Empty([])
 
 CommonEvent 16
@@ -184,8 +177,8 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["狸神社を占拠して、ネズミランドを作るのはどうかな？"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>Может нам захватить Храм Енота и превратить"])
+    ShowText(["его в крысиную землю?"])
     Empty([])
 
 CommonEvent 17
@@ -193,8 +186,7 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["ササミ！　チーズ！　こめだわら！"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>Сыра! Зрелищ!"])
     Empty([])
 
 CommonEvent 18
@@ -202,6 +194,5 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["nezumi_fc1", 1, 0, 2])
-    ShowText(["【ネズミ娘】"])
-    ShowText(["ネズミの集会だよ！"])
+    ShowText(["\\n<\\C[6]Девушка-Крыса\\C[0]>У нас крысиный митинг!"])
     Empty([])

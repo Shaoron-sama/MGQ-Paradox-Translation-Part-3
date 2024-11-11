@@ -1,4 +1,4 @@
-Display Name = "世界樹 2F"
+Display Name = "Мировое Древо: 2 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -108,22 +108,19 @@ Name = "EV011"
   Page 0
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc1", 0, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["キレイ……これが、虹の結晶ね。"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Как красиво... Это и есть радужный кристалл?"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["すごく綺麗だな……これが虹の結晶か。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Значит, это и есть радужный кристалл... Красиво."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 295, 0])
       ShowTextAttributes(["cassandra_fc1", 5, 0, 2])
-      ShowText(["【カサンドラ】"])
-      ShowText(["うふふっ、宝石として身につけたいくらい……"])
-      ShowText(["少しだけ、私に譲ってくれませんか？"])
+      ShowText(["\\n<\\C[6]Кассандра\\C[0]>Уфуфу, мне бы хотелось украшений из него..."])
+      ShowText(["Не поделишься кусочком?"])
       Empty([])
 
     BranchEnd([])
@@ -132,17 +129,17 @@ Name = "EV011"
     ChangeItems([157, 0, 0, 1])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 1, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["これがあれば、エルフの鍛冶に虹の武具を造ってもらえるな。"])
-      ShowText(["オリハルコン製よりも優れた装備品は、大いに助けになるだろう。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>С этим количеством, эльфийский кузнец сможет"])
+      ShowText(["сделать нам всю нужную экипировку. Нам очень"])
+      ShowText(["пригодится снаряжение лучше орихалкового."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["これがあれば、エルフの鍛冶に虹の武具を造ってもらえますね。"])
-      ShowText(["オリハルコン製よりも優れた装備品は、冒険の助けとなるでしょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>С этим количеством, эльфийский кузнец сможет"])
+      ShowText(["сделать нам всю нужную экипировку. Снаряжение"])
+      ShowText(["лучше орихалкового нам сильно поможет."])
       Empty([])
 
     BranchEnd([])
@@ -158,7 +155,7 @@ Name = "EV012"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -219,7 +216,7 @@ Name = "EV015"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 

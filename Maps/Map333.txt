@@ -1,4 +1,4 @@
-Display Name = "グランベリアの部屋"
+Display Name = "Комната Гранберии"
 Parallax Name = ""
 Note = ""
 
@@ -79,17 +79,15 @@ Name = "EV012"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここはグランベリアの部屋だ。"])
-      ShowText(["奴らしく、なかなか無骨な雰囲気だな……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это комната Гранберии."])
+      ShowText(["Как можно ожидать, выглядит незатейливо."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここはグランベリアの部屋ですか……"])
-      ShowText(["トカゲの寝床に相応しく、いかにも無骨ですね。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это ведь комната Гранберии...?"])
+      ShowText(["Выглядит примитивно, как и подобает ящерице."])
       Empty([])
 
     BranchEnd([])

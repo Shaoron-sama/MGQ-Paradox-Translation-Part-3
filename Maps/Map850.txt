@@ -1,4 +1,4 @@
-Display Name = "ヤマタイへの洞窟"
+Display Name = "Пещера к Яматаю"
 Parallax Name = ""
 Note = ""
 
@@ -13,12 +13,11 @@ Name = "EV001"
     ConditionalBranch([1, 1204, 0, 4, 0])
       ControlVariables([1204, 1204, 0, 0, 5])
       ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-      ShowText(["【ルヴィッサ】"])
-      ShowText(["……やっと洞窟を抜けたわね。"])
+      ShowText(["\\n<\\C[6]Рувисса\\C[0]>...Наконец-то мы выбрались из пещеры."])
       ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-      ShowText(["【大明海】"])
-      ShowText(["ここまで来れば、グランドノアは遠くないはずだ。"])
-      ShowText(["そこの立札に道案内があるんじゃないか？"])
+      ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Учитывая, сколько уже пройдено, Гранд Ной"])
+      ShowText(["должен быть недалеко. Тут случаем нигде нет"])
+      ShowText(["указательных знаков?"])
       ExitEventProcessing([])
       Empty([])
 
@@ -177,7 +176,7 @@ Name = "EV012"
     FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
     RecoverAll([0, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["パーティ全員のHPとMPが全快した！"])
+    ShowText(["HP и MP группы полностью восстановлены!"])
     Empty([])
 
 CommonEvent 13
@@ -185,25 +184,22 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ！　にゃ、にゃ～♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Ня! Ня, няяя~♪"])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-      ShowText(["【ルヴィッサ】"])
-      ShowText(["あっ、かわいい子♪"])
-      ShowText(["うんうん、洞窟の半分くらいまで来たみたいね。"])
+      ShowText(["\\n<\\C[6]Рувисса\\C[0]>Ой, какая милашка ♪"])
+      ShowText(["Ага-ага, похоже, мы на пол-пути."])
       ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-      ShowText(["【大明海】"])
-      ShowText(["そいつの言葉が分かるのか……"])
-      ShowText(["魔王のかけらってのも、大したもんだな。"])
+      ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Ты понимаешь, что она говорит...?"])
+      ShowText(["Похоже, даже фрагмент Владыки Демонов"])
+      ShowText(["обладает большой силой."])
       ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-      ShowText(["【大明海】"])
-      ShowText(["俺の世界にいたら、即刻封印だが……"])
-      ShowText(["異世界で良かったな。"])
+      ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Если б ты была в моем мире, я бы сразу тебя"])
+      ShowText(["запечатала. Так что радуйся, что оказалась в этом."])
       ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-      ShowText(["【ルヴィッサ】"])
-      ShowText(["ふん。私を簡単に封印できるとでも思ってるの……？"])
+      ShowText(["\\n<\\C[6]Рувисса\\C[0]>Хмпф. Думаешь, что так легко смогла бы меня"])
+      ShowText(["запечатать?"])
       Empty([])
 
     BranchEnd([])

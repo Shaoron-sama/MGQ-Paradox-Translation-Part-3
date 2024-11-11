@@ -713,7 +713,7 @@ Name = "EV024"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -735,7 +735,7 @@ Name = "EV024"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -757,7 +757,7 @@ Name = "EV024"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -782,7 +782,7 @@ Name = "EV025"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -804,7 +804,7 @@ Name = "EV025"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -826,7 +826,7 @@ Name = "EV025"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -851,7 +851,7 @@ Name = "EV026"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -873,7 +873,7 @@ Name = "EV026"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -895,7 +895,7 @@ Name = "EV026"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -921,7 +921,7 @@ Name = "EV027"
     PlayME(["RPG::ME(@name=\"monsterhouse\", @pitch=100, @volume=100)"])
     PlayBGM(["RPG::BGM(@name=\"kiki1\", @volume=100, @pitch=100)"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["モンスターハウスだ！"])
+    ShowText(["Это логово монстров!"])
     ControlSwitches([73, 73, 1])
     EraseEvent([])
     Empty([])
@@ -932,16 +932,16 @@ Name = "EV028"
   Page 0
     ControlSwitches([73, 73, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["次のフロアに進みますか？"])
-    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
-    When([0, "まだ行かない"])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ControlSwitches([73, 73, 1])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "次のフロアに進む"])
+    When([1, "На следующий уровень"])
       ControlVariables([121, 121, 2, 0, 1])
       CallCommonEvent([901])
       ExitEventProcessing([])
@@ -956,7 +956,7 @@ Name = "EV029"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -978,7 +978,7 @@ Name = "EV029"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1000,7 +1000,7 @@ Name = "EV029"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1025,7 +1025,7 @@ Name = "EV030"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1047,7 +1047,7 @@ Name = "EV030"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1069,7 +1069,7 @@ Name = "EV030"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1094,7 +1094,7 @@ Name = "EV031"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1116,7 +1116,7 @@ Name = "EV031"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1138,7 +1138,7 @@ Name = "EV031"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1163,7 +1163,7 @@ Name = "EV032"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1185,7 +1185,7 @@ Name = "EV032"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1207,7 +1207,7 @@ Name = "EV032"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1232,7 +1232,7 @@ Name = "EV033"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1254,7 +1254,7 @@ Name = "EV033"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1276,7 +1276,7 @@ Name = "EV033"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1301,7 +1301,7 @@ Name = "EV034"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1323,7 +1323,7 @@ Name = "EV034"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1345,7 +1345,7 @@ Name = "EV034"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1370,7 +1370,7 @@ Name = "EV035"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1392,7 +1392,7 @@ Name = "EV035"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1414,7 +1414,7 @@ Name = "EV035"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1439,7 +1439,7 @@ Name = "EV036"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1461,7 +1461,7 @@ Name = "EV036"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1483,7 +1483,7 @@ Name = "EV036"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1508,7 +1508,7 @@ Name = "EV037"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1530,7 +1530,7 @@ Name = "EV037"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -1552,7 +1552,7 @@ Name = "EV037"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -3647,16 +3647,16 @@ Name = "EV107"
   Page 0
     ControlSwitches([73, 73, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["次のフロアに進みますか？"])
-    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
-    When([0, "まだ行かない"])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ControlSwitches([73, 73, 1])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "次のフロアに進む"])
+    When([1, "На следующий уровень"])
       ControlVariables([121, 121, 2, 0, 1])
       CallCommonEvent([901])
       ExitEventProcessing([])
@@ -3671,16 +3671,16 @@ Name = "EV108"
   Page 0
     ControlSwitches([73, 73, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["次のフロアに進みますか？"])
-    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
-    When([0, "まだ行かない"])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ControlSwitches([73, 73, 1])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "次のフロアに進む"])
+    When([1, "На следующий уровень"])
       ControlVariables([121, 121, 2, 0, 1])
       CallCommonEvent([901])
       ExitEventProcessing([])
@@ -3695,16 +3695,16 @@ Name = "EV109"
   Page 0
     ControlSwitches([73, 73, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["次のフロアに進みますか？"])
-    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
-    When([0, "まだ行かない"])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ControlSwitches([73, 73, 1])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "次のフロアに進む"])
+    When([1, "На следующий уровень"])
       ControlVariables([121, 121, 2, 0, 1])
       CallCommonEvent([901])
       ExitEventProcessing([])
@@ -3744,7 +3744,7 @@ Name = "EV110"
     BranchEnd([])
     TransferPlayer([0, 576, 14, 50, 2, 2])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["終章開始につき、過去の迷宮から弾き出された！"])
+    ShowText(["С обновлением Лабиринта Хаоса вы были изгнаны из прошлого лабиринта!"])
     ConditionalBranch([1, 912, 0, 0, 0])
       ConditionalBranch([0, 2332, 0])
         ConditionalBranch([0, 4, 0])

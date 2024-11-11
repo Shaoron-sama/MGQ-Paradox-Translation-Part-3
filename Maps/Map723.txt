@@ -1,4 +1,4 @@
-Display Name = "サバサ"
+Display Name = "Сабаса"
 Parallax Name = ""
 Note = ""
 
@@ -7,7 +7,7 @@ Name = "EV001"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 2
@@ -15,7 +15,7 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 3
@@ -23,7 +23,7 @@ Name = "EV003"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 4
@@ -31,7 +31,7 @@ Name = "EV004"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 5
@@ -39,7 +39,7 @@ Name = "EV005"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 6
@@ -47,27 +47,23 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["ふふっ、美味しそうなボウヤ……"])
-    ShowText(["ちょっと大人の吸い方をしてあげましょうか……？"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>Фуфу, какой вкусный мальчик..."])
+    ShowText(["Хочешь, я научу тебя взрослым удовольствиям?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["た、たすけて……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>С-спасите..."])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["やめろっ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Стоять!"])
     ConditionalBranch([4, 118, 0])
       ShowTextAttributes(["meia_fc1", 3, 0, 2])
-      ShowText(["【メイア】"])
-      ShowText(["その少年を離しなさい！"])
+      ShowText(["\\n<\\C[6]Мейя\\C[0]>Руки прочь от мальчика!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 810, false, false])
     ControlSwitches([2237, 2237, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["ありがとう、勇者さま！　これ、使って！"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Спасибо, господин герой!"])
+    ShowText(["Вот, возьмите!"])
     PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
     ChangeItems([1, 0, 0, 1])
     ExitEventProcessing([])
@@ -82,19 +78,16 @@ Name = "EV007"
   Page 0
     ConditionalBranch([0, 2237, 1])
       ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-      ShowText(["【ヴェンデッタ】"])
-      ShowText(["ふふっ、美味しそうなボウヤ……"])
-      ShowText(["ちょっと大人の吸い方をしてあげましょうか……？"])
+      ShowText(["\\n<\\C[6]Вендетта\\C[0]>Фуфу, какой вкусный мальчик..."])
+      ShowText(["Хочешь, я научу тебя взрослым удовольствиям?"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少年】"])
-      ShowText(["た、たすけて……"])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>С-спасите..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 2237, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少年】"])
-      ShowText(["ボク、お兄ちゃんみたいに強くてかっこいい勇者になる！"])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>Когда я вырасту, я стану таким же крутым героем, как ты!"])
       Empty([])
 
     BranchEnd([])
@@ -105,12 +98,10 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["勇者か……我が餌食となれ！"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Герой? Ты станешь моей следующей жертвой!"])
     ConditionalBranch([4, 520, 0])
       ShowTextAttributes(["lazarus3_fc1", 0, 0, 2])
-      ShowText(["【ラザロ】"])
-      ShowText(["それで、自分が餌食にされる覚悟はあるのか……？"])
+      ShowText(["\\n<\\C[6]Лазарь\\C[0]>А готова ли ты сама стать жертвой...?"])
       Empty([])
 
     BranchEnd([])
@@ -123,8 +114,7 @@ Name = "EV009"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【あらくれ】"])
-    ShowText(["干涸らびそうだ……"])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>Они высосали меня досуха..."])
     Empty([])
 
 CommonEvent 10
@@ -132,7 +122,7 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は固く閉ざされている……"])
+    ShowText(["Дверь заперта..."])
     Empty([])
 
 CommonEvent 11
@@ -140,9 +130,8 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["サラ様……"])
-    ShowText(["お慕いしておりました……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Госпожа Сара..."])
+    ShowText(["Я вас так ждал..."])
     Empty([])
 
 CommonEvent 12
@@ -150,11 +139,9 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["なんと強力な妖魔……しかし決して背は見せん！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Я не убегу, не важно, как сильны монстры!"])
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["いいですね……強い人間の血は大好物です……"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>Отлично. Я обожаю кровь сильных людей."])
     Empty([])
 
 CommonEvent 13
@@ -162,11 +149,9 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["なんと強力な妖魔……しかし決して背は見せん！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Я не убегу, не важно, как сильны монстры!"])
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["いいですね……強い人間の血は大好物です……"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>Отлично. Я обожаю кровь сильных людей."])
     Empty([])
 
 CommonEvent 14
@@ -174,16 +159,13 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["さあ、その血を……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Дай мне свою кровь..."])
     ShowTextAttributes(["wani_fc1", 0, 0, 2])
-    ShowText(["【ワニ娘】"])
-    ShowText(["がぁ……"])
+    ShowText(["\\n<\\C[6]Девушка-Крокодил\\C[0]>Гррр..."])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……何かしら、水辺の方……？"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>...Что это вылезло из воды?"])
     ControlSwitches([31, 31, 0])
     Wait([30])
     PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
@@ -206,18 +188,14 @@ Name = "EV014"
     ControlSwitches([31, 31, 1])
     PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
     ShowTextAttributes(["vampire_fc1", 2, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["きゃぁぁ――！！"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Гьяяяяяя!!"])
     ShowTextAttributes(["wani_fc1", 0, 0, 2])
-    ShowText(["【ワニ娘】"])
-    ShowText(["がぶ、がぶ……"])
+    ShowText(["\\n<\\C[6]Девушка-Крокодил\\C[0]>*Чавк* *Чавк*"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
     ConditionalBranch([4, 154, 0])
       ShowTextAttributes(["wani_fc1", 1, 0, 2])
-      ShowText(["【ガー】"])
-      ShowText(["おみごと……♪"])
+      ShowText(["\\n<\\C[6]Гар\\C[0]>Хорошо сработано! ♪"])
       Empty([])
 
     BranchEnd([])
@@ -231,8 +209,7 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男】"])
-    ShowText(["サバサも終わりなのか……？"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Сабасе конец?"])
     Empty([])
 
 CommonEvent 16
@@ -240,8 +217,7 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["あぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Ауууу..."])
     Empty([])
 
 CommonEvent 17
@@ -249,8 +225,7 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["もっと訓練していれば……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Если бы только я тренировался лучше..."])
     Empty([])
 
 CommonEvent 18
@@ -258,13 +233,11 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["私に体液をくれませんか……？"])
-    ShowText(["代償に、快楽をたっぷり与えてあげますから……"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>Ты поделишься со мной своими телесными жидкостями?"])
+    ShowText(["Взамен, я подарю тебе море удовольствия..."])
     ConditionalBranch([4, 283, 0])
       ShowTextAttributes(["maccubus_fc1", 3, 0, 2])
-      ShowText(["【メリッサ】"])
-      ShowText(["いいわね、遊んでもらおうかしら……？"])
+      ShowText(["\\n<\\C[6]Мелисса\\C[0]>Хорошо, давай поиграем...?"])
       Empty([])
 
     BranchEnd([])
@@ -277,8 +250,7 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["体が……冷たい……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Мое тело... холодное..."])
     Empty([])
 
 CommonEvent 20
@@ -286,8 +258,7 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>......"])
     Empty([])
 
 CommonEvent 21
@@ -353,12 +324,10 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["勇者か……我が餌食となれ！"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Герой? Ты станешь моей следующей жертвой!"])
     ConditionalBranch([4, 213, 0])
       ShowTextAttributes(["kerberos_fc1", 0, 0, 2])
-      ShowText(["【シーザー】"])
-      ShowText(["吸血鬼か……相手にとって、不足はない！"])
+      ShowText(["\\n<\\C[6]Цезара\\C[0]>Вампир? Подходящий противник!"])
       Empty([])
 
     BranchEnd([])
@@ -371,8 +340,7 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おばさん】"])
-    ShowText(["大丈夫かい！？　今、手当をするよ！"])
+    ShowText(["\\n<\\C[6]Бабушка\\C[0]>Ты в порядке?! Сейчас я тебе помогу!"])
     Empty([])
 
 CommonEvent 30
@@ -389,36 +357,33 @@ Name = "EV031"
   Page 0
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["くっ、サバサもひどい有様だな……！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Тц, в Сабасе тоже все плохо...!"])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["攻め寄せているのは、吸血鬼の軍団か……"])
-      ShowText(["奴等は魔物の中でも上位だ、きつい戦いになるぞ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Они под атакой вампирской армии."])
+      ShowText(["Вампиры - высокоранговые монстры, так что для нас"])
+      ShowText(["это тоже будет непросто."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["攻め寄せているのは、吸血鬼の軍団ですね……"])
-      ShowText(["奴等は魔物の中でも上位です、きつい戦いに備えなさい。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Они под атакой вампирской армии."])
+      ShowText(["Вампиры - высокоранговые монстры, так что будь"])
+      ShowText(["готов к серьезным битвам."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 45, 0])
       ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
-      ShowText(["【アリストロメリア】"])
-      ShowText(["夜の魔物が、昼間のお茶会……？"])
-      ShowText(["日光の牙に引き裂かれないといいのですけれど。"])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Монстры ночи решили устроить чаепитие днем?"])
+      ShowText(["Надеюсь, лучи света их не порежут на ленточки."])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["sara_fc1", 3, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["申し訳ないけれど、少しパーティを離れるわ。"])
-    ShowText(["軍の指揮を執らないと！"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Простите, но мне нужно покинуть группу."])
+    ShowText(["Я должна принять командование армией."])
     ControlSwitches([31, 31, 0])
     ControlSwitches([1529, 1529, 1])
     ChangePartyMember([529, 1, 0])
@@ -441,73 +406,67 @@ Name = "EV031"
     Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
     ControlSwitches([31, 31, 1])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["サラが一時的にパーティから離脱した！"])
+    ShowText(["Сара временно покидает группу!"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["サラ、大丈夫なのかな……"])
-      ShowText(["自分の国がこんな事になっちゃって……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Надеюсь, с ней все будет в порядке..."])
+      ShowText(["Для нее может быть тяжело - видеть,"])
+      ShowText(["как на ее страну напали."])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["サラ、大丈夫なのかな……"])
-      ShowText(["自分の国がこんな事になって……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Надеюсь, с ней все будет в порядке..."])
+      ShowText(["Для нее может быть тяжело - видеть,"])
+      ShowText(["как на ее страну напали."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 531, 0])
       ShowTextAttributes(["saniria_fc2", 0, 0, 2])
-      ShowText(["【サン・イリア王】"])
-      ShowText(["彼女は女王として遜色ない力量を持っているが……"])
-      ShowText(["今回ばかりは情勢が悪いな。"])
+      ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>Она вполне способный монарх..."])
+      ShowText(["Хотя ситуация здесь и правда мрачная."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["相手は吸血鬼の集団……"])
-      ShowText(["いかに精強といえど、人間の騎士団では長く押しとどめられまい。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Против вампирской армии даже превосходные солдаты"])
+      ShowText(["Сабасы долго не продержатся."])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["一刻も早く敵の統率者を見つけ出し、我々で討つぞ！"])
-      ShowText(["それ以外、劣勢を挽回する手はない！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Нам нужно как можно скорее справиться"])
+      ShowText(["с их лидером! Только так мы сможем выправить"])
+      ShowText(["положение!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["相手は吸血鬼の集団です……"])
-      ShowText(["いかに精強とはいえ、人間の騎士団では長く持たないでしょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Против вампирской армии даже превосходные солдаты"])
+      ShowText(["Сабасы долго не продержатся."])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["一刻も早く敵の統率者を見つけ出し、我々で討ちます！"])
-      ShowText(["それ以外、劣勢を覆す手はありません！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Нам нужно как можно скорее справиться"])
+      ShowText(["с их лидером! Это единственная надежда исправить"])
+      ShowText(["положение!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 218, 0])
       ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
-      ShowText(["【牛魔王】"])
-      ShowText(["ふん！　吸血鬼め、何するものぞ！"])
-      ShowText(["妾が叩きのめしてくれるわ！"])
+      ShowText(["\\n<\\C[6]Ушимао\\C[0]>Хмпф! Что эти вампиры себе позволяют?!"])
+      ShowText(["Я им покажу!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 66, 0])
       ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
-      ShowText(["【ヴァニラ】"])
-      ShowText(["同胞と戦うのは、気が引けるぞ……"])
+      ShowText(["\\n<\\C[6]Ванилла\\C[0]>Я не очень хочу сражаться с моими сородичами..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 302, 0])
       ShowTextAttributes(["vampire_fc1", 2, 0, 2])
-      ShowText(["【ヴィルヘルミナ】"])
-      ShowText(["肩身が狭いわね……"])
+      ShowText(["\\n<\\C[6]Вильгельмина\\C[0]>Как же это неловко..."])
       Empty([])
 
     BranchEnd([])
@@ -522,8 +481,7 @@ Name = "EV032"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["申し訳ありません……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Простите..."])
     Empty([])
 
 CommonEvent 33
@@ -531,8 +489,7 @@ Name = "EV033"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["血を吸い取られた……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Я потерял много крови..."])
     Empty([])
 
 CommonEvent 34
@@ -541,19 +498,16 @@ Name = "EV034"
   Page 0
     ConditionalBranch([0, 2234, 1])
       ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-      ShowText(["【ヴァンパイア】"])
-      ShowText(["その血、最後の一滴まで吸い尽くしてあげる……"])
+      ShowText(["\\n<\\C[6]Вампир\\C[0]>Я высосу твою кровь до последней капли!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【青年】"])
-      ShowText(["やめて……あ、あぁぁぁぁ――！！"])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Стой! А-Ааааа!!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 2234, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【青年】"])
-      ShowText(["吸血鬼に血を吸われるって、あんなに気持ちいいんだな……"])
-      ShowText(["いけない事を覚えてしまった気がするよ……"])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Когда вампир сосет кровь это так приятно..."])
+      ShowText(["Чувствую, мне не стоило этого познавать..."])
       Empty([])
 
     BranchEnd([])
@@ -564,8 +518,7 @@ Name = "EV035"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【若い女性】"])
-    ShowText(["血を吸われて……力が……"])
+    ShowText(["\\n<\\C[6]Юная Леди\\C[0]>Они высосали так много крови... Я обессилела..."])
     Empty([])
 
 CommonEvent 36
@@ -573,8 +526,7 @@ Name = "EV036"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["怪物だ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Это чудовище..."])
     Empty([])
 
 CommonEvent 37
@@ -582,8 +534,7 @@ Name = "EV037"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["サラ様、申し訳ありません……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Простите меня, госпожа Сара..."])
     Empty([])
 
 CommonEvent 38
@@ -591,8 +542,7 @@ Name = "EV038"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["誰か……サバサに救いの手を……"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Кто-нибудь... помогите Сабасе..."])
     Empty([])
 
 CommonEvent 39
@@ -600,13 +550,11 @@ Name = "EV039"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【売り子】"])
-    ShowText(["ああ……助けて、助けて……"])
+    ShowText(["\\n<\\C[6]Продавщица\\C[0]>Аааа... Спасите... Спасите..."])
     ConditionalBranch([4, 531, 0])
       ShowTextAttributes(["saniria_fc2", 0, 0, 2])
-      ShowText(["【サン・イリア王】"])
-      ShowText(["そこで隠れていたまえ。"])
-      ShowText(["外を逃げ惑う方が危険だろう……"])
+      ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>Спрячься здесь."])
+      ShowText(["Будет опасно - пытаться сбежать..."])
       Empty([])
 
     BranchEnd([])
@@ -617,8 +565,7 @@ Name = "EV040"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【売り子】"])
-    ShowText(["私の……店……"])
+    ShowText(["\\n<\\C[6]Продавщица\\C[0]>Мой... магазин..."])
     Empty([])
 
 CommonEvent 41
@@ -626,9 +573,8 @@ Name = "EV041"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おばさん】"])
-    ShowText(["あたしは大丈夫、ここで隠れてるから……"])
-    ShowText(["他の人達を助けておくれ！"])
+    ShowText(["\\n<\\C[6]Бабушка\\C[0]>Со мной все хорошо, я тут прячусь."])
+    ShowText(["Пожалуйста, помогите другим!"])
     Empty([])
 
 CommonEvent 42
@@ -636,8 +582,7 @@ Name = "EV042"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["う……うう……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Уу... нгх..."])
     Empty([])
 
 CommonEvent 43
@@ -645,22 +590,18 @@ Name = "EV043"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -671,22 +612,18 @@ Name = "EV044"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -697,8 +634,7 @@ Name = "EV045"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["こいつは、強すぎる……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Она так сильна..."])
     Empty([])
 
 CommonEvent 46
@@ -706,8 +642,7 @@ Name = "EV046"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男】"])
-    ShowText(["こんな……うぅぅ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Нет... Ууух..."])
     Empty([])
 
 CommonEvent 47
@@ -715,22 +650,19 @@ Name = "EV047"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の商人】"])
-    ShowText(["今、前を通っていった二体の吸血鬼……"])
-    ShowText(["あんなバケモノ、見た事がない……"])
+    ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>Сейчас только что прошло два вампира..."])
+    ShowText(["Я никогда еще не видел настолько пугающих монстров."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["66"])
     ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
-    ShowText(["【ヴァニラ】"])
-    ShowText(["女王様の腹心、カーミラ様とエリザベート様だな……"])
-    ShowText(["ここで戦うなど、我は超怖いぞ。"])
+    ShowText(["\\n<\\C[6]Ванилла\\C[0]>Они, наверное, приближенные королевы: Кармилла"])
+    ShowText(["и Элизабет. Я очень боюсь с ними сражаться."])
     ExitEventProcessing([])
     Label(["302"])
     ShowTextAttributes(["vampire_fc1", 2, 0, 2])
-    ShowText(["【ヴィルヘルミナ】"])
-    ShowText(["女王様の右腕と左腕、カーミラ様とエリザベート様ね……"])
-    ShowText(["ここで戦いたくはなかったわ。"])
+    ShowText(["\\n<\\C[6]Вильгельмина\\C[0]>Правая и левая рука королевы - Кармилла"])
+    ShowText(["и Элизабет. Не хотела бы я сражаться с ними."])
     ExitEventProcessing([])
     Empty([])
 
@@ -739,22 +671,18 @@ Name = "EV048"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -765,8 +693,7 @@ Name = "EV049"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["ぐぐぐ……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Гххх..."])
     Empty([])
 
 CommonEvent 50
@@ -774,9 +701,8 @@ Name = "EV050"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【屈強な男】"])
-    ShowText(["ひぃぃぃ……！"])
-    ShowText(["なんなんだ、あいつ……！？"])
+    ShowText(["\\n<\\C[6]Силач\\C[0]>Хииии...!"])
+    ShowText(["Какого черта...?!"])
     Empty([])
 
 CommonEvent 51
@@ -790,18 +716,16 @@ Name = "EV052"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少女】"])
-    ShowText(["うわーん！"])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Увааа!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["たすけてー！"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Спасите!"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["525"])
     ShowTextAttributes(["sonia_fc1", 4, 0, 2])
-    ShowText(["【ソニア】"])
-    ShowText(["大丈夫……"])
-    ShowText(["お姉ちゃん達がやっつけるから、ここに隠れててね。"])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Все будет хорошо..."])
+    ShowText(["Сестренка побьет плохих вампиров,"])
+    ShowText(["а вы пока спрячьтесь здесь."])
     ExitEventProcessing([])
     Empty([])
 
@@ -810,18 +734,16 @@ Name = "EV053"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少女】"])
-    ShowText(["うわーん！"])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Увааа!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["たすけてー！"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Спасите!"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["525"])
     ShowTextAttributes(["sonia_fc1", 4, 0, 2])
-    ShowText(["【ソニア】"])
-    ShowText(["大丈夫……"])
-    ShowText(["お姉ちゃん達がやっつけるから、ここに隠れててね。"])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Все будет хорошо..."])
+    ShowText(["Сестренка побьет плохих вампиров,"])
+    ShowText(["а вы пока спрячьтесь здесь."])
     ExitEventProcessing([])
     Empty([])
 
@@ -851,43 +773,40 @@ Name = "EV056"
     MovePicture([6, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
     MovePicture([5, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["くくく、女王の身柄を押さえたな！"])
-    ShowText(["これでサバサは、吸血鬼が支配したも同然よ！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Хухуху, мы окружили тебя!"])
+    ShowText(["Теперь Сабаса в наших руках!"])
     ShowTextAttributes(["sara_fc1", 4, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["吸血鬼が、この国を支配して……"])
-    ShowText(["いったい何をするつもりなの？"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Вы, вампиры, хотите править этой страной?"])
+    ShowText(["Что вы собираетесь делать с ней?"])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["知れたこと……この国の民全員を、吸血鬼の奴隷とする。"])
-    ShowText(["我らが眷属に血液と精を捧げ、その生命をもって我らに奉仕するのだ。"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Это же очевидно... Все, кто живет здесь,"])
+    ShowText(["станут рабами вампиров. Они будут давать нам"])
+    ShowText(["свою кровь и сперму, а также вечно служить нам."])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["女王たる貴様も、吸血鬼の慰み者よ！"])
-    ShowText(["吸血の快楽で調教し、我が眷属達共用の奴隷としてくれよう！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>И ты, королева, тоже станешь нашей игрушкой!"])
+    ShowText(["Мы подсадим тебя на наслаждение от высасывания"])
+    ShowText(["крови и сделаем тебя рабыней для всего нашего"])
+    ShowText(["рода!"])
     ShowTextAttributes(["sara_fc1", 4, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["私達を奴隷にするですって……？"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Ты правда думаешь, что мы станем вашими рабами?"])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["その通り、貴様も民も吸血鬼の奴隷よ！"])
-    ShowText(["まずは貴様を公衆の面前で吸血し、惨めな姿を民に晒してくれよう！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Конечно, ты и твои люди, вы все станете рабами"])
+    ShowText(["вампиров! Сначала, я испью твою кровь на глазах"])
+    ShowText(["твоих людей и позволю им увидеть, как ты"])
+    ShowText(["извиваешься от удовольствия!"])
     ShowPicture([6, "80_sara_st06", 0, 0, -150, 0, 100, 100, 255, 0])
     ShowTextAttributes(["sara_fc1", 5, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["……吸血鬼など、魅凪様を祖とする淫魔から枝分かれした傍流の血族。"])
-    ShowText(["血などに頼り、エネルギー収支で淫魔に劣る進化の袋小路……"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>...Вы, вампиры, всего лишь ответвление рода"])
+    ShowText(["суккубов, созданное Великим Предком Минаги."])
+    ShowText(["Зависимые от крови, вы - низшая тупиковая ветка."])
     ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["なんだと……？"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Что...?"])
     ShowTextAttributes(["sara_fc1", 5, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["そんな劣った者達が、私を奴隷に？"])
-    ShowText(["スフィンクスを祖に持ち、リリスの手で覚醒に至ったこの私を……？"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>И эти низшие создания думают, что смогут"])
+    ShowText(["поработить меня? Меня, потомка Сфинкса?"])
+    ShowText(["Меня, пробудившуюся от рук самой Лилит?"])
     ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["き、貴様……まさか――！？"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Т-ты... неужели...?!"])
     ErasePicture([5])
     ErasePicture([6])
     Wait([60])
@@ -899,9 +818,8 @@ Name = "EV056"
     ShowPicture([5, "80_saraevil_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["sara_fc4", 0, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["あはははっ……逆でしょう？"])
-    ShowText(["あんた達が、私の奴隷になるのよぉ……！"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Ахахаха... Как вам такой поворот?"])
+    ShowText(["Теперь ВЫ станете моими рабами!"])
     ErasePicture([5])
     Wait([60])
     ShowAnimation([95, 522, false])
@@ -922,25 +840,22 @@ Name = "EV056"
     Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-2, 3])"])
     ControlSwitches([32, 32, 0])
     ShowTextAttributes(["vampire_fc1", 2, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["きゃぁぁぁぁ――！！"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кьяяяя!"])
     Wait([60])
     ShowPicture([6, "80_saraevil_st01", 0, 0, -150, 0, 100, 100, 0, 0])
     ShowPicture([5, "80_elisabeth_st03", 0, 0, 150, 0, 100, 100, 0, 0])
     MovePicture([6, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
     MovePicture([5, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["そうか……王家の血脈、それにスフィンクスの血……"])
-    ShowText(["さらに、リリスの強大な力の影響……"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Понятно... В тебе кровь королевского рода,"])
+    ShowText(["кровь Сфинкса и прикосновение мощи Лилит."])
     ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["まさか、サバサにこんな怪物が根付いていたとはな……"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Подумать только, что Сабасой правит такое"])
+    ShowText(["чудовище..."])
     ErasePicture([5])
     ErasePicture([6])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["サラ！！　大丈夫なのか！？"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Сара! Ты в порядке?!"])
     SetMoveRoute([78, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-2, 3])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-2, 3])"])
     Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
@@ -950,42 +865,37 @@ Name = "EV056"
     ShowPicture([5, "80_saraevil_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["sara_fc4", 0, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["うふふっ、ちゃぁんと理性は保っているわ……"])
-    ShowText(["それに、とってもイイ気持ちよ……♪"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Уфуфу, я полностью себя контролирую."])
+    ShowText(["И чувствую себя таааак хорошо ♪"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["本当に、ちゃんと理性を保ってるの……？"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Ты правда себя контролируешь?"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["本当に、ちゃんと理性を保ってるのか……？"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ты правда себя контролируешь?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 284, 0])
       ShowTextAttributes(["minccubus_fc1", 3, 0, 2])
-      ShowText(["【セーラ】"])
-      ShowText(["こういうの、経験あるかも……"])
+      ShowText(["\\n<\\C[6]Сера\\C[0]>Со мной также было..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ともかくサラよ、一緒に戦うぞ！"])
-      ShowText(["エリザベートを倒せば、吸血鬼の軍隊も瓦解する！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>В любом случае, сражайся вместе с нами, Сара!"])
+      ShowText(["Если мы победим Элизабет, вампирская армия падет!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ともかくサラ……その力を私のために使うのです。"])
-      ShowText(["エリザベートを倒せば、吸血鬼の軍も一挙に崩れるはず！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Не важно... Используй эту силу, чтобы помочь нам!"])
+      ShowText(["Мы сможем победить Элизабет и сокрушить вампирскую"])
+      ShowText(["армию одним ударом!"])
       Empty([])
 
     BranchEnd([])
@@ -1010,26 +920,25 @@ Name = "EV056"
     BranchEnd([])
     PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["サラが再び仲間に加わった！"])
+    ShowText(["Сара возвращается в группу!"])
     Wait([60])
     ShowPicture([5, "80_elisabeth_st03", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["sara_fc4", 0, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["さあ……あの吸血鬼に、たっぷりとお礼をしてやらなくちゃね。"])
-    ShowText(["あなたは、この国の民達の嫐り者にしてあげる……"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Ну а теперь... давайте отплатим этим вампирам"])
+    ShowText(["за каждого жителя моей страны, до которого"])
+    ShowText(["они домогались..."])
     ShowPicture([5, "80_elisabeth_st02", 0, 0, 0, 0, 100, 100, 255, 0])
     ShowTextAttributes(["elisabeth_fc1", 1, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["ふん！　我とて、クィーンヴァンパイア直属の上級妖魔！"])
-    ShowText(["貴様等などに、遅れなど取らんわ！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Хмпф! Я - высокоранговый монстр, служащий"])
+    ShowText(["напрямую Королеве Вампиров!"])
+    ShowText(["Не недооценивай меня!"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["これ以上、この国を荒らさせはしない……行くぞっ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Мы не позволим вам дальше вредить Сабасе!"])
+    ShowText(["Все закончится сейчас!"])
     ConditionalBranch([4, 185, 0])
       ShowTextAttributes(["radio_fc1", 0, 0, 2])
-      ShowText(["【ラディオ】"])
-      ShowText(["夜のバけもノ……夜に還レ……"])
+      ShowText(["\\n<\\C[6]Радио\\C[0]>СущесТВА НОчи... ВозвращайтеСЬ в ночь..."])
       Empty([])
 
     BranchEnd([])
@@ -1044,92 +953,82 @@ Name = "EV056"
     ShowPicture([5, "80_elisabeth_st03", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["sara_fc4", 1, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["あははっ、不甲斐ないわねぇ……"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Ахаха, какое разочарование..."])
     ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["おのれ……"])
-    ShowText(["不本意だが、侵攻作戦はここで中止だ……"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Проклятье..."])
+    ShowText(["Пока мы остановим вторжение."])
     ShowPicture([5, "80_elisabeth_st01", 0, 0, 0, 0, 100, 100, 255, 0])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["だがこれは、戦術的撤退に過ぎん！"])
-    ShowText(["吸血鬼の魔城では、さらに多くの吸血鬼が控えているのだ！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Но это всего лишь стратегическое отступление!"])
+    ShowText(["В Вампирском Замке ждет своего часа еще много"])
+    ShowText(["вампиров!"])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["そう何度も、我らを追い返せると思うな！"])
-    ShowText(["結局最後は、この地は我々のものとなるのだ！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Не думайте, что сможете удерживать нас вечно!"])
+    ShowText(["Скоро эта земля все равно станет нашей!"])
     ShowTextAttributes(["elisabeth_fc1", 0, 0, 2])
-    ShowText(["【エリザベート】"])
-    ShowText(["ふははははは……さらばだ！"])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Фухахахахаха... Увидимся!"])
     ErasePicture([5])
     Wait([60])
     PlaySE(["RPG::SE(@name=\"mon_warp\", @pitch=100, @volume=80)"])
     ControlSwitches([34, 34, 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["負け惜しみ、と言いたいところだが……"])
-      ShowText(["クィーンヴァンパイアは、まだまだ相当の戦力を抱えているぞ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Она совсем не умеет проигрывать..."])
+      ShowText(["Но в чем-то она права, в распоряжении Королевы"])
+      ShowText(["Вампиров все еще большая военная мощь."])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["吸血鬼の魔城に乗り込み、女王を討たねば終わるまい。"])
-      ShowText(["だが、一時のものとはいえ勝利は勝利だ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это не закончится до тех пор пока мы не победим"])
+      ShowText(["ее в Вампирском Замке. Тем не менее,"])
+      ShowText(["хоть и временная - победа все еще победа."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["負け惜しみと言いたいところですが……"])
-      ShowText(["クィーンヴァンパイアは、相当の戦力を抱えているのは事実です。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Она совсем не умеет проигрывать..."])
+      ShowText(["Однако, она права: в распоряжении Королевы"])
+      ShowText(["Вампиров все еще большая военная мощь."])
       ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["吸血鬼の魔城に乗り込み、女王を滅ぼしてこその完全勝利です。"])
-      ShowText(["とはいえ、吸血鬼の群れを一時的には押し返せましたね。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Чтобы добиться полной победы, нам нужно напасть"])
+      ShowText(["на Вампирский Замок и сразить ее. Тем не менее,"])
+      ShowText(["мы отогнали орды вампиров на какое-то время."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 45, 0])
       ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
-      ShowText(["【アリストロメリア】"])
-      ShowText(["蝙蝠のパーティも、ここでお開きですね。"])
-      ShowText(["まだメインディッシュも頂いておりませんのに……"])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Похоже, вечеринка летучих мышей уже кончилась."])
+      ShowText(["А мы даже не приступили к главному блюду..."])
       Empty([])
 
     BranchEnd([])
     ShowPicture([5, "80_saraevil_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["sara_fc4", 0, 0, 2])
-    ShowText(["【サラ】"])
-    ShowText(["うふふっ……今まで通り、私はあなた達の仲間よ。"])
-    ShowText(["たっぷりと楽しませてね……♪"])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Уфуфу... Я, как и прежде, продолжу путешествовать"])
+    ShowText(["с вами. Давайте хорошенько развлечемся ♪"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["これでいいの……？"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Все ли будет нормально...?"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["これでいいのかな……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Все будет нормально...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 1, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["サラのおかげで、逆転できたのだ。"])
-      ShowText(["まあ、良かったではないか。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ну, благодаря Саре мы смогли переломить ход"])
+      ShowText(["сражения. Так что, в чем проблема?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["以前の私なら、文句も言っていたでしょうが……"])
-      ShowText(["まあ、結果オーライで良いではありませんか。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Раньше, я бы возразила..."])
+      ShowText(["Ну да ладно, посмотрим, как будет в итоге."])
       Empty([])
 
     BranchEnd([])
@@ -1143,20 +1042,21 @@ Name = "EV056"
 
     BranchEnd([])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["話もまとまったところで、次に行こう！"])
-    ShowText(["他の国が、まだ攻撃を受けているんだ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Мы еще не закончили!"])
+    ShowText(["Нам нужно поторопиться в другие страны, которые"])
+    ShowText(["все еще под атакой!"])
     FadeoutScreen([])
     ControlSwitches([31, 31, 1])
     ControlSwitches([32, 32, 1])
     ControlSwitches([33, 33, 1])
     ControlSwitches([34, 34, 1])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["こうして僕達は、吸血鬼の軍団を撃退した。"])
-    ShowText(["しかし体を休める暇もなく、サバサを後にしなければならない。"])
+    ShowText(["Итак, мы изгнали армию вампиров."])
+    ShowText(["Однако, сейчас не время праздновать победу."])
+    ShowText(["Мы должны покинуть Сабасу."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["四大国を襲う、魔王軍の大攻勢――"])
-    ShowText(["全力を尽くし、なんとしても防がなければ。"])
+    ShowText(["Владыка Монстров выступила против четырех государств..."])
+    ShowText(["И нам нужно сделать все, чтобы их защитить."])
     Wait([60])
     TransferPlayer([0, 2, 103, 294, 2, 0])
     FadeinScreen([])
@@ -1168,8 +1068,7 @@ Name = "EV057"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["血も精も……吸われてしまった……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Они высосали мою кровь... и сперму..."])
     Empty([])
 
 CommonEvent 60
@@ -1177,8 +1076,7 @@ Name = "EV060"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["う……ぐ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Уу... гх..."])
     Empty([])
 
 CommonEvent 61
@@ -1186,14 +1084,13 @@ Name = "EV061"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["負傷者をここに運んで、応急処置をしてるんだ。"])
-    ShowText(["あんた達も、この薬を使ってくれ！"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Тут мы оказываем помощь пострадавшим."])
+    ShowText(["Вы тоже, используйте вот это лекарство!"])
     PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
     FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
     RecoverAll([0, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ルカ達のHPとMPが全快した！"])
+    ShowText(["HP и MP группы полностью восстановлены!"])
     Empty([])
 
 CommonEvent 64
@@ -1211,8 +1108,7 @@ Name = "EV067"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【親衛隊長】"])
-    ShowText(["サラ女王……サバサ先王陛下……申し訳ありません……"])
+    ShowText(["\\n<\\C[6]Королевская Стража\\C[0]>Королева Сара... ваше величество... простите..."])
     Empty([])
 
 CommonEvent 69
@@ -1221,19 +1117,17 @@ Name = "EV069"
   Page 0
     ConditionalBranch([0, 2236, 1])
       ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-      ShowText(["【コンキスタ】"])
-      ShowText(["その程度の力で、国を守るなど笑わせるな！"])
+      ShowText(["\\n<\\C[6]Конкиста\\C[0]>Думаете вы, слабаки, сможете защитить свою страну?"])
+      ShowText(["Не смешите меня!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【兵士】"])
-      ShowText(["ぐっ……きゅ、救援を……！"])
+      ShowText(["\\n<\\C[6]Солдат\\C[0]>Гах... Г-где же наше подкрепление?!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 2236, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【兵士】"])
-      ShowText(["自分の力不足を思い知りました……"])
-      ShowText(["傷も深く、しばらくは動けません……"])
+      ShowText(["\\n<\\C[6]Солдат\\C[0]>Я осознал, насколько неподготовлены мы были..."])
+      ShowText(["Мои раны глубоки, так что пока я не смогу двигаться."])
       Empty([])
 
     BranchEnd([])
@@ -1272,15 +1166,12 @@ Name = "EV083"
 
   Page 0
     ShowTextAttributes(["dog_fc1", 4, 0, 2])
-    ShowText(["【犬娘】"])
-    ShowText(["わん！　わん！　こわいよー！"])
+    ShowText(["\\n<\\C[6]Девушка-Собака\\C[0]>Гав! Гав! Страшно!"])
     ConditionalBranch([4, 60, 0])
       ShowTextAttributes(["dog_fc1", 1, 0, 2])
-      ShowText(["【ポチ】"])
-      ShowText(["大丈夫、あたし達がやっつけるから！"])
+      ShowText(["\\n<\\C[6]Почи\\C[0]>Не волнуйся, мы всех побьем!"])
       ShowTextAttributes(["dog_fc1", 4, 0, 2])
-      ShowText(["【犬娘】"])
-      ShowText(["くーん、くーん……"])
+      ShowText(["\\n<\\C[6]Девушка-Собака\\C[0]>*Скулит*"])
       Empty([])
 
     BranchEnd([])
@@ -1303,14 +1194,12 @@ Name = "EV090"
 
   Page 0
     ShowTextAttributes(["e_vampire_fc1", 0, 0, 2])
-    ShowText(["【エルダーヴァンパイア】"])
-    ShowText(["次は貴様等か……"])
-    ShowText(["さあ、我が餌食となれ……"])
+    ShowText(["\\n<\\C[6]Старший Вампир\\C[0]>Вы - мои следующие жертвы?"])
+    ShowText(["Идите, станьте моей добычей..."])
     ConditionalBranch([4, 522, 0])
       ShowTextAttributes(["merlin_fc1", 0, 0, 2])
-      ShowText(["【マーリン】"])
-      ShowText(["古種ですね……"])
-      ShowText(["気合いを入れてかかりましょうか。"])
+      ShowText(["\\n<\\C[6]Мерлин\\C[0]>Старший вид?"])
+      ShowText(["Стоит ли мне на ней разогреться?"])
       Empty([])
 
     BranchEnd([])
@@ -1323,8 +1212,7 @@ Name = "EV091"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【吟遊詩人】"])
-    ShowText(["この国の終焉を……歌いたくはありません……"])
+    ShowText(["\\n<\\C[6]Менестрель\\C[0]>Я не хочу писать поэму о гибели этой страны..."])
     Empty([])
 
 CommonEvent 92
@@ -1332,8 +1220,7 @@ Name = "EV092"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["吸血鬼の力、凄まじい……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Вампиры абсурдно сильны..."])
     Empty([])
 
 CommonEvent 93
@@ -1341,8 +1228,7 @@ Name = "EV093"
 
   Page 0
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1353,8 +1239,7 @@ Name = "EV094"
 
   Page 0
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1365,8 +1250,7 @@ Name = "EV095"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1377,8 +1261,7 @@ Name = "EV096"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1389,8 +1272,7 @@ Name = "EV097"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1416,8 +1298,7 @@ Name = "EV100"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["ここは通さん！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Здесь хода нет!"])
     Empty([])
 
   Page 1
@@ -1437,8 +1318,7 @@ Name = "EV102"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["くっ、行くぞ……！"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Кхх, вперед!"])
     Empty([])
 
   Page 1
@@ -1449,8 +1329,7 @@ Name = "EV103"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["なんて力なんだ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Какие сильные..."])
     Empty([])
 
   Page 1
@@ -1461,8 +1340,7 @@ Name = "EV104"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["仲間達が、あっという間に……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Всех нас... в одно мгновение..."])
     Empty([])
 
   Page 1
@@ -1482,8 +1360,7 @@ Name = "EV106"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["う……ぐぅ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Мм... Гах..."])
     Empty([])
 
 CommonEvent 107
@@ -1491,8 +1368,7 @@ Name = "EV107"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["体が……痺れて……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Мое тело... парализовано..."])
     Empty([])
 
 CommonEvent 108
@@ -1500,8 +1376,7 @@ Name = "EV108"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["なんて力だ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Какие сильные..."])
     Empty([])
 
 CommonEvent 109
@@ -1509,8 +1384,7 @@ Name = "EV109"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["ぐ……うう……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Кхх... Ууух..."])
     Empty([])
 
 CommonEvent 111
@@ -1518,8 +1392,7 @@ Name = "EV111"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【親衛隊】"])
-    ShowText(["サラ様の身を……お守りできないとは……"])
+    ShowText(["\\n<\\C[6]Королевская Стража\\C[0]>Мы не смогли... защитить госпожу Сару..."])
     Empty([])
 
 CommonEvent 112
@@ -1527,8 +1400,7 @@ Name = "EV112"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【親衛隊】"])
-    ShowText(["親衛隊が……たやすく破られるとは……"])
+    ShowText(["\\n<\\C[6]Королевская Стража\\C[0]>Королевская стража... побеждена так легко..."])
     Empty([])
 
 CommonEvent 113
@@ -1536,8 +1408,7 @@ Name = "EV113"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1548,8 +1419,7 @@ Name = "EV114"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>......"])
     Empty([])
 
   Page 1
@@ -1560,11 +1430,9 @@ Name = "EV115"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["我が剣で、祖国を守る！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Я защищу свою родину!"])
     ShowTextAttributes(["vampire_fc1", 1, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["骨のある人間ね……その血を啜りたいわ……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Человек со стержнем? Мой любимый вкус..."])
     Empty([])
 
 CommonEvent 116
@@ -1572,11 +1440,9 @@ Name = "EV116"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["我が剣で、祖国を守る！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Я защищу свою родину!"])
     ShowTextAttributes(["vampire_fc1", 1, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["骨のある人間ね……その血を啜りたいわ……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Человек со стержнем? Мой любимый вкус..."])
     Empty([])
 
 CommonEvent 117
@@ -1584,27 +1450,22 @@ Name = "EV117"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["その血、最後の一滴まで吸い尽くしてあげる……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Я высосу твою кровь до последней капли!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["やめて……あ、あぁぁぁぁ――！！"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Стой! А-Ааааа!!"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["やめろっ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Стоять!"])
     ConditionalBranch([4, 204, 0])
       ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-      ShowText(["【ステイシー】"])
-      ShowText(["民を虐げること、海軍が許しません！"])
+      ShowText(["\\n<\\C[6]Стейси\\C[0]>Флот не потерпит нападения на граждан!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 760, false, false])
     ControlSwitches([2234, 2234, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["気持ち良かったけど、死ぬとこだった……"])
-    ShowText(["お礼にこれを受け取ってくれよ。"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Это такое чудесное ощущение, но я чуть не помер..."])
+    ShowText(["Вот, возьми это в качестве благодарности."])
     PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
     ChangeItems([30, 0, 0, 1])
     ExitEventProcessing([])
@@ -1618,11 +1479,9 @@ Name = "EV118"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["サバサ軍を甘く見るな！　うぉぉぉっ！！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Не недооценивай армию Сабасы! Уооооо!!"])
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["なかなかの腕よ、面白い……！"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Неплохо. Становится весело!"])
     Empty([])
 
 CommonEvent 119
@@ -1630,11 +1489,9 @@ Name = "EV119"
 
   Page 0
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["サバサ軍を甘く見るな！　うぉぉぉっ！！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Не недооценивай армию Сабасы! Уооооо!!"])
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["なかなかの腕よ、面白い……！"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Неплохо. Становится весело!"])
     Empty([])
 
 CommonEvent 120
@@ -1643,32 +1500,25 @@ Name = "EV120"
   Page 0
     ConditionalBranch([0, 2235, 1])
       ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-      ShowText(["【ヴェンデッタ】"])
-      ShowText(["一家三人の血、まとめて啜れるとは……"])
-      ShowText(["ふふっ、お腹がいっぱいになってしまいますね……"])
+      ShowText(["\\n<\\C[6]Вендетта\\C[0]>Ох, тут целая семья из трех человек."])
+      ShowText(["Фуфу, сегодня я вдоволь напьюсь крови."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【男性】"])
-      ShowText(["家族に手は出させないぞ！　このぉっ！"])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Не смей и пальцем тронуть мою семью, монстр!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【女性】"])
-      ShowText(["あ、あんた……"])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Д-дорогой..."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少女】"])
-      ShowText(["だ、だれか助けてー！！"])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>П-помогите, кто-нибудь!!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 2235, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【男性】"])
-      ShowText(["ありがとう、君は命の恩人だ！"])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Спасибо, ты спас нас!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【女性】"])
-      ShowText(["ああ……救い主様だよ……"])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Да... Наш спаситель..."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少女】"])
-      ShowText(["お兄ちゃん、かっこいい！"])
-      ShowText(["英雄ハインリヒみたい！"])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>Братик, ты такой крутой!"])
+      ShowText(["Прямо как герой Генрих!"])
       Empty([])
 
     BranchEnd([])
@@ -1680,32 +1530,25 @@ Name = "EV121"
   Page 0
     ConditionalBranch([0, 2235, 1])
       ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-      ShowText(["【ヴェンデッタ】"])
-      ShowText(["一家三人の血、まとめて啜れるとは……"])
-      ShowText(["ふふっ、お腹がいっぱいになってしまいますね……"])
+      ShowText(["\\n<\\C[6]Вендетта\\C[0]>Ох, тут целая семья из трех человек."])
+      ShowText(["Фуфу, сегодня я вдоволь напьюсь крови."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【男性】"])
-      ShowText(["家族に手は出させないぞ！　このぉっ！"])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Не смей и пальцем тронуть мою семью, монстр!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【女性】"])
-      ShowText(["あ、あんた……"])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Д-дорогой..."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少女】"])
-      ShowText(["だ、だれか助けてー！！"])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>П-помогите, кто-нибудь!!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 2235, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【男性】"])
-      ShowText(["ありがとう、君は命の恩人だ！"])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Спасибо, ты спас нас!"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【女性】"])
-      ShowText(["ああ……救い主様だよ……"])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Да... Наш спаситель..."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【少女】"])
-      ShowText(["お兄ちゃん、かっこいい！"])
-      ShowText(["英雄ハインリヒみたい！"])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>Братик, ты такой крутой!"])
+      ShowText(["Прямо как герой Генрих!"])
       Empty([])
 
     BranchEnd([])
@@ -1716,8 +1559,7 @@ Name = "EV122"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ごろつき】"])
-    ShowText(["こ、来ないでくれ！　吸血鬼に見つかるだろ！"])
+    ShowText(["\\n<\\C[6]Бандит\\C[0]>У-уйди! Ты ко мне вампиров приведешь!"])
     Empty([])
 
 CommonEvent 123
@@ -1725,41 +1567,32 @@ Name = "EV123"
 
   Page 0
     ShowTextAttributes(["vendetta_fc1", 0, 0, 2])
-    ShowText(["【ヴェンデッタ】"])
-    ShowText(["一家三人の血、まとめて啜れるとは……"])
-    ShowText(["ふふっ、お腹がいっぱいになってしまいますね……"])
+    ShowText(["\\n<\\C[6]Вендетта\\C[0]>Ох, тут целая семья из трех человек."])
+    ShowText(["Фуфу, сегодня я вдоволь напьюсь крови."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男性】"])
-    ShowText(["家族に手は出させないぞ！　このぉっ！"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Не смей и пальцем тронуть мою семью, монстр!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【女性】"])
-    ShowText(["あ、あんた……"])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Д-дорогой..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少女】"])
-    ShowText(["だ、だれか助けてー！！"])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>П-помогите, кто-нибудь!!"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["やめろっ！　僕が相手だ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Стоять! Я - твой противник!"])
     ConditionalBranch([4, 288, 0])
       ShowTextAttributes(["d_succubus_fc1", 0, 0, 2])
-      ShowText(["【ナターシャ】"])
-      ShowText(["この私の前で、無辜な家族を引き裂こうと……？"])
-      ShowText(["報いを受けてもらいましょうか……"])
+      ShowText(["\\n<\\C[6]Наташа\\C[0]>Решила обнажить клыки перед невинной семьей в моем"])
+      ShowText(["присутствии? Ты получишь, что заслуживаешь..."])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 809, false, false])
     ControlSwitches([2235, 2235, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男性】"])
-    ShowText(["ありがとう、君は命の恩人だ！"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Спасибо, ты спас нас!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【女性】"])
-    ShowText(["ああ……救い主様だよ……"])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Да... Наш спаситель..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少女】"])
-    ShowText(["お兄ちゃん、かっこいい！"])
-    ShowText(["英雄ハインリヒみたい！"])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Братик, ты такой крутой!"])
+    ShowText(["Прямо как герой Генрих!"])
     PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
     ChangeItems([8, 0, 0, 1])
     ExitEventProcessing([])
@@ -1773,8 +1606,7 @@ Name = "EV124"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["市民を……守らなければいけないのに……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Я должен... защитить людей..."])
     Empty([])
 
 CommonEvent 125
@@ -1782,12 +1614,10 @@ Name = "EV125"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["その血、味わわせてもらうわ……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Позволь мне вкусить твою кровь..."])
     ConditionalBranch([4, 239, 0])
       ShowTextAttributes(["rafi_fc1", 0, 0, 2])
-      ShowText(["【ラフィ】"])
-      ShowText(["その肉、味わわせてもらいましょう……"])
+      ShowText(["\\n<\\C[6]Раффия\\C[0]>Позволь мне вкусить твою плоть..."])
       Empty([])
 
     BranchEnd([])
@@ -1800,27 +1630,23 @@ Name = "EV126"
 
   Page 0
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["その程度の力で、国を守るなど笑わせるな！"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Думаете вы, слабаки, сможете защитить свою страну?"])
+    ShowText(["Не смешите меня!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["ぐっ……きゅ、救援を……！"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Гах... Г-где же наше подкрепление?!"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["僕が相手だ！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Я - твой противник!"])
     ConditionalBranch([4, 298, 0])
       ShowTextAttributes(["dragon_fc1", 0, 0, 2])
-      ShowText(["【グランテ】"])
-      ShowText(["か弱き人間をいたぶり、得意顔とは笑わせる！"])
+      ShowText(["\\n<\\C[6]Гранти\\C[0]>Задираешь слабых людей? Не смеши МЕНЯ!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 808, false, false])
     ControlSwitches([2236, 2236, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["た、助かりました……"])
-    ShowText(["力不足の自分を恥じます……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Вы спасли меня..."])
+    ShowText(["Мне стыдно, что я настолько слаб..."])
     PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
     ChangeItems([24, 0, 0, 1])
     ExitEventProcessing([])
@@ -1834,22 +1660,18 @@ Name = "EV127"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -1860,22 +1682,18 @@ Name = "EV128"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -1886,22 +1704,18 @@ Name = "EV129"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["大通りは通行できんな……迂回するぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["大通りは通行できません……迂回しましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Улица заблокирована! Давай обойдем их!"])
       Empty([])
 
     BranchEnd([])
@@ -1912,22 +1726,18 @@ Name = "EV130"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -1938,22 +1748,18 @@ Name = "EV131"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -1964,22 +1770,18 @@ Name = "EV132"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -2000,22 +1802,18 @@ Name = "EV134"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -2026,22 +1824,18 @@ Name = "EV135"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -2052,22 +1846,18 @@ Name = "EV136"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["戦列を維持せよ！　一歩も引くな！"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Держим строй! Не уступим им ни шагу!"])
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["サバサ騎兵部隊、一筋縄ではいかないわね……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Кавалерия Сабасы не уступает..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここは騎兵隊に任せて、先に進むぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは騎兵隊に任せ、先に進みましょう！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Оставим их кавалерии! Идем дальше!"])
       Empty([])
 
     BranchEnd([])
@@ -2078,8 +1868,7 @@ Name = "EV137"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["つ、強い……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>В-вот это сила..."])
     Empty([])
 
 CommonEvent 138
@@ -2087,8 +1876,7 @@ Name = "EV138"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["あれが高位の妖魔というものか……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Это какие-то высокоранговые монстры...?"])
     Empty([])
 
 CommonEvent 139
@@ -2096,8 +1884,7 @@ Name = "EV139"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["勝てる相手じゃない……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>С ними мы явно не сможем тягаться..."])
     Empty([])
 
 CommonEvent 140
@@ -2105,8 +1892,7 @@ Name = "EV140"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["どうやったら、あんなのと戦えるんだ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Как мы должны с этим сражаться...?"])
     Empty([])
 
 CommonEvent 141
@@ -2184,8 +1970,7 @@ Name = "EV148"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老婆】"])
-    ShowText(["イリアス様、お救いを……"])
+    ShowText(["\\n<\\C[6]Старушка\\C[0]>Госпожа Илиас, спасите нас..."])
     Empty([])
 
 CommonEvent 149
@@ -2193,8 +1978,7 @@ Name = "EV149"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["まだ……戦える……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Я все еще... могу биться..."])
     Empty([])
 
 CommonEvent 150
@@ -2202,8 +1986,7 @@ Name = "EV150"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["うぐぐぐ……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Угхххх..."])
     Empty([])
 
 CommonEvent 151
@@ -2211,8 +1994,7 @@ Name = "EV151"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【町娘】"])
-    ShowText(["大丈夫ですか？　この薬を！"])
+    ShowText(["\\n<\\C[6]Горожанка\\C[0]>Ты в порядке? Вот, лекарство!"])
     Empty([])
 
 CommonEvent 152
@@ -2220,8 +2002,7 @@ Name = "EV152"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["ぐぅぅ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Гхх..."])
     Empty([])
 
 CommonEvent 153
@@ -2229,8 +2010,7 @@ Name = "EV153"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["か、かたじけない……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>С-спасибо..."])
     Empty([])
 
 CommonEvent 154
@@ -2238,8 +2018,7 @@ Name = "EV154"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【神父】"])
-    ShowText(["お気を確かに！　体は動きますか？"])
+    ShowText(["\\n<\\C[6]Жрец\\C[0]>Держись! Пошевелиться можешь?"])
     Empty([])
 
 CommonEvent 155
@@ -2247,8 +2026,7 @@ Name = "EV155"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["まだ、仲間が……戦って……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Мои соратники... все еще сражаются..."])
     Empty([])
 
 CommonEvent 156
@@ -2256,11 +2034,9 @@ Name = "EV156"
 
   Page 0
     ShowTextAttributes(["saboten_fc1", 2, 0, 2])
-    ShowText(["【サボテン娘】"])
-    ShowText(["憩いの時間を返して下さるかしら……！"])
+    ShowText(["\\n<\\C[6]Девушка-Кактус\\C[0]>Верни мне мой отдых...!"])
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["トゲが刺さる……"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Ты колешься..."])
     Empty([])
 
 CommonEvent 157
@@ -2268,9 +2044,7 @@ Name = "EV157"
 
   Page 0
     ShowTextAttributes(["saboten_fc1", 2, 0, 2])
-    ShowText(["【サボテン娘】"])
-    ShowText(["憩いの時間を返して下さるかしら……！"])
+    ShowText(["\\n<\\C[6]Девушка-Кактус\\C[0]>Верни мне мой отдых...!"])
     ShowTextAttributes(["conquista_fc1", 0, 0, 2])
-    ShowText(["【コンキスタ】"])
-    ShowText(["トゲが刺さる……"])
+    ShowText(["\\n<\\C[6]Конкиста\\C[0]>Ты колешься..."])
     Empty([])

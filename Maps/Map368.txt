@@ -16,7 +16,7 @@ Name = "EV002"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -41,7 +41,7 @@ Name = "EV003"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -66,7 +66,7 @@ Name = "EV004"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -91,7 +91,7 @@ Name = "EV005"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -116,7 +116,7 @@ Name = "EV006"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -141,7 +141,7 @@ Name = "EV007"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -166,23 +166,20 @@ Name = "EV008"
   Page 0
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 7, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["おお！　ここが噂の隠し宝物庫に違いないぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ооо! Это должно быть скрытое сокровище из слухов!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここが隠し宝物庫ですね！"])
-      ShowText(["さあ、財宝を頂戴しましょう……♪"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это же скрытая сокровищница!"])
+      ShowText(["Давай заберем все сокровища ♪"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 202, 0])
       ShowTextAttributes(["bonny_fc1", 1, 0, 2])
-      ShowText(["【ボニー】"])
-      ShowText(["これだから、海賊稼業はやめられんな！"])
+      ShowText(["\\n<\\C[6]Бонни\\C[0]>Вот почему я никогда не устану быть пираткой!"])
       Empty([])
 
     BranchEnd([])

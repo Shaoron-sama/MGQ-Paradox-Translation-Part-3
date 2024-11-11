@@ -1,4 +1,4 @@
-Display Name = "タルタロスCW148240 第2層"
+Display Name = "Тартар-CW148240: 2 Уровень"
 Parallax Name = "DarkSpace1"
 Note = ""
 
@@ -66,7 +66,7 @@ Name = "EV007"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -92,30 +92,26 @@ Name = "EV008"
     ControlSwitches([2102, 2102, 0])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 7, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["な……なんなの、ここ……！？"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Ч... что это за место...?!"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["こ、ここは一体……！？"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ч-что это за место...?!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["空間がかなり不安定化しているようだが……"])
-      ShowText(["何がどうなれば、こんな事になるのだ……？"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Здешнее пространство выглядит очень"])
+      ShowText(["нестабильным... Что сделало его таким...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["混沌の侵蝕が、ここまで……"])
-      ShowText(["もはや、これ自体が異界ではありませんか……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Эрозия Хаоса зашла уже так далеко..."])
+      ShowText(["Эта часть уже превратилась в другой мир..."])
       Empty([])
 
     BranchEnd([])

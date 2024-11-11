@@ -1,4 +1,4 @@
-Display Name = "メダル女王の城"
+Display Name = "Замок Королевы Медалей"
 Parallax Name = ""
 Note = ""
 
@@ -49,21 +49,18 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["ごはん、まだかな？"])
-    ShowText(["今日は、女王様と一緒におさかな食べるんだよ♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Еще не время ужина?"])
+    ShowText(["Королева сказала, что на ужин будет рыбка! ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["いいな～♪"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Ооо хорошо ♪"])
     ExitEventProcessing([])
     Label(["533"])
     ShowTextAttributes(["grandnoa_fc1", 1, 0, 2])
-    ShowText(["【グランドノア女王】"])
-    ShowText(["すぐ戻ってきますから……"])
-    ShowText(["もう少し、待っていて下さいね。"])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Я скоро вернусь."])
+    ShowText(["До тех пор рыбка подождет."])
     ExitEventProcessing([])
     Empty([])
 
@@ -154,7 +151,7 @@ Name = "EV021"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -179,7 +176,7 @@ Name = "EV022"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -203,22 +200,19 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["ぷるぷるぷるー！"])
-    ShowText(["あたしも、小さなメダルを探してるんだよ♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Пурупуру пуру!"])
+    ShowText(["Я тоже охочусь за медальками! ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["わーい、あたしも探そっと♪"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Ура, я тоже! ♪"])
     ExitEventProcessing([])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["533"])
     ShowTextAttributes(["grandnoa_fc1", 1, 0, 2])
-    ShowText(["【グランドノア女王】"])
-    ShowText(["ふふっ、がんばって下さいね。"])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Хуху, удачи тебе."])
     ExitEventProcessing([])
     Empty([])
 
@@ -236,13 +230,13 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["メダル女王様のお城にようこそ！"])
-    ShowText(["ここで、小さなメダルを色々なアイテムと交換できるよ。"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Добро пожаловать в Замок Королевы Медалей!"])
+    ShowText(["Ты можешь здесь обменять свои медальки на вещи!"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["えっ？　お城にしては小さいって……？"])
-    ShowText(["キミ、贅沢なんだね。"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Ааа? Ты считаешь, что это место"])
+    ShowText(["слишком маленькое, чтобы называться замком?"])
+    ShowText(["Ну конеееечно, мистер выпендрежник."])
+    ShowText(["Твой-то замок, уверена, ГОРААААЗДО больше!"])
     Empty([])
 
   Page 1
@@ -253,25 +247,20 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【身なりの良い男】"])
-    ShowText(["小さなメダルを集め、半信半疑で貴族の位と交換してみたんだが……"])
-    ShowText(["なんとビックリ、本当に貴族位が授けられたんだよ！"])
+    ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Я очень сомневался, что действительно смогу обменять"])
+    ShowText(["медальки на дворянский титул, но я и в самом деле получил его!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【身なりの良い男】"])
-    ShowText(["……交換リストの中に、王の位ってのもあるよな。"])
-    ShowText(["まさか、本当に王位が……ゴクリ。"])
+    ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Тут еще в списке обмена есть титул короля."])
+    ShowText(["Мне интересно, на что ЭТО дает тебе право."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["82"])
     ShowTextAttributes(["suzume_fc1", 0, 0, 2])
-    ShowText(["【ちゅん】"])
-    ShowText(["私も王様になりたいです！"])
-    ShowText(["そして、ハーピー達を……"])
+    ShowText(["\\n<\\C[6]Чун\\C[0]>Я хочу быть королевой! Тогда другие гарпии..."])
     ExitEventProcessing([])
     Label(["540"])
     ShowTextAttributes(["amira_fc1", 0, 0, 2])
-    ShowText(["【アミラ】"])
-    ShowText(["私も王様に……ゴクリ。"])
+    ShowText(["\\n<\\C[6]Амира\\C[0]>Я тоже хочу быть королевой..."])
     ExitEventProcessing([])
     Empty([])
 
@@ -283,9 +272,9 @@ Name = "EV027"
     ShowPicture([5, "80_grandnoa_st11", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["grandnoa_fc1", 3, 0, 2])
-    ShowText(["【メダル女王】"])
-    ShowText(["私は、正体不明のメダル女王……"])
-    ShowText(["メダルの枚数に応じて、貴重な宝物を授けましょう。"])
+    ShowText(["\\n<\\C[6]Королева Медалей\\C[0]>Я таинственная Королева Медалей."])
+    ShowText(["Я награжу тебя ценными предметами, в зависимости"])
+    ShowText(["от количества медалей, которые у тебя есть."])
     CallCommonEvent([8])
     Empty([])
 
@@ -300,25 +289,23 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の戦士】"])
-    ShowText(["大人しく貴族位をもらって、人生を円満に過ごすか……"])
-    ShowText(["それとも、もう少しメダルを溜めて強力な武器をもらうか……"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Стоит ли мне просто взять титул дворянина и прожить"])
+    ShowText(["жизнь в роскоши? Или стоит подкопить немного медалек"])
+    ShowText(["и получить мощное оружие..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の戦士】"])
-    ShowText(["ぐっ、どうする……"])
-    ShowText(["まさに人生の分かれ道だな……"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Гах, я не могу решить."])
+    ShowText(["Это сложнейший выбор в моей жизни!"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["76"])
     ShowTextAttributes(["syuree_fc1", 0, 0, 2])
-    ShowText(["【シュリー】"])
-    ShowText(["貴族になったら、おいしいごはん食べられるんだよね？"])
-    ShowText(["武器は食べられないよ！"])
+    ShowText(["\\n<\\C[6]Шури\\C[0]>Если ты дворянин, то ты можешь есть много"])
+    ShowText(["дорогой еды. Можешь ли ты съесть оружие? Нет!"])
     ExitEventProcessing([])
     Label(["81"])
     ShowTextAttributes(["mitubati_fc1", 0, 0, 2])
-    ShowText(["【ハニー】"])
-    ShowText(["安定を求めて生きるのも、悪くないわよ……"])
+    ShowText(["\\n<\\C[6]Хани\\C[0]>Не стоит недооценивать мирную и стабильную"])
+    ShowText(["жизнь..."])
     ExitEventProcessing([])
     Empty([])
 
@@ -327,16 +314,14 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【身なりの良い女】"])
-    ShowText(["これだけ貴重な品を揃えているだなんて……"])
-    ShowText(["メダル女王様って、いったい何者なのでしょうか。"])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Просто, посмотри на все эти сокровища, которые у нее"])
+    ShowText(["здесь есть! Кто же такая эта Королева Медалей?"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["533"])
     ShowTextAttributes(["grandnoa_fc1", 0, 0, 2])
-    ShowText(["【グランドノア女王】"])
-    ShowText(["私は、正体不明のメダル女王……"])
-    ShowText(["何者でもありませんよ。"])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Я таинственная Королева Медалей."])
+    ShowText(["Ни больше, ни меньше."])
     ExitEventProcessing([])
     Empty([])
 
@@ -345,9 +330,8 @@ Name = "EV030"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["メダル女王様にご謁見ですね。"])
-    ShowText(["どうぞ、そのままお進み下さい。"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Королева Медалей может тебя принять."])
+    ShowText(["Пожалуйста, проходи."])
     Empty([])
 
 CommonEvent 31
@@ -355,9 +339,8 @@ Name = "EV031"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["メダル女王様は、お優しいお方です。"])
-    ShowText(["だからといって、失礼を働かないように。"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Королева Медалей ко всем очень дружелюбна,"])
+    ShowText(["но проявляй к ней уважение, которое она заслуживает."])
     Empty([])
 
 CommonEvent 32
@@ -365,20 +348,17 @@ Name = "EV032"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["あたし達、女王様だいすき！"])
-    ShowText(["一緒に遊んでくれるもんね♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Мы любим королеву!"])
+    ShowText(["Она всегда играет с нами! ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["あたしも、遊んでほしいな～♪"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Я тооооже хочу поиграть! ♪"])
     ExitEventProcessing([])
     Label(["533"])
     ShowTextAttributes(["grandnoa_fc1", 1, 0, 2])
-    ShowText(["【グランドノア女王】"])
-    ShowText(["ふふっ、また後で遊びましょうね。"])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Фуфу, скоро мы снова поиграем, обещаю."])
     ExitEventProcessing([])
     Empty([])
 
@@ -414,8 +394,7 @@ Name = "EV037"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["おさかな、おいしい♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Рыбка такая вкусная! ♪"])
     Empty([])
 
 CommonEvent 38
@@ -423,8 +402,7 @@ Name = "EV038"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["いただきます♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Время кушать! ♪"])
     Empty([])
 
 CommonEvent 39
@@ -432,9 +410,8 @@ Name = "EV039"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["現在、女王様はお食事中です。"])
-    ShowText(["城内西側の庭園にいらっしゃいますよ。"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Королева сейчас ужинает."])
+    ShowText(["Ты можешь найти ее в западном саду замка."])
     Empty([])
 
 CommonEvent 40
@@ -442,8 +419,7 @@ Name = "EV040"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["ぷるぷる、しあわせー♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Пурупуру счастье! ♪"])
     Empty([])
 
 CommonEvent 41
@@ -454,9 +430,9 @@ Name = "EV041"
     ShowPicture([5, "80_grandnoa_st11", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["grandnoa_fc1", 3, 0, 2])
-    ShowText(["【メダル女王】"])
-    ShowText(["おや、食事中で失礼しました。"])
-    ShowText(["小さなメダルを宝物と交換するのですか？"])
+    ShowText(["\\n<\\C[6]Королева Медалей\\C[0]>Ах, мои извинения."])
+    ShowText(["Мы сейчас ужинаем."])
+    ShowText(["Ты хочешь обменять медали?"])
     CallCommonEvent([8])
     Empty([])
 
@@ -468,6 +444,5 @@ Name = "EV042"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["むしゃむしゃむしゃ……"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>*Чавк* *Чавк* *Чавк*"])
     Empty([])

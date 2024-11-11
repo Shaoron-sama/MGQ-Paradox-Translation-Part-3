@@ -1,4 +1,4 @@
-Display Name = "大海賊の洞窟 1F"
+Display Name = "Пещера Великой Пиратки: 1 Ярус"
 Parallax Name = ""
 Note = ""
 
@@ -96,23 +96,21 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【補給たつのこ】"])
-    ShowText(["物資を補給するのです！"])
-    ShowText(["転職の書も持ってきているのです！"])
-    ShowChoices([["全回復", "物資の購入", "転職の書", "用はない"], 4])
-    When([0, "全回復"])
+    ShowText(["\\n<\\C[6]Конек-Кладовщица\\C[0]>У меня здесь припасы!"])
+    ShowText(["Я даже взяла с собой книгу смены профессий!"])
+    ShowChoices([["Полное Восстановление", "Купить Припасы", "Книга Смены Профессий", "Не важно"], 4])
+    When([0, "Полное Восстановление"])
       ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-      ShowText(["【補給兵】"])
-      ShowText(["薬草と霊薬の詰め合わせなのです！"])
+      ShowText(["\\n<\\C[6]Конек-Кладовщица\\C[0]>У нас тут большой выбор трав и эликсиров!"])
       PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
       FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
       RecoverAll([0, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["ルカ達のHPとMPが全快した！"])
+      ShowText(["HP и MP группы полностью восстановлены!"])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "物資の購入"])
+    When([1, "Покупка Предметов"])
       ShopProcessing([0, 2, 0, 0, false])
       ShopItem([0, 7, 0, 0])
       ShopItem([0, 11, 0, 0])
@@ -129,12 +127,12 @@ Name = "EV008"
       ExitEventProcessing([])
       Empty([])
 
-    When([2, "転職の書"])
+    When([2, "Книга Смены Профессий"])
       CallCommonEvent([113])
       ExitEventProcessing([])
       Empty([])
 
-    When([3, "用はない"])
+    When([3, "Ничего"])
       ExitEventProcessing([])
       Empty([])
 

@@ -1,4 +1,4 @@
-Display Name = "溶岩鉱窟 1F"
+Display Name = "Лавовая Шахта: 1 Ярус"
 Parallax Name = ""
 Note = ""
 
@@ -52,7 +52,7 @@ Name = "EV006"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -168,17 +168,16 @@ Name = "EV012"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["この洞窟には、何があるのだ……？"])
-      ShowText(["近くのゴルドポートあたりで聞けば、何か分かるかもな。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Что это за пещера?"])
+      ShowText(["Может, мы сможем узнать что-нибудь,"])
+      ShowText(["если поспрашиваем у местных в Гольдпорте."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["この洞窟では、確かアレが……ど忘れしました。"])
-      ShowText(["近くのゴルドポートで聞いてみましょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это пещера содержит... что-то, что я не помню."])
+      ShowText(["Давай поспрашиваем о ней людей в Гольдпорте."])
       Empty([])
 
     BranchEnd([])
@@ -192,17 +191,18 @@ Name = "EV012"
     ControlSelfSwitch(["B", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここが、オリハルコンの鉱石が採れる溶岩鉱窟か。"])
-      ShowText(["さっそく入手し、オリハルコン装備を揃えるのだ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Если я правильно помню, это и есть Лавовая Шахта,"])
+      ShowText(["где мы сможем найти орихалк. Давай поскорее"])
+      ShowText(["добудем себе его, чтобы мы могли заиметь"])
+      ShowText(["орихалковое снаряжение."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここが、オリハルコンの鉱石が採れる溶岩鉱窟です。"])
-      ShowText(["さっそく入手し、オリハルコン装備を揃えましょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это Лавовая Шахта, где мы сможем найти орихалк."])
+      ShowText(["Давай поторопимся и наберем себе его, чтобы"])
+      ShowText(["одеться в орихалковую экипировку."])
       Empty([])
 
     BranchEnd([])

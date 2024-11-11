@@ -1,4 +1,4 @@
-Display Name = "タルタロスCW117136 第2層"
+Display Name = "Тартар-CW117136: 2 Уровень"
 Parallax Name = "DarkSpace1"
 Note = ""
 
@@ -73,20 +73,17 @@ Name = "EV007"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["これは……城か？"])
-      ShowText(["なぜ、こんな所に城が……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Замок?"])
+      ShowText(["Что тут делает замок...?"])
       ConditionalBranch([12, "exist_party_persona_id?(391)"])
         ShowTextAttributes(["mefist_fc2", 2, 0, 2])
-        ShowText(["【メフィスト】"])
-        ShowText(["この城、見覚えが……"])
-        ShowText(["……そう、これはレミナ城ですね。"])
+        ShowText(["\\n<\\C[6]Мефисто\\C[0]>Он выглядит знакомо..."])
+        ShowText(["...Ах, точно, это же замок Ремины."])
         Empty([])
       Else([])
         ShowTextAttributes(["mefist_fc1", 2, 0, 2])
-        ShowText(["【メフィスト】"])
-        ShowText(["この城、見覚えが……"])
-        ShowText(["……そう、これはレミナ城ですね。"])
+        ShowText(["\\n<\\C[6]Мефисто\\C[0]>Он выглядит знакомо..."])
+        ShowText(["...Ах, точно, это же замок Ремины."])
         Empty([])
       BranchEnd([])
       Empty([])
@@ -94,9 +91,9 @@ Name = "EV007"
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["レミナ城……！"])
-      ShowText(["やはりここも、レミナの残骸……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Замок Ремины...!"])
+      ShowText(["Значит, в этом разломе тоже находятся руины"])
+      ShowText(["Ремины."])
       Empty([])
 
     BranchEnd([])
@@ -110,7 +107,6 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【？？？】"])
-    ShowText(["システムは崩壊した"])
-    ShowText(["システムは崩壊した"])
+    ShowText(["\\n<\\C[6]???\\C[0]>СБОЙ СИСТЕМЫ"])
+    ShowText(["СБОЙ СИСТЕМЫ"])
     Empty([])

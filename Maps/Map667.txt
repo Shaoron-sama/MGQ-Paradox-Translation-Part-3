@@ -1,4 +1,4 @@
-Display Name = "海軍本部"
+Display Name = "Штаб Флота"
 Parallax Name = ""
 Note = ""
 
@@ -89,20 +89,17 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["海軍のため、戦うのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Сражаемся, за Флот!"])
     ConditionalBranch([4, 141, 0])
       ShowTextAttributes(["mino_fc1", 0, 0, 2])
-      ShowText(["【ミナ】"])
-      ShowText(["面白い！　来いよ！"])
+      ShowText(["\\n<\\C[6]Мина\\C[0]>Интересно! Давай сюда!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 589, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["むぎゅう……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Мугю..."])
     Empty([])
 
   Page 1
@@ -113,21 +110,18 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["人魚の海兵がいない時に、こんな……"])
-    ShowText(["でも、やるしかないです！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Нет, вот именно тогда, когда у нас нет"])
+    ShowText(["русалок-морячек... Но выбора нет!"])
     ConditionalBranch([4, 125, 0])
       ShowTextAttributes(["grizzly_fc1", 0, 0, 2])
-      ShowText(["【アイシャ】"])
-      ShowText(["行くぞ！　クマー！！"])
+      ShowText(["\\n<\\C[6]Айша\\C[0]>Вперед! Кума!!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 590, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["umiusi_k_fc1", 2, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["がんばりました……"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Я старалась как могла..."])
     Empty([])
 
   Page 1
@@ -138,20 +132,17 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["見回り……わぁっ！　敵なのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Смотри... Ваа! Это враг!"])
     ConditionalBranch([4, 102, 0])
       ShowTextAttributes(["youko_fc1", 0, 0, 2])
-      ShowText(["【きつね】"])
-      ShowText(["海賊きつね、いっくよ～♪"])
+      ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Пиратка-кицунэ нападает~♪"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 589, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["有給休暇を取るのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Мне нужен оплачиваемый отпуск..."])
     Empty([])
 
   Page 1
@@ -168,14 +159,12 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["下っ端のたつのこは、細かい事は気にしないのです。"])
-    ShowText(["マールポート行きの連絡船に乗るのですか？"])
-    ShowChoices([["乗る", "乗らない"], 2])
-    When([0, "乗る"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Я в тылу, меня не волнует что здесь происходит."])
+    ShowText(["Вы хотите отправиться в Порт Марл?"])
+    ShowChoices([["Да", "Нет"], 2])
+    When([0, "Да"])
       ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-      ShowText(["【たつのこ海兵】"])
-      ShowText(["出発進行なのです！"])
+      ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Тогда отправляемся!"])
       FadeoutScreen([])
       PlaySE(["RPG::SE(@name=\"Water1\", @pitch=100, @volume=80)"])
       Wait([60])
@@ -184,7 +173,7 @@ Name = "EV015"
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "乗らない"])
+    When([1, "Нет"])
       ExitEventProcessing([])
       Empty([])
 
@@ -202,8 +191,7 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["ここは通さないのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Вы не пройдете!"])
     Empty([])
 
   Page 1
@@ -214,12 +202,10 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["えっと、私は艦の準備がありますので……"])
-    ShowText(["殴り合いは、勘弁してくれませんかね。"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Эмм, мне нужно подготовить корабль..."])
+    ShowText(["Вы не могли бы не ввязывать меня в драку?"])
     ShowTextAttributes(["ashel_fc1", 0, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["しゃーねーな……"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Ну ладно..."])
     Empty([])
 
 CommonEvent 19
@@ -227,16 +213,13 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["うーみーはー♪　ひろいーなー♪"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Геро-о-ой ♪ Мо-о-оря ♪"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["たつのこは、こちらを見ないフリをしている……"])
+    ShowText(["Конек-Морячка старается вас не замечать..."])
     ShowTextAttributes(["bonny_fc1", 0, 0, 2])
-    ShowText(["【ボニー】"])
-    ShowText(["見逃してやるか……"])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>Она нас не видит...?"])
     Empty([])
 
 CommonEvent 20
@@ -244,8 +227,7 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["おうちに帰りたいのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Я хочу домой..."])
     Empty([])
 
   Page 1
@@ -256,16 +238,13 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["本部には入れさせませんよ！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Мы не позволим тебе попасть в штаб!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["おなかが痛いので、帰っていいですか？"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>У меня живот болит. Можно мне домой?"])
     BattleProcessing([0, 591, false, false])
     ControlSwitches([2267, 2267, 0])
     ShowTextAttributes(["umiusi_k_fc1", 2, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["大将に怒られちゃいます……"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Адмирал будет злиться..."])
     Empty([])
 
   Page 1
@@ -278,93 +257,75 @@ Name = "EV022"
     ShotBalloonIcon([23, 1, false])
     ShotBalloonIcon([24, 1, true])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵Ａ】"])
-    ShowText(["まさか、手配中のおさかな海賊団およびルカ一行！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка А\\C[0]>Это же Рыбы-Пираты вместе с Лукой!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵Ｂ】"])
-    ShowText(["海軍本部に、何の用なのです……！？"])
-    ShowChoices([["海賊旗を頂きに来た！", "こんにちは、海賊です", "世界は僕のものだ！"], 0])
-    When([0, "海賊旗を頂きに来た！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка В\\C[0]>Что вы здесь делаете?!"])
+    ShowChoices([["\"Я пришел за пиратским флагом!\"", "\"Привет, теперь я - пират!\"", "\"Мир принадлежит мне!\""], 0])
+    When([0, "\"Я пришел за пиратским флагом!\""])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["海賊旗を頂きに来た！"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Я пришел за пиратским флагом!"])
       ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-      ShowText(["【たつのこ海兵Ａ】"])
-      ShowText(["海賊旗奪還！？"])
-      ShowText(["それで海軍本部に殴り込みなんて、前代未聞なのです！"])
+      ShowText(["\\n<\\C[6]Конек-Морячка А\\C[0]>Пиратским флагом?!"])
+      ShowText(["Никто раньше не нападал на Штаб Флота!"])
       Empty([])
 
-    When([1, "こんにちは、海賊です"])
+    When([1, "\"Привет, теперь я - пират!\""])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["こんにちは、海賊です。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Привет, теперь я - пират."])
       ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-      ShowText(["【たつのこ海兵Ａ】"])
-      ShowText(["意外に礼儀正しいのです……"])
-      ShowText(["かえって大物っぽいのです……"])
+      ShowText(["\\n<\\C[6]Конек-Морячка А\\C[0]>Удивительно честно..."])
+      ShowText(["Похоже, нас ждет большая награда."])
       Empty([])
 
-    When([2, "世界は僕のものだ！"])
+    When([2, "\"Мир принадлежит мне!\""])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["世界は僕のものだ！"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Мир принадлежит мне!"])
       ShowTextAttributes(["bonny_fc1", 0, 0, 2])
-      ShowText(["【ボニー】"])
-      ShowText(["そして海は私のものだ！"])
+      ShowText(["\\n<\\C[6]Бонни\\C[0]>А моря - мне!"])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc3", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["ルカの妄言に賛同者が出来ちゃった！"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Идиотизм Луки заразен?!"])
         Empty([])
       BranchEnd([])
       Empty([])
 
     ChoicesEnd([])
     ShowTextAttributes(["bonny_fc1", 0, 0, 2])
-    ShowText(["【ボニー】"])
-    ShowText(["者ども、かかれー！"])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>Взять их!"])
     ShowTextAttributes(["ashel_fc1", 1, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["よしきた、行くよっ！"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Вперед!"])
     ConditionalBranch([4, 53, 0])
       ShowTextAttributes(["slime_fc1", 0, 0, 2])
-      ShowText(["【ライム】"])
-      ShowText(["おかしら！　よ～そろ～！"])
+      ShowText(["\\n<\\C[6]Лайм\\C[0]>Йааар, Капитан!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 589, false, false])
     ControlSwitches([2170, 2170, 0])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["きゅう……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Кюю..."])
     ShowTextAttributes(["bonny_fc1", 1, 0, 2])
-    ShowText(["【ボニー】"])
-    ShowText(["このまま、本部に殴り込むぞ！"])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>В штаб!"])
     ShowTextAttributes(["ashel_fc1", 0, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["あたし達の海賊旗は、本部2階の保管庫にあるはずだ。"])
-    ShowText(["「特定海洋事業許可証」も、その辺りからかっぱらうぞ。"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Наш флаг должен быть на складе на втором этаже."])
+    ShowText(["Там же мы сможем взять \"Особую Морскую Лицензию\"."])
     ShowTextAttributes(["ashel_fc1", 2, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["ただし……海軍大将リヴァイアサンとは、絶対に戦うなよ。"])
-    ShowText(["奴の力は、妖魔の女王クラスと同等だからな。"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Но, что бы вы не делали - не вздумайте напасть"])
+    ShowText(["на Адмирала Левиафана. По силе она сравнится"])
+    ShowText(["с Королевами Монстров."])
     ShowTextAttributes(["bonny_fc1", 2, 0, 2])
-    ShowText(["【ボニー】"])
-    ShowText(["悔しいが、勝ち目はないぞ……"])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>К сожалению, мы точно не сможем ее победить..."])
     ConditionalBranch([4, 93, 0])
       ShowTextAttributes(["liot_fc1", 0, 0, 2])
-      ShowText(["【ライオット】"])
-      ShowText(["戦ってみたいが……仕方ないな。"])
+      ShowText(["\\n<\\C[6]Райот\\C[0]>А я хотела сразиться с ней... Ну ладно."])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["分かった……それじゃあ、行こう！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Понял. Ну, вперед!"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["リヴァイアサンとは戦いを避けるべき――"])
-    ShowText(["それを肝に銘じながら、僕たちは海軍本部へと殴り込んだ！"])
+    ShowText(["Мы должны избегать сражения с Левиафаном..."])
+    ShowText(["Нужно не забывать об этом на пути в штаб!"])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])
     Empty([])
@@ -401,20 +362,17 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["海賊ですね、やっつけますよ！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Это пираты, мы побьем вас!"])
     ConditionalBranch([4, 83, 0])
       ShowTextAttributes(["hapy_a_fc1", 0, 0, 2])
-      ShowText(["【レイナ】"])
-      ShowText(["海軍には負けないからねっ！"])
+      ShowText(["\\n<\\C[6]Рейна\\C[0]>Я не проиграю Флоту!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 591, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["umiusi_k_fc1", 2, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["かないませんでした……"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Я не смогла..."])
     Empty([])
 
   Page 1
@@ -425,20 +383,18 @@ Name = "EV027"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["ここで勝てば、報償はがっぽりなのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Если я побью вас здесь, то меня ждет большая"])
+    ShowText(["премия!"])
     ConditionalBranch([4, 171, 0])
       ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
-      ShowText(["【ミランダ】"])
-      ShowText(["悪いけど、ボーナスは無しだよっ！"])
+      ShowText(["\\n<\\C[6]Миранда\\C[0]>Извини, но премии не жди!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 589, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["やめておけばよかったのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Думаю, лучше остановиться..."])
     Empty([])
 
   Page 1
@@ -449,27 +405,28 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["海兵心得、その１……"])
-    ShowText(["海でもボタン７か８を押せば地図が開けるのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Морские знания, часть первая!"])
+    ShowText(["В океане ты можешь открывать карту нажав"])
+    ShowText(["кнопку [7] или [8]!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["自分の位置は、黄色い丸印で表示されるのです……"])
-    ShowText(["どこにいるのか常に把握し、迷子にならないようにするのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Твоя позиция будет отображена желтым кружочком!"])
+    ShowText(["Всегда следи за тем, где ты находишься,"])
+    ShowText(["и постарайся не потеряться!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["海兵心得、その２……"])
-    ShowText(["自分の船を見失った場合は、ハーピーの羽かワープの魔法……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Морские знания, часть вторая!"])
+    ShowText(["Если ты упустил из вида свой корабль,"])
+    ShowText(["используй \\C[3]Перо Гарпии\\C[0] или магию \\C[4]Телепортации\\C[0]!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["どこかの町にワープすれば、近くの海に船がついてくるのです……"])
-    ShowText(["海のそばの港町や、この海軍本部などがおすすめなのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Если ты телепортируешься в город, то твой"])
+    ShowText(["корабль окажется у ближайшего выхода в море. "])
+    ShowText(["Рекомендуется использовать для этого портовые"])
+    ShowText(["города или Штаб Флота."])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["海兵心得が言えたので、見逃してほしいのです……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Так как я рассказала вам о морских знаниях,"])
+    ShowText(["может вы не тронете меня?"])
     ShowTextAttributes(["ashel_fc1", 0, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["戦意のない奴を襲うほど、おさかな海賊団は腐っちゃいないよ。"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Рыбы-Пираты не такие гнилые, чтобы нападать"])
+    ShowText(["на тех, кто не хочет драться."])
     Empty([])
 
 CommonEvent 29
@@ -477,20 +434,17 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["ファイトなのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Это битва!"])
     ConditionalBranch([4, 116, 0])
       ShowTextAttributes(["iso_fc1", 0, 0, 2])
-      ShowText(["【イザベル】"])
-      ShowText(["海軍と真っ正面から殴り合うなんて……楽しいわね！"])
+      ShowText(["\\n<\\C[6]Изабелла\\C[0]>Как же весело драться с Флотом в лоб!"])
       Empty([])
 
     BranchEnd([])
     BattleProcessing([0, 589, false, false])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["きゅう……"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Кюю..."])
     Empty([])
 
   Page 1
@@ -501,17 +455,14 @@ Name = "EV030"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["たつのこ海兵は、死んだふりをしている……"])
+    ShowText(["Конек-Морячка притворяется мертвой..."])
     ShowTextAttributes(["bonny_fc1", 2, 0, 2])
-    ShowText(["【ボニー】"])
-    ShowText(["し、死んでいる……"])
-    ShowText(["あたし達のせいで、尊い命が……"])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>О-она умерла."])
+    ShowText(["Из-за меня погибла невинная..."])
     ShowTextAttributes(["ashel_fc1", 0, 0, 2])
-    ShowText(["【アシェル】"])
-    ShowText(["死んだふりです、お嬢。"])
+    ShowText(["\\n<\\C[6]Ашэр\\C[0]>Миледи, она притворяется мертвой."])
     Empty([])
 
 CommonEvent 31
@@ -519,8 +470,7 @@ Name = "EV031"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["たつのこ海兵は、メザシをかじっている……"])
+    ShowText(["Конек-Морячка поймана врасплох..."])
     Empty([])

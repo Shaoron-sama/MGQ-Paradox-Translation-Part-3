@@ -1,4 +1,4 @@
-Display Name = "冥府"
+Display Name = "Гадес"
 Parallax Name = "StarlitSky"
 Note = ""
 
@@ -7,9 +7,9 @@ Name = "EV001"
 
   Page 0
     ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
-    ShowText(["【死神】"])
-    ShowText(["そこから先へ行くと、二度とは還れんぞ。"])
-    ShowText(["元の場所に戻るには、魔法陣の方だ。"])
+    ShowText(["\\n<\\C[6]Жнец\\C[0]>Если ты пройдешь сквозь нее, то не вернешься."])
+    ShowText(["Магическая гексаграмма вернет тебя туда,"])
+    ShowText(["откуда ты пришел."])
     SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
     Empty([])
@@ -23,9 +23,9 @@ Name = "EV002"
     ConditionalBranch([1, 1201, 0, 2, 1])
       ConditionalBranch([1, 1209, 0, 7, 2])
         ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
-        ShowText(["【死神】"])
-        ShowText(["異世界からの客人よ……"])
-        ShowText(["そこの魔法陣から、輪廻に戻るがいい。"])
+        ShowText(["\\n<\\C[6]Жнец\\C[0]>Гость из иного мира..."])
+        ShowText(["Этот магический круг отправит тебя "])
+        ShowText(["на перерождение."])
         MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
         ErasePicture([5])
         ExitEventProcessing([])
@@ -35,9 +35,8 @@ Name = "EV002"
 
     BranchEnd([])
     ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
-    ShowText(["【死神】"])
-    ShowText(["元の世界へ戻るがいい……"])
-    ShowText(["そこの魔法陣が、お前のいた世界に繋がっている。"])
+    ShowText(["\\n<\\C[6]Жнец\\C[0]>Возвращайся в свой мир..."])
+    ShowText(["Магический круг отправит тебя обратно."])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
     ErasePicture([5])
     ExitEventProcessing([])

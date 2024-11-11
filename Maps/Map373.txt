@@ -1,4 +1,4 @@
-Display Name = "幽霊船 B3F"
+Display Name = "Корабль-Призрак: Трюм"
 Parallax Name = ""
 Note = ""
 
@@ -153,23 +153,22 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
-    ShowText(["【イリアス】"])
-    ShowText(["しくしく……しくしく……"])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>*Всхлип* *Всхлип*"])
     ShowTextAttributes(["alice_fc6", 1, 0, 2])
-    ShowText(["【アリス】"])
-    ShowText(["ええい、紛らわしい！　幽霊だと思ったぞ！"])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Черт, ты меня напугала!"])
+    ShowText(["Я думала, это призрак!"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc4", 0, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["潜り込んだのはいいものの、怖くて動けなくなったのね……"])
-      ShowText(["帰りに拾ってあげましょ。"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Вы умудрились пробраться сюда, только теперь"])
+      ShowText(["так напуганы, что не можете двинуться..."])
+      ShowText(["Мы заберем вас на обратном пути."])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["潜り込んだのはいいものの、怖くて動けなくなったんだな……"])
-      ShowText(["帰りに拾ってあげよう。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Вы умудрились пробраться сюда, только теперь"])
+      ShowText(["так напуганы, что не можете двинуться..."])
+      ShowText(["Мы заберем вас на обратном пути."])
       Empty([])
 
     BranchEnd([])
@@ -177,23 +176,23 @@ Name = "EV014"
 
   Page 1
     ShowTextAttributes(["alice_fc5", 4, 0, 2])
-    ShowText(["【アリス】"])
-    ShowText(["ぶるぶる……がくがく……"])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>*Дрожь* *Дрожь*"])
+    ShowText(["*Трясь* *Трясь*"])
     ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
-    ShowText(["【イリアス】"])
-    ShowText(["なんと紛らわしい！　幽霊と思ったじゃないですか！"])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Будь проклята, за то, что посмела меня напугать!"])
+    ShowText(["Я думала, что ты - это призрак!"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc4", 0, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["潜り込んだのはいいものの、怖くて動けなくなったのね……"])
-      ShowText(["帰りに拾ってあげましょ。"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Вы умудрились пробраться сюда, только теперь"])
+      ShowText(["так напуганы, что не можете двинуться..."])
+      ShowText(["Мы заберем вас на обратном пути."])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["潜り込んだのはいいものの、怖くて動けなくなったんだな……"])
-      ShowText(["帰りに拾ってあげよう。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Вы умудрились пробраться сюда, только теперь"])
+      ShowText(["так напуганы, что не можете двинуться..."])
+      ShowText(["Мы заберем вас на обратном пути."])
       Empty([])
 
     BranchEnd([])
@@ -207,14 +206,12 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["dog_fc1", 4, 0, 2])
-    ShowText(["【わんこ】"])
-    ShowText(["わう……わう……"])
+    ShowText(["\\n<\\C[6]Ванко\\C[0]>Гав... гав..."])
     Empty([])
 
   Page 1
     ShowTextAttributes(["youko_fc1", 2, 0, 2])
-    ShowText(["【もふゆ】"])
-    ShowText(["こーん……こーん……"])
+    ShowText(["\\n<\\C[6]Мофую\\C[0]>Куон... куон..."])
     Empty([])
 
   Page 2
@@ -225,14 +222,12 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 2, 0, 2])
-    ShowText(["【ぷるこ】"])
-    ShowText(["ぷる……ぷる……"])
+    ShowText(["\\n<\\C[6]Пуруко\\C[0]>Пуру... пуру..."])
     Empty([])
 
   Page 1
     ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
-    ShowText(["【うさこ】"])
-    ShowText(["うさ……うさ……"])
+    ShowText(["\\n<\\C[6]Усако\\C[0]>Уса... уса..."])
     Empty([])
 
   Page 2
@@ -244,28 +239,24 @@ Name = "EV017"
   Page 0
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["iriasu_fc4", 4, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["たすけて……たすけて……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Спасите... Спасите..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["alice_fc5", 4, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["たすけて……たすけて……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Спасите... Спасите..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc4", 0, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["やっぱり……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Я так и знала..."])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["やっぱり……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Я так и думал..."])
       Empty([])
 
     BranchEnd([])

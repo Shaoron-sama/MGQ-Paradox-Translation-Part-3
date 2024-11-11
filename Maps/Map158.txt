@@ -1,4 +1,4 @@
-Display Name = "忘れられし塔 2F"
+Display Name = "Заброшенная Башня 2 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -69,13 +69,11 @@ Name = "EV007"
 
   Page 1
     ShowTextAttributes(["cockroacha_fc1", 0, 0, 2])
-    ShowText(["【コックローチ娘】"])
-    ShowText(["た、たすかったぁ……"])
-    ShowText(["あんた達、味方なんだ……ありがとね。"])
+    ShowText(["\\n<\\C[6]Девушка-Таракан\\C[0]>С-спасена..."])
+    ShowText(["Вы - союзники...? Спасибо."])
     ConditionalBranch([2, "A", 1])
       ShowTextAttributes(["cockroacha_fc1", 0, 0, 2])
-      ShowText(["【コックローチ娘】"])
-      ShowText(["これ、お礼に受け取ってよ！"])
+      ShowText(["\\n<\\C[6]Девушка-Таракан\\C[0]>Вот, примите это в знак благодарности!"])
       ControlSelfSwitch(["A", 0])
       PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
       ChangeItems([31, 0, 0, 1])
@@ -136,8 +134,7 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
-    ShowText(["【エルベティエ】"])
-    ShowText(["回帰しなさい、生命の海に……"])
+    ShowText(["\\n<\\C[6]Эрубети\\C[0]>Возвращайтесь в океан жизни..."])
     BattleProcessing([0, 1459, false, false])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])
@@ -164,8 +161,7 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
-    ShowText(["【エルベティエ】"])
-    ShowText(["みんな、私と一つになるのよ……"])
+    ShowText(["\\n<\\C[6]Эрубети\\C[0]>Все, станьте едиными со мной..."])
     BattleProcessing([0, 1459, false, false])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])
@@ -182,7 +178,7 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["壺はマジックポットだった！"])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
     BattleProcessing([0, 1450, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

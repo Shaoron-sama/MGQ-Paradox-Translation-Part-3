@@ -1,4 +1,4 @@
-Display Name = "おさかな号 B1F"
+Display Name = "Рыбья Посудина (Средняя Палуба)"
 Parallax Name = ""
 Note = ""
 
@@ -59,20 +59,17 @@ Name = "EV005"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【牛】"])
-    ShowText(["モ～！"])
+    ShowText(["\\n<\\C[6]Корова\\C[0]>Мууу!"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["この牛は……"])
-      ShowText(["そっとしておいた方がいいわね。"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Эта корова..."])
+      ShowText(["Давайте просто оставим ее в покое."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 141, 0])
       ShowTextAttributes(["mino_fc1", 2, 0, 2])
-      ShowText(["【ミナ】"])
-      ShowText(["食っちゃダメか、もったいないな……"])
+      ShowText(["\\n<\\C[6]Мина\\C[0]>А съесть нельзя? Как расточительно..."])
       Empty([])
 
     BranchEnd([])
@@ -83,15 +80,12 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["dog_fc1", 0, 0, 2])
-    ShowText(["【わう】"])
-    ShowText(["私はただの犬です。"])
-    ShowText(["ずっと海賊に捕まっていました……"])
+    ShowText(["\\n<\\C[6]Вуф\\C[0]>Я просто собачка."])
+    ShowText(["Пираты поймали меня очень давно..."])
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["大丈夫、海軍が保護するのです。"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Все в порядке, Флот защитит тебя."])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["バカいぬー！　裏切りものー！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Дурацкая собака! Предательница!"])
     Empty([])
 
 CommonEvent 7
@@ -117,15 +111,12 @@ Name = "EV009"
 
   Page 0
     ShowTextAttributes(["dog_fc1", 0, 0, 2])
-    ShowText(["【わう】"])
-    ShowText(["私はただの犬です。"])
-    ShowText(["ずっと海賊に捕まっていました……"])
+    ShowText(["\\n<\\C[6]Вуф\\C[0]>Я просто собачка."])
+    ShowText(["Пираты поймали меня очень давно..."])
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["大丈夫、海軍が保護するのです。"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Все в порядке, Флот защитит тебя."])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["バカいぬー！　裏切りものー！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Дурацкая собака! Предательница!"])
     Empty([])
 
 CommonEvent 10
@@ -133,11 +124,9 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["海軍の誇り、見せますよー！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Я покажу тебе гордость Флота!"])
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["海賊にだって、誇りはあるんだから！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>У нас, пиратов, тоже есть гордость!"])
     Empty([])
 
 CommonEvent 11
@@ -145,7 +134,7 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「台所　おかしら立ち入り禁止」と書いてある……"])
+    ShowText(["КУХНЯ: КАПИТАНУ ВХОД ВОСПРЕЩЕН"])
     Empty([])
 
 CommonEvent 12
@@ -153,12 +142,10 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["食料庫には入れさせないから！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Я не пущу вас на продовольственный склад!"])
     ConditionalBranch([4, 70, 0])
       ShowTextAttributes(["nezumi_fc1", 0, 0, 2])
-      ShowText(["【ラティ】"])
-      ShowText(["つまみ食い、しちゃうよ！"])
+      ShowText(["\\n<\\C[6]Ратти\\C[0]>Я только перекушу!"])
       Empty([])
 
     BranchEnd([])
@@ -167,8 +154,7 @@ Name = "EV012"
     ControlSwitches([81, 81, 1])
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["つまみ食いは、ダメ……"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Никаких перекусов..."])
     Empty([])
 
   Page 1
@@ -179,7 +165,7 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「食料貯蔵庫　おかしら立ち入り禁止」と書いてある……"])
+    ShowText(["ПРОДОВОЛЬСТВЕННЫЙ СКЛАД: КАПИТАНУ ВХОД ВОСПРЕЩЕН"])
     Empty([])
 
 CommonEvent 14
@@ -187,11 +173,9 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["やややー！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Йа-йа-йаа!"])
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["おさかな海賊団は負けないんだから！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Рыб-Пиратов не победить!"])
     Empty([])
 
 CommonEvent 15
@@ -199,14 +183,11 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["負けないからね……！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Я не проиграю...!"])
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["こちらが有利です！　ていやー！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Она открылась! Хейя!"])
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["逮捕なのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Ты арестована!"])
     Empty([])
 
 CommonEvent 16
@@ -214,14 +195,11 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["負けないからね……！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Я не проиграю...!"])
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["こちらが有利です！　ていやー！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Она открылась! Хейя!"])
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["逮捕なのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Ты арестована!"])
     Empty([])
 
 CommonEvent 17
@@ -231,17 +209,15 @@ Name = "EV017"
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-      ShowText(["【たつのこ海兵】"])
-      ShowText(["ありがとうなのです！"])
-      ShowText(["これは、お礼なのです！"])
+      ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Спасибо!"])
+      ShowText(["Вот, возьми!"])
       PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
       ChangeItems([433, 0, 0, 1])
       Empty([])
 
     Else([])
       ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-      ShowText(["【たつのこ海兵】"])
-      ShowText(["ありがとうなのです！"])
+      ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Спасибо!"])
       Empty([])
 
     BranchEnd([])
@@ -252,15 +228,12 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["袋のネズミよね！　やっつけちゃえ！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Крыса в мешке! Добьем ее!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["たすけてー！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Помогите!"])
     ConditionalBranch([4, 152, 0])
       ShowTextAttributes(["lamias_fc2", 4, 0, 2])
-      ShowText(["【ネフェルラミアス】"])
-      ShowText(["救援に来たわよ、下がってなさい！"])
+      ShowText(["\\n<\\C[6]Клубок Нефертити\\C[0]>Мы пришли на помощь! Ложись!"])
       Empty([])
 
     BranchEnd([])
@@ -269,8 +242,7 @@ Name = "EV018"
     ControlSwitches([81, 81, 1])
     ControlSwitches([2177, 2177, 0])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["弱い者イジメなんて、ひどいよぉ……"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Какие вы жестокие - обижаете слабых..."])
     Empty([])
 
   Page 1
@@ -281,11 +253,9 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["海軍の誇り、見せますよー！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Я покажу тебе гордость Флота!"])
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["海賊にだって、誇りはあるんだから！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>У нас, пиратов, тоже есть гордость!"])
     Empty([])
 
 CommonEvent 20
@@ -317,11 +287,9 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["やややー！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Йа-йа-йаа!"])
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["おさかな海賊団は負けないんだから！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Рыб-Пиратов не победить!"])
     Empty([])
 
 CommonEvent 23
@@ -329,14 +297,11 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["負けないからね……！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Я не проиграю...!"])
     ShowTextAttributes(["umiusi_k_fc1", 0, 0, 2])
-    ShowText(["【ウミウシ海兵】"])
-    ShowText(["こちらが有利です！　ていやー！"])
+    ShowText(["\\n<\\C[6]Слизень-Морячка\\C[0]>Она открылась! Хейя!"])
     ShowTextAttributes(["tatunoko_k_fc1", 0, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["逮捕なのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Ты арестована!"])
     Empty([])
 
 CommonEvent 24
@@ -344,15 +309,12 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["袋のネズミよね！　やっつけちゃえ！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Крыса в мешке! Добьем ее!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["たすけてー！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Помогите!"])
     ConditionalBranch([4, 152, 0])
       ShowTextAttributes(["lamias_fc2", 4, 0, 2])
-      ShowText(["【ネフェルラミアス】"])
-      ShowText(["救援に来たわよ、下がってなさい！"])
+      ShowText(["\\n<\\C[6]Клубок Нефертити\\C[0]>Мы пришли на помощь! Ложись!"])
       Empty([])
 
     BranchEnd([])
@@ -361,8 +323,7 @@ Name = "EV024"
     ControlSwitches([81, 81, 1])
     ControlSwitches([2177, 2177, 0])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["弱い者イジメなんて、ひどいよぉ……"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Какие вы жестокие - обижаете слабых..."])
     Empty([])
 
   Page 1
@@ -373,15 +334,12 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["k_mermaid_fc1", 0, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["袋のネズミよね！　やっつけちゃえ！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Крыса в мешке! Добьем ее!"])
     ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["たすけてー！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Помогите!"])
     ConditionalBranch([4, 152, 0])
       ShowTextAttributes(["lamias_fc2", 4, 0, 2])
-      ShowText(["【ネフェルラミアス】"])
-      ShowText(["救援に来たわよ、下がってなさい！"])
+      ShowText(["\\n<\\C[6]Клубок Нефертити\\C[0]>Мы пришли на помощь! Ложись!"])
       Empty([])
 
     BranchEnd([])
@@ -390,8 +348,7 @@ Name = "EV025"
     ControlSwitches([81, 81, 1])
     ControlSwitches([2177, 2177, 0])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["弱い者イジメなんて、ひどいよぉ……"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Какие вы жестокие - обижаете слабых..."])
     Empty([])
 
   Page 1
@@ -420,11 +377,10 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["こっちは大丈夫、数で押すのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Отлично, задавим их числом!"])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["一対一だったら、負けないのにー！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Если бы это было один-на-один, я ни за что бы"])
+    ShowText(["не проиграла!"])
     Empty([])
 
 CommonEvent 29
@@ -432,11 +388,10 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["こっちは大丈夫、数で押すのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Отлично, задавим их числом!"])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["一対一だったら、負けないのにー！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Если бы это было один-на-один, я ни за что бы"])
+    ShowText(["не проиграла!"])
     Empty([])
 
 CommonEvent 30
@@ -444,11 +399,10 @@ Name = "EV030"
 
   Page 0
     ShowTextAttributes(["tatunoko_k_fc1", 1, 0, 2])
-    ShowText(["【たつのこ海兵】"])
-    ShowText(["こっちは大丈夫、数で押すのです！"])
+    ShowText(["\\n<\\C[6]Конек-Морячка\\C[0]>Отлично, задавим их числом!"])
     ShowTextAttributes(["k_mermaid_fc1", 2, 0, 2])
-    ShowText(["【海賊マーメイド】"])
-    ShowText(["一対一だったら、負けないのにー！"])
+    ShowText(["\\n<\\C[6]Русалка-Пиратка\\C[0]>Если бы это было один-на-один, я ни за что бы"])
+    ShowText(["не проиграла!"])
     Empty([])
 
 CommonEvent 31

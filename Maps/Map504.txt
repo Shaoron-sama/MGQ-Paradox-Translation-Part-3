@@ -1,4 +1,4 @@
-Display Name = "猫神社"
+Display Name = "Храм Кошки"
 Parallax Name = ""
 Note = ""
 
@@ -7,14 +7,12 @@ Name = "EV001"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["222"])
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【たま】"])
-    ShowText(["うにゃ♪"])
+    ShowText(["\\n<\\C[6]Тама\\C[0]>Уняя ♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -23,14 +21,12 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["222"])
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【たま】"])
-    ShowText(["にゃ～♪"])
+    ShowText(["\\n<\\C[6]Тама\\C[0]>Ня~♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -39,14 +35,12 @@ Name = "EV003"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["222"])
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【たま】"])
-    ShowText(["にゃっ♪　にゃっ♪"])
+    ShowText(["\\n<\\C[6]Тама\\C[0]>Няя ♪ Няя ♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -55,38 +49,34 @@ Name = "EV004"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【巫女】"])
-    ShowText(["猫神社にようこそ。"])
-    ShowText(["犬以外は歓迎致します。"])
+    ShowText(["\\n<\\C[6]Жрица\\C[0]>Добро пожаловать в Храм Кошки."])
+    ShowText(["Собакам вход воспрещен."])
     ConditionalBranch([4, 60, 0])
       ShowTextAttributes(["dog_fc1", 4, 0, 2])
-      ShowText(["【ポチ】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Почи\\C[0]>......"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 213, 0])
       ShowTextAttributes(["kerberos_fc1", 2, 0, 2])
-      ShowText(["【シーザー】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Цезара\\C[0]>......"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 71, 0])
       ShowTextAttributes(["okami_fc1", 2, 0, 2])
-      ShowText(["【アマラ】"])
-      ShowText(["オオカミはいいよな……？"])
+      ShowText(["\\n<\\C[6]Амара\\C[0]>А волки считаются...?"])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["神社坂の入り口に戻りますか？"])
-    ShowChoices([["戻らない", "戻る"], 1])
-    When([0, "戻らない"])
+    ShowText(["Вернуться на храмовый склон?"])
+    ShowChoices([["Остаться", "Вернуться"], 1])
+    When([0, "Остаться"])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "戻る"])
+    When([1, "Да"])
       TransferPlayer([0, 485, 14, 5, 2, 0])
       Empty([])
 
@@ -98,9 +88,8 @@ Name = "EV005"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【巫女】"])
-    ShowText(["こちらは猫神社の倉庫。"])
-    ShowText(["本社には、このまま左にまっすぐお進み下さい。"])
+    ShowText(["\\n<\\C[6]Жрица\\C[0]>Это склад Храма Кошки."])
+    ShowText(["Пожалуйста, проследуйте налево, чтобы попасть в сам храм."])
     Empty([])
 
 CommonEvent 6
@@ -108,8 +97,8 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["↑：猫神社"])
-    ShowText(["←：神社坂"])
+    ShowText(["↑:Храм Кошки"])
+    ShowText(["←:Храмовый Склон"])
     Empty([])
 
 CommonEvent 7
@@ -117,14 +106,12 @@ Name = "EV007"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["222"])
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【たま】"])
-    ShowText(["にゃっ♪"])
+    ShowText(["\\n<\\C[6]Тама\\C[0]>Няя ♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -225,8 +212,7 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     Empty([])
 
 CommonEvent 21
@@ -234,43 +220,35 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【巫女】"])
-    ShowText(["もう、こんな所まで来ちゃって……悪い子ですね。"])
+    ShowText(["\\n<\\C[6]Жрица\\C[0]>Ну и зачем ты сюда забрела...? Плохая киса."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【猫】"])
-    ShowText(["にゃ～"])
+    ShowText(["\\n<\\C[6]Кошка\\C[0]>Мяу~"])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【巫女】"])
-    ShowText(["あら、聞かれちゃいましたか……"])
-    ShowText(["猫に話しかけるって、変ですかね？"])
-    ShowChoices([["普通だ", "変だ"], 2])
-    When([0, "普通だ"])
+    ShowText(["\\n<\\C[6]Жрица\\C[0]>Ох, вы меня слышали...?"])
+    ShowText(["Это странно - разговаривать с кошками?"])
+    ShowChoices([["Это нормально", "Странно"], 2])
+    When([0, "Это нормально"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["そうですよね♪"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Я тоже так считаю ♪"])
       Script(["actor_label_jump"])
       ExitEventProcessing([])
       Label(["222"])
       ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-      ShowText(["【たま】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Тама\\C[0]>......"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["おや、こんなところにも大きい子が……"])
-      ShowText(["……よしよし。"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Оу, а что тут делает эта большая кошечка?"])
+      ShowText(["*Гладь* *Гладь*"])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【たま】"])
-      ShowText(["にゃ～♪"])
+      ShowText(["\\n<\\C[6]Тама\\C[0]>Ня~♪"])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "変だ"])
+    When([1, "Странно"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["そうですか……？"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Вот как...?"])
       Empty([])
 
     ChoicesEnd([])

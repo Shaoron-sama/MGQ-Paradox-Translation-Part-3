@@ -1,4 +1,4 @@
-Display Name = "？？？"
+Display Name = "???"
 Parallax Name = ""
 Note = ""
 
@@ -8,69 +8,68 @@ Name = "EV001"
   Page 0
     ControlSwitches([2318, 2318, 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["古ぼけた日誌がある……"])
+    ShowText(["Это старый дневник..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「この島に漂着して、半月が過ぎた。"])
-    ShowText(["　船に積んであった食料も尽き、もはや死を待つのみとなった」"])
+    ShowText(["\"Прошло уже пол-месяца с тех пор, как меня принесло"])
+    ShowText([" на этот остров. Припасы с корабля уже закончились,"])
+    ShowText([" так что мне остается только ждать своей кончины.\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「あてもなく島をさまよう。"])
-    ShowText(["　長い長い坂を上がっていると、周囲に霧が出てきたようだ」"])
+    ShowText(["\"Бродить по этому острову бессмыслено."])
+    ShowText([" Когда я поднимаюсь по длинному склону, я вижу,"])
+    ShowText([" как в округе появляется туман."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「磁石があらぬ方向を示し、正常に動作しなくなった。"])
-    ShowText(["　周囲には、尋常でない気配が立ちこめている」"])
+    ShowText(["\"Компас перестал работать."])
+    ShowText([" Он показывает необычное направление в этой области.\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「長い長い坂を登ると、石碑があった。"])
-    ShowText(["　かなり古いもののようだが、碑文はなんとか判読できる」"])
+    ShowText(["\"Когда я поднялся на холм, то обнаружил каменный монумент."])
+    ShowText([" Он выглядит очень старым, но надпись на нем разборчива.\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「……………………」"])
+    ShowText(["\"......\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「碑文は、非常に不気味な内容だった。"])
-    ShowText(["　いったいなぜ、誰がこんなものを造ったのか？」"])
+    ShowText(["\"Содержание надписи довольно жуткое."])
+    ShowText([" Кто мог сделать подобную вещь?\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「不気味な気配はますます濃くなり、周囲を霧が覆い尽くす。"])
-    ShowText(["　冒険者のサガか、私は慌ててこの文章をしたためた」"])
+    ShowText(["\"Зловещие знамения становятся все мрачнее,"])
+    ShowText([" окрестности полностью погрузились в туман."])
+    ShowText([" Я поспешно пишу эти строки, будто приключенческую"])
+    ShowText([" сагу.\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「この日誌を誰かが読む事があるならば……"])
-    ShowText(["　ただちに、この島から逃げよ」"])
+    ShowText(["\"Если кто-нибудь читает этот дневник..."])
+    ShowText([" Убирайтесь с этого острова немедленно.\""])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ここで文章は途切れている……"])
+    ShowText(["На этом текст обрывается..."])
     ConditionalBranch([1, 1142, 0, 62, 2])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["石碑なんて、どこにもないじゃない。"])
-        ShowText(["こんな狭い島に、そんな長い坂もないし……"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Я не вижу нигде монумента..."])
+        ShowText(["Да и нет никаких холмов на этом островке..."])
         Empty([])
       Else([])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["石碑なんてどこにもないじゃないか……"])
-        ShowText(["そもそも、こんな狭い島に長い坂もないし。"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Тут нет никакого монумента..."])
+        ShowText(["Да и прежде всего, на этом островке нет холма."])
         Empty([])
       BranchEnd([])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["石碑なんてどこにもないじゃないか……"])
-      ShowText(["そもそも、こんな狭い島に長い坂もないし。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Тут нет никакого монумента..."])
+      ShowText(["Да и прежде всего, на этом островке нет холма."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 3, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["死に直面し、幻を見ていたのか……"])
-      ShowText(["それとも……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Перед лицом смерти, его посещали видения...?"])
+      ShowText(["Или же..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["死に直面し、幻を見ていたのか……"])
-      ShowText(["それとも……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Перед лицом смерти, его посещали видения...?"])
+      ShowText(["Или же..."])
       Empty([])
 
     BranchEnd([])
@@ -81,7 +80,7 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ただの屍のようだ……"])
+    ShowText(["...Кажется, это просто труп."])
     Empty([])
 
 CommonEvent 3
@@ -89,7 +88,7 @@ Name = "EV003"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["道具箱の中には、大したものは入っていない……"])
+    ShowText(["В ящике нет ничего интересного..."])
     Empty([])
 
 CommonEvent 4
@@ -97,7 +96,7 @@ Name = "EV004"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["道具袋の中には、大したものは入っていない……"])
+    ShowText(["В сумке нет ничего интересного..."])
     Empty([])
 
 CommonEvent 5

@@ -127,9 +127,8 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男】"])
-    ShowText(["ひぃぃっ……もう、妖魔は消えたのか？"])
-    ShowText(["妻は、妻はどこへ行った！？"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Хьяяя... Демоны уже ушли?"])
+    ShowText(["Моя жена, где моя жена?!"])
     Empty([])
 
 CommonEvent 17
@@ -137,12 +136,10 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["ここで祈っておったら助かった……"])
-    ShowText(["まさか、神仏のご加護が！？"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Меня не тронули, пока я здесь молился..."])
+    ShowText(["Неужели это божественное покровительство?!"])
     ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-    ShowText(["【大明海】"])
-    ShowText(["……単に屋内にいたからだろ。"])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>...Это все потому, что ты был в здании."])
     Empty([])
 
 CommonEvent 18
@@ -150,17 +147,14 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["とりあえず、目に付く者を屋内に運び込んでいます。"])
-    ShowText(["じきに応援が来るため、作業は迅速に進むでしょう。"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>На какое-то время мы перенесем всех, кого найдем, внутрь."])
+    ShowText(["Как помощь прибудет, работа пойдет быстрее."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["それにしても、たった三人の妖魔が……"])
-    ShowText(["ここまでやるなんて……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Подумать только, что все это устроили демоны..."])
+    ShowText(["Невероятно..."])
     ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
-    ShowText(["【大明海】"])
-    ShowText(["実質、たった一匹の仕業だ。"])
-    ShowText(["あれを封じるのは、大仕事だぜ……"])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Вообще-то, это дело рук только одного из них."])
+    ShowText(["Запечатать ее будет непросто..."])
     Empty([])
 
 CommonEvent 19
@@ -168,8 +162,7 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["う……うほほ……"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Ух... Ухохо..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -183,8 +176,7 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【若者】"])
-    ShowText(["あぅぅ……もっと……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Аууу... Еще..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -198,8 +190,7 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["はぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Хаууу..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -213,8 +204,7 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【衛兵】"])
-    ShowText(["う……ふぁぁ……"])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>Ух... Фуаа..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -228,9 +218,8 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【若者】"])
-    ShowText(["た、助かったのか……？"])
-    ShowText(["でも、他のみんなは……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>М-мы спасены...?"])
+    ShowText(["Но что с остальными...?"])
     Empty([])
 
 CommonEvent 24
@@ -238,9 +227,9 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【女性】"])
-    ShowText(["大変な事になりましたが、落ち込んではいられません。"])
-    ShowText(["今は、気を失った皆様を屋内に運ばないと。"])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>То, что случилось, действительно ужасно, но мы не должны"])
+    ShowText(["предаваться унынию. Сейчас нам нужно отнести всех,"])
+    ShowText(["кто без сознания, внутрь."])
     Empty([])
 
 CommonEvent 25
@@ -248,9 +237,8 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["助かったのは、あの時に頑丈な家屋にいた少数のみ……"])
-    ShowText(["これでは、この村は終わったも同然じゃ。"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Лишь немногие из нас, кто оказался в тот момент дома,"])
+    ShowText(["спаслись... Возможно, нашей деревне уже конец."])
     Empty([])
 
 CommonEvent 26
@@ -258,13 +246,11 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【子供】"])
-    ShowText(["お兄ちゃん達が、あの妖魔達を追っ払ったんだよね！？"])
-    ShowText(["すごい！　かっこいい！"])
+    ShowText(["\\n<\\C[6]Ребенок\\C[0]>Братец, это ты отогнал тех демонов?!"])
+    ShowText(["Ого! Ты такой крутой!"])
     ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-    ShowText(["【ルヴィッサ】"])
-    ShowText(["でも、この村を守れなかったわ……"])
-    ShowText(["あの連中、このままじゃ済まさないから。"])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Но мы не смогли защитить деревню..."])
+    ShowText(["Это не сойдет им с рук."])
     Empty([])
 
 CommonEvent 27
@@ -272,15 +258,14 @@ Name = "EV027"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【巫女】"])
-    ShowText(["あなた方のお働きがなければ、村は全滅でした。"])
-    ShowText(["心より感謝いたします……"])
+    ShowText(["\\n<\\C[6]Мико\\C[0]>Без вашей помощи этой деревне уже бы пришел конец."])
+    ShowText(["Благодарю вас от всей души..."])
     ShowTextAttributes(["lars_fc01", 0, 0, 2])
-    ShowText(["【ラルス】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Ларс\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["感謝されているが、素直には喜べない。"])
-    ShowText(["多くの犠牲を出してしまった責任を感じてしまう……"])
+    ShowText(["Она благодарна, но честно говоря, нам совсем не радостно"])
+    ShowText(["от того, как все обернулось. Мы чувствуем ответственность"])
+    ShowText(["за все эти жертвы..."])
     Empty([])
 
 CommonEvent 28
@@ -288,9 +273,8 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["よいしょっと……"])
-    ShowText(["収容場所は、ここだけじゃとても足りないな。"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Вот так..."])
+    ShowText(["Тут не так уж много места, чтобы поместить всех."])
     Empty([])
 
 CommonEvent 29
@@ -370,8 +354,7 @@ Name = "EV035"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【若者】"])
-    ShowText(["あぅぅ……もっと……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Аууу... Еще..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -385,8 +368,7 @@ Name = "EV036"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【夢魔】"])
-    ShowText(["体が……痺れて……"])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Тело... онемело..."])
     Empty([])
 
 CommonEvent 37
@@ -394,13 +376,12 @@ Name = "EV037"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["この夢魔達……目が覚めたら、どうなるんだろう。"])
-    ShowText(["俺達まで襲われたりとか……ドキドキ。"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Эти Кошмары... Что будет, когда они восстановятся?"])
+    ShowText(["Снова нас атакуют, да? *тук-тук*"])
     ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-    ShowText(["【大明海】"])
-    ShowText(["俺様特製の、上級あやかし封印符だ。"])
-    ShowText(["百年以上は封じられるぜ。"])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Мои амулеты специально сделаны для запечатывания"])
+    ShowText(["высокоуровневых монстров. Так что они еще долго"])
+    ShowText(["не смогут использовать свои силы."])
     Empty([])
 
 CommonEvent 38
@@ -408,8 +389,7 @@ Name = "EV038"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【夢魔】"])
-    ShowText(["うふ、うふふっ……"])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Уфу, уфуфу..."])
     Empty([])
 
 CommonEvent 39
@@ -417,8 +397,7 @@ Name = "EV039"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【若者】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>......"])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -432,8 +411,7 @@ Name = "EV040"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【夢魔】"])
-    ShowText(["もっと吸いたいのに……"])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Хочу еще высосать..."])
     Empty([])
 
 CommonEvent 41
@@ -441,8 +419,7 @@ Name = "EV041"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【夢魔】"])
-    ShowText(["もっと、精を……"])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Еще семени..."])
     Empty([])
 
 CommonEvent 42
@@ -450,8 +427,7 @@ Name = "EV042"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>......"])
     Empty([])
 
 CommonEvent 43
@@ -459,13 +435,11 @@ Name = "EV043"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【神父】"])
-    ShowText(["他の村でも見てきたのですが……"])
-    ShowText(["襲われた犠牲者は、最初は淫らな寝言を呟いているのです。"])
+    ShowText(["\\n<\\C[6]Жрец\\C[0]>Подобное случалось и в других деревнях..."])
+    ShowText(["Жертвы нападения начинали бормотать в бреду."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【神父】"])
-    ShowText(["しかし次第に眠りが深くなり、ついには昏睡状態になる……"])
-    ShowText(["私が見た者達は、みなそうでした。"])
+    ShowText(["\\n<\\C[6]Жрец\\C[0]>Однако, со временем они засыпают и оказываются в коме..."])
+    ShowText(["Все, кого я видел, заканчивали именно так."])
     Empty([])
 
 CommonEvent 44
@@ -473,8 +447,7 @@ Name = "EV044"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【男】"])
-    ShowText(["もう、出ねぇよ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Больше не могуууу..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -488,8 +461,7 @@ Name = "EV045"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【老人】"])
-    ShowText(["うぅぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Ууууух..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -503,8 +475,7 @@ Name = "EV046"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【村人】"])
-    ShowText(["ふぁぁぁぁ……"])
+    ShowText(["\\n<\\C[6]Житель\\C[0]>Фуааааа..."])
     ConditionalBranch([2, "A", 1])
       ControlSelfSwitch(["A", 0])
       CallCommonEvent([531])
@@ -518,6 +489,5 @@ Name = "EV047"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【夢魔】"])
-    ShowText(["夢の中に……もっと……"])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Как во сне... Еще..."])
     Empty([])

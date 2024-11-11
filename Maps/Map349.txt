@@ -1,4 +1,4 @@
-Display Name = "北のお化け屋敷 倉庫"
+Display Name = "Особняк Призраков: Склад"
 Parallax Name = ""
 Note = ""
 
@@ -15,62 +15,56 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["きんぐ・おぶ・ぞんび……"])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Король зомби..."])
     ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["すりらぁ……"])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Уууужааасы..."])
     ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["ぉぅぃぇ……"])
+    ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>Ооо даа..."])
     ConditionalBranch([0, 2080, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["ゾンビ達は楽しそうに踊っている……"])
+      ShowText(["Зомби счастливо танцуют."])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ゾンビ達は楽しそうに踊っている……"])
-    ShowText(["どうしようか？"])
-    ShowChoices([["退治する", "そっとしておく"], 2])
-    When([0, "退治する"])
+    ShowText(["Зомби счастливо танцуют."])
+    ShowText(["Что нам делать?"])
+    ShowChoices([["Сражаться с ними", "Оставить их в покое"], 2])
+    When([0, "Сражаться с ними"])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["本当にいいの？"])
-        ShowText(["ここで踊ってる分には、人に迷惑はかけないと思うけど……"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Это действительно нормально? Я не думаю, что"])
+        ShowText(["те, кто танцует здесь, причиняют какие-то"])
+        ShowText(["проблемы."])
         Empty([])
       BranchEnd([])
-      ShowChoices([["それでも退治する", "そっとしておく"], 2])
-      When([0, "それでも退治する"])
+      ShowChoices([["Сражаться с ними", "Оставить их в покое"], 2])
+      When([0, "Сражаться с ними"])
         BattleProcessing([0, 193, false, false])
         ControlSwitches([2085, 2085, 0])
         ControlSwitches([2080, 2080, 0])
         ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
-        ShowText(["【ゾンビ娘】"])
-        ShowText(["……………………"])
+        ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>......"])
         ShowTextAttributes(["", 0, 0, 2])
-        ShowText(["ゾンビ娘達は、寂しそうに棺桶に戻っていった……"])
+        ShowText(["Выглядящие печально, зомби вернулись в свои гробы."])
         ExitEventProcessing([])
         Empty([])
-      When([1, "そっとしておく"])
+      When([1, "Оставить их в покое"])
         ControlSwitches([2080, 2080, 0])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["別に退治する必要はないよね……"])
-        ShowText(["何も悪いことはしていないんだし。"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Нам не нужно побеждать их."])
+        ShowText(["Они никому не вредят."])
         ExitEventProcessing([])
         Empty([])
       ChoicesEnd([])
       Empty([])
 
-    When([1, "そっとしておく"])
+    When([1, "Оставить их в покое"])
       ControlSwitches([2080, 2080, 0])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["別に退治する必要はないよね……"])
-      ShowText(["何も悪いことはしていないんだし。"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Нам не нужно побеждать их."])
+      ShowText(["Они никому не вредят."])
       ExitEventProcessing([])
       Empty([])
 
@@ -104,12 +98,10 @@ Name = "EV004"
   Page 0
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["……なんだ？"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Что?"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["おどってる……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Они танцуют."])
       Empty([])
 
     BranchEnd([])
@@ -124,8 +116,7 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["あ……ぅぅ……"])
+    ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>Аааа... ууу..."])
     Empty([])
 
   Page 1
@@ -136,8 +127,7 @@ Name = "EV007"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["あぅぅ……"])
+    ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>Аааауууу..."])
     Empty([])
 
   Page 1
@@ -148,8 +138,7 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["おぉぉ……"])
+    ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>OOooo..."])
     Empty([])
 
   Page 1
@@ -160,8 +149,7 @@ Name = "EV009"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["すりらぁ……"])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Уууужааасы..."])
     Empty([])
 
   Page 1
@@ -172,8 +160,7 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["ぉぅぃぇ……"])
+    ShowText(["\\n<\\C[6]Девушка-Зомби\\C[0]>Ооо даа..."])
     Empty([])
 
   Page 1

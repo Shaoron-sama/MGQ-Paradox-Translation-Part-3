@@ -1,4 +1,4 @@
-Display Name = "忘れられし塔 3F"
+Display Name = "Заброшенная Башня 3 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -39,7 +39,7 @@ Name = "EV005"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["壺はマジックポットだった！"])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
     BattleProcessing([0, 1450, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])
@@ -108,9 +108,8 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
-    ShowText(["【エルベティエ】"])
-    ShowText(["いらっしゃい……"])
-    ShowText(["一切の苦しみが無い世界へ……"])
+    ShowText(["\\n<\\C[6]Эрубети\\C[0]>Добро пожаловать..."])
+    ShowText(["В мир, где нет страданий..."])
     BattleProcessing([0, 1460, false, false])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])
@@ -127,9 +126,8 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
-    ShowText(["【エルベティエ】"])
-    ShowText(["この階も、だいぶ片付いたわね……"])
-    ShowText(["……あなた達も、溶かしてあげるわ。"])
+    ShowText(["\\n<\\C[6]Эрубети\\C[0]>Этот этаж тоже следует очистить..."])
+    ShowText(["...Вас я тоже растворю."])
     BattleProcessing([0, 1460, false, false])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])

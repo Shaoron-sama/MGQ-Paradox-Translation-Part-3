@@ -1,4 +1,4 @@
-Display Name = "ピラミッド 1F"
+Display Name = "Пирамида: 1 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -93,7 +93,7 @@ Name = "EV010"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -126,7 +126,7 @@ Name = "EV011"
     ControlSelfSwitch(["A", 0])
     ChangeGold([0, 0, 3700])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["3700\\G 手に入れた！"])
+    ShowText(["Получено 3700\\G!"])
     Empty([])
 
   Page 1

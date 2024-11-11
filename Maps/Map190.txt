@@ -1,4 +1,4 @@
-Display Name = "忘れられし塔 4F"
+Display Name = "Заброшенная Башня 4 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -41,7 +41,7 @@ Name = "EV005"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -105,8 +105,7 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["erbetie_fc1", 0, 0, 2])
-    ShowText(["【エルベティエ】"])
-    ShowText(["全ての生命を……私の中に……"])
+    ShowText(["\\n<\\C[6]Эрубети\\C[0]>Вся жизнь... будет внутри меня..."])
     BattleProcessing([0, 1460, false, false])
     ControlSelfSwitch(["A", 0])
     ExitEventProcessing([])
@@ -123,7 +122,7 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["壺はマジックポットだった！"])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
     BattleProcessing([0, 1450, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

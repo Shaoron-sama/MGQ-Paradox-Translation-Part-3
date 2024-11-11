@@ -1,4 +1,4 @@
-Display Name = "北のお化け屋敷 隠し部屋"
+Display Name = "Особняк Призраков: Секретная Комната"
 Parallax Name = ""
 Note = ""
 
@@ -19,7 +19,7 @@ Name = "EV002"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -49,17 +49,17 @@ Name = "EV003"
     ChangePlayerFollowers([1])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 1, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ええい、もう逃げ場所はないぞ！"])
-      ShowText(["貴様が、この下らんお化け屋敷の主だな！？"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ага, попалась!"])
+      ShowText(["Это ты ответственна за весь этот цирк ужасов"])
+      ShowText(["в доме?!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["もう逃げ場所はありませんよ……！"])
-      ShowText(["あなたが、この忌まわしい館の主ですね！？"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Теперь тебе некуда бежать. Я правильно поняла,"])
+      ShowText(["что ты стоишь за тем, что происходит в этом"])
+      ShowText(["отвратительном особняке?"])
       Empty([])
 
     BranchEnd([])
@@ -67,12 +67,11 @@ Name = "EV003"
     ShowPicture([5, "80_chrom_st02", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["chrom_fc2", 0, 0, 2])
-    ShowText(["【クロム】"])
-    ShowText(["くくく、逃げ惑うつもりなどないわ……"])
-    ShowText(["我が禁断の術、見せてくれる！"])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Хухуху, глупые. Я никуда не убегала."])
+    ShowText(["Я всего-лишь собиралась показать вам результаты"])
+    ShowText(["моего запретного мастерства!"])
     ShowTextAttributes(["chrom_fc2", 0, 0, 2])
-    ShowText(["【クロム】"])
-    ShowText(["さあ、我が僕よ！　長き眠りより蘇れ！"])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>А теперь, мои слуги! Пробудитесь!"])
     ErasePicture([5])
     Wait([15])
     PlaySE(["RPG::SE(@name=\"mon_door1\", @pitch=100, @volume=100)"])
@@ -88,24 +87,21 @@ Name = "EV003"
     Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["こいつ、ネクロマンサーか！"])
-      ShowText(["気をつけろ、そこらの小物とは違うぞ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Некромант, как презренно."])
+      ShowText(["Будьте осторожны, она не такая, как другие!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["この魔物、ネクロマンサーですか！"])
-      ShowText(["気をつけなさい、厄介な相手ですよ！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Некромант, поистине отвратительно."])
+      ShowText(["Будьте осторожны, она может быть непростым"])
+      ShowText(["соперником!"])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["chrom_fc2", 1, 0, 2])
-    ShowText(["【クロム】"])
-    ShowText(["さあ、ゾンビどもよ！"])
-    ShowText(["ここからつまみ出せ！"])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>А теперь, зомби! Выкиньте нарушителей вон!"])
     SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
@@ -168,7 +164,7 @@ Name = "EV003"
     ControlSwitches([2075, 2075, 0])
     PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=80)"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["クロムは部屋からつまみ出されてしまった！"])
+    ShowText(["Курому была выкинута из комнаты!"])
     PlayBGM(["RPG::BGM(@name=\"dungeon_obakeyasiki\", @volume=100, @pitch=100)"])
     SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"mon_door1\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
@@ -208,28 +204,24 @@ Name = "EV003"
     Unnamed(["RPG::MoveCommand(@code=28, @parameters=[31])"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc4", 0, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>......"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 3, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["帰りたくなってきたぞ……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Как я устала..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["帰りたくなってきました……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>После такого мне хочется домой."])
       Empty([])
 
     BranchEnd([])
@@ -271,8 +263,7 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["zonbe_fc3", 0, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["ＺＺＺ……"])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Хрр..."])
     Empty([])
 
   Page 1
@@ -283,8 +274,7 @@ Name = "EV007"
 
   Page 0
     ShowTextAttributes(["zonbe_fc3", 1, 0, 2])
-    ShowText(["【ゾンビ娘】"])
-    ShowText(["入ってます。"])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Я здесь."])
     Empty([])
 
   Page 1
@@ -295,8 +285,9 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["～クロムメモ～"])
-    ShowText(["ゾンビに命令する際は、主語・述語・目的語をしっかりと。"])
+    ShowText(["-Записка Курому- Когда командуешь зомби, будь абсолютно"])
+    ShowText(["точна в формулировках. Используй команды, которые"])
+    ShowText(["не могут быть неправильно поняты..."])
     Empty([])
 
 CommonEvent 9

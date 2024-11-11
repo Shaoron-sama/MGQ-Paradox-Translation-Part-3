@@ -1,4 +1,4 @@
-Display Name = "サキュバスの村"
+Display Name = "Деревня Суккубов"
 Parallax Name = ""
 Note = ""
 
@@ -92,35 +92,30 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["minccubus_fc1", 1, 0, 2])
-    ShowText(["【ミンキュバス】"])
-    ShowText(["この家畜、あんまりミルクが出なくなっちゃったな～。"])
+    ShowText(["\\n<\\C[6]Минкуб\\C[0]>Эта корова стала давать мало молока."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["うぅぅ……もう無理だぁ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Уууух... Больше не получится..."])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
     ShowTextAttributes(["minccubus_fc1", 1, 0, 2])
-    ShowText(["【ミンキュバス】"])
-    ShowText(["ミルク出せない家畜は……ああなっちゃうよぉ？"])
+    ShowText(["\\n<\\C[6]Минкуб\\C[0]>Ты же знаешь что случается со скотом,"])
+    ShowText(["который не может давать молока, да?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["ひぃぃっ……！"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Хиии...!"])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
     ShowTextAttributes(["minccubus_fc1", 1, 0, 2])
-    ShowText(["【ミンキュバス】"])
-    ShowText(["さて、次は……どのオスのミルクを搾っちゃおうかな～？"])
+    ShowText(["\\n<\\C[6]Минкуб\\C[0]>Кто следующий... Кто хочет, чтобы его подоили?"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["やれやれ、感心できんのう。"])
-    ShowText(["これも人とあやかしが近いがゆえの弊害か……"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Да уж, неприятно."])
+    ShowText(["Близость людей с монстрами тоже вредит им...?"])
     Empty([])
 
 CommonEvent 14
@@ -279,7 +274,7 @@ Name = "EV025"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -296,7 +291,7 @@ Name = "EV026"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -313,7 +308,7 @@ Name = "EV027"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -330,7 +325,7 @@ Name = "EV028"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -347,7 +342,7 @@ Name = "EV029"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -364,7 +359,7 @@ Name = "EV030"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -381,7 +376,7 @@ Name = "EV031"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -398,7 +393,7 @@ Name = "EV032"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -415,7 +410,7 @@ Name = "EV033"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -432,7 +427,7 @@ Name = "EV034"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -449,7 +444,7 @@ Name = "EV035"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -466,7 +461,7 @@ Name = "EV036"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -483,7 +478,7 @@ Name = "EV037"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -500,7 +495,7 @@ Name = "EV038"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
       ExitEventProcessing([])
@@ -517,7 +512,7 @@ Name = "EV039"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
       ExitEventProcessing([])
@@ -534,7 +529,7 @@ Name = "EV040"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -551,7 +546,7 @@ Name = "EV041"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -568,7 +563,7 @@ Name = "EV042"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -585,7 +580,7 @@ Name = "EV043"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -602,26 +597,22 @@ Name = "EV044"
   Page 0
     ConditionalBranch([1, 1205, 0, 2, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【サキュバス】"])
-      ShowText(["あなた……サキュバスよね？"])
-      ShowText(["なんだか存在がふわっとしてない？"])
+      ShowText(["\\n<\\C[6]Суккуб\\C[0]>Ты же... суккуб, верно?"])
+      ShowText(["Как у тебя получилось стать такой воздушной?"])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["夢世界の存在だから……かな。"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Ну... все потому что я пришла из мира снов?"])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1205, 0, 3, 1])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【サキュバス】"])
-      ShowText(["あなた……とっても素敵ね。"])
-      ShowText(["うふふっ、お姉さんと遊ばない？"])
+      ShowText(["\\n<\\C[6]Суккуб\\C[0]>Ты... выглядишь таким приятным."])
+      ShowText(["Уфуфу, хочешь хорошо провести время с сестренкой?"])
       ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
-      ShowText(["【ロウラット】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Лоурет\\C[0]>......"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["ロウラットは丁重に断った……"])
+      ShowText(["Лоурет вежливо отказался..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -636,17 +627,16 @@ Name = "EV045"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["この村で行われているセックスは、全て和姦よ。"])
-    ShowText(["男側の同意がある時のみ、淫魔は吸精を許されるの。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Весь секс в деревне происходит по обоюдному согласию."])
+    ShowText(["Мы высасываем сперму мужчины только после того,"])
+    ShowText(["как он даст свое разрешение."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["なるほど……ちゃんと管理は行き届いておるのか。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Понятно... В этом месте благоразумное управление."])
     Empty([])
 
 CommonEvent 46
@@ -654,18 +644,17 @@ Name = "EV046"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["魔王様の宣戦布告で、世の中は不穏な世相よ……"])
-    ShowText(["せめてひとときでも、快楽に浸りたいわよねぇ。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Из-за того, что Владыка Монстров объявила сейчас войну,"])
+    ShowText(["в мире настали непростые времена. В подобные моменты,"])
+    ShowText(["хочется хоть на чуть-чуть погрузиться в наслаждение, да?"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["この世界にも、魔王がいるのね……"])
-    ShowText(["話がややこしくならないといいけど。"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>В этом мире есть кто-то вроде Владыки Демонов...?"])
+    ShowText(["Надеюсь, я ничего не перепутала."])
     Empty([])
 
 CommonEvent 47
@@ -673,27 +662,22 @@ Name = "EV047"
 
   Page 0
     ShowTextAttributes(["saki_fc1", 0, 0, 2])
-    ShowText(["【サキ】"])
-    ShowText(["ウィッチについて来ちゃった。"])
-    ShowText(["久しぶりの、里帰りだよっ☆"])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Я пришла сюда вместе с Вич."])
+    ShowText(["Давно меня не было дома☆"])
     ConditionalBranch([1, 1205, 0, 2, 0])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["その格好……踊り子？　それとも吟遊詩人？"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Твой наряд... Ты танцовщица? Или певица?"])
       ShowTextAttributes(["saki_fc1", 3, 0, 2])
-      ShowText(["【サキ】"])
-      ShowText(["サキはねぇ……アイドルだよっ☆"])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Саки - ни то, ни другое... Она - идол☆"])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["アイドル……つまり偶像？"])
-      ShowText(["哲学的な存在なのね、よく分からないけど。"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Идол...? То есть - статуя?"])
+      ShowText(["Не уверена, что понимаю философию такого"])
+      ShowText(["состояния."])
       ShowTextAttributes(["saki_fc1", 3, 0, 2])
-      ShowText(["【サキ】"])
-      ShowText(["ところで、キミから才能をビンビン感じちゃう☆"])
-      ShowText(["ねぇねぇ、アイドルに興味ない？"])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Кстати, я вижу в тебе большой талант☆"])
+      ShowText(["Эй-эй, не хочешь стать идолом?"])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["興味ない……"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Не хочу..."])
       Empty([])
 
     BranchEnd([])
@@ -718,13 +702,12 @@ Name = "EV049"
     ChangeSkills([0, 807, 0, 5633])
     ChangeSkills([0, 808, 0, 5633])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["サキュバスの村へようこそ。"])
-    ShowText(["さあ、どこに行きたい？"])
-    Script(["unlimited_choices(11, [\"宿屋に行く\","])
-    ScriptMore(["\"武器・防具屋に行く\",\"道具・アクセサリ屋に行く\","])
-    ScriptMore(["\"酒場に行く\",\"教会に行く\",\"村長の館に行く\","])
-    ScriptMore(["\"やめる\"])"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Добро пожаловать в Деревню Суккубов."])
+    ShowText(["Куда бы вы хотели?"])
+    Script(["unlimited_choices(11, [\"Гостиница\","])
+    ScriptMore(["\"Магазин Снаряжения\",\"Лавка\","])
+    ScriptMore(["\"Бар\",\"Церковь\",\"Особняк Старосты\","])
+    ScriptMore(["\"Никуда\"])"])
     ConditionalBranch([1, 11, 0, 0, 0])
       TransferPlayer([0, 852, 26, 42, 2, 0])
       ExitEventProcessing([])
@@ -773,31 +756,26 @@ Name = "EV050"
 
   Page 0
     ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
-    ShowText(["【シスキュバス】"])
-    ShowText(["淫魔の悦び教会にようこそ。"])
-    ShowText(["何のご用でしょうか？"])
+    ShowText(["\\n<\\C[6]Монахиня-Суккуб\\C[0]>Добро пожаловать в \"Церковь Наслаждения Суккубов\"."])
+    ShowText(["Что я могу для вас сделать?"])
     ConditionalBranch([1, 1205, 0, 3, 2])
-      ShowChoices([["お祈りをする", "用はない"], 2])
-      When([0, "お祈りをする"])
+      ShowChoices([["Молитва", "Ничего"], 2])
+      When([0, "Молитва"])
         ShowTextAttributes(["sisccubus_fc1", 2, 0, 2])
-        ShowText(["【シスキュバス】"])
-        ShowText(["それでは、イリアス様に祈りましょう。"])
-        ShowText(["……あら？　導きの縁を感じない？"])
+        ShowText(["\\n<\\C[6]Монахиня-Суккуб\\C[0]>Что же, давай помолимся Илиас."])
+        ShowText(["...Ой? Ты не чувствуешь связи?"])
         ShowTextAttributes(["sisccubus_fc1", 2, 0, 2])
-        ShowText(["【シスキュバス】"])
-        ShowText(["こんな事は、今までありませんでした……"])
-        ShowText(["あなた達は、いったい……"])
+        ShowText(["\\n<\\C[6]Монахиня-Суккуб\\C[0]>Такого раньше не было..."])
+        ShowText(["Кто ты такой...?"])
         ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
-        ShowText(["【ロウラット】"])
-        ShowText(["……………………"])
+        ShowText(["\\n<\\C[6]Лоурет\\C[0]>......"])
         ShowTextAttributes(["", 0, 0, 2])
-        ShowText(["自分達は、異世界から来たからだろうか……"])
+        ShowText(["Может, это потому что мы из другого мира...?"])
         ExitEventProcessing([])
         Empty([])
-      When([1, "用はない"])
+      When([1, "Не надо"])
         ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
-        ShowText(["【シスキュバス】"])
-        ShowText(["イリアス様のご加護があらん事を……"])
+        ShowText(["\\n<\\C[6]Монахиня-Суккуб\\C[0]>Пусть Илиас присматривает за тобой..."])
         ExitEventProcessing([])
         Empty([])
       ChoicesEnd([])
@@ -805,17 +783,16 @@ Name = "EV050"
 
     BranchEnd([])
     ConditionalBranch([1, 1205, 0, 4, 1])
-      ShowChoices([["転職する", "用はない"], 2])
-      When([0, "転職する"])
+      ShowChoices([["Сменить профессии", "Не надо"], 2])
+      When([0, "Сменить профессии"])
         Script(["SceneManager.call(Scene_JobChange)"])
         Wait([1])
         RecoverAll([0, 0])
         ExitEventProcessing([])
         Empty([])
-      When([1, "用はない"])
+      When([1, "Не надо"])
         ShowTextAttributes(["sisccubus_fc1", 0, 0, 2])
-        ShowText(["【シスキュバス】"])
-        ShowText(["イリアス様のご加護があらん事を……"])
+        ShowText(["\\n<\\C[6]Монахиня-Суккуб\\C[0]>Пусть Илиас присматривает за тобой..."])
         ExitEventProcessing([])
         Empty([])
       ChoicesEnd([])
@@ -829,9 +806,8 @@ Name = "EV051"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【痩せたごろつき】"])
-    ShowText(["俺、毎日この教会に通っちゃってるぜ……"])
-    ShowText(["ハァハァ……"])
+    ShowText(["\\n<\\C[6]Исхудавший Бандит\\C[0]>Я молюсь в этой церкви каждый день..."])
+    ShowText(["Хаа, хаа..."])
     Empty([])
 
 CommonEvent 52
@@ -839,8 +815,8 @@ Name = "EV052"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【やつれた青年】"])
-    ShowText(["シスター、今日はどんな調教……いや、説教を……"])
+    ShowText(["\\n<\\C[6]Тощий Парень\\C[0]>Сестра, какая у нас сегодня будет тренировка...?"])
+    ShowText(["Эмм, в смысле молитва..."])
     Empty([])
 
 CommonEvent 53
@@ -849,7 +825,7 @@ Name = "EV053"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -866,7 +842,7 @@ Name = "EV054"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -883,7 +859,7 @@ Name = "EV055"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
       ExitEventProcessing([])
@@ -899,8 +875,7 @@ Name = "EV060"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【売り子サキュバス】"])
-    ShowText(["この村の特産品……たっぷり味わっていってね♪"])
+    ShowText(["\\n<\\C[6]Суккуб-Продавщица\\C[0]>Насладитесь продуктами, которые предоставляет наша деревня ♪"])
     ShopProcessing([0, 319, 0, 0, false])
     ShopItem([0, 413, 0, 0])
     ShopItem([0, 342, 0, 0])
@@ -910,11 +885,9 @@ Name = "EV060"
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["このミルクって……何のミルク？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>А это... что за молоко?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【売り子サキュバス】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Суккуб-Продавщица\\C[0]>......"])
     Empty([])
 
 CommonEvent 61
@@ -923,7 +896,7 @@ Name = "EV061"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -940,7 +913,7 @@ Name = "EV062"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -957,7 +930,7 @@ Name = "EV063"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -974,7 +947,7 @@ Name = "EV064"
   Page 0
     ConditionalBranch([1, 1205, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["一人で外に出るのは危険すぎる……"])
+      ShowText(["Выходить одному слишком опасно..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
       ExitEventProcessing([])
@@ -990,8 +963,7 @@ Name = "EV065"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【やつれた中年】"])
-    ShowText(["シスター……ああ、シスター……"])
+    ShowText(["\\n<\\C[6]Уставший Мужчина\\C[0]>Сестра... Аах, сестра..."])
     Empty([])
 
 CommonEvent 66
@@ -999,8 +971,7 @@ Name = "EV066"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【痩せた戦士】"])
-    ShowText(["この教会は……素敵だ……"])
+    ShowText(["\\n<\\C[6]Выжатый Воин\\C[0]>Эта церковь... прекрасна..."])
     Empty([])
 
 CommonEvent 67
@@ -1008,18 +979,17 @@ Name = "EV067"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["最上級の召喚士ともなると、四精霊を召喚できるらしいわね。"])
-    ShowText(["攻撃はもちろん、自身にも加護を与えて自己強化できるそうよ。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я слышала, что высокоранговые Призыватели могут даже вызвать"])
+    ShowText(["Четырех Духов Стихий. Они не только нападут на твоих"])
+    ShowText(["врагов, но и даруют тебе свое покровительство."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["四精霊とな、興味があるのう……"])
-    ShowText(["だが、今は優先すべきことがある身じゃな。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эти Четыре Духа звучат интересно..."])
+    ShowText(["Но пока у нас другие задачи."])
     Empty([])
 
 CommonEvent 68
@@ -1027,9 +997,8 @@ Name = "EV068"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["こ、こんな……家畜みたいに……"])
-    ShowText(["人間に戻りたくない……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Она обращается со мной как со скотом..."])
+    ShowText(["Я больше не хочу быть человеком..."])
     Empty([])
 
 CommonEvent 69
@@ -1037,8 +1006,7 @@ Name = "EV069"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["はぅぅ……もっと搾ってぇ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Хаууу... Выжмите ещеее..."])
     Empty([])
 
 CommonEvent 70
@@ -1046,8 +1014,7 @@ Name = "EV070"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["ボク、ダメになっちゃうよ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Я стал бесполезен..."])
     Empty([])
 
 CommonEvent 71
@@ -1055,8 +1022,7 @@ Name = "EV071"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ごろつき】"])
-    ShowText(["ぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Бандит\\C[0]>Оооох..."])
     Empty([])
 
 CommonEvent 72
@@ -1064,8 +1030,7 @@ Name = "EV072"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【戦士】"])
-    ShowText(["ぁ……ぁぁ……"])
+    ShowText(["\\n<\\C[6]Воин\\C[0]>А... Аааа..."])
     Empty([])
 
 CommonEvent 73
@@ -1078,12 +1043,10 @@ Name = "EV073"
     ShowPicture([5, "80_magatu_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["話は聞いたぞ、ロウラット。"])
-    ShowText(["もちろん、儂も一緒に行ってやる。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Я слышала ваш разговор, Лоурет."])
+    ShowText(["Естественно, я иду с вами."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["リジェオも、すぐに来ると行っていたが――"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Риджео сказала, что будет с минуты на минуту..."])
     ErasePicture([5])
     Wait([30])
     ControlSwitches([31, 31, 0])
@@ -1096,8 +1059,7 @@ Name = "EV073"
     Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
     Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["ごめん、ちょっと遅れちゃったわね……"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Простите, я немного опоздала..."])
     SetMoveRoute([139, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=28, @parameters=[31])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
@@ -1107,9 +1069,8 @@ Name = "EV073"
     MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
     MovePicture([6, nil, 0, 0, 200, 0, 75, 75, 255, 0, 30, true])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["うむ、これで全員揃ったな。"])
-    ShowText(["時にリジェオよ、修行の成果はどうだ？"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Угу, похоже, все собрались."])
+    ShowText(["Кстати, Риджео, как прошла тренировка?"])
     ConditionalBranch([0, 7077, 1])
       Script(["set_class_level(808, 175, 10, false, false)"])
       ScriptMore(["set_class_level(808, 176, 10, false, true)"])
@@ -1123,9 +1084,8 @@ Name = "EV073"
     BranchEnd([])
     ConditionalBranch([0, 2909, 0])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["まあまあね……"])
-      ShowText(["この数日で、学ぶべきところは学んだわ。"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Ну более-менее..."])
+      ShowText(["За эти пару дней, я выучила что нужно."])
       ConditionalBranch([12, "actor_class_level_over?(808, 94, 2)"])
         Empty([])
       Else([])
@@ -1138,9 +1098,9 @@ Name = "EV073"
       ChangeSkills([0, 808, 0, 2068])
       PlayME(["RPG::ME(@name=\"mon_fanfale3\", @pitch=100, @volume=100)"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["リジェオは踊り子の修行を積んだ！"])
-      ShowText(["リジェオは\\I[176]\\C[1]ハッスルダンス\\C[0]を修得した！"])
-      ShowText(["リジェオは\\I[176]\\C[1]快楽舞踏\\C[0]を修得した！"])
+      ShowText(["Риджео тренировалась как танцовщица!"])
+      ShowText(["Риджео выучила \\I[176]\\C[4]Хастл\\C[0]!"])
+      ShowText(["Риджео выучила \\I[176]\\C[4]Танец Удовольствия\\C[0]!"])
       ConditionalBranch([0, 7077, 1])
         Script(["force_change_equip(808,1,1,736)"])
         Empty([])
@@ -1152,9 +1112,8 @@ Name = "EV073"
     BranchEnd([])
     ConditionalBranch([0, 2910, 0])
       ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["まあまあね……"])
-      ShowText(["この数日で、学ぶべきところは学んだわ。"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Ну более-менее..."])
+      ShowText(["За эти пару дней, я выучила что нужно."])
       ConditionalBranch([12, "actor_class_level_over?(808, 67, 3)"])
         Empty([])
       Else([])
@@ -1167,9 +1126,9 @@ Name = "EV073"
       ChangeSkills([0, 808, 0, 877])
       PlayME(["RPG::ME(@name=\"mon_fanfale3\", @pitch=100, @volume=100)"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["リジェオはくのいちの修行を積んだ！"])
-      ShowText(["リジェオは\\I[1482]\\C[1]忍法・やまびこの術\\C[0]を修得した！"])
-      ShowText(["リジェオは\\I[99]\\C[1]魁の忍\\C[0]を修得した！"])
+      ShowText(["Риджео тренировалась как куноичи!"])
+      ShowText(["Риджео выучила \\I[1482]\\C[4]Нинпо:Техника Ямабико\\C[0]!"])
+      ShowText(["Риджео выучила \\I[99]\\C[4]Инициатива Шиноби\\C[0]!"])
       ConditionalBranch([0, 7077, 1])
         Script(["force_change_equip(808,1,1,268)"])
         ScriptMore(["force_change_equip(808,2,1,268)"])
@@ -1183,9 +1142,8 @@ Name = "EV073"
     ConditionalBranch([0, 2911, 0])
       ShowPicture([6, "80_rejeo_st02", 0, 0, 200, 0, 75, 75, 255, 0])
       ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
-      ShowText(["【リジェオ】"])
-      ShowText(["ノーコメント……"])
-      ShowText(["あの姿は……見ないで……"])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>Без комментариев..."])
+      ShowText(["И это... не смотрите на мой наряд...."])
       ConditionalBranch([12, "actor_class_level_over?(808, 49, 6)"])
         Empty([])
       Else([])
@@ -1200,9 +1158,9 @@ Name = "EV073"
       ChangeSkills([0, 808, 0, 8466])
       PlayME(["RPG::ME(@name=\"mon_fanfale3\", @pitch=100, @volume=100)"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["リジェオは魔法少女の修行を積んだ！"])
-      ShowText(["リジェオは\\I[227]\\C[1]ラブ・メテオ\\C[0]を修得した！"])
-      ShowText(["リジェオは\\I[99]\\C[1]魔法少女まじかる☆りじぇお\\C[0]を修得した！"])
+      ShowText(["Риджео тренировалась как махо-сёдзё!"])
+      ShowText(["Риджео выучила \\I[227]\\C[4]Метеор☆Любви\\C[0]!"])
+      ShowText(["Риджео выучила \\I[99]\\C[4]Волшебная☆Риджео\\C[0]!"])
       ConditionalBranch([0, 7077, 1])
         Script(["force_change_equip(808,1,1,526)"])
         Empty([])
@@ -1215,37 +1173,34 @@ Name = "EV073"
     Wait([30])
     ShowPicture([6, "80_rejeo_st01", 0, 0, 200, 0, 75, 75, 255, 0])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["でも、私は夢魔だから……"])
-    ShowText(["痛みや危害を与えるような技は使えないの、知ってるよね？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Но я ведь Кошмар..."])
+    ShowText(["Так что вы понимаете, что я не могу причинить"])
+    ShowText(["кому-нибудь вред?"])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["まさしく快楽専門か……"])
-    ShowText(["暴力を使うのも受けるのも否定するとは、実に面白いのう。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Ты полностью специализируешься на удовольствии..."])
+    ShowText(["Просто удивительно, как вы одновременно не можете"])
+    ShowText(["применять и принимать насилие."])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["ロウラットも、初級魔術を使えるようになったのよね？"])
-    ShowText(["頼りにしてるわよ。"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Ты ведь теперь можешь использовать базовую магию,"])
+    ShowText(["да Лоурет? Я рассчитываю на тебя."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["二人の新たな力、見物じゃのう。"])
-    ShowText(["だがロウラットは、「魔法使い」を極めた状態であろう。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Приятно видеть, что вы получили новые силы."])
+    ShowText(["Хотя, Лоурет, сейчас просто \"Маг\"..."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["旅に出る前に、さらなる上位職に転職した方が良いぞ。"])
-    ShowText(["この村のシスターが、転職も行ってくれるはずじゃ。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Будет лучше, если мы возьмем более продвинутые"])
+    ShowText(["профессии перед уходом. Здешняя жрица должна"])
+    ShowText(["иметь возможность сменить нам профессии."])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["シスターって、どこだっけ……？"])
-    ShowText(["確か、川沿いで露店教会をやってたはずね。"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>А где это она...?"])
+    ShowText(["Единственная, которую я видела, была у реки."])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["あと、装備や道具も大丈夫？"])
-    ShowText(["不安なら、この村の店で準備を整えないと。"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>И еще, все ли у нас в порядке со снаряжением?"])
+    ShowText(["Возможно, нам стоит посетить местные магазины"])
+    ShowText(["и хорошо подготовиться."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["火山洞窟に行く前に、しっかり準備せねばな。"])
-    ShowText(["では行くぞ！　ロウラット、リジェオよ！"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Нам нужно быть во всеоружии, прежде"])
+    ShowText(["чем отправиться к Вулкану Гольдо."])
+    ShowText(["Выдвигаемся! Лоурет! Риджео!"])
     ErasePicture([5])
     ErasePicture([6])
     PlayBGM(["RPG::BGM(@name=\"mura2\", @volume=100, @pitch=100)"])
@@ -1264,14 +1219,11 @@ Name = "EV074"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["ほぉら、気持ちいいでしょ……うふふっ。"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Хоора, приятно, так ведь...? Уфуфу."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["こんな風に、集団で弄んでほしかったのよねぇ……？"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Ты ведь хотел, чтобы мы с тобой так поиграли?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の戦士】"])
-    ShowText(["あひ～～～～！！"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Ахииииии!!"])
     Empty([])
 
 CommonEvent 75
@@ -1285,14 +1237,11 @@ Name = "EV076"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["ほぉら、気持ちいいでしょ……うふふっ。"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Хоора, приятно, так ведь...? Уфуфу."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["こんな風に、集団で弄んでほしかったのよねぇ……？"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Ты ведь хотел, чтобы мы с тобой так поиграли?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の戦士】"])
-    ShowText(["あひ～～～～！！"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Ахииииии!!"])
     Empty([])
 
 CommonEvent 77
@@ -1300,14 +1249,11 @@ Name = "EV077"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["ほぉら、気持ちいいでしょ……うふふっ。"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Хоора, приятно, так ведь...? Уфуфу."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["こんな風に、集団で弄んでほしかったのよねぇ……？"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Ты ведь хотел, чтобы мы с тобой так поиграли?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の戦士】"])
-    ShowText(["あひ～～～～！！"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Ахииииии!!"])
     Empty([])
 
 CommonEvent 78
@@ -1315,19 +1261,16 @@ Name = "EV078"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["私の男、あんたなんかには渡さないわ！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Я не отдам тебе своего мужчину!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["勝負は拳でつけるわよ！"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Тогда я выиграю его своими кулаками!"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["乱暴なのは、嫌いね……"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Я презираю насилие..."])
     Empty([])
 
 CommonEvent 79
@@ -1335,19 +1278,16 @@ Name = "EV079"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["私の男、あんたなんかには渡さないわ！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Я не отдам тебе своего мужчину!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["勝負は拳でつけるわよ！"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Тогда я выиграю его своими кулаками!"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["乱暴なのは、嫌いね……"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Я презираю насилие..."])
     Empty([])
 
 CommonEvent 80
@@ -1361,25 +1301,20 @@ Name = "EV081"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["あはっ、またイっちゃったぁ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ахаха, ты опять кончил ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["もっと吸い取ってあげる、うふふっ……"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы высосем из тебя еще много, уфуфу..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おじさん】"])
-    ShowText(["あぁぁ……搾られてるぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ааах... Меня выжимаааают..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["この光景……まほろば山を思い出すのう。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эта сцена... напомнила мне о Махоробе."])
     ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["マガツの住処も、こんな感じなの……？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Там, где вы живете, происходит подобное, Магацу?"])
     Empty([])
 
 CommonEvent 82
@@ -1387,25 +1322,20 @@ Name = "EV082"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["あはっ、またイっちゃったぁ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ахаха, ты опять кончил ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["もっと吸い取ってあげる、うふふっ……"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы высосем из тебя еще много, уфуфу..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おじさん】"])
-    ShowText(["あぁぁ……搾られてるぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ааах... Меня выжимаааают..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["この光景……まほろば山を思い出すのう。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эта сцена... напомнила мне о Махоробе."])
     ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["マガツの住処も、こんな感じなの……？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Там, где вы живете, происходит подобное, Магацу?"])
     Empty([])
 
 CommonEvent 83
@@ -1413,25 +1343,20 @@ Name = "EV083"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["あはっ、またイっちゃったぁ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ахаха, ты опять кончил ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["もっと吸い取ってあげる、うふふっ……"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы высосем из тебя еще много, уфуфу..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おじさん】"])
-    ShowText(["あぁぁ……搾られてるぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ааах... Меня выжимаааают..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["この光景……まほろば山を思い出すのう。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эта сцена... напомнила мне о Махоробе."])
     ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["マガツの住処も、こんな感じなの……？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Там, где вы живете, происходит подобное, Магацу?"])
     Empty([])
 
 CommonEvent 84
@@ -1439,8 +1364,7 @@ Name = "EV084"
 
   Page 0
     ShowTextAttributes(["maycubbus_fc1", 0, 0, 2])
-    ShowText(["【メイキュバス】"])
-    ShowText(["お世話して差し上げましょう、最後の一滴まで……"])
+    ShowText(["\\n<\\C[6]Мейкуб\\C[0]>Я обслужу тебя до последней капли..."])
     Empty([])
 
 CommonEvent 85
@@ -1448,8 +1372,7 @@ Name = "EV085"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["はぅぅぅ……もっと、ご奉仕してぇ～！"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Хаууу... Я хочу ещееее~!"])
     Empty([])
 
 CommonEvent 86
@@ -1457,8 +1380,7 @@ Name = "EV086"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【中年】"])
-    ShowText(["ふぁぁ……天国のようだ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Фуааа... Я будто на Небесах..."])
     Empty([])
 
 CommonEvent 87
@@ -1466,8 +1388,7 @@ Name = "EV087"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["この家は……まだ危険だ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Этот дом... все еще опасен..."])
     Empty([])
 
 CommonEvent 88
@@ -1475,8 +1396,7 @@ Name = "EV088"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おっさん】"])
-    ShowText(["よ、よかった……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Т-так приятно..."])
     Empty([])
 
 CommonEvent 89
@@ -1484,8 +1404,7 @@ Name = "EV089"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【おじさん】"])
-    ShowText(["姉妹のふれあい牧場、営業中……うぅぅ……"])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>\"Контактная Ферма Сестренок\" открыта... Ууух..."])
     Empty([])
 
 CommonEvent 90
@@ -1493,17 +1412,15 @@ Name = "EV090"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["あへぇぇぇぇ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Ахаааа..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["ずいぶんそこら辺に人が転がってる村ね。"])
-    ShowText(["この世界って、みんなこんな感じなの……？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Мужчины лежат по всей этой деревне."])
+    ShowText(["Неужели так во всем мире...?"])
     Empty([])
 
 CommonEvent 91
@@ -1511,8 +1428,7 @@ Name = "EV091"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["きもちいいよぉ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Так приятноооо..."])
     Empty([])
 
 CommonEvent 92
@@ -1520,19 +1436,16 @@ Name = "EV092"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["彼はあたしのモノよ、この泥棒猫！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Он - мой, паршивая кошка!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["負け犬が何か言ってるわぁ！　にゃぉ～ん♪"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Чего ты там скулишь?! Мяу тебе ♪"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["オスを巡る争いは、どの世界にもあるようじゃな。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Похоже, драки за мужчину есть в каждом мире."])
     Empty([])
 
 CommonEvent 93
@@ -1540,19 +1453,16 @@ Name = "EV093"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["彼はあたしのモノよ、この泥棒猫！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Он - мой, паршивая кошка!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["負け犬が何か言ってるわぁ！　にゃぉ～ん♪"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Чего ты там скулишь?! Мяу тебе ♪"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["オスを巡る争いは、どの世界にもあるようじゃな。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Похоже, драки за мужчину есть в каждом мире."])
     Empty([])
 
 CommonEvent 94
@@ -1560,16 +1470,14 @@ Name = "EV094"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["はぅぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Хаууу..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["真っ昼間から、何してるの……？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Что ты делаешь средь бела дня...?"])
     Empty([])
 
 CommonEvent 95
@@ -1577,8 +1485,7 @@ Name = "EV095"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【騎士】"])
-    ShowText(["はぅぅ……すごい……"])
+    ShowText(["\\n<\\C[6]Рыцарь\\C[0]>Хауу... Потрясающе..."])
     Empty([])
 
 CommonEvent 96
@@ -1586,8 +1493,8 @@ Name = "EV096"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["世界が危機なのに……快楽に溺れるなんて……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Мир полон опасностей... Но я даже не думал,"])
+    ShowText(["что потонуть в наслаждении - одна из них..."])
     Empty([])
 
 CommonEvent 97
@@ -1595,8 +1502,7 @@ Name = "EV097"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【戦士】"])
-    ShowText(["あぁぁ……太陽が黄色い……"])
+    ShowText(["\\n<\\C[6]Воин\\C[0]>Ааах... Солнце такое желтое..."])
     Empty([])
 
 CommonEvent 98
@@ -1604,11 +1510,9 @@ Name = "EV098"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["男を食い過ぎよ、このビッチ！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ты слишком много мужчин себе захапала, сучка!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["その言葉、そっくりお返しするわ！　キィィーッ！！"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Ты ответишь за свои слова! Кьяяя!!"])
     Empty([])
 
 CommonEvent 99
@@ -1616,11 +1520,9 @@ Name = "EV099"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["男を食い過ぎよ、このビッチ！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ты слишком много мужчин себе захапала, сучка!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["その言葉、そっくりお返しするわ！　キィィーッ！！"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Ты ответишь за свои слова! Кьяяя!!"])
     Empty([])
 
 CommonEvent 100
@@ -1634,14 +1536,11 @@ Name = "EV101"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["まだまだ出るわよねぇ、うふふっ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ты еще много сможешь, уфуфу ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["勃たなくなるまで、搾ってあげるから……♪"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы будем выжимать, пока у тебя больше не встанет ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["ふぁぁぁ……もう無理だよぉ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Фуааа... Я больше... не могу..."])
     Empty([])
 
 CommonEvent 102
@@ -1649,14 +1548,11 @@ Name = "EV102"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["まだまだ出るわよねぇ、うふふっ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ты еще много сможешь, уфуфу ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["勃たなくなるまで、搾ってあげるから……♪"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы будем выжимать, пока у тебя больше не встанет ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["ふぁぁぁ……もう無理だよぉ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Фуааа... Я больше... не могу..."])
     Empty([])
 
 CommonEvent 103
@@ -1664,14 +1560,11 @@ Name = "EV103"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["まだまだ出るわよねぇ、うふふっ……♪"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Ты еще много сможешь, уфуфу ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["勃たなくなるまで、搾ってあげるから……♪"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Мы будем выжимать, пока у тебя больше не встанет ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["ふぁぁぁ……もう無理だよぉ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Фуааа... Я больше... не могу..."])
     Empty([])
 
 CommonEvent 104
@@ -1679,11 +1572,9 @@ Name = "EV104"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["よくも、私の餌を寝取ったわね！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Как ты посмела переспать с моим парнем?!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["あんたに魅力がないんじゃないの……！？"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Может, у тебя просто нет очарования?!"])
     Empty([])
 
 CommonEvent 105
@@ -1691,11 +1582,9 @@ Name = "EV105"
 
   Page 0
     ShowTextAttributes(["", 1, 0, 2])
-    ShowText(["【サキュバスＡ】"])
-    ShowText(["よくも、私の餌を寝取ったわね！"])
+    ShowText(["\\n<\\C[6]Суккуб А\\C[0]>Как ты посмела переспать с моим парнем?!"])
     ShowTextAttributes(["", 2, 0, 2])
-    ShowText(["【サキュバスＢ】"])
-    ShowText(["あんたに魅力がないんじゃないの……！？"])
+    ShowText(["\\n<\\C[6]Суккуб В\\C[0]>Может, у тебя просто нет очарования?!"])
     Empty([])
 
 CommonEvent 106
@@ -1703,8 +1592,7 @@ Name = "EV106"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["なにこれぇ……気持ちいいよぉ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Что это...? Так приятно..."])
     Empty([])
 
 CommonEvent 107
@@ -1712,24 +1600,20 @@ Name = "EV107"
 
   Page 0
     ShowTextAttributes(["maycubbus_fc1", 0, 0, 2])
-    ShowText(["【メイキュバスＡ】"])
-    ShowText(["あらあら、こんなにオモラシして……"])
+    ShowText(["\\n<\\C[6]Мейкуб А\\C[0]>Ох-хо, только посмотрите сколько вытекло..."])
     ShowTextAttributes(["maycubbus_fc1", 0, 0, 2])
-    ShowText(["【メイキュバスＢ】"])
-    ShowText(["もっと手でピュッピュしますか？"])
-    ShowText(["それとも、お口で気持ち良くしましょうか……？"])
+    ShowText(["\\n<\\C[6]Мейкуб В\\C[0]>Хочешь еще сделать \"пиу-пиу\" от моих рук?"])
+    ShowText(["Или может сделать тебе приятное ртом?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["ふぁぁぁぁ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Фуаааа..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["こんな少年まで餌食か……"])
-    ShowText(["白念は大丈夫なのだろうな？"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Такие мальчики тоже становятся добычей...?"])
+    ShowText(["Как там сейчас Хакунен?"])
     Empty([])
 
 CommonEvent 108
@@ -1737,24 +1621,20 @@ Name = "EV108"
 
   Page 0
     ShowTextAttributes(["maycubbus_fc1", 0, 0, 2])
-    ShowText(["【メイキュバスＡ】"])
-    ShowText(["あらあら、こんなにオモラシして……"])
+    ShowText(["\\n<\\C[6]Мейкуб А\\C[0]>Ох-хо, только посмотрите сколько вытекло..."])
     ShowTextAttributes(["maycubbus_fc1", 0, 0, 2])
-    ShowText(["【メイキュバスＢ】"])
-    ShowText(["もっと手でピュッピュしますか？"])
-    ShowText(["それとも、お口で気持ち良くしましょうか……？"])
+    ShowText(["\\n<\\C[6]Мейкуб В\\C[0]>Хочешь еще сделать \"пиу-пиу\" от моих рук?"])
+    ShowText(["Или может сделать тебе приятное ртом?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【少年】"])
-    ShowText(["ふぁぁぁぁ……"])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Фуаааа..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["こんな少年まで餌食か……"])
-    ShowText(["白念は大丈夫なのだろうな？"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Такие мальчики тоже становятся добычей...?"])
+    ShowText(["Как там сейчас Хакунен?"])
     Empty([])
 
 CommonEvent 109
@@ -1762,8 +1642,7 @@ Name = "EV109"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【戦士】"])
-    ShowText(["体が……動かない……"])
+    ShowText(["\\n<\\C[6]Воин\\C[0]>Не пошевелиться..."])
     Empty([])
 
 CommonEvent 110
@@ -1801,21 +1680,18 @@ Name = "EV113"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["ここはとっても良い村よ。"])
-    ShowText(["イモさえなければね……"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Это могла быть очень хорошая деревня..."])
+    ShowText(["Если бы не картошка..."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["お主、イモが嫌いなのか……？"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Тебе не нравится картофель...?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["この村にイモ好きなんていないわ……"])
-    ShowText(["村長、一人を除いてね。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Никому он здесь не нравится..."])
+    ShowText(["Кроме одной - нашей старосты."])
     Empty([])
 
 CommonEvent 114
@@ -1823,26 +1699,22 @@ Name = "EV114"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["さっき、くのいちサキュバスを見かけたわ。"])
-    ShowText(["エルフの里から、遣いに来たみたいね。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я только что видела суккуба-куноичи."])
+    ShowText(["Похоже она пришла из Деревни Эльфов."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["あの里は、くのいちの本場なのよ。"])
-    ShowText(["ちょっと最近、ゴタゴタしてるみたいだけどね。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Та деревня - дом всех куноичи."])
+    ShowText(["Правда, видимо, там в последнее время беспорядок."])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["えるふ、というのは初耳だが……"])
-    ShowText(["くのいちは、良く知っておるぞ。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эльфы? Никогда о таких не слышала..."])
+    ShowText(["Но о куноичи мне много что известно."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["やまちちがいれば、良かったのじゃが……"])
-    ShowText(["奴も今頃、心配しておろうに。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эх, если бы Ямаичи была бы со мной..."])
+    ShowText(["Наверное, она обо мне ужасно волнуется."])
     Empty([])
 
 CommonEvent 115
@@ -1850,8 +1722,7 @@ Name = "EV115"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["はぅ……うぅぅぅ……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Хауу... Мхгх..."])
     Empty([])
 
 CommonEvent 116
@@ -1859,8 +1730,7 @@ Name = "EV116"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["この村は楽園だよ。"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Эта деревня просто нечто."])
     Empty([])
 
 CommonEvent 117
@@ -1868,8 +1738,7 @@ Name = "EV117"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【兵士】"])
-    ShowText(["あぁぁ……いっぱい吸われちゃったぁ……"])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Ааах... Они так много высосали..."])
     Empty([])
 
 CommonEvent 118
@@ -1877,8 +1746,7 @@ Name = "EV118"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ごろつき】"])
-    ShowText(["うぅぅ……最高だぁ……"])
+    ShowText(["\\n<\\C[6]Бандит\\C[0]>Оох... Как классно..."])
     Empty([])
 
 CommonEvent 119
@@ -1886,8 +1754,7 @@ Name = "EV119"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【青年】"])
-    ShowText(["しゅ……しゅごい……"])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>П-потрясающе..."])
     Empty([])
 
 CommonEvent 120
@@ -1895,12 +1762,10 @@ Name = "EV120"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["うふふっ、誰も見てないわ……"])
-    ShowText(["さあ、たっぷり吸い取ってあげる……♪"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Уфуфу, никто не смотрит..."])
+    ShowText(["Ну что, я хорошенько тебя высосу ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の剣士】"])
-    ShowText(["もう、この村から離れたくない……"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Я не хочу покидать эту деревню..."])
     Empty([])
 
 CommonEvent 121
@@ -1908,12 +1773,10 @@ Name = "EV121"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["うふふっ、誰も見てないわ……"])
-    ShowText(["さあ、たっぷり吸い取ってあげる……♪"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Уфуфу, никто не смотрит..."])
+    ShowText(["Ну что, я хорошенько тебя высосу ♪"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【旅の剣士】"])
-    ShowText(["もう、この村から離れたくない……"])
+    ShowText(["\\n<\\C[6]Странствующий Воин\\C[0]>Я не хочу покидать эту деревню..."])
     Empty([])
 
 CommonEvent 122
@@ -1921,24 +1784,20 @@ Name = "EV122"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["ウィッチ様、なにか調べ物があるみたいね。"])
-    ShowText(["村に戻るなり、図書室にこもってしまったわ。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Госпожа Вич, похоже, сейчас исследует что-то важное."])
+    ShowText(["Она закрылась в библиотеке с тех пор, как вернулась."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["なんでも、異世界の夢魔について調べてるとか……"])
-    ShowText(["とってもミステリアスよね。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я слышала, что она ищет информацию о Кошмарах из другого"])
+    ShowText(["мира... Это ужасно таинственно, вам так не кажется?"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["…………！！"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>......!!"])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["（今は、黙っておいた方が良いかもしれんな……）"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>(Наверное, сейчас лучше промолчать...)"])
     Empty([])
 
 CommonEvent 123
@@ -1946,9 +1805,8 @@ Name = "EV123"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["貴婦人の村が、未知の妖魔に襲われたらしいわ。"])
-    ShowText(["あそこには、強豪の魔物も多く住んでるのに……"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Похоже, Деревня Леди была атакована неизвестными демонами."])
+    ShowText(["И это несмотря на то, сколько там живет сильных монстров..."])
     Empty([])
 
 CommonEvent 124
@@ -1956,9 +1814,8 @@ Name = "EV124"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["この村で、死ぬまで搾り尽くす事は禁止されているわ。"])
-    ShowText(["だから、まあ死なない程度にね……♪"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>В этой деревне запрещено выжимать мужчин до смерти."])
+    ShowText(["Вот почему мы оставляем их прямо на грани ♪"])
     Empty([])
 
 CommonEvent 125
@@ -1966,22 +1823,20 @@ Name = "EV125"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["さっき、ウィッチ様を見かけたわ。"])
-    ShowText(["この村に戻ってきてたのね……"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я недавно видела госпожу Вич."])
+    ShowText(["Она только сегодня вернулась..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["えっ、サキュバス仲間なのに知らないの！？"])
-    ShowText(["ウィッチ様は、世界でも指折りの大魔導師よ！"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Э? Твоя подруга - суккуб, и не знает о ней?!"])
+    ShowText(["Госпожа Вич - величайшая колдунья в нашем мире!"])
     ConditionalBranch([1, 1205, 0, 3, 0])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["そんなすごい魔導師なら……"])
-    ShowText(["ロウラットのルーンを、なんとか出来るかも。"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Если это действительно так..."])
+    ShowText(["Тогда, возможно, она сможет что-нибудь сделать"])
+    ShowText(["с рунами Лоурета."])
     Empty([])
 
 CommonEvent 126
@@ -2085,9 +1940,9 @@ Name = "EV134"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["普段は、この小道に野良サキュバスがうろついてたけど……"])
-    ShowText(["今はみんな、貴婦人の村へ野次馬に行ったみたいね。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>На этой дороге иногда появляются бродячие суккубы..."])
+    ShowText(["Но сейчас они все ушли в Деревню Леди, чтобы поглядеть"])
+    ShowText(["как там все после нападения."])
     Empty([])
 
 CommonEvent 135
@@ -2095,7 +1950,7 @@ Name = "EV135"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["「姉妹ふれあい牧場」"])
+    ShowText(["Контактная Ферма Сестренок"])
     Empty([])
 
 CommonEvent 138
@@ -2104,63 +1959,56 @@ Name = "EV138"
   Page 0
     ControlVariables([1205, 1205, 0, 0, 2])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["ここが、サキュバスの村……"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Значит, это и есть Деревня Суккубов..."])
     ShowTextAttributes(["magatu_fc1", 0, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["異国でも珍しいのに、異世界とはな。"])
-    ShowText(["ふむふむ、見慣れぬものが随分あるぞ。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Я и в других странах-то никогда не бывала,"])
+    ShowText(["а тут другой мир. Хмм-хмм, столько всего"])
+    ShowText(["незнакомого..."])
     SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["サキュバスの村へようこそ！"])
-    ShowText(["あれ……あなた、同族かしら……？"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Добро пожаловать в Деревню Суккубов!"])
+    ShowText(["Ой... А ты тоже суккуб?"])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["えっと、私は……"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Ну, я..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["見た目は似てるけど、なんだか違うわね。"])
-    ShowText(["なんだか、とっても不思議な感じ……"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>На вид, вроде, похожа, но чем-то отличаешься."])
+    ShowText(["Очень необычно..."])
     ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
-    ShowText(["【ロウラット】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Лоурет\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["この村のサキュバスは、自分達が知っている夢魔とは異なる。"])
-    ShowText(["あくまで現実の存在であり、夢の住人ではない。"])
+    ShowText(["Суккубы в этой деревне отличаются от Кошмаров, с которыми"])
+    ShowText(["мы знакомы. Они существуют в реальности, а не во сне."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["明らかに、リジェオとここのサキュバスは別存在だ。"])
-    ShowText(["特質に共通している点はあるが、やはり根本的に違う――"])
+    ShowText(["Естественно, Риджео отличается от них."])
+    ShowText(["Может они и имеют похожие черты, но разнятся"])
+    ShowText(["на фундаментальном уровне..."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["それで、この村に何の用かしら？"])
-    ShowText(["観光？　修行？　それとも、他の用事？"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Так, какие у вас дела в этой деревне?"])
+    ShowText(["Поглазеть? Потренироваться? Или же, может, что-то еще?"])
     ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
-    ShowText(["【リジェオ】"])
-    ShowText(["あの……事情は複雑だけど、ちょっと助けてほしいの。"])
-    ShowText(["この村の、偉い人に会わせてもらえない？"])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Эмм... Ну, у нас сложная ситуация и нам бы"])
+    ShowText(["очень не помешала помощь. Есть ли здесь кто-нибудь"])
+    ShowText(["важный, с кем я могу об этом поговорить?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["それじゃあ、村長の家に行きなさい。"])
-    ShowText(["この村の奥、一番大きいお屋敷よ。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Тогда, вам надо в дом старосты."])
+    ShowText(["Это большой особняк на другом конце деревни."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["この村は、来る者拒まず去る者追わず……"])
-    ShowText(["事情がある人も、喜んで受け入れるわよ。"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Тут не откажут тем, кому некуда податься..."])
+    ShowText(["Мы с радостью принимаем всех, вне зависимости"])
+    ShowText(["от обстоятельств."])
     ShowTextAttributes(["magatu_fc1", 1, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["ほう、なんと懐の深い村だ。"])
-    ShowText(["その村長とやら、結構な人物と見えるな。"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Хо, какая гостеприимная деревня."])
+    ShowText(["Похоже, у них замечательный староста."])
     ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
-    ShowText(["【ロウラット】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Лоурет\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["リジェオと同種という目論見は外れたが……"])
-    ShowText(["どうやら、ここは非常に友好的な村らしい。"])
+    ShowText(["Несмотря на то, что план Риджео выдать себя за их сородича"])
+    ShowText(["не увенчался успехом, эта деревня, судя по всему очень"])
+    ShowText(["дружелюбная."])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["それではさっそく、村長に会いに行くとしよう。"])
-    ShowText(["村長の屋敷は、村の奥の一番大きい屋敷だ――"])
+    ShowText(["Возможно, нам стоит прямо сейчас посетить старосту."])
+    ShowText(["Ее особняк находится на другом конце деревни..."])
     ExitEventProcessing([])
     Empty([])
 

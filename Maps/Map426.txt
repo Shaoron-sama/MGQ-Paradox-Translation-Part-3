@@ -1,4 +1,4 @@
-Display Name = "ゴルド大陸西の大穴"
+Display Name = "Тартар (Запад Континента Гольдо)"
 Parallax Name = ""
 Note = ""
 
@@ -74,32 +74,31 @@ Name = "EV009"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ふむ、入ってきた時とほとんど変化がないな……"])
-      ShowText(["少なくとも、自然物はそのまま残っているようだ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Хмм, похоже мало что изменилось."])
+      ShowText(["По крайней мере, по виду все также."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["入ってきた時と、ほとんど変化はありませんね……"])
-      ShowText(["少なくとも、自然物はそのまま残っているようです。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Не слишком отличается от места, откуда мы пришли."])
+      ShowText(["По крайней мере, выглядит все также."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["サボテンの種類も同じですし、地質的にも変化はなし……"])
-      ShowText(["私達の世界と、ほぼ同じ環境のようです。"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Геологические особенности остались без изменений,"])
+      ShowText(["кактусы произрастают того же самого вида."])
+      ShowText(["Окружающая среда практически идентична миру,"])
+      ShowText(["из которого мы."])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["サバサ大陸のタルタロスと違って、滅びた世界じゃないようだね。"])
-    ShowText(["注意しながら、周囲を調べてみよう！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Этот мир точно не на грани уничтожения,"])
+    ShowText(["как тот что был в Сабасе. Давайте исследуем"])
+    ShowText(["окрестности, только держите глаза открытыми."])
     Empty([])
 
   Page 1

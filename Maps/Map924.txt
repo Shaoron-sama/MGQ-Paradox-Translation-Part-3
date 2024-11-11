@@ -1,4 +1,4 @@
-Display Name = "魔城トゥーロマンサ 第3層"
+Display Name = "Замок Ту Романс (Уровень 3)"
 Parallax Name = "StarlitSky"
 Note = ""
 
@@ -127,17 +127,15 @@ Name = "EV010"
       Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
       ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["むぎゃっ！！\\^\\.\\."])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Мугяяя!\\^\\.\\."])
       ControlSelfSwitch(["A", 0])
       ExitEventProcessing([])
       Empty([])
 
     Else([])
       ShowTextAttributes(["youkosan_fc2", 0, 0, 2])
-      ShowText(["【狐像】"])
-      ShowText(["フフフ……。ウチは石像狐。"])
-      ShowText(["「お尻」から話しかけない限り退かないのだ。"])
+      ShowText(["\\n<\\C[6]Лисья Статуя\\C[0]>Фуфуфу... Я - каменная лисья статуя."])
+      ShowText(["Я не уйду, пока не поговоришь со мной \"сзади\"."])
       ExitEventProcessing([])
       Empty([])
 
@@ -161,9 +159,9 @@ Name = "EV011"
     ControlSwitches([2934, 2934, 0])
     ChangeWeapons([952, 0, 0, 1, false])
     ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
-    ShowText(["【ランパス】"])
-    ShowText(["これ、私のモノだよね！"])
-    ShowText(["私以外、誰も使えないよね！"])
+    ShowText(["\\n<\\C[6]Лампада\\C[0]>Это будет моим!"])
+    ShowText(["Все равно никто кроме меня не сможет"])
+    ShowText(["его использовать!"])
     Empty([])
 
   Page 1
@@ -183,12 +181,10 @@ Name = "EV012"
     ControlSwitches([2933, 2933, 0])
     ChangeArmor([354, 0, 0, 1, false])
     ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-    ShowText(["【大明海】"])
-    ShowText(["……おい小僧、これはお前用らしいぜ。"])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>...Эй, пацан. Похоже, эта штука для тебя."])
     ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
-    ShowText(["【白念】"])
-    ShowText(["この闘衣、すさまじい力を感じます。"])
-    ShowText(["私が身に纏って良いのでしょうか……"])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>Я чувствую чудовищную мощь от этого ги."])
+    ShowText(["Мне правда можно его надеть...?"])
     Empty([])
 
   Page 1
@@ -208,12 +204,10 @@ Name = "EV013"
     ControlSwitches([2936, 2936, 0])
     ChangeArmor([367, 0, 0, 1, false])
     ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
-    ShowText(["【ノビッサ】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Новисса\\C[0]>......"])
     ShowTextAttributes(["rest_fc1", 0, 0, 2])
-    ShowText(["【レスト】"])
-    ShowText(["これは……素晴らしい盾だな。"])
-    ShowText(["ノビッサの世界に縁ある品みたいだ。"])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Какой... потрясающий щит."])
+    ShowText(["Похоже, он как-то связан с миром Новиссы."])
     Empty([])
 
   Page 1
@@ -233,12 +227,10 @@ Name = "EV014"
     ControlSwitches([2935, 2935, 0])
     ChangeWeapons([950, 0, 0, 1, false])
     ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
-    ShowText(["【カズヤ】"])
-    ShowText(["この杖って、もしかしてあいつの……"])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>А этот посох, похоже, принадлежал ей..."])
     ShowTextAttributes(["kazuya_fc4", 7, 0, 2])
-    ShowText(["【カズヤ】"])
-    ShowText(["今頃泣いてるだろうな……"])
-    ShowText(["後でちゃんと返してやらないと。"])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>Наверное, она сейчас по нему рыдает..."])
+    ShowText(["Надо будет потом вернуть."])
     Empty([])
 
   Page 1
@@ -314,16 +306,14 @@ Name = "EV022"
     BranchEnd([])
     ConditionalBranch([1, 1229, 0, 0, 0])
       ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["このフロアの宝箱は、もう残ってないみたいだね。"])
-      ShowText(["おめでと～♪"])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Похоже, вы нашли все сокровища на этом уровне."])
+      ShowText(["Поздравляю~♪"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["このフロアの宝箱は、あと\\V[1229]個だね。"])
-      ShowText(["がんばって探してみてよ！！"])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>На этом уровне еще остался 1 сундук."])
+      ShowText(["Удачи с поисками!!"])
       Empty([])
 
     BranchEnd([])

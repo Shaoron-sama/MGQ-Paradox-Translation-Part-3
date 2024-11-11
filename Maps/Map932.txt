@@ -1,4 +1,4 @@
-Display Name = "夜の国 第1層"
+Display Name = "Край Ночи (Уровень 1)"
 Parallax Name = "StarlitSky"
 Note = ""
 
@@ -8,8 +8,7 @@ Name = "EV001"
   Page 0
     ConditionalBranch([0, 2918, 1])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["今、戻るのは危険だな……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Сейчас слишком опасно возвращаться..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       ExitEventProcessing([])
@@ -69,14 +68,11 @@ Name = "EV003"
     ControlSelfSwitch(["A", 0])
     ChangeArmor([335, 0, 0, 1, false])
     ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-    ShowText(["【ルヴィッサ】"])
-    ShowText(["このドレスは、私向けよね……♪"])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Это платье будто создано для меня ♪"])
     ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
-    ShowText(["【大明海】"])
-    ShowText(["俺様には似合わんかな……？"])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Может, оно все же больше подходит мне...?"])
     ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-    ShowText(["【ルヴィッサ】"])
-    ShowText(["想像しちゃったじゃない……"])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Ты выдумываешь..."])
     Empty([])
 
   Page 1
@@ -88,8 +84,7 @@ Name = "EV004"
   Page 0
     ConditionalBranch([0, 2918, 1])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["今、戻るのは危険だな……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Сейчас слишком опасно возвращаться..."])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
       ExitEventProcessing([])

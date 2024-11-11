@@ -1,4 +1,4 @@
-Display Name = "管理者の塔 1F"
+Display Name = "Административная Башня: 1 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -34,22 +34,21 @@ Name = "EV005"
   Page 0
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["まさか、ここは……！？"])
-    ShowText(["なんで、あの塔が僕達の世界に！？"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это место, не может быть...?!"])
+    ShowText(["Почему эта башня в нашем мире?!"])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["あの並行世界の消失が、この世界にも影響を与えたのか……"])
-      ShowText(["やはり、並行世界は相互作用を与え合っているのだな。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Исчезновение того мира, должно быть, повлияло"])
+      ShowText(["на этот... Как я и думала, параллельные миры"])
+      ShowText(["взаимодействуют друг с другом."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["あの並行世界の消失が、この世界にも影響を与えたのです……"])
-      ShowText(["やはり、並行世界は相互作用を与え合っているのですね。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Исчезновение параллельного мира повлияло"])
+      ShowText(["на наш... Значит, параллельные миры, видимо,"])
+      ShowText(["все-таки, взаимодействуют между собой."])
       Empty([])
 
     BranchEnd([])
@@ -63,8 +62,8 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ここから先の通路は壁で埋まっている。"])
-    ShowText(["これより上の階は存在しないようだ……"])
+    ShowText(["Дальше проход заблокирован стеной."])
+    ShowText(["Похоже, что этажей выше не существует..."])
     Empty([])
 
 CommonEvent 7

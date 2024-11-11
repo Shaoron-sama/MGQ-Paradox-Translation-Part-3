@@ -1,4 +1,4 @@
-Display Name = "タルタロスI372367 第3層"
+Display Name = "Тартар-I372367: 3 Уровень"
 Parallax Name = "DarkSpace1"
 Note = ""
 
@@ -75,23 +75,20 @@ Name = "EV006"
       ControlSwitches([2051, 2051, 1])
       ConditionalBranch([0, 4, 0])
         ShowTextAttributes(["alice_fc6", 0, 0, 2])
-        ShowText(["【アリス】"])
-        ShowText(["おい、何者だ！"])
-        ShowText(["あの建物に、誰かいるぞ！"])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эй, я только что кого-то видела?"])
+        ShowText(["Вон там, в этом здании!"])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 5, 0])
         ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-        ShowText(["【イリアス】"])
-        ShowText(["確かに人影が見えましたね。"])
-        ShowText(["今のは、もしかして……"])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Без сомнения, там какой-то человек."])
+        ShowText(["Возможно, на этот раз..."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([4, 64, 0])
         ShowTextAttributes(["pramia_fc1", 2, 0, 2])
-        ShowText(["【プチ】"])
-        ShowText(["て、敵じゃないよね……？"])
-        ShowText(["ちゅ、注意していこうね……！"])
+        ShowText(["\\n<\\C[6]Пучи\\C[0]>Э-это же не враг, да?"])
+        ShowText(["Д-давайте будем осторожны, хорошо..."])
         Empty([])
       BranchEnd([])
       Empty([])

@@ -1,4 +1,4 @@
-Display Name = "転送のほこら"
+Display Name = "Храм Телепортации"
 Parallax Name = ""
 Note = ""
 
@@ -15,7 +15,7 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["ルカは仲間を外に待たせ、一人で建物に入った……"])
+    ShowText(["Лука заходит в дом один, оставив группу снаружи..."])
     ChangePlayerFollowers([1])
     ChangeMapDisplay([1])
     PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
@@ -63,22 +63,21 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["name_fc1", 0, 0, 2])
-    ShowText(["【ナメクジ娘】"])
-    ShowText(["ここは、なかなかの穴場ね……"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Девушка-Слизень\\C[0]>Это славное место..."])
+    ShowText(["Здесь тихо и сыро..."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["61"])
     ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
-    ShowText(["【ミミー】"])
-    ShowText(["あら、ナメちゃんじゃない。"])
-    ShowText(["良い場所をみつけたわね……"])
+    ShowText(["\\n<\\C[6]Мими\\C[0]>О, привет, Нами."])
+    ShowText(["Хорошее местечко ты себе нашла..."])
     ExitEventProcessing([])
     Label(["73"])
     ShowTextAttributes(["hiru_fc1", 0, 0, 2])
-    ShowText(["【ヒル】"])
-    ShowText(["コケもいっぱいで、ナメちゃんは大喜びでしょう。"])
-    ShowText(["私はコケ食べないから、味も分からないけど……"])
+    ShowText(["\\n<\\C[6]Хиру\\C[0]>Ну, может быть, ты и рада иметь возможность"])
+    ShowText(["питаться всем этим окружающим мхом. Хотя я"])
+    ShowText(["не знаю, хороший это мох или нет."])
+    ShowText(["Я не ем такое."])
     ExitEventProcessing([])
     Empty([])
 
@@ -87,22 +86,19 @@ Name = "EV007"
 
   Page 0
     ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
-    ShowText(["【ミミズ娘】"])
-    ShowText(["日陰で湿気もたっぷり……まさに天国よね。"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Девушка-Червь\\C[0]>Такое влажное и тенистое место..."])
+    ShowText(["Это рай."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["55"])
     ShowTextAttributes(["name_fc1", 2, 0, 2])
-    ShowText(["【メルク】"])
-    ShowText(["コケもいっぱい……"])
-    ShowText(["少し頂いていいかしら？"])
+    ShowText(["\\n<\\C[6]Мерк\\C[0]>Тут еще и полно мха..."])
+    ShowText(["Могу я съесть немного?"])
     ExitEventProcessing([])
     Label(["73"])
     ShowTextAttributes(["hiru_fc1", 0, 0, 2])
-    ShowText(["【ヒル】"])
-    ShowText(["少しゆっくりしていきましょう……"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Хиру\\C[0]>Давайте побудем здесь немного..."])
+    ShowText(["Здесь хорошо и сыро."])
     ExitEventProcessing([])
     Empty([])
 
@@ -111,21 +107,17 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["hiru_fc1", 0, 0, 2])
-    ShowText(["【ヒル娘】"])
-    ShowText(["このまま、ずっとここでのんびりしていたいわ……"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Девушка-Пиявка\\C[0]>Я никогда не хочу покидать это место..."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["55"])
     ShowTextAttributes(["name_fc1", 2, 0, 2])
-    ShowText(["【メルク】"])
-    ShowText(["私達にとっては、楽園よね……"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Мерк\\C[0]>Это и для нас рай..."])
+    ShowText(["Приятно и сыро..."])
     ExitEventProcessing([])
     Label(["61"])
     ShowTextAttributes(["mimizu_fc1", 1, 0, 2])
-    ShowText(["【ミミー】"])
-    ShowText(["地面も良い腐葉土だし……天国よね。"])
-    ShowText(["じめじめ……"])
+    ShowText(["\\n<\\C[6]Мими\\C[0]>В этой земле так много палой листвы..."])
+    ShowText(["Я в раю..."])
     ExitEventProcessing([])
     Empty([])

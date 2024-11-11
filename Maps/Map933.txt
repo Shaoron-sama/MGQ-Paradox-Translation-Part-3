@@ -1,4 +1,4 @@
-Display Name = "夜の国 第2層"
+Display Name = "Край Ночи (Уровень 2)"
 Parallax Name = "StarlitSky"
 Note = ""
 
@@ -48,12 +48,11 @@ Name = "EV005"
     ControlSelfSwitch(["A", 0])
     ChangeWeapons([940, 0, 0, 1, false])
     ShowTextAttributes(["lars_fc01", 0, 0, 2])
-    ShowText(["【ラルス】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Ларс\\C[0]>......"])
     ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
-    ShowText(["【ルヴィッサ】"])
-    ShowText(["この剣は、私達の世界に縁ある品ね。"])
-    ShowText(["扱えるのは、もちろんラルスしかいないはずよ。"])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Этот меч из нашего мира."])
+    ShowText(["И естественно, Ларс - единственный, кто может его"])
+    ShowText(["носить."])
     Empty([])
 
   Page 1
@@ -73,9 +72,8 @@ Name = "EV006"
     ControlSelfSwitch(["A", 0])
     ChangeArmor([360, 0, 0, 1, false])
     ShowTextAttributes(["rest_fc1", 0, 0, 2])
-    ShowText(["【レスト】"])
-    ShowText(["これは……間違いない、僕の世界の武具だな。"])
-    ShowText(["ありがたく使わせてもらおう。"])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Это... Без сомнения, броня из моего мира."])
+    ShowText(["Я буду рад, если вы позволите мне ее взять."])
     Empty([])
 
   Page 1
@@ -89,25 +87,22 @@ Name = "EV007"
     ConditionalBranch([0, 4, 0])
       PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=100, @volume=80)"])
       ShowTextAttributes(["morrigan_fc1", 0, 0, 2])
-      ShowText(["【モリガン】"])
-      ShowText(["おっ、なんとか追いついたな！"])
-      ShowText(["あたしが助っ人に来てやったぜ、感謝しな！"])
+      ShowText(["\\n<\\C[6]Морриган\\C[0]>О, наконец-то догнала вас, ребята!"])
+      ShowText(["Цените, что я пришла вам на помощь!"])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["先の魔剣三姉妹足止めといい、"])
-      ShowText(["こんなに働いてくれるとは思わなかったぞ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ты уже ранее задержала трех Проклятых Мечей."])
+      ShowText(["Не ожидала, что ты будешь так усердно"])
+      ShowText(["для нас работать."])
       ShowTextAttributes(["alice_fc5", 1, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ただのスパイだと思っていたが……"])
-      ShowText(["貴様には、感謝せねばならんな。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Мне казалось, что ты только шпионишь..."])
+      ShowText(["Я должна поблагодарить тебя."])
       ShowTextAttributes(["morrigan_fc1", 1, 0, 2])
-      ShowText(["【モリガン】"])
-      ShowText(["この世界がグチャグチャになると、あたし達も困るからな。"])
-      ShowText(["そういうわけで、ここから先は一緒に行ってやるぜ！"])
+      ShowText(["\\n<\\C[6]Морриган\\C[0]>У нас будут большие проблемы, если с этим миром"])
+      ShowText(["что-то случится. Так что, я иду дальше с вами!"])
       Script(["add_actor_ex(382)"])
       PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["モリガンが再び仲間に加わった！"])
+      ShowText(["Морриган возвращается в группу!"])
       Wait([60])
       Empty([])
 

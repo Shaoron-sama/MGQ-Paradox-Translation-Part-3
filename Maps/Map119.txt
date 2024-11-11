@@ -1,4 +1,4 @@
-Display Name = "魔王城 B1F"
+Display Name = "Замок Владыки Монстров: Подземный Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -56,7 +56,7 @@ Name = "EV008"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -146,14 +146,12 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["scylla_s_fc1", 0, 0, 2])
-    ShowText(["【スキュラサーバント】"])
-    ShowText(["お城が広いと、お掃除が大変ですわ……"])
+    ShowText(["\\n<\\C[6]Сцилла-Служанка\\C[0]>Убираться в таком огромном замке - та ещё работка..."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["64"])
     ShowTextAttributes(["pramia_fc1", 0, 0, 2])
-    ShowText(["【プチ】"])
-    ShowText(["それ、すごく分かる……"])
+    ShowText(["\\n<\\C[6]Пучи\\C[0]>Да, я это понимаю..."])
     ExitEventProcessing([])
     Empty([])
 
@@ -162,8 +160,7 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["宝物庫？　この階にはないわよ……"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Сокровищница? Она не на этом этаже..."])
     Empty([])
 
 CommonEvent 15
@@ -171,9 +168,9 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["enenra_fc1", 0, 0, 2])
-    ShowText(["【煙々羅】"])
-    ShowText(["この階にあるのは、しょっぱい宝箱と水路だけ。"])
-    ShowText(["宝物庫に行きたいのなら、地下に降りたのが間違いじゃったな。"])
+    ShowText(["\\n<\\C[6]Энэнра\\C[0]>На этом этаже только водосток и пара сундуков."])
+    ShowText(["Если вам надо попасть в сокровищницу, то было"])
+    ShowText(["ошибкой - идти в подвал."])
     Empty([])
 
 CommonEvent 16
@@ -181,14 +178,12 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["ブーメラン♪　ブーメラン♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["ブーメラン♪　ブーメラン♪"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Бумеранг ♪ Бумеранг ♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -197,14 +192,12 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["わーい♪　わーい♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Еееей ♪　Еееей ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["一緒に、あそぼー♪"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Давай поиграем вместе ♪"])
     ExitEventProcessing([])
     Empty([])
 
@@ -213,14 +206,12 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["魔王様のお城、とっても広いねー♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Замок Владыки Монстров такой огромный ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["45"])
     ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
-    ShowText(["【アリストロメリア】"])
-    ShowText(["広い方が、みんな住めて愉しいでしょう……？"])
+    ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Было бы здорово, если бы тут жили все, да?"])
     ExitEventProcessing([])
     Empty([])
 
@@ -229,15 +220,14 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["この前、魔王様とクマちゃんが遊んでくれたよー♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>В прошлый раз со мной поиграли Владыка Монстров"])
+    ShowText(["и ее мишка ♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["45"])
     ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
-    ShowText(["【アリストロメリア】"])
-    ShowText(["うふふっ……"])
-    ShowText(["かわいい子は、大好きですわよ……"])
+    ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Уфуфу..."])
+    ShowText(["Я обожаю милых деток..."])
     ExitEventProcessing([])
     Empty([])
 
@@ -246,19 +236,16 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
-    ShowText(["【モンクサキュバス】"])
-    ShowText(["ほらほら、気持ち良いでしょ♪"])
-    ShowText(["あははっ、もっともがいてみたらぁ……？"])
+    ShowText(["\\n<\\C[6]Суккуб-Боец\\C[0]>Хора хора, приятно же ♪"])
+    ShowText(["Ахаха, еще будешь сопротивляться...?"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【囚われの勇者】"])
-    ShowText(["はぅ……あぁぁ、もっとぉ……"])
+    ShowText(["\\n<\\C[6]Плененный Герой\\C[0]>Хау... Ааааа, ещееее..."])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
     ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
-    ShowText(["【モンクサキュバス】"])
-    ShowText(["誤解しないでよね、これは和姦なんだから。"])
-    ShowText(["ほら、逃げもしないで悦んでるでしょ……？"])
+    ShowText(["\\n<\\C[6]Суккуб-Боец\\C[0]>Не подумай, что я его домогаюсь."])
+    ShowText(["Видишь, он не хочет убегать...?"])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
@@ -269,9 +256,8 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["kirin_fc1", 0, 0, 2])
-    ShowText(["【麒麟】"])
-    ShowText(["可愛い奴らよのう……"])
-    ShowText(["眺めていると、和むわい。"])
+    ShowText(["\\n<\\C[6]Кирин\\C[0]>Они такие милые..."])
+    ShowText(["Мне так спокойно, когда я на них гляжу."])
     Empty([])
 
 CommonEvent 22
@@ -279,15 +265,13 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【スライム娘】"])
-    ShowText(["水路で遊ぶの、だいすき♪"])
-    ShowText(["流れが早くて、スリルがあるよ～♪"])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я обожаю играть в водостоке ♪"])
+    ShowText(["Вода течет так быстро, так захватывающе~♪"])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["53"])
     ShowTextAttributes(["slime_fc1", 0, 0, 2])
-    ShowText(["【ライム】"])
-    ShowText(["気を付けてね～！"])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Будь осторожней~!"])
     ExitEventProcessing([])
     Empty([])
 
@@ -296,8 +280,7 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【囚われの勇者】"])
-    ShowText(["はぅ……あぁぁ、もっとぉ……"])
+    ShowText(["\\n<\\C[6]Плененный Герой\\C[0]>Хау... Ааааа, ещееее..."])
     Empty([])
 
 CommonEvent 24
@@ -305,10 +288,9 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【囚われの戦士】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Плененный Герой\\C[0]>......"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["疲れ果てて眠っているようだ……"])
+    ShowText(["Похоже, он выдохся и спит..."])
     Empty([])
 
 CommonEvent 25
@@ -316,14 +298,12 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["highslag_fc1", 0, 0, 2])
-    ShowText(["【ハイスラッグ娘】"])
-    ShowText(["やっぱり、地下はジメジメしていて落ち着くわ……"])
+    ShowText(["\\n<\\C[6]Высший Слизень\\C[0]>Да уж, все-таки в подземелье тихо и влажно..."])
     Script(["actor_label_jump"])
     ExitEventProcessing([])
     Label(["55"])
     ShowTextAttributes(["name_fc1", 0, 0, 2])
-    ShowText(["【メルク】"])
-    ShowText(["そうよね……"])
+    ShowText(["\\n<\\C[6]Мерк\\C[0]>Правда..."])
     ExitEventProcessing([])
     Empty([])
 

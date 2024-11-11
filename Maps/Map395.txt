@@ -1,4 +1,4 @@
-Display Name = "雪越えの洞窟"
+Display Name = "Заснеженная Пещера"
 Parallax Name = ""
 Note = ""
 
@@ -118,7 +118,7 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["↑：頂上雪原"])
+    ShowText(["↑:Вершина"])
     Empty([])
 
 CommonEvent 13
@@ -126,24 +126,21 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["よくがんばったね、おめでとう"])
-    ShowText(["　　　　　　　　　　　うさぎ"])
+    ShowText(["Молодцы, поздравляю"])
+    ShowText(["                Кролик"])
     ConditionalBranch([1, 1076, 0, 2, 0])
       ConditionalBranch([0, 4, 0])
         ShowTextAttributes(["alice_fc5", 3, 0, 2])
-        ShowText(["【アリス】"])
-        ShowText(["馬鹿にしおって……"])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Она все дурачится..."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 5, 0])
         ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
-        ShowText(["【イリアス】"])
-        ShowText(["馬鹿にしているのですか！"])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Когда она прекратит дурачиться?!"])
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["ともかく、やっと抜けられたみたいだね……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ладно, похоже, мы наконец-то выбрались..."])
       Empty([])
 
     BranchEnd([])
@@ -154,14 +151,13 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["shirokuma_fc1", 0, 0, 2])
-    ShowText(["【シロクマ娘】"])
-    ShowText(["シロクマの里に送ってほしい……？"])
-    ShowChoices([["送ってもらう", "断る"], 2])
-    When([0, "送ってもらう"])
+    ShowText(["\\n<\\C[6]Белая Медведица\\C[0]>Хотите в деревню белых мишек...?"])
+    ShowChoices([["Отправиться", "Отказаться"], 2])
+    When([0, "Отправиться"])
       TransferPlayer([0, 396, 30, 43, 8, 0])
       Empty([])
 
-    When([1, "断る"])
+    When([1, "Отказаться"])
       Empty([])
 
     ChoicesEnd([])
@@ -173,7 +169,7 @@ Name = "EV015"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -242,7 +238,7 @@ Name = "EV018"
     ControlSelfSwitch(["A", 0])
     ChangeGold([0, 0, 17800])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["17800\\G 手に入れた！"])
+    ShowText(["Получено 17800\\G!"])
     Empty([])
 
   Page 1
@@ -254,7 +250,7 @@ Name = "EV019"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 

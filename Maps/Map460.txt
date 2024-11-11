@@ -1,4 +1,4 @@
-Display Name = "封印の間"
+Display Name = "Запечатанная Палата"
 Parallax Name = ""
 Note = ""
 
@@ -44,8 +44,7 @@ Name = "EV004"
     ChangeWeapons([46, 0, 0, 1])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["まさか、これが神武器じゃないよね……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Ну это точно не божественное оружие..."])
       Empty([])
 
     BranchEnd([])
@@ -68,7 +67,7 @@ Name = "EV005"
     ControlSelfSwitch(["A", 0])
     ChangeGold([0, 0, 37])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["37\\G 手に入れた！"])
+    ShowText(["Получено 37\\G!"])
     Empty([])
 
   Page 1
@@ -98,7 +97,7 @@ Name = "EV007"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -123,7 +122,7 @@ Name = "EV008"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -148,7 +147,7 @@ Name = "EV009"
   Page 0
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -172,9 +171,10 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『穿月の槍、疾き者に捧ぐ』"])
+    ShowText(["\\C[24]Копье Пронзенной Луны"])
+    ShowText(["Предназначенное для Быстрого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -191,9 +191,10 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『瞬塵の短剣、巧み者に捧ぐ』"])
+    ShowText(["\\C[24]Кинжал Мерцающей Пыли"])
+    ShowText(["Предназначенный для Умелого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -210,9 +211,10 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『地響の剣、勇ましき者に捧ぐ』"])
+    ShowText(["\\C[24]Меч Землетрясений"])
+    ShowText(["Предназначенный для Доблестного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -229,9 +231,10 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『流天の剛剣、猛き者に捧ぐ』"])
+    ShowText(["\\C[24]Тяжелый Меч Небесного Потока"])
+    ShowText(["Предназначенный для Свирепого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -248,9 +251,10 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『災誅の巨剣、烈しき者に捧ぐ』"])
+    ShowText(["\\C[24]Большой Меч Карающих Бедствий"])
+    ShowText(["Предназначенный для Сильного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -267,9 +271,10 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『紅轟の尖剣、貴き者に捧ぐ』"])
+    ShowText(["\\C[24]Рапира Алого Рева"])
+    ShowText(["Предназначенная для Почтенного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -286,9 +291,10 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『四滅の刀、澄みし者に捧ぐ』"])
+    ShowText(["\\C[24]Катана Четырех Разрушений"])
+    ShowText(["Предназначенная для Безмятежного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -305,9 +311,10 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『反魂の刃、忍びし者に捧ぐ』"])
+    ShowText(["\\C[24]Анти-Духовное Лезвие"])
+    ShowText(["Предназначенное для Скрытного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -324,9 +331,10 @@ Name = "EV018"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『酬雷の拳、熱き者に捧ぐ』"])
+    ShowText(["\\C[24]Кулак Грозового Воздаяния"])
+    ShowText(["Предназначенный для Страстного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -343,9 +351,10 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『蚩獣の牙、荒びし者に捧ぐ』"])
+    ShowText(["\\C[24]Клык Невежественного Зверя"])
+    ShowText(["Предназначенный для Дикого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -362,9 +371,10 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『豪波の斧、昂ぶりし者に捧ぐ』"])
+    ShowText(["\\C[24]Топор Великой Волны"])
+    ShowText(["Предназначенный для Гордого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -381,9 +391,10 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『如神の棍、強き者に捧ぐ』"])
+    ShowText(["\\C[24]Божественная Булава"])
+    ShowText(["Предназначенная для Могучего\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -400,9 +411,10 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『星韻の杖、清き者に捧ぐ』"])
+    ShowText(["\\C[24]Посох Звездного Ритма"])
+    ShowText(["Предназначенный для Чистого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -419,9 +431,10 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『環世の魔杖、悟りし者に捧ぐ』"])
+    ShowText(["\\C[24]Жезл Кольцевого Мира"])
+    ShowText(["Предназначенный для Просвещенного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -438,9 +451,10 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『冥雷の鎌、鋭き者に捧ぐ』"])
+    ShowText(["\\C[24]Коса Темной Грозы"])
+    ShowText(["Предназначенная для Проницательного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -457,9 +471,10 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『蓮極の弓、正しき者に捧ぐ』"])
+    ShowText(["\\C[24]Лук Совершенного Лотоса"])
+    ShowText(["Предназначенный для Праведного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -476,9 +491,10 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『嘯霊の銃、確けし者に捧ぐ』"])
+    ShowText(["\\C[24]Ружье Воя Душ"])
+    ShowText(["Предназначенное для Крепкого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -495,9 +511,10 @@ Name = "EV027"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『仙極の鞭、尊き者に捧ぐ』"])
+    ShowText(["\\C[24]Кнут Бессмертного"])
+    ShowText(["Предназначенный для Благородного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -514,9 +531,10 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『翔鴻の擲刃、尋みし者に捧ぐ』"])
+    ShowText(["\\C[24]Метательное Оружие Парящей Птицы"])
+    ShowText(["Предназначенное для Пытливого\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])
@@ -533,9 +551,10 @@ Name = "EV029"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["『常鳴の扇、麗しき者に捧ぐ』"])
+    ShowText(["\\C[24]Веер Вечного Звона"])
+    ShowText(["Предназначенный для Прекрасного\\C[0]"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["しかし、台座の上には何もない……"])
+    ShowText(["Но на пьедестале ничего нет..."])
     ConditionalBranch([0, 6, 0])
       ConditionalBranch([2, "A", 1])
         ControlSelfSwitch(["A", 0])

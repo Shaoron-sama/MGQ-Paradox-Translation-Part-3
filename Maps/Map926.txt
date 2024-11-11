@@ -1,4 +1,4 @@
-Display Name = "魔城トゥーロマンサ 第5層"
+Display Name = "Замок Ту Романс (Уровень 5)"
 Parallax Name = "StarlitSky"
 Note = ""
 
@@ -42,17 +42,15 @@ Name = "EV003"
       Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
       ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["むぎゃっ！！\\^\\.\\."])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Мугяяя!\\^\\.\\."])
       ControlSelfSwitch(["A", 0])
       ExitEventProcessing([])
       Empty([])
 
     Else([])
       ShowTextAttributes(["youkosan_fc2", 0, 0, 2])
-      ShowText(["【狐像】"])
-      ShowText(["フフフ……。ウチは石像狐。"])
-      ShowText(["「お尻」から話しかけない限り退かないのだ。"])
+      ShowText(["\\n<\\C[6]Лисья Статуя\\C[0]>Фуфуфу... Я - каменная лисья статуя."])
+      ShowText(["Я не уйду, пока не поговоришь со мной \"сзади\"."])
       ExitEventProcessing([])
       Empty([])
 
@@ -76,19 +74,16 @@ Name = "EV004"
     ControlSwitches([2941, 2941, 0])
     ChangeWeapons([956, 0, 0, 1, false])
     ShowTextAttributes(["magatu_fc1", 2, 0, 2])
-    ShowText(["【マガツ】"])
-    ShowText(["この棍棒、まるで巨龍の角よな。"])
-    ShowText(["いったいどれだけの力を秘めているのか……"])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Эта дубина похожа на гигантский рог дракона."])
+    ShowText(["Сколько же силы она таит...?"])
     ShowTextAttributes(["byakunen_fc2", 0, 0, 2])
-    ShowText(["【白念】"])
-    ShowText(["眺めているだけでも、その力が伝わってきます。"])
-    ShowText(["お師匠様以外に、この棍棒を扱える者はいないのでは……？"])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>Я от одного взгляда на нее чувствую мощь."])
+    ShowText(["Кто еще будет способен использовать эту дубину,"])
+    ShowText(["кроме учителя...?"])
     ShowTextAttributes(["sonia_fc1", 3, 0, 2])
-    ShowText(["【ソニア】"])
-    ShowText(["ねぇ、棍棒の話してる？"])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Эй, вы заговорили о дубинах?"])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["ソニア、本当に棍棒に目がないね……"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Соня, ты и вправду не можешь пройти мимо них..."])
     Empty([])
 
   Page 1
@@ -108,9 +103,8 @@ Name = "EV005"
     ControlSwitches([2940, 2940, 0])
     ChangeArmor([349, 0, 0, 1, false])
     ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
-    ShowText(["【カズヤ】"])
-    ShowText(["これは、結博士からの贈り物だな。"])
-    ShowText(["僕専用の強化スーツか……"])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>Это подарок от доктора Юи."])
+    ShowText(["Усиленный костюм, сделанный специально для меня..."])
     Empty([])
 
   Page 1
@@ -130,13 +124,11 @@ Name = "EV006"
     ControlSwitches([2942, 2942, 0])
     ChangeArmor([361, 0, 0, 1, false])
     ShowTextAttributes(["rest_fc1", 0, 0, 2])
-    ShowText(["【レスト】"])
-    ShowText(["この兜……僕の世界のものか。"])
-    ShowText(["ありがたく使わせてもらおう。"])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Этот шлем... из моего мира."])
+    ShowText(["Буду рад, если вы позволите мне его взять."])
     ShowTextAttributes(["tarsa_fc2", 2, 0, 2])
-    ShowText(["【ターサ】"])
-    ShowText(["なんだかすごく光ってない？"])
-    ShowText(["まぶしくない……？"])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>А разве он не слишком яркий?"])
+    ShowText(["Тебя не слепит...?"])
     Empty([])
 
   Page 1
@@ -171,16 +163,14 @@ Name = "EV008"
     BranchEnd([])
     ConditionalBranch([1, 1229, 0, 0, 0])
       ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["このフロアの宝箱は、もう残ってないみたいだね。"])
-      ShowText(["おめでと～♪"])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Похоже, вы нашли все сокровища на этом уровне."])
+      ShowText(["Поздравляю~♪"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
-      ShowText(["【妖狐】"])
-      ShowText(["このフロアの宝箱は、あと\\V[1229]個だね。"])
-      ShowText(["がんばって探してみてよ！！"])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>На этом уровне еще остался 1 сундук."])
+      ShowText(["Удачи с поисками!!"])
       Empty([])
 
     BranchEnd([])

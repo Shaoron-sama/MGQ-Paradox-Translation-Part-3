@@ -1,4 +1,4 @@
-Display Name = "ヘルゴンドの洞窟 1F"
+Display Name = "Пещера Хеллгондо 1 Ярус"
 Parallax Name = ""
 Note = ""
 
@@ -16,7 +16,7 @@ Name = "EV002"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -64,7 +64,7 @@ Name = "EV006"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["壺はマジックポットだった！"])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
     BattleProcessing([0, 2928, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

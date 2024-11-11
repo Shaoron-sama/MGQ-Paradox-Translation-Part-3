@@ -63,9 +63,8 @@ Name = "EV007"
 
   Page 0
     ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
-    ShowText(["【サキュバス】"])
-    ShowText(["私は、地下の方が落ち着くのよね。"])
-    ShowText(["とっても静かだし……"])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я решила расслабиться в подземелье."])
+    ShowText(["Тут так тихо..."])
     Empty([])
 
 CommonEvent 8
@@ -98,7 +97,7 @@ Name = "EV009"
     Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["宝箱はミミック娘だった！"])
+    ShowText(["Сундук оказался Мимиком!"])
     BattleProcessing([0, 1429, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

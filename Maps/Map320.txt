@@ -1,4 +1,4 @@
-Display Name = "ヘルゴンドの洞窟 1F"
+Display Name = "Пещера Хеллгондо 1 Ярус"
 Parallax Name = ""
 Note = ""
 
@@ -33,7 +33,7 @@ Name = "EV004"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -94,33 +94,31 @@ Name = "EV007"
   Page 0
     ControlSwitches([2611, 2611, 0])
     ShowTextAttributes(["sonia_fc1", 0, 0, 2])
-    ShowText(["【ソニア】"])
-    ShowText(["ここは……過去の並行世界で通ったあの洞窟と、"])
-    ShowText(["まったく構造は同じみたいね。"])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Это место выглядит точно также как пещера,"])
+    ShowText(["которую мы посещали в параллельном мире прошлого."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 1, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["構造は変わらんが、途中で通路が塞がれているはずだ。"])
-      ShowText(["宝箱だけ、回収していくとしよう。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Она не должна отличаться, но проход посередине"])
+      ShowText(["пути должен быть завален. Давайте просто"])
+      ShowText(["соберем что тут есть в сундуках."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["構造は変わりませんが、途中で通路が塞がれているはず。"])
-      ShowText(["お宝は多そうなので、全部頂いていきましょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Структура должна быть неизменна, но стоит"])
+      ShowText(["ожидать что проход посередине завален. Скорей"])
+      ShowText(["всего тут еще есть сундуки, так что давайте"])
+      ShowText(["их поищем."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 202, 0])
       ShowTextAttributes(["bonny_fc1", 1, 0, 2])
-      ShowText(["【ボニー】"])
-      ShowText(["ふふふ……宝漁りか、腕が鳴るな！"])
+      ShowText(["\\n<\\C[6]Бонни\\C[0]>Фуфуфу... Руки чешутся поохотиться за сокровищами."])
       ConditionalBranch([4, 201, 0])
         ShowTextAttributes(["ashel_fc1", 1, 0, 2])
-        ShowText(["【アシェル】"])
-        ShowText(["これぞ海賊の醍醐味だねぇ……"])
+        ShowText(["\\n<\\C[6]Ашэр\\C[0]>Самая главная радость в жизни пирата..."])
         Empty([])
       BranchEnd([])
       Empty([])
@@ -139,7 +137,7 @@ Name = "EV008"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["壺はマジックポットだった！"])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
     BattleProcessing([0, 1450, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

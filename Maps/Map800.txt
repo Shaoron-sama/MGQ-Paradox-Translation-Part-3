@@ -8,7 +8,7 @@ Name = "EV001"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -30,7 +30,7 @@ Name = "EV001"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -52,7 +52,7 @@ Name = "EV001"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -76,15 +76,15 @@ Name = "EV002"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["次のフロアに進みますか？"])
-    ShowChoices([["まだ行かない", "次のフロアに進む"], 1])
-    When([0, "まだ行かない"])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
       SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
       ExitEventProcessing([])
       Empty([])
 
-    When([1, "次のフロアに進む"])
+    When([1, "На следующий уровень"])
       ControlVariables([121, 121, 2, 0, 1])
       CallCommonEvent([901])
       ExitEventProcessing([])
@@ -99,7 +99,7 @@ Name = "EV003"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -121,7 +121,7 @@ Name = "EV003"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -143,7 +143,7 @@ Name = "EV003"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -168,7 +168,7 @@ Name = "EV004"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -190,7 +190,7 @@ Name = "EV004"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -212,7 +212,7 @@ Name = "EV004"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -257,7 +257,7 @@ Name = "EV006"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -279,7 +279,7 @@ Name = "EV006"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -301,7 +301,7 @@ Name = "EV006"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -326,7 +326,7 @@ Name = "EV007"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -348,7 +348,7 @@ Name = "EV007"
   Page 2
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -370,7 +370,7 @@ Name = "EV007"
   Page 4
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -676,18 +676,18 @@ Name = "EV022"
     ConditionalBranch([8, 565])
       ControlVariables([11, 11, 0, 3, 0, 565, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["混沌の鍵を\\V[11]本所持している。"])
-      ShowText(["鍵を消費し、この扉を開けますか？"])
-      ShowChoices([["鍵を開ける", "鍵を開けない"], 2])
-      When([0, "鍵を開ける"])
+      ShowText(["Ключей Хаоса у меня: \\V[11]."])
+      ShowText(["Использовать ключ и открыть эту дверь?"])
+      ShowChoices([["Открыть", "Не открывать"], 2])
+      When([0, "Открыть"])
         PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
         ControlSwitches([31, 31, 0])
         ChangeItems([565, 1, 0, 1])
         ShowTextAttributes(["", 0, 0, 2])
-        ShowText(["混沌の鍵を一つ消費し、宝物庫の扉を開けた！"])
+        ShowText(["Использовав один Ключ Хаоса, вы открыли дверь в сокровищницу!"])
         ExitEventProcessing([])
         Empty([])
-      When([1, "鍵を開けない"])
+      When([1, "Не открывать"])
         ExitEventProcessing([])
         Empty([])
       ChoicesEnd([])
@@ -695,8 +695,8 @@ Name = "EV022"
 
     Else([])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["混沌の鍵を持っていない……"])
-      ShowText(["宝物庫の扉を開ける事は出来ないようだ。"])
+      ShowText(["У меня нет Ключей Хаоса..."])
+      ShowText(["Похоже, я не смогу открыть дверь в сокровищницу."])
       Empty([])
 
     BranchEnd([])
@@ -720,21 +720,21 @@ Name = "EV024"
   Page 0
     ConditionalBranch([0, 31, 1])
       ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
-      ShowText(["【白兎】"])
-      ShowText(["ねぇねぇ、混沌の鍵は持ってる？"])
-      ShowText(["持ってたら鍵を開けて、たくさんの宝箱をゲットだよ。"])
+      ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Эй-эй, у тебя есть Ключ Хаоса?"])
+      ShowText(["Как только он у тебя появится, ты сможешь открыть"])
+      ShowText(["ту дверь и получить много сокровищ с тех сундуков."])
       ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
-      ShowText(["【白兎】"])
-      ShowText(["でも、混沌の鍵は使うと壊れちゃうんだ。"])
-      ShowText(["ここで使う？　それとも、もっと深層の宝物庫で使う？"])
+      ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Но если ты его используешь, то он сломается."])
+      ShowText(["Используешь ли ты его здесь?"])
+      ShowText(["Или будешь использовать в сокровищнице"])
+      ShowText(["на более глубоком уровне?"])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 31, 0])
       ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
-      ShowText(["【白兎】"])
-      ShowText(["鍵を開けたんだね、おめでと～♪"])
+      ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Ты открыл дверь в сокровищницу, поздравляю~♪"])
       ExitEventProcessing([])
       Empty([])
 
@@ -772,7 +772,7 @@ Name = "EV025"
     BranchEnd([])
     TransferPlayer([0, 576, 14, 50, 2, 2])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["終章開始につき、過去の迷宮から弾き出された！"])
+    ShowText(["С обновлением Лабиринта Хаоса вы были изгнаны из прошлого лабиринта!"])
     ConditionalBranch([1, 912, 0, 0, 0])
       ConditionalBranch([0, 2332, 0])
         ConditionalBranch([0, 4, 0])

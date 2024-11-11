@@ -90,7 +90,7 @@ Name = "EV011"
   Page 0
     ConditionalBranch([12, "unlock_level < 3"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -106,17 +106,15 @@ Name = "EV011"
     ChangeItems([660, 0, 0, 1])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["これは、転種アイテムのようだな。"])
-      ShowText(["もしかして、アポトーシス絡みか……？"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, это предмет для смены расы."])
+      ShowText(["Возможно, он связан с апоптозами?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["これは、転種アイテムのようですね。"])
-      ShowText(["もしやアポトーシス絡みでしょうか……？"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, это предмет для смены расы."])
+      ShowText(["Возможно, он связан с апоптозами?"])
       Empty([])
 
     BranchEnd([])
@@ -169,7 +167,7 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["・・・・・・・・データ凍結"])
+    ShowText(["· · · · · ДАННЫЕ ЗАМОРОЖЕНЫ"])
     Empty([])
 
 CommonEvent 16
@@ -206,12 +204,11 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["KKS100236:凍結"])
+    ShowText(["KKS100236:ЗАМОРОЖЕНО"])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["この人、生きていますね……"])
-      ShowText(["おそらく意思疎通は不可能でしょうが。"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Этот человек все еще жив..."])
+      ShowText(["Но, сомневаюсь, что он может говорить."])
       Empty([])
 
     BranchEnd([])
@@ -222,18 +219,16 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS067678；破棄"])
+    ShowText(["FS067678;УДАЛЕНО"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 7, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["何、これ……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Что это...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["まるで標本のように……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Напоминает лабораторный образец..."])
       Empty([])
 
     BranchEnd([])
@@ -244,7 +239,7 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS0976582：解剖後再構築　凍結"])
+    ShowText(["FS0976582:РЕКОНСТРУКЦИЯ ПОСЛЕ ВСКРЫТИЯ - ЗАМОРОЖЕНО"])
     Empty([])
 
 CommonEvent 23
@@ -304,12 +299,11 @@ Name = "EV030"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["たすけて"])
-    ShowText(["殺して"])
+    ShowText(["Помогите"])
+    ShowText(["Убейте меня"])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["意志が僅かに残っているようですね……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Похоже, они немного могут себя контролировать..."])
       Empty([])
 
     BranchEnd([])
@@ -366,9 +360,8 @@ Name = "EV036"
     ShowText(["■■■■■■■■■■■■■■■■■■■■■"])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["情報が過剰に書き込まれ、オーバーフローしている……"])
-      ShowText(["あのノートで見た現象ですね。"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Тут хранилось так много данных, что произошло"])
+      ShowText(["переполнение... Я видела этот феномен в записях."])
       Empty([])
 
     BranchEnd([])
@@ -385,15 +378,14 @@ Name = "EV038"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["MB0220346：破棄"])
-    ShowText(["MC0221859：破棄"])
-    ShowText(["MB0683393：凍結"])
-    ShowText(["MX0894473：破棄"])
+    ShowText(["MB0220346:УДАЛЕНО"])
+    ShowText(["MC0221859:УДАЛЕНО"])
+    ShowText(["MB0683393:ЗАМОРОЖЕНО"])
+    ShowText(["MX0894473:УДАЛЕНО"])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["これも、まだ息があります。"])
-      ShowText(["どんな状態なのか定かではありませんが……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Один из них все еще дышит..."])
+      ShowText(["Хотя я не могу сказать точно о его состоянии."])
       Empty([])
 
     BranchEnd([])
@@ -404,10 +396,10 @@ Name = "EV039"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["・♪♪♪・・♪♪・・・・・♪♪・・♪・♪・"])
-    ShowText(["♪♪♪♪♪♪♪・・・・♪♪・♪・♪・♪♪♪"])
-    ShowText(["・・・♪♪・・♪・♪♪♪・・・・♪・・・・"])
-    ShowText(["♪・・・♪♪♪・♪♪・・・♪・♪・・♪♪・"])
+    ShowText(["· ♪ ♪ ♪ · · ♪ ♪ · · · · · ♪ ♪ · · · ♪ · ♪ ·"])
+    ShowText(["♪ ♪ ♪ ♪ ♪ ♪ ♪ · · · · ♪ ♪ · ♪ · ♪ · ♪ ♪ ♪ ·"])
+    ShowText(["· · · ♪ ♪ · · · ♪ · ♪ ♪ ♪ · · · · · · · · ·"])
+    ShowText(["♪ · · · ♪ ♪ ♪ · ♪ ♪ · · · ♪ · ♪ · · · ♪ ♪ ·"])
     Empty([])
 
 CommonEvent 40
@@ -415,8 +407,8 @@ Name = "EV040"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["システムエラー"])
-    ShowText(["E24567を実行"])
+    ShowText(["СИСТЕМНАЯ ОШИБКА"])
+    ShowText(["ЗАПУСК E24567"])
     Empty([])
 
 CommonEvent 41
@@ -467,7 +459,7 @@ Name = "EV048"
   Page 0
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["警告：■■■■■■■■■■"])
+    ShowText(["ВНИМАНИЕ:■■■■■■■■■■"])
     Empty([])
 
   Page 1
@@ -484,12 +476,11 @@ Name = "EV050"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS2399401：死亡"])
+    ShowText(["FS2399401:ПОГИБЛО"])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["誰がこんな事を……"])
-      ShowText(["いえ、意志を持つ者がやったのかどうか……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Кто мог...?"])
+      ShowText(["Нет, скорей, было ли это сделано по своей воле?"])
       Empty([])
 
     BranchEnd([])
@@ -512,8 +503,8 @@ Name = "EV053"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS276565：破棄"])
-    ShowText(["以下、全て破棄"])
+    ShowText(["FS276565:УДАЛЕНО"])
+    ShowText(["ДАЛЕЕ, ВСЕ УДАЛЕНЫ"])
     Empty([])
 
 CommonEvent 54
@@ -521,8 +512,8 @@ Name = "EV054"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["せ■■■"])
-    ShowText(["現象シ■■た■■"])
+    ShowText(["Ка■■"])
+    ShowText(["Феноме■■■■за■"])
     Empty([])
 
 CommonEvent 55
@@ -536,7 +527,7 @@ Name = "EV056"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["実験ハ失敗シタ"])
+    ShowText(["ЭКСПЕРИМΞНТ ПРОВАЛЕН"])
     Empty([])
 
 CommonEvent 57
@@ -550,7 +541,7 @@ Name = "EV058"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["かみさま　うまれた"])
+    ShowText(["Богиня была рождена"])
     Empty([])
 
 CommonEvent 59
@@ -558,8 +549,8 @@ Name = "EV059"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS0880009：XXトリソミー"])
-    ShowText(["複製不可"])
+    ShowText(["FS0880009:XX ТРИСОНОМИЯ"])
+    ShowText(["ВОСПРОИЗВЕСТИ НЕВОЗМОЖНО"])
     Empty([])
 
 CommonEvent 60
@@ -567,7 +558,7 @@ Name = "EV060"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["特定ゲノム欠損：破棄"])
+    ShowText(["ДЕФЕКТ ГЕНОМА:УДАЛЕНО"])
     Empty([])
 
 CommonEvent 61
@@ -575,10 +566,10 @@ Name = "EV061"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["システムエラー"])
-    ShowText(["システムエラー"])
-    ShowText(["システムエラー"])
-    ShowText(["システムエラー"])
+    ShowText(["СИСТЕМНАЯ ОШИБКА"])
+    ShowText(["СИСТЕМНАЯ ОШИБКА"])
+    ShowText(["СИСТЕМНАЯ ОШИБКА"])
+    ShowText(["СИСТЕМНАЯ ОШИБКА"])
     Empty([])
 
 CommonEvent 62
@@ -587,41 +578,36 @@ Name = "EV062"
   Page 0
     ControlSelfSwitch(["A", 0])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["人間が、壁に埋まってる！？"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Эти люди застряли в стене?!"])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["いや、壁と融合しているのか……？"])
-      ShowText(["いったい何があれば、こんな事になる？"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Больше похоже, что они вросли в стену."])
+      ShowText(["Что за чертовщина тут произошла?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["いえ、壁と融合している……"])
-      ShowText(["空間の侵蝕に取り込まれたのでしょうか。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Нет, они слились со стеной..."])
+      ShowText(["Возможно, их захватила эрозия пространства."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 7, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["ひどい……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Это ужасно..."])
       ConditionalBranch([4, 79, 0])
         ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
-        ShowText(["【ヌルコ】"])
-        ShowText(["……………………"])
+        ShowText(["\\n<\\C[6]Нуруко\\C[0]>......"])
         Empty([])
       BranchEnd([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["生きてるのか、死んでるのかも分からないな……"])
-    ShowText(["とにかく、警戒しながら先に進もう。"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Я даже не могу сказать, живые они или мертвые."])
+    ShowText(["В любом случае, давайте продвигаться"])
+    ShowText(["с осторожностью."])
     Empty([])
 
   Page 1
@@ -632,30 +618,28 @@ Name = "EV063"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["扉は施錠されている。"])
-    ShowText(["すぐ近くにカードリーダーがあるようだ……"])
+    ShowText(["Дверь заперта."])
+    ShowText(["Похоже, рядом считыватель карт..."])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["こんなところに機械装置か。"])
-      ShowText(["カード状の何かを差し込む仕組みのようだが……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Механическое устройство в подобном месте?"])
+      ShowText(["Похоже, нам нужно вставить какую-то карточку..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["カードリーダーがこんなところに……？"])
-      ShowText(["カードキーがなければ、この扉は開きませんね。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Что тут делает карт-ридер?"])
+      ShowText(["Ладно, в любом случае, без ключа-карты"])
+      ShowText(["мы не откроем эту дверь."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1001, 0, 34, 1])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["カードか……これは使えるかな？"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Карта... Может вот эта?"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["ルカはレミナのカードキーを差し込んだ……"])
+      ShowText(["Лука вставляет Ключ-Карту Ремины."])
       PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
       SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
@@ -685,8 +669,8 @@ Name = "EV065"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["いたい"])
-    ShowText(["いタイ"])
+    ShowText(["БОЛЬНО"])
+    ShowText(["БОЉНО"])
     Empty([])
 
 CommonEvent 66
@@ -724,10 +708,10 @@ Name = "EV071"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FS0052673：死亡"])
-    ShowText(["FS0285566：死亡"])
-    ShowText(["FS1200989：死亡"])
-    ShowText(["FS1217843：死亡"])
+    ShowText(["FS0052673:ПОГИБЛО"])
+    ShowText(["FS0285566:ПОГИБЛО"])
+    ShowText(["FS1200989:ПОГИБЛО"])
+    ShowText(["FS1217843:ПОГИБЛО"])
     Empty([])
 
 CommonEvent 72
@@ -741,7 +725,7 @@ Name = "EV073"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["AS0008976：複製済　オリジナル破棄"])
+    ShowText(["AS0008976:КОПИРОВАНИЕ ЗАВЕРШЕНО - ОРИГИНАЛ УДАЛЕН"])
     Empty([])
 
 CommonEvent 74
@@ -749,7 +733,7 @@ Name = "EV074"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["AS0000296：解剖後破棄　残骸凍結"])
+    ShowText(["AS0000296:УДАЛЕНО ПОСЛЕ ВСКРЫТИЯ - ОСТАТОК ЗАМОРОЖЕН"])
     Empty([])
 
 CommonEvent 75
@@ -799,8 +783,8 @@ Name = "EV082"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["FR2340098：死亡"])
-    ShowText(["以下、FSナンバーは全て死亡"])
+    ShowText(["FR2340098:ПОГИБЛО"])
+    ShowText(["ДАЛЕЕ, ВСЕ НОМЕРА FS ПОГИБЛИ"])
     Empty([])
 
 CommonEvent 83
@@ -808,8 +792,8 @@ Name = "EV083"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["意識は■■■す"])
-    ShowText(["苦■■、■■■……"])
+    ShowText(["Об■■ в сознании"])
+    ShowText(["Боле■■、■■■..."])
     Empty([])
 
 CommonEvent 84
@@ -829,7 +813,7 @@ Name = "EV086"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 87
@@ -837,7 +821,7 @@ Name = "EV087"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 88
@@ -845,7 +829,7 @@ Name = "EV088"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 89
@@ -853,7 +837,7 @@ Name = "EV089"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 90
@@ -861,7 +845,7 @@ Name = "EV090"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 91
@@ -869,7 +853,7 @@ Name = "EV091"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["どの本にも無茶苦茶な文字が書かれている……"])
+    ShowText(["Все книги исписаны беспорядочными символами..."])
     Empty([])
 
 CommonEvent 92
@@ -1001,50 +985,45 @@ Name = "EV112"
     Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 7, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["なんなの、これ……"])
-      ShowText(["一体ここで何があったの？"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Что это все...?"])
+      ShowText(["Что тут такое случилось?"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["一体、ここで何があったんだ……？"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что здесь могло произойти...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc6", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["この者達は、おそらくレミナの住民だろう。"])
-      ShowText(["なんらかの異変に巻き込まれたのだろうが……"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Наверное, эти люди - жители Ремины, попавшие"])
+      ShowText(["в какую-то катастрофу."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["カオス化に巻き込まれたレミナの住民……"])
-      ShowText(["いったい、かの町に何が……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это жители Ремины, которых захватило"])
+      ShowText(["распространение Хаоса. Что могло произойти"])
+      ShowText(["в этом городе...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["情報のオーバーフローおよび上書き、均質化。"])
-      ShowText(["その過程でのアポトーシス、そして無に還る……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Переполнение, перезапись данных и, в результате"])
+      ShowText(["гомогенизация. В процессе формировались апоптозы"])
+      ShowText(["а затем, обращались в ничто..."])
       ShowTextAttributes(["stein_fc2", 0, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["これがカオス化の正体というならば……"])
-      ShowText(["いったい、どうやって防げばいいのか……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это естественная форма хаотизации."])
+      ShowText(["Как мы сможем ее предотвратить...?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 79, 0])
       ShowTextAttributes(["nuruko_fc1", 2, 0, 2])
-      ShowText(["【ヌルコ】"])
-      ShowText(["きゅ……"])
+      ShowText(["\\n<\\C[6]Нуруко\\C[0]>Кю..."])
       Empty([])
 
     BranchEnd([])

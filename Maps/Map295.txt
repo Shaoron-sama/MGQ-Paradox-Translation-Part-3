@@ -1,4 +1,4 @@
-Display Name = "吸血鬼の魔城 B1F"
+Display Name = "Замок Вампиров: Подвал"
 Parallax Name = ""
 Note = ""
 
@@ -44,7 +44,7 @@ Name = "EV006"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -87,7 +87,7 @@ Name = "EV008"
   Page 0
     ConditionalBranch([12, "unlock_level < 2"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -117,8 +117,8 @@ Name = "EV010"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["立派な棺だ……"])
-    ShowText(["中から何者かの気配がする！"])
+    ShowText(["Это элегантный гроб..."])
+    ShowText(["Похоже, кто-то внутри!"])
     SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
     ControlSwitches([31, 31, 0])
@@ -129,35 +129,28 @@ Name = "EV010"
     ShowPicture([5, "80_carmilla_st01", 0, 0, 0, 0, 100, 100, 0, 0])
     MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
     ShowTextAttributes(["carmilla_fc1", 0, 0, 2])
-    ShowText(["【カーミラ】"])
-    ShowText(["ぐっすり眠って、パワーが回復しました～！"])
+    ShowText(["\\n<\\C[6]Кармилла\\C[0]>Ааах, мои силы восстановились после хорошего сна~!"])
     ShowTextAttributes(["carmilla_fc1", 0, 0, 2])
-    ShowText(["【カーミラ】"])
-    ShowText(["さっそく、あの勇者にリベンジを――おや？"])
+    ShowText(["\\n<\\C[6]Кармилла\\C[0]>Пора отомстить этому геро... ю..."])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["お前は、あの時の吸血鬼！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ты - та самая вампирша!"])
     ShowTextAttributes(["carmilla_fc1", 0, 0, 2])
-    ShowText(["【カーミラ】"])
-    ShowText(["ここで会ったが百年目、リベンジ行きますよ～！"])
+    ShowText(["\\n<\\C[6]Кармилла\\C[0]>Твоя удача кончилась, герой! Теперь, ты - мой!"])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ふん、また返り討ちだ……行くぞっ！"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Хмпф, мы побили тебя раз, побьем и другой."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["また返り討ちにされたいのですか……行きますよ！"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ты так хочешь снова проиграть?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 286, 0])
       ShowTextAttributes(["witchs_fc1", 0, 0, 2])
-      ShowText(["【ウィッチ】"])
-      ShowText(["吸血鬼は、焼いてあげるわ……♪"])
+      ShowText(["\\n<\\C[6]Вич\\C[0]>Я обращу этого вампира в пепел ♪"])
       Empty([])
 
     BranchEnd([])
@@ -169,32 +162,30 @@ Name = "EV010"
     ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
     ControlSwitches([2252, 2252, 0])
     ShowTextAttributes(["carmilla_fc1", 2, 0, 2])
-    ShowText(["【カーミラ】"])
-    ShowText(["また負けちゃいました～！"])
+    ShowText(["\\n<\\C[6]Кармилла\\C[0]>Меня опять побилииииии~!"])
     ControlSwitches([31, 31, 1])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["カーミラは輝く結晶を落としていった……"])
+    ShowText(["Кармилла выронила блестящий кристалл."])
     PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
     ChangeItems([547, 0, 0, 1])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["これは……何らかのトラップに作用するアイテムのようだな。"])
-      ShowText(["持っていれば、この城にあるからくりを無効化するだろう。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, этот предмет может воздействовать"])
+      ShowText(["на какой-то механизм. Возможно, с ним мы сможем"])
+      ShowText(["отключить какую-то ловушку в замке."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["これは……魔法のトラップを解除するアイテムですね。"])
-      ShowText(["持っていれば、この城にある何らかの仕掛けを無効化するでしょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Этот предмет может рассеять магическую ловушку."])
+      ShowText(["Нам стоит использовать его в каком-то устройстве"])
+      ShowText(["в замке."])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-    ShowText(["【ルカ】"])
-    ShowText(["よし、城の探索を続けよう！"])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Хорошо, продолжим обыскивать замок!"])
     ExitEventProcessing([])
     Empty([])
 
@@ -206,7 +197,6 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["vampire_fc1", 0, 0, 2])
-    ShowText(["【ヴァンパイア】"])
-    ShowText(["ここは女王陛下のお部屋……"])
-    ShowText(["出て行きなさい。"])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Это комната ее величества."])
+    ShowText(["Прошу, уйдите."])
     Empty([])

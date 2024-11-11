@@ -1,4 +1,4 @@
-Display Name = "たまもの部屋"
+Display Name = "Комната Тамамо"
 Parallax Name = ""
 Note = ""
 
@@ -23,9 +23,8 @@ Name = "EV003"
 
   Page 0
     ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
-    ShowText(["【たまも】"])
-    ShowText(["悪いが、茶など出さんぞ。"])
-    ShowText(["ほれ、さっさと為すべきことを為してくるのじゃ。"])
+    ShowText(["\\n<\\C[6]Тамамо\\C[0]>Простите, но чай не предложу."])
+    ShowText(["Сделайте что хотели побыстрее."])
     Empty([])
 
   Page 1
@@ -38,26 +37,23 @@ Name = "EV004"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["ここはたまもの部屋――"])
-      ShowText(["って、本人がいるではないか。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это комната Тамамо..."])
+      ShowText(["О? Она здесь?"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["ここは、たまもの部屋――"])
-      ShowText(["って、本人がいるではないですか。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это комната Тамамо..."])
+      ShowText(["О? Она сама здесь?"])
       Empty([])
 
     BranchEnd([])
     SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
     ShowTextAttributes(["tamamo_fc1", 3, 0, 2])
-    ShowText(["【たまも】"])
-    ShowText(["自分の部屋にいて悪いのか……"])
-    ShowText(["お主達こそ、ずかずかと踏み込んでくるでない。"])
+    ShowText(["\\n<\\C[6]Тамамо\\C[0]>Что такого, что я у себя в комнате...?"])
+    ShowText(["Это вам не стоит заходить без приглашения."])
     SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
     Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
     ExitEventProcessing([])

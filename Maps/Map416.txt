@@ -1,4 +1,4 @@
-Display Name = "妖精の島 北"
+Display Name = "Остров Фей: Север"
 Parallax Name = ""
 Note = ""
 
@@ -64,18 +64,19 @@ Name = "EV008"
   Page 0
     ConditionalBranch([1, 1070, 0, 1, 0])
       ShowTextAttributes(["elf_fc1", 0, 0, 2])
-      ShowText(["【エルフ】"])
-      ShowText(["三人の魔王が相争い、人間同士が大戦争を繰り広げる乱世……"])
-      ShowText(["多くの仲間達が、野蛮な考え方に感化されてしまったのよ。"])
+      ShowText(["\\n<\\C[6]Эльфийка\\C[0]>Пока три Владыки Монстров борются за власть,"])
+      ShowText(["а между людьми идет великая война, мои подруги"])
+      ShowText(["тоже подверглись влиянию этих непростых времен"])
+      ShowText(["и начали размышлять в менее цивилизованной манере."])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1070, 0, 2, 1])
       ShowTextAttributes(["elf_fc1", 0, 0, 2])
-      ShowText(["【エルフ】"])
-      ShowText(["皆が暴力的になったのは、時代のせいだけじゃなかったのね。"])
-      ShowText(["呪法で精神に影響が出ていたなんて、恐ろしいわ……"])
+      ShowText(["\\n<\\C[6]Эльфийка\\C[0]>Значит, жестокое поведение у всех было не просто"])
+      ShowText(["веением времени? Страшно подумать, что существует"])
+      ShowText(["магия, способная влиять на подобное..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -114,7 +115,7 @@ Name = "EV010"
     ControlSelfSwitch(["A", 0])
     ChangeGold([0, 0, 12000])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["12000\\G 手に入れた！"])
+    ShowText(["Получено 12000\\G!"])
     Empty([])
 
   Page 1
@@ -126,7 +127,7 @@ Name = "EV011"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -211,17 +212,15 @@ Name = "EV015"
     BranchEnd([])
     ConditionalBranch([1, 1070, 0, 2, 1])
       ShowTextAttributes(["elf_fc1", 1, 0, 2])
-      ShowText(["【エルフ】"])
-      ShowText(["あなた達が、みんなを正気に戻してくれたのね。"])
-      ShowText(["お礼に、セックスさせてあげるわ！"])
+      ShowText(["\\n<\\C[6]Эльфийка\\C[0]>Я слышала, что ты привел всех в чувства."])
+      ShowText(["Я буду рада заняться с тобой сексом"])
+      ShowText(["в качестве благодарности!"])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc2", 7, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["ダメです！"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Этого не будет!"])
         ShowTextAttributes(["elf_fc1", 2, 0, 2])
-        ShowText(["【エルフ】"])
-        ShowText(["なぁんだ……"])
-        ShowText(["せっかく、良質の子種をゲットできるチャンスだったのに。"])
+        ShowText(["\\n<\\C[6]Эльфийка\\C[0]>Аууу..."])
+        ShowText(["А я надеялась, родить от него одаренного ребенка."])
         Empty([])
       BranchEnd([])
       ExitEventProcessing([])

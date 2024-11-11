@@ -1,4 +1,4 @@
-Display Name = "ミノタウロスの迷宮 2F"
+Display Name = "Лабиринт Минотавра: 2 Этаж"
 Parallax Name = ""
 Note = ""
 
@@ -206,7 +206,7 @@ Name = "EV022"
   Page 0
     ConditionalBranch([12, "unlock_level < 1"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["宝箱には鍵が掛かっている……"])
+      ShowText(["Сундук заперт..."])
       ExitEventProcessing([])
       Empty([])
 
@@ -273,7 +273,7 @@ Name = "EV025"
     Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
     Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["宝箱はハコイリだった！"])
+    ShowText(["Сундук оказался Девушкой из Коробки!"])
     BattleProcessing([0, 606, false, false])
     ControlSelfSwitch(["A", 0])
     Empty([])

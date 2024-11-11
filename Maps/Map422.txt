@@ -1,4 +1,4 @@
-Display Name = "サバサ大陸北の大穴"
+Display Name = "Тартар (Север Континента Сабаса)"
 Parallax Name = ""
 Note = ""
 
@@ -194,38 +194,36 @@ Name = "EV024"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 7, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["こっちの世界も、空間の割れ目だらけ……"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Этот мир тоже полон разломов..."])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["こっちの世界も、空間の割れ目だらけだね……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Этот мир тоже полон разломов..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 41, 0])
       ShowTextAttributes(["stein_fc2", 2, 0, 2])
-      ShowText(["【プロメスティン】"])
-      ShowText(["こんな環境で、生物は生存できるんでしょうか。"])
-      ShowText(["さっそくサンプルを集めないと……"])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Некоторые формы жизни, должно быть, все еще"])
+      ShowText(["способны здесь выжить. Мне нужно поторопиться"])
+      ShowText(["и собрать образцы..."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 2, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["予想はしていたが、ひどい光景だな。"])
-      ShowText(["とりあえず、見晴らしの良い場所に出てみるとしよう。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Как мы и опасались, состояние этого мира"])
+      ShowText(["катастрофическое. Давайте пока поищем"])
+      ShowText(["хорошую точку для обзора."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["予想はしていましたが、ひどい光景ですね。"])
-      ShowText(["とりあえず、見晴らしの良い場所に出てみましょう……"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Как мы и опасались, состояние этого мира"])
+      ShowText(["катастрофическое. Давайте пока поищем"])
+      ShowText(["хорошую точку для обзора."])
       Empty([])
 
     BranchEnd([])

@@ -26,15 +26,13 @@ Name = "EV003"
   Page 0
     ConditionalBranch([1, 1057, 0, 2, 2])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【ねこまた】"])
-      ShowText(["にゃ～♪"])
+      ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~♪"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1057, 0, 3, 1])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【猫神様？】"])
-      ShowText(["にゃ～♪"])
+      ShowText(["\\n<\\C[6]Богиня-Кошка?\\C[0]>Няя~♪"])
       Empty([])
 
     BranchEnd([])
@@ -45,8 +43,7 @@ Name = "EV004"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃっ♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя ♪"])
     Empty([])
 
 CommonEvent 5
@@ -54,8 +51,7 @@ Name = "EV005"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ～！"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~"])
     Empty([])
 
 CommonEvent 6
@@ -101,67 +97,59 @@ Name = "EV010"
     ConditionalBranch([1, 1057, 0, 0, 0])
       ControlVariables([1057, 1057, 0, 0, 1])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["ああ、困りました……"])
-      ShowText(["野良のねこまたが増え、どれが猫神様か分からなくなってしまったのです。"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Ооох, что же мне делать..."])
+      ShowText(["В храме стало столько некомат, что я уже не знаю,"])
+      ShowText(["какая из них богиня-кошка."])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["猫神様を見つけ出す手助けをしてもらえませんか？"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Вы не поможете мне найти богиню-кошку?"])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc2", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["ここの巫女さんでも分からないのに、"])
-        ShowText(["私達で見つけられると思えないけど……"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Если даже здешняя жрица не может ее найти,"])
+        ShowText(["то не думаю, что мы справимся..."])
         Empty([])
       Else([])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["ここの巫女さんでも分からないのに、僕達じゃちょっと……"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Если даже здешняя жрица не может ее найти,"])
+        ShowText(["то куда нам-то..."])
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["話し掛ければ、本物の猫神様なら反応が違うはずです。"])
-      ShowText(["私では、動きが素早くて追いつけないのですよ……"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Если вы поговорите с ней, то настоящая богиня-кошка должна"])
+      ShowText(["ответить по-другому. Они для меня слишком быстрые,"])
+      ShowText(["так что я никак не могу их поймать..."])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["それじゃあ、片っ端から話し掛けてみるか……"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ну что ж, видимо придется поговорить с ними всеми."])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1057, 0, 1, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["話し掛ければ、本物の猫神様なら反応が違うはずです。"])
-      ShowText(["私では、動きが素早くて追いつけないのですよ……"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Если вы поговорите с ней, то настоящая богиня-кошка должна"])
+      ShowText(["ответить по-другому. Они для меня слишком быстрые,"])
+      ShowText(["так что я никак не могу их поймать..."])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1057, 0, 2, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["見つかりましたか？"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Вы нашли ее?"])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["うん、あそこにいるあの……"])
-      ShowText(["……あれ？　どれだったかな……？"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Да, она вон там..."])
+      ShowText(["...А? Которая из них...?"])
       ConditionalBranch([0, 4, 0])
         ShowTextAttributes(["alice_fc5", 0, 0, 2])
-        ShowText(["【アリス】"])
-        ShowText(["ぬぅ……また、どれだか分からなくなってしまったぞ……"])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Ммм... Я тоже не знаю, какая из них нужная..."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 5, 0])
         ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-        ShowText(["【イリアス】"])
-        ShowText(["また見失ってしまいましたね……"])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы снова ее потеряли из виду..."])
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["……………………"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>......"])
       SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
@@ -169,23 +157,19 @@ Name = "EV010"
       Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["たぶん……この子です。"])
-      ShowText(["この子にしましょう。"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Наверное... Вот эта?"])
+      ShowText(["Пусть будет она."])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc3", 2, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["それでいいの！？"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Это нормально?!"])
         Empty([])
       Else([])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["それでいいの！？"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Это нормально?!"])
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【猫神様？】"])
-      ShowText(["にゃ～♪"])
+      ShowText(["\\n<\\C[6]Богиня-Кошка?\\C[0]>Няя~♪"])
       SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
       Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
@@ -193,12 +177,10 @@ Name = "EV010"
       Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
       Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["ありがとうございました、おかげで助かりました……"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Спасибо вам за помощь..."])
       ShowTextAttributes(["durahan_fc1", 0, 0, 2])
-      ShowText(["【アーサー】"])
-      ShowText(["……ここの主が良いと言うのだから、これで良いとしよう。"])
-      ShowText(["そういうわけで、猫神社の件は解決だな。"])
+      ShowText(["\\n<\\C[6]Артурия\\C[0]>...Раз говорят, что все в порядке, оставим их."])
+      ShowText(["Будем считать, что проблема с Храмом Кошки решена."])
       ControlVariables([1057, 1057, 0, 0, 3])
       ConditionalBranch([1, 1057, 0, 3, 1])
         ConditionalBranch([1, 1058, 0, 1, 1])
@@ -206,9 +188,8 @@ Name = "EV010"
             ConditionalBranch([1, 1059, 0, 3, 1])
               ControlVariables([1055, 1055, 0, 0, 3])
               ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-              ShowText(["【ルカ】"])
-              ShowText(["これで、四大神社の困り事を全部解決したね。"])
-              ShowText(["村長のところに報告に行こう！"])
+              ShowText(["\\n<\\C[6]Лука\\C[0]>Похоже, мы решили проблемы во всех четырех храмах."])
+              ShowText(["Давайте доложим старосте!"])
               ExitEventProcessing([])
               Empty([])
             BranchEnd([])
@@ -219,29 +200,25 @@ Name = "EV010"
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["それじゃあ、他の神社に向かおう！"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Идем теперь в другие храмы!"])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1057, 0, 3, 0])
       ShowTextAttributes(["", 0, 0, 2])
-      ShowText(["【巫女】"])
-      ShowText(["猫神社へようこそ。"])
-      ShowText(["ここにいるねこまたは、すべからく猫神様です。"])
+      ShowText(["\\n<\\C[6]Жрица\\C[0]>Добро пожаловать в Храм Кошки."])
+      ShowText(["Все кошки здесь являются богинями-кошками."])
       ConditionalBranch([0, 4, 0])
         ShowTextAttributes(["alice_fc5", 3, 0, 2])
-        ShowText(["【アリス】"])
-        ShowText(["結局、そういう事になったのか……"])
-        ShowText(["八百万の神は、こうして増えていくわけだな。"])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>В итоге, все стало так...?"])
+        ShowText(["От этого, поголовье богов резко вырастет."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 5, 0])
         ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
-        ShowText(["【イリアス】"])
-        ShowText(["結局、そういう風に話をまとめましたか……"])
-        ShowText(["こうして、八百万の神は増えていくわけですね。"])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>В итоге, они решили сделать так...?"])
+        ShowText(["В таком случае, поголовье богов резко вырастет."])
         Empty([])
       BranchEnd([])
       ExitEventProcessing([])
@@ -255,8 +232,7 @@ Name = "EV011"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["うにゃ……"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Уняя..."])
     Empty([])
 
 CommonEvent 12
@@ -264,8 +240,7 @@ Name = "EV012"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ～♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~♪"])
     Empty([])
 
 CommonEvent 13
@@ -273,8 +248,7 @@ Name = "EV013"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ！　にゃ！"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя! Няя!"])
     Empty([])
 
 CommonEvent 14
@@ -282,8 +256,7 @@ Name = "EV014"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["うにゃっ♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Уняя ♪"])
     Empty([])
 
 CommonEvent 15
@@ -291,8 +264,7 @@ Name = "EV015"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["ふにゃ～♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Фуняя~♪"])
     Empty([])
 
 CommonEvent 16
@@ -300,8 +272,7 @@ Name = "EV016"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["……にゃ～？"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>...Няя~?"])
     Empty([])
 
 CommonEvent 17
@@ -309,8 +280,7 @@ Name = "EV017"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃあ♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няяа ♪"])
     Empty([])
 
 CommonEvent 18
@@ -319,52 +289,44 @@ Name = "EV018"
   Page 0
     ConditionalBranch([1, 1057, 0, 1, 0])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【猫神様】"])
-      ShowText(["うにゃ……にゃにゃにゃ……にゃっ！"])
+      ShowText(["\\n<\\C[6]Богиня-Кошка\\C[0]>Уня... Ня-ня-ня... Няя!"])
       ControlVariables([1057, 1057, 0, 0, 2])
       ConditionalBranch([0, 6, 0])
         ShowTextAttributes(["sonia_fc1", 0, 0, 2])
-        ShowText(["【ソニア】"])
-        ShowText(["この子、反応が他の子と違わない？"])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Разве эта некомата не отвечает по-другому?"])
         Empty([])
       Else([])
         ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-        ShowText(["【ルカ】"])
-        ShowText(["この子、なんだか違う感じがするな……"])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Эта некомата отвечает как-то по-другому..."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 4, 0])
         ShowTextAttributes(["alice_fc5", 1, 0, 2])
-        ShowText(["【アリス】"])
-        ShowText(["うむ、間違いない。"])
-        ShowText(["このねこまたが、ここの猫神だな。"])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Да, точно."])
+        ShowText(["Это и есть богиня-кошка."])
         Empty([])
       BranchEnd([])
       ConditionalBranch([0, 5, 0])
         ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
-        ShowText(["【イリアス】"])
-        ShowText(["間違いありません。"])
-        ShowText(["このねこまたが、土着の猫神でしょう。"])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Сомнений нет."])
+        ShowText(["Это местная богиня-кошка."])
         Empty([])
       BranchEnd([])
       ShowTextAttributes(["durahan_fc1", 1, 0, 2])
-      ShowText(["【アーサー】"])
-      ShowText(["よし、さっそく巫女に伝えよう！"])
+      ShowText(["\\n<\\C[6]Артурия\\C[0]>Отлично, давайте быстрее скажем жрице!"])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([1, 1057, 0, 2, 0])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【猫神様】"])
-      ShowText(["うにゃ……にゃにゃにゃ……にゃっ！"])
+      ShowText(["\\n<\\C[6]Богиня-Кошка\\C[0]>Уня... Ня-ня-ня... Няя!"])
       ExitEventProcessing([])
       Empty([])
 
     BranchEnd([])
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃん♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Нян ♪"])
     Empty([])
 
 CommonEvent 19
@@ -372,8 +334,7 @@ Name = "EV019"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ～♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~♪"])
     Empty([])
 
 CommonEvent 20
@@ -381,8 +342,7 @@ Name = "EV020"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["……にゃ？"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>...Ня?"])
     Empty([])
 
 CommonEvent 21
@@ -390,8 +350,7 @@ Name = "EV021"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 4, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["…………？"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>......?"])
     Empty([])
 
 CommonEvent 22
@@ -399,8 +358,7 @@ Name = "EV022"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ……？"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Ня...?"])
     Empty([])
 
 CommonEvent 23
@@ -408,8 +366,7 @@ Name = "EV023"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃ～♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~♪"])
     Empty([])
 
 CommonEvent 24
@@ -417,8 +374,7 @@ Name = "EV024"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃっ！"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя!"])
     Empty([])
 
 CommonEvent 25
@@ -426,8 +382,7 @@ Name = "EV025"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["……………………"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>......"])
     Empty([])
 
 CommonEvent 26
@@ -435,8 +390,7 @@ Name = "EV026"
 
   Page 0
     ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["にゃあ♪"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няяа ♪"])
     Empty([])
 
 CommonEvent 27
@@ -446,37 +400,32 @@ Name = "EV027"
     ControlSelfSwitch(["A", 0])
     ConditionalBranch([0, 6, 0])
       ShowTextAttributes(["sonia_fc3", 6, 0, 2])
-      ShowText(["【ソニア】"])
-      ShowText(["わっ、ねこまたがいっぱい♪"])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Вааа, сколько здесь некомат ♪"])
       Empty([])
 
     Else([])
       ShowTextAttributes(["ruka_fc1", 0, 0, 2])
-      ShowText(["【ルカ】"])
-      ShowText(["わっ、ねこまたがたくさん！"])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Вааа, как много здесь некомат!"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([4, 222, 0])
       ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
-      ShowText(["【たま】"])
-      ShowText(["にゃ～♪"])
+      ShowText(["\\n<\\C[6]Тама\\C[0]>Ня~♪"])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 4, 0])
       ShowTextAttributes(["alice_fc5", 0, 0, 2])
-      ShowText(["【アリス】"])
-      ShowText(["これは、どうした事だ……"])
-      ShowText(["巫女に話を聞いてみるぞ。"])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Что же здесь не так...?"])
+      ShowText(["Надо расспросить жрицу."])
       Empty([])
 
     BranchEnd([])
     ConditionalBranch([0, 5, 0])
       ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
-      ShowText(["【イリアス】"])
-      ShowText(["いったい何事なのです！？"])
-      ShowText(["巫女さんに話を聞きましょう。"])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>И что здесь такого случилось?!"])
+      ShowText(["Давайте послушаем жрицу."])
       Empty([])
 
     BranchEnd([])
@@ -493,6 +442,5 @@ Name = "EV028"
 
   Page 0
     ShowTextAttributes(["", 0, 0, 2])
-    ShowText(["【ねこまた】"])
-    ShowText(["ＺＺＺ……"])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Хррр..."])
     Empty([])
